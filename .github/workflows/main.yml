@@ -418,7 +418,7 @@ jobs:
             echo     ^</types^> >> manifest\package.xml
             echo     ^<!-- Configuración avanzada --^> >> manifest\package.xml
             echo     ^<types^> >> manifest\package.xml
-            echo         ^<members^>*^</members^^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
             echo         ^<name^>CustomMetadata^</name^> >> manifest\package.xml
             echo     ^</types^> >> manifest\package.xml
             echo     ^<types^> >> manifest\package.xml
