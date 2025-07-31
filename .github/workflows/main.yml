@@ -117,7 +117,6 @@ jobs:
             echo     ^</types^> >> manifest\package.xml
             echo     ^<!-- Objetos y Configuración --^> >> manifest\package.xml
             echo     ^<types^> >> manifest\package.xml
-            REM ---------- LISTA EXHAUSTIVA DE OBJETOS ----------
             echo         ^<members^>Account^</members^> >> manifest\package.xml
             echo         ^<members^>AccountBrand^</members^> >> manifest\package.xml
             echo         ^<members^>AccountContactRole^</members^> >> manifest\package.xml
@@ -308,7 +307,6 @@ jobs:
             echo         ^<members^>VideoCallRecording^</members^> >> manifest\package.xml
             echo         ^<members^>VoiceCall^</members^> >> manifest\package.xml
             echo         ^<members^>WebService__c^</members^> >> manifest\package.xml
-            REM ---------- FIN LISTA OBJETOS ----------
             echo         ^<name^>CustomObject^</name^> >> manifest\package.xml
             echo     ^</types^> >> manifest\package.xml
             echo     ^<types^> >> manifest\package.xml
@@ -417,7 +415,7 @@ jobs:
             echo     ^</types^> >> manifest\package.xml
             echo     ^<!-- Configuración avanzada --^> >> manifest\package.xml
             echo     ^<types^> >> manifest\package.xml
-            echo         ^<members^>*^</members^^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
             echo         ^<name^>CustomMetadata^</name^> >> manifest\package.xml
             echo     ^</types^> >> manifest\package.xml
             echo     ^<types^> >> manifest\package.xml
