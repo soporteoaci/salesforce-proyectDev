@@ -1,4 +1,4 @@
-name: Sincronización Salesforce PRE con GitHub
+name: Sincronización Salesforce ProyectDev con GitHub
 
 on:
   schedule:
