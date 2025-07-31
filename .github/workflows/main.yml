@@ -68,7 +68,7 @@ jobs:
         shell: cmd
         run: |
           echo %SF_AUTH_URL% > auth.txt
-          sf org login sfdx-url --sfdx-url-file auth.txt --alias PRE --set-default
+          sf org login sfdx-url --sfdx-url-file auth.txt --alias ProyectDev --set-default
           del auth.txt
         env:
           SF_AUTH_URL: ${{ secrets.SF_AUTH_URL }}
