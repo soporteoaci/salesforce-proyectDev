@@ -1,0 +1,34 @@
+.THIS .cpv-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #e0e5ee;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Si aún quieres una transición visual sutil, deja esta pero más rápida */
+    transition: background-color 0.05s ease-in-out, border-left 0.05s ease-in-out;
+}
+
+.THIS .cpv-item:hover,
+.THIS .cpv-item.selected {
+    background-color: #eaf5fe;
+    border-left: 4px solid #1b96ff;
+    font-weight: 600;
+    color: #16325c;
+}
+
+
+.THIS .cpv-botonera {
+    display: flex;
+    justify-content: center;     /* centra horizontalmente */
+    align-items: center;         /* centra verticalmente */
+    height: 200px;
+    gap: 0.75rem;                /* espacio entre botones */
+}
+
+/* Estilo opcional si quieres personalizar iconos */
+.THIS .cpv-botonera .slds-button {
+    min-width: 40px;
+    min-height: 40px;
+}

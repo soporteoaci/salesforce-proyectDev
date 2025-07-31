@@ -1,0 +1,73 @@
+<aura:component controller="GC_Avances_Contrato_Controller"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId"
+    access="global">
+
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="avancesResultList" type="List" />
+    <aura:attribute name="avanceTDR" type="Decimal" />
+    <aura:attribute name="avanceENT" type="Decimal" />
+    <aura:attribute name="avanceTDRProgress" type="Integer" />
+    <aura:attribute name="avanceENTProgress" type="Integer" />
+    <aura:attribute name="avanceTecnico" type="Decimal" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
+
+    <!--<aura:handler event="force:refreshView" action="{!c.doInit}" />-->
+
+    <aura:handler name="change" value="{!v.avanceTDRProgress}" action="{!c.checkValueTDR}" />
+    <aura:handler name="change" value="{!v.avanceENTProgress}" action="{!c.checkValueENT}" />
+
+    <div class="slds-grid">
+        <div class="slds-box slds-m-around_x-small slds-col slds-size--1-of-5">
+            <aura:iteration items="{!v.avancesResultList}" var="avance">
+                <div class="{!avance.entidad=='TDR' ? 'slds-grid slds-grid_align-center': 'slds-hide'}">
+                    <p style="padding-top:25px">{!avance.seccion}: {!avance.info}</p>
+                </div>
+            </aura:iteration>
+
+            <div class="slds-grid slds-grid_align-center">
+                <p style="padding-top:25px">Avance contractual TDR: {! v.avanceTDR } %</p>
+            </div>
+            <lightning:progressBar style="padding-top:25px" variant="circular" value="{! v.avanceTDRProgress }" />
+            <div class="slds-grid slds-grid_align-center">
+                <p style="padding-top:25px"></p>
+            </div>
+        </div>
+        <div class="slds-box slds-m-around_x-small slds-col slds-size--1-of-5">
+            <aura:iteration items="{!v.avancesResultList}" var="avance">
+                <div class="{!avance.entidad=='ENT' ? 'slds-grid slds-grid_align-center': 'slds-hide'}">
+                    <p style="padding-top:25px">{!avance.seccion}: {!avance.info}</p>
+                </div>
+            </aura:iteration>
+            <div class="slds-grid slds-grid_align-center">
+                <p style="padding-top:25px">Avance contractual Entregables: {! v.avanceENT } %</p>
+            </div>
+            <lightning:progressBar style="padding-top:25px" variant="circular" value="{! v.avanceENTProgress }" />
+            <div class="slds-grid slds-grid_align-center">
+                <p style="padding-top:25px"></p>
+            </div>
+        </div>
+        <!-- <div class="slds-box slds-m-around_x-small slds-col slds-size--><!--1-of-5 ">
+
+            <aura:iteration items="{!v.avancesResultList}" var="avance">
+                <div
+                    class="{!avance.entidad=='HITO' ? 'slds-grid slds-grid_align-center slds-grid_vertical-align-center': 'slds-hide'}">
+                    <p style="padding-top:25px">{!avance.seccion}: {!avance.info} %</p>
+                </div>
+            </aura:iteration>
+            <lightning:progressBar style="padding-top:25px" variant="circular" value="{! v.avanceTecnico }" />
+            <div class="slds-grid slds-grid_align-center">
+                <p style="padding-top:25px"></p>
+            </div>
+
+        </div> -->
+        <div class="slds-align_absolute-center slds-m-around_x-small slds-col slds-size--1-of-5 ">
+            <lightning:button variant="brand-outline" label="Actualizar TDRs" title="Actualizar TDRs"
+                onclick="{! c.startUpdateTDR }" iconName="utility:refresh" iconPosition="left" />
+        </div>
+
+    </div>
+
+
+</aura:component>

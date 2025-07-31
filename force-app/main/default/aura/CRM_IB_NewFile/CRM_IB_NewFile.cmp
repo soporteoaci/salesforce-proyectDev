@@ -1,0 +1,22 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" controller="CRM_IB_MulesoftAPI">
+
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />	
+    
+      <div class="modal-header slds-modal__header slds-size_1-of-1">
+
+        <h4 class="title slds-text-heading--medium" >Subir documentación a New File</h4>
+
+    </div>
+<br></br>
+      <center><h1>¿Desea entrar?</h1></center><br/>
+         
+    <br/>
+    <div class="slds-grid slds-align_absolute-center">
+        <div class="slds-col slds-align_absolute-center">
+            <lightning:button variant="brand" label="Sí" onclick="{! c.accept }" />
+            <lightning:button variant="brand" label="No" onclick="{! c.reject }" />
+        </div>
+    </div>
+
+</aura:component>

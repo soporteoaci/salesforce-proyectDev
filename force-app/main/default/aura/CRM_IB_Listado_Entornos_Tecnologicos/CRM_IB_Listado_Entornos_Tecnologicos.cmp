@@ -1,0 +1,58 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable" controller="CRM_IB_Listado_Entornos_Tecnologicos">
+    
+    <!-- atributos -->
+    <aura:attribute name= "options" type="List" default="[]" /> <!-- todos los entornos tecnológicos -->
+    <aura:attribute name= "selectedValues" type="List" default="[]" /> <!-- entornos tecnológicos seleccionados -->
+	<aura:attribute name= "recordId" type="Id" /> <!-- id ref comercial -->
+    <aura:attribute name= "disabledSave" type="Boolean" default="true" /> <!-- para el botón de guardar -->
+    
+    <aura:attribute name= "buscador" type="Boolean" default="true" /> <!-- para filtrar las ref comerciales -->
+    
+    <!-- inicia el componente -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- formato sección -->
+    <div class="slds-section slds-is-open animate" aura:id="Section" >
+        
+        <!--section header-->
+        <h3 class="slds-section__title">
+            <button aria-controls="componentList" class="slds-button slds-section__title-action" onclick="{!c.toggleSection}" data-auraId="Section">
+                <lightning:icon iconName="utility:switch"
+                                size="x-small"
+                                class="slds-section__title-action-icon slds-button__icon_left"
+                                alternativeText="button icon" />
+                Entornos Tecnológicos
+            </button>
+        </h3>
+        
+        <!--section body-->
+        <div class="slds-section__content" id="componentList">
+            <lightning:layout verticalAlign="end" horizontalAlign="slds-grid_align-space">
+                <lightning:layoutItem size="8" padding="horizontal-medium">
+                    
+                    <!-- buscador -->
+                    <lightning:input label="Buscar Entorno Tecnológico" value="{!v.buscador}" onchange="{!c.handleSearch}" placeholder="Escribe para filtrar los valores disponibles" />
+                    
+                    <!-- dualListbox para la multipicklist -->
+                    <lightning:dualListbox name="entornosTecnologicos"
+                                           label="Selecciona Entorno/s Tecnológico/s"
+                                           sourceLabel="Disponibles"
+                                           selectedLabel="Seleccionados"
+                                           field-level-help="Selecciona uno o varios entornos tecnológicos para la referencia comercial"
+                                           options="{! v.options }"
+                                           value="{! v.selectedValues }"
+                                           onchange="{! c.handleChange }"
+                                           aura:id ="select_entorno"  />
+                </lightning:layoutItem>
+            </lightning:layout>
+            <br></br>
+            <!-- botón para guardar -->
+            <lightning:layoutItem size="8" padding="horizontal-medium">
+            <lightning:button label="Guardar" onclick="{! c.handleSave }" variant="brand" class="slds-m-top_medium" disabled="{!v.disabledSave}" />
+            </lightning:layoutItem>
+            <br></br>
+        </div>
+        
+    </div>
+
+</aura:component>

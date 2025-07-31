@@ -1,0 +1,19 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" controller="CRM_IB_MaestroController">
+    <aura:attribute name="Spinner" type="boolean" default="false"/>   
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div>
+        <center><h1>Se va a realizar la Carga de este registro en el Maestro de SUPER</h1></center><br/>
+        <center><h1>¿Desea Cargar?</h1></center><br/>       
+    </div>
+    <br/>
+    <div class="slds-grid slds-align_absolute-center">
+        <div class="slds-col slds-align_absolute-center">
+            <lightning:button variant="brand" label="Sí" onclick="{! c.accept }" />
+            <lightning:button variant="brand" label="No" onclick="{! c.reject }" />
+        </div>
+        
+    </div>
+    <aura:if isTrue="{!v.Spinner}">
+        <lightning:spinner alternativeText="Loading" size="large" />
+    </aura:if>
+</aura:component>

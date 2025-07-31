@@ -1,0 +1,87 @@
+<aura:component controller="SSC_ActionsController" implements="flexipage:availableForAllPageTypes" access="global" >
+    
+    <!--Atributos-->
+    <aura:attribute name="actionAtt" type="Action__c[]" default=""/>
+    <aura:attribute name="title" type="String" default=""/>
+    <aura:attribute name="status" type="String" default=""/>
+    <aura:attribute name="today" type="Date"/>
+    
+    <!--Manejador-->
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    
+    <!--Componente-->
+    <div data-component-id="home_recentRecordContainer" class="flexipageComponent" data-aura-class="flexipageComponent">
+        <div class="narrow homeHomeCard homeRecentRecordContainer" data-aura-class="homeHomeCard homeRecentRecordContainer">
+            <article class="slds-card slds-card_boundary forceBaseCard" aria-describedby="homeCardHeader_322:0" data-aura-class="forceBaseCard">
+                
+                <!--Titulo-->
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__body">
+                            <h2 class="header-title-container" id="homeCardHeader_325:0">
+                                <span class="slds-card__header-title slds-truncate" title="Recent Records">{!v.title}</span>
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                
+                <!-- -->
+                <div class="slds-page-header slds-page-header_vertical">
+                    <div class="slds-media">
+                        <div class="slds-media__body">
+                            <div class="slds-page-header__name">
+                                <div class="slds-page-header__name-title">
+                                    <ul class="recentsRecordCardList">
+                                        
+                                        <!--Bucle que recorre todas las acciones y las muestra en un listado--> 
+                                        <aura:iteration items="{!v.actionAtt}" var="action">         
+                                            <li class="recentsRecordCardRow">
+                                                <div class="template withIcon homeRecentsItemStencil slds-grid slds-p-bottom_small ">
+                                                    <div class="iconContainer slds-p-right_small">
+                                                        <div class="small forceEntityIcon" style="background-color: #EF6E64" data-aura-rendered-by="343:0" data-aura-class="forceEntityIcon">
+                                                            <span class="uiImage" data-aura-class="uiImage" >
+                                                                
+                                                                <!--Condiciones para el color del icono-->
+                                                                <aura:if isTrue="{!action.DaysToEndDate__c lt 0}">
+                                                                    <lightning:icon iconName="standard:entitlement" alternativeText="Event" class="custom-error" />
+                                                                    <aura:set attribute="else">
+                                                                        <aura:if isTrue="{!action.DaysToEndDate__c lt 7}">
+                                                                            <lightning:icon iconName="standard:entitlement" alternativeText="Event" class="custom-warning" />
+                                                                            <aura:set attribute="else">
+                                                                                <lightning:icon iconName="standard:entitlement" alternativeText="Event" class="custom-success" />
+                                                                            </aura:set>
+                                                                        </aura:if> 
+                                                                    </aura:set>
+                                                                </aura:if> 
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="primaryField truncate" data-aura-rendered-by="348:0">
+                                                        <div class="outputLookupContainer forceOutputLookupWithPreview" data-aura-rendered-by="6:431;a" data-aura-class="forceOutputLookupWithPreview">
+                                                            <a class="textUnderline outputLookupLink slds-truncate forceOutputLookup" data-recordid="{!action.Name}" data-special-link="true" data-navigable="true" href="{! '/lightning/r/Action__c/'+action.Id+'/view' }"   target="_blank" rel="noreferrer" title="" data-aura-class="forceOutputLookup">
+                                                                {!action.Name}<p></p>
+                                                            </a>
+                                                            <br></br>
+                                                                <p><lightning:formattedDateTime value="{!action.EndDate__c}"/></p>
+
+                                                            <!--<p class=" outputLookupLink slds-truncate" data-recordid="{!action.EndDate__c}"    target="_blank" rel="noreferrer" title="" data-aura-class="forceOutputLookup">
+                                                                {!action.EndDate__c}</p>-->
+                                                                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </aura:iteration>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>  
+        </div>
+    </div>
+    
+    
+</aura:component>

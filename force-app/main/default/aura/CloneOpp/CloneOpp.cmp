@@ -1,0 +1,55 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" controller="CloneOppController">
+    
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="caseRecord" type="Oportunidad__c"/>
+    <aura:attribute name="recordError" type="String"/>
+    
+    <aura:attribute name="dataRecord" type="Oportunidad__c"/>
+    <aura:attribute name="RecordTypeName" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <h4 style="font-size: 15px;color: red;" class="slds-text-align_center">
+        <strong>
+            Vas a crear una nueva oportunidad a partir de una ya existente,
+            aprovechando así su contenido para facilitar la implementación de la nueva.<br></br>
+            Aún así, debes dar una revisión general a la nueva oportunidad clonada, 
+            por si hay algún campo que cambie respecto a la original.
+        </strong>
+    </h4>
+    <br></br>
+    <lightning:layout pullToBoundary="medium">            
+        <lightning:layoutItem size="8" padding="horizontal-medium">
+            <lightning:input name="inputName" label="Nombre Oportunidad" aura:id="inputName"  required="true" maxlength="80" />
+        </lightning:layoutItem>
+    </lightning:layout>  
+    
+    <lightning:layout pullToBoundary="medium">
+        <lightning:layoutItem size="4" padding="horizontal-medium">
+            <lightning:input type="date" name="inputFechaCierre" label="Fecha cierre" aura:id="inputFechaCierre"  required="true" />
+        </lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="horizontal-medium">
+            <lightning:input type="date" name="inputFechaPresentacion" label="Fecha presentación" aura:id="inputFechaPresentacion"  required="true" />   
+        </lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="horizontal-medium">
+            <lightning:input  type="number" name="inputPlazo" label="Plazo ejecución (meses)" aura:id="inputPlazo"  required="true" />
+        </lightning:layoutItem>
+    </lightning:layout>                
+    
+    <lightning:layout pullToBoundary="medium">
+        <aura:if isTrue="{!v.RecordTypeName == 'Ayesa'}">
+        <lightning:layoutItem size="4" padding="horizontal-medium">
+            <lightning:input  type="number"  name="inputImporteTotalLicitacon" label="Importe total (sin IVA) €" aura:id="inputImporteTotalLicitacon" step="0.01" required="true" />
+        </lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="horizontal-medium">
+            <lightning:input  type="number" name="inputMargenEstimado" label="% Rentabilidad" aura:id="inputMargenEstimado"   step="0.01" required="true" />
+        </lightning:layoutItem>
+        </aura:if>
+        <div class="slds-grid slds-align_absolute-center">
+            <div class="slds-col slds-align_absolute-center">
+                <div style="margin-top:25px;">
+                    <lightning:button aura:id="cloneBtn" disabled="false" variant="brand" label="Clonar" onclick="{!c.cloneOpp}" />                        
+                </div>
+            </div>
+        </div>
+    </lightning:layout>                
+</aura:component>

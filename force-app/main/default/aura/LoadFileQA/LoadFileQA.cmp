@@ -1,0 +1,51 @@
+<aura:component controller="LoadFileController" implements="force:hasRecordId,flexipage:availableForAllPageTypes,force:hasSObjectName,lightning:availableForFlowScreens,force:lightningQuickActionWithoutHeader">
+    
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+    <aura:attribute name="subirArchivo" type="boolean" default="false"/>
+    <aura:attribute name="carpetaDefault" type="String" default="Seleccione carpeta"/>
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <h4 style="font-size: 15px;" class="slds-text-align_center">
+        <strong>Subir Archivo </strong>
+    </h4>
+    <lightning:layout verticalAlign="end">
+        
+        <lightning:layoutItem size="4" class="slds-align_absolute-center">       
+            <lightning:select name="tipoArchivo" aura:id="tipoArchivo" label="Tipo de Archivo" required="true" value= "Seleccione tipo" onchange="{!c.seleccionTipoArchivo}">
+                <option value="Seleccione tipo">Seleccione Tipo</option>
+                <option value="QA Económico/Economical QA">QA Económico/Economical QA</option>
+                <option value="QA Técnico/Technical QA">QA Técnico/Technical QA</option>
+                <option value="QA Análisis de CashFlow">QA Análisis de CashFlow</option>
+             </lightning:select>
+        </lightning:layoutItem>
+        
+        <lightning:layoutItem size="3" class="slds-align_absolute-center">   
+             <lightning:select name="Carpeta" aura:id="Carpeta" label="Carpeta" required="true" value="{!v.carpetaDefault}" onchange="{!c.seleccionCarpeta}"> 
+                 <option value="Seleccione carpeta">Seleccione carpeta</option>
+                 <option value="07 Procedimiento interno">07 Procedimiento interno</option>
+             </lightning:select>
+        </lightning:layoutItem>    
+        
+        <aura:if isTrue="{!v.subirArchivo}" >            
+            <lightning:layoutItem size="4" class="slds-align_absolute-center"> 
+                <lightning:fileUpload   
+                                      name="fileUploader" 
+                                      recordId="{!v.recordId}"
+                                      onuploadfinished="{! c.finalizarSubida }" 
+                                      class="slds-text-align_center" 
+                                      multiple="true"/><br/>
+            </lightning:layoutItem> 
+            
+        </aura:if>
+    </lightning:layout>
+    
+    <aura:if isTrue="{!v.Spinner}">
+        <div class="exampleHolder">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if>
+    <br>
+    </br>
+</aura:component>

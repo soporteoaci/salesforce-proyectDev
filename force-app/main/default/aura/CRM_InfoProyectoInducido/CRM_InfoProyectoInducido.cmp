@@ -1,0 +1,104 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="CRM_InfoProyectoInducido">
+	<aura:attribute name="programaOptions" type="List"/>
+    <aura:attribute name="proyInductorOptions" type="List"/>
+    <aura:attribute name="tipoInduccionOptions" type="List"/>
+    <aura:attribute name="programaSelected" type="String"/>
+    <aura:attribute name="proyInductor1Selected" type="String"/>
+    <aura:attribute name="proyInductor2Selected" type="String"/>
+    <aura:attribute name="proyInductor3Selected" type="String"/>
+    <aura:attribute name="proyInductor4Selected" type="String"/>
+    <aura:attribute name="tipoInduccion1Selected" type="String"/>
+    <aura:attribute name="tipoInduccion2Selected" type="String"/>
+    <aura:attribute name="tipoInduccion3Selected" type="String"/>
+    <aura:attribute name="tipoInduccion4Selected" type="String"/>
+    
+    <aura:attribute name="innovationWorkStreamOptions" type="List"/>	<!-- SCM - Nuevo campo Innovation_Work_Stream__c -->
+    <aura:attribute name="innovationWorkStreamSelected" type="String"/>	<!-- SCM - Nuevo campo Innovation_Work_Stream__c -->
+    
+    <aura:attribute name="opp" type="Oportunidad__c"/>
+    
+    <aura:attribute name="canChange" type="Boolean" default="false"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <article class="slds-card">
+        <div class="slds-align--absolute-center">
+            <lightning:spinner aura:id="spinner" variant="brand" size="medium" class="slds=hide"/>
+        </div>
+        <div class="slds-m-around_medium">
+            <h3 style="font-size: 15px" class="slds-text-align_center"><strong>{!$Label.c.CRM_ProyI_D_i_Titulo}</strong></h3>
+            <div style="margin-left: 20px; margin-top: 20px; margin-right: 20px;">
+                
+                <!-- SCM - El campo Programa deja de estar disponible asi que lo ocultamos -->
+                <div style="display: none;">
+                    <lightning:layout pullToBoundary="medium">
+                        <lightning:layoutItem flexibility="auto" padding="horizontal-medium">
+                            <lightning:combobox aura:id="programa" name="programa" label="{!$Label.c.CRM_ProyI_D_i_Programa}" value="{!v.programaSelected}" options="{!v.programaOptions}" onchange="{!c.checkChanged}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div> 
+                
+                <!-- SCM - Nuevo campo Innovation_Work_Stream__c -->
+                <div style="margin-top: 10px;">
+                    <lightning:layout pullToBoundary="medium">
+                        <lightning:layoutItem flexibility="auto" padding="horizontal-medium">
+                            <lightning:combobox aura:id="innovationWS" name="innovationWS" label="Innovation Work Stream" value="{!v.innovationWorkStreamSelected}" options="{!v.innovationWorkStreamOptions}" onchange="{!c.checkChanged}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div>
+                
+                <div style="margin-top: 10px;">
+                    <lightning:layout pullToBoundary="medium">
+                        <lightning:layoutItem size="8" padding="horizontal-medium">
+                             <lightning:combobox aura:id="proyInductor1" name="proyInductor1" label="{!$Label.c.CRM_ProyI_D_i_ProyInductor}" value="{!v.proyInductor1Selected}" options="{!v.proyInductorOptions}" onchange="{!c.checkChanged}"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="4" padding="horizontal-medium">
+                            <lightning:combobox aura:id="tipoInduccion1" name="tipoInduccion1" label="{!$Label.c.CRM_ProyI_D_i_Tipo}" value="{!v.tipoInduccion1Selected}" options="{!v.tipoInduccionOptions}" onchange="{!c.checkChanged}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div>
+                <div style="margin-top: 10px;">
+                    <lightning:layout pullToBoundary="medium">
+                        <lightning:layoutItem size="8" padding="horizontal-medium">
+                            <lightning:combobox aura:id="proyInductor2" name="proyInductor2" label="{!$Label.c.CRM_ProyI_D_i_ProyInductor}" value="{!v.proyInductor2Selected}" options="{!v.proyInductorOptions}" onchange="{!c.checkChanged}"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="4" padding="horizontal-medium">
+                            <lightning:combobox aura:id="tipoInduccion2" name="tipoInduccion2" label="{!$Label.c.CRM_ProyI_D_i_Tipo}" value="{!v.tipoInduccion2Selected}" options="{!v.tipoInduccionOptions}" onchange="{!c.checkChanged}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div> 
+                <div style="margin-top: 10px;">
+                    <lightning:layout pullToBoundary="medium">
+                        <lightning:layoutItem size="8" padding="horizontal-medium">
+                            <lightning:combobox aura:id="proyInductor3" name="proyInductor3" label="{!$Label.c.CRM_ProyI_D_i_ProyInductor}" value="{!v.proyInductor3Selected}" options="{!v.proyInductorOptions}" onchange="{!c.checkChanged}"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="4" padding="horizontal-medium">
+                            <lightning:combobox aura:id="tipoInduccion3" name="tipoInduccion3" label="{!$Label.c.CRM_ProyI_D_i_Tipo}" value="{!v.tipoInduccion3Selected}" options="{!v.tipoInduccionOptions}" onchange="{!c.checkChanged}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div>
+                <div style="margin-top: 10px;">
+                    <lightning:layout pullToBoundary="medium">
+                        <lightning:layoutItem size="8" padding="horizontal-medium">
+                             <lightning:combobox aura:id="proyInductor4" name="proyInductor4" label="{!$Label.c.CRM_ProyI_D_i_ProyInductor}" value="{!v.proyInductor4Selected}" options="{!v.proyInductorOptions}" onchange="{!c.checkChanged}"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="4" padding="horizontal-medium">
+                            <lightning:combobox aura:id="tipoInduccion4" name="tipoInduccion4" label="{!$Label.c.CRM_ProyI_D_i_Tipo}" value="{!v.tipoInduccion4Selected}" options="{!v.tipoInduccionOptions}" onchange="{!c.checkChanged}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div>
+                
+            </div>
+            
+            <div class="slds-grid slds-align_absolute-center">
+                <div class="slds-col slds-align_absolute-center">
+                    <div style="margin-top:25px;">
+                    	<lightning:button aura:id="finishBtn" disabled="{!v.canChange}" variant="brand" label="{!$Label.c.CRM_ProyI_D_i_Guardar}" onclick="{!c.save}"/>                            
+                    </div>
+                </div>
+            </div>                               
+
+        </div>
+    </article>
+   
+</aura:component>

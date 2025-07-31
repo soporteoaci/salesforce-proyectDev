@@ -1,0 +1,113 @@
+<aura:component controller="LoadFileController" implements="force:hasRecordId,flexipage:availableForAllPageTypes,force:hasSObjectName,lightning:availableForFlowScreens,force:lightningQuickActionWithoutHeader">
+    
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+    <aura:attribute name="subirArchivo" type="boolean" default="false"/>
+    <aura:attribute name="carpetaDefault" type="String" default="Seleccione carpeta"/>
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <h4 style="font-size: 15px;" class="slds-text-align_center">
+        <strong>Subir Archivo </strong>
+    </h4>
+    <lightning:layout verticalAlign="end">
+        
+        <lightning:layoutItem size="4" class="slds-align_absolute-center">       
+            <lightning:select name="tipoArchivo" aura:id="tipoArchivo" label="Tipo de Archivo" required="true" value= "Seleccione tipo" onchange="{!c.seleccionTipoArchivo}">
+                <option value="Seleccione tipo">Seleccione Tipo</option>
+                <option value="Aceptación de oferta/Acceptance of offer">Aceptación de oferta/Acceptance of offer</option>
+                <option value="Aclaraciones y respuestas a consultas/Clarifications and answers to queries">Aclaraciones y respuestas a consultas/Clarifications and answers to queries</option>
+                <option value="Acreditación del personal ofertado/Acreditation of bid personal">Acreditación del personal ofertado/Acreditation of bid personal</option>
+                <option value="Acta de reunión/Meeting minute">Acta de reunión/Meeting minute</option>
+                <option value="Acuerdo de no concurrencia/Non-competition agreement">Acuerdo de no concurrencia/Non-competition agreement</option>
+                <option value="Acuerdo de socios/Partner Agreement">Acuerdo de socios/Partner Agreement</option>
+                <option value="Acuerdo/Agreement">Acuerdo/Agreement</option>
+                <option value="Adjudicación/Award">Adjudicación/Award</option>
+                <option value="Análisis/Analysis">Análisis/Analysis</option>
+                <option value="Anexo/Annex">Anexo/Annex</option>
+                <option value="Anuncio licitación / invitación">Anuncio licitación / invitación</option>
+                <option value="Avales Provisionales/Provisional Guarantees">Avales Provisionales/Provisional Guarantees</option>
+                <option value="Avales/Guarantees">Avales/Guarantees</option>
+                <option value="Borrador de Acuerdo de Socios/Draft Partner Agreement">Borrador de Acuerdo de Socios/Draft Partner Agreement</option>
+                <option value="Carátula AJI/Cover AJI">Carátula AJI/Cover AJI</option>
+                <option value="Certificado/Certificate">Certificado/Certificate</option>
+                <option value="Comunicación / notificación">Comunicación / notificación</option>
+                <option value="Contrato/Contract">Contrato/Contract</option>
+                <option value="CV">CV</option>
+                <option value="Documentación proveedor/Provider documentation">Documentación proveedor/Provider documentation</option>
+                <option value="Documentación técnica/Technical documentation">Documentación técnica/Technical documentation</option>
+                <option value="Especificación técnica/Technical specification">Especificación técnica/Technical specification</option>
+                <option value="Estudio de implicaciones fiscales/Tax Implications Study">Estudio de implicaciones fiscales/Tax Implications Study</option>
+                <option value="Ficha de oferta/Offer sheet">Ficha de oferta/Offer sheet</option>
+                <option value="Formulario Fiscal/Tax Form">Formulario Fiscal/Tax Form</option>
+                <option value="Formulario IRPO/ IRPO Form">Formulario IRPO/ IRPO Form</option>
+                <option value="Informe/Report">Informe/Report</option>
+                <option value="Matriz TDR-Entregable/ToR-Deliverable Matrix">Matriz TDR-Entregable/ToR-Deliverable Matrix</option>
+                <option value="Memoria/Memory">Memoria/Memory</option>
+                <option value="Modelo financiero/Financial model">Modelo financiero/Financial model</option>
+                <option value="Modelo tributario/Tax model">Modelo tributario/Tax model</option>
+                <option value="Modificación de contrato/Contract modification">Modificación de contrato/Contract modification</option>
+                <option value="Oferta económica/Economical offer">Oferta económica/Economical offer</option>
+                <option value="Oferta técnica/Technical offer">Oferta técnica/Technical offer</option>
+                <option value="Ofertas Vinculantes/Proveedores Offers associated Suppliers">Ofertas Vinculantes/Proveedores Offers associated Suppliers</option>
+                <option value="Oportunidad comercial/Commercial opportunity">Oportunidad comercial/Commercial opportunity</option>
+                <option value="Otros/Other">Otros/Other</option>
+                <option value="Plan de Mitigación de TDR/ToR Mitigation Plan">Plan de Mitigación de TDR/ToR Mitigation Plan</option>
+                <option value="Plan de Soluciones/Solutions Plan">Plan de Soluciones/Solutions Plan</option>
+                <option value="Plano/Drawing">Plano/Drawing</option>
+                <option value="Pliego de claúsulas administrativas particulares (PCAP)/Specification particular admin clauses(PCAP)">Pliego de claúsulas administrativas particulares (PCAP)/Specification particular admin clauses(PCAP)</option>
+                <option value="Pliego de prescripciones técnicas/Specification sheet">Pliego de prescripciones técnicas/Specification sheet</option>
+                <option value="Presentación/Presentation">Presentación/Presentation</option>
+                <option value="Proyecto comercial/Commercial project">Proyecto comercial/Commercial project</option>
+                <option value="QA Económico/Economical QA">QA Económico/Economical QA</option>
+                <option value="QA Técnico/Technical QA">QA Técnico/Technical QA</option>
+                <option value="QA Análisis de CashFlow">QA Análisis de CashFlow</option>
+                <option value="Recomendaciones CCSO/CCSO Recommendations">Recomendaciones CCSO/CCSO Recommendations</option>
+                <option value="Recomendaciones COMPLIANCE/COMPLIANCE Recommendations">Recomendaciones COMPLIANCE/COMPLIANCE Recommendations</option>
+                <option value="Resumen aspectos clave oferta/Summary key aspects offer">Resumen aspectos clave oferta/Summary key aspects offer</option>
+                <option value="RFP (petición de oferta)/RFP (request for quotation)">RFP (petición de oferta)/RFP (request for quotation)</option>
+                <option value="Riesgo financiero/Financial risk">Riesgo financiero/Financial risk</option>
+                <option value="Simulación económica de oferta/Economic simulation of offer">Simulación económica de oferta/Economic simulation of offer</option>
+                <option value="Solicitud de modificación de contrato/Request for contract modification">Solicitud de modificación de contrato/Request for contract modification</option>
+                <option value="Solvencia económica/Economic solvency">Solvencia económica/Economic solvency</option>
+                <option value="Solvencia técnica/Technical solvency">Solvencia técnica/Technical solvency</option>
+             </lightning:select>
+        </lightning:layoutItem>
+        
+        <lightning:layoutItem size="3" class="slds-align_absolute-center">   
+             <lightning:select name="Carpeta" aura:id="Carpeta" label="Carpeta" required="true" value="{!v.carpetaDefault}" onchange="{!c.seleccionCarpeta}"> 
+                 	<option value="Seleccione carpeta">Seleccione carpeta</option>
+                    <option value="01 Pliegos-Requisitos cliente">01 Pliegos-Requisitos cliente</option>
+                    <option value="02 Oferta-Licitación/01 Administrativa">02 Oferta-Licitación/01 Administrativa</option>
+                    <option value="02 Oferta-Licitación/02 Técnica">02 Oferta-Licitación/02 Técnica</option>
+                    <option value="02 Oferta-Licitación/03 Económica">02 Oferta-Licitación/03 Económica</option>
+                    <option value="02 Oferta-Licitación/04 Otros">02 Oferta-Licitación/04 Otros</option>
+                    <option value="03 Notificaciones-Trámites">03 Notificaciones-Trámites</option>
+                    <option value="04 Adjudicación">04 Adjudicación</option>
+                    <option value="05 Subsanaciones-Aclaraciones">05 Subsanaciones-Aclaraciones</option>
+                    <option value="06 Avales">06 Avales</option>
+                    <option value="07 Procedimiento interno">07 Procedimiento interno</option>
+                </lightning:select>
+        </lightning:layoutItem>    
+        
+        <aura:if isTrue="{!v.subirArchivo}" >            
+            <lightning:layoutItem size="4" class="slds-align_absolute-center"> 
+                <lightning:fileUpload   
+                                      name="fileUploader" 
+                                      recordId="{!v.recordId}"
+                                      onuploadfinished="{! c.finalizarSubida }" 
+                                      class="slds-text-align_center" 
+                                      multiple="true"/><br/>
+            </lightning:layoutItem> 
+            
+        </aura:if>
+    </lightning:layout>
+    
+    <aura:if isTrue="{!v.Spinner}">
+        <div class="exampleHolder">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if>
+    <br>
+    </br>
+</aura:component>

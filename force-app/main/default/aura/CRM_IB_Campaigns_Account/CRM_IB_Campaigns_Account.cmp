@@ -1,0 +1,53 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="CRM_IB_Controller" >
+    
+    
+    <aura:attribute name ="Account" type="Account"/>
+    
+    <aura:attribute name ="Valores_campaigns" type="String[]" default="" />  
+    <aura:attribute name="disabledSave" type="String" default="true"/>
+    <aura:attribute name="mensaje" type="String" default=""/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div class="slds-section slds-is-open animate" aura:id="Section" >
+        <!--section header-->
+        
+        <h3 class="slds-section__title">
+            <button aria-controls="componentList"  class="slds-button slds-section__title-action" onclick="{!c.toggleSection}" data-auraId="Section">
+                <lightning:icon iconName="utility:switch"
+                                size="x-small"
+                                class="slds-section__title-action-icon slds-button__icon_left"
+                                alternativeText="button icon"
+                                />
+                Campañas industria
+            </button>
+        </h3>
+        
+        <!--section body-->
+        <div class="slds-section__content" id="componentList">
+            <lightning:layout verticalAlign="end" >    
+                
+                <lightning:layoutItem size="4" padding="horizontal-medium" class="left-align"  >
+                    <lightning:select aura:id="select_Campaign" name="select_Campaign" required="false" onchange="{!c.CampaignSelected}">
+                        <option value="" text="{!v.Account.Campanas_industria__c}"/>        
+                        <aura:iteration var="valor" items="{!v.Valores_campaigns}" >
+                            <option text="{!valor}"/>
+                        </aura:iteration>
+                    </lightning:select>
+                </lightning:layoutItem>
+                <lightning:button label="Guardar" aura:id="botonGuardar" onclick="{!c.save}" variant = "brand" disabled="{!v.disabledSave}" />
+                
+            </lightning:layout>
+            
+            
+            
+            <br></br>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+    
+</aura:component>

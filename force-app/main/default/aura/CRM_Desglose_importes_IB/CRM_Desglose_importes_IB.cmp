@@ -1,0 +1,86 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="CRM_IB_Controller" >
+    
+    <!--   <aura:attribute name="importe_servicio" type="Decimal" />
+ <aura:attribute name="importe_productoHard" type="Decimal" />
+    <aura:attribute name="importe_productoSoft" type="Decimal" />
+    <aura:attribute name="importe_mtoHard" type="Decimal" />
+    <aura:attribute name="importe_mtoSoft" type="Decimal" /> -->
+    
+    <aura:attribute name="oportunidad" type="Oportunidad__c"/>
+    
+    <aura:attribute name="mensaje" type ="String" default=""/>
+    <aura:attribute name="disabledSaveImporte" type="String" default="false"/>
+    <aura:attribute name="disabledSaveMargen" type="String" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+  <div class="slds-section slds-is-open animate" aura:id="Section" >
+        <!--section header-->
+      
+        <h3 class="slds-section__title">
+            <button aria-controls="componentList"  class="slds-button slds-section__title-action" onclick="{!c.toggleSection}" data-auraId="Section">
+                <lightning:icon iconName="utility:switch"
+                                size="x-small"
+                                class="slds-section__title-action-icon slds-button__icon_left"
+                                alternativeText="button icon"
+                                />
+                Desglose importes y margen
+            </button>
+        </h3>
+      
+        <!--section body-->
+        <div class="slds-section__content" id="componentList">
+            
+      
+            
+    <lightning:layout pullToBoundary="medium" class="slds-grid slds-grid_align-space">    
+     
+        <lightning:layoutItem size="4" padding="horizontal-medium" >
+            <div class="modal-header slds-modal__header slds-size_1-of-1">
+                
+                <h4 class="title slds-text-heading--medium" >Importes</h4>
+                
+            </div>
+            
+            <lightning:input type="number" aura:id ="importe_servicio" name="importe_servicio" label="Importe servicio" value="{! v.oportunidad.importe_servicio__c}" step="0.01"/>
+            <lightning:input type="number" aura:id ="importe_productoHard" name="importe_productoHard" label="Importe producto hard" value="{! v.oportunidad.importe_productoHard__c}" step="0.01"/>
+            <lightning:input type="number" aura:id ="importe_productoSoft" name="importe_productoSoft" label="Importe producto soft" value="{! v.oportunidad.importe_productoSoft__c}" step="0.01"/>
+            <lightning:input type="number" aura:id ="importe_mtoHard" name="importe_mtoHard" label="Importe mto hard" value="{! v.oportunidad.importe_mtoHard__c}" step="0.01"/>
+            <lightning:input type="number" aura:id ="importe_mtoSoft" name="importe_mtoSoft" label="Importe mto soft" value="{! v.oportunidad.importe_mtoSoft__c}" step="0.01"/>
+            
+            
+            <br></br>
+            
+            <div class="slds-col slds-size_1-of-1 slds-p-around_xxx-small">
+                <lightning:button label="Guardar" aura:id="botonGuardarImporte" onclick="{!c.saveImporte}" variant = "brand" disabled="{!v.disabledSaveImporte}" />
+            </div>
+        </lightning:layoutItem>
+        
+      
+
+        <lightning:layoutItem size="4" padding="horizontal-medium">
+
+           <div class="modal-header slds-modal__header slds-size_1-of-1">
+                
+                <h4 class="title slds-text-heading--medium" >Márgenes</h4>
+                
+            </div>
+            
+            
+            <lightning:input type="number" aura:id ="margen_servicio" name="margen_servicio" label="Margen servicio" value="{! v.oportunidad.margen_servicio__c}" step="0.01"/>
+            <lightning:input type="number" aura:id ="margen_productoHard" name="margen_productoHard" label="Margen producto hard" value="{! v.oportunidad.margen_productoHard__c}" step="0.01"/>
+            <lightning:input type="number" aura:id ="margen_productoSoft" name="margen_productoSoft" label="Margen producto soft" value="{! v.oportunidad.margen_productoSoft__c}" step="0.01"/>
+            <lightning:input type="number" aura:id ="margen_mtoHard" name="margen_mtoHard" label="Margen mto hard" value="{! v.oportunidad.margen_mtoHard__c}" step="0.01"/>
+            <lightning:input type="number" aura:id ="margen_mtoSoft" name="margen_mtoSoft" label="Margen mto soft" value="{! v.oportunidad.margen_mtoSoft__c}" step="0.01"/>
+            <br></br>
+            
+            
+            <div class="slds-col slds-size_1-of-1 slds-p-around_xxx-small">
+                <lightning:button label="Guardar" aura:id="botonGuardarMargen" onclick="{!c.saveMargen}" variant = "brand" disabled="{!v.disabledSaveMargen}" />
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+        </div>
+    </div>
+  
+    
+</aura:component>

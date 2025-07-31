@@ -1,0 +1,28 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="OACI_ApprovalListController">
+	
+  <aura:attribute name="processInstances" type="List" />
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+  <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-table--fixed-layout">
+    <thead>
+      <tr class="slds-text-heading--label">
+        <th scope="col"><div class="slds-truncate">Solicitud de aprobación</div></th>
+        <th scope="col"><div class="slds-truncate">Estado</div></th>
+        <th scope="col"><div class="slds-truncate">Fecha de envío</div></th>
+
+        
+      </tr>
+    </thead>
+    <tbody>
+    
+      <aura:iteration items="{!v.processInstances}" var="processInstance">
+        <tr>
+            <td scope="row"><div class="slds-truncate"></div><a onclick="{!c.redirectProcess}" id="{!processInstance.Id}">{!processInstance.ProcessInstance.TargetObject.Name}</a></td>
+            <td><div class="slds-truncate">Pendiente de aprobación</div></td>
+            <td><div class="slds-truncate"><ui:outputDate format="dd/MM/yyyy" value="{!processInstance.CreatedDate}"/></div></td>
+          
+        </tr>
+      </aura:iteration>
+    </tbody>
+  </table>
+</aura:component>

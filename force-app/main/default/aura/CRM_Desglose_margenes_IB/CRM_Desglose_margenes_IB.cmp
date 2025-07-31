@@ -1,0 +1,39 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="CRM_IB_Controller" >
+    
+ <!--   <aura:attribute name="importe_servicio" type="Decimal" />
+	<aura:attribute name="importe_productoHard" type="Decimal" />
+    <aura:attribute name="importe_productoSoft" type="Decimal" />
+    <aura:attribute name="importe_mtoHard" type="Decimal" />
+    <aura:attribute name="importe_mtoSoft" type="Decimal" /> -->
+    
+    <aura:attribute name="oportunidad" type="Oportunidad__c"/>
+    
+    <aura:attribute name="mensaje" type ="String" default=""/>
+    <aura:attribute name="disabledSave" type="String" default="false"/>
+    
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    
+  <lightning:layout pullToBoundary="medium">            
+        <lightning:layoutItem size="4" padding="horizontal-medium">
+  <div class="modal-header slds-modal__header slds-size_1-of-1">
+
+        <h4 class="title slds-text-heading--medium" >Desglose de márgenes</h4>
+
+    </div>
+    
+    
+    <lightning:input type="number" aura:id ="margen_servicio" name="margen_servicio" label="Margen servicio" value="{! v.oportunidad.margen_servicio__c}" step="0.01"/>
+    <lightning:input type="number" aura:id ="margen_productoHard" name="margen_productoHard" label="Margen producto hard" value="{! v.oportunidad.margen_productoHard__c}" step="0.01"/>
+    <lightning:input type="number" aura:id ="margen_productoSoft" name="margen_productoSoft" label="Margen producto soft" value="{! v.oportunidad.margen_productoSoft__c}" step="0.01"/>
+    <lightning:input type="number" aura:id ="margen_mtoHard" name="margen_mtoHard" label="Margen mto hard" value="{! v.oportunidad.margen_mtoHard__c}" step="0.01"/>
+    <lightning:input type="number" aura:id ="margen_mtoSoft" name="margen_mtoSoft" label="Margen mto soft" value="{! v.oportunidad.margen_mtoSoft__c}" step="0.01"/>
+    <br></br>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <div class="slds-col slds-size_1-of-1 slds-p-around_xxx-small">
+        <lightning:button label="Guardar" aura:id="botonGuardar" onclick="{!c.save}" variant = "brand" disabled="{!v.disabledSave}" />
+    </div>
+    
+    
+</aura:component>

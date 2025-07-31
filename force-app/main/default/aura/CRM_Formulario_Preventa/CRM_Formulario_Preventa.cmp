@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable,force:hasSObjectName">   
+    <aura:attribute name="Show_flow" type="Boolean" default="false"/>
+    <aura:attribute name="registro" type="Object"/>
+    <aura:attribute name="orgcomercial" type="String"/>
+    <aura:attribute name="sObjectName" type="String" default="" />
+    
+    <force:recordData 
+                      aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      fields="Orgcomercial__c"
+                      targetFields="{!v.registro}"
+                      recordUpdated="{!c.onRecordUpdated}" />
+    
+    <aura:if isTrue="{!or(v.sObjectName != 'Objetivo__c', v.orgcomercial != null)}">
+        <lightning:button label="Equipo Oferta" onclick="{!c.mostrarFlow}" variant="brand" />
+    </aura:if>
+    
+    
+    <!-- Mostrar flow si Show_flow es true -->
+    <aura:if isTrue ="{!v.Show_flow}">
+        <lightning:button label="Cerrar" onclick="{!c.cerrarFlow}" />
+        <lightning:flow aura:id="flowData" onstatuschange="{!c.statusChange}"/>
+    </aura:if>
+</aura:component>

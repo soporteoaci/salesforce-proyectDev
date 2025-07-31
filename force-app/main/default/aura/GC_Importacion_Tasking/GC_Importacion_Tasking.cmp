@@ -1,0 +1,163 @@
+<aura:component controller="GC_Importacion_Tasking" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" >
+    <ltng:require styles="/resource/slds231/assets/styles/salesforce-lightning-design-system.css"
+                  scripts="{!join(',', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' ,
+                           'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js', 'http://ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js')}"
+                  afterScriptsLoaded="{!c.jsLoaded}"/>
+    
+    <!--Custom Styles for Modal Header and Footer--> 
+    <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }       
+        .slds-modal__content{
+        overflow-y:hidden !important;
+        height:unset !important;
+        max-height:unset !important;
+        }
+    </aura:html>
+    
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="contract" type="Object"/>
+    <aura:attribute name="filetype" type="List"  />
+    <aura:attribute name="FileList" type="Object"/>
+    <aura:attribute name="listCategory" type="List" />
+    <aura:attribute name="infoStatus" type="Boolean" default="false"/>
+    
+    <aura:attribute name="infoFinishMessage" type="String" default=""/>
+    <aura:attribute name="infoImportForMessage" type="Boolean"/>
+    <aura:attribute name="infoImportResult" type="String" default=""/>
+    <aura:attribute name="infoImportResultList" type="List" />
+    <aura:attribute name="infoStartMessage" type="String" default=""/>
+    
+    <aura:attribute name="infoRelationsResult" type="String" default=""/>
+    <aura:attribute name="infoRelationsResultObject" type="Object" />
+    
+    <aura:attribute name="idTasking" type="String"/>
+    <aura:attribute name="elementoSAPContrato_Tasking" type="String"/>
+    <aura:attribute name="isUpdate" type="Boolean"/>
+    <aura:attribute name="isImport" type="Boolean"/>
+    
+    <aura:attribute name="TDRListIds" type="List"/>
+    <aura:attribute name="TDRListSplitedIds" type="List"/>
+    <aura:attribute name="TDRListSize" type="Integer" />
+    
+    <aura:attribute name="currentCallsToController" type="Integer" default="0" /> 
+    <aura:attribute name="totalCallsToController" type="Integer" />
+    
+    <aura:attribute name="resultInfoTDR" type="String"/>
+    <aura:attribute name="resultInfoEntregable" type="String"/>
+    <aura:attribute name="resultInfoHito" type="String"/>
+    <aura:attribute name="resultInfoRelaciones" type="String"/>
+    <aura:attribute name="resultInfoUpdateTDR" type="String"/>
+    <aura:attribute name="resultInfoUpdateEntregable" type="String"/>
+    <aura:attribute name="resultInfoUpdateHito" type="String"/>
+    
+    
+    
+    
+    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:handler name="change" value="{!v.currentCallsToController}" action="{!c.newCallToRelations}"/>
+    
+    
+
+        <div class="modal-header slds-modal__header slds-size_1-of-1">
+
+        <h4 class="title slds-text-heading--medium" >Importador Tasking</h4>
+
+    </div>
+
+         
+
+        <!-- MODAL BODY / INPUT FORM -->   
+
+    <div class="slds-modal__content slds-p-around--x-small slds-size_1-of-1 slds-is-relative" aura:id="modalbody" id="modalbody">
+
+        <!-- SECCION QUE INDICA SI EL CONTRATO YA HA SIDO PROCESADO ALGUNA VEZ O ES LA PRIMERA (EN EL PRIMER CASO SE MUESTRA LA ULTIMA FECHA DE ACTUALIZACION)-->
+        <div aura:id="startInfo" class="slds-grid_align-center">
+            <div class="slds-col "> 
+            <form class="slds-form--stacked" style="padding-top:20px; padding-bottom:20px">                
+                <p style="text-align: center">{!v.infoStartMessage}</p>
+            </form>
+                </div>
+        </div>
+        
+        <!-- SECCION QUE INDICA EL RESULTADO DE LA IMPORTACION (OK o FALLO) CON SU ICONO CORRESPONDIENTE-->
+         <div aura:id="finishInfo" class="slds-grid slds-grid_align-center slds-gutters_large slds-hide">
+             <div class="slds-col "> 
+                 <form class="slds-form--stacked" style="padding-top:20px; padding-bottom:20px">                
+                      {!v.infoFinishMessage} 
+                 </form>
+             </div>
+               <div class="slds-col "> 
+                 <lightning:icon iconName="{!v.infoImportForMessage? 'action:approval' : 'action:close' }" alternativeText="Approved" title="Approved" />
+             </div>
+        </div>
+        
+        <!-- SECCION QUE INDICA EL RESULTADO DE LA IMPORTACION (OK o FALLO) CON SU ICONO CORRESPONDIENTE-->
+        <div aura:id="ResultImportInfo" class="slds-hide">      
+                <aura:iteration items="{!v.infoImportResultList}" var="result" >
+                   <div class="slds-grid slds-grid_align-center"><p style="padding-top:25px">{!result.info}</p></div> 
+                </aura:iteration> 
+              <div class="slds-grid slds-grid_align-center"><p style="padding-top:25px"></p></div>
+
+        </div>
+        
+        <div aura:id="ResultImportInfoNew" class="slds-hide">      
+               
+            <div class="slds-grid slds-grid_align-center"><p style="padding-top:20px">{!resultInfoInsertTDR}</p></div> 
+            <div class="slds-grid slds-grid_align-center"><p style="padding-top:20px">{!resultInfoInsertEntregable}</p></div>
+            <div class="slds-grid slds-grid_align-center"><p style="padding-top:20px">{!resultInfoInsertHito}</p></div>
+            <div class="slds-grid slds-grid_align-center"><p style="padding-top:20px">{!resultInfoInsertRelaciones}</p></div>
+         
+            
+            <div class="slds-grid slds-grid_align-center"><p style="padding-top:20px; padding-bottom:20px">{!v.infoRelationsResultObject.info}</p></div>
+
+        </div>
+        
+        
+         <div aura:id="ResultUpdateInfo" class="slds-hide">
+            <form class="slds-form--stacked" style="padding-top:20px; padding-bottom:20px">                
+                <aura:iteration items="{!v.listResult}" var="result">
+                    <option value="{!result.value}">{!result.label}</option>
+                </aura:iteration> 
+            </form>
+        </div>
+        
+        <div aura:id="spinnerModal" class="exampleHolder slds-hide">
+            <lightning:spinner variant="brand" alternativeText="" size="large" />
+        </div>
+        
+
+    </div>   <!-- End of Modal Content --> 
+
+         
+
+        <!-- MODAL FOOTER -->
+
+        <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+
+            <div class="forceChangeRecordTypeFooter">
+
+                <lightning:button aura:id="buttonSeeDetails" variant="brand-outline" label="Ver detalles" title="Ver detalles" onclick="{! c.openDetailInfo }" class="slds-hide"/>
+				<lightning:button aura:id="buttonClose" variant="Neutral" label="Cancelar" title="Cancelar" onclick="{! c.cancel }"/>
+                <aura:if isTrue="{!v.isUpdate}">
+                    <lightning:button aura:id="buttonUpdate" iconName="utility:record_update" iconPosition="right"  variant="brand" label="Actualizar info" title="Actualizar info" onclick="{! c.startUpdate }" />                   
+                </aura:if> 
+                  <aura:if isTrue="{!v.isImport}">                 
+                        <lightning:button aura:id="buttonImport" iconName="utility:download" iconPosition="right"  variant="brand" label="Iniciar importación" title="Iniciar importación" onclick="{! c.startImport }"/> 
+                </aura:if> 
+               
+ 				
+            </div>
+
+        </div>
+
+        
+        
+</aura:component>

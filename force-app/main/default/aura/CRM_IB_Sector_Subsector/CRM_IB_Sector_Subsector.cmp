@@ -1,0 +1,76 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller ="CRM_IB_Controller" >
+    
+    <aura:attribute name ="Account" type="Account"/>
+    
+    <aura:attribute name ="Valores_Sector" type="String[]" default="" />
+    <aura:attribute name ="Valores_Subsector" type = "List" default=""/>
+     
+    <aura:attribute name = "Sector_elegido" type= "String" default =""/>
+    <aura:attribute name = "Subsector_elegido" type= "String" default =""/>
+    
+    <aura:attribute name="disabledSave" type="String" default="false"/>
+    <aura:attribute name="mensaje" type="String" default=""/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div class="slds-section slds-is-open animate" aura:id="Section" >
+        <!--section header-->
+      
+        <h3 class="slds-section__title">
+            <button aria-controls="componentList"  class="slds-button slds-section__title-action" onclick="{!c.toggleSection}" data-auraId="Section">
+                <lightning:icon iconName="utility:switch"
+                                size="x-small"
+                                class="slds-section__title-action-icon slds-button__icon_left"
+                                alternativeText="button icon"
+                                />
+                Sector y Subsector (cuando estén informados pulse guardar) 
+            </button>
+        </h3>
+      
+        <!--section body-->
+        <div class="slds-section__content" id="componentList">
+    <lightning:layout pullToBoundary="medium">            
+        <lightning:layoutItem size="4" padding="horizontal-medium">
+            
+            <lightning:select aura:id="select_Sector" name="select_Sector" label="Sector" required="true" onchange="{!c.SectorSelected}">
+                <option value="" text="{!v.Account.Sector_text__c}"/>
+                
+                <aura:iteration var="valor" items="{!v.Valores_Sector}" >
+                    <option text="{!valor}"/>
+                </aura:iteration>
+            </lightning:select>
+            
+        </lightning:layoutItem>
+    </lightning:layout>
+    
+    <lightning:layout pullToBoundary="medium">            
+        <lightning:layoutItem size="4" padding="horizontal-medium">
+            <lightning:select aura:id="select_Subsector" name="select_Subsector" label="Subsector" required="true" onchange="{!c.SubsectorSelected}">
+                <option value="" text="{!v.Account.Subsector_texto__c}"/>
+                <aura:iteration items="{!v.Valores_Subsector}" var="valor">
+                    <option text="{!valor}"></option>                
+                </aura:iteration>
+            </lightning:select>
+        </lightning:layoutItem>
+    </lightning:layout>
+  <!--  
+    <lightning:layout pullToBoundary="medium">            
+        <lightning:layoutItem size="4" padding="horizontal-medium">
+            <lightning:select aura:id="select_Org" name="select_Org" label="Organización" required="true" onchange="{!c.OrgSelected}">
+                <option value="" text="{!v.Opportunity.Organizacion_Ibermatica__c}"/>
+                <aura:iteration items="{!v.Valores_Organizacion}" var="valor">
+                    <option text="{!valor}"></option>
+                </aura:iteration>
+            </lightning:select>
+        </lightning:layoutItem>
+    </lightning:layout>
+-->
+    <br></br>
+    
+    <div class="slds-col slds-size_1-of-1 slds-p-around_xxx-small">
+        <lightning:button label="Guardar" aura:id="botonGuardar" onclick="{!c.save}" variant = "brand" disabled="{!v.disabledSave}" />
+    </div>
+       
+        </div>
+    </div>
+    
+</aura:component>

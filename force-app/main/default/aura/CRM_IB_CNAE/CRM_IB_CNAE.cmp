@@ -1,0 +1,77 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="CRM_IB_Controller" >
+    
+    
+    <aura:attribute name ="Account" type="Account"/>
+    
+    <aura:attribute name ="Valores_CNAE" type="String[]" default="" />
+    <aura:attribute name ="Valores_SIC" type="String[]" default="" />
+    
+    <aura:attribute name="disabledSaveCNAE" type="String" default="true"/>
+    <aura:attribute name="disabledSaveSIC" type="String" default="true"/>
+    
+    <aura:attribute name="mensaje" type="String" default=""/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div class="slds-section slds-is-open animate" aura:id="Section" >
+        <!--section header-->
+        
+        <h3 class="slds-section__title">
+            <button aria-controls="componentList"  class="slds-button slds-section__title-action" onclick="{!c.toggleSection}" data-auraId="Section">
+                <lightning:icon iconName="utility:switch"
+                                size="x-small"
+                                class="slds-section__title-action-icon slds-button__icon_left"
+                                alternativeText="button icon"
+                                />
+                CNAE y SIC
+            </button>
+        </h3>
+        
+        <!--section body-->
+        <div class="slds-section__content" id="componentList">
+            
+            
+            <lightning:layout verticalAlign="end" horizontalAlign='slds-grid_align-space' >    
+                
+                <lightning:layoutItem size="4" padding="horizontal-medium" >
+                    <lightning:select aura:id="select_CNAE" name="select_CNAE" label="CNAE" required="false" onchange="{!c.CNAESelected}">
+                        <option value="" text="{!v.Account.CNAE__c}"/>
+                        
+                        <aura:iteration var="valor" items="{!v.Valores_CNAE}" >
+                            <option text="{!valor}"/>
+                        </aura:iteration>
+                    </lightning:select>
+                </lightning:layoutItem>
+                <lightning:button label="Guardar" aura:id="botonGuardarCNAE" onclick="{!c.saveCNAE}" variant = "brand" disabled="{!v.disabledSaveCNAE}" />
+            </lightning:layout>
+            <br></br>
+            <lightning:layout verticalAlign="end" horizontalAlign='slds-grid_align-space' >    
+                <lightning:layoutItem size="4" padding='horizontal-medium'   >
+                    <lightning:select aura:id="select_SIC" name="select_SIC" label="SIC" required="false" onchange="{!c.SICSelected}">
+                        <option value="" text="{!v.Account.SIC__c}"/>
+                        
+                        <aura:iteration var="valor" items="{!v.Valores_SIC}" >
+                            <option text="{!valor}"/>
+                        </aura:iteration>
+                    </lightning:select>
+                </lightning:layoutItem>
+                <lightning:button label="Guardar" aura:id="botonGuardarSIC" onclick="{!c.saveSIC}" variant = "brand" disabled="{!v.disabledSaveSIC}" />
+                
+            </lightning:layout>
+            
+            <br></br>
+            
+            
+            
+            <!-- <div class="slds-col slds-size_1-of-1 slds-p-around_xxx-small">
+                <lightning:button label="Guardar" aura:id="botonGuardar" onclick="{!c.save}" variant = "brand" disabled="{!v.disabledSave}" />
+            </div>-->
+            
+            
+        </div>
+    </div>
+    
+    
+    
+    
+    
+</aura:component>

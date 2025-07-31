@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" controller="CRM_IB_MulesoftAPI">
+    
+
+    <aura:attribute name="Mensaje_informar" type="Boolean"/>
+    <aura:attribute name="Acceso_Preventa" type="Boolean" default="" />
+    <aura:attribute name="idOpp" default="" type="String" description="Id de la Oportunidad"/> 
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+       <aura:if isTrue ="{!v.Mensaje_informar}">
+           <br></br>
+           <br></br>
+             <h4 style="font-size: 17px;color: red;" class="slds-text-align_center">
+        <strong>
+            Informe el Gestor de Producción y Centro de Responsabilidad antes de acceder a la Preventa
+        </strong>
+                 
+    </h4>
+            </aura:if>
+   <!-- <aura:if isTrue ="{!v.Acceso_Preventa}">
+    <div>
+        <center><h1>¿Desea entrar?</h1></center><br/>
+    </div>
+    <br/>
+    <div class="slds-grid slds-align_absolute-center">
+        <div class="slds-col slds-align_absolute-center">
+            <lightning:button variant="brand" label="Sí" onclick="{! c.accept }" />
+            <lightning:button variant="brand" label="No" onclick="{! c.reject }" />
+        </div>
+    </div>
+    </aura:if>-->
+</aura:component>

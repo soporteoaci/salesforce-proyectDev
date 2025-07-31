@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="CRM_IB_Controller" >
+    
+    
+    <aura:attribute name ="Task" type="Task"/>
+    
+    <aura:attribute name ="Valores_campaigns" type="String[]" default="" />  
+    <aura:attribute name="disabledSave" type="String" default="true"/>
+    <aura:attribute name="mensaje" type="String" default=""/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:layout verticalAlign="end" horizontalAlign='slds-grid_align-space' >    
+        
+        <lightning:layoutItem size="4" padding="horizontal-medium" >
+            <lightning:select aura:id="select_Campaign" name="select_Campaign" label ='Campaña' required="false" onchange="{!c.CampaignSelected}">
+                <option value="" text="{!v.Task.Campanya__c}"/>        
+                <aura:iteration var="valor" items="{!v.Valores_campaigns}" >
+                    <option text="{!valor}"/>
+                </aura:iteration>
+            </lightning:select>
+            <div class="slds-col slds-size_1-of-1 slds-p-around_xxx-small">
+                <br/>
+                <lightning:button label="Guardar" aura:id="botonGuardar" onclick="{!c.save}" variant = "brand" disabled="{!v.disabledSave}" />
+            </div>    
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

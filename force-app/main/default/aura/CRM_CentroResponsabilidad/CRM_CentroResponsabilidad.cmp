@@ -1,0 +1,66 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller ="CRM_CentroResponsabilidad" >
+    
+    <aura:attribute name ="Opportunity" type="Oportunidad__c"/>
+    
+    <aura:attribute name ="Valores_Gestor_Produccion" type="String[]" default="" />
+    <aura:attribute name ="Valores_Centro_Responsabilidad" type = "List" default=""/>
+    <aura:attribute name ="Valores_Organizacion" type = "List" default=""/> 
+    
+    <aura:attribute name="disabledSave" type="String" default="true"/>
+    <aura:attribute name="mensaje" type="String" default=""/>
+    
+    <aura:attribute name="GP_elegido" type="String"/>
+    <aura:attribute name="CR_elegido" type="String"/>   
+    <aura:attribute name="idOpp" default="" type="String" description="Id de la Oportunidad"/> 
+    <aura:attribute name="idOppPreventa" default="" type="String" description="Id de la Oportunidad"/> 
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div class="slds-section slds-is-open animate" aura:id="Section" >
+        <!--section header-->
+        <div class="slds-grid slds-align_absolute-center">
+            <div class="slds-col slds-align_absolute-center">
+                <h4 class="slds-section__title">Cuando estén informados pulse siguiente</h4>
+            </div>
+        </div>
+        <br/>
+        <!--section body-->
+        <div class="slds-section__content" id="componentList">
+            <div class="slds-grid slds-align_absolute-center">
+                <div class="slds-col slds-align_absolute-center">
+                    <lightning:layout pullToBoundary="medium">            
+                        <lightning:layoutItem size="10" padding="horizontal-medium">
+                            <lightning:select aura:id="select_CR" name="select_CR" label="Centro Responsabilidad" required="true" onchange="{!c.CRSelected}">
+                                <option value="" text="{!v.Opportunity.CR_Super__c}"/>
+                                <aura:iteration items="{!v.Valores_Centro_Responsabilidad}" var="valor">
+                                    <option text="{!valor}"></option>                
+                                </aura:iteration>
+                            </lightning:select>
+                        </lightning:layoutItem>
+                    </lightning:layout>            
+                    <lightning:layout pullToBoundary="medium">            
+                        <lightning:layoutItem size="10" padding="horizontal-medium">
+                            
+                            <lightning:select aura:id="select_GP" name="select_GP" label="Gestor de Producción" required="true" onchange="{!c.GPSelected}">
+                                <option value="" text="{!v.Opportunity.GP_Super__c}"/>
+                                
+                                <aura:iteration var="valor" items="{!v.Valores_Gestor_Produccion}" >
+                                    <option text="{!valor}"/>
+                                </aura:iteration>
+                            </lightning:select>
+                            
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                    <br/>
+                </div>
+            </div>
+            <br/>
+            <div class="slds-grid slds-align_absolute-center">
+                <div class="slds-col slds-align_absolute-center">
+                    <lightning:button label="Siguiente" aura:id="botonGuardar" onclick="{!c.save}" variant = "brand" disabled="{!v.disabledSave}" />
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</aura:component>

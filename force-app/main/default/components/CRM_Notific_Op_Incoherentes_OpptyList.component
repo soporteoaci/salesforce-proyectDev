@@ -1,0 +1,15 @@
+<apex:component controller="CRM_Notific_Op_Incoherentes_Controller" access="global">
+    <apex:attribute name="oOwnerId" type="Id" description="Id of the owner" assignTo="{!ownerId}"/>
+    <table border = "2" cellspacing = "5">
+        <tr>
+            <td>{!$Label.CRM_Notific_Op_Incoherente_Col1}</td>
+            <td>{!$Label.CRM_Notific_Op_Incoherente_Col2}</td>              
+        </tr>
+        <apex:repeat value="{!opptys['opptys']}" var="o">
+        <tr>
+            <td><a href="{!opptys['baseUrl']}/{!o.Id}" target="_blank">{!o.Name}</a></td>
+            <td>{!o.Cuenta_Principal__c}</td>              
+        </tr>
+        </apex:repeat>        
+    </table>
+</apex:component>

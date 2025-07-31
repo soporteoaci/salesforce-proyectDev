@@ -1,0 +1,24 @@
+<aura:component implements="lightning:homeTemplate">
+    <aura:attribute name="main" type="Aura.Component[]" /> 
+      <aura:attribute name="left" type="Aura.Component[]" /> 
+      <aura:attribute name="right" type="Aura.Component[]" /> 
+
+    <div>
+        <lightning:layout horizontalAlign="spread">
+            <lightning:layoutItem size="12">
+                              {!v.main}
+            </lightning:layoutItem>
+        
+        </lightning:layout>
+        
+        <lightning:layout horizontalAlign="spread">
+            <lightning:layoutItem size="8">
+                         {!v.left}
+            </lightning:layoutItem>
+
+         <lightning:layoutItem size="4">
+             {!v.right}
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

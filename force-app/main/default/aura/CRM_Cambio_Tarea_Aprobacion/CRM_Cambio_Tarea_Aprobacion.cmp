@@ -1,0 +1,39 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" controller="CRM_Cambio_Tarea_Aprobacion" >
+    
+    <aura:attribute name="Mensaje_informar" type="Boolean"/>
+    <aura:attribute name="Seccion_Actualizar" type="Boolean" />
+    <aura:attribute name="idTarea" default="" type="String" description="Id de la Tarea"/> 
+    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:if isTrue ="{!v.Mensaje_informar}">
+        <br></br>
+        <br></br>
+        <h4 style="font-size: 17px;color: red;" class="slds-text-align_center">
+            <strong>
+                Solo el propietario de la tarea de aprobación puede cambiar la decisión
+            </strong>
+            
+        </h4>
+    </aura:if>
+    <aura:if isTrue ="{!v.Seccion_Actualizar}">
+        <div>
+            <br></br>
+            <h4 style="font-size: 17px;color: red;" class="slds-text-align_center">
+                <strong>
+                    Va a cambiar la decisión de la aprobación de Rechazada a Aprobada, ¿desea continuar?
+                </strong>
+                
+            </h4>
+        </div>
+        <br/>
+        <div class="slds-grid slds-align_absolute-center">
+            <div class="slds-col slds-align_absolute-center">
+                <lightning:button variant="brand" label="Sí" onclick="{! c.accept }" />
+                <lightning:button variant="brand" label="No" onclick="{! c.reject }" />
+            </div>
+        </div>
+    </aura:if>
+</aura:component>

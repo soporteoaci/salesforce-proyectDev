@@ -1,0 +1,134 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="CRM_Responsable_ProyectoController">
+    
+    <aura:attribute name="oportunidad" type="Oportunidad__c"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- atributos para búsqueda y selección de empleados -->
+    <aura:attribute name="EmpleadoNombre" type="String" default="" description="EmpleadoNombre para la búsqueda"/>
+    <aura:attribute name="EmpleadoApellido1" type="String" default="" description="EmpleadoApellido1 para la búsqueda"/>
+    <aura:attribute name="EmpleadoApellido2" type="String" default="" description="EmpleadoApellido2 para la búsqueda"/>
+    <aura:attribute name="EmpleadoCodigo" type="String" default="" description="EmpleadoCodigo para la búsqueda"/>
+    <aura:attribute name="ListEmpleado" type="List" default="[]" description="Lista de los empleados devueltos por el webservice"/>
+    <aura:attribute name="EsOtroUsuario" type="Boolean" default="false" />
+    <aura:attribute name="EmpleadoEmail" type="String" default="" description="EmpleadoEmail para Otro Usuario"/>
+	<aura:attribute name="esResponsableRequerido" type="Boolean" default="true" />
+    
+    <div class="slds-section slds-is-open animate" aura:id="Section">
+        
+        <!--section header-->
+        <h3 class="slds-section__title">
+            <button aria-controls="componentList" class="slds-button slds-section__title-action" onclick="{!c.toggleSection}" data-auraId="Section">
+                <lightning:icon iconName="utility:switch" size="x-small" class="slds-section__title-action-icon slds-button__icon_left" alternativeText="button icon"/>
+                Responsable de Proyecto
+            </button>
+        </h3>
+        
+        <!--section body-->
+        <div class="slds-section__content slds-m-top_none" id="componentList">
+            
+            <!-- campo Responsable Proyecto-->
+            <div class="slds-grid slds-gutters slds-m-top_none slds-grid_vertical-align-end slds-wrap">
+                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                    <div class="slds-grid slds-gutters slds-grid_vertical-align-end slds-p-left_small">
+                        <div class="slds-col slds-size_2-of-3">
+                            <lightning:input type="text" required="{!v.esResponsableRequerido}" name="ResponsableProyecto" aura:id="ResponsableProyecto" label="Responsable de Proyecto" value="{!v.oportunidad.Responsable_de_Proyecto__c}" disabled="true" />
+                        </div>
+                        <div class="slds-col slds-size_1-of-3 slds-p-around_none">
+                            <button class="slds-button slds-button_neutral slds-align-middle" required="true" onclick="{!c.OpenModal}" value="Responsable_de_Proyecto__c">...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- modal para seleccionar empleado -->
+            <div role="dialog" tabindex="-1" aria-labelledby="modalHeader" class="slds-modal slds-fade-in-open slds-hidden slds-modal_medium slds-align_absolute-center" style="width: 80vw;" aura:id="modal" aria-hidden="false">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <span><b>Búsqueda de Empleados</b></span>
+                        <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.OpenModal}" id="closeHeader">
+                            <lightning:icon iconName="utility:close" size="small" />
+                        </button>
+                    </div>
+                    
+                    <div class="slds-modal__content slds-grid--vertical-align-center slds-grid--align-center">
+                        
+                        <!-- campos de búsqueda de empleado -->
+                        <div class="slds-grid slds-wrap">                            
+                            <div class="slds-col slds-size_3-of-6">
+                                <lightning:input type="text" name="CodigoEmpleado" label="Código Empleado" value="{!v.EmpleadoCodigo}" class="slds-m-horizontal_small"/>
+                            </div>
+                            <div class="slds-col slds-size_3-of-6">
+                                <lightning:input type="text" name="Nombre" label="Nombre" value="{!v.EmpleadoNombre}" class="slds-m-horizontal_small"/>
+                            </div>
+                            <div class="slds-col slds-size_3-of-6">
+                                <lightning:input type="text" style="padding-bottom:25px" name="Apellido1" label="Apellido 1" value="{!v.EmpleadoApellido1}" class="slds-m-horizontal_small"/>
+                            </div>
+                            <div class="slds-col slds-size_3-of-6">
+                                <lightning:input type="text" style="padding-bottom:25px" name="Apellido2" label="Apellido 2" value="{!v.EmpleadoApellido2}" class="slds-m-horizontal_small"/>
+                            </div>
+                        </div> 
+                        
+                        <!-- mostrar la lista de empleados -->
+                        <div class="slds-col slds-size_1-of-1 slds-grid slds-justify_center slds-m-left_large slds-m-right_xx-small" aura:id="ShowEmpleadoCliente">
+                            <table id="EmpTable" class="slds-m-top--xx-small slds-table" style="width: 100%; table-layout: auto;" aura:id="EmpTable">
+                                    <tr>
+                                        <td>Otro usuario</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <!-- si hace clic se abre formulario para "Otro usuario" -->
+                                            <button class="slds-button slds-button_neutral slds-align-right" onclick="{!c.AbrirFormularioOtroUsuario}">Seleccionar Otro Usuario</button>
+                                        </td>
+                                    </tr>
+                                    
+                                    <!-- formulario para "Otro usuario" -->
+                                    <aura:if isTrue="{!v.EsOtroUsuario}">
+                                        <tr>
+                                            <td>
+                                                <lightning:input label="Nombre Completo" value="{!v.EmpleadoNombre}" required="true"/>
+                                            </td>
+                                            <td>
+                                                <lightning:input label="Email" value="{!v.EmpleadoEmail}" required="true"/>
+                                            </td>
+                                            <td>
+                                                <lightning:input label="Código" value="{!v.EmpleadoCodigo}" />
+                                            </td>
+                                            <td> 
+                                                <button class="slds-button slds-button_neutral slds-align-right" onclick="{!c.GuardarEmpleado}">Guardar</button>
+                                            </td>
+                                        </tr>
+                                    </aura:if>
+                                    
+                                    <aura:if isTrue="{!not(v.EsOtroUsuario)}">
+                                        <!-- empleados del webservice -->
+                                        <aura:iteration items="{!v.ListEmpleado}" var="emp" indexVar="i">
+                                            <tr aura:id="{!emp.id}">
+                                                <td>{!emp.nombreYApellidos}</td>
+                                                <td>{!emp.correoElectronico}</td>
+                                                <td>{!emp.numeroPersonal}</td>
+                                                <td>
+                                                    <button class="slds-button slds-button_neutral slds-align-right" onclick="{!c.SelectEmpleado}" data-index="{!i}">Seleccionar</button>
+                                                </td>
+                                            </tr>
+                                        </aura:iteration>
+                                    </aura:if>
+                                    
+                                </table>
+                            </div>
+                    </div>
+                    
+                    <!-- botón Buscar -->
+                    <div class="slds-modal__footer slds-text-align_center" aura:id="footer">
+                        <button class="slds-button slds-button_neutral slds-align-right" onclick="{!c.BuscarEmpleado}">Buscar</button>
+                    </div> 
+                </div> 
+            </div> 
+
+            
+
+        </div>
+    </div>
+    
+    <!-- fondo oscuro cuando se abre el modal -->
+    <div class="slds-backdrop slds-backdrop--open  slds-hidden"  aura:id="backGroundModal"></div>
+</aura:component>

@@ -1,0 +1,258 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" controller="ExtensionOppController">
+    
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="caseRecord" type="Oportunidad__c"/>
+    <aura:attribute name="recordError" type="String"/>
+    <aura:attribute name="dataRecord" type="Oportunidad__c"/>
+    <aura:attribute name="disabledSave" type="String" default="false"/>
+    <aura:attribute name="RecordTypeName" type="String"/>
+    <aura:attribute name="Subfase" type="String"/>
+    
+    <aura:attribute name="Oportunidad" type="Oportunidad__c"/>
+    <aura:attribute name="LineasServicio" type="String[]"/>
+    <aura:attribute name="TipoExtensionValue" type="String"/>
+    
+    <aura:attribute name ="fecha_hoy" type="Date"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:if isTrue ="{! AND(v.Oportunidad.Tipo_Extension__c =='Extensión Desglose', v.Oportunidad.Subfase__c !=  'Ganada')}">
+        
+        <h2 style="font-size: 15px;color: red;" class="slds-text-align_center">
+            <br></br>
+           
+            <strong>
+                
+                Las extensiones rectificativas solo se pueden generar una vez que la oportunidad esté Cerrada y Ganada
+                
+            </strong>
+        </h2>
+        
+        <aura:set attribute="else">
+            <h4 style="font-size: 15px;color: red;" class="slds-text-align_center">
+                <strong>
+                    Vas a crear una Extensión a partir de la {!v.Oportunidad.Codigo_OC__c} - {!v.Oportunidad.Name}.<br></br>
+                    Aún así, debes dar una revisión general de la Extensión, 
+                    por si hay algún campo que cambie respecto a la original.
+              
+                </strong>
+              
+            </h4>
+            
+            <br></br>
+            <!--EXENSION AYESA  -->
+           
+            <aura:if isTrue="{!OR(v.RecordTypeName == 'Ayesa',v.RecordTypeName == 'Ibermatica Large Account', v.RecordTypeName == 'Ibermatica Latam')}">   
+                <lightning:layout pullToBoundary="medium">   
+                    
+                    <lightning:layoutItem size="6" padding="horizontal-medium">
+                        <lightning:input name="inputName" label="Nombre Oportunidad" aura:id="inputName"  required="true" maxlength="80"/>
+                    </lightning:layoutItem>
+                    
+                    <aura:if isTrue="{!OR(v.RecordTypeName == 'Ayesa',v.RecordTypeName == 'Ibermatica Large Account', v.RecordTypeName == 'Ibermatica Latam')}">
+                        <lightning:layoutItem size="3" padding="horizontal-medium">
+                            
+                            <lightning:select name="tipoExtension" label="Tipo Extensión" aura:id="tipoExtension" required="true" onchange="{! c.onChangeTipoExtension }">
+                                
+                                <aura:if isTrue="{! empty(v.Oportunidad.Oportunidad_Relacionada__c) }">
+                                    Sin oportunidad matriz relacionada
+                                    <option value="--"></option>
+                                    <option value="Extensión Desglose">Desglose</option>
+                                    <aura:if isTrue="{! v.Oportunidad.Subfase__c == 'Ganada'}">
+                                        <option value="Extensión Rectificativa">Extensión de ajuste o variación</option>
+                                        <!-- EBF: Añado Extensión CUTE-->
+                                         <option value="Extensión CUTE">Extensión CUTE</option>
+                                    </aura:if>
+                                    <aura:set attribute="else">
+                                        <option value="--"></option>
+                                        <option value="Extensión Rectificativa">Extensión de ajuste o variación</option>
+                                        <!-- EBF: Añado Extensión CUTE-->
+                                         <option value="Extensión CUTE">Extensión CUTE</option>
+                                    </aura:set>
+                                </aura:if>
+                            </lightning:select>
+                        </lightning:layoutItem> 
+                        <!--Solo mostramos la línea de servicio en una extension de desglose-->
+                        <!-- EBF: Se añade el tipo de Extensión CUTE -->
+                        <aura:if isTrue="{!v.TipoExtensionValue=='Extensión CUTE'}">
+                             <lightning:layoutItem size="3" padding="horizontal-medium">
+                        <lightning:input type="date" name="inputFechaContrato" label="Fecha contrato" aura:id="inputFechaContrato"  required="true" disabled="true" value="{!v.Oportunidad.Fecha_firma_contrato__c}" />
+                    </lightning:layoutItem>
+                        <!-- EBF END -->
+                        </aura:if>
+                        <aura:if isTrue="{!v.TipoExtensionValue=='Extensión Rectificativa'}">
+                             <lightning:layoutItem size="3" padding="horizontal-medium">
+                        <lightning:input type="date" name="inputFechaContrato" label="Fecha contrato" aura:id="inputFechaContrato"  required="true" disabled="true" value="{!v.Oportunidad.Fecha_firma_contrato__c}" />
+                    </lightning:layoutItem>
+                        </aura:if>
+                        <aura:if isTrue="{!v.TipoExtensionValue=='Extensión Desglose'}">
+                            <lightning:layoutItem size="3" padding="horizontal-medium">
+                                <lightning:select aura:id="LineasServicioPicklist" name="LineasServicioPicklist" label="Líneas de Servicio" required="true">
+                                    <option value=""></option>
+                                    <aura:iteration items="{!v.LineasServicio}" var="linea" >
+                                        <option value="{!linea}" text="{!linea}"/>
+                                    </aura:iteration>                
+                                </lightning:select>
+                                
+                            </lightning:layoutItem>
+                        </aura:if>
+                        
+                    </aura:if>
+                    
+                    
+                </lightning:layout>  
+                <br></br>
+                
+                <lightning:layout pullToBoundary="medium">
+                    <lightning:layoutItem size="3" padding="horizontal-medium">
+                        <lightning:input type="date" name="inputFechaCierre" label="Fecha cierre" aura:id="inputFechaCierre"  required="true" value="{!v.fecha_hoy}" />
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="3" padding="horizontal-medium">
+                        <lightning:input type="date" name="inputFechaPresentacion" label="Fecha presentación" aura:id="inputFechaPresentacion"  required="true" value="{!v.Oportunidad.Fecha_limite_de_presentacion__c}" />   
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="3" padding="horizontal-medium">
+                        <lightning:input  type="number" name="inputPlazo" label="Plazo ejec. (meses)" aura:id="inputPlazo"  required="true" value="{!v.Oportunidad.Plazo_de_ejecuci_n_meses__c}" />
+                    </lightning:layoutItem>
+                    
+                    <aura:if isTrue="{!OR(v.RecordTypeName == 'Ayesa',v.RecordTypeName == 'Ibermatica Large Account', v.RecordTypeName == 'Ibermatica Latam')}">
+                        <lightning:layoutItem size="3" padding="horizontal-medium">
+                            <lightning:input  type="number" name="inputMargenEstimado" label="% Rentabilidad" aura:id="inputMargenEstimado"  required="true" step="0.01"  />
+                        </lightning:layoutItem>
+                    </aura:if>
+                </lightning:layout>                
+                
+                <br></br>
+                <lightning:layout pullToBoundary="medium">
+                    <aura:if isTrue="{!OR(v.RecordTypeName == 'Ayesa',v.RecordTypeName == 'Ibermatica Large Account', v.RecordTypeName == 'Ibermatica Latam')}">
+                        
+                        <lightning:layoutItem size="4" padding="horizontal-medium">
+                            <lightning:input  type="number"  name="inputImporteTotalOfertado" label="Importe Total(sin IVA)€" aura:id="inputImporteTotalOfertado"  required="true" step="0.01"  />
+                        </lightning:layoutItem>
+                    </aura:if>
+                    <lightning:layoutItem size="3" padding="horizontal-medium">
+                        <lightning:select name="probabilidad" label="Probabilidad" aura:id="probabilidad" required="true" value="{!v.Oportunidad.Probabilidad__c}">
+                            <option value="0">0</option>
+                            <option value="10">10</option>
+                            <option value="30">30</option>
+                            <option value="50">50</option>
+                            <option value="70">70</option>
+                            <option value="90">90</option>
+                            <option value="100">100</option>
+                        </lightning:select>
+                    </lightning:layoutItem>
+                    
+                    
+                    
+                    <lightning:layoutItem size="3" padding="horizontal-medium">
+                        <lightning:select name="tipo_de_negocio" label="Tipo de Negocio" aura:id="tipo_de_negocio" required="true" value="{!v.Oportunidad.Tipo_de_Negocio__c}">
+                            <option value=""></option>
+                            <option value="Automatic Extension">Automatic Extension</option>
+                            <option value="Recurrent Extension">Recurrent Extension</option>
+                            <option value="Previous contract multiyear/multistage">Previous contract multiyear/multistage</option>
+                            <option value="Previous exclusive framework agreement">Previous exclusive framework agreement</option>
+                            <option value="Previous framework agreement with competitors">Previous framework agreement with competitors</option>
+                            <option value="New Extension or variation">New Extension or variation</option>
+                            <option value="New exclusive framework agreement">New exclusive framework agreement</option>
+                            <option value="New framework agreement with competitors">New framework agreement with competitors</option>
+                            <option value="New contract being incumbent">New contract being incumbent</option>
+                            <option value="New contract">New contract</option>
+                            <option value="New contract multiyear/multistage">New contract multiyear/multistage</option>
+                        </lightning:select>
+                    </lightning:layoutItem>
+                    
+                    <!--{! AND( empty(v.Oportunidad.Origen__c) == false,v.TipoExtensionValue=='Extensión Rectificativa')}-->
+                  <!-- <aura:if isTrue="{! empty(v.Oportunidad.Origen__c) == false}">-->
+                   <lightning:layoutItem size="2.5" padding="horizontal-medium">
+                        <lightning:select name="" label="Origen" aura:id="Origen" required="true" value="{!v.Oportunidad.Origen__c}">
+                            <option value="Hard">Hard</option>
+                            <option value="Soft">Soft</option>
+                            <option value="Stock">Stock</option>
+                        </lightning:select>
+                    </lightning:layoutItem>
+                  <!--  </aura:if>-->
+                </lightning:layout> 
+                
+                <div class="slds-grid slds-align_absolute-center">
+                    <div class="slds-col slds-align_absolute-center">
+                        <div style="margin-top:25px;">
+                            <lightning:button aura:id="cloneBtn"  variant="brand" label="Extender" onclick="{!c.extensionOpp}" disabled="{!v.disabledSave}" />                        
+                        </div>
+                    </div>
+                </div>
+            </aura:if>
+          
+            
+   
+            
+            <!--EXTENSION PARA IBERMATICA SME-->
+            <aura:if isTrue="{!v.RecordTypeName == 'Ibermatica SME'}">
+                <lightning:layout pullToBoundary="medium">   
+                    
+                    <lightning:layoutItem size="6" padding="horizontal-medium">
+                        <lightning:input name="inputName" label="Nombre Oportunidad" aura:id="inputName"  required="true" maxlength="80"/>
+                    </lightning:layoutItem>
+                    
+                    
+                </lightning:layout>  
+                <br></br>
+                
+                <lightning:layout pullToBoundary="medium">
+                    <lightning:layoutItem size="4" padding="horizontal-medium">
+                        <lightning:input type="date" name="inputFechaCierre" label="Fecha cierre" aura:id="inputFechaCierre"  required="true" />
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="4" padding="horizontal-medium">
+                        <lightning:input type="date" name="inputFechaPresentacion" label="Fecha presentación" aura:id="inputFechaPresentacion"  required="true" />   
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="4" padding="horizontal-medium">
+                        <lightning:input  type="number" name="inputPlazo" label="Plazo ejec. (meses)" aura:id="inputPlazo"  required="true" />
+                    </lightning:layoutItem>
+                </lightning:layout>                
+                
+                <br></br>
+                <lightning:layout pullToBoundary="medium">
+                    <lightning:layoutItem size="4" padding="horizontal-medium">
+                        <lightning:select name="probabilidad" label="Probabilidad" aura:id="probabilidad" required="true">
+                            <option value="0">0</option>
+                            <option value="10">10</option>
+                            <option value="30">30</option>
+                            <option value="50">50</option>
+                            <option value="70">70</option>
+                            <option value="90">90</option>
+                            <option value="100">100</option>
+                        </lightning:select>
+                    </lightning:layoutItem>
+                    
+                    
+                    
+                    <lightning:layoutItem size="8" padding="horizontal-medium">
+                        <lightning:select name="tipo_de_negocio" label="Tipo de Negocio" aura:id="tipo_de_negocio" required="true">
+                            <option value=""></option>
+                            <option value="Automatic Extension">Automatic Extension</option>
+                            <option value="Recurrent Extension">Recurrent Extension</option>
+                            <option value="Previous exclusive framework agreement">Previous exclusive framework agreement</option>
+                            <option value="Previous framework agreement with competitors">Previous framework agreement with competitors</option>
+                            <option value="New Extension or variation">New Extension or variation</option>
+                            <option value="New exclusive framework agreement">New exclusive framework agreement</option>
+                            <option value="New framework agreement with competitors">New framework agreement with competitors</option>
+                            <option value="New contract being incumbent">New contract being incumbent</option>
+                            <option value="New contract">New contract</option>
+                            <option value="New contract multiyear/multistage">New contract multiyear/multistage</option>
+                        </lightning:select>
+                    </lightning:layoutItem>
+                </lightning:layout> 
+                
+                <div class="slds-grid slds-align_absolute-center">
+                    <div class="slds-col slds-align_absolute-center">
+                        <div style="margin-top:25px;">
+                            <lightning:button aura:id="cloneBtn"  variant="brand" label="Extender" onclick="{!c.extensionOpp}" disabled="{!v.disabledSave}" />                        
+                        </div>
+                    </div>
+                </div> 
+            </aura:if>
+        </aura:set>
+    </aura:if>
+    
+    
+    
+    
+</aura:component>

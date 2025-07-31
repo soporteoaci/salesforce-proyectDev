@@ -1,0 +1,10 @@
+@isTest
+global class CRM_IB_ModificacionClienteSUPERMock implements HttpCalloutMock{
+	global HttpResponse respond(HTTPRequest req){
+		HttpResponse res = new HttpResponse();
+		res.setStatus('OK');
+		res.setStatusCode(204);
+        
+		return res;
+	}
+}

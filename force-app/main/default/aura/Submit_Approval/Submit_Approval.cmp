@@ -1,0 +1,12 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" controller="Submit_ApprovarControlador" >
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="salida" type="String" />
+    <aura:attribute name="Prueba1" type="String" />
+    <aura:attribute name="Prueba2" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   
+    <div class="slds-text-heading_small slds-align_absolute-center">{!v.salida}</div>
+      <div class="slds-float_right">
+       <lightning:button variant="brand" label="Ok" onclick="{! c.handleClick }" />
+      </div>
+</aura:component>

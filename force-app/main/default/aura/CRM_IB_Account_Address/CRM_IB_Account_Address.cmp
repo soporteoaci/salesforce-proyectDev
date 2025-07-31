@@ -1,0 +1,60 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable" controller="CRM_IB_Account_Address_controller" >
+    
+    <aura:attribute name ="Cuenta" type ="Account"/>
+    
+    <aura:attribute name="province" type="String" default=""/>
+    <aura:attribute name="country" type="String" default=""/>
+    
+    <aura:attribute name="street" type="String" default=""/>
+    <aura:attribute name="city" type="String" default=""/>
+    <aura:attribute name="postalCode" type="String" default=""/>
+    
+    <aura:attribute name="provinceOptions" type="List" default="[]"/>
+    <aura:attribute name="countryOptions" type="String[]" />
+    <aura:attribute name="previousCountry" type="String"/>
+    
+    <aura:attribute name='pais_elegido' type="String"/>
+    <aura:attribute name='provincia_elegida' type="String"/>
+    <aura:attribute name='calle_elegida' type="String"/>
+    <aura:attribute name='ciudad_elegida' type="String"/>
+    <aura:attribute name='codigopost_elegido' type="String"/>
+    
+    <aura:attribute name="Mostrar_errorMessage" type="Boolean" default= "false"/>
+    
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+   
+            <aura:if isTrue="{!v.Mostrar_errorMessage}">
+                <h4 style="font-size: 15px;color: red;" class="slds-text-align_center">
+                    <strong>
+                        Informe todos los campos obligatorios 
+                    </strong>
+                </h4>
+            </aura:if>
+     
+    <lightning:layout pullToBoundary="medium">            
+        <lightning:layoutItem size="6" padding="horizontal-medium">
+            <lightning:select aura:id="select_Pais" name="select_Pais" label="País / Country" onchange="{!c.valoresProvincia}" required="true">
+                <option value="" text="{!v.Cuenta.BillingCountry}"/>
+                <aura:iteration var="valor" items="{!v.countryOptions}" >
+                    <option text="{!valor}"/>
+                </aura:iteration>
+            </lightning:select>
+             
+            <lightning:textarea aura:id ='Calle' name="Calle" label="Calle / Street" value ="{!v.Cuenta.BillingStreet}" required="true" onchange="{!c.valorCalle}"/>
+            <lightning:input aura:id ="Ciudad" name="Ciudad" label="Ciudad / City" value ="{!v.Cuenta.BillingCity}" required="true" onchange="{!c.valorCiudad}"/>
+            <lightning:input aura:id ="Codigo_Postal" type="text" label="Código Postal / Postal Code"  name="Código Postal" value ="{!v.Cuenta.BillingPostalCode}" required="true" onchange="{!c.valorCodigoPostal}"/>
+            
+            <lightning:select aura:id="select_Provincia" name="select_Provincia" label="Provincia / State"  onchange="{!c.valorProvinces}" required="true">
+                <option value="" text="{!v.Cuenta.BillingState}"/>
+                <aura:iteration var="valor" items="{!v.provinceOptions}" >
+                    <option text="{!valor}"/>
+                </aura:iteration>
+            </lightning:select>
+            <lightning:button  aura:id="botonGuardar" label="Guardar"  onclick="{!c.Guardar_direccion}" variant="brand" class="slds-m-top_medium" disabled="{!v.disabledSave}" />
+        </lightning:layoutItem>
+          
+    </lightning:layout>
+    
+   
+</aura:component>

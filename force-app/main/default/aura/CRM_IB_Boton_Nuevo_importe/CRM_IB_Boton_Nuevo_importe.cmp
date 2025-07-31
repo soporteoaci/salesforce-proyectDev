@@ -1,0 +1,206 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable" controller="CRM_IB_Boton_Nuevo_Importe">
+    
+    <aura:attribute name="Oportunidad" type ="Oportunidad__c"/>
+    <aura:attribute name="Show_create_form" type="Boolean" default= "false"/>
+    <aura:attribute name="Show_create_boton" type="Boolean" default= "true"/>
+    <aura:attribute name="Show_fields_seccion" type="String" default =""/>
+    <aura:attribute name="Show_Area_Sol_Pro" type="String" default ="false"/>
+    
+    <aura:attribute name="Oportunidad_Id" type="Id"/>
+    
+    <aura:attribute name ="Valores_Area" type="String[]" default="" />
+    <aura:attribute name ="Valores_Producto" type = "List" default=""/>
+    <aura:attribute name ="Valores_Solucion" type = "List" default=""/>
+    <aura:attribute name ="Solucion_producto_obligatorio" type ="Boolean" default="true"/>
+    
+    <aura:attribute name= "RecordType_Op" type="String" default=""/>
+    
+    <aura:attribute name= "Name" type="String" default=""/>
+    <aura:attribute name= "Seccion" type="String" default=""/>
+    <aura:attribute name= "ImporteBruto" type="String" default=""/>
+    <aura:attribute name= "Descuento" type="String" default="0"/>
+    <aura:attribute name= "Cantidad" type="String" default=""/>
+    <aura:attribute name= "Coste" type="String" default=""/>
+    <aura:attribute name= "Costehoras" type="String" default=""/>
+    <aura:attribute name= "Horas" type="String" default=""/>
+    <aura:attribute name= "Tipo" type="String" default=""/>
+    <aura:attribute name= "Tipo_de_Pago" type="String"/>
+    <aura:attribute name= "Observaciones" type="String" default=""/>
+    <aura:attribute name= "Area" type="String" default=""/>
+    <aura:attribute name= "Solucion" type="String" default=""/>
+    <aura:attribute name= "Producto" type="String" default=""/>
+    <aura:attribute name= "Modulo" type="String" default=""/>
+    <aura:attribute name ="Modulo_aux" type = "String" />
+    
+    
+    <aura:attribute name="successMessage" type="String" default=""  />
+    <aura:attribute name="warningMessage" type="String" default=""  />
+    <aura:attribute name="errorMessage" type="String" default=""  />
+    <aura:attribute name="Mostrar_errorMessage" type="Boolean" default= "false"/>
+    
+    <aura:attribute name="warnings" type="List" default=""  />
+    <aura:attribute name="errors" type="List" default=""  />
+    
+    <aura:attribute name="disabledSave" type="String" default="false"/>
+    <aura:attribute name="Boton_otro_importe" type="String" default="false"/>
+    
+    <!--Multipicklist -->
+    <aura:attribute name="options" type="List" default="[]"/>
+    <aura:attribute name="values" type="List" default="[]"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    
+    
+    
+    
+    <aura:if isTrue ="{!v.Show_create_boton}">
+        <lightning:button label="Crear Importe" onclick="{!c.handleClick}"/>  
+    </aura:if>
+    <br></br>
+    <aura:if isTrue ="{!v.Show_create_form}">
+        <lightning:card iconName="standard:budget_category_value" title="Crear Importe"> 
+            <aura:if isTrue="{!v.Mostrar_errorMessage}">
+                <h4 style="font-size: 15px;color: red;" class="slds-text-align_center">
+                    <strong>
+                        Informe todos los campos obligatorios antes de crear el importe
+                    </strong>
+                </h4>
+            </aura:if>
+            <div class="slds-p-around_medium">
+                
+                <lightning:layout>
+                    <lightning:layoutItem size="5" padding="around-small">
+                        <lightning:input aura:id="Name_importe" name ="Name_importe" label="Nombre importe" type="text"  required="true" value="{!v.Name}"/>
+                        
+                        <lightning:select aura:id="select_Seccion" name="select_Seccion" label="Sección" required="true" onchange="{!c.SectionSelected}" value="{!v.Seccion}">
+                            <aura:iteration var="valor" items=",HARD,MTTO.HARD,SOFT,MTTO.SOFT,SRV" >
+                                <option text="{!valor}"/>
+                            </aura:iteration>
+                        </lightning:select>
+                        
+                        <lightning:input aura:id="Importe_bruto" name= "Importe_bruto" label="Importe bruto" type="number" step="0.01" required="true" value="{!v.ImporteBruto}"/>
+                        <!--Campo Coste para Oportunidades Latam y Large-->
+                        <aura:if isTrue ="{! v.RecordType_Op != 'Ibermatica SME' }">
+                            <lightning:input aura:id="Coste" name ="Coste" label="Coste" type="number" step="0.01" required="true" value="{!v.Coste}"/>
+                        </aura:if>
+                        
+                        <!--Campos de importe para SME-->
+                        <aura:if isTrue="{! equals(v.RecordType_Op, 'Ibermatica SME')}"> 
+                            <lightning:input aura:id="Descuento" label="% Descuento" name="Descuento" formatter="percent" value="{!v.Descuento}" step="0.01" required="true"/>
+                            
+                            <aura:if isTrue ="{! v.Show_fields_seccion != 'SRV' }">
+                                
+                                <lightning:input aura:id="Cantidad" name= "Cantidad" label="Cantidad" type="number"  required="true" value="{!v.Cantidad}"/>
+                                <lightning:input aura:id="Coste" name ="Coste" label="Coste" type="number" step="0.01" required="true" value="{!v.Coste}"/>
+                            </aura:if>
+                            
+                            <aura:if isTrue ="{! v.Show_fields_seccion == 'SRV' }">
+                                
+                                <lightning:select aura:id="select_Costehoras" name="select_Costehorasa" label="Coste horas" required="true" value="{!v.Costehoras}" >
+                                    <aura:iteration var="valor" items=",27,40,45,60,80" >
+                                        <option text="{!valor}"/>
+                                    </aura:iteration>
+                                    
+                                </lightning:select>
+                                <lightning:input aura:id="Horas" name="Horas" label="Horas" type="number"  required="true" value="{!v.Horas}" step="0.01"/>   
+                                
+                                
+                            </aura:if>
+                            
+                            
+                            
+                            <aura:if isTrue ="{! v.Show_fields_seccion == 'SOFT'}">
+                                
+                                <lightning:select aura:id="select_Tipo" name="select_Tipo" label="Tipo" required="true"  value="{!v.Tipo}">
+                                    <aura:iteration var="valor" items=",Nueva licencia,Upgrade,Migración" >
+                                        <option text="{!valor}"/>
+                                    </aura:iteration>
+                                </lightning:select> 
+                                
+                                <lightning:select aura:id="select_Tipo_Pago" name="select_Tipo_Pago" label="Tipo de Pago" required="true" value="{!v.Tipo_de_Pago}" >
+                                    <aura:iteration var="valor" items=",PLC,PSC,QLC,QSC,YLC,YSC" >
+                                        <option text="{!valor}"/>
+                                    </aura:iteration>
+                                </lightning:select>  
+                                
+                            </aura:if>
+                            
+                            <lightning:textarea aura:id="Observaciones" name ="Observaciones" label="Observaciones"  required="false" value="{!v.Observaciones}"/>
+                        </aura:if>
+                        <!--BOTÓN GUARDAR-->
+                        <lightning:button  aura:id="botonCrear" label="Crear Importe"  onclick="{!c.Guardar_importe}" variant="brand" class="slds-m-top_medium" disabled="{!v.disabledSave}" />
+                        <!---->
+                        
+                        <!--BOTÓN CREAR OTRO IMPORTE-->
+                        <!--<aura:if isTrue="{!v.Boton_otro_importe}">
+                            <lightning:button  aura:id="botonCrearOtroImporte" label="Crear otro importe"  onclick="{!c.Crear_importe_2}" variant="brand" class="slds-m-top_medium" />
+                        </aura:if>-->
+                        <!---->
+                        <!--BOTÓN CERRAR-->
+                        <lightning:button label="Cerrar" onclick="{!c.Cerrar}" variant="brand" class="slds-m-top_medium" />
+                        <!---->
+                    </lightning:layoutItem>
+                    
+                    <aura:if isTrue="{! v.Show_Area_Sol_Pro}">
+                        
+                        <lightning:layoutItem size="10" padding="around-small">
+                            
+                            <lightning:layout pullToBoundary="medium" >    
+                                
+                                <lightning:layoutItem size="4" padding="horizontal-medium" >
+                                    <lightning:select aura:id="select_Area" name="select_Area" label="Area" required="true" onchange="{!c.AreaSelected}" value="{!v.Area}">
+                                        <aura:iteration var="valor" items="{!v.Valores_Area}" >
+                                            <option text="{!valor}"/>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </lightning:layoutItem>
+                            </lightning:layout>
+                            <lightning:layout pullToBoundary="medium" >  
+                                <lightning:layoutItem size="4" padding="horizontal-medium" >
+                                    <lightning:select aura:id="select_Solucion" name="select_Solucion" label="Solucion" required="{! v.Solucion_producto_obligatorio}" onchange="{!c.SolucionSelected}" value="{!v.Solucion}">
+                                        <aura:iteration items="{!v.Valores_Solucion}" var="valor">
+                                            <option text="{!valor}"></option>                
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </lightning:layoutItem>
+                            </lightning:layout>
+                            
+                            <lightning:layout pullToBoundary="medium" >  
+                                <lightning:layoutItem size="4" padding="horizontal-medium" >
+                                    <lightning:select aura:id="select_Producto" name="select_Producto" label="Producto" required="{!v. Solucion_producto_obligatorio}" onchange="{!c.ProductoSelected}" value="{!v.Producto}" >
+                                        
+                                        <aura:iteration items="{!v.Valores_Producto}" var="valor">
+                                            <option text="{!valor}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </lightning:layoutItem>
+                            </lightning:layout>
+                            
+                            
+                            <lightning:layoutItem size="8" padding="around-small" >
+                                <lightning:dualListbox name="multipleOptions"
+                                                       aura:id ="select_modulo"
+                                                       label= "Modulo" 
+                                                       sourceLabel="Disponible" 
+                                                       selectedLabel="Seleccionado" 
+                                                       options="{!v.options}" 
+                                                       value="{!v.values}" 
+                                                       onchange="{! c.handleChange}"/>
+                            </lightning:layoutItem>
+                        </lightning:layoutItem>       
+                    </aura:if>
+                    
+                    
+                    
+                    
+                    
+                    
+                </lightning:layout>
+                
+            </div>
+        </lightning:card>
+    </aura:if>
+    
+    
+</aura:component>

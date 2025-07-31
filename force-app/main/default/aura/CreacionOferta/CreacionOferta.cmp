@@ -1,0 +1,821 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="CreacionOfertaController">
+    
+    <aura:attribute name="idOpp" type="String" default="" description="Id de la Oportunidad"/> 
+    <aura:attribute name="oportunidad" type="Oportunidad__c" default="" description="Oportunidad recuperada con los campos a mostrar en la pantalla"/>
+    <aura:attribute name="ofertaSAP" type="String" default="" description="Código de oferta SAP" />
+    <aura:attribute name="preventa" type="Boolean" default="false" description="Preventa" />
+    
+    <!--<aura:attribute name="Empleado" type="sObject" default="" description="Empleados para la búsqueda"/>-->
+    <aura:attribute name="EmpleadoNombre" type="String" default="" description="EmpleadoNombre para la búsqueda"/>
+    <aura:attribute name="EmpleadoApellido1" type="String" default="" description="EmpleadoApellido1 para la búsqueda"/>
+    <aura:attribute name="EmpleadoApellido2" type="String" default="" description="EmpleadoApellido2 para la búsqueda"/>
+    <aura:attribute name="EmpleadoCodigo" type="String" default="" description="EmpleadoCodigo para la búsqueda"/>
+    <aura:attribute name="TipoEmpleado" type="String" default="" description="Tipo Empleado para la búsqueda"/>
+    
+    <aura:attribute name="ClienteNombre" type="String" default="" description="Nombre Cliente para la búsqueda"/>
+    <aura:attribute name="ClienteCodigo" type="String" default="" description="Codigo Cliente para la búsqueda"/>
+        
+    <aura:attribute name="EsEmpleado" type="Boolean" default="true" description="Discriminar el modal que se abre, empleado=true y cliente=false"/>
+    <aura:attribute name="IsModal" type="Boolean" default="false" description="Discriminar el modal que se abre, empleado=true y cliente=false"/>
+        
+    <aura:attribute name="DeshabilitarBoton" type="Boolean" default="true" description="Habilitar boton"/>
+    <aura:attribute name="DeshabilitarBotonOfertaSAP" type="Boolean" default="true" description="Habilitar boton de petición de Oferta SAP"/>
+    <aura:attribute name="disabledGenOferButton" type="Boolean" default="false" description="Control del botón de Generar Oferta en SAP"/>
+    <aura:attribute name="disabledEmailOferButton" type="Boolean" default="false" description="Control del botón de Solicitar Oferta email"/>
+    
+    <aura:attribute name="InfoParametrica" type="Map" default="" description="Lista de los empleados devueltos por el webservice"/>
+    
+    <aura:attribute name="ListEmpleado" type="List" default="[]" description="Lista de los empleados devueltos por el webservice"/>
+    <aura:attribute name="ListCliente" type="List" default="[]" description="Lista de los clientes devueltos por el webservice"/>
+    
+    
+    <!-- LISTAS DE VALORES -->
+    <aura:attribute name="AETIC" type="List" default="" description="Lista con los valores del campo AETIC" />
+    <aura:attribute name="AREA_NEGOCIO" type="List" default="" description="Lista con los valores del campo AREA_NEGOCIO" />
+    <aura:attribute name="PAIS" type="List" default="" description="Lista con los valores del campo PAIS" />
+    <aura:attribute name="PAIS_CLIENTE" type="List" default="" description="Lista con los valores del campo PAIS_CLIENTE" />
+    <aura:attribute name="SECTOR_CLIENTE" type="List" default="" description="Lista con los valores del campo SECTOR_CLIENTE" />
+    <aura:attribute name="spinnerMsg" type="String" default="Cargando"  />
+    <aura:attribute name="showSpinner" type="Boolean" default="false" description="Booleano que muestra el spinner"/>
+    <aura:attribute name="showSpinnerModal" type="Boolean" default="false" description="Booleano que muestra el spinner del modal"/>
+    
+    <!-- MENSAJES DEL SISTEMA -->
+    <aura:attribute name="successMessage" type="String" default=""  />
+    <aura:attribute name="warningMessage" type="String" default=""  />
+    <aura:attribute name="errorMessage" type="String" default=""  />
+    <aura:attribute name="warnings" type="List" default=""  />
+    <aura:attribute name="errors" type="List" default=""  />
+        
+    <aura:attribute name="AREA_NEGOCIO_N1" type="List" default="" description="Lista con los valores del campo AREA_NEGOCIO_N1" />
+    <aura:attribute name="AREA_NEGOCIO_N2" type="List" default="" description="Lista con los valores del campo AREA_NEGOCIO_N2" />
+    
+    <aura:attribute name="DIVISION_SAP" type="List" default="" description="Lista con los valores del campo DIVISION SAP" />
+    <aura:attribute name="TERRITORIO" type="List" default="" description="Lista con los valores del campo TERRITORIO" />
+    <aura:attribute name="TERRITORIO_EJEC" type="List" default="" description="Lista con los valores del campo TERRITORIO" />
+    <aura:attribute name="TERRITORIO_CLI" type="List" default="" description="Lista con los valores del campo TERRITORIO" />
+    <aura:attribute name="CENTRO" type="List" default="" description="Lista con los valores del campo CENTRO" />
+    <aura:attribute name="GRUPO" type="List" default="" description="Lista con los valores del campo GRUPO" />
+    <aura:attribute name="SUBGRUPO" type="List" default="" description="Lista con los valores del campo SUBGRUPO" />
+    <aura:attribute name="FUNCIONAL_N1" type="List" default="" description="Lista con los valores del campo FUNCIONAL_N1" />
+    <aura:attribute name="FUNCIONAL_N2" type="List" default="" description="Lista con los valores del campo FUNCIONAL_N2" />
+    <aura:attribute name="FUNCIONAL_N3" type="List" default="" description="Lista con los valores del campo FUNCIONAL_N3" />
+    <aura:attribute name="TECNICO_N1" type="List" default="" description="Lista con los valores del campo TECNICO_N1" />
+    <aura:attribute name="TECNICO_N2" type="List" default="" description="Lista con los valores del campo TECNICO_N2" />
+    
+    <!-- FIN LISTA DE VALORES -->
+    
+    
+    <!--<lightning:spinner aura:id="mySpinner" variant="brand" size="large" class="" title="{!v.spinnerMsg}" alternativeText="..."/> -->
+    <c:Custom_Spinner show="{!v.showSpinner}" type="large" spinnerText="{!v.spinnerMsg}"/>
+        
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    
+    <!-- Success Toast -->
+    <div aura:id="success-toast" class="{! 'slds-grid slds-notify_container slds-is-relative' + (empty(v.successMessage) ? ' slds-hide' : ' slds-show') }">
+        <div class="slds-notify slds-notify_toast slds-theme_success" role="status">
+          	<span class="slds-assistive-text">success</span>
+          	<span class="slds-icon_container slds-icon-utility-success slds-m-right_small slds-no-flex slds-align-top" >
+                <lightning:icon iconName="utility:success" variant="inverse" size="small"/>
+          	</span>
+          	<div class="slds-notify__content">
+            	<h2 class="slds-text-heading_small ">{! v.successMessage }</h2>
+          	</div>
+          	<div class="slds-notify__close">
+            	<button class="slds-button slds-button_icon slds-button_icon-inverse" title="Cerrar" onclick="{!c.CloseToast}" toast-id="success-toast">
+              		<lightning:icon iconName="utility:close" variant="inverse" size="small" />
+              		<span class="slds-assistive-text">Cerrar</span>
+            	</button>
+          	</div>
+        </div>
+    </div>
+    
+	<!-- Warning Toast -->
+    <div aura:id="warning-toast" class="{! 'slds-notify_container slds-is-relative' + (empty(v.warningMessage) ? ' slds-hide' : ' slds-show') }">
+        <div class="slds-notify slds-notify_toast slds-theme_warning" role="status">
+            <span class="slds-assistive-text">warning</span>
+            <span class="slds-icon_container slds-icon-utility-warning slds-m-right_small slds-no-flex slds-align-top" title="Advertencia">
+                <lightning:icon iconName="utility:warning" variant="inverse" size="small"/>
+            </span>
+            <div class="slds-notify__content">
+                <h2 class="slds-text-heading_small ">{! v.warningMessage }</h2>
+                <aura:iteration items="{!v.warnings}" var="warning" indexVar="i"><p>{! warning }</p></aura:iteration>
+            </div>
+            <div class="slds-notify__close">
+                <button class="slds-button slds-button_icon slds-button_icon-inverse" title="Cerrar" onclick="{!c.CloseToast}" toast-id="warning-toast">
+                    <lightning:icon iconName="utility:close" variant="inverse" size="small"/>
+                    <span class="slds-assistive-text">Cerrar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Error Toast -->
+    <div aura:id="error-toast" class="{! 'slds-notify_container slds-is-relative' + (empty(v.errorMessage) ? ' slds-hide' : ' slds-show') }">
+        <div class="slds-notify slds-notify_toast slds-theme_error" role="status">
+            <span class="slds-assistive-text">error</span>
+            <span class="slds-icon_container slds-icon-utility-error slds-m-right_small slds-no-flex slds-align-top" title="Error">
+                <lightning:icon iconName="utility:error" variant="inverse" size="small"/>
+            </span>
+            <div class="slds-notify__content">
+                <h2 class="slds-text-heading_small">{! v.errorMessage }</h2>                
+                <aura:iteration items="{!v.errors}" var="error" indexVar="i"><p>{! error }</p></aura:iteration>
+            </div>
+            <div class="slds-notify__close">
+                <button class="slds-button slds-button_icon slds-button_icon-inverse" title="Cerrar" onclick="{!c.CloseToast}" value="error-toast">
+                    <lightning:icon iconName="utility:close" variant="inverse" size="small"/>
+                    <span class="slds-assistive-text">Cerrar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem padding="around-small" size="12">
+                
+                <aura:if isTrue="{!$Browser.formFactor != 'DESKTOP'}" >
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-1 ">
+                            <!--<div class="slds-page-header__name">
+                                <div class="slds-page-header__name-title">
+                                    <h1>
+                                        <span>Oportunidad</span>
+                                        <span class="slds-page-header__title slds-truncate" title="{!v.oportunidad.Name}">{!v.oportunidad.Name}</span>
+                                    </h1>
+                                </div>
+                            </div>-->
+                            <div class="slds-media">
+                                <div class="slds-media__figure">
+                                    <lightning:icon iconName="custom:custom41" size="medium" alternativeText="Oportunidad"/>
+                                </div>
+                                <div class="slds-media__body">
+                                    <div class="slds-page-header__name">
+                                        <div class="slds-page-header__name-title">
+                                            <h1>
+                                                <span>Oportunidad</span>
+                                                <span class="slds-page-header__title slds-truncate" title="{!v.oportunidad.Name}">{!v.oportunidad.Name}</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-grid slds-wrap slds-m-top_medium">
+                            <div class="slds-col slds-size_1-of-1 slds-p-around_xxx-small">
+                                <lightning:button label="Guardar" aura:id="GuardarOf" onclick="{! c.save }" class="slds-truncate slds-has-flexi-truncate slds-size_large" />
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-p-around_xxx-small">
+                                <lightning:button label="Solicitud de código Oferta y Soporte a Oferta" aura:id="solOferta" class="slds-truncate slds-has-flexi-truncate slds-size_large" 
+                                                  onclick="{! c.SolicitarOferta }"  disabled="{!v.disabledEmailOferButton}" />
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-p-around_xxx-small">
+                                <lightning:button label="Generar Oferta" aura:id="GenOferta" onclick="{! c.GenOferta }" class="slds-truncate slds-has-flexi-truncate slds-size_large" disabled="{!v.disabledGenOferButton}" />
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-p-around_xxx-small">
+                                <lightning:button label="Volver a Oportunidad" aura:id="GotoOpp" class="slds-truncate slds-has-flexi-truncate slds-size_large" onclick="{! c.IrOportunidad }"  />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <aura:set attribute="else">
+                        <div class="slds-box page-section page-header">
+                            <div class="slds-page-header slds-page-header_record-home">
+                                <div class="slds-page-header__row">
+                                    <div class="slds-page-header__col-title">
+                                        <div class="slds-media">
+                                            <div class="slds-media__figure">
+                                                <lightning:icon iconName="custom:custom41" size="medium" alternativeText="Oportunidad"/>
+                                            </div>
+                                            <div class="slds-media__body">
+                                                <div class="slds-page-header__name">
+                                                    <div class="slds-page-header__name-title">
+                                                        <h1>
+                                                            <span>Oportunidad</span>
+                                                            <span class="slds-page-header__title slds-truncate" title="{!v.oportunidad.Name}">{!v.oportunidad.Name}</span>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-page-header__col-actions">
+                                        <div class="slds-page-header__controls">                        
+                                            <div class="slds-page-header__control">                                        
+                                                <lightning:buttonGroup >
+                                                    <lightning:button label="Guardar" aura:id="GuardarOf" onclick="{! c.save }"  />
+                                                    <lightning:button label="Solicitud de código Oferta y Soporte a Oferta" aura:id="solOferta" onclick="{! c.SolicitarOferta }"  disabled="{!v.disabledEmailOferButton}" />
+                                                    <lightning:button label="Generar Oferta" aura:id="GenOferta" onclick="{! c.GenOferta }" disabled="{!v.disabledGenOferButton}" />
+                                                    <lightning:button label="Volver a Oportunidad" aura:id="GotoOpp" onclick="{! c.IrOportunidad }"  />
+                                                </lightning:buttonGroup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                    </aura:set>
+                </aura:if>
+                
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="12">
+                <lightning:layout>
+                    <!--<lightning:layoutItem padding="around-small" size="3">
+                        <div class="page-section page-right">
+                            <h2>Left Sidebar</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </lightning:layoutItem>-->
+                    <lightning:layoutItem size="12">
+                        <div class="slds-box page-section page-main">
+                            
+                            <!-- Bloque de checks -->
+                           
+                            <!--<div class="slds-box slds-col slds-size_6-of-6 slds-card__header" > 
+                                <fieldset class="slds-form-element">
+                                    <legend class="slds-form-element__legend slds-form-element__label" >{!$Label.c.CRM_Checks_de_confirmacion_CL}</legend>
+                                    
+                                    <lightning:input type="checkbox" name="Falta_definicion_del_objeto__c" aura:id="Falta_definicion_del_objeto__c" label="{!$Label.c.CRM_Falta_definicion_CL}" checked="{!v.oportunidad.Falta_definicion_del_objeto__c}" class="slds-m-horizontal_small" required="true" />             
+                                    <lightning:input type="checkbox" name="No_existe_Limitacion__c" aura:id="No_existe_Limitacion__c" label="{!$Label.c.CRM_No_existe_limitacion_CL}" checked="{!v.oportunidad.No_existe_Limitacion__c}" class="slds-m-horizontal_small" required="true" />
+                                    <lightning:input type="checkbox" name="Se_incluye_lucro__c" aura:id="Se_incluye_lucro__c" label="{!$Label.c.CRM_Se_incluye_lucro_CL}" checked="{!v.oportunidad.Se_incluye_lucro__c}" class="slds-m-horizontal_small" required="true" />
+                                    <lightning:input type="checkbox" name="Posibilidad_de_resoluci_n_unilateral__c" aura:id="Posibilidad_de_resoluci_n_unilateral__c" label="{!$Label.c.CRM_Posibilidad_de_resolucion_unilateral_CL}" checked="{!v.oportunidad.Posibilidad_de_resoluci_n_unilateral__c}" class="slds-m-horizontal_small" required="true" />
+                                    <lightning:input type="checkbox" name="Resoluci_n_por_conveniencia__c" aura:id="Resoluci_n_por_conveniencia__c" label="{!$Label.c.CRM_Resolucion_por_conveniencia_CL}" checked="{!v.oportunidad.Resoluci_n_por_conveniencia__c}" class="slds-m-horizontal_small" required="true" />
+                                    <lightning:input type="checkbox" name="Causas_no_tasadas_y_ambiguas__c" aura:id="Causas_no_tasadas_y_ambiguas__c" label="{!$Label.c.CRM_Causas_no_tasadas_y_ambiguas_CL}" checked="{!v.oportunidad.Causas_no_tasadas_y_ambiguas__c}" class="slds-m-horizontal_small" required="true" />
+                                    
+                                    <br/><legend class="slds-form-element__legend slds-form-element__label" >{!$Label.c.CRM_Consulta_Departamento_Legal_CL}</legend>
+                                </fieldset> 
+                            </div>  -->
+        
+                                                        
+                            <!-- Bloque Info Proyecto -->   
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap"> 
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-6">
+                                	<lightning:input type="text" name="Codigo_OC" aura:id="Codigo_OC" label="Código de OC:" value="{!v.oportunidad.Codigo_OC__c}" required="true" disabled="true"/>
+                                </div>
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_5-of-6" >
+                                    <lightning:textarea name="Objetivo_del_proyecto__c" aura:id="Objetivo_del_proyecto__c" label="Objetivos del proyecto" value="{!v.oportunidad.Objetivo_del_proyecto__c}" maxlength="40" required="true"/>              
+                                </div>
+                            </div>
+
+                            <!-- Bloque de los Clientes -->   
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-grid_vertical-align-end slds-wrap"> 
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6 ">
+                                    <lightning:input type="text" name="Cliente" aura:id="Cliente" label="Cliente" value="{!v.oportunidad.Cliente__r.Name}" required="true" disabled="true" />
+                                </div>  
+                                
+                                <!--<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-6 ">
+                                    <lightning:input type="text" name="ClienteCod" aura:id="ClienteCod" label="Código Cliente SAP" value="{!v.oportunidad.Cliente__r.SAP_Account__c}" disabled="true" />
+                                </div>
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6" style="padding-top:25px">
+                                    <button class="slds-button slds-button_neutral slds-align-right " onclick="{!c.OpenModal}" value="Cliente"  required="true"   disabled="{!v.DeshabilitarBoton}">Asociar Código al Cliente</button>
+                                </div>-->
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6 ">
+                                    <div class="slds-grid slds-gutters slds-grid_vertical-align-end">                                         
+                                        <div class="slds-col slds-size_1-of-3 ">
+                                            <lightning:input type="text" name="ClienteCod" aura:id="ClienteCod" label="Código Cliente SAP" value="{!v.oportunidad.Cliente__r.SAP_Account__c}" disabled="true" />
+                                        </div>
+                                        
+                                        <div class="slds-col slds-size_2-of-3 slds-p-around_none" >
+                                            <button class="slds-button slds-button_neutral slds-align-right " onclick="{!c.OpenModal}" value="Cliente"  required="true"   disabled="{!v.DeshabilitarBoton}">Asociar Código al Cliente</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <!-- Bloque de los Empleados -->
+            				<div class="slds-grid slds-gutters slds-m-top_medium slds-grid_vertical-align-end slds-wrap"> 
+                                <!--<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-6" >
+                                    <lightning:input type="text"  required="true" name="JefeProyecto" aura:id="JefeProyecto" label="Jefe de Proyecto" value="{!v.oportunidad.Jefe_de_Proyecto__c}" disabled="true" />
+                                </div>
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-6">
+                                    <button class="slds-button slds-button_neutral slds-align-right"  required="true"   onclick="{!c.OpenModal}" value="Jefe_de_Proyecto__c">...</button>    
+                                </div>-->
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6 ">
+                                    <div class="slds-grid slds-gutters slds-grid_vertical-align-end">                                         
+                                        <div class="slds-col slds-size_2-of-3 ">
+                                            <lightning:input type="text"  required="true" name="JefeProyecto" aura:id="JefeProyecto" label="Responsable de Oferta" value="{!v.oportunidad.Jefe_de_Proyecto__c}" disabled="true" />
+                                        </div>
+                                        
+                                        <div class="slds-col slds-size_1-of-3 slds-p-around_none" >
+                                            <button class="slds-button slds-button_neutral slds-align-right"  required="true"   onclick="{!c.OpenModal}" value="Jefe_de_Proyecto__c">...</button>    
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-6" >
+                                    <lightning:input type="text" name="GP" aura:id="GP" required="true" label="GP" value="{!v.oportunidad.GP__c}" disabled="true" />
+                                </div>  
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-6">
+                                    <button class="slds-button slds-button_neutral slds-align-right"   onclick="{!c.OpenModal}" value="GP__c">...</button>    
+                                </div>-->
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6 ">
+                                    <div class="slds-grid slds-gutters slds-grid_vertical-align-end">                                         
+                                        <div class="slds-col slds-size_2-of-3 ">
+                                            <lightning:input type="text" name="GP" aura:id="GP" required="true" label="Director de División" value="{!v.oportunidad.GP__c}" disabled="true" />
+                                        </div>
+                                        
+                                        <div class="slds-col slds-size_1-of-3 slds-p-around_none" >
+                                            <button class="slds-button slds-button_neutral slds-align-right"   onclick="{!c.OpenModal}" value="GP__c">...</button>    
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-6" >
+                                    <lightning:input type="text" name="RUP" aura:id="RUP" label="RUP"   required="true" value="{!v.oportunidad.RUP__c}" disabled="true" />
+                                </div>  
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-6">
+                                    <button class="slds-button slds-button_neutral slds-align-right"   onclick="{!c.OpenModal}" value="RUP__c">...</button>    
+                                </div>-->
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6 ">
+                                    <div class="slds-grid slds-gutters slds-grid_vertical-align-end ">                                         
+                                        <div class="slds-col slds-size_2-of-3 ">
+                                            <lightning:input type="text" name="RUP" aura:id="RUP" label="Director de Mercados"   required="true" value="{!v.oportunidad.RUP__c}" disabled="true" />
+                                        </div>
+                                        
+                                        <div class="slds-col slds-size_1-of-3 slds-p-around_none" >
+                                            <button class="slds-button slds-button_neutral slds-align-right"   onclick="{!c.OpenModal}" value="RUP__c">...</button>    
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        				
+                            <!-- Bloque Fechas -->    
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap"> 
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6"  >
+                                    <lightning:input type="date" name="fecha_Limite_Presentacion" aura:id="fecha_Limite_Presentacion"  required="true" label="Fecha límite presentación"  value="{!v.oportunidad.Fecha_limite_de_presentacion__c}" />
+                                </div>  
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6" >
+                                    <lightning:input type="date" name="fecha_Inicio_PEP" aura:id="fecha_Inicio_PEP" required="true" label="Fecha Inicio PEP"  value="{!v.oportunidad.Fecha_estimada_de_cierre_calc__c}" disabled="true" />
+                                </div>  
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6" >
+                                    <lightning:input type="date" name="Fecha_Fin_PEP" aura:id="Fecha_Fin_PEP"  required="true" label="Fecha Fin PEP" value="{!v.oportunidad.Fecha_Fin_PEP_cal__c}" disabled="true" />
+                                </div>  
+                            </div>
+                            
+                            <!-- Bloque Licitacion -->    
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap"> 
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-6">
+                                    <lightning:select name="select" label="Probabilidad"   required="true" aura:id="Probabilidad" value="{!v.oportunidad.Probabilidad__c}">
+                                        <option value="100">100%</option>
+                                        <option value="90">90%</option>
+                                        <option value="70">70%</option>
+                                        <option value="50">50%</option>
+                                        <option value="30">30%</option>
+                                        <option value="10">10%</option>
+                                        <option value="0">0%</option>                                        
+                                    </lightning:select>                
+                                </div>                
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-6" >
+                                    <lightning:input type="text" name="PlazoMeses" aura:id="PlazoMeses" required="true" label="Plazo en meses"  value="{!v.oportunidad.Plazo_de_ejecuci_n_meses__c}" disabled="true" />
+                                </div>  
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-6" >
+                                    <lightning:input type="number" name="Importe" aura:id="Importe" required="true" label="Importe Licitación €" value="{!v.oportunidad.Importe_total_sin_IVA__c}" formatter="currency" step="0.01"/>
+                                </div> 
+                            </div>
+                            
+                            <!-- Bloque 1 campos consulta-->
+                            <!-- En el campo NAME de los SELECT se ha colocado el identificador de las las listas dependientes--> 
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap"> 
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="AREA_NEGOCIO_N1"  required="true"  label="Área de negocio" aura:id="AREA_NEGOCIO" value="{!v.oportunidad.Area_de_negocio__c}" onchange="{!c.filterValues}">
+                                        <option value="" text="{!v.oportunidad.Area_de_negocio__c}"></option>
+                                        <aura:iteration items="{!v.AREA_NEGOCIO}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>  
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="AREA_NEGOCIO_N2" required="true" label="Nivel 1" aura:id="AREA_NEGOCIO_N1" value="{!v.oportunidad.Area_de_negocio_N1__c}" onchange="{!c.filterValues}">
+                                        <option value="" text="{!v.oportunidad.Area_de_negocio_N1__c}"></option>
+                                        <aura:iteration items="{!v.AREA_NEGOCIO_N1}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>
+                            </div>
+                            
+                            <!-- Bloque 2 campos consulta-->
+                            <!-- En el campo NAME de los SELECT se ha colocado el identificador de las las listas dependientes--> 
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap"> 
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="select" label="Nivel 2" aura:id="AREA_NEGOCIO_N2" value="{!v.oportunidad.Area_de_negocio_N2__c}">
+                                        <option value="" text="{!v.oportunidad.Area_de_negocio_N2__c}"></option>
+                                        <aura:iteration items="{!v.AREA_NEGOCIO_N2}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>  
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6" >
+                                    <lightning:select name="select" label="División SAP" required="true" aura:id="DIVISION_SAP" value="{!v.oportunidad.Division_SAP__c}">
+                                        <option value="" text="{!v.oportunidad.Division_SAP__c}"></option>
+                                        <aura:iteration items="{!v.DIVISION_SAP}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>
+                            </div>
+                            
+                            <!-- Bloque 3 campos consulta-->
+                            <!-- En el campo NAME de los SELECT se ha colocado el identificador de las las listas dependientes--> 
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap">
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="select" label="Línea de actividad AETIC" required="true" aura:id="AETIC" value="{!v.oportunidad.AETIC__c}">
+                                        <option value="" text="{!v.oportunidad.AETIC__c}"></option>
+                                        <aura:iteration items="{!v.AETIC}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>  
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="select" label="Sector Cliente" required="true" aura:id="SECTOR_CLIENTE" value="{!v.oportunidad.Sector_cliente__c}">
+                                        <option value="" text="{!v.oportunidad.Sector_cliente__c}"></option>
+                                        <aura:iteration items="{!v.SECTOR_CLIENTE}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>
+                            </div>
+                            
+                            <!-- Bloque 4 campos consulta-->
+                            <!-- En el campo NAME de los SELECT se ha colocado el identificador de las las listas dependientes--> 
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap">
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="TERRITORIO_EJEC" required="true" label="País de ejecución" aura:id="PAIS" value="{!v.oportunidad.Pais_ejecucion__c}" onchange="{!c.filterValues}">
+                                        <option value="" text="{!v.oportunidad.Pais_ejecucion__c}"></option>
+                                        <aura:iteration items="{!v.PAIS}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>  
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="TERRITORIO" required="true" label="País del cliente" aura:id="PAIS_CLIENTE" value="{!v.oportunidad.Pais_cliente__c}" onchange="{!c.filterValues}">
+                                        <option value="" text="{!v.oportunidad.Pais_cliente__c}"></option>
+                                        <aura:iteration items="{!v.PAIS_CLIENTE}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div> 
+                            </div>
+                            
+                            <!-- Bloque 5 campos consulta-->
+                            <!-- En el campo NAME de los SELECT se ha colocado el identificador de las las listas dependientes--> 
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap">
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="select" required="true" label="Territorio de Ejecución"  aura:id="TERRITORIO_EJEC" value="{!v.oportunidad.Territorio_ejecucion__c}">
+                                        <option value="" text="{!v.oportunidad.Territorio_ejecucion__c}"></option>
+                                        <aura:iteration items="{!v.TERRITORIO_EJEC}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"> </option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>  
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="select" required="true" label="Territorio Cliente"  aura:id="TERRITORIO" value="{!v.oportunidad.Territorio_cliente__c}">
+                                        <option value="" text="{!v.oportunidad.Territorio_cliente__c}"></option>
+                                        <aura:iteration items="{!v.TERRITORIO}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>
+                            </div>
+                            
+                            <!-- Seccion de Localizacion -->
+                            <!-- En el campo NAME de los SELECT se ha colocado el identificador de las las listas dependientes--> 
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap">
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6">
+                                    <lightning:select name="select"   required="true" label="Centro"  aura:id="CENTRO" value="{!v.oportunidad.Centro__c}">
+                                       <option value="" text="{!v.oportunidad.Centro__c}"></option>
+                                        <aura:iteration items="{!v.CENTRO}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>  
+                                
+                                <!--<div class="slds-col slds-size_2-of-6">
+                                    <lightning:select name="SUBGRUPO"   required="true" label="Grupo"  aura:id="GRUPO" value="{!v.oportunidad.Grupo__c}" onchange="{!c.filterValues}">
+                                        <option value="" text="{!v.oportunidad.Grupo__c}"></option>
+                                        <aura:iteration items="{!v.GRUPO}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>  
+                                
+                                <div class="slds-col slds-size_2-of-6">
+                                    <lightning:select name="select"   required="true" label="Subgrupo"  aura:id="SUBGRUPO" value="{!v.oportunidad.Subgrupo__c}">
+                                        <option value="" text="{!v.oportunidad.Subgrupo__c}"></option>
+                                        <aura:iteration items="{!v.SUBGRUPO}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>-->
+                            </div>
+                            
+                            
+                            <!-- Bloque de clasificación funcional -->
+                            <!-- En el campo NAME de los SELECT se ha colocado el identificador de las las listas dependientes--> 
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap">
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6">
+                                    <lightning:select name="FUNCIONAL_N2" required="true"  label="Clasificación funcional - Nivel 1"  aura:id="FUNCIONAL_N1" value="{!v.oportunidad.Clasificacion_funcional_Nivel_1__c}" onchange="{!c.filterValues}">
+                                        <option value="" text="{!v.oportunidad.Clasificacion_funcional_Nivel_1__c}"></option>
+                                        <aura:iteration items="{!v.FUNCIONAL_N1}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>    
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6">
+                                    <lightning:select name="FUNCIONAL_N3" required="true" label="Clasificación funcional - Nivel 2"  aura:id="FUNCIONAL_N2" value="{!v.oportunidad.Clasificacion_funcional_Nivel_2__c}" onchange="{!c.filterValues}">                                        
+                                        <option value="" text="{!v.oportunidad.Clasificacion_funcional_Nivel_2__c}"></option>
+                                        <aura:iteration items="{!v.FUNCIONAL_N2}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>    
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-6">
+                                    <lightning:select name="select" required="true" label="Clasificación funcional - Nivel 3"  aura:id="FUNCIONAL_N3" value="{!v.oportunidad.Clasificacion_funcional_Nivel_3__c}">                                        
+                                        <option value="" text="{!v.oportunidad.Clasificacion_funcional_Nivel_3__c}"></option>
+                                        <aura:iteration items="{!v.FUNCIONAL_N3}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                    
+                                </div>
+                            </div>
+                            
+                            <!-- Bloque de clasificación tecnológica -->
+            				<!-- En el campo NAME de los SELECT se ha colocado el identificador de las las listas dependientes--> 
+                            <div class="slds-grid slds-gutters slds-m-top_medium slds-wrap">
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="TECNICO_N2" required="true"  label="Clasificación tecnológica - Nivel 1"  aura:id="TECNICO_N1" value="{!v.oportunidad.Clasificacion_tecnologica_Nivel_1__c}" onchange="{!c.filterValues}">
+                                        <option value="" text="{!v.oportunidad.Clasificacion_tecnologica_Nivel_1__c}" ></option>
+                                        <aura:iteration items="{!v.TECNICO_N1}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>                                    
+                                </div>  
+                                
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
+                                    <lightning:select name="select" required="true" label="Clasificación tecnológica - Nivel 2"  aura:id="TECNICO_N2" value="{!v.oportunidad.Clasificacion_tecnologica_Nivel_2__c}">
+                                        <option value=""  text="{!v.oportunidad.Clasificacion_tecnologica_Nivel_2__c}"></option>
+                                        <aura:iteration items="{!v.TECNICO_N2}" var="val" indexVar="i">
+                                            <option value="{!val.Valor__c}" text="{!val.Valor__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>                                    
+                                </div> 
+                            </div>
+                            
+                        </div>
+                    </lightning:layoutItem>
+                    <!--<lightning:layoutItem padding="around-small" size="3">
+                        <div class="page-section page-right">
+                            <h2>Right Sidebar</h2>
+                            <ul>
+                                <li><a href="#">Archive 1</a>
+                                </li>
+                                <li><a href="#">Archive 2</a>
+                                </li>
+                                <li><a href="#">Archive 3</a>
+                                </li>
+                                <li><a href="#">Archive 4</a>
+                                </li>
+                                <li><a href="#">Archive 5</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </lightning:layoutItem>-->
+                </lightning:layout>
+            </lightning:layoutItem>
+            <!--<lightning:layoutItem flexibility="auto" padding="around-small" size="12">
+                <div class="page-footer page-section">
+                                        
+                    <div class="slds-grid slds-gutters slds-grid_align-end">
+                        <div class="slds-col">
+                            <lightning:buttonGroup>
+                                <lightning:button label="Guardar" aura:id="GuardarOf" onclick="{! c.save }"  />
+                                <lightning:button label="Solicitud de código Oferta y Soporte a Oferta" aura:id="solOferta" onclick="{! c.SolicitarOferta }"  disabled="{!v.disabledEmailOferButton}" />
+                                <lightning:button label="Generar Oferta" aura:id="GenOferta" onclick="{! c.GenOferta }" disabled="{!v.disabledGenOferButton}" />
+                                <lightning:button label="Volver a Oportunidad" aura:id="GotoOpp" onclick="{! c.IrOportunidad }"  />
+                            </lightning:buttonGroup>
+                        </div>
+                    </div>
+                    
+                </div>
+            </lightning:layoutItem>-->
+        </lightning:layout>
+
+
+      
+    
+    <!-- MODAL -->
+    <div role="dialog" tabindex="-1" aria-labelledby="modalHeader" class="slds-modal slds-fade-in-open slds-hidden slds-modal_medium"  aura:id="modal" aria-hidden="false">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header">
+                <aura:if isTrue="{!v.EsEmpleado}" >
+                    <span><b>Búsqueda de Empleados</b></span>
+                <aura:set attribute="else"><aura:if isTrue="{!v.IsModal}" > 
+                    <span><b>Mensaje informativo</b></span>
+                <aura:set attribute="else">                        
+                    <span><b>Búsqueda de Cliente</b></span>
+                </aura:set>
+                </aura:if></aura:set>
+                </aura:if>     
+                <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.OpenModal}" id="closeHeader">
+                    <lightning:icon iconName="utility:close" size="small" />              
+                </button>
+            </div> 
+            
+            <!-- modal__content -->            
+            <div class="slds-modal__content slds-grid--vertical-align-center slds-grid--align-center">
+                
+                <!--<div class="slds-is-relative">
+                <c:Custom_Spinner show="{!v.showSpinnerModal}" type="small" spinnerText="{!v.spinnerMsg}"/>
+                </div>-->
+                
+                <div class="slds-grid slds-wrap">
+                    
+                    <aura:if isTrue="{!v.EsEmpleado}" >
+                        
+                        <div class="slds-col slds-size_3-of-6" >
+                            <span>
+                                <lightning:input type="text" name="CodigoEmpleado" label="Codigo Empleado" value="{!v.EmpleadoCodigo}" class="slds-m-horizontal_small"/>
+                            </span>
+                        </div>
+                        
+                        <div class="slds-col slds-size_3-of-6">
+                            <span>
+                                <lightning:input type="text" name="Nombre" label="Nombre" value="{!v.EmpleadoNombre}" class="slds-m-horizontal_small"/>
+                            </span>
+                            
+                        </div>
+                        
+                        <div class="slds-col slds-size_3-of-6">
+                            <span>
+                                <lightning:input type="text" style="padding-bottom:25px" name="Apellido1" label="Apellido 1" value="{!v.EmpleadoApellido1}" class="slds-m-horizontal_small"/>
+                            </span>
+                        </div>
+                        <div class="slds-col slds-size_3-of-6">
+                            <span>
+                                <lightning:input type="text" style="padding-bottom:25px" name="Apellido2" label="Apellido 2" value="{!v.EmpleadoApellido2}" class="slds-m-horizontal_small"/>
+                            </span>
+                        </div>
+                        
+                        <aura:set attribute="else">
+                            <aura:if isTrue="{!v.IsModal}" >  
+                                
+                                <aura:set attribute="else">
+                                    
+                                    <div class="slds-col slds-size_3-of-6">
+                                        <span>
+                                            <lightning:input type="text" style="padding-bottom:25px" name="NombreCliente" label="Nombre" value="{!v.ClienteNombre}" class="slds-m-horizontal_small"/>
+                                        </span>
+                                    </div>
+                                    
+                                    <div class="slds-col slds-size_3-of-6">
+                                        <span>
+                                            <lightning:input type="text" style="padding-bottom:25px" name="Codigo" label="Código" value="{!v.ClienteCodigo}" class="slds-m-horizontal_small"/>
+                                        </span>
+                                    </div>
+                                </aura:set>
+                            </aura:if>     
+                        </aura:set>
+                    </aura:if>
+                </div> 
+                
+                <!--
+ <aura:if isTrue="{!v.EsEmpleado}" >
+<span>  <b> Búsqueda de Empleados </b></span>
+<aura:set attribute="else">
+<span>  <b> Búsqueda de Empleados </b></span>
+</aura:set>
+</aura:if> -->
+                
+                <div class=" slds-col slds-size_5-of-6 slds-grid--align-center slds-hidden" aura:id="ShowEmpleadoCliente"  >   
+                    
+                    <aura:if isTrue="{!v.EsEmpleado}" >
+                        <table id="EmpTable" class="slds-m-top--xx-small slds-table" aura:id="EmpTable">
+                            
+                            
+                            <!--<lightning:spinner aura:id="mySpinner" variant="brand" size="large" class="slds-hide" title="{!v.spinnerMsg}" alternativeText="..."/>-->
+                            
+                            <aura:iteration items="{!v.ListEmpleado}" var="emp" indexVar="i">
+                                <tr aura:id="{!emp.id}" >
+                                    <!-- <td><lightning:input type="checkbox" name="SelectEmpl" aura:id="{!emp.numeroPersonal}"  class="{!'slds-m-horizontal_small' + ((v.ListEmpleado.length> 0) ?  ' ' :' slds-hidden' )}"/> </td>-->
+                                    
+                                    <td>{!emp.nombreYApellidos}</td>
+                                    <td>{!emp.numeroPersonal}</td>
+                                    <button class="slds-button slds-button_neutral slds-align-right" onclick="{!c.SelectEmpleado }" 
+                                            value="{!i}">Seleccionar</button>                            
+                                </tr>
+                            </aura:iteration>                            
+                        </table>
+                        <aura:set attribute="else">
+                            
+                            
+                            <aura:if isTrue="{!v.IsModal}" >  
+                                
+                                <div class="slds-text-body_regular slds-text-align_center">
+                                    La información de la oportunidad {!v.oportunidad.Codigo_OC__c}-{!v.oportunidad.Name}  
+                                    se ha enviado correctamente al departamento de Ofertas </div>
+                                <div class="slds-text-body_regular slds-text-align_center"> En breve recibirá un email con el codigo de oferta SAP.   </div>
+                                <div class="slds-text-body_regular slds-text-align_center">
+                                    Por favor no olvide enviar los pliegos / RFP y el modelo de contrato al departamento legal </div>
+                                
+                                <aura:set attribute="else">
+                                    
+                                    <table id="CliTable" class="slds-m-top--xx-small slds-table" aura:id="CliTable">
+                                        <aura:iteration items="{!v.ListCliente}" var="cli" indexVar="i">
+                                            <tr aura:id="{!cli.id}" >
+                                                <!-- <td><lightning:input type="checkbox" name="SelectEmpl" aura:id="{!emp.numeroPersonal}"  class="{!'slds-m-horizontal_small' + ((v.ListEmpleado.length> 0) ?  ' ' :' slds-hidden' )}"/> </td>-->
+                                                <td>{!cli.codigo}</td>
+                                                <td>{!cli.nombre}</td>
+                                                <td><button class="slds-button slds-button_neutral slds-align-right" onclick="{!c.SelectCliente }" 
+                                                        value="{!i}">Seleccionar</button>  
+                                                </td>
+                                            </tr>
+                                        </aura:iteration>                            
+                                    </table> 
+                                    
+                                </aura:set>
+                            </aura:if>
+                        </aura:set>    
+                    </aura:if>
+                </div>
+            </div>
+            <div class="slds-modal__footer slds-text-align_center"  aura:id="footer">
+                <span>
+                    <!-- <button class="slds-button slds-button_neutral slds-align-right "  onclick="{!c.BuscarEmpleado }" value="{!v.BuscarEmpl}"  >Buscar</button> -->
+                    <aura:if isTrue="{!v.EsEmpleado}" >
+                        
+                        <button class="slds-button slds-button_neutral slds-align-right "  onclick="{!c.BuscarEmpleado }" >Buscar</button>
+                        
+                        <aura:set attribute="else">
+                            <aura:if isTrue="{!v.IsModal}" >  
+                                 <lightning:button label="Volver a Oportunidad" aura:id="GotoOpp" onclick="{! c.IrOportunidad }"  />
+                                <aura:set attribute="else">  
+                                    <button class="slds-button slds-button_neutral slds-align-right " onclick="{!c.BuscarCliente }" >Buscar</button>
+                                    
+                                </aura:set>
+                            </aura:if>
+                        </aura:set>
+                    </aura:if>
+                    <!--   <button class="slds-button slds-button_neutral slds-align-right "  onclick="{!c.XXXXXX }" value="{!v.XXXXXXXXXX}"  >Confirmar</button>-->
+                </span>
+                
+            </div> 
+        </div> 
+    </div>  
+    
+    
+    <!-- MODAL OFERTA -->
+    <div role="dialog" tabindex="-1" aria-labelledby="modalHeader" class="slds-modal slds-fade-in-open slds-hidden slds-modal_medium"  aura:id="modal-ofer" aria-hidden="false">
+        <div class="slds-modal__container">
+            
+            <!-- modal__header --> 
+            <div class="slds-modal__header">
+                <span><b>Información</b></span>     
+                <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Cerrar" onclick="{!c.CloseModalOfer}" id="closeHeader">
+                    <lightning:icon iconName="utility:close" size="small" />           
+                </button>
+            </div> 
+            
+            <!-- modal__content -->            
+            <div class="slds-modal__content slds-grid--vertical-align-center slds-grid--align-center">       
+                <div class="slds-col slds-size_5-of-6 slds-grid--align-center">
+                    <div class="slds-text-body_regular slds-text-align_center">
+                        Se ha generado el código de oferta {!v.ofertaSAP} asociado a la oportunidad {!v.oportunidad.Codigo_OC__c}-{!v.oportunidad.Name}.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- modal__footer --> 
+            <div class="slds-modal__footer slds-text-align_center"  aura:id="footer">
+                <span>
+                    <lightning:button label="Volver a Oportunidad" aura:id="GotoOpp" onclick="{! c.IrOportunidad }"  />
+                </span>                
+            </div> 
+        </div> 
+    </div>
+       
+    
+    <div class="slds-backdrop slds-backdrop--open  slds-hidden"  aura:id="backGroundModal" ></div>
+    
+   
+</aura:component>

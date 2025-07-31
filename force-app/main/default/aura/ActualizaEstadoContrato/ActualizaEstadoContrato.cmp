@@ -1,0 +1,693 @@
+<aura:component controller="CRM_Actualiza_Estado_Contratos"
+                implements="flexipage:availableForAllPageTypes,force:appHostable,forceCommunity:availableForAllPageTypes,lightning:actionOverride,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader,force:hasSObjectName" 
+                access="global">
+    
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="simpleRecord" type="Object"/>
+    <aura:attribute name="recordError" type="String"/>
+    
+    <aura:attribute name="contrato" type="String" default="NO"/>
+    
+    <aura:attribute name="sobjecttype" type="String" default="{!v.sObjectName}"/>
+    <aura:attribute name="ObjectIsAccount" type="Boolean" default="false"/>
+    <aura:attribute name="activeSections" type="List" default="['A','B','C']" />
+    <aura:attribute name="TabVersion" type="Boolean" default="true"/>
+    
+    <!--ERROR DISPLAY ATTRIBUTES-->
+    <aura:attribute name="infoStatus" type="Boolean" default="false"/>
+    <aura:attribute name="infoMessage" type="String"/>
+    
+    
+    <!---->
+    <aura:attribute name="loadtab1" type="Boolean" default="false"/>
+    <aura:attribute name="loadtab2" type="Boolean" default="false"/>
+     <aura:attribute name="loadtabPrev2" type="Boolean" default="false"/>
+    <aura:attribute name="loadtab3" type="Boolean" default="false"/>
+    
+    
+    <aura:attribute name="tabId" type="String" default=""/>
+    <aura:attribute name="currentTabWhenSave" type="String"/>
+    
+    <aura:attribute name="listDivisa" type="List"/>
+    <aura:attribute name="estadoContrato" type="String"/>
+    
+     <aura:attribute name="contratoVacio" type="Boolean" default="false"/>
+    <aura:attribute name="contratoDesactualizado" type="Boolean" default="false"/>
+    <aura:attribute name="puedeModificar" type="Boolean" default="false"/>
+    
+    <aura:attribute name="startTime" type="Integer"/>
+    <aura:attribute name="endTime" type="Integer"/>
+    
+    <aura:attribute name="isAppMobile" type="Boolean" default="false"/>
+    
+    
+    
+    
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      targetFields="{!v.simpleRecord}"
+                      targetError="{!v.recordError}"
+                      
+                      layoutType="FULL"
+                      />
+    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="change" value="{!v.contrato}" action="{!c.contratoLoaded}"/>
+    <!--<aura:handler event="force:refreshView" action="{!c.doInit}" />-->
+    
+    <!--<aura:handler name="change" value="{!v.SincroERPstatus}" action="{!c.getSincroInfo}"/>-->
+    <div class="slds-box">
+        <aura:if isTrue="{!v.TabVersion}">
+            <lightning:tabset aura:id="tabContrato" selectedTabId="{!v.tabId}">
+                <lightning:tab class="slds-tabs_default__item slds-is-active" label="{!v.isAppMobile ? $Label.c.GC_Requisitos_AppMobile : $Label.c.GC_Requisitos}" onactive="{!c.manageTabs }" id="tab1">
+                    
+                    <div class="slds-form" role="list">
+                        <div class="slds-form__row">
+                            <div class="slds-form__item" role="listitem">
+                                <div class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
+                                    <span class="slds-form-element__label">{!$Label.c.GC_Requisito_01}</span>
+                                    <div class="slds-form-element__control">
+                                        <div class="slds-form-element__static">
+                                            <lightning:input aura:id="NoExige" type="checkbox" label="{!$Label.c.GC_Requisito_R10}" name="NoExige"  onchange="{!c.cambioSituacion}"/>
+                                        </div>
+                                        
+                                    </div>
+                                    <span class="slds-form-element__label" style="padding-top:10px">{!$Label.c.GC_Requisito_02}</span>
+                                    <div class="slds-form-element__control">
+                                        <div class="slds-form-element__static">
+                                            
+                                            <lightning:input aura:id="siExigePersonal" type="checkbox" label="{!$Label.c.GC_Requisito_R20}" name="siExigePersonal"  onchange="{!c.cambioSituacion}" />
+                                            <lightning:input aura:id="siExigeGob" type="checkbox" label="{!$Label.c.GC_Requisito_R21}" name="siExigeGob" onchange="{!c.cambioSituacion}" />
+                                            <lightning:input aura:id="siExigeCli" type="checkbox" label="{!$Label.c.GC_Requisito_R22}" name="siExigeCli" onchange="{!c.cambioSituacion}"/>
+                                            <lightning:input aura:id="siExigeAyesa" type="checkbox" label="{!$Label.c.GC_Requisito_R23}" name="siExigeAyesa" onchange="{!c.cambioSituacion}" />
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </lightning:tab>
+                
+                <lightning:tab class="slds-tabs_default__item slds-is-active" label="{!v.isAppMobile ? $Label.c.GC_Situacion_AppMobile : $Label.c.GC_Situacion}" onactive="{!c.manageTabs }" id="tab2">
+                    
+                    <div class="slds-form" role="list">
+                        <div class="slds-form__row">
+                            <div class="slds-form__item" role="listitem">
+                                <div class="slds-form-element slds-hint-parent">
+                                    <div class="slds-form-element__control">
+                                        <div class="slds-form-element__static">
+                                            
+                                            <lightning:input aura:id="normalidad" type="checkbox" label="{!$Label.c.GC_Situacion_S10}" name="normalidad" onchange="{!c.cambioSituacion}"/>
+                                            
+                                            <!--  BLOQUE NORMALIDAD ELIMINADO 2 de ABRIL -->
+                                         
+                                         <!-- 1   <div aura:id="normalidadBlock" class="slds-hide "> 
+                                                <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                    
+                                                    <div class="slds-col slds-size- -1-of-4">
+                                                        <!- -<lightning:input aura:id="normCostesExtra" type="checkbox" label="¿Se prevén costes extras?" name="normCostesExtra" checked="false" onchange="{!c.cambioSituacion}"/>  ESTO YA ERA COMENTARIO ANTES -->
+                                                    <!-- 2    <lightning:select aura:id="normCostesExtra" class="" name="normCostesExtra" label="{!$Label.c.GC_Situacion_S10_01}" onchange="{!c.cambioSituacion}" required="true">
+                                                            <option value="NO">{!$Label.c.GC_Seleccion}</option>
+                                                            <option value="true">{!$Label.c.GC_Si}</option>
+                                                            <option value="false">{!$Label.c.GC_No}</option>
+                                                        </lightning:select>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                                <div aura:id="normalidadCostesBlock" class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center slds-hide "> 
+                                                    
+                                                    <div class="slds-col">         
+                                                        <lightning:input aura:id="normValorCostesLocal" type="number" name="normValorCostes" label="{!$Label.c.GC_Costes_Extras}" value="" step="0.01" required="true"/>
+                                                    </div>
+                                                    
+                                                    <div class="slds-col size- -1-of-5">  
+                                                        <lightning:select aura:id="normMonedaLocal" class="" name="normMonedaLocal" label="{!$Label.c.GC_Divisa}" onchange="{!c.cambioSituacion}" required="true">
+                                                            
+                                                            <option value="NO">{!$Label.c.GC_Seleccion_divisa}</option> 
+                                                            <aura:iteration items="{!v.listDivisa}" var="s">
+                                                                <option value="{!s.value}">{!s.label}</option>
+                                                            </aura:iteration> 
+                                                            
+                                                            
+                                                        </lightning:select>
+                                                    </div>
+                                                    
+                                                    <!- -<div class="slds-col">  
+                                                            <lightning:input aura:id="normValorCostes" type="number" name="normValorCostes" label="Estimar costes extras (Euros)" value="" formatter="currency" step="0.01" required="true"/> ESTO YA ERA COMENTARIO ANTES-->
+                                                 <!-- 3       </div>
+                                           <!- - 4     </div>
+                                            
+                                           <!- -  BLOQUE NORMALIDAD ELIMINADO 2 de ABRIL -->
+                                            
+                                            
+                                            </div>
+                                            
+                                            <lightning:input aura:id="previsionRetrasos" type="checkbox" label="{!$Label.c.GC_Situacion_S11}" name="retraso" onchange="{!c.cambioSituacion}" />
+                                        
+                                        <div aura:id="retrasoBlock" class="slds-hide">
+                                            <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                
+                                                <div class="slds-col slds-size--3-of-4">         
+                                                    <lightning:select aura:id="selectCausaRetraso" class="" name="selectCausaRetraso" label="{!$Label.c.GC_Causa}" onchange="{!c.cambioSituacion}">
+                                                        <option value="CR0">{!$Label.c.GC_Seleccion}</option>
+                                                        <option value="CR1">{!$Label.c.GC_Causa_01}</option>
+                                                        <option value="CR2">{!$Label.c.GC_Causa_02}</option>
+                                                        <!-- <option value="CR3">Ambos ralentizan el proyecto</option>-->
+                                                    </lightning:select>
+                                                </div>
+                                                <div class="slds-col slds-col slds-size--1-of-4">  
+                                                    <lightning:input aura:id="mesesRetraso" type="number" name="mesesRetraso" label="{!$Label.c.GC_Meses}" step="0.1" max="99" required="true"/>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center ">
+                                                <div class="slds-col size--2-of-5">  
+                                                    <lightning:input aura:id="retrasoCostesExtraLocal" type="number" name="retrasoCostesExtraLocal" label="{!$Label.c.GC_Costes_Extras}" value="" step="0.01" required="true"/>
+                                                </div>
+                                                
+                                                <div class="slds-col size--2-of-5">
+                                                    <lightning:input aura:id="retrasoCostesReclamar" type="number" name="retrasoCostesReclamar" label="{!$Label.c.GC_Costes_reclamar}" value="" step="0.01" required="true"/>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="slds-col slds-size- -2-of-5">  
+                                                        <lightning:input aura:id="retrasoCostesExtra" type="number" name="retrasoCostesExtra" label="Estimar costes extras (Euros)" value="" formatter="currency" step="0.01" required="true"/>
+                                                    </div>-->
+                                            
+                                            <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                <div class="slds-col size--2-of-5">         
+                                                    <lightning:input aura:id="retrasoCostesAceptados" type="number" name="retrasoCostesAceptados" label="{!$Label.c.GC_Costes_cliente}" value="" step="0.01" required="true"/>
+                                                </div>
+                                                <div class="slds-col size--1-of-5">  
+                                                    <lightning:select aura:id="retrasoMonedaLocal" class="" name="retrasoMonedaLocal" label="{!$Label.c.GC_Divisa}" onchange="{!c.cambioSituacion}" required="true">
+                                                        <option value="NO">{!$Label.c.GC_Seleccion_divisa}</option> 
+                                                        <aura:iteration items="{!v.listDivisa}" var="s">
+                                                            <option value="{!s.value}">{!s.label}</option>
+                                                        </aura:iteration>
+                                                    </lightning:select>
+                                                </div>
+                                             
+                                            </div>
+                                            
+                                            <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                
+                                                <div class="slds-col slds-size--2-of-4 ">         
+                                                    <!--<lightning:input aura:id="retrasoNegociacion" type="checkbox" label="¿Se está negociando modificación contractual?" name="retrasoNegociacion" checked="false" onchange="{!c.cambioSituacion}"/>-->
+                                                    <lightning:select aura:id="retrasoNegociacion" class="" name="retrasoNegociacion" label="{!$Label.c.GC_Negociar_modificacion}" onchange="{!c.cambioSituacion}" >
+                                                        <option value="NO">{!$Label.c.GC_Seleccion}</option>
+                                                        <option value="true">{!$Label.c.GC_Si}</option>
+                                                        <option value="false">{!$Label.c.GC_No}</option>
+                                                    </lightning:select>
+                                                </div>
+                                                
+                                                <div aura:id="pruebaDiv" class="slds-col slds-size--2-of-4 slds-hide ">         
+                                                    <!--<lightning:input aura:id="retrasoNegociacion" type="checkbox" label="¿Se está negociando modificación contractual?" name="retrasoNegociacion" checked="false" onchange="{!c.cambioSituacion}"/>-->
+                                                    <lightning:select aura:id="negFinalizada" class="" name="negFinalizada" label="{!$Label.c.GC_Negociacion_cerrada}" onchange="{!c.cambioSituacion}" >
+                                                        <option value="NO">{!$Label.c.GC_Seleccion}</option>
+                                                        <option value="true">{!$Label.c.GC_Si}</option>
+                                                        <option value="false">{!$Label.c.GC_No}</option>
+                                                    </lightning:select>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                            
+                                            <lightning:input aura:id="noRetrasoYNegociacion" type="checkbox"  name="noRetraso" label="{!$Label.c.GC_Situacion_S12}" onchange="{!c.cambioSituacion}"/>
+                                            <div aura:id="noRetrasoYNegociacionBlock" class="slds-hide">
+                                                <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                    
+                                                    <div class="slds-col slds-size--2-of-4 ">         
+                                                        <!--<lightning:input aura:id="retrasoNegociacion" type="checkbox" label="¿Se está negociando modificación contractual?" name="retrasoNegociacion" checked="false" onchange="{!c.cambioSituacion}"/>-->
+                                                        <lightning:select aura:id="noRetrasoYNegociacionAceptada" class="" name="noRetrasoYNegociacionAceptada" label="{!$Label.c.GC_Negociacion}" onchange="{!c.cambioSituacion}" >
+                                                            <option value="NO">{!$Label.c.GC_Seleccion}</option>
+                                                            <option value="true">{!$Label.c.GC_Si}</option>
+                                                            <option value="false">{!$Label.c.GC_No}</option>
+                                                        </lightning:select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <lightning:input aura:id="suspensionTemporal" type="checkbox" label="{!$Label.c.GC_Situacion_S20}" name="suspendido" onchange="{!c.cambioSituacion}" />
+                                            
+                                            <div aura:id="suspendidoBlock" class="slds-hide">
+                                                <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                    
+                                                    <div class="slds-col slds-size--3-of-4 ">         
+                                                        <!-- <lightning:input aura:id="causaSuspension" label="Causa" name="causaSuspension" required="true"/>-->
+                                                        <lightning:select aura:id="causaSuspension" class="" name="causaSuspension" label="{!$Label.c.GC_Causa}" onchange="{!c.cambioSituacion}" >
+                                                            <option value="NO">{!$Label.c.GC_Seleccion}</option>
+                                                            <option value="CSUS1">{!$Label.c.GC_Causa_03}</option>
+                                                            <option value="CSUS2">{!$Label.c.GC_Causa_04}</option>
+                                                        </lightning:select>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                    
+                                                    <div class="slds-col slds-size--3-of-4 ">         
+                                                        <!--<lightning:input aura:id="derechoReclamacion" type="checkbox" label="Derecho a reclamación por los costes incurridos durante la suspensión" name="derechoReclamacion" onchange="{!c.cambioSituacion}"/>-->
+                                                        
+                                                        <lightning:select aura:id="derechoReclamacion" class="" name="derechoReclamacion" label="{!$Label.c.GC_Derecho_reclamacion_por}" onchange="{!c.cambioSituacion}" >
+                                                            <option value="NO">{!$Label.c.GC_Seleccion}</option>
+                                                            <option value="true">{!$Label.c.GC_Si}</option>
+                                                            <option value="false">{!$Label.c.GC_No}</option>
+                                                        </lightning:select>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                <div aura:id="costesSuspensionBlockLocal" class=" slds-hide "> 
+                                                    
+                                                    <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                        <div class="slds-col size--2-of-5">         
+                                                            <lightning:input aura:id="costesTotalesSusLocal" type="number" name="costesTotalesSusLocal" label="{!$Label.c.GC_Costes_totales}" value="" step="0.01" required="true"/>
+                                                        </div>
+                                                        <div class="slds-col size--2-of-5">  
+                                                            <lightning:input aura:id="costesReclamarSusLocal" type="number" name="costesReclamarSusLocal" label="{!$Label.c.GC_Costes_reclamar}" value="" step="0.01" required="true"/>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                        
+                                                        <div class="slds-col size--2-of-5">         
+                                                            <lightning:input aura:id="costesAceptadosSusLocal" type="number" name="costesAceptadosSusLocal" label="{!$Label.c.GC_Costes_cliente}" value="" step="0.01" required="true"/>
+                                                        </div>
+                                                        <div class="slds-col size--1-of-5">  
+                                                            <lightning:select aura:id="suspensionMonedaLocal" class="" name="suspensionMonedaLocal" label="{!$Label.c.GC_Divisa}" onchange="{!c.cambioSituacion}" required="true">
+                                                                <option value="NO">{!$Label.c.GC_Seleccion_divisa}</option> 
+                                                                <aura:iteration items="{!v.listDivisa}" var="s">
+                                                                    <option value="{!s.value}">{!s.label}</option>
+                                                                </aura:iteration>
+                                                            </lightning:select>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!--  <div aura:id="costesSuspensionBlock" class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center slds-hide "> 
+                                                
+                                                <div class="slds-col size- -2-of-5">         
+                                                    <lightning:input aura:id="costesTotalesSus" type="number" name="costesTotalesSus" label="Costes totales suspensión (Euros)  " value="" formatter="currency" step="0.01" required="true"/>
+                                                </div>
+                                                <div class="slds-col size- -2-of-5">  
+                                                    <lightning:input aura:id="costesReclamarSus" type="number" name="costesReclamarSus" label="Costes a reclamar (Euros)  " value="" formatter="currency" step="0.01" required="true"/>
+                                                </div>
+                                                     <div class="slds-col size- -1-of-5"> 
+                                                         </div>
+                                            </div>-->
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                            <lightning:input  aura:id="contratoResuelto" type="checkbox" label="{!$Label.c.GC_Situacion_S30}" name="resuelto" onchange="{!c.cambioSituacion}" />
+                                            
+                                            <div aura:id="resueltoBlock" class="slds-hide">
+                                                <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                    
+                                                    <div class="slds-col slds-size--3-of-4">         
+                                                        <!--<lightning:input aura:id="causaResolucion" label="Causa" name="causaResolucion" required="true"/>-->
+                                                        <lightning:select aura:id="causaResolucion" class="" name="causaResolucion" label="{!$Label.c.GC_Causa}" onchange="{!c.cambioSituacion}" >
+                                                            <option value="NO">{!$Label.c.GC_Seleccion}</option>
+                                                            <option value="CRES1">{!$Label.c.GC_Causa_03}</option>
+                                                            <option value="CRES2">{!$Label.c.GC_Causa_04}</option>
+                                                        </lightning:select>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                    
+                                                    <div class="slds-col slds-size--1-of-4">         
+                                                        <!--<lightning:input aura:id="derechoRecResolucion" type="checkbox" label="Derecho de reclamación" name="derechoRecResolucion" onchange="{!c.cambioSituacion}"/>-->
+                                                        <lightning:select aura:id="derechoRecResolucion" class="" name="derechoRecResolucion" label="{!$Label.c.GC_Derecho_reclamacion}" onchange="{!c.cambioSituacion}" >
+                                                            <option value="NO">{!$Label.c.GC_Seleccion}</option>
+                                                            <option value="true">{!$Label.c.GC_Si}</option>
+                                                            <option value="false">{!$Label.c.GC_No}</option>
+                                                        </lightning:select>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                
+                                                <div aura:id="costesResolucionBlockLocal" class="slds-hide "> 
+                                                    <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                        <div class="slds-col size--2-of-5">         
+                                                            <lightning:input aura:id="costesTotalesResLocal" type="number" name="costesTotalesSus" label="{!$Label.c.GC_Costes_totales_resolucion}" value="" step="0.01" required="true"/>
+                                                        </div>
+                                                        <div class="slds-col size--2-of-5">  
+                                                            <lightning:input aura:id="costesReclamarResLocal" type="number" name="costesReclamarSus" label="{!$Label.c.GC_Costes_reclamar}" value="" step="0.01" required="true"/>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+                                                    <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center ">
+                                                        <div class="slds-col size--2-of-5">  
+                                                            <lightning:input aura:id="costesAceptadosResLocal" type="number" name="costesAceptadosResLocal" label="{!$Label.c.GC_Costes_cliente}" value="" step="0.01" required="true"/>
+                                                        </div>
+                                                        <div class="slds-col size--1-of-5">  
+                                                            <lightning:select aura:id="resolucionMonedaLocal" class="" name="resolucionMonedaLocal" label="{!$Label.c.GC_Divisa}" onchange="{!c.cambioSituacion}" required="true">
+                                                                <option value="NO">{!$Label.c.GC_Seleccion_divisa}</option> 
+                                                                <aura:iteration items="{!v.listDivisa}" var="s">
+                                                                    <option value="{!s.value}">{!s.label}</option>
+                                                                </aura:iteration>
+                                                            </lightning:select>     
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- <div aura:id="costesResolucionBlock" class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center slds-hide "> 
+                                                    
+                                                    <div class="slds-col size- -1-of-5">         
+                                                        <lightning:input aura:id="costesTotalesRes" type="number" name="costesTotalesSus" label="Costes totales resolución (Euros)" value="" formatter="currency" step="0.01" required="true"/>
+                                                    </div>
+                                                    <div class="slds-col size- -1-of-5">  
+                                                        <lightning:input aura:id="costesReclamarRes" type="number" name="costesReclamarSus" label="Costes a reclamar (Euros)" value="" formatter="currency" step="0.01" required="true"/>
+                                                    </div>
+                                                      <div class="slds-col size- -1-of-5"> 
+                                                         </div>
+                                                </div> -->
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    
+                    
+                </lightning:tab>  
+                
+                <lightning:tab class="slds-tabs_default__item slds-is-active" label="{!v.isAppMobile ? $Label.c.GC_Prevision_Situacion_AppMobile : $Label.c.GC_Prevision_Situacion}" onactive="{!c.manageTabs }" id="tabPrev2">
+                    
+                    <div class="slds-form" role="list">
+                        <div class="slds-form__row">
+                            <div class="slds-form__item" role="listitem">
+                                <div class="slds-form-element slds-hint-parent">
+                                    <div class="slds-form-element__control">
+                                       
+                                            
+                                            <lightning:input aura:id="PrevNormalidad" type="checkbox" label="{!$Label.c.GC_Situacion_S10}" name="PrevNormalidad" onchange="{!c.cambioSituacion}"/>
+      
+                                            <lightning:input aura:id="PrevPrevisionRetrasos" type="checkbox" label="{!$Label.c.GC_Situacion_S11}" name="PrevPrevisionRetrasos" onchange="{!c.cambioSituacion}" />
+                                     
+                                            <lightning:input aura:id="PrevNoRetrasoYNegociacion" type="checkbox"  name="PrevNoRetrasoYNegociacion" label="{!$Label.c.GC_Situacion_S12}" onchange="{!c.cambioSituacion}"/>
+                                           
+                                       		<lightning:input aura:id="PrevSuspensionTemporal" type="checkbox" label="{!$Label.c.GC_Situacion_S20}" name="PrevSuspensionTemporal" onchange="{!c.cambioSituacion}" />
+                                            
+                                        	<lightning:input  aura:id="PrevContratoResuelto" type="checkbox" label="{!$Label.c.GC_Situacion_S30}" name="PrevContratoResuelto" onchange="{!c.cambioSituacion}" />
+    
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    
+                    
+                </lightning:tab>  
+                
+                <lightning:tab class="slds-tabs_default__item slds-is-active" label="{!$Label.c.GC_Asistencia}" onactive="{!c.manageTabs }" id="tab3">
+                    
+                    <div class="slds-form" role="list">
+                        <div class="slds-form__row">
+                            <div class="slds-form__item" role="listitem">
+                                <div class="slds-form-element slds-form-element_edit slds-hint-parent">
+                                    <div class="slds-form-element__control">
+                                        <div class="slds-form-element__static">
+                                            
+                                            <!-- <lightning:input aura:id="jurContactado" type="checkbox" label="A10: He contactado con el despacho de abogados local." name="jurContactado"  />
+                                            <lightning:input aura:id="jurCoordinado" type="checkbox" label="A20: Estoy coordinado con los servicios centrales de Asesoría Jurídica." name="jurCoordinado"/>
+                                            <lightning:input aura:id="jurNecesidad" type="checkbox" label="A30: Necesito asistencia de los servicios centrales de Asesoría Jurídica." name="jurNecesidad" />-->
+                                            <div > 
+                                            <div class="slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                 <div class="slds-col size--3-of-5"> 
+                                                
+                                                <lightning:select aura:id="asisJuridica" class="" name="asisJuridica" label="{!$Label.c.GC_Documentar_incidencias}" onchange="{!c.cambioSituacion}" >
+                                                    <option value="NO">{!$Label.c.GC_Seleccion}</option>
+                                                    <option value="true">{!$Label.c.GC_Si}</option>
+                                                    <option value="false">{!$Label.c.GC_No}</option>
+                                                </lightning:select>
+                                            </div>
+                                            </div>
+                                              <div aura:id="asisJuridicaBlock" class="slds-hide">
+                                                <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                    <div class="slds-col size--1-of-5"> 
+                                                        <lightning:input aura:id="codigoAji"  name="codigoAji" label="{!$Label.c.GC_Codigo_AJI}" maxlength="30"/>  
+                                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 </div>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                         </div>
+                </lightning:tab>   
+  
+            </lightning:tabset> 
+            
+              <!--ERROR MESSAGE-->
+            
+            <div class="slds-grid" style="padding-top:5px">
+
+                <aura:if isTrue="{!v.puedeModificar}">
+                <aura:if isTrue="{!v.contratoVacio == false}">
+                <lightning:button variant="brand" label="{!$Label.c.GC_Estado_contrato_no_cambiado}" title="Guardar" onclick="{! c.saveInfo }" disabled="{!v.estadoContrato == 'RECEP'? true:false}" />
+                     </aura:if>
+                <lightning:button variant="brand" label="{!$Label.c.GC_Guardar}" title="Guardar" onclick="{! c.saveInfo }" disabled="{!v.estadoContrato == 'RECEP'? true:false}" />
+                
+                <aura:if isTrue="{!v.infoStatus}">
+                    <div aura:id="displayError" class=""  style="padding-left:15px ; padding-top:7px" > 
+                        {!v.infoMessage}
+                    </div>
+                </aura:if>
+                     </aura:if>
+                
+              <!--   <c:ActualizaEstadoContrato_InfoAyuda />-->
+            </div>
+            
+            <aura:set attribute="else">
+                
+                <lightning:accordion
+                                     allowMultipleSectionsOpen="true"
+                                     onsectiontoggle="{! c.handleSectionToggle }"
+                                     activeSectionName="{! v.activeSections }"
+                                     >
+                    <lightning:accordionSection name="A" label="{!$Label.c.GC_Requisitos}">
+                        
+                        <div class="slds-form" role="list">
+                            <div class="slds-form__row">
+                                <div class="slds-form__item" role="listitem">
+                                    <div class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
+                                        <span class="slds-form-element__label">{!$Label.c.GC_Requisito_01}</span>
+                                        <div class="slds-form-element__control">
+                                            <div class="slds-form-element__static">
+                                                <lightning:input aura:id="AccNoExige" type="checkbox" label="{!$Label.c.GC_Requisito_R10}" name="AccNoExige"  onchange="{!c.cambioSituacion}"/>
+                                            </div>
+                                            
+                                        </div>
+                                        <span class="slds-form-element__label" style="padding-top:10px">{!$Label.c.GC_Requisito_02}</span>
+                                        <div class="slds-form-element__control">
+                                            <div class="slds-form-element__static">
+                                                
+                                                <lightning:input aura:id="AccsiExigePersonal" type="checkbox" label="{!$Label.c.GC_Requisito_R20}" name="AccsiExigePersonal"  onchange="{!c.cambioSituacion}" />
+                                                <lightning:input aura:id="AccsiExigeGob" type="checkbox" label="{!$Label.c.GC_Requisito_R21}" name="AccsiExigeGob" onchange="{!c.cambioSituacion}" />
+                                                <lightning:input aura:id="AccsiExigeCli" type="checkbox" label="{!$Label.c.GC_Requisito_R22}" name="AccsiExigeCli" onchange="{!c.cambioSituacion}"/>
+                                                <lightning:input aura:id="AccsiExigeAyesa" type="checkbox" label="{!$Label.c.GC_Requisito_R23}" name="AccsiExigeAyesa" onchange="{!c.cambioSituacion}" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </lightning:accordionSection>
+                    <lightning:accordionSection name="B" label="{!$Label.c.GC_Situacion}">
+                        <div class="slds-form" role="list">
+                            <div class="slds-form__row">
+                                <div class="slds-form__item" role="listitem">
+                                    <div class="slds-form-element slds-hint-parent">
+                                        <div class="slds-form-element__control">
+                                            <div class="slds-form-element__static">
+                                                
+                                                <lightning:input aura:id="Accnormalidad" type="checkbox" label="{!$Label.c.GC_Situacion_01}" name="Accnormalidad" checked="false" onchange="{!c.cambioSituacion}"/>
+                                                <div aura:id="AccnormalidadBlock" class="slds-hide">
+                                                    
+                                                    <div class="first_nested_level slds-grid slds-grid_vertical-align-center "> 
+                                                        
+                                                        <div class="slds-col ">
+                                                            <lightning:input aura:id="AccnormCostesExtra" type="checkbox" label="{!$Label.c.GC_Situacion_S10_01}" name="AccnormCostesExtra" checked="false" onchange="{!c.cambioSituacion}"/>
+                                                        </div>
+                                                        <div class="slds-col ">
+                                                            <lightning:input type="number" name="input7" label="{!$Label.c.GC_Estimar_costes}" value="" formatter="currency" step="0.01"/>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                                <lightning:input aura:id="AccprevisionRetrasos" type="checkbox" label="{!$Label.c.GC_Retrasos}" name="Accretraso" onchange="{!c.cambioSituacion}" />
+                                                
+                                                <div aura:id="AccretrasoBlock" class="slds-hide">
+                                                    <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                        
+                                                        <div class="slds-col">         
+                                                            <lightning:select name="causaRetraso" label="Causa">
+                                                                <option value="">{!$Label.c.GC_Seleccion_01}</option>
+                                                                <option value="1">{!$Label.c.GC_Retraso_01}</option>
+                                                                <option value="2">{!$Label.c.GC_Retraso_02}</option>
+                                                                <option value="3">{!$Label.c.GC_Retraso_03}</option>
+                                                            </lightning:select>
+                                                        </div>
+                                                        <div class="slds-col">  
+                                                            <lightning:input type="number" name="input7" label="{!$Label.c.GC_Meses}" step="0.1"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                        
+                                                        <div class="slds-col">         
+                                                            <lightning:input aura:id="retroasoNeogociacoooiorrrn" type="checkbox" label="{!$Label.c.GC_Negociar_modificacion_01}" name="retraoosoNegociacionrrr" checked="false" onchange="{!c.cambioSituacion}"/>
+                                                        </div>
+                                                        <div class="slds-col">  
+                                                            <lightning:input aura:id="retraoosoCostesExtrrrr" type="number" name="retrasoCostesExtrarrr" label="{!$Label.c.GC_Estimar_costes}" value="" formatter="currency" step="0.01"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <lightning:input aura:id="AccnoRetrasoYNegociacion" type="checkbox" label="{!$Label.c.GC_No_Retrasos}" name="AccnoRetraso" onchange="{!c.cambioSituacion}"/>
+                                                <lightning:input aura:id="AccsuspensionTemporal" type="checkbox" label="{!$Label.c.GC_Contrato_Suspendido}" name="Accsuspendido" onchange="{!c.cambioSituacion}" />
+                                                
+                                                <div aura:id="AccsuspendidoBlock" class="slds-hide">
+                                                    <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                        
+                                                        <div class="slds-col">         
+                                                            <lightning:select name="causaRetraso" label="{!$Label.c.GC_Causa}">
+                                                                <option value="">{!$Label.c.GC_Seleccion_01}</option>
+                                                                <option value="1">{!$Label.c.GC_Retraso_01}</option>
+                                                                <option value="2">{!$Label.c.GC_Retraso_02}</option>
+                                                                <option value="3">{!$Label.c.GC_Retraso_03}</option>
+                                                            </lightning:select>
+                                                        </div>
+                                                        <div class="slds-col">  
+                                                            <lightning:input type="number" name="input7" label="{!$Label.c.GC_Meses}" step="0.1"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                        
+                                                        <div class="slds-col">         
+                                                            <lightning:input aura:id="retroooasoNegociacionrrrr" type="checkbox" label="{!$Label.c.GC_Negociar_modificacion_01}" name="retrasoNegociaciorrrn" checked="false" onchange="{!c.cambioSituacion}"/>
+                                                        </div>
+                                                        <div class="slds-col">  
+                                                            <lightning:input aura:id="retrasoCostesExtra" type="number" name="retrasoCostesExtra" label="{!$Label.c.GC_Estimar_costes}" value="" formatter="currency" step="0.01"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <lightning:input  aura:id="AcccontratoResuelto" type="checkbox" label="{!$Label.c.GC_Contrato_Resuelto}" name="Accresuelto" onchange="{!c.cambioSituacion}" />
+                                                
+                                                <div aura:id="AccresueltoBlock" class="slds-hide">
+                                                    <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                        
+                                                        <div class="slds-col">         
+                                                            <lightning:select name="causaRetraso" label="{!$Label.c.GC_Causa}">
+                                                                <option value="">{!$Label.c.GC_Seleccion_01}</option>
+                                                                <option value="1">{!$Label.c.GC_Retraso_01}</option>
+                                                                <option value="2">{!$Label.c.GC_Retraso_02}</option>
+                                                                <option value="3">{!$Label.c.GC_Retraso_03}</option>
+                                                            </lightning:select>
+                                                        </div>
+                                                        <div class="slds-col">  
+                                                            <lightning:input type="number" name="input7" label="{!$Label.c.GC_Meses}" step="0.1"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="first_nested_level slds-grid slds-gutters slds-grid_vertical-align-center "> 
+                                                        
+                                                        <div class="slds-col">         
+                                                            <lightning:input aura:id="retraooosoNegociacionwww" type="checkbox" label="{!$Label.c.GC_Negociar_modificacion_01}" name="retrasooooNegociacionwww" checked="false" onchange="{!c.cambioSituacion}"/>
+                                                        </div>
+                                                        <div class="slds-col">  
+                                                            <lightning:input aura:id="retrasoCostesExtrwwwa" type="number" name="retrasoCostesExtrawww" label="{!$Label.c.GC_Estimar_costes}" value="" formatter="currency" step="0.01"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </lightning:accordionSection>
+                    <lightning:accordionSection name="C" label="{!$Label.c.GC_Asistencia}">
+                        <div class="slds-form" role="list">
+                            <div class="slds-form__row">
+                                <div class="slds-form__item" role="listitem">
+                                    <div class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
+                                        <div class="slds-form-element__control">
+                                            <div class="slds-form-element__static">
+                                                
+                                                <lightning:input type="checkbox" label="{!$Label.c.GC_Asistencia_01}" name="input2"  />
+                                                <lightning:input type="checkbox" label="{!$Label.c.GC_Asistencia_02}" name="input3"/>
+                                                <lightning:input type="checkbox" label="{!$Label.c.GC_Asistencia_03}" name="input3" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </lightning:accordionSection>
+                </lightning:accordion>
+                
+            </aura:set>
+        </aura:if> 
+    </div>
+    
+    <!--  <lightning:card>
+        <p class="slds-p-horizontal_small">
+            <lightning:recordForm 
+                                  recordId="{!v.recordId}" 
+                                  objectApiName="Contrato__c" 
+                                  layoutType="Full" 
+                                  columns="2"
+                                  mode="edit"
+                                  onsubmit="{!c.doSomething}" />
+        </p>
+    </lightning:card>-->
+    
+    
+    
+    
+    
+</aura:component>

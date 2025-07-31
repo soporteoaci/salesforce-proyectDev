@@ -1,0 +1,10 @@
+<aura:component controller="Ayesa_TimeTracker">
+    <aura:attribute name="entregables" type="Entregable__c[]" default="[]"/>
+      <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:iteration items="entregables" var="entregable">
+        <c:Ayesa_TimeTracker_Task entregable="{!entregable}"/>
+	</aura:iteration>
+    
+    
+</aura:component>

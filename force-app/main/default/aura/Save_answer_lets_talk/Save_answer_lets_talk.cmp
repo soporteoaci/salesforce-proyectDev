@@ -1,0 +1,62 @@
+<aura:component controller="Lets_talk_controller" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global">
+    <aura:attribute name="recordId" type="String" />
+    
+    <aura:attribute name="Lets_talk_registro" type="Lets_Talk__c" /> 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!--Custom Styles for Modal Header and Footer--> 
+    <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }       
+        .slds-modal__content{
+        overflow-y:hidden !important;
+        height:unset !important;
+        max-height:unset !important;
+        }
+    </aura:html>
+    
+      <div class="modal-header slds-modal__header slds-size_1-of-1">
+        
+        <h4 class="title slds-text-heading--medium" >Guardar Correo</h4>
+        
+    </div>
+    <div class="slds-m-left_large">
+        <br></br>
+        <div>
+            
+            <br></br>
+            <strong>1. Asunto: </strong>{!v.Lets_talk_registro.Respuesta_Asunto__c}
+            <br></br>
+            <strong>2. Contrato: </strong>{!v.Lets_talk_registro.Contrato__r.Name}
+            <br></br>
+            <strong>3. Mensaje: <br/></strong><lightning:formattedRichText value="{! v.Lets_talk_registro.Respuesta_Cuerpo_Mensaje__c}"/>
+            <br></br>
+       
+            
+            
+        </div>
+        
+        
+    </div>
+   <div class="modal-footer slds-modal__footer slds-size_1-of-1 ">
+        
+        <div class="forceChangeRecordTypeFooter slds-m-left_none">
+            
+            
+            <lightning:button aura:id="buttonSave" variant="brand" label="Guardar respuesta" onclick="{!c.save_email}" />
+            <lightning:button aura:id="buttonClose" variant="Neutral" label="Cancelar" title="Cancelar" onclick="{! c.cancel }"/>
+            
+            <!-- <aura:if isTrue="{!v.seguirImportando}"> -->       
+            <!--<lightning:button aura:id="buttonContinue" iconName="utility:download" iconPosition="right"  variant="brand" label="Continuar importación" title="Continuar importación" onclick="{! c.newCallToRelations }"/> -->
+            <!--</aura:if>-->
+            
+            
+        </div>
+        
+    </div>
+    
+</aura:component>

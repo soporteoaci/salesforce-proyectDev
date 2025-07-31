@@ -1,0 +1,36 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" >
+    
+    <aura:attribute name="Show_Seccion_Ibermatica" type="Boolean" default ="false"/>
+    <aura:attribute name="idOportunidad" default="" type="String" description="Id de la Oportunidad" /> 
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    
+    <div class="modal-header slds-modal__header slds-size_1-of-1">
+        <h4 class="title slds-text-heading--medium" >Equipo Imputación Preventa</h4>  
+    </div>
+
+    <aura:if isTrue = "{!v.Show_Seccion_Ibermatica == false}">
+        <br></br>
+        <br></br>
+        <br></br>
+        <br/>
+        <div class="slds-grid slds-align_absolute-center">
+            <div class="slds-col slds-align_absolute-center">
+                
+                <lightning:button variant="brand" label="Oferta SAP" onclick="{! c.Ayesa }" />
+                <lightning:button variant="brand" label="Portal Preventa" onclick="{! c.Ibermatica }" />            
+                <lightning:button variant="brand" label="Oferta SAP + Portal Preventa" onclick="{! c.Mixta }" />
+                
+            </div>
+        </div>
+        
+    </aura:if>
+    <aura:if isTrue = "{!v.Show_Seccion_Ibermatica }">
+        <div class="slds-grid slds-align_absolute-center">
+            <div class="slds-col slds-align_absolute-center"> 
+                <c:CRM_CentroResponsabilidad  idOpp= "{!v.idOportunidad}"/>
+            </div>
+        </div>
+    </aura:if>
+</aura:component>

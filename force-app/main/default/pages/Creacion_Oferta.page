@@ -1,0 +1,39 @@
+<apex:page showHeader="false" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false" controller="CreacionOfertaController">
+    <apex:includeLightning /> 
+    
+    <script>
+    
+    function getParameterByName(name, url) {
+        if (!url) {
+            url = window.location.href;
+        }
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    
+    var idOpp = getParameterByName('idOpp') || '';
+    
+    $Lightning.use("c:CreacionOferta_App", function() {
+        $Lightning.createComponent(
+            "c:CreacionOferta",
+            {
+                idOpp : idOpp
+                
+            },
+            "CreacionOfertaSAP",
+            function(cmp) { 
+                //console.log("Component created!");
+                //console.log(cmp);
+            });
+    });
+    
+    
+    </script>
+    
+    <div id="CreacionOfertaSAP"></div>
+    <!--<div id="auraErrorMessage" style="display: none;"></div>-->
+</apex:page>
