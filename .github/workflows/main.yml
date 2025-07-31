@@ -1,0 +1,474 @@
+name: Sincronización Salesforce PRE con GitHub
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # Todos los días a las 03:00 UTC (04:00 en España)
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: self-hosted
+
+    steps:
+      # ✅ 0. Instalar Git ANTES del checkout
+      - name: Ensure Git is installed
+        shell: powershell
+        run: |
+          if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
+            Write-Host "Git not found. Checking Chocolatey..."
+            $chocoBin = "C:\ProgramData\chocolatey\bin"
+
+            if (-not (Get-Command choco -ErrorAction SilentlyContinue)) {
+              if (Test-Path $chocoBin) {
+                Write-Host "Chocolatey exists but not in PATH. Adding..."
+                $env:PATH += ";$chocoBin"
+                echo $chocoBin | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+              } else {
+                Write-Host "Installing Chocolatey..."
+                Set-ExecutionPolicy Bypass -Scope Process -Force
+                [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+                Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+                echo $chocoBin | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+              }
+            }
+
+            Write-Host "Installing Git via Chocolatey..."
+            choco install git -y
+
+            $gitPath1 = "C:\Program Files\Git\bin"
+            $gitPath2 = $chocoBin
+            $env:PATH += ";$gitPath1;$gitPath2"
+            echo $gitPath1 | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+            echo $gitPath2 | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          } else {
+            Write-Host "Git is already installed."
+          }
+          git --version
+
+      # ✅ 1. Checkout del repositorio (ahora sí funcionará)
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # ✅ 2. Instalar Salesforce CLI si no existe
+      - name: Check or Install Salesforce CLI
+        shell: powershell
+        run: |
+          if (-not (Get-Command sf -ErrorAction SilentlyContinue)) {
+            Write-Host "Salesforce CLI not found. Installing..."
+            npm install --global @salesforce/cli
+          }
+          echo "$env:APPDATA\npm" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          $env:PATH += ";$env:APPDATA\npm"
+          sf --version
+
+      # ✅ 3. Autenticación con Salesforce
+      - name: Authenticate Salesforce Org
+        shell: cmd
+        run: |
+          echo %SF_AUTH_URL% > auth.txt
+          sf org login sfdx-url --sfdx-url-file auth.txt --alias PRE --set-default
+          del auth.txt
+        env:
+          SF_AUTH_URL: ${{ secrets.SF_AUTH_URL }}
+
+      # ✅ 4. Crear estructura DX
+      - name: Ensure Salesforce project structure
+        shell: cmd
+        run: |
+          if not exist force-app mkdir force-app
+          if not exist force-app\main mkdir force-app\main
+          if not exist force-app\main\default mkdir force-app\main\default
+
+      # ✅ 5. Crear manifest si no existe
+      - name: Ensure manifest exists
+        shell: cmd
+        run: |
+          if not exist manifest mkdir manifest
+          if not exist manifest\package.xml (
+            echo ^<?xml version="1.0" encoding="UTF-8"?^> > manifest\package.xml
+            echo ^<Package xmlns="http://soap.sforce.com/2006/04/metadata"^> >> manifest\package.xml
+            echo     ^<!-- Código --^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>ApexClass^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>ApexTrigger^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>ApexPage^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>ApexComponent^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<!-- Lightning --^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>LightningComponentBundle^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>AuraDefinitionBundle^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<!-- Objetos y Configuración --^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            REM ---------- LISTA EXHAUSTIVA DE OBJETOS ----------
+            echo         ^<members^>Account^</members^> >> manifest\package.xml
+            echo         ^<members^>AccountBrand^</members^> >> manifest\package.xml
+            echo         ^<members^>AccountContactRole^</members^> >> manifest\package.xml
+            echo         ^<members^>ActOn__AccountInfo__c^</members^> >> manifest\package.xml
+            echo         ^<members^>ActOn__ServerInformation__c^</members^> >> manifest\package.xml
+            echo         ^<members^>ActionPlan^</members^> >> manifest\package.xml
+            echo         ^<members^>ActionPlanItemDependency^</members^> >> manifest\package.xml
+            echo         ^<members^>ActionPlnTmplItmDependency^</members^> >> manifest\package.xml
+            echo         ^<members^>Action__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Activity^</members^> >> manifest\package.xml
+            echo         ^<members^>Activo__c^</members^> >> manifest\package.xml
+            echo         ^<members^>AnalyticsUserAttrFuncTkn^</members^> >> manifest\package.xml
+            echo         ^<members^>ApprovalSubmission^</members^> >> manifest\package.xml
+            echo         ^<members^>ApprovalSubmissionDetail^</members^> >> manifest\package.xml
+            echo         ^<members^>ApprovalWorkItem^</members^> >> manifest\package.xml
+            echo         ^<members^>ArchivoExterno__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Archivos_de_Oportunidad__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Asset^</members^> >> manifest\package.xml
+            echo         ^<members^>AssetRelationship^</members^> >> manifest\package.xml
+            echo         ^<members^>AssistantProgress^</members^> >> manifest\package.xml
+            echo         ^<members^>AssociatedLocation^</members^> >> manifest\package.xml
+            echo         ^<members^>AuthorizationForm^</members^> >> manifest\package.xml
+            echo         ^<members^>AuthorizationFormConsent^</members^> >> manifest\package.xml
+            echo         ^<members^>AuthorizationFormDataUse^</members^> >> manifest\package.xml
+            echo         ^<members^>AuthorizationFormText^</members^> >> manifest\package.xml
+            echo         ^<members^>BatchJob^</members^> >> manifest\package.xml
+            echo         ^<members^>BatchJobPart^</members^> >> manifest\package.xml
+            echo         ^<members^>BatchJobPartFailedRecord^</members^> >> manifest\package.xml
+            echo         ^<members^>BusinessBrand^</members^> >> manifest\package.xml
+            echo         ^<members^>CRM_Configuracion__c^</members^> >> manifest\package.xml
+            echo         ^<members^>CRM_Ibermatica_Configuration__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Campaign^</members^> >> manifest\package.xml
+            echo         ^<members^>CampaignMember^</members^> >> manifest\package.xml
+            echo         ^<members^>Campaing__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Case^</members^> >> manifest\package.xml
+            echo         ^<members^>CaseContactRole^</members^> >> manifest\package.xml
+            echo         ^<members^>ChatterActivity^</members^> >> manifest\package.xml
+            echo         ^<members^>CollaborationGroup^</members^> >> manifest\package.xml
+            echo         ^<members^>CollaborationGroupMember^</members^> >> manifest\package.xml
+            echo         ^<members^>CommSubscription^</members^> >> manifest\package.xml
+            echo         ^<members^>CommSubscriptionChannelType^</members^> >> manifest\package.xml
+            echo         ^<members^>CommSubscriptionConsent^</members^> >> manifest\package.xml
+            echo         ^<members^>CommSubscriptionTiming^</members^> >> manifest\package.xml
+            echo         ^<members^>Competidor_Socio__c^</members^> >> manifest\package.xml
+            echo         ^<members^>ComunicacinComunicacion__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Comunicacion__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Contact^</members^> >> manifest\package.xml
+            echo         ^<members^>ContactPointAddress^</members^> >> manifest\package.xml
+            echo         ^<members^>ContactPointConsent^</members^> >> manifest\package.xml
+            echo         ^<members^>ContactPointEmail^</members^> >> manifest\package.xml
+            echo         ^<members^>ContactPointPhone^</members^> >> manifest\package.xml
+            echo         ^<members^>ContactPointTypeConsent^</members^> >> manifest\package.xml
+            echo         ^<members^>ContactRequest^</members^> >> manifest\package.xml
+            echo         ^<members^>Contactos_Campanyas__c^</members^> >> manifest\package.xml
+            echo         ^<members^>ContentVersion^</members^> >> manifest\package.xml
+            echo         ^<members^>Contract^</members^> >> manifest\package.xml
+            echo         ^<members^>ContractContactRole^</members^> >> manifest\package.xml
+            echo         ^<members^>Contrato__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Control_Integracion__c^</members^> >> manifest\package.xml
+            echo         ^<members^>ConversationApiLog^</members^> >> manifest\package.xml
+            echo         ^<members^>ConversationApiLogObjSum^</members^> >> manifest\package.xml
+            echo         ^<members^>Country_Relatioship__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Cuenta_Usuario__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Customer^</members^> >> manifest\package.xml
+            echo         ^<members^>DataUseLegalBasis^</members^> >> manifest\package.xml
+            echo         ^<members^>DataUsePurpose^</members^> >> manifest\package.xml
+            echo         ^<members^>DelegatedAccount^</members^> >> manifest\package.xml
+            echo         ^<members^>Divisas_contratos__c^</members^> >> manifest\package.xml
+            echo         ^<members^>DocsTarea__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Document__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Documentacion_Contractual__c^</members^> >> manifest\package.xml
+            echo         ^<members^>DuplicateRecordItem^</members^> >> manifest\package.xml
+            echo         ^<members^>DuplicateRecordSet^</members^> >> manifest\package.xml
+            echo         ^<members^>EmailMessage^</members^> >> manifest\package.xml
+            echo         ^<members^>EngagementChannelType^</members^> >> manifest\package.xml
+            echo         ^<members^>EntregableComunicacion__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Entregable__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Equipo_Oferta__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Event^</members^> >> manifest\package.xml
+            echo         ^<members^>ExchangeUserMapping^</members^> >> manifest\package.xml
+            echo         ^<members^>ExpressionFilter^</members^> >> manifest\package.xml
+            echo         ^<members^>ExpressionFilterCriteria^</members^> >> manifest\package.xml
+            echo         ^<members^>ExternalEventMapping^</members^> >> manifest\package.xml
+            echo         ^<members^>FeedItem^</members^> >> manifest\package.xml
+            echo         ^<members^>FlowOrchestrationInstance^</members^> >> manifest\package.xml
+            echo         ^<members^>FlowOrchestrationLog^</members^> >> manifest\package.xml
+            echo         ^<members^>FlowOrchestrationStageInstance^</members^> >> manifest\package.xml
+            echo         ^<members^>FlowOrchestrationStepInstance^</members^> >> manifest\package.xml
+            echo         ^<members^>FlowOrchestrationWorkItem^</members^> >> manifest\package.xml
+            echo         ^<members^>GC_Importacion_Tasking__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Historico_estado_contrato__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Historico_estado_proyecto__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Hito__c^</members^> >> manifest\package.xml
+            echo         ^<members^>IbermaticaEvents__e^</members^> >> manifest\package.xml
+            echo         ^<members^>Idea^</members^> >> manifest\package.xml
+            echo         ^<members^>Image^</members^> >> manifest\package.xml
+            echo         ^<members^>ImporteSME__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Incurrido__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Individual^</members^> >> manifest\package.xml
+            echo         ^<members^>Lead^</members^> >> manifest\package.xml
+            echo         ^<members^>Lets_Talk__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Location^</members^> >> manifest\package.xml
+            echo         ^<members^>LocationTrustMeasure^</members^> >> manifest\package.xml
+            echo         ^<members^>MLModel^</members^> >> manifest\package.xml
+            echo         ^<members^>MLModelFactor^</members^> >> manifest\package.xml
+            echo         ^<members^>MLModelFactorComponent^</members^> >> manifest\package.xml
+            echo         ^<members^>Macro^</members^> >> manifest\package.xml
+            echo         ^<members^>MacroAction^</members^> >> manifest\package.xml
+            echo         ^<members^>MacroInstruction^</members^> >> manifest\package.xml
+            echo         ^<members^>MacroUsage^</members^> >> manifest\package.xml
+            echo         ^<members^>MessagingEndUser^</members^> >> manifest\package.xml
+            echo         ^<members^>MessagingSession^</members^> >> manifest\package.xml
+            echo         ^<members^>NetworkMember^</members^> >> manifest\package.xml
+            echo         ^<members^>NetworkMemberChunk^</members^> >> manifest\package.xml
+            echo         ^<members^>No_ejecutar_triggers__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Nota_Ticket__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Objetivo__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Observation__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Oportunidad_Competidor_Socio__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Oportunidad__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Opportunity^</members^> >> manifest\package.xml
+            echo         ^<members^>OpportunityCompetitor^</members^> >> manifest\package.xml
+            echo         ^<members^>OpportunityContactRole^</members^> >> manifest\package.xml
+            echo         ^<members^>OpportunityLineItem^</members^> >> manifest\package.xml
+            echo         ^<members^>OpportunityRelatedDeleteLog^</members^> >> manifest\package.xml
+            echo         ^<members^>Order^</members^> >> manifest\package.xml
+            echo         ^<members^>OrderItem^</members^> >> manifest\package.xml
+            echo         ^<members^>OrgMetricScanResult^</members^> >> manifest\package.xml
+            echo         ^<members^>OrgMetricScanSummary^</members^> >> manifest\package.xml
+            echo         ^<members^>Parametrica_2__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Parametrica__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Parametros_gestion_contratos__c^</members^> >> manifest\package.xml
+            echo         ^<members^>PartnerRole^</members^> >> manifest\package.xml
+            echo         ^<members^>PartyConsent^</members^> >> manifest\package.xml
+            echo         ^<members^>Pricebook2^</members^> >> manifest\package.xml
+            echo         ^<members^>PricebookEntry^</members^> >> manifest\package.xml
+            echo         ^<members^>ProcessException^</members^> >> manifest\package.xml
+            echo         ^<members^>Product2^</members^> >> manifest\package.xml
+            echo         ^<members^>PromptAction^</members^> >> manifest\package.xml
+            echo         ^<members^>PromptError^</members^> >> manifest\package.xml
+            echo         ^<members^>Proyecto__c^</members^> >> manifest\package.xml
+            echo         ^<members^>QuickText^</members^> >> manifest\package.xml
+            echo         ^<members^>QuickTextUsage^</members^> >> manifest\package.xml
+            echo         ^<members^>Recommendation^</members^> >> manifest\package.xml
+            echo         ^<members^>RecordAction^</members^> >> manifest\package.xml
+            echo         ^<members^>RecordMergeHistory^</members^> >> manifest\package.xml
+            echo         ^<members^>Recurso_Ayesa__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Referencia_Comercial__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Registro_eliminado__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Riesgos_OACI__c^</members^> >> manifest\package.xml
+            echo         ^<members^>SSC__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Scorecard^</members^> >> manifest\package.xml
+            echo         ^<members^>ScorecardAssociation^</members^> >> manifest\package.xml
+            echo         ^<members^>ScorecardMetric^</members^> >> manifest\package.xml
+            echo         ^<members^>Seller^</members^> >> manifest\package.xml
+            echo         ^<members^>Semaforo__c^</members^> >> manifest\package.xml
+            echo         ^<members^>SharingRecordCollection^</members^> >> manifest\package.xml
+            echo         ^<members^>SharingRecordCollectionItem^</members^> >> manifest\package.xml
+            echo         ^<members^>SharingRecordCollectionMember^</members^> >> manifest\package.xml
+            echo         ^<members^>Site^</members^> >> manifest\package.xml
+            echo         ^<members^>SocialPersona^</members^> >> manifest\package.xml
+            echo         ^<members^>SocialPost^</members^> >> manifest\package.xml
+            echo         ^<members^>Solution^</members^> >> manifest\package.xml
+            echo         ^<members^>StreamActivityAccess^</members^> >> manifest\package.xml
+            echo         ^<members^>StreamingChannel^</members^> >> manifest\package.xml
+            echo         ^<members^>Subentregable__c^</members^> >> manifest\package.xml
+            echo         ^<members^>TDRSubentregable__c^</members^> >> manifest\package.xml
+            echo         ^<members^>TableauHostMapping^</members^> >> manifest\package.xml
+            echo         ^<members^>Tarea_aprobacion__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Tarea_del_Entregable__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Task^</members^> >> manifest\package.xml
+            echo         ^<members^>Termino_de_Referencia__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Territory2^</members^> >> manifest\package.xml
+            echo         ^<members^>Territory2Model^</members^> >> manifest\package.xml
+            echo         ^<members^>Ticket__c^</members^> >> manifest\package.xml
+            echo         ^<members^>Topic^</members^> >> manifest\package.xml
+            echo         ^<members^>TopicAssignment^</members^> >> manifest\package.xml
+            echo         ^<members^>User^</members^> >> manifest\package.xml
+            echo         ^<members^>UserCapabilityPreference^</members^> >> manifest\package.xml
+            echo         ^<members^>UserExternalCredential^</members^> >> manifest\package.xml
+            echo         ^<members^>UserLocalWebServerIdentity^</members^> >> manifest\package.xml
+            echo         ^<members^>UserPrioritizedRecord^</members^> >> manifest\package.xml
+            echo         ^<members^>UserProvisioningRequest^</members^> >> manifest\package.xml
+            echo         ^<members^>UserTerritory2Association^</members^> >> manifest\package.xml
+            echo         ^<members^>Usuario_CRI__c^</members^> >> manifest\package.xml
+            echo         ^<members^>VideoCall^</members^> >> manifest\package.xml
+            echo         ^<members^>VideoCallParticipant^</members^> >> manifest\package.xml
+            echo         ^<members^>VideoCallRecording^</members^> >> manifest\package.xml
+            echo         ^<members^>VoiceCall^</members^> >> manifest\package.xml
+            echo         ^<members^>WebService__c^</members^> >> manifest\package.xml
+            REM ---------- FIN LISTA OBJETOS ----------
+            echo         ^<name^>CustomObject^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>CustomField^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>RecordType^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>CompactLayout^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>ListView^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>FieldSet^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>ValidationRule^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>WebLink^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>BusinessProcess^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<!-- Automatización --^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>Flow^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>Workflow^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>WorkflowAlert^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>WorkflowFieldUpdate^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>WorkflowRule^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>WorkflowTask^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>ApprovalProcess^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>AssignmentRules^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>EscalationRules^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<!-- Seguridad --^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>Profile^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>PermissionSet^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>Role^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>SharingRules^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<!-- Correo --^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>EmailTemplate^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<!-- Reportes y Dashboards --^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>Report^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>Dashboard^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>ReportType^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<!-- Configuración avanzada --^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^^> >> manifest\package.xml
+            echo         ^<name^>CustomMetadata^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>CustomApplication^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>StaticResource^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>RemoteSiteSetting^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<types^> >> manifest\package.xml
+            echo         ^<members^>*^</members^> >> manifest\package.xml
+            echo         ^<name^>NamedCredential^</name^> >> manifest\package.xml
+            echo     ^</types^> >> manifest\package.xml
+            echo     ^<version^>59.0^</version^> >> manifest\package.xml
+            echo ^</Package^> >> manifest\package.xml
+          )
+
+
+      # ✅ 6. Mostrar manifest
+      - name: Show manifest
+        shell: cmd
+        run: |
+          echo Current directory:
+          cd
+          dir /s manifest
+
+      # ✅ 7. Recuperar metadata
+      - name: Retrieve metadata from Salesforce
+        shell: cmd
+        run: |
+          echo Workspace: %GITHUB_WORKSPACE%
+          sf project retrieve start --manifest "%GITHUB_WORKSPACE%\manifest\package.xml" --target-org PRE
+
+      # ✅ 8. Commit y push
+      - name: Commit and push changes
+        shell: powershell
+        run: |
+          cd $env:GITHUB_WORKSPACE
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "${{ github.actor }}"
+
+          git add .
+          if (git diff --cached --quiet) {
+            Write-Host "No changes to commit."
+          } else {
+            $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+            git commit -m "Sync from PRE $timestamp"
+            git push
+          }
