@@ -1,5 +1,8 @@
 name: Sincronización Salesforce ProyectDev con GitHub
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 3 * * *" # Todos los días a las 03:00 UTC (04:00 en España)
