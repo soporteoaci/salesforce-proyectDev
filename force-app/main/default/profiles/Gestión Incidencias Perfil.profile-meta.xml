@@ -4342,6 +4342,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Equipo_Oferta__c.Opportunity__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Event.Area_IB__c</field>
         <readable>false</readable>
     </fieldPermissions>

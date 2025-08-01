@@ -266,6 +266,10 @@
         <fields>NAME</fields>
         <relatedList>Tarea_aprobacion__c.Opportunity__c</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Equipo_Oferta__c.Opportunity__c</relatedList>
+    </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
