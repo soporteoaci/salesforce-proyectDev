@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Porcentaje_Licencias</fullName>
+    <active>true</active>
+    <description>Si se pone ¿Exige venta de licencias? = No entonces no se puede informar el campo % Licencias</description>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+    $User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+ISPICKVAL(Exige_venta_licencias__c, &quot;No&quot;),
+NOT(ISBLANK(  Licencias__c )))</errorConditionFormula>
+    <errorDisplayField>Exige_venta_licencias__c</errorDisplayField>
+    <errorMessage>Si el campo ¿Exige venta de licencias? esta informado como No , no puede informar el campo % Licencias en la pestaña Cualificación.</errorMessage>
+</ValidationRule>

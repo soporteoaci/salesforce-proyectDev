@@ -1,0 +1,66 @@
+{
+  "appPageId" : "0ca41fc2-de6d-406f-90c0-f1ae1bffc495",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "0ec38050-55fd-426d-bee9-9026a231512d",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "tileMenuEditor" : "TileMenu1"
+      },
+      "componentName" : "forceCommunity:tileMenu",
+      "id" : "623cba1a-81e8-40a3-9b66-c1bf2c5f60b8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9e26daea-4238-4782-9b16-534a4e0e3c44",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "f532584c-a498-424b-a383-8c93f3891c06",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "7de50861-e7b7-438f-a50b-f39cf3ca766c",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "filterName" : "Mis_Subentregables_Pendientes_de_Entrega",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "Subentregable__c",
+        "showDisplay" : "showall"
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "d8637472-e9e5-49d5-aba5-89ecb333fe07",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "73bb9461-55e1-47b4-ac58-90d90af66f90",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "7344fc4a-a028-432f-936a-3957c258591b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1b4825e5-e87e-46d4-9669-0eb8d9351c82",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

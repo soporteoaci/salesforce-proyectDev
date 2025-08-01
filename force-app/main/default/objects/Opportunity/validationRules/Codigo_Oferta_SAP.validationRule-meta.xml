@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Codigo_Oferta_SAP</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				NOT(ISPICKVAL(Delivery_Center__c, &apos;Cloud &amp; Infrastructure (C1) - Implementation Projects&apos;)),
+				NOT(ISPICKVAL(Delivery_Center__c, &apos;Cloud &amp; Infrastructure (C2) - Implementation Projects&apos;)),
+				NOT(ISPICKVAL(Delivery_Center__c, &apos;Cybersecurity Multi&apos;)),
+				NOT(ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+				Oportunidad_Ibermatica__c =false,
+				ISPICKVAL(Etapa__c, &apos;Oferta&apos;),
+				ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;),
+				ISBLANK( Oferta_SAP__c) 
+
+)</errorConditionFormula>
+    <errorDisplayField>Oferta_SAP__c</errorDisplayField>
+    <errorMessage>Antes de pasar a Pte. Aprobación debe tener relleno el código de Oferta SAP en la pestaña de Más información</errorMessage>
+</ValidationRule>

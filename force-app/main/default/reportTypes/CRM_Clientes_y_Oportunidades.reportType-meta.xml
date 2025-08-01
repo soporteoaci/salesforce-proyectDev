@@ -2278,16 +2278,6 @@
             <field>Importe_total_ofertado_Breakdown_ajust__c</field>
             <table>Account.Oportunidades__r</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Decisi_n_Equipo_Preventa__c</field>
-            <table>Account.Oportunidades__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Tipo_para_Informe__c</field>
-            <table>Account.Oportunidades__r</table>
-        </columns>
         <masterLabel>Oportunidades</masterLabel>
     </sections>
     <sections>
@@ -2412,5 +2402,13 @@
             <table>Account.Oportunidades__r</table>
         </columns>
         <masterLabel>Oportunidades-Socios</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c</field>
+            <table>Account.Oportunidades__r.Oportunidades_Competidores_Socios__r</table>
+        </columns>
+        <masterLabel>Opportunities-Partners</masterLabel>
     </sections>
 </ReportType>

@@ -1,0 +1,63 @@
+{
+  "appPageId" : "0ca41fc2-de6d-406f-90c0-f1ae1bffc495",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "bceaf73d-e87d-4beb-bfe6-90c89abd8812",
+  "label" : "Contact Us",
+  "regions" : [ {
+    "id" : "f8959794-fa27-4f0b-86b0-a1aada9babbe",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "attachFiles" : true,
+        "authenticatedActionName" : "NewCase",
+        "confirmationMessageDescription" : "You'll hear back from us soon.",
+        "confirmationMessageTitle" : "Your request was submitted successfully.",
+        "deflectionCategoryGroupName" : "{!DataCategoryGroupName}",
+        "deflectionNotHelpful" : "Didn't find what you're looking for?",
+        "deflectionNumberOfArticles" : 6,
+        "deflectionParentCategory" : "{!TopLevelCategory}",
+        "deflectionSubHeader" : "Check out these articles...",
+        "deflectionTitle" : "Need Answers Fast?",
+        "hasDeflection" : true,
+        "headerTitle" : "Create a Case",
+        "isReCaptchaEnabled" : false,
+        "reCaptchaPrivateKey" : "",
+        "reCaptchaPublicKey" : "",
+        "unauthenticatedActionName" : "NewCase"
+      },
+      "componentName" : "selfService:caseCreate",
+      "id" : "07f1f5df-df45-4e49-baf2-1471ccb5761b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e179fbb5-ca76-45b8-b2c9-1c2e089e32a7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e0c40d42-1a6e-4450-abf9-302ff3b9b0c7",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Contact Us"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a2186777-afe4-4bcf-83d7-7c8eeaffe31e",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bcb3c2c7-01ec-41e1-b1fe-6f7b891d2dea",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contactsupport"
+}

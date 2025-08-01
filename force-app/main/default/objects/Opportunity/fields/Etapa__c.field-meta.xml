@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etapa__c</fullName>
+    <label>Etapa</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Captación</fullName>
+                <default>false</default>
+                <label>Captación</label>
+            </value>
+            <value>
+                <fullName>Cualificación</fullName>
+                <default>false</default>
+                <label>Cualificación</label>
+            </value>
+            <value>
+                <fullName>Demostrando</fullName>
+                <default>false</default>
+                <label>Demostrando</label>
+            </value>
+            <value>
+                <fullName>Oferta</fullName>
+                <default>false</default>
+                <label>Oferta</label>
+            </value>
+            <value>
+                <fullName>Cerrada</fullName>
+                <default>false</default>
+                <label>Presentada (negociación y cierre)</label>
+            </value>
+            <value>
+                <fullName>Abierta</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Abierta</label>
+            </value>
+            <value>
+                <fullName>Anulada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Anulada</label>
+            </value>
+            <value>
+                <fullName>Aprobada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aprobada</label>
+            </value>
+            <value>
+                <fullName>Aprobada QA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aprobado pdte Presentar</label>
+            </value>
+            <value>
+                <fullName>Preparando QA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>En preparación</label>
+            </value>
+            <value>
+                <fullName>Ganada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ganada</label>
+            </value>
+            <value>
+                <fullName>Pedido Código Oferta</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pedido Código Oferta</label>
+            </value>
+            <value>
+                <fullName>Pedir Código Oferta</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pedir Código Oferta</label>
+            </value>
+            <value>
+                <fullName>Pendiente QA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pendiente QA</label>
+            </value>
+            <value>
+                <fullName>Perdida</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Perdida</label>
+            </value>
+            <value>
+                <fullName>Presentada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Presentada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

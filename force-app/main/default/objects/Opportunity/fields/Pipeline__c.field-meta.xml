@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline__c</fullName>
+    <formula>IF(OR(
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-02-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,02,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-03-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,03,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-04-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,04,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-05-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,05,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-06-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,06,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-07-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,07,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-08-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,08,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-09-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,09,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-10-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,10,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-11-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,11,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2023 , CreatedDate&lt; DATETIMEVALUE(&quot;2023-12-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2023,12,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-01-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,01,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-02-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,02,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-03-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,03,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-04-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,04,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-05-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,05,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-06-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,06,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-07-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,07,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-08-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,08,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-09-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,09,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-10-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,10,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-11-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,11,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2024-12-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2024,12,01)),
+				AND(YEAR(	Fecha_estimada_de_cierre__c)&gt;=2024 , CreatedDate&lt; DATETIMEVALUE(&quot;2025-01-01 00:00:00&quot;) , 	Fecha_estimada_de_cierre__c &lt; DATE(2025,01,01))
+),
+			true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pipeline</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_de_excepcion__c</fullName>
+    <label>Motivo de excepción</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Habilitar Preventa</fullName>
+                <default>false</default>
+                <label>Habilitar Preventa</label>
+            </value>
+            <value>
+                <fullName>Deshabilitar Preventa</fullName>
+                <default>false</default>
+                <label>Deshabilitar Preventa</label>
+            </value>
+            <value>
+                <fullName>Importe Línea Servicio</fullName>
+                <default>false</default>
+                <label>Importe Línea Servicio</label>
+            </value>
+            <value>
+                <fullName>Tipificación tipo oportunidad</fullName>
+                <default>false</default>
+                <label>Tipificación tipo oportunidad</label>
+            </value>
+            <value>
+                <fullName>Cambio tipo cuenta</fullName>
+                <default>false</default>
+                <label>Cambio tipo cuenta</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Autorización de importe menor en SC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Autorización de importe menor en SC</label>
+            </value>
+            <value>
+                <fullName>Cuenta suficientemente trabajada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cuenta suficientemente trabajada</label>
+            </value>
+            <value>
+                <fullName>No se necesita preventa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No se necesita preventa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

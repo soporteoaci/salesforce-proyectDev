@@ -102,6 +102,12 @@
                 <identifier>RecordArea_Tecnologia_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Opportunity__c</fieldItem>
+                <identifier>RecordOpportunity__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-4ba860e2-9a30-4a0a-bd31-7f7a02ff4ded</name>
         <type>Facet</type>
     </flexiPageRegions>

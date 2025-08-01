@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cambio_no_permitido_Pdte_Aprobacion</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+			OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+				ISBLANK(TEXT(VB_linea_de_servicio__c)),
+				ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;)
+)</errorConditionFormula>
+    <errorMessage>No puede avanzar a subfase Pte. Aprobación sin tener el visto bueno del Delivery Center</errorMessage>
+</ValidationRule>

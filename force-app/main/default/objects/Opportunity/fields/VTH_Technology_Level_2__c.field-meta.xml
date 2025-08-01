@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VTH_Technology_Level_2__c</fullName>
+    <label>VTH Technology - Level 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Linea_de_Servicio__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Next generation of AI-powered user experiences (incluye Gen AI)</fullName>
+                <default>false</default>
+                <label>Next generation of AI-powered user experiences (incluye Gen AI)</label>
+            </value>
+            <value>
+                <fullName>Data-driven decision making and business operations</fullName>
+                <default>false</default>
+                <label>Data-driven decision making and business operations</label>
+            </value>
+            <value>
+                <fullName>Ethic AI</fullName>
+                <default>false</default>
+                <label>Ethic AI</label>
+            </value>
+            <value>
+                <fullName>Secured cloud infrastructures and platforms</fullName>
+                <default>false</default>
+                <label>Secured cloud infrastructures and platforms</label>
+            </value>
+            <value>
+                <fullName>Ciber Platfform powered by AI</fullName>
+                <default>false</default>
+                <label>Ciber Platfform powered by AI</label>
+            </value>
+            <value>
+                <fullName>Data Space</fullName>
+                <default>false</default>
+                <label>Data Space</label>
+            </value>
+            <value>
+                <fullName>Low &amp; No Code Platforms</fullName>
+                <default>false</default>
+                <label>Low &amp; No Code Platforms</label>
+            </value>
+            <value>
+                <fullName>Super AppS</fullName>
+                <default>false</default>
+                <label>Super AppS</label>
+            </value>
+            <value>
+                <fullName>Scalable &amp; Advanced Development (DevAid)</fullName>
+                <default>false</default>
+                <label>Scalable &amp; Advanced Development (DevAid)</label>
+            </value>
+            <value>
+                <fullName>Quantum &amp; Ciber</fullName>
+                <default>false</default>
+                <label>Quantum &amp; Ciber</label>
+            </value>
+            <value>
+                <fullName>Quantum &amp; AI</fullName>
+                <default>false</default>
+                <label>Quantum &amp; AI</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Data &amp; AI</controllingFieldValue>
+            <valueName>Next generation of AI-powered user experiences (incluye Gen AI)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data &amp; AI</controllingFieldValue>
+            <valueName>Data-driven decision making and business operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data &amp; AI</controllingFieldValue>
+            <valueName>Ethic AI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital impact</controllingFieldValue>
+            <valueName>Data Space</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital impact</controllingFieldValue>
+            <valueName>Low &amp; No Code Platforms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital impact</controllingFieldValue>
+            <valueName>Super AppS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital impact</controllingFieldValue>
+            <valueName>Scalable &amp; Advanced Development (DevAid)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quantum</controllingFieldValue>
+            <valueName>Quantum &amp; Ciber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quantum</controllingFieldValue>
+            <valueName>Quantum &amp; AI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cybersecurity</controllingFieldValue>
+            <valueName>Secured cloud infrastructures and platforms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cybersecurity</controllingFieldValue>
+            <valueName>Ciber Platfform powered by AI</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

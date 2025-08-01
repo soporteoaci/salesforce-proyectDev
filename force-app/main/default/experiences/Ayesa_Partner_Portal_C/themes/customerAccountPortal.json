@@ -1,0 +1,161 @@
+{
+  "activeBrandingSetId" : "782d53f7-9fb1-498e-aa60-a6b4e0b3f10b",
+  "customCSS" : "",
+  "developerName" : "cpt",
+  "id" : "cc649f4e-6793-4f68-b692-8deb8595b4a3",
+  "label" : "Customer Account Portal",
+  "layouts" : {
+    "Inner" : "78e2d1d4-c0f2-467c-bf8b-fa8971638539",
+    "Login" : "ba551727-1ffb-4f01-8f21-57606bb44159",
+    "ServiceNotAvailable" : "69ee9d0d-1d07-4977-88a6-69556d4021ee"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "ba551727-1ffb-4f01-8f21-57606bb44159",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "2be99eb0-68ac-47f5-8886-1be3e5a2125f",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "5490cc3e-d3f0-4def-98c0-be568756fdae",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "876059d1-56b5-42a7-9ad5-4835ed047de1",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "IsDefaultHeaderHidden" : false,
+      "IsDefaultHeaderPositionFixed" : false,
+      "IsDefaultNotificationsHidden" : false,
+      "IsSearchBarHidden" : false
+    },
+    "componentName" : "siteforce:cptBody",
+    "id" : "78e2d1d4-c0f2-467c-bf8b-fa8971638539",
+    "label" : "Default",
+    "regions" : [ {
+      "id" : "da08961a-7a74-4ba2-94ba-f775282a4764",
+      "regionName" : "customHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "maxAutoCompleteResults" : 5,
+          "searchLabel" : "Search...",
+          "searchObjects" : [ {
+            "isPublic" : true,
+            "name" : "KnowledgeArticleVersion"
+          }, {
+            "isPublic" : false,
+            "name" : "Case"
+          }, {
+            "isPublic" : true,
+            "name" : "ContentDocument"
+          } ]
+        },
+        "componentName" : "forceCommunity:globalSearchInput",
+        "id" : "1f5cf088-2742-4f6e-b93c-b15deb740600",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "269c419c-3e26-4ef9-9dd6-529f293c040d",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "communityBuilderLabel" : "Community Builder",
+          "communitySetupLabel" : "Community Setup",
+          "contactSupportLabel" : "Contact Support",
+          "filterName" : "MyCases",
+          "homeLabel" : "Home",
+          "includeContactSupport" : false,
+          "includeMessages" : false,
+          "loginLabel" : "Login",
+          "logoutLabel" : "Logout",
+          "myAccountLabel" : "My Account",
+          "showUserSettings" : false,
+          "userSettingsLabel" : "My Settings",
+          "viewProfileLabel" : "My Profile"
+        },
+        "componentName" : "selfService:userProfileMenu",
+        "id" : "1e28aa2e-dfc9-4d1f-b43e-7ce49e1cef47",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "985c71ff-e18f-432d-be61-92bee29b0632",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "NavigationMenuEditorRefresh" : "",
+          "hideAppLauncher" : true,
+          "hideHomeText" : true
+        },
+        "componentName" : "forceCommunity:globalNavigation",
+        "id" : "4b243f1a-8379-4510-a034-989ceeb788a0",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "ae90153d-02d7-45a1-89b9-019e4ad62944",
+      "regionName" : "navBar",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<h1 style=\"text-align: center;\">&nbsp;<b style=\"font-size: 24px; color: rgb(0, 0, 0);\">Gestión Integral de Proyectos de Ayesa</b></h1>"
+        },
+        "componentName" : "forceCommunity:richTextInline",
+        "id" : "f4b7380a-b346-49af-a9a4-32a1bd6e5e2f",
+        "renditionMap" : { },
+        "type" : "component"
+      }, {
+        "componentAttributes" : {
+          "richTextValue" : "<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.watersmartaccessories012.1}\" /></p>"
+        },
+        "componentName" : "forceCommunity:richTextInline",
+        "id" : "dec272a9-c6cb-433f-8455-c5f2bcc6db18",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "78bbe9a3-e417-4148-ad54-9efa03a72c27",
+      "regionName" : "customRegion",
+      "type" : "region"
+    }, {
+      "id" : "e7213efa-f3ac-411d-9e6a-251b16ebdc2a",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1170,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "69ee9d0d-1d07-4977-88a6-69556d4021ee",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "0cd8f327-2c2d-4a92-82ed-f638c6b859fb",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "386e54fd-8e28-4eb9-b019-a22e42854c33",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

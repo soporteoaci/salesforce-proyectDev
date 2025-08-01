@@ -6,9 +6,9 @@ public class CRM_InfoProyectoInducido {
         
         System.debug('idOpp: ' + idOpp);
         
-        Oportunidad__c opportunity = [select id, Programa_Inductor__c, Innovation_Work_Stream__c, /* SCM - Nuevo campo Innovation_Work_Stream__c */ 
+        Opportunity opportunity = [select id, Programa_Inductor__c, Innovation_Work_Stream__c, /* SCM - Nuevo campo Innovation_Work_Stream__c */ 
                                       Proyecto_Inductor_1__c, Proyecto_Inductor_2__c, Proyecto_Inductor_3__c, Proyecto_Inductor_4__c,
-                                      	Tipo_Induccion_1__c, Tipo_Induccion_2__c, Tipo_Induccion_3__c, Tipo_Induccion_4__c from Oportunidad__c where id = :idOpp];
+                                      	Tipo_Induccion_1__c, Tipo_Induccion_2__c, Tipo_Induccion_3__c, Tipo_Induccion_4__c from Opportunity where id = :idOpp];
         
         results.writeStartObject();
         results.writeObjectField('mOpp', opportunity);
@@ -109,8 +109,8 @@ public class CRM_InfoProyectoInducido {
         
         
         //Recuperamos datos de la oportunidad
-        Oportunidad__c opportunity = [select id, Oferta_SAP__c, Programa_Inductor__c, Proyecto_Inductor_1__c, Proyecto_Inductor_2__c, Proyecto_Inductor_3__c, Proyecto_Inductor_4__c,
-                                      	Tipo_Induccion_1__c, Tipo_Induccion_2__c, Tipo_Induccion_3__c, Tipo_Induccion_4__c from Oportunidad__c where id = :idOpp];
+        Opportunity opportunity = [select id, Oferta_SAP__c, Programa_Inductor__c, Proyecto_Inductor_1__c, Proyecto_Inductor_2__c, Proyecto_Inductor_3__c, Proyecto_Inductor_4__c,
+                                      	Tipo_Induccion_1__c, Tipo_Induccion_2__c, Tipo_Induccion_3__c, Tipo_Induccion_4__c from Opportunity where id = :idOpp];
         System.debug('Oferta_SAP__c: ' + opportunity.Oferta_SAP__c);
         
         //Si ya existe código de oferta SAP, actualizamos datos en SAP

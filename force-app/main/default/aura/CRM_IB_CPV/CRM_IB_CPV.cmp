@@ -3,7 +3,7 @@
                 controller="CRM_IB_CPVController">
     
     <!-- Atributos -->
-    <aura:attribute name="Oportunidad__c" type="Oportunidad__c"/>
+    <aura:attribute name="Opportunity" type="Opportunity"/>
     <aura:attribute name="allCPVOptions" type="List" default="[]" />
     <aura:attribute name="selectedCPVs" type="String[]"/>
     <aura:attribute name="disabledSaveCPV" type="String" default="true"/>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ingenieria_subfases</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				ISPICKVAL(Direccion_Operaciones__c,&apos;ENGINEERING&apos;),
+				OR(
+								ISPICKVAL(Subfase__c, &apos;Cualificación con autoprovisión&apos;),
+								ISPICKVAL(Subfase__c, &apos;Cualificación con preventa&apos;)
+				)
+)</errorConditionFormula>
+    <errorDisplayField>Subfase__c</errorDisplayField>
+    <errorMessage>Al ser una oportunidad de Ingeniería no puede avanzar a esta subfase</errorMessage>
+</ValidationRule>

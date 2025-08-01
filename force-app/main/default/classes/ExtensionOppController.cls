@@ -202,8 +202,8 @@ public class ExtensionOppController {
                 
                 oppExtension.Bookings_breakdown__c=oppClonada.Bookings_breakdown__c;
                 oppExtension.Up_selling__c=oppClonada.Up_selling__c;
-                //oppExtension.CPV__c=oppClonada.CPV__c;  
-                oppExtension.CPV_varios__c=oppClonada.CPV_varios__c;  
+                //oppExtension.CPV__c=oppClonada.CPV__c;
+                oppExtension.CPV_varios__c=oppClonada.CPV_varios__c;
                 //oppExtension.Origen__c = Origen;
                 oppExtension.Oportunidad_Origen__c = oppClonada.Oportunidad_Origen__c;
                 Decimal margenCalculo =0;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_Participacion_Ayesa__c</fullName>
+    <inlineHelpText>Type of Ayesa Company participation as Main contractor, subconsultant for a Main/Prime Consultant or Temporary Join Venture (TJV)</inlineHelpText>
+    <label>Tipo de Participación</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contratista Principal</fullName>
+                <default>false</default>
+                <label>Contratista Principal</label>
+            </value>
+            <value>
+                <fullName>Subcontratista</fullName>
+                <default>false</default>
+                <label>Subcontratista</label>
+            </value>
+            <value>
+                <fullName>UTE</fullName>
+                <default>false</default>
+                <label>UTE</label>
+            </value>
+            <value>
+                <fullName>UTE 100% Empresas Grupo</fullName>
+                <default>false</default>
+                <label>UTE 100% Empresas Grupo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

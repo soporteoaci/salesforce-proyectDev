@@ -1,0 +1,33 @@
+{
+  "definitionName" : "cpt:branding-cpt",
+  "id" : "782d53f7-9fb1-498e-aa60-a6b4e0b3f10b",
+  "label" : "Customer Account Portal",
+  "type" : "brandingSet",
+  "values" : {
+    "ActionColor" : "rgb(20, 124, 182)",
+    "BorderColor" : "#F4F4F4",
+    "CardBackgroundColor" : "rgba(255, 255, 255, 0)",
+    "CompanyLogo" : "/file-asset/logo_ayesa_copia?v=1&height=300&width=300",
+    "DetailTextColor" : "#696969",
+    "ErrorFontColor" : "#ff9e9e",
+    "HeaderBackgroundColor" : "#FFFFFF",
+    "HeaderFonts" : "Ek Mukta",
+    "LinkColor" : "rgb(20, 124, 182)",
+    "LoginBackgroundColor" : "#F4F4F4",
+    "LoginBackgroundImage" : "../../../../sfsites/picasso/core/external/salesforceIdentity/images/background.jpg?v=1",
+    "NavigationMenuTextColor" : "#222222",
+    "OverlayTextColor" : "#FFFFFF",
+    "PageBackgroundColor" : "#F5F7FA",
+    "PrimaryFont" : "Ek Mukta",
+    "TextColor" : "#333",
+    "TextTransformStyle" : "none",
+    "_ActionColorDarker" : "#0f5d88",
+    "_ActionColorTrans" : "rgba(20, 124, 182, 0.9)",
+    "_HeaderInputBackgroundColor" : "rgba(255,255,255,.4)",
+    "_HeaderPlaceholderTextColor" : "rgba(85,85,85,.8)",
+    "_HeaderTextColor" : "rgba(34,34,34,.8)",
+    "_HoverColor" : "rgba(20, 124, 182, 0.1)",
+    "_LinkColorDarker" : "#106391",
+    "_NavigationMenuHoverColor" : "rgba(255,255,255,.2)"
+  }
+}

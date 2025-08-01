@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pais_cliente</fullName>
+    <active>true</active>
+    <description>Si pais cliente es nulo que informe el pais en la cuenta.</description>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+				$User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;,
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				NOT(CONTAINS($Profile.Name, &apos;SME&apos;)),
+				Pais_del_cliente__c = null
+)</errorConditionFormula>
+    <errorMessage>Por favor informe el País en la cuenta del cliente de la oportunidad.</errorMessage>
+</ValidationRule>

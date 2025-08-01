@@ -1,0 +1,78 @@
+{
+  "appPageId" : "573ada8a-85b4-41fb-a45c-997760985868",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "954395ab-44fa-4517-918c-af2118845a38",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h4 style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0); font-size: 28px;\">Portal de Clientes</span></h4>\n<p style=\"text-align: center;\"><br /></p>\n<p style=\"text-align: center;\"><img class=\"sfdcCbImage\" src=\"{!contentAsset.banner.1}\" style=\"width: 1275.28px; height: 399.85px;\" /></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "15cc51bd-e8b6-4b1a-890d-a103b89779e8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tileMenuEditor" : "TileMenu2"
+      },
+      "componentName" : "forceCommunity:tileMenu",
+      "id" : "01b04ef0-677a-4764-a4bd-40796f6952c8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5a5ec88c-fd56-4614-b3a5-eb5bdf510e54",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "174c08a3-1277-48b8-b66e-74735566b832",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "aeed4b7a-b24d-472c-b246-24a8a7ae960e",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h4 style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0); font-size: 20px;\">Aprobaciones pendientes</span></h4><p> </p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "15028750-c419-42d9-8dc1-553e5d2e331a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:OACI_LTN_ApprovalProccessList",
+      "id" : "fc5fbe5e-1c14-4321-a3a7-27fc58dfcd7d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "01eaf0fb-99e4-4150-8c4c-8ae33381c459",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "03d2e45e-9c63-4aee-b5e4-5bbbb6a02fba",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "953cdc71-8eb2-4b44-9d8a-85429fc1d712",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

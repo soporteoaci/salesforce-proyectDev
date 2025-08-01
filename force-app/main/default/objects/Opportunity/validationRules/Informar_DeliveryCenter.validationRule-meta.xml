@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Informar_DeliveryCenter</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),
+				OR( 
+								ISPICKVAL(Subfase__c,&apos;Cualificación con autoprovisión&apos;),
+								ISPICKVAL(Subfase__c,&apos;Cualificación con preventa&apos;)
+				),
+				 ISBLANK(TEXT(Delivery_Center__c))
+)</errorConditionFormula>
+    <errorDisplayField>Delivery_Center__c</errorDisplayField>
+    <errorMessage>Informe el delivery center antes de pasar a la siguiente subfase</errorMessage>
+</ValidationRule>

@@ -6,7 +6,7 @@
     <aura:attribute name="importe_mtoHard" type="Decimal" />
     <aura:attribute name="importe_mtoSoft" type="Decimal" /> -->
     
-    <aura:attribute name="oportunidad" type="Oportunidad__c"/>
+    <aura:attribute name="oportunidad" type="Opportunity"/>
     
     <aura:attribute name="mensaje" type ="String" default=""/>
     <aura:attribute name="disabledSaveImporte" type="String" default="false"/>

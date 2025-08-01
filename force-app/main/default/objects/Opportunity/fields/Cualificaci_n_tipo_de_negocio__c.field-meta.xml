@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cualificaci_n_tipo_de_negocio__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  ISBLANK(TEXT(Tipo_de_Negocio__c)), &apos; &apos;, 
+
+			IF(OR( ISPICKVAL(Tipo_de_Negocio__c, &apos;Nuevo Negocio&apos;),
+									ISPICKVAL(Tipo_de_Negocio__c, &apos;Nuevo Cliente&apos;)), &apos;NN&apos;,
+						IF(
+										OR(
+														ISPICKVAL(Tipo_de_Negocio__c,&apos;Automatic Extension&apos;),
+														ISPICKVAL(Tipo_de_Negocio__c,&apos;Recurrent Extension&apos;),
+														ISPICKVAL(Tipo_de_Negocio__c,&apos;Previous exclusive framework agreement&apos;),
+														ISPICKVAL(Tipo_de_Negocio__c,&apos;Previous framework agreement with competitors&apos;),
+										    ISPICKVAL(Tipo_de_Negocio__c,&apos;Previous contract multiyear/multistage&apos;)), &apos;Previous Contracts&apos;,
+										IF(
+														OR(
+																		ISPICKVAL(Tipo_de_Negocio__c,&apos;New Extension or variation&apos;),
+																		ISPICKVAL(Tipo_de_Negocio__c,&apos;New exclusive framework agreement&apos;),
+																		ISPICKVAL(Tipo_de_Negocio__c,&apos;New framework agreement with competitors&apos;),
+																		ISPICKVAL(Tipo_de_Negocio__c,&apos;New contract being incumbent&apos;),
+																		ISPICKVAL(Tipo_de_Negocio__c,&apos;New contract&apos;),
+																		ISPICKVAL(Tipo_de_Negocio__c,&apos;New contract multiyear/multistage&apos;)), &apos;New Contracts&apos;,
+														&apos;NC&apos;)
+						) 
+					)
+		)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cualificación tipo de negocio</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

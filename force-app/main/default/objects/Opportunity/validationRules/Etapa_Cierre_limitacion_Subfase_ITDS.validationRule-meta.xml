@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etapa_Cierre_limitacion_Subfase_ITDS</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+NOT(ISPICKVAL(Direccion_Operaciones__c,&apos;ENGINEERING&apos;)),
+ISPICKVAL(Subfase__c,&apos;Esperando decisión&apos;)
+
+)</errorConditionFormula>
+    <errorDisplayField>Subfase__c</errorDisplayField>
+    <errorMessage>No puede avanzar a la subfase &apos;Esperando decisión&apos; ya que solo es seleccionable para oportunidades de la Dirección Operaciones ENGINEERING.</errorMessage>
+</ValidationRule>

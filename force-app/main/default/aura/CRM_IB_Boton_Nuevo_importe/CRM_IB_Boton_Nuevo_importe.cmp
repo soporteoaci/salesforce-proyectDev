@@ -1,6 +1,6 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable" controller="CRM_IB_Boton_Nuevo_Importe">
     
-    <aura:attribute name="Oportunidad" type ="Oportunidad__c"/>
+    <aura:attribute name="Oportunidad" type ="Opportunity"/>
     <aura:attribute name="Show_create_form" type="Boolean" default= "false"/>
     <aura:attribute name="Show_create_boton" type="Boolean" default= "true"/>
     <aura:attribute name="Show_fields_seccion" type="String" default =""/>

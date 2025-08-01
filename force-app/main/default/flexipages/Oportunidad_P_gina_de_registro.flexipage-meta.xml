@@ -2046,12 +2046,6 @@
             <componentInstance>
                 <componentName>CRM_IB_CPV</componentName>
                 <identifier>c_CRM_IB_CPV</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
-                        <operator>NE</operator>
-                    </criteria>
-                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>

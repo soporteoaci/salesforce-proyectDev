@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "3bd47316-cdcd-43b6-a13b-ab8f4355c1c9",
+  "appPageId" : "0ca41fc2-de6d-406f-90c0-f1ae1bffc495",
+  "configurationTags" : [ ],
+  "devName" : "Vision_360__c",
+  "id" : "17927561-b514-48f8-bf76-d4f945d2c248",
+  "label" : "Vision 360",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-vision-360",
+  "type" : "route",
+  "urlPrefix" : "vision-360"
+}

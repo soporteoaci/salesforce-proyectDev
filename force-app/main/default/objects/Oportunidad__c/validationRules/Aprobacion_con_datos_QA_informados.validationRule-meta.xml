@@ -2,8 +2,7 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Aprobacion_con_datos_QA_informados</fullName>
     <active>true</active>
-    <errorConditionFormula>AND(
-    $User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
 
 ISPICKVAL( Etapa__c , &quot;Aprobada QA&quot; ) &amp;&amp; 
 ISNULL(Oferta_SAP__c)

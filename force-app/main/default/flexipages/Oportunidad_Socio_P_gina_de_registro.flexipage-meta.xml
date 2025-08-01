@@ -126,6 +126,12 @@
                 <identifier>RecordParticipacion_Socio_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Opportunity__c</fieldItem>
+                <identifier>RecordOpportunity__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-0c1772e7-1294-40ed-ad5f-c899ef995883</name>
         <type>Facet</type>
     </flexiPageRegions>

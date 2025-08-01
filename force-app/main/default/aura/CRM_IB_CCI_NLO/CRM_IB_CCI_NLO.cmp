@@ -1,7 +1,7 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="CRM_IB_Controller" >
     
     
-    <aura:attribute name ="Oportunidad" type="Oportunidad__c"/>
+    <aura:attribute name ="Oportunidad" type="Opportunity"/>
     
     <aura:attribute name ="Valores_CCI" type="String[]" default="" />  
     <aura:attribute name="disabledSave" type="String" default="true"/>

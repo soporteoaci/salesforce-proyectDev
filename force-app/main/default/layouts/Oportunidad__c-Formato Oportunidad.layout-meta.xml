@@ -209,7 +209,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Categorisation</label>
+        <label>Categorization</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -274,7 +274,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Financial Data</label>
+        <label>Economic Data</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -319,7 +319,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Dates</label>
+        <label>Date</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -360,7 +360,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Ayesa participation</label>
+        <label>Ayesa Participation</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -456,7 +456,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Remarks</label>
+        <label>Observations</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -488,7 +488,7 @@
         <customLabel>true</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>true</editHeading>
-        <label>Custom Links</label>
+        <label>Custom Link</label>
         <layoutColumns/>
         <layoutColumns/>
         <layoutColumns/>

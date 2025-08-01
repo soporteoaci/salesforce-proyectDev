@@ -20,18 +20,18 @@
             if(state == "SUCCESS"){
                 
                 
-                component.set("v.Opportunity",result.oportunidad);
-                console.log('Valores GP,CR: '  + result.oportunidad.GP_Super__c + ' / ' +result.oportunidad.CR_Super__c + ' / ' + result.oportunidad.RecordType.Name   );
+                component.set("v.Opportunity",result.Opportunity);
+                console.log('Valores GP,CR: '  + result.Opportunity.GP_Super__c + ' / ' +result.Opportunity.CR_Super__c + ' / ' + result.oportunidad.RecordType.Name   );
                 
                 component.set("v.Valores_Gestor_Produccion",result.Gestor_produccion);
                 component.set("v.Valores_Centro_Responsabilidad",result.Centro_Responsabilidad);
-                component.set ("v.GP_elegido", result.oportunidad.GP_Super__c );
-                component.set ("v.CR_elegido", result.oportunidad.CR_Super__c );
-                console.log('DEL DO INIT CR_elegido: '+ result.oportunidad.CR_Super__c);
+                component.set ("v.GP_elegido", result.Opportunity.GP_Super__c );
+                component.set ("v.CR_elegido", result.Opportunity.CR_Super__c );
+                console.log('DEL DO INIT CR_elegido: '+ result.Opportunity.CR_Super__c);
                 
                 //Warning para informar los campos de GP,CR cuando estén vacios
-                //console.log('Resuuult: '+ result.oportunidad.RecordType.DeveloperName);
-                if((result.oportunidad.GP_Super__c ==undefined || result.oportunidad.CR_Super__c == undefined)){
+                //console.log('Resuuult: '+ result.Opportunity.RecordType.DeveloperName);
+                if((result.Opportunity.GP_Super__c ==undefined || result.Opportunity.CR_Super__c == undefined)){
                     console.log('No está informado GP,CR');
                     /* var showToast = $A.get("e.force:showToast");
                     showToast.setParams({

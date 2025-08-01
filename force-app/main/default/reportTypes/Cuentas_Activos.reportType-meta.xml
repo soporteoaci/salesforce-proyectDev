@@ -653,6 +653,11 @@
             <field>Oportunidad__c.Oportunidad_Id_18__c</field>
             <table>Account.Activos__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c</field>
+            <table>Account.Activos__r</table>
+        </columns>
         <masterLabel>Activos</masterLabel>
     </sections>
 </ReportType>

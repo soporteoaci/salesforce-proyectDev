@@ -268,12 +268,10 @@
         <label>Suma socios</label>
         <locationX>178</locationX>
         <locationY>1379</locationY>
-        <connector>
-            <targetReference>Subcontratas</targetReference>
-        </connector>
         <customErrorMessages>
             <errorMessage>La suma del % de participación de los socios y el % Participación Ayesa debe de ser 100%</errorMessage>
-            <isFieldError>false</isFieldError>
+            <fieldSelection>Subfase__c</fieldSelection>
+            <isFieldError>true</isFieldError>
         </customErrorMessages>
     </customErrors>
     <decisions>

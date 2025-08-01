@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sociedad_Ayesa__c</fullName>
+    <description>Sociedad del grupo Ayesa que presenta la oferta</description>
+    <inlineHelpText>Sociedad del grupo Ayesa que presenta la oferta</inlineHelpText>
+    <label>Sociedad</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0002</fullName>
+                <default>false</default>
+                <label>0002 - AYESA ENGINEERING S.A</label>
+            </value>
+            <value>
+                <fullName>0003</fullName>
+                <default>false</default>
+                <label>0003 - AYESA ING. Y ARQU., S.A.</label>
+            </value>
+            <value>
+                <fullName>0004</fullName>
+                <default>false</default>
+                <label>0004 - ALIA GESTION S.L.</label>
+            </value>
+            <value>
+                <fullName>0005</fullName>
+                <default>false</default>
+                <label>0005 - AYNOVA, S.A.U.</label>
+            </value>
+            <value>
+                <fullName>0007</fullName>
+                <default>false</default>
+                <label>0007 - ACT SISTEMAS, S.L.U.</label>
+            </value>
+            <value>
+                <fullName>0012</fullName>
+                <default>false</default>
+                <label>0012 - AYESA MDE, S.A.</label>
+            </value>
+            <value>
+                <fullName>0018</fullName>
+                <default>false</default>
+                <label>0018 - AYESA AIR CONTROL S.L.</label>
+            </value>
+            <value>
+                <fullName>0021</fullName>
+                <default>false</default>
+                <label>0021 - AYESA MEXICO,S.A. de C.V.</label>
+            </value>
+            <value>
+                <fullName>0023</fullName>
+                <default>false</default>
+                <label>0023 - AYESA SUCURSAL POLONIA</label>
+            </value>
+            <value>
+                <fullName>0024</fullName>
+                <default>false</default>
+                <label>0024 - AYESA POLSKA SP. Z O.O.</label>
+            </value>
+            <value>
+                <fullName>0025</fullName>
+                <default>false</default>
+                <label>0025 - AYESA MAROC, S.A.R.L</label>
+            </value>
+            <value>
+                <fullName>0027</fullName>
+                <default>false</default>
+                <label>0027 - AYESA IMPLEMEN. TECN. S.A</label>
+            </value>
+            <value>
+                <fullName>0030</fullName>
+                <default>false</default>
+                <label>0030 - AYESA ALGERIE S.A.R.L.</label>
+            </value>
+            <value>
+                <fullName>0034</fullName>
+                <default>false</default>
+                <label>0034 - AYESA SERVICIOS S RL DECV</label>
+            </value>
+            <value>
+                <fullName>0035</fullName>
+                <default>false</default>
+                <label>0035 - ALIA WORLDWIDE, S.L.</label>
+            </value>
+            <value>
+                <fullName>0036</fullName>
+                <default>false</default>
+                <label>0036 - AYESA BRANCH OFFICE</label>
+            </value>
+            <value>
+                <fullName>0040</fullName>
+                <default>false</default>
+                <label>0040 - AYESA ENGINYERIA SERVEIS</label>
+            </value>
+            <value>
+                <fullName>0045</fullName>
+                <default>false</default>
+                <label>0045 - ATECH ADVAN. SOL.</label>
+            </value>
+            <value>
+                <fullName>0047</fullName>
+                <default>false</default>
+                <label>0047 - ATECH BPO, S.L.</label>
+            </value>
+            <value>
+                <fullName>0048</fullName>
+                <default>false</default>
+                <label>0048 - UNITEC</label>
+            </value>
+            <value>
+                <fullName>0049</fullName>
+                <default>false</default>
+                <label>0049 - INSOTECH INTERNATIONAL</label>
+            </value>
+            <value>
+                <fullName>0050</fullName>
+                <default>false</default>
+                <label>0050 - AYESA PERÚ</label>
+            </value>
+            <value>
+                <fullName>0053</fullName>
+                <default>false</default>
+                <label>0053 - AYESA INDIA PRIVATE LIMIT</label>
+            </value>
+            <value>
+                <fullName>0054</fullName>
+                <default>false</default>
+                <label>0054 - AYESA COLOMBIA SAS</label>
+            </value>
+            <value>
+                <fullName>0056</fullName>
+                <default>false</default>
+                <label>0056 - AYESA PANAMÁ</label>
+            </value>
+            <value>
+                <fullName>0057</fullName>
+                <default>false</default>
+                <label>0057 - AAT PANAMÁ RUC</label>
+            </value>
+            <value>
+                <fullName>0058</fullName>
+                <default>false</default>
+                <label>0058 - AYESA PANAMÁ RUC</label>
+            </value>
+            <value>
+                <fullName>0059</fullName>
+                <default>false</default>
+                <label>0059 - AYESA COLOMBIA SUCURSAL</label>
+            </value>
+            <value>
+                <fullName>0060</fullName>
+                <default>false</default>
+                <label>0060 - AAT ECUADOR</label>
+            </value>
+            <value>
+                <fullName>0061</fullName>
+                <default>false</default>
+                <label>0061 - AYESA ECUADOR</label>
+            </value>
+            <value>
+                <fullName>0062</fullName>
+                <default>false</default>
+                <label>0062 - AYESA CHILE</label>
+            </value>
+            <value>
+                <fullName>0063</fullName>
+                <default>false</default>
+                <label>0063 - AAT CHILE</label>
+            </value>
+            <value>
+                <fullName>0064</fullName>
+                <default>false</default>
+                <label>0064 - AAT COLOMBIA Filial</label>
+            </value>
+            <value>
+                <fullName>0065</fullName>
+                <default>false</default>
+                <label>0065 - AAT COLOMBIA Sucursal</label>
+            </value>
+            <value>
+                <fullName>0066</fullName>
+                <default>false</default>
+                <label>0066 - AYESA LTD</label>
+            </value>
+            <value>
+                <fullName>0067</fullName>
+                <default>false</default>
+                <label>0067 - AAT ITALIA</label>
+            </value>
+            <value>
+                <fullName>0068</fullName>
+                <default>false</default>
+                <label>0068 - AAT MEXICO</label>
+            </value>
+            <value>
+                <fullName>0070</fullName>
+                <default>false</default>
+                <label>0070 - ACTEA DESARROLLO SOLUC.</label>
+            </value>
+            <value>
+                <fullName>0071</fullName>
+                <default>false</default>
+                <label>0071 - AAT CHILE AGENCIA</label>
+            </value>
+            <value>
+                <fullName>0072</fullName>
+                <default>false</default>
+                <label>0072 - AYESA DE COLOMBIA</label>
+            </value>
+            <value>
+                <fullName>0073</fullName>
+                <default>false</default>
+                <label>0073 - AYESA EPC WORLD, S.A.</label>
+            </value>
+            <value>
+                <fullName>0078</fullName>
+                <default>false</default>
+                <label>0078 - AYESA ARABIA SAUDI SUCUR.</label>
+            </value>
+            <value>
+                <fullName>0079</fullName>
+                <default>false</default>
+                <label>0079 - CONSORCIO AYESA S A</label>
+            </value>
+            <value>
+                <fullName>0080</fullName>
+                <default>false</default>
+                <label>0080 - E&amp;A RENEWABLE SOLUTIONS</label>
+            </value>
+            <value>
+                <fullName>0081</fullName>
+                <default>false</default>
+                <label>0081 - SIST. COMERCIALES BRASIL</label>
+            </value>
+            <value>
+                <fullName>0082</fullName>
+                <default>false</default>
+                <label>0082 - CONSORCIO A&amp;E PERÚ</label>
+            </value>
+            <value>
+                <fullName>0083</fullName>
+                <default>false</default>
+                <label>0083 - ATECH BPO MARRUECOS SARL</label>
+            </value>
+            <value>
+                <fullName>0086</fullName>
+                <default>false</default>
+                <label>0086 - AAT PERU SUCURSAL</label>
+            </value>
+            <value>
+                <fullName>0088</fullName>
+                <default>false</default>
+                <label>0088 - SUM INFRA-VENTURE MEXICO</label>
+            </value>
+            <value>
+                <fullName>0089</fullName>
+                <default>false</default>
+                <label>0089 - AYESA PROJETOS BRASIL LTD</label>
+            </value>
+            <value>
+                <fullName>0087</fullName>
+                <default>false</default>
+                <label>0087 - AAC Alemania</label>
+            </value>
+            <value>
+                <fullName>0092</fullName>
+                <default>false</default>
+                <label>0092 - AYESA SUCURSAL PORTUGAL</label>
+            </value>
+            <value>
+                <fullName>0093</fullName>
+                <default>false</default>
+                <label>0093 - AYESA ARCHITECTURAL ENGIN</label>
+            </value>
+            <value>
+                <fullName>0094</fullName>
+                <default>false</default>
+                <label>0094 - ATECH BPO SUC COLOMBIA</label>
+            </value>
+            <value>
+                <fullName>0095</fullName>
+                <default>false</default>
+                <label>0095 - Ayesa IA Agencia Chile</label>
+            </value>
+            <value>
+                <fullName>0099</fullName>
+                <default>false</default>
+                <label>0099 - M2C CONSULTING &amp; PROCEDUR</label>
+            </value>
+            <value>
+                <fullName>0145</fullName>
+                <default>false</default>
+                <label>0145 - AYESA SERV. DIG. AVANZADO</label>
+            </value>
+            <value>
+                <fullName>0146</fullName>
+                <default>false</default>
+                <label>0146 - EMERGYA DIGITAL SOLUTIONS</label>
+            </value>
+            <value>
+                <fullName>0147</fullName>
+                <default>false</default>
+                <label>0147- MANIFEST DESIGN, S.L.U.</label>
+            </value>
+            <value>
+                <fullName>0148</fullName>
+                <default>false</default>
+                <label>0148 - ATECH ADVANCED SOLUTIONS</label>
+            </value>
+            <value>
+                <fullName>0151</fullName>
+                <default>false</default>
+                <label>0151 - BYRNELOOBY UK</label>
+            </value>
+            <value>
+                <fullName>0151-IE</fullName>
+                <default>false</default>
+                <label>0151 - BYRNELOOBY Irlanda</label>
+            </value>
+            <value>
+                <fullName>0151-BH</fullName>
+                <default>false</default>
+                <label>0151 - BYRNELOOBY Middle East</label>
+            </value>
+            <value>
+                <fullName>0165</fullName>
+                <default>false</default>
+                <label>0165 - AYESA REP. DOMINICANA</label>
+            </value>
+            <value>
+                <fullName>0170</fullName>
+                <default>false</default>
+                <label>0170 - AYESA IBERMÁTICA, S.A.U.</label>
+            </value>
+            <value>
+                <fullName>0171</fullName>
+                <default>false</default>
+                <label>0171 - ITS</label>
+            </value>
+            <value>
+                <fullName>0172</fullName>
+                <default>false</default>
+                <label>0172 - EL ARTE DE MEDIR EN DIGITAL</label>
+            </value>
+            <value>
+                <fullName>0173</fullName>
+                <default>false</default>
+                <label>0173 - I3B</label>
+            </value>
+            <value>
+                <fullName>0175</fullName>
+                <default>false</default>
+                <label>0175 - TECNET</label>
+            </value>
+            <value>
+                <fullName>0176</fullName>
+                <default>false</default>
+                <label>0176 - IBERMÁTICA USA, LLC</label>
+            </value>
+            <value>
+                <fullName>0178</fullName>
+                <default>false</default>
+                <label>0178 - SQEDIO</label>
+            </value>
+            <value>
+                <fullName>0180</fullName>
+                <default>false</default>
+                <label>0180 - SMARTTECH INDUSTRY SOFTWARE SOLUTIONS, S.L</label>
+            </value>
+            <value>
+                <fullName>0181</fullName>
+                <default>false</default>
+                <label>0181 - IBERMÁTICA ANDORRA</label>
+            </value>
+            <value>
+                <fullName>0186</fullName>
+                <default>false</default>
+                <label>0186 - IBERMATICA FUNDAZIOA</label>
+            </value>
+            <value>
+                <fullName>IB67</fullName>
+                <default>false</default>
+                <label>IB67 - IBERMATICA PERU S.A.C.</label>
+            </value>
+            <value>
+                <fullName>-</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-</label>
+            </value>
+            <value>
+                <fullName>0185</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>0185</label>
+            </value>
+            <value>
+                <fullName>XXXX - Ibermática</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>XXXX - Ibermática</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -6,7 +6,7 @@
         
         const prefix = recordId.substring(0, 3);
         const mapping = {
-            'a0F': 'Oportunidad__c',
+            'a0F': 'Opportunity',
             'a0m': 'Objetivo__c'
         };
         

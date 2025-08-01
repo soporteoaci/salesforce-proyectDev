@@ -3,7 +3,7 @@
     <fullName>Enviado_la_oferta_a_soporte__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Se ha enviado la oferta presentada a Soporte Ofertas o se ha subido a Alejandría</description>
-    <inlineHelpText>Marque este campo si se ha enviado la oferta presentada a Soporte Ofertas / se ha subido a Alejandria</inlineHelpText>
+    <inlineHelpText>Check this field if the bid has been sent to Bid Support / it has been uploaded to Alejandría</inlineHelpText>
     <label>Enviado la oferta a soporte / Alejandría</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

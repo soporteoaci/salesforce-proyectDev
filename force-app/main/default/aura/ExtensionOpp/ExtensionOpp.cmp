@@ -1,14 +1,14 @@
 <aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" controller="ExtensionOppController">
     
     <aura:attribute name="record" type="Object"/>
-    <aura:attribute name="caseRecord" type="Oportunidad__c"/>
+    <aura:attribute name="caseRecord" type="Opportunity"/>
     <aura:attribute name="recordError" type="String"/>
-    <aura:attribute name="dataRecord" type="Oportunidad__c"/>
+    <aura:attribute name="dataRecord" type="Opportunity"/>
     <aura:attribute name="disabledSave" type="String" default="false"/>
     <aura:attribute name="RecordTypeName" type="String"/>
     <aura:attribute name="Subfase" type="String"/>
     
-    <aura:attribute name="Oportunidad" type="Oportunidad__c"/>
+    <aura:attribute name="Oportunidad" type="Opportunity"/>
     <aura:attribute name="LineasServicio" type="String[]"/>
     <aura:attribute name="TipoExtensionValue" type="String"/>
     

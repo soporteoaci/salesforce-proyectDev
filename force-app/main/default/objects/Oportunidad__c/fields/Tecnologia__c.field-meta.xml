@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Tecnologia__c</fullName>
-    <inlineHelpText>Elija una o varias tecnologías que se utilizarían en el futuro PEP.  Si no encuentra la que busca, abra una incidencia en https://helpdesk.ayesa.com</inlineHelpText>
+    <inlineHelpText>Select one or several technologies that will be used in the future PSP.  If you don&apos;t find what you are searching for, initiate a discrepancy report in https://helpdesk.ayesa.com</inlineHelpText>
     <label>Tecnología</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

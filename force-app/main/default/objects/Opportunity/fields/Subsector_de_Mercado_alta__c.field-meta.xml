@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subsector_de_Mercado_alta__c</fullName>
+    <description>Este campo tiene que tener los mismos valores que Subdivision 1 y la misma dependencia que Sector de Mercado (DivisionPicklist) - Subsector de Mercado (Subdivision 1)</description>
+    <label>Subdivisión / Subsector de Mercados</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sector_de_Mercados__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Acería/Siderurgia</fullName>
+                <default>false</default>
+                <label>Acería/Siderurgia</label>
+            </value>
+            <value>
+                <fullName>60029448</fullName>
+                <default>false</default>
+                <label>ADDED VALUES</label>
+            </value>
+            <value>
+                <fullName>60048548</fullName>
+                <default>false</default>
+                <label>AGE/Ciencia Hacienda</label>
+            </value>
+            <value>
+                <fullName>60048549</fullName>
+                <default>false</default>
+                <label>AGE/Defensa, Interior, TTE y Justicia</label>
+            </value>
+            <value>
+                <fullName>60029425</fullName>
+                <default>false</default>
+                <label>AGE/Economia, Trabajo y Comunidad</label>
+            </value>
+            <value>
+                <fullName>60029426</fullName>
+                <default>false</default>
+                <label>AGE/Exteriores, Sociales y Ayto.</label>
+            </value>
+            <value>
+                <fullName>60048547</fullName>
+                <default>false</default>
+                <label>AGE/Ind.Turismo, Agric. y Cult.</label>
+            </value>
+            <value>
+                <fullName>60029423</fullName>
+                <default>false</default>
+                <label>Agile Delivery Office</label>
+            </value>
+            <value>
+                <fullName>Alimentación</fullName>
+                <default>false</default>
+                <label>Alimentación</label>
+            </value>
+            <value>
+                <fullName>Automoción</fullName>
+                <default>false</default>
+                <label>Automoción</label>
+            </value>
+            <value>
+                <fullName>60029735</fullName>
+                <default>false</default>
+                <label>BPO ENEL</label>
+            </value>
+            <value>
+                <fullName>60029736</fullName>
+                <default>false</default>
+                <label>BPO OTRAS UTILITIES</label>
+            </value>
+            <value>
+                <fullName>60055388</fullName>
+                <default>false</default>
+                <label>C. INF &amp; MW</label>
+            </value>
+            <value>
+                <fullName>60048554</fullName>
+                <default>false</default>
+                <label>Cataluña</label>
+            </value>
+            <value>
+                <fullName>Cloud &amp; Infraestructura</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cloud &amp; Infraestructura</label>
+            </value>
+            <value>
+                <fullName>60050046</fullName>
+                <default>false</default>
+                <label>Core Sanitario</label>
+            </value>
+            <value>
+                <fullName>60029429</fullName>
+                <default>false</default>
+                <label>CUSTOMER OPERATION IB</label>
+            </value>
+            <value>
+                <fullName>60029434</fullName>
+                <default>false</default>
+                <label>CUSTOMER OPERATION LATA</label>
+            </value>
+            <value>
+                <fullName>60029455</fullName>
+                <default>false</default>
+                <label>DATA MANAGEMEN</label>
+            </value>
+            <value>
+                <fullName>60029424</fullName>
+                <default>false</default>
+                <label>Des. Sost, Justicia y Adm. Elec.</label>
+            </value>
+            <value>
+                <fullName>Digital Admin</fullName>
+                <default>false</default>
+                <label>Digital Admin</label>
+            </value>
+            <value>
+                <fullName>60048551</fullName>
+                <default>false</default>
+                <label>Dip. Forales/Gob. Nav.</label>
+            </value>
+            <value>
+                <fullName>Distribución alimentaria</fullName>
+                <default>false</default>
+                <label>Distribución alimentaria</label>
+            </value>
+            <value>
+                <fullName>60029419</fullName>
+                <default>false</default>
+                <label>Eco Financiero</label>
+            </value>
+            <value>
+                <fullName>60029420</fullName>
+                <default>false</default>
+                <label>Educación</label>
+            </value>
+            <value>
+                <fullName>60048552</fullName>
+                <default>false</default>
+                <label>EJIE</label>
+            </value>
+            <value>
+                <fullName>60029421</fullName>
+                <default>false</default>
+                <label>Empleo e Innovación</label>
+            </value>
+            <value>
+                <fullName>Fabricantes soluciones Utilities</fullName>
+                <default>false</default>
+                <label>Fabricantes soluciones Utilities</label>
+            </value>
+            <value>
+                <fullName>60048555</fullName>
+                <default>false</default>
+                <label>Gen. Valenciana</label>
+            </value>
+            <value>
+                <fullName>60033645</fullName>
+                <default>false</default>
+                <label>GREEN POWER GENERATION</label>
+            </value>
+            <value>
+                <fullName>60029462</fullName>
+                <default>false</default>
+                <label>I&amp;N</label>
+            </value>
+            <value>
+                <fullName>60055397</fullName>
+                <default>false</default>
+                <label>IB CLOUD</label>
+            </value>
+            <value>
+                <fullName>60055396</fullName>
+                <default>false</default>
+                <label>IB DATA</label>
+            </value>
+            <value>
+                <fullName>IBERDROLA USA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IBERDROLA USA</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Microsoft</fullName>
+                <default>false</default>
+                <label>Microsoft</label>
+            </value>
+            <value>
+                <fullName>60050047</fullName>
+                <default>false</default>
+                <label>No Core Sanitario</label>
+            </value>
+            <value>
+                <fullName>60031887</fullName>
+                <default>false</default>
+                <label>No Salud</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Recursos Humanos</fullName>
+                <default>false</default>
+                <label>Recursos Humanos</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>60031886</fullName>
+                <default>false</default>
+                <label>Salud</label>
+            </value>
+            <value>
+                <fullName>60050045</fullName>
+                <default>false</default>
+                <label>Sanidad Privada</label>
+            </value>
+            <value>
+                <fullName>60055390</fullName>
+                <default>false</default>
+                <label>SAS</label>
+            </value>
+            <value>
+                <fullName>60050686</fullName>
+                <default>false</default>
+                <label>Serv. Digitales UE</label>
+            </value>
+            <value>
+                <fullName>60029418</fullName>
+                <default>false</default>
+                <label>Servicios Atención Ciudadana</label>
+            </value>
+            <value>
+                <fullName>60029422</fullName>
+                <default>false</default>
+                <label>Servicios Sociales</label>
+            </value>
+            <value>
+                <fullName>Telco</fullName>
+                <default>false</default>
+                <label>Telco</label>
+            </value>
+            <value>
+                <fullName>Transporte</fullName>
+                <default>false</default>
+                <label>Transporte</label>
+            </value>
+            <value>
+                <fullName>Turismo y Ciber</fullName>
+                <default>false</default>
+                <label>Turismo y Ciber</label>
+            </value>
+            <value>
+                <fullName>Universidades</fullName>
+                <default>false</default>
+                <label>Universidades</label>
+            </value>
+            <value>
+                <fullName>60051189</fullName>
+                <default>false</default>
+                <label>UTILITIES ESP ADDED VALUES</label>
+            </value>
+            <value>
+                <fullName>60051192</fullName>
+                <default>false</default>
+                <label>UTILITIES ESP CENTRO 1</label>
+            </value>
+            <value>
+                <fullName>60051190</fullName>
+                <default>false</default>
+                <label>UTILITIES ESP CENTRO 2</label>
+            </value>
+            <value>
+                <fullName>60051194</fullName>
+                <default>false</default>
+                <label>UTILITIES ESP CENTRO 3</label>
+            </value>
+            <value>
+                <fullName>60055391</fullName>
+                <default>false</default>
+                <label>UTILITIES ESP CENTRO 4</label>
+            </value>
+            <value>
+                <fullName>60055392</fullName>
+                <default>false</default>
+                <label>UTILITIES ESP CENTRO 5</label>
+            </value>
+            <value>
+                <fullName>60051191</fullName>
+                <default>false</default>
+                <label>UTILITIES ESP NORTE</label>
+            </value>
+            <value>
+                <fullName>60051193</fullName>
+                <default>false</default>
+                <label>UTILITIES ESP SUR &amp; RESTO</label>
+            </value>
+            <value>
+                <fullName>60033651</fullName>
+                <default>false</default>
+                <label>UTILITIES LATAM BRASIL</label>
+            </value>
+            <value>
+                <fullName>60033652</fullName>
+                <default>false</default>
+                <label>UTILITIES LATAM CHILE</label>
+            </value>
+            <value>
+                <fullName>60033649</fullName>
+                <default>false</default>
+                <label>UTILITIES LATAM COLOMBIA</label>
+            </value>
+            <value>
+                <fullName>60034604</fullName>
+                <default>false</default>
+                <label>UTILITIES LATAM MEXICO</label>
+            </value>
+            <value>
+                <fullName>60034605</fullName>
+                <default>false</default>
+                <label>UTILITIES LATAM PANAMA</label>
+            </value>
+            <value>
+                <fullName>60033650</fullName>
+                <default>false</default>
+                <label>UTILITIES LATAM PERU</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>60033576</controllingFieldValue>
+            <valueName>Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60033576</controllingFieldValue>
+            <valueName>Telco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029428</controllingFieldValue>
+            <valueName>60029448</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029428</controllingFieldValue>
+            <valueName>60029429</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029428</controllingFieldValue>
+            <valueName>60029434</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029428</controllingFieldValue>
+            <valueName>60029455</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029428</controllingFieldValue>
+            <valueName>60033645</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029428</controllingFieldValue>
+            <valueName>60029462</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60048556</controllingFieldValue>
+            <valueName>60050046</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60048556</controllingFieldValue>
+            <valueName>60050047</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60048556</controllingFieldValue>
+            <valueName>60050045</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60048556</controllingFieldValue>
+            <valueName>60055390</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029478</controllingFieldValue>
+            <valueName>60051189</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029478</controllingFieldValue>
+            <valueName>60051192</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029478</controllingFieldValue>
+            <valueName>60051190</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029478</controllingFieldValue>
+            <valueName>60051194</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029478</controllingFieldValue>
+            <valueName>60055391</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029478</controllingFieldValue>
+            <valueName>60055392</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029478</controllingFieldValue>
+            <valueName>60051191</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029478</controllingFieldValue>
+            <valueName>60051193</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029480</controllingFieldValue>
+            <valueName>60033651</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029480</controllingFieldValue>
+            <valueName>60033652</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029480</controllingFieldValue>
+            <valueName>60033649</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029480</controllingFieldValue>
+            <valueName>60034604</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029480</controllingFieldValue>
+            <valueName>60034605</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029480</controllingFieldValue>
+            <valueName>60033650</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60048557</controllingFieldValue>
+            <valueName>60055397</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60048557</controllingFieldValue>
+            <valueName>60055396</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60048559</controllingFieldValue>
+            <valueName>Acería/Siderurgia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60048559</controllingFieldValue>
+            <valueName>Fabricantes soluciones Utilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60048559</controllingFieldValue>
+            <controllingFieldValue>60029513</controllingFieldValue>
+            <valueName>Otros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60031603</controllingFieldValue>
+            <valueName>60031887</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60031603</controllingFieldValue>
+            <valueName>60031886</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029481</controllingFieldValue>
+            <valueName>60029735</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029481</controllingFieldValue>
+            <valueName>60029736</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029513</controllingFieldValue>
+            <valueName>Distribución alimentaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029513</controllingFieldValue>
+            <valueName>Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029513</controllingFieldValue>
+            <valueName>Transporte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60029513</controllingFieldValue>
+            <valueName>Universidades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60048548</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60048549</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60029425</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60029426</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60048547</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60029423</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60055388</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60048554</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60029424</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>Digital Admin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60048551</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60029419</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60029420</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60048552</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60029421</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60048555</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>Recursos Humanos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60050686</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60029418</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>60029422</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60049219</controllingFieldValue>
+            <valueName>Turismo y Ciber</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

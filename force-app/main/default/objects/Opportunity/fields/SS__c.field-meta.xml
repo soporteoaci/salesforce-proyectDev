@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SS__c</fullName>
+    <label>SS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SS0 – Contacto inicial</fullName>
+                <default>true</default>
+                <label>SS0 – Contacto inicial</label>
+            </value>
+            <value>
+                <fullName>SS1 – Presentación capacidades</fullName>
+                <default>false</default>
+                <label>SS1 – Presentación capacidades</label>
+            </value>
+            <value>
+                <fullName>SS2 – Oportunidad identificada</fullName>
+                <default>false</default>
+                <label>SS2 – Oportunidad identificada</label>
+            </value>
+            <value>
+                <fullName>SS3 – RFI presentada</fullName>
+                <default>false</default>
+                <label>SS3 – RFI presentada</label>
+            </value>
+            <value>
+                <fullName>SS4 – Oferta presentada</fullName>
+                <default>false</default>
+                <label>SS4 – Oferta presentada</label>
+            </value>
+            <value>
+                <fullName>SS5 – En negociación</fullName>
+                <default>false</default>
+                <label>SS5 – En negociación</label>
+            </value>
+            <value>
+                <fullName>SS6 – Contrato firmado</fullName>
+                <default>false</default>
+                <label>SS6 – Contrato firmado</label>
+            </value>
+            <value>
+                <fullName>SS7 - No Go</fullName>
+                <default>false</default>
+                <label>SS7 - No Go</label>
+            </value>
+            <value>
+                <fullName>SS8 - Oferta Perdida</fullName>
+                <default>false</default>
+                <label>SS8 - Oferta Perdida</label>
+            </value>
+            <value>
+                <fullName>SS9 - Oferta anulada</fullName>
+                <default>false</default>
+                <label>SS9 - Oferta anulada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

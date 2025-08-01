@@ -2167,16 +2167,6 @@
             <field>Service_Model__c</field>
             <table>Account.Oportunidades__r</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Decisi_n_Equipo_Preventa__c</field>
-            <table>Account.Oportunidades__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Tipo_para_Informe__c</field>
-            <table>Account.Oportunidades__r</table>
-        </columns>
         <masterLabel>Oportunidades</masterLabel>
     </sections>
     <sections>
@@ -2328,6 +2318,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Id_cuenta_18__c</field>
+            <table>Account.Oportunidades__r.Importes_SME__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c</field>
             <table>Account.Oportunidades__r.Importes_SME__r</table>
         </columns>
         <masterLabel>Importes</masterLabel>

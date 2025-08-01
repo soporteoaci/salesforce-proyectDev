@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Informar_Responsable_Proyecto</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				$User.Email &lt;&gt; &apos;a.rodrig@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
+				Record_Type_Name__c =&apos;Ayesa&apos;,
+				NOT(ISPICKVAL(Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
+				NOT(ISPICKVAL(Tipo_Extension__c, &apos;Extensión CUTE&apos;)),
+				OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),
+							ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION &apos;)
+						),
+				OR(
+							ISBLANK(Responsable_de_Proyecto_Nombre__c),
+				   ISBLANK(Responsable_de_Proyecto_Email__c)
+				  ),
+ISPICKVAL(Subfase__c, &apos;Ganada&apos;)
+)</errorConditionFormula>
+    <errorMessage>Informe el responsable de proyecto en la pestaña &apos;Cierre&apos;</errorMessage>
+</ValidationRule>

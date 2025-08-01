@@ -3,7 +3,7 @@
     <fullName>id_registro_dataverso__c</fullName>
     <description>Referencia del expediente en MS Power Automate</description>
     <externalId>false</externalId>
-    <inlineHelpText>Referencia del expediente en MS Power Automate</inlineHelpText>
+    <inlineHelpText>File reference in MS Power Automate</inlineHelpText>
     <label>ID Registro Dataverso</label>
     <length>50</length>
     <required>false</required>

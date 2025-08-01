@@ -15,7 +15,7 @@
     <aura:attribute name="innovationWorkStreamOptions" type="List"/>	<!-- SCM - Nuevo campo Innovation_Work_Stream__c -->
     <aura:attribute name="innovationWorkStreamSelected" type="String"/>	<!-- SCM - Nuevo campo Innovation_Work_Stream__c -->
     
-    <aura:attribute name="opp" type="Oportunidad__c"/>
+    <aura:attribute name="opp" type="Opportunity"/>
     
     <aura:attribute name="canChange" type="Boolean" default="false"/>
     

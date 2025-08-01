@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bookings_breakdown__c</fullName>
+    <label>Diversification breakdown</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>New Names</fullName>
+                <default>false</default>
+                <label>New Names</label>
+            </value>
+            <value>
+                <fullName>Cross-selling</fullName>
+                <default>false</default>
+                <label>Cross-selling</label>
+            </value>
+            <value>
+                <fullName>Up-selling</fullName>
+                <default>false</default>
+                <label>Up-selling</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

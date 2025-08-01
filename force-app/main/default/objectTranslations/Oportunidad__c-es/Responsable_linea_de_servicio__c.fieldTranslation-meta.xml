@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Responsable Delivery Center --></label>
     <name>Responsable_linea_de_servicio__c</name>
-    <relationshipLabel><!-- Oportunidades (Responsable Delivery Center) --></relationshipLabel>
+    <relationshipLabel><!-- Opportunities Ayesa (Delivery Center Responsible) --></relationshipLabel>
 </CustomFieldTranslation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area__c</fullName>
+    <label>Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATC</fullName>
+                <default>true</default>
+                <label>ATC</label>
+            </value>
+            <value>
+                <fullName>ATD</fullName>
+                <default>false</default>
+                <label>ATD</label>
+            </value>
+            <value>
+                <fullName>INGENIERIA_CIVIL</fullName>
+                <default>false</default>
+                <label>INGENIERÍA CIVIL Y ARQUITECTURA</label>
+            </value>
+            <value>
+                <fullName>INGENIERIA_INDUSTRIAL</fullName>
+                <default>false</default>
+                <label>INGENIERÍA INDUSTRIAL</label>
+            </value>
+            <value>
+                <fullName>M2C</fullName>
+                <default>false</default>
+                <label>M2C</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

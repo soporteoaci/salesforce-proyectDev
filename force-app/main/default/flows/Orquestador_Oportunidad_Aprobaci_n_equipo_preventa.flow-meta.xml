@@ -17,7 +17,7 @@
             <actionType>stepBackground</actionType>
             <assignees>
                 <assignee>
-                    <stringValue>javier.ponce@gestion.ayesa.com.devdsi</stringValue>
+                    <stringValue>javier.ponce@gestion.ayesa.com.proyectdev</stringValue>
                 </assignee>
                 <assigneeType>User</assigneeType>
             </assignees>
@@ -43,7 +43,7 @@
             <actionType>stepBackground</actionType>
             <assignees>
                 <assignee>
-                    <stringValue>javier.ponce@gestion.ayesa.com.devdsi</stringValue>
+                    <stringValue>javier.ponce@gestion.ayesa.com.proyectdev</stringValue>
                 </assignee>
                 <assigneeType>User</assigneeType>
             </assignees>
@@ -115,5 +115,5 @@
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>InvalidDraft</status>
+    <status>Active</status>
 </Flow>

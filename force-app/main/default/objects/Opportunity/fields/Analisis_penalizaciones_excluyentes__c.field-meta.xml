@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Analisis_penalizaciones_excluyentes__c</fullName>
+    <inlineHelpText>RO</inlineHelpText>
+    <label>Análisis penalizaciones excluyentes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Muy exigentes</fullName>
+                <default>false</default>
+                <label>Muy exigentes</label>
+            </value>
+            <value>
+                <fullName>Moderadas</fullName>
+                <default>false</default>
+                <label>Moderadas</label>
+            </value>
+            <value>
+                <fullName>Bajas</fullName>
+                <default>false</default>
+                <label>Bajas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

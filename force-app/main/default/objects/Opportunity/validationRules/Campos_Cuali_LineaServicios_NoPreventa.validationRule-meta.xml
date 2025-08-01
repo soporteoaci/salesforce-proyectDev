@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campos_Cuali_LineaServicios_NoPreventa</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    
+     $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+								IF(
+								ISPICKVAL(Linea_de_Servicio__c,&apos;SAP&apos;), AND(NOT(CONTAINS(TEXT(Delivery_Center__c),$UserRole.Name)), $UserRole.Name &lt;&gt;&apos;Enterprise&apos;),
+								IF(
+												ISPICKVAL(Delivery_Center__c,&apos;Salesforce&apos;), AND($UserRole.Name &lt;&gt;&apos;Salesforce&apos;, $UserRole.Name &lt;&gt;&apos;Enterprise&apos;), 
+												NOT(CONTAINS(TEXT(Delivery_Center__c),$UserRole.Name))
+								)
+
+				),
+				Preventa__c =false,
+				OR(
+								ISCHANGED( Estimacion_coste_preventa__c),
+								ISCHANGED(Adecuacion_precio_objetivo__c),
+								ISCHANGED(Capacidad_ejecucion__c),
+								ISCHANGED(Viabilidad_ejecucion__c),
+								ISCHANGED( Capacidad_preventa_redaccion_oferta__c) ,
+									ISCHANGED(N_Ftes__c) 
+
+				)
+)</errorConditionFormula>
+    <errorMessage>Está modificando campos que solo puede informar el Responsable Delivery Center: Estimación coste preventa, Adecuación precio objetivo, Capacidad ejecución, Viabilidad ejecución, Capacidad preventa redacción oferta, Nº FTEs</errorMessage>
+</ValidationRule>

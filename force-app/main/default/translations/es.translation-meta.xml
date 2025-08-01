@@ -989,6 +989,10 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
+        <fullName>Oportunidad_Actualizar_Fecha_Creacion</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
         <fullName>Oportunidad_Alerta_Aviso_a_licitaciones_de_Ok_preliminar</fullName>
     </flowDefinitions>
     <flowDefinitions>
@@ -1090,31 +1094,32 @@
     <flowDefinitions>
         <flows>
             <customErrorMessages>
-                <developerName>Mensaje_de_error_NO_ENVIADO_1</developerName>
-            </customErrorMessages>
-            <customErrorMessages>
-                <developerName>Mensaje_de_error_NO_ENVIADO_sub</developerName>
+                <developerName>Mensaje_de_error_EN_PROCESO_Sub</developerName>
             </customErrorMessages>
             <customErrorMessages>
                 <developerName>Mensaje_de_error_RECHAZADO_sub</developerName>
             </customErrorMessages>
             <customErrorMessages>
-                <developerName>Mensaje_de_error_RECHAZADO</developerName>
+                <developerName>Error_subcontratas_no_creadas</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_NO_ENVIADO_1</developerName>
             </customErrorMessages>
             <customErrorMessages>
                 <developerName>Suma_socios_por</developerName>
-            </customErrorMessages>
-            <customErrorMessages>
-                <developerName>Error_subcontratas_no_creadas</developerName>
+                <field>Subfase__c</field>
             </customErrorMessages>
             <customErrorMessages>
                 <developerName>Error_socios_creados</developerName>
             </customErrorMessages>
             <customErrorMessages>
-                <developerName>Mensaje_de_error_EN_PROCESO_Sub</developerName>
+                <developerName>Mensaje_de_error_NO_ENVIADO_sub</developerName>
             </customErrorMessages>
             <customErrorMessages>
                 <developerName>Mensaje_de_error_EN_PROCESO_2</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_RECHAZADO</developerName>
             </customErrorMessages>
         </flows>
         <fullName>Oportunidad_Comprobacion_aprobacion_Oportunidad_Socio</fullName>
@@ -1174,6 +1179,46 @@
     <flowDefinitions>
         <flows/>
         <fullName>Oportunidad_tipificacion_migracion</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Actualizacion_Inter_ITDS_Director_Pais</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Actualizacion_campo_Origen</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Avanzar_etapa_Oferta_Elaboracion_Oferta</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Ayesa_Calculo_importes</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Bloqueada_Cambio_Organizaci_n_Comercial</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Bloqueo_por_aprobacion</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Cambio_Paises</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Cerrada_Ayesa</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Creacion_Inter_ITDS_Director_Pais</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Obtener_Responsables</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
@@ -3295,6 +3340,10 @@
             <label>Opportunities - partner</label>
             <name>Oportunidades-Socios</name>
         </sections>
+        <sections>
+            <label><!-- Opportunities-Partners --></label>
+            <name>Opportunities-Partners</name>
+        </sections>
     </reportTypes>
     <reportTypes>
         <label>Communications and Deliverables</label>
@@ -4593,6 +4642,10 @@
             </columns>
             <label>Opportunities</label>
             <name>Oportunidades</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities-Partners --></label>
+            <name>Opportunities-Partners</name>
         </sections>
     </reportTypes>
     <reportTypes>
@@ -6081,6 +6134,10 @@
         <sections>
             <label><!-- Oportunidades-Socios --></label>
             <name>Oportunidades-Socios</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities-Partners --></label>
+            <name>Opportunities-Partners</name>
         </sections>
     </reportTypes>
     <reportTypes>

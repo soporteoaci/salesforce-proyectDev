@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Informar_porcentaje_Sinergia</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				ISPICKVAL(Cross_Selling_Picklist__c,&apos;Sí&apos;),
+				ISBLANK(Porcentaje_Cross_Selling__c)
+)</errorConditionFormula>
+    <errorDisplayField>Porcentaje_Cross_Selling__c</errorDisplayField>
+    <errorMessage>Al ser una sinergia, informa el porcentaje de sinergia</errorMessage>
+</ValidationRule>

@@ -5,7 +5,7 @@
     <label>CRM Cloud Data Fusion</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com/services/oauth2/token</callbackUrl>
-        <consumerKey>3MVG9CG8tifMyyO0JVn9IKsPyzaUH96elTDamXtuJk2_z_SJtib7mh.pYlkQTH3hwbORqK6mhe6rUmRjKvNCF</consumerKey>
+        <consumerKey>3MVG9CG8tifMyyO0JVn9IKsPyzb2oUShALeIgGS277pdVyhNIMEGNJHRS7J1LJpeE4c.kKPTv33uOqMxLFDdx</consumerKey>
         <isAdminApproved>false</isAdminApproved>
         <isClientCredentialEnabled>false</isClientCredentialEnabled>
         <isCodeCredentialEnabled>false</isCodeCredentialEnabled>

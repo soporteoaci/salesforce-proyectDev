@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>informacion_Correo_Aprobacion_Oferta</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;),
+				ISPICKVAL(Direccion_Operaciones__c, &apos;ENGINEERING&apos;),
+				OR(
+								ISBLANK(Objeto__c),
+								ISBLANK(Riesgos_fundamentales__c),
+								ISBLANK(TEXT(Necesidad_de_financiacion__c)),
+								ISBLANK(Limite_de_responsabilidad__c)
+				)
+)</errorConditionFormula>
+    <errorMessage>Antes de pasar a Pte. Aprobación informe los campos de la sección &apos;Información&apos; en la pestaña &apos;Oferta&apos;</errorMessage>
+</ValidationRule>

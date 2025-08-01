@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subsector_mercado_oblig_DA</fullName>
+    <active>true</active>
+    <description>Subsector mercado de Digital Administration obligatorio</description>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+			 $Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
+				NOT(ISBLANK(Codigo_OC__c)),
+				NOT(ISPICKVAL(Subfase__c,&apos;Alta&apos;)),
+
+				OR(
+								ISPICKVAL(DivisionPicklist__c, &apos;60049219&apos;),
+								ISPICKVAL(DivisionPicklist__c, &apos;60048556&apos;),
+								ISPICKVAL(DivisionPicklist__c, &apos;60029481&apos;),
+								ISPICKVAL(DivisionPicklist__c, &apos;60029428&apos;),
+								ISPICKVAL(DivisionPicklist__c, &apos;60029480&apos;)
+				),
+				ISBLANK(TEXT(Subdivision1__c)),
+				ISBLANK(TEXT(Subsector_de_Mercado_alta__c))
+)</errorConditionFormula>
+    <errorDisplayField>Subdivision1__c</errorDisplayField>
+    <errorMessage>Informe el subsector de mercados</errorMessage>
+</ValidationRule>

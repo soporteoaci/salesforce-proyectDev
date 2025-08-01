@@ -5,7 +5,7 @@
     <label>Cloud Data Fusion</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com/services/oauth2/token</callbackUrl>
-        <consumerKey>3MVG9CG8tifMyyO0JVn9IKsPyzaUH96elTDamq8TpeKDfnX2V1guTbxidIREk.cL8zWR2X7._B_Vup3NInW2_</consumerKey>
+        <consumerKey>3MVG9CG8tifMyyO0JVn9IKsPyzavSq7_QOfyxDNGze7KPvFIKasJ6o.Ulp5YCiAIwEBTKaa5rD6BwOFKtxzLz</consumerKey>
         <isAdminApproved>false</isAdminApproved>
         <isClientCredentialEnabled>false</isClientCredentialEnabled>
         <isCodeCredentialEnabled>false</isCodeCredentialEnabled>

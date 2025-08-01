@@ -1,0 +1,49 @@
+{
+  "appPageId" : "0ca41fc2-de6d-406f-90c0-f1ae1bffc495",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "3bd47316-cdcd-43b6-a13b-ab8f4355c1c9",
+  "label" : "Vision 360",
+  "regions" : [ {
+    "id" : "14641db1-a9d1-4d1a-8c69-382f0298c69c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : "1100",
+        "recordId" : "01Z0N000000oevAUAQ"
+      },
+      "componentName" : "forceCommunity:dashboard",
+      "id" : "699cbb4d-6c73-4642-ad53-c5dabef3ff34",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cb122965-6502-4084-8bd1-7a6d8a7f964a",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e541ceda-39ea-4f0c-a5f0-0455de3637e6",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Vision 360"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5084c099-b501-473c-abd0-490d4b7cb1a9",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ed835fbc-597d-4db3-b30e-2bd09e1e8155",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-vision-360"
+}

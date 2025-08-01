@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_Perdido__c</fullName>
+    <description>Motivo de no adjudicación</description>
+    <label>Motivo de cierre</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Subfase__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anulada por cliente</fullName>
+                <default>false</default>
+                <label>Anulada por cliente</label>
+            </value>
+            <value>
+                <fullName>Anulada por negocio</fullName>
+                <default>false</default>
+                <label>Anulada por negocio</label>
+            </value>
+            <value>
+                <fullName>Aplazada por cliente</fullName>
+                <default>false</default>
+                <label>Aplazada por cliente</label>
+            </value>
+            <value>
+                <fullName>Certificaciones y solvencia de empresa</fullName>
+                <default>false</default>
+                <label>Certificaciones y solvencia de empresa</label>
+            </value>
+            <value>
+                <fullName>Certificaciones y solvencia de perfiles</fullName>
+                <default>false</default>
+                <label>Certificaciones y solvencia de perfiles</label>
+            </value>
+            <value>
+                <fullName>Desposicionamiento en cliente</fullName>
+                <default>false</default>
+                <label>Desposicionamiento en cliente</label>
+            </value>
+            <value>
+                <fullName>Desposicionamiento en mercado</fullName>
+                <default>false</default>
+                <label>Desposicionamiento en mercado</label>
+            </value>
+            <value>
+                <fullName>Falta capacidades</fullName>
+                <default>false</default>
+                <label>Falta capacidades</label>
+            </value>
+            <value>
+                <fullName>Falta de posicionamiento</fullName>
+                <default>false</default>
+                <label>Falta de posicionamiento</label>
+            </value>
+            <value>
+                <fullName>Falta referencias en otros clientes</fullName>
+                <default>false</default>
+                <label>Falta referencias en otros clientes</label>
+            </value>
+            <value>
+                <fullName>Falta viabilidad ejecución</fullName>
+                <default>false</default>
+                <label>Falta viabilidad ejecución</label>
+            </value>
+            <value>
+                <fullName>Oferta económica</fullName>
+                <default>false</default>
+                <label>Oferta económica</label>
+            </value>
+            <value>
+                <fullName>Oferta técnica</fullName>
+                <default>false</default>
+                <label>Oferta técnica</label>
+            </value>
+            <value>
+                <fullName>Penalizaciones</fullName>
+                <default>false</default>
+                <label>Penalizaciones</label>
+            </value>
+            <value>
+                <fullName>Plazo insuficiente</fullName>
+                <default>false</default>
+                <label>Plazo insuficiente</label>
+            </value>
+            <value>
+                <fullName>Posicionamiento en cliente</fullName>
+                <default>false</default>
+                <label>Posicionamiento en cliente</label>
+            </value>
+            <value>
+                <fullName>Posicionamiento en mercado</fullName>
+                <default>false</default>
+                <label>Posicionamiento en mercado</label>
+            </value>
+            <value>
+                <fullName>Proveedor habitual</fullName>
+                <default>false</default>
+                <label>Proveedor habitual</label>
+            </value>
+            <value>
+                <fullName>Riesgo alto</fullName>
+                <default>false</default>
+                <label>Riesgo alto</label>
+            </value>
+            <value>
+                <fullName>Cualificación Errónea</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cualificación Errónea</label>
+            </value>
+            <value>
+                <fullName>Financiacion no conseguida</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Financiacion no conseguida</label>
+            </value>
+            <value>
+                <fullName>No decide / No responde</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No decide / No responde</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Otro</label>
+            </value>
+            <value>
+                <fullName>Perdido a competidor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Perdido a competidor</label>
+            </value>
+            <value>
+                <fullName>Precio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Precio</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Ganada</controllingFieldValue>
+            <controllingFieldValue>Perdida</controllingFieldValue>
+            <valueName>Oferta económica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ganada</controllingFieldValue>
+            <controllingFieldValue>Perdida</controllingFieldValue>
+            <valueName>Oferta técnica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ganada</controllingFieldValue>
+            <valueName>Posicionamiento en cliente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ganada</controllingFieldValue>
+            <valueName>Posicionamiento en mercado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ganada</controllingFieldValue>
+            <controllingFieldValue>Perdida</controllingFieldValue>
+            <controllingFieldValue>No presentada</controllingFieldValue>
+            <valueName>Proveedor habitual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Perdida</controllingFieldValue>
+            <valueName>Desposicionamiento en cliente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Perdida</controllingFieldValue>
+            <valueName>Desposicionamiento en mercado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Perdida</controllingFieldValue>
+            <valueName>Falta capacidades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Perdida</controllingFieldValue>
+            <valueName>Falta referencias en otros clientes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aplazada / anulada</controllingFieldValue>
+            <valueName>Anulada por cliente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aplazada / anulada</controllingFieldValue>
+            <valueName>Anulada por negocio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aplazada / anulada</controllingFieldValue>
+            <valueName>Aplazada por cliente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No presentada</controllingFieldValue>
+            <valueName>Certificaciones y solvencia de empresa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No presentada</controllingFieldValue>
+            <valueName>Certificaciones y solvencia de perfiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No presentada</controllingFieldValue>
+            <valueName>Falta de posicionamiento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No presentada</controllingFieldValue>
+            <valueName>Falta viabilidad ejecución</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No presentada</controllingFieldValue>
+            <valueName>Penalizaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No presentada</controllingFieldValue>
+            <valueName>Plazo insuficiente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No presentada</controllingFieldValue>
+            <valueName>Riesgo alto</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

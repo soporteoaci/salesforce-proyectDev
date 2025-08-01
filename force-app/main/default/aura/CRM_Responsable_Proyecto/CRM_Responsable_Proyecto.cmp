@@ -1,6 +1,6 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="CRM_Responsable_ProyectoController">
     
-    <aura:attribute name="oportunidad" type="Oportunidad__c"/>
+    <aura:attribute name="oportunidad" type="Opportunity"/>
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     
     <!-- atributos para búsqueda y selección de empleados -->

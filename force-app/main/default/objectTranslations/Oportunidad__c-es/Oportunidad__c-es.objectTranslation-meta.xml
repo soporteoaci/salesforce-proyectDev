@@ -12,28 +12,32 @@
     <layouts>
         <layout>Formato Oportunidad</layout>
         <sections>
-            <label><!-- Ayesa participation --></label>
-            <section>Ayesa participation</section>
+            <label>Ayesa Participation</label>
+            <section>Ayesa Participation</section>
         </sections>
         <sections>
-            <label><!-- Categorisation --></label>
-            <section>Categorisation</section>
+            <label>Categorization</label>
+            <section>Categorization</section>
         </sections>
         <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
+            <label>Custom Link</label>
+            <section>Custom Link</section>
         </sections>
         <sections>
-            <label><!-- Dates --></label>
-            <section>Dates</section>
+            <label>Date</label>
+            <section>Date</section>
         </sections>
         <sections>
-            <label><!-- Financial Data --></label>
-            <section>Financial Data</section>
+            <label>Economic Data</label>
+            <section>Economic Data</section>
         </sections>
         <sections>
             <label><!-- IB --></label>
             <section>IB</section>
+        </sections>
+        <sections>
+            <label>Observations</label>
+            <section>Observations</section>
         </sections>
         <sections>
             <label>Offer and Closing</label>
@@ -42,10 +46,6 @@
         <sections>
             <label><!-- Offering --></label>
             <section>Offering</section>
-        </sections>
-        <sections>
-            <label><!-- Remarks --></label>
-            <section>Remarks</section>
         </sections>
         <sections>
             <label><!-- Responsibles --></label>

@@ -23,7 +23,7 @@
             <criteriaItems>
                 <field>User.Puede_Desbloquear__c</field>
                 <operation>equals</operation>
-                <value>Falso</value>
+                <value>False</value>
             </criteriaItems>
         </entryCriteria>
         <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
@@ -35,7 +35,7 @@
         <criteriaItems>
             <field>User.Puede_Desbloquear__c</field>
             <operation>equals</operation>
-            <value>Falso</value>
+            <value>False</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>

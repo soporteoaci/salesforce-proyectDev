@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Borrador_Acuerdo_de_socios</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;),
+				 TEXT(Decision_aprobacion_acuerdo_de_socios__c) &lt;&gt; &apos;Aprobado&apos;,
+				 ISPICKVAL(Tipo_Participacion_Ayesa__c, &apos;UTE&apos;) 
+)</errorConditionFormula>
+    <errorDisplayField>Decision_aprobacion_acuerdo_de_socios__c</errorDisplayField>
+    <errorMessage>Antes de pasar a Pte. Aprobación, el borrador del acuerdo de socios debe de estar aprobado. Informe el campo en la pestaña Oferta.</errorMessage>
+</ValidationRule>

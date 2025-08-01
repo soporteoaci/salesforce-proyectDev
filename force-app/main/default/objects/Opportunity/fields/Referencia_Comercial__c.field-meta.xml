@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referencia_Comercial__c</fullName>
+    <label>Referencia Comercial</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sí</fullName>
+                <default>false</default>
+                <label>Sí</label>
+            </value>
+            <value>
+                <fullName>No, por no ser relevante</fullName>
+                <default>false</default>
+                <label>No, por no ser relevante</label>
+            </value>
+            <value>
+                <fullName>No, porque ya existe</fullName>
+                <default>false</default>
+                <label>No, porque ya existe</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

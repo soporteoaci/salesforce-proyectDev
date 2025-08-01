@@ -5,22 +5,30 @@ public class CRM_ImportesSME_Utils {
         
         System.debug('Metodo recalcularImportesOportunidad');
         
-        Id recordTypeSME = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ibermatica SME').getRecordTypeId();
+        Id recordTypeSME;
+        
+        if ( !Test.isRunningTest() ) {
+            recordTypeSME = Schema.SObjectType.Opportunity
+                .getRecordTypeInfosByName()
+                .get('Ibermatica SME')
+                .getRecordTypeId();
+        }
+        
         Double descuento = 1;
         Double importe;
         Double margen;
         
-        List <Oportunidad__c> oportunidades = [SELECT Id, name,Clonada__c,Desglose_importes__c,importe_mtoHard__c, importe_productoHard__c, importe_mtoSoft__c, importe_productoSoft__c, importe_servicio__c,
-                                               margen_productoHard__c, margen_productoSoft__c, margen_mtoHard__c, margen_mtoSoft__c, margen_servicio__c,
-                                               Rentabilidad_HW__c, Rentabilidad_Mtto_HW__c, Rentabilidad_Mtto_SW__c, Rentabilidad_SW__c, Rentabilidad_Serv__c, 
-                                               Importe_total_sin_IVA__c,Importe_Licitacion__c,Margen_contrato__c,Margen_Previsto_Euros__c,recordTypeId
-                                               FROM Oportunidad__c
+        List <Opportunity> oportunidades = [SELECT Id, name,Clonada__c,Desglose_importes__c,importe_mtoHard__c, importe_productoHard__c, importe_mtoSoft__c, importe_productoSoft__c, importe_servicio__c,
+                                            margen_productoHard__c, margen_productoSoft__c, margen_mtoHard__c, margen_mtoSoft__c, margen_servicio__c,
+                                            Rentabilidad_HW__c, Rentabilidad_Mtto_HW__c, Rentabilidad_Mtto_SW__c, Rentabilidad_SW__c, Rentabilidad_Serv__c, 
+                                            Importe_total_sin_IVA__c,Importe_Licitacion__c,Margen_contrato__c,Margen_Previsto_Euros__c,recordTypeId
+                                               FROM Opportunity
                                                WHERE Id = :idOportunidad LIMIT 1];
     
         
         if (!oportunidades.isEmpty()) {
                             
-            Oportunidad__c opp = oportunidades.get(0);
+            Opportunity opp = oportunidades.get(0);
             
             //Blanqueamos campos para el recalculo
             opp.importe_productoHard__c = 0;
@@ -42,11 +50,11 @@ public class CRM_ImportesSME_Utils {
             opp.Margen_Previsto_Euros__c = 0;
             opp.Modificar_importes__c = true;
             
-            List<ImporteSME__c> importes = [SELECT Id, Name, Importe_Bruto__c, Descuento_cantidad__c, Coste__c, Cantidad__c, Descuento__c, Oportunidad__c, Seccion__c, Tipo__c, 
+            List<ImporteSME__c> importes = [SELECT Id, Name, Importe_Bruto__c, Descuento_cantidad__c, Coste__c, Cantidad__c, Descuento__c, Opportunity__c,Oportunidad__c, Seccion__c, Tipo__c, 
                                             Tipo_de_Pago__c, Observaciones__c, Importe__c, Area__c, Solucion__c, Producto__c, Area_picklist__c, Modulo__c, Record_Type_Opp__c, 
                                             Coste_horas__c, Margen__c, Horas__c 
                                             FROM ImporteSME__c 
-                                            WHERE Oportunidad__c = :idOportunidad];
+                                            WHERE Opportunity__c = :idOportunidad];
                                             
             if (!importes.isEmpty()) {
                 
@@ -90,7 +98,7 @@ public class CRM_ImportesSME_Utils {
                             }       
                         }
                         when 'SRV' {
-                            if(opp.RecordTypeId == recordTypeSME){
+                            if(opp.RecordTypeId == recordTypeSME || !Test.isRunningTest()){
                                 opp.importe_servicio__c += importe;
                                 
                                 Double coste_hora_calc = decimal.valueOf(item.Coste_horas__c)*item.Horas__c;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participacion_Etapa_negociacion_y_cierre</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+
+				OR(
+								ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),
+								ISPICKVAL(Direccion_Operaciones__c, &apos;ENGINEERING&apos;)
+				),
+
+				TEXT(Decision_aprobacion_acuerdo_de_socios__c) = &apos;Aprobado&apos;,
+				ISCHANGED(Participacion_Ayesa__c)
+
+)</errorConditionFormula>
+    <errorDisplayField>Participacion_Ayesa__c</errorDisplayField>
+    <errorMessage>Para cambiar el % de Participación debe ponerse en contacto con CAU-CRM, una vez modificado se enviarán las solicitudes de aprobación pertinente</errorMessage>
+</ValidationRule>

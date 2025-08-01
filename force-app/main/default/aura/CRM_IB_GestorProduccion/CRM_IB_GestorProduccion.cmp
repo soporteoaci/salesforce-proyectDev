@@ -1,6 +1,6 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller ="CRM_IB_Controller" >
     
-    <aura:attribute name ="Opportunity" type="Oportunidad__c"/>
+    <aura:attribute name ="Opportunity" type="Opportunity"/>
     
     <aura:attribute name ="Valores_Gestor_Produccion" type="String[]" default="" />
     <aura:attribute name ="Valores_Centro_Responsabilidad" type = "List" default=""/>

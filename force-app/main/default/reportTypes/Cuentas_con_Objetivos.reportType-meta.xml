@@ -1218,6 +1218,11 @@
             <field>GIN__c</field>
             <table>Account.Objetivos__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c</field>
+            <table>Account.Objetivos__r</table>
+        </columns>
         <masterLabel>Objetivos</masterLabel>
     </sections>
 </ReportType>
