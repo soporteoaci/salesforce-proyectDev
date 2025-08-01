@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Arquitectura</masterLabel>
+        <translation>Architecture</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Diseño Funcional</masterLabel>
+        <translation>Functional Design</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Diseño Técnico</masterLabel>
+        <translation>Technical Design</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Formación</masterLabel>
+        <translation>Training</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Garantía, Soporte y Mantenimiento</masterLabel>
+        <translation>Warranty Support and Maintenance</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gestión del Cambio</masterLabel>
+        <translation>Change Management</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gestión del Proyecto</masterLabel>
+        <translation>Project Management</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Interfaces</masterLabel>
+        <translation>Interfaces</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Licenciamiento</masterLabel>
+        <translation>Discharge</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Metodología</masterLabel>
+        <translation>Methodology</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Migración</masterLabel>
+        <translation>Migration</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Otros</masterLabel>
+        <translation>Others</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pruebas</masterLabel>
+        <translation>Tests</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Puesta en Producción</masterLabel>
+        <translation>Put Into Production</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

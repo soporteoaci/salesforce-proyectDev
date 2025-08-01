@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lineas_de_Servicio__c</fullName>
+    <label>Líneas de Servicio (Area)</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Horizontal</valueSetName>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

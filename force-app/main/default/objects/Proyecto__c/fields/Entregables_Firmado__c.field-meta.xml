@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entregables_Firmado__c</fullName>
+    <label>Entregables Firmados</label>
+    <summaryFilterItems>
+        <field>Subentregable__c.Estado__c</field>
+        <operation>equals</operation>
+        <value>Firmado</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Subentregable__c.Proyecto__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

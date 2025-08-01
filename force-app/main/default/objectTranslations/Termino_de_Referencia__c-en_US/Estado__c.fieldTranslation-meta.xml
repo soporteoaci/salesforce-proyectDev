@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Status</label>
+    <name>Estado__c</name>
+    <picklistValues>
+        <masterLabel>Aprobado</masterLabel>
+        <translation>Approveded</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pendiente</masterLabel>
+        <translation>Pending</translation>
+    </picklistValues>
+</CustomFieldTranslation>

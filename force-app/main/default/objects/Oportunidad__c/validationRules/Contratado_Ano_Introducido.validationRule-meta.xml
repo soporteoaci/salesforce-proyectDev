@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contratado_Ano_Introducido</fullName>
+    <active>false</active>
+    <description>el campo Contratado Año Oportunidad debe ser mayor que 0</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+				$User.Email &lt;&gt; &apos;power@ayesa.com&apos;,
+ RecordType.DeveloperName = &apos;Ayesa&apos;,
+IF(  
+  ISPICKVAL(Tipo_de_Oportunidad__c, &apos;Petición de EOI&apos;), 
+  FALSE, 
+  IF(   NULLVALUE(Importe_total_sin_IVA__c, 0)  &gt; 0, 
+    NULLVALUE(Contratado_a_o_oportunidad__c, 0)  = 0,
+    FALSE
+  )
+)
+
+)</errorConditionFormula>
+    <errorMessage>Debe especificar un importe en el campo Contratado Año Oportunidad (€)</errorMessage>
+</ValidationRule>

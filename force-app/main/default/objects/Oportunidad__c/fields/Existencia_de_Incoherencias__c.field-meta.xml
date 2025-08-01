@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Existencia_de_Incoherencias__c</fullName>
+    <description>Validación de incoherencias en los datos de la oportunidad</description>
+    <formula>OR(
+  AND(
+    NOT ( ISPICKVAL(Etapa__c, &apos;Cerrada&apos;) ),
+    Fecha_limite_de_presentacion__c  &lt;  TODAY() 
+  ),
+  AND(
+    NOT ( ISPICKVAL(Etapa__c, &apos;Cerrada&apos;) ),
+    Fecha_estimada_de_cierre__c  &lt;  TODAY() 
+  ),
+  AND(
+    NOT ( ISPICKVAL(Etapa__c, &apos;Cualificación&apos;) ),
+    NOT ( ISPICKVAL(Tipo_de_Oportunidad__c, &apos;Licitación&apos;) )
+  ),
+  Fecha_estimada_de_cierre__c &lt;= Fecha_limite_de_presentacion__c
+)</formula>
+    <inlineHelpText>Validación de incoherencias en los datos de la oportunidad</inlineHelpText>
+    <label>Existencia de Incoherencias</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

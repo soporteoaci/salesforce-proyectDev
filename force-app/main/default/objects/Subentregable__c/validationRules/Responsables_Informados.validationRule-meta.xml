@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsables_Informados</fullName>
+    <active>false</active>
+    <description>Todos los responsables y aprobadores deben de estar informados</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;, OR( ISBLANK(AprobadorFinal__c),ISBLANK( AprobadorN1__c ),ISBLANK( ResponsableN1__c ),ISBLANK( ResponsableN2__c )))</errorConditionFormula>
+    <errorMessage>Los campos: Responsable Nivel 1, Responsable Nivel 2, Aprobador Nivel 1 y Aprobador Final deben estar informados para su correcta tramitación.</errorMessage>
+</ValidationRule>

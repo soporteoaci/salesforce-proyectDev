@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Breve descripción del producto y/o servicios principal a suministrar en la oferta --></help>
+    <label>Object of a project</label>
+    <name>Objeto__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Compartir_Oportunidad_Socio_Engeenering</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Oportunidad-Socio Engeenering</label>
+        <sharedTo>
+            <group>Compartir_Oportunidad_Socio_Engeenering</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Paises_ENGINEERING</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Innovacion</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Innovacion</label>
+        <sharedTo>
+            <group>Compartir_Innovacion</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Compartir_Innovacion</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Supervision_CRM</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervision CRM</label>
+        <sharedTo>
+            <role>Supervision</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>CRM</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

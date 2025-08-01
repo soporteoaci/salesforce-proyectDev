@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pasar_a_Entregado</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISCHANGED(Estado__c) &amp;&amp; ISPICKVAL(Estado__c, &apos;En Revisión Interna&apos;) &amp;&amp;  $User.Id !=  ResponsableN2__r.Id &amp;&amp; $User.Id !=  00N0N00000DOtF4.00N0N00000FDYbw</errorConditionFormula>
+    <errorMessage>No puede pasar a Entregado el Subentregable. Debe ser el aprobador del subentregable, el responsable del Entregable, o enviar el subentregable para aprobación.</errorMessage>
+</ValidationRule>

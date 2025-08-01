@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accion_Modificacion_Cerrar_Resolver</fullName>
+    <active>true</active>
+    <description>Modificación solo puede modificar el Comentario</description>
+    <errorConditionFormula>AND( 
+OR( 
+ISPICKVAL(Accion__c , &quot;Comentarios&quot;), 
+ISPICKVAL(Accion__c , &quot;Cerrar&quot;), 
+ISPICKVAL(Accion__c , &quot;Resolver&quot;) 
+), 
+OR( 
+NOT(ISBLANK(Proveedor2__c)), 
+NOT(ISBLANK(Asignado_a__c)) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>Accion__c</errorDisplayField>
+    <errorMessage>Con el tipo de &apos;&apos;Acción&apos;&apos; seleccionado solo puede modificar el campo &apos;&apos;Comentarios&apos;&apos;.</errorMessage>
+</ValidationRule>

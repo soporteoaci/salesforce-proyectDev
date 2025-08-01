@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Permisos_Directores_sobre_Plan_de_Cuentas</name>
+    </customPermissions>
+    <description>Permisos para que los Directores vean los planes de cuentas de todas las cuentas que tengan plan activo.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Permisos Director sobre Plan de Cuentas</label>
+</PermissionSet>

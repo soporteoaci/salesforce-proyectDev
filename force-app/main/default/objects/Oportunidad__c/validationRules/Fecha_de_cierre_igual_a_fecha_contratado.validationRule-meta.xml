@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_de_cierre_igual_a_fecha_contratado</fullName>
+    <active>false</active>
+    <description>Si el estado de cierre es “Contratada” fecha de cierre tiene que ser igual a fecha firma contrato</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+RecordType.DeveloperName == &apos;Ayesa&apos;,
+
+ISPICKVAL( Estado_de_Cierre__c , &apos;Contratada&apos;) &amp;&amp; 
+ Fecha_estimada_de_cierre__c !=  Fecha_firma_contrato__c
+
+)</errorConditionFormula>
+    <errorDisplayField>Fecha_estimada_de_cierre__c</errorDisplayField>
+    <errorMessage>Para estado de cierre &quot;Contratada&quot;, la fecha de cierre debe de ser igual a la fecha firma contrato.</errorMessage>
+</ValidationRule>

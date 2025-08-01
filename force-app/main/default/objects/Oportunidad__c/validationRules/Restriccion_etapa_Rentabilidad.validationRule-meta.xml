@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriccion_etapa_Rentabilidad</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+OR(
+RecordType.DeveloperName =&apos;Ibermatica_Latam&apos;,
+RecordType.DeveloperName =&apos;Ibermatica_Large_Account&apos;
+),
+
+ISPICKVAL( Etapa__c , &quot;Presentada&quot; ),
+
+ISNULL(RENTPPTO__c),
+Desglose_importes__c =&apos;No&apos;
+
+)</errorConditionFormula>
+    <errorMessage>Debe indicar el % Rentabilidad de la oportunidad para poder pasarla a presentada</errorMessage>
+</ValidationRule>

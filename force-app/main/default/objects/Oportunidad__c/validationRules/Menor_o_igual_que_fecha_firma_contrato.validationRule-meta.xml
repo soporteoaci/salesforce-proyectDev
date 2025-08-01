@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Menor_o_igual_que_fecha_firma_contrato</fullName>
+    <active>false</active>
+    <description>Validación Fecha adjudicación &lt;= Fecha Firma contrato.</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+	RecordType.DeveloperName &lt;&gt; &apos;Ibermatica_SME&apos;,
+
+NOT(ISBLANK(Fecha_adjudicacion__c)) &amp;&amp;  Fecha_adjudicacion__c &gt;  Fecha_firma_contrato__c
+
+)</errorConditionFormula>
+    <errorDisplayField>Fecha_adjudicacion__c</errorDisplayField>
+    <errorMessage>La fecha de adjudicación debe ser menor o igual a la fecha de firma del contrato.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Subtipo de campaña --></label>
+    <name>Subtipo_de_campaign__c</name>
+    <picklistValues>
+        <masterLabel>AP&amp;C_Generacion</masterLabel>
+        <translation><!-- AP&amp;C_Generacion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AP&amp;C_Gestion</masterLabel>
+        <translation><!-- AP&amp;C_Gestion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Actividad Propia</masterLabel>
+        <translation><!-- Actividad Propia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blog</masterLabel>
+        <translation><!-- Blog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colaborador</masterLabel>
+        <translation><!-- Colaborador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cumplimiento Agenda</masterLabel>
+        <translation><!-- Cumplimiento Agenda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facebook</masterLabel>
+        <translation><!-- Facebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IB y Otras fuentes</masterLabel>
+        <translation><!-- IB y Otras fuentes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linkedlin</masterLabel>
+        <translation><!-- Linkedlin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operaciones</masterLabel>
+        <translation><!-- Operaciones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros RRSS</masterLabel>
+        <translation><!-- Otros RRSS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petición Cliente</masterLabel>
+        <translation><!-- Petición Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plan de cuentas</masterLabel>
+        <translation><!-- Plan de cuentas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prensa (digital, escrita)</masterLabel>
+        <translation><!-- Prensa (digital, escrita) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presentacion</masterLabel>
+        <translation><!-- Presentacion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SW (HotLead, Varportal)</masterLabel>
+        <translation><!-- SW (HotLead, Varportal) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sectoriales</masterLabel>
+        <translation><!-- Sectoriales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solucion</masterLabel>
+        <translation><!-- Solucion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Twitter</masterLabel>
+        <translation><!-- Twitter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web</masterLabel>
+        <translation><!-- Web --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web IB-Industria</masterLabel>
+        <translation><!-- Web IB-Industria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Webex Comercial</masterLabel>
+        <translation><!-- Webex Comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Webex Tecnica</masterLabel>
+        <translation><!-- Webex Tecnica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Youtube</masterLabel>
+        <translation><!-- Youtube --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zonales (Polig.Ind.)</masterLabel>
+        <translation><!-- Zonales (Polig.Ind.) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

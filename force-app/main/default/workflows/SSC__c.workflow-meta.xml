@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Cierre_Tarea_SSC</fullName>
+        <description>Cierre Tarea SSC</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Country_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Ayesa/Cierre_Tarea_SSC</template>
+    </alerts>
+    <alerts>
+        <fullName>Notificaci_n_SSC_Direcci_n</fullName>
+        <description>Notificación SSC Dirección</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Direction_SSC</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Ayesa/Nueva_Tarea_SSC</template>
+    </alerts>
+    <alerts>
+        <fullName>Notificacion_SSC</fullName>
+        <description>Notificacion SSC</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Country_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Ayesa/Nueva_Tarea_SSC</template>
+    </alerts>
+</Workflow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContratoAnoMenorImporteTotal</fullName>
+    <active>false</active>
+    <description>Al crearse una oportunidad debe chequearse que contratado año oportunidad es &lt; importe total en euros</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+RecordType.DeveloperName == &apos;Ayesa&apos;,
+
+Importe_total_sin_IVA__c &lt; Contratado_a_o_oportunidad__c
+
+)</errorConditionFormula>
+    <errorMessage>El Contratado año oportunidad debe ser menor que el Importe total en euros.</errorMessage>
+</ValidationRule>

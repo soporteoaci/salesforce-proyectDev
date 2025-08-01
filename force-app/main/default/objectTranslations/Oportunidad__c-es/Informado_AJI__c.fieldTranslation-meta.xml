@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Necesario si se va con socios o subcontratistas nominados o base no permanente --></help>
+    <label><!-- Informado Asesoría Jurídica --></label>
+    <name>Informado_AJI__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No es necesario</masterLabel>
+        <translation><!-- No es necesario --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sí</masterLabel>
+        <translation><!-- Sí --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

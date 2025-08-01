@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Porcentaje_existo_form__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Fase__c, 
+					&apos;OP-Pediente Demo&apos;,10,
+					&apos;OP-Demostrando&apos;,25,
+					&apos;OP-Ofertando CON competidores y NO favoritos&apos;,30,
+					&apos;OP-Ofertando CON competidores y favoritos&apos;,70,
+					&apos;OP-Ofertando SIN competidores&apos;,70,
+					&apos;OP-Negociando condiciones de cierre&apos;,80,
+					&apos;OP-Pendiente de recibir pedido&apos;,90,
+					&apos;OP-Pre Ganada&apos;,100, 
+					&apos;OP-Ganada&apos;,100,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>% éxito</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

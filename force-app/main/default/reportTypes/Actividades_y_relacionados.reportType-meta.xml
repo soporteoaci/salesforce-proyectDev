@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Activity</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Actividades y campos de los objetos relacionados</description>
+    <label>Actividades y relacionados</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tarea</displayNameOverride>
+            <field>IsTask</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Id. de actividad</displayNameOverride>
+            <field>Id</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo de registro de Tarea/Evento</displayNameOverride>
+            <field>RecordType</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Nombre</displayNameOverride>
+            <field>Who</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo Actividad Administrador</displayNameOverride>
+            <field>Tipo_Actividad_Administrador__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Relacionado con</displayNameOverride>
+            <field>What</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Asunto</displayNameOverride>
+            <field>Subject</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha</displayNameOverride>
+            <field>ActivityDate</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Hora de vencimiento</displayNameOverride>
+            <field>ActivityTimeOnly</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Estado</displayNameOverride>
+            <field>Status</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Prioridad</displayNameOverride>
+            <field>Priority</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Asignado a</displayNameOverride>
+            <field>Owner</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Resumen ejecutivo</displayNameOverride>
+            <field>Description</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Divisa de la actividad</displayNameOverride>
+            <field>CurrencyIsoCode</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cuenta</displayNameOverride>
+            <field>Account</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cuenta (clic comercial)</displayNameOverride>
+            <field>Clic_comercial__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cerrado</displayNameOverride>
+            <field>IsClosed</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha de creación</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Creado por</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha de la última modificación</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Última modificación por</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Pública</displayNameOverride>
+            <field>IsVisibleInSelfService</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Duración de la llamada</displayNameOverride>
+            <field>CallDurationInSeconds</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo de llamada</displayNameOverride>
+            <field>CallType</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Resultado de la llamada</displayNameOverride>
+            <field>CallDisposition</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Identificador del objeto de llamada</displayNameOverride>
+            <field>CallObject</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha/hora del recordatorio</displayNameOverride>
+            <field>ReminderDateTime</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recordatorio establecido</displayNameOverride>
+            <field>IsReminderSet</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Repetir esta tarea</displayNameOverride>
+            <field>RecurrenceRegeneratedType</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Subtipo de tarea</displayNameOverride>
+            <field>TaskSubtype</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha/Hora de finalización</displayNameOverride>
+            <field>CompletedDateTime</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Ubicación</displayNameOverride>
+            <field>Location</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Evento de todo el día</displayNameOverride>
+            <field>IsAllDayEvent</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Hora</displayNameOverride>
+            <field>ActivityDateTime</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Duración</displayNameOverride>
+            <field>DurationInMinutes</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Privado</displayNameOverride>
+            <field>IsPrivate</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Mostrar hora como</displayNameOverride>
+            <field>ShowAs</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Es secundario</displayNameOverride>
+            <field>IsChild</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Es evento de grupo</displayNameOverride>
+            <field>IsGroupEvent</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo de evento de grupo</displayNameOverride>
+            <field>GroupEventType</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Subtipo de evento</displayNameOverride>
+            <field>EventSubtype</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Area SME</displayNameOverride>
+            <field>Area_IB__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaña</displayNameOverride>
+            <field>Campanya__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaña</displayNameOverride>
+            <field>Campanya_lookup__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Interlocutor principal</displayNameOverride>
+            <field>Contacto__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Descripción</displayNameOverride>
+            <field>Descact__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enviada Agenda</displayNameOverride>
+            <field>Enviada_Agenda__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enviado Acuerdos</displayNameOverride>
+            <field>Enviado_Acuerdos__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Estado</displayNameOverride>
+            <field>Estado__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha</displayNameOverride>
+            <field>Fecha__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Full Descripción</displayNameOverride>
+            <field>Full_Descact__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Iniciativa</displayNameOverride>
+            <field>Iniciativa__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad</displayNameOverride>
+            <field>Oportunidad__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad</displayNameOverride>
+            <field>Oportunidad_del__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sector de Mercado</displayNameOverride>
+            <field>Organizaci_n__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo Actividad</displayNameOverride>
+            <field>Tipoact__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>GUIDCLIP</displayNameOverride>
+            <field>GUIDCLIP__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha Creación</displayNameOverride>
+            <field>Fecha_Creacion__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Organización cuenta</displayNameOverride>
+            <field>Organizacion_cuenta__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cómo ha ido</displayNameOverride>
+            <field>Como_ha_ido__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Líneas de Servicio (Area)</displayNameOverride>
+            <field>Lineas_de_Servicio__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Siguiente Paso</displayNameOverride>
+            <field>Siguiente_Paso__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Perfil Propietario</displayNameOverride>
+            <field>Perfil_Propietario__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cuenta Id 18</displayNameOverride>
+            <field>Cuenta_Id_18__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Interlocutor principal Id 18</displayNameOverride>
+            <field>Interlocutor_principal_Id_18__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Objetivo Id 18</displayNameOverride>
+            <field>Objetivo_Id_18__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad Id 18</displayNameOverride>
+            <field>Oportunidad_Id_18__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaña Id 18</displayNameOverride>
+            <field>campa_a_Id_18__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cuenta Perfil MKT</displayNameOverride>
+            <field>Cuenta_Perfil_MKT__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Clase de cuenta</displayNameOverride>
+            <field>Clase_de_cuenta__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tarea Id 18</displayNameOverride>
+            <field>Tarea_Id_18__c</field>
+            <table>Activity</table>
+        </columns>
+        <masterLabel>Actividades estandar</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Cuenta : Clase de cuenta</displayNameOverride>
+            <field>Clic_comercial__c.Clase_de_cuenta__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Cuenta : CIF/NIF</displayNameOverride>
+            <field>Clic_comercial__c.CIF_NIF__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Cuenta : Nombre de la cuenta</displayNameOverride>
+            <field>Clic_comercial__c.Name</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Clic_comercial__c.Pais__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Clic_comercial__c.BillingState</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Clic_comercial__c.Codigo_provincia__c</field>
+            <table>Activity</table>
+        </columns>
+        <masterLabel>Clic comercial</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Objetivo : Cliente</displayNameOverride>
+            <field>Objetivo__c.Cuenta__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Objetivo : Sector de Mercado</displayNameOverride>
+            <field>Objetivo__c.Orgcomercial__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Objetivo : Propietario</displayNameOverride>
+            <field>Objetivo__c.Owner</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Objetivo : Código Objetivo</displayNameOverride>
+            <field>Objetivo__c.Codigo_Objetivo__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Objetivo : Objetivo</displayNameOverride>
+            <field>Objetivo__c.Name</field>
+            <table>Activity</table>
+        </columns>
+        <masterLabel>Objetivos</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Oportunidad : Cliente</displayNameOverride>
+            <field>Oportunidad__c.Cliente__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Oportunidad : Código Oportunidad Comercial</displayNameOverride>
+            <field>Oportunidad__c.Codigo_OC__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Oportunidad : Tema</displayNameOverride>
+            <field>Oportunidad__c.Name</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actividad : Oportunidad : Fecha de creación</displayNameOverride>
+            <field>Oportunidad__c.CreatedDate</field>
+            <table>Activity</table>
+        </columns>
+        <masterLabel>Oportunidad</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Asignado a (nombre)</displayNameOverride>
+            <field>Asignado_a_nombre__c</field>
+            <table>Activity</table>
+        </columns>
+        <masterLabel>Actividades</masterLabel>
+    </sections>
+</ReportType>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Acción</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Acciones</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Formato Acción</layout>
+        <sections>
+            <label>Tracking information</label>
+            <section>Información de Seguimiento</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Acción Cancelada</layout>
+        <sections>
+            <label>Tracking information</label>
+            <section>Información de Seguimiento</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Cancel --></label>
+        <name>Cancel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Draft --></label>
+        <name>Draft</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>A canceled action cannot be modified</errorMessage>
+        <name>Canceled_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The commitment date must be after today</errorMessage>
+        <name>EndDate_after_Today</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>An action in progress can only change to: Open, Closed or Canceled</errorMessage>
+        <name>In_Progress_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>An action must be created in the Open state.</errorMessage>
+        <name>New_Action_is_Open</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>An open action can only change to: In Process, Closed or Canceled</errorMessage>
+        <name>Open_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Corporate monitoring tasks are in a validated state. It is not allowed to add new actions.</errorMessage>
+        <name>SSC_Validated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The action and description fields cannot be edited. If you have made a mistake, proceed to cancel the action and create a new one</errorMessage>
+        <name>Update_Title_and_Description</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>A Validated action cannot be modified</errorMessage>
+        <name>Validated_Status</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- División --></label>
+    <name>DivisionPicklist__c</name>
+    <picklistValues>
+        <masterLabel>V-AERONAUTICS</masterLabel>
+        <translation><!-- V-AERONAUTICS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-AGE</masterLabel>
+        <translation><!-- V-AGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-AVIATION</masterLabel>
+        <translation><!-- V-AVIATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-BANKING</masterLabel>
+        <translation><!-- V-BANKING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-BPO (PS)</masterLabel>
+        <translation><!-- V-BPO (PS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-BPO (U&amp;E)</masterLabel>
+        <translation><!-- V-BPO (U&amp;E) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-BUILDING EMEA &amp; ASIA</masterLabel>
+        <translation><!-- V-BUILDING EMEA &amp; ASIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-BUILDING LATAM</masterLabel>
+        <translation><!-- V-BUILDING LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-BUILDING SPAIN</masterLabel>
+        <translation><!-- V-BUILDING SPAIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-COMUNIDAD DE MADRID</masterLabel>
+        <translation><!-- V-COMUNIDAD DE MADRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-CONTROL GESTION AERONAUTICA</masterLabel>
+        <translation><!-- V-CONTROL GESTION AERONAUTICA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-CULTURA Y TURISMO</masterLabel>
+        <translation><!-- V-CULTURA Y TURISMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-DESARROLLO SOST Y TURISMO</masterLabel>
+        <translation><!-- V-DESARROLLO SOST Y TURISMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-ECOFIN Y SANIDAD</masterLabel>
+        <translation><!-- V-ECOFIN Y SANIDAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-EDUCACION</masterLabel>
+        <translation><!-- V-EDUCACION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-EMPLEO E INNOVACION</masterLabel>
+        <translation><!-- V-EMPLEO E INNOVACION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-ENEL</masterLabel>
+        <translation><!-- V-ENEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-ENERGY ENG.</masterLabel>
+        <translation><!-- V-ENERGY ENG. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-ENVIRONMENT</masterLabel>
+        <translation><!-- V-ENVIRONMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-GESTION TERRITORIAL</masterLabel>
+        <translation><!-- V-GESTION TERRITORIAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-HYDRAULIC WORKS</masterLabel>
+        <translation><!-- V-HYDRAULIC WORKS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-INDUSTRY</masterLabel>
+        <translation><!-- V-INDUSTRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-INFRA. SUPERVISIONS</masterLabel>
+        <translation><!-- V-INFRA. SUPERVISIONS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-INNO</masterLabel>
+        <translation><!-- V-INNO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-INSURANCE</masterLabel>
+        <translation><!-- V-INSURANCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-OIL&amp;GAS</masterLabel>
+        <translation><!-- V-OIL&amp;GAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-PROCESS PLANTS</masterLabel>
+        <translation><!-- V-PROCESS PLANTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-RAILWAY SYSTEMS</masterLabel>
+        <translation><!-- V-RAILWAY SYSTEMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-RAILWAYS/METRO</masterLabel>
+        <translation><!-- V-RAILWAYS/METRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-ROADS</masterLabel>
+        <translation><!-- V-ROADS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-SOCIALES</masterLabel>
+        <translation><!-- V-SOCIALES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-TELCO</masterLabel>
+        <translation><!-- V-TELCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-TRANSPORT EMEA &amp; ASIA</masterLabel>
+        <translation><!-- V-TRANSPORT EMEA &amp; ASIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-TRANSPORT LATAM</masterLabel>
+        <translation><!-- V-TRANSPORT LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-TRANSPORT SPAIN</masterLabel>
+        <translation><!-- V-TRANSPORT SPAIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-TRANSPORT. CATALONIA</masterLabel>
+        <translation><!-- V-TRANSPORT. CATALONIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-UTILITIES ESPAÑA</masterLabel>
+        <translation><!-- V-UTILITIES ESPAÑA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-UTILITIES LATAM</masterLabel>
+        <translation><!-- V-UTILITIES LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-WATER &amp; ENVIROM. EMEA &amp; ASIA</masterLabel>
+        <translation><!-- V-WATER &amp; ENVIROM. EMEA &amp; ASIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-WATER &amp; ENVIROM. LATAM</masterLabel>
+        <translation><!-- V-WATER &amp; ENVIROM. LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-WATER &amp; ENVIROM. SPAIN</masterLabel>
+        <translation><!-- V-WATER &amp; ENVIROM. SPAIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-WATER CATALONIA</masterLabel>
+        <translation><!-- V-WATER CATALONIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-WATER SUPERVISIONS</masterLabel>
+        <translation><!-- V-WATER SUPERVISIONS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

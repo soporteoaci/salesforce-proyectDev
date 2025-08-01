@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CamposObligatoriosOpp</fullName>
+    <active>false</active>
+    <description>Se meten por VR algunos campos obligatorios de la oportunidad para que Licitaciones pueda modificar el Elemento PEP de una Opp Ganada</description>
+    <errorConditionFormula>AND(
+				OR(
+				ISBLANK(TEXT(Cloud_On_premise__c)),
+				ISBLANK(TEXT(Service_Model__c)),
+				ISBLANK(TEXT(Bookings_breakdown__c)),
+				ISBLANK(Contacto_Principal__c),
+    ISBLANK(Up_selling__c),
+    ISBLANK(TEXT(Tipologia__c)),
+    NOT(Cross_Selling__c),
+				ISBLANK(Responsable_de_Proyecto__c)
+				),
+    NOT( 
+      OR(
+        CONTAINS($Profile.Name, &quot;dmin&quot;), 
+        $User.Email = &quot;rpozas@ayesa.com&quot;,
+				    $User.Email = &quot;aat_soporteofertas@ayesa.com&quot;
+						)
+    )
+)</errorConditionFormula>
+    <errorMessage>Debe rellenar los campos obligatorios: Service Model, Cloud / On-premise, Diversification Breakdown, Contacto Principal, Tipo Producto/Servicio</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>– It is in case the Company belong to other existing account which is a Business Group</help>
+    <label><!-- Grupo Empresarial --></label>
+    <name>Grupo_Empresarial__c</name>
+    <relationshipLabel><!-- Grupo Empresarial --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cómo ha ido --></label>
+    <name>Como_ha_ido__c</name>
+    <picklistValues>
+        <masterLabel>Bien</masterLabel>
+        <translation><!-- Bien --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mal</masterLabel>
+        <translation><!-- Mal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regular</masterLabel>
+        <translation><!-- Regular --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

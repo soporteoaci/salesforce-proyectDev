@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Riesgo OACI</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Riesgos OACI</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Formato Riesgo OACI</layout>
+        <sections>
+            <label>Risk and Valuations</label>
+            <section>Riesgo y Valoración</section>
+        </sections>
+        <sections>
+            <label>Custom Link</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

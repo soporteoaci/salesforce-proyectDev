@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sector Cuenta --></label>
+    <name>Sector_Cuenta__c</name>
+    <picklistValues>
+        <masterLabel>Administración</masterLabel>
+        <translation><!-- Administración --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aeronáutica</masterLabel>
+        <translation><!-- Aeronáutica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alimentación</masterLabel>
+        <translation><!-- Alimentación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arquitectura y construcción</masterLabel>
+        <translation><!-- Arquitectura y construcción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automatización</masterLabel>
+        <translation><!-- Automatización --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automoción</masterLabel>
+        <translation><!-- Automoción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bienes de consumo</masterLabel>
+        <translation><!-- Bienes de consumo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bienes de equipo</masterLabel>
+        <translation><!-- Bienes de equipo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calderería, chapa y estructura metálica</masterLabel>
+        <translation><!-- Calderería, chapa y estructura metálica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Centros de investigación</masterLabel>
+        <translation><!-- Centros de investigación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Educacional</masterLabel>
+        <translation><!-- Educacional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elec: instalaciones eléctricas</masterLabel>
+        <translation><!-- Elec: instalaciones eléctricas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elec: material y equipo eléctrico</masterLabel>
+        <translation><!-- Elec: material y equipo eléctrico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energía, procesos y útiles</masterLabel>
+        <translation><!-- Energía, procesos y útiles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Envases</masterLabel>
+        <translation><!-- Envases --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipos electrónicos</masterLabel>
+        <translation><!-- Equipos electrónicos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipos para industria de procesos</masterLabel>
+        <translation><!-- Equipos para industria de procesos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hi-Tech</masterLabel>
+        <translation><!-- Hi-Tech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maquinaria agrícola y de obras públicas</masterLabel>
+        <translation><!-- Maquinaria agrícola y de obras públicas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maquinaria de envase y embalaje</masterLabel>
+        <translation><!-- Maquinaria de envase y embalaje --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maquinaria especial</masterLabel>
+        <translation><!-- Maquinaria especial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maquinaria fabricación</masterLabel>
+        <translation><!-- Maquinaria fabricación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mecanizado subcontratación</masterLabel>
+        <translation><!-- Mecanizado subcontratación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moldes y piezas de plástico</masterLabel>
+        <translation><!-- Moldes y piezas de plástico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moldes, matrices, troqueles</masterLabel>
+        <translation><!-- Moldes, matrices, troqueles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Naval</masterLabel>
+        <translation><!-- Naval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros</masterLabel>
+        <translation><!-- Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios de ingeniería</masterLabel>
+        <translation><!-- Servicios de ingeniería --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transporte</masterLabel>
+        <translation><!-- Transporte --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

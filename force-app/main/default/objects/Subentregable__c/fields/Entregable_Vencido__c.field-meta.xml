@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entregable_Vencido__c</fullName>
+    <formula>IF ( 
+				AND(
+								NOT(
+												ISPICKVAL(Estado__c, &apos;Liberado&apos;)
+								),
+								NOT(
+												ISPICKVAL(Estado__c, &apos;Firmado&apos;)
+								),
+								FechaLimiteLiberacion__c &lt; TODAY() 
+				),
+				true,
+				false
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Entregable Vencido</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

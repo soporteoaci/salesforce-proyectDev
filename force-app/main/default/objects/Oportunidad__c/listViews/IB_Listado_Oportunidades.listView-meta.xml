@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IB_Listado_Oportunidades</fullName>
+    <columns>Codigo_OC__c</columns>
+    <columns>NAME</columns>
+    <columns>Estado_de_Cierre__c</columns>
+    <columns>Etapa__c</columns>
+    <columns>Probabilidad__c</columns>
+    <columns>Cliente__c</columns>
+    <columns>Fecha_estimada_de_cierre__c</columns>
+    <columns>Sociedad_Ayesa__c</columns>
+    <columns>Tipo_de_Negocio__c</columns>
+    <columns>Fecha_Creacion__c</columns>
+    <columns>Importe_total_sin_IVA__c</columns>
+    <columns>Margen_Previsto_Euros__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Fecha_estimada_de_cierre__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2023</value>
+    </filters>
+    <filters>
+        <field>Sociedad_Ayesa__c</field>
+        <operation>equals</operation>
+        <value>IB01 - IBERMÁTICA S.A.,IB43 - I3B,IB67 - IBERMATICA PERU S.A.C.,IB68 - SQEDIO,IB69 - IBERMÁTICA ANDORRA,&quot;IB72 - IBERMÁTICA USA, LLC&quot;</value>
+    </filters>
+    <filters>
+        <field>Estado_de_Cierre__c</field>
+        <operation>equals</operation>
+        <value>Contratada</value>
+    </filters>
+    <label>IB Listado Oportunidades Año en curso</label>
+</ListView>

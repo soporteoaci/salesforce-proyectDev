@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Responsable Area Pais ING --></label>
+    <name>Responsable_Area_Pais_ING__c</name>
+    <relationshipLabel><!-- Paramétricas (Responsable Area Pais ING) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Histórico estado contrato</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Histórico estado contratos</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Formato Histórico estado contrato</layout>
+        <sections>
+            <label>Resolution</label>
+            <section>Resolución</section>
+        </sections>
+        <sections>
+            <label>Delay</label>
+            <section>Retraso</section>
+        </sections>
+        <sections>
+            <label>Suspension</label>
+            <section>Suspensión</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Historico Lets Talk Save Email</layout>
+        <sections>
+            <label>Fields</label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Historico Lets Talk send email</layout>
+        <sections>
+            <label>Fields</label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Historico Lets Talk Save Email --></label>
+        <name>Historico_Lets_Talk_Save_Email</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Historico Lets Talk Send Email --></label>
+        <name>Historico_Lets_Talk_Send_Email</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Historico estado contrato --></label>
+        <name>Historico_estado_contrato</name>
+    </recordTypes>
+</CustomObjectTranslation>

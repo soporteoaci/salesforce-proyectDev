@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coste_Dir_Real_Coste_Dir_Prev__c</fullName>
+    <description>Se calcula a partir de los datos en EUR de la FdP</description>
+    <formula>IF( costeDirPrev_FdP_EUR__c &lt;&gt;0, costeDirReal_FdP_EUR__c / costeDirPrev_FdP_EUR__c,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Coste Dir Real/Coste Dir Prev (FdP EUR)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

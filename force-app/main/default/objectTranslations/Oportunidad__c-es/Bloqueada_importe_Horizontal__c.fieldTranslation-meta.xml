@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Se bloquea cuando la cuenta es de tipo SC y el importe de la oportunidad es inferior al límite establecido por la línea de servicios --></help>
+    <label><!-- Bloqueada importe Linea de Servicio --></label>
+    <name>Bloqueada_importe_Horizontal__c</name>
+</CustomFieldTranslation>

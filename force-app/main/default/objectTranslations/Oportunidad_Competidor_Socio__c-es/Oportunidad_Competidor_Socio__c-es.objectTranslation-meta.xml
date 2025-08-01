@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Oportunidad-Socio</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Oportunidades-Socios</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Formato Oportunidad-Competidor/Socio</layout>
+        <sections>
+            <label><!-- Información Aprobación --></label>
+            <section>Información Aprobación</section>
+        </sections>
+        <sections>
+            <label>Custom Link</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Subcontratas</layout>
+        <sections>
+            <label><!-- Aprobaciones --></label>
+            <section>Aprobaciones</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Socio --></label>
+        <name>Socio</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Subcontratación --></label>
+        <name>Subcontrata</name>
+    </recordTypes>
+</CustomObjectTranslation>

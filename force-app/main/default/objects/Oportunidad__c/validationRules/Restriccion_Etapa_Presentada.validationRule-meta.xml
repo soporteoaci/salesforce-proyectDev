@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriccion_Etapa_Presentada</fullName>
+    <active>false</active>
+    <description>Restricción para el cambio de etapa desde Presentada</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+RecordType.DeveloperName == &apos;Ayesa&apos;,
+AND(
+				Clonada__c = FALSE,
+	ISPICKVAL(PRIORVALUE(Etapa__c),&quot;Presentada&quot;),
+	OR(
+		ISPICKVAL(Etapa__c,&quot;Abierta&quot;),
+		ISPICKVAL(Etapa__c,&quot;Pedido Código Oferta&quot;),
+		ISPICKVAL(Etapa__c,&quot;Preparando QA&quot;),
+		ISPICKVAL(Etapa__c,&quot;Aprobada QA&quot;)
+	)
+)
+
+)</errorConditionFormula>
+    <errorMessage>Cambio de etapa no permitido.</errorMessage>
+</ValidationRule>

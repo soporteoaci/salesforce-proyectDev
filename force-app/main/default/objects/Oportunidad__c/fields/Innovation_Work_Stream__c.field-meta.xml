@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Innovation_Work_Stream__c</fullName>
+    <label>Innovation Work Stream</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WS1</fullName>
+                <default>false</default>
+                <label>Next generation of AI-powered user experiences</label>
+            </value>
+            <value>
+                <fullName>WS2</fullName>
+                <default>false</default>
+                <label>Data-driven decision making and business operations</label>
+            </value>
+            <value>
+                <fullName>WS3</fullName>
+                <default>false</default>
+                <label>Secured cloud infrastructures and platforms</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

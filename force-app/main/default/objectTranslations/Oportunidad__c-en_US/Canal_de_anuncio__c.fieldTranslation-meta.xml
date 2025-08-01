@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Channel where the offer/bid is published</help>
+    <label>Announcement Channel</label>
+    <name>Canal_de_anuncio__c</name>
+    <picklistValues>
+        <masterLabel>Invitación</masterLabel>
+        <translation>Invitation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plataforma de Contratación</masterLabel>
+        <translation>Contracting Platform</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Publicación Oficial</masterLabel>
+        <translation>Official Publishing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Publicación web</masterLabel>
+        <translation>Web Publishing</translation>
+    </picklistValues>
+</CustomFieldTranslation>

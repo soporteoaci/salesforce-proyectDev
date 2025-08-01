@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Marcar este check para poder tipificar manualmente la oportunidad (también incluye el cambio manual de preventa) --></help>
+    <label><!-- Tipificación Manual --></label>
+    <name>Tipificacion_Manual__c</name>
+</CustomFieldTranslation>

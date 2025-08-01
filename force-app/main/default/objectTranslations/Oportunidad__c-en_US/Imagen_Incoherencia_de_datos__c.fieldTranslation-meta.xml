@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indicator of the existence of inconsistencies in the data. If shown in red, check the opportunity submittal and/or closing date.</help>
+    <label>Consistency of the data</label>
+    <name>Imagen_Incoherencia_de_datos__c</name>
+</CustomFieldTranslation>

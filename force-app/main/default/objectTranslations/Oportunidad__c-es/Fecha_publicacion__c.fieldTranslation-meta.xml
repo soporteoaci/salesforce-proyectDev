@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date of publication or invitation for tender --></help>
+    <label><!-- Fecha publicación --></label>
+    <name>Fecha_publicacion__c</name>
+</CustomFieldTranslation>

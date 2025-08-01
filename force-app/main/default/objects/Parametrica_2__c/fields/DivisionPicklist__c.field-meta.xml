@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DivisionPicklist__c</fullName>
+    <description>El campo Sector de Mercados tiene que tener los mismos valores que DivisionPicklist, ya que está en el alta de la oportunidad.También se tienen que crear los registros en Parametrica</description>
+    <label>División / Sector de Mercado</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>60029503</fullName>
+                <default>false</default>
+                <label>AVIATION</label>
+            </value>
+            <value>
+                <fullName>60029514</fullName>
+                <default>false</default>
+                <label>BFS</label>
+            </value>
+            <value>
+                <fullName>60029481</fullName>
+                <default>false</default>
+                <label>BPO UTILITIES</label>
+            </value>
+            <value>
+                <fullName>60029509</fullName>
+                <default>false</default>
+                <label>BUILDING EMEA &amp; ASIA</label>
+            </value>
+            <value>
+                <fullName>60029508</fullName>
+                <default>false</default>
+                <label>BUILDING LATAM</label>
+            </value>
+            <value>
+                <fullName>60029510</fullName>
+                <default>false</default>
+                <label>BUILDING SPAIN</label>
+            </value>
+            <value>
+                <fullName>60029513</fullName>
+                <default>false</default>
+                <label>CONSUMER &amp; BUSINESS SERVICES</label>
+            </value>
+            <value>
+                <fullName>60049219</fullName>
+                <default>false</default>
+                <label>DIGITAL ADMINISTRATION</label>
+            </value>
+            <value>
+                <fullName>60029428</fullName>
+                <default>false</default>
+                <label>ENEL</label>
+            </value>
+            <value>
+                <fullName>60029475</fullName>
+                <default>false</default>
+                <label>ENERGY</label>
+            </value>
+            <value>
+                <fullName>60029489</fullName>
+                <default>false</default>
+                <label>ENVIRONMENT</label>
+            </value>
+            <value>
+                <fullName>60048556</fullName>
+                <default>false</default>
+                <label>HEALTH</label>
+            </value>
+            <value>
+                <fullName>60029488</fullName>
+                <default>false</default>
+                <label>HYDRAULIC WORKS</label>
+            </value>
+            <value>
+                <fullName>60048557</fullName>
+                <default>false</default>
+                <label>IBERDROLA</label>
+            </value>
+            <value>
+                <fullName>60048559</fullName>
+                <default>false</default>
+                <label>INDUSTRY</label>
+            </value>
+            <value>
+                <fullName>60029500</fullName>
+                <default>false</default>
+                <label>INFRA. SUPERVISIONS</label>
+            </value>
+            <value>
+                <fullName>60030704</fullName>
+                <default>false</default>
+                <label>INNOVATION</label>
+            </value>
+            <value>
+                <fullName>60031603</fullName>
+                <default>false</default>
+                <label>INSURANCE</label>
+            </value>
+            <value>
+                <fullName>60029416</fullName>
+                <default>false</default>
+                <label>LAND MANAGEMENT</label>
+            </value>
+            <value>
+                <fullName>MARINE &amp; COASTALS</fullName>
+                <default>false</default>
+                <label>MARINE &amp; COASTALS</label>
+            </value>
+            <value>
+                <fullName>60050044</fullName>
+                <default>false</default>
+                <label>MICROSOFT</label>
+            </value>
+            <value>
+                <fullName>60029483</fullName>
+                <default>false</default>
+                <label>OIL &amp; GAS</label>
+            </value>
+            <value>
+                <fullName>60048560</fullName>
+                <default>false</default>
+                <label>ONCE</label>
+            </value>
+            <value>
+                <fullName>60029484</fullName>
+                <default>false</default>
+                <label>PROCESS PLANTS</label>
+            </value>
+            <value>
+                <fullName>60029499</fullName>
+                <default>false</default>
+                <label>RAILWAY/METRO</label>
+            </value>
+            <value>
+                <fullName>60029501</fullName>
+                <default>false</default>
+                <label>RAILWAY SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>60048558</fullName>
+                <default>false</default>
+                <label>RESOURCES</label>
+            </value>
+            <value>
+                <fullName>60029498</fullName>
+                <default>false</default>
+                <label>ROADS</label>
+            </value>
+            <value>
+                <fullName>60033576</fullName>
+                <default>false</default>
+                <label>TMT</label>
+            </value>
+            <value>
+                <fullName>60029502</fullName>
+                <default>false</default>
+                <label>TRANSPORT. CATALONIA</label>
+            </value>
+            <value>
+                <fullName>60029496</fullName>
+                <default>false</default>
+                <label>TRANSPORT EMEA &amp; ASIA</label>
+            </value>
+            <value>
+                <fullName>60029495</fullName>
+                <default>false</default>
+                <label>TRANSPORT LATAM</label>
+            </value>
+            <value>
+                <fullName>60029478</fullName>
+                <default>false</default>
+                <label>UTILITIES ESPAÑA</label>
+            </value>
+            <value>
+                <fullName>60029480</fullName>
+                <default>false</default>
+                <label>UTILITIES LATAM</label>
+            </value>
+            <value>
+                <fullName>60035586</fullName>
+                <default>false</default>
+                <label>V-LATAM</label>
+            </value>
+            <value>
+                <fullName>60029486</fullName>
+                <default>false</default>
+                <label>WATER &amp; ENVIRON. EMEA &amp; ASIA</label>
+            </value>
+            <value>
+                <fullName>60029485</fullName>
+                <default>false</default>
+                <label>WATER &amp; ENVIRONM. LATAM</label>
+            </value>
+            <value>
+                <fullName>60029492</fullName>
+                <default>false</default>
+                <label>WATER CATALONIA</label>
+            </value>
+            <value>
+                <fullName>60029490</fullName>
+                <default>false</default>
+                <label>WATER SUPERVISIONS</label>
+            </value>
+            <value>
+                <fullName>60035584</fullName>
+                <default>false</default>
+                <label>SMART FACTORIES</label>
+            </value>
+            <value>
+                <fullName>ENERGY &amp; UTILITIES</fullName>
+                <default>false</default>
+                <label>ENERGY &amp; UTILITIES</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

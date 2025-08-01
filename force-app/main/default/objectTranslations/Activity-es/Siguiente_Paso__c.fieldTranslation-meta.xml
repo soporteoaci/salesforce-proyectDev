@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Siguiente Paso --></label>
+    <name>Siguiente_Paso__c</name>
+    <picklistValues>
+        <masterLabel>Agendar otra reunión</masterLabel>
+        <translation><!-- Agendar otra reunión --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fin proceso</masterLabel>
+        <translation><!-- Fin proceso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Piden Oferta</masterLabel>
+        <translation><!-- Piden Oferta --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

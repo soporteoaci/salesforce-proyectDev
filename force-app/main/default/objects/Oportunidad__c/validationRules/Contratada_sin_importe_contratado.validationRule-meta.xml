@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contratada_sin_importe_contratado</fullName>
+    <active>false</active>
+    <description>Para poder pasar a contratada debe indicar el Importe Contratación.</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+	RecordType.DeveloperName == &apos;Ayesa&apos;,
+
+ISPICKVAL( Estado_de_Cierre__c , &quot;Contratada&quot;) &amp;&amp; (ISNULL(Importe_Contratacion__c) || Importe_Contratacion__c &lt;= 0)
+
+)</errorConditionFormula>
+    <errorDisplayField>Importe_Contratacion__c</errorDisplayField>
+    <errorMessage>Para poder pasar a contratada debe indicar el Importe Contratación.</errorMessage>
+</ValidationRule>

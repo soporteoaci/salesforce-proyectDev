@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cerrada_sin_contratado</fullName>
+    <active>false</active>
+    <description>Para poder cerrar la oportunidad como Contratada o adjudicada debe indicar el Importe Contratado Año (€) (Importe SAP).</description>
+    <errorConditionFormula>ISPICKVAL( Etapa__c , &quot;Cerrada&quot;) &amp;&amp;  RecordType.DeveloperName = &apos;Ayesa&apos; &amp;&amp;
+( ISNULL(Contratado_a_o_oportunidad__c) || Contratado_a_o_oportunidad__c &lt;= 0) &amp;&amp;
+(ISPICKVAL( Estado_de_Cierre__c , &quot;Ganada&quot;)|| ISPICKVAL( Estado_de_Cierre__c , &quot;Contratada&quot;) || ISPICKVAL( Estado_de_Cierre__c , &quot;Adjudicada&quot;))</errorConditionFormula>
+    <errorMessage>Para poder cerrar la oportunidad como Contratada o adjudicada debe indicar el Importe Contratado Año (€) (Importe SAP).</errorMessage>
+</ValidationRule>

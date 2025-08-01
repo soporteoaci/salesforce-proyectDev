@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Status</label>
+    <name>Estado__c</name>
+    <picklistValues>
+        <masterLabel>ENMA</masterLabel>
+        <translation>In execution</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RECEP</masterLabel>
+        <translation>Executed and received by the client although it is not yet in LIQ in SAP</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SINC</masterLabel>
+        <translation>In execution without signed contract</translation>
+    </picklistValues>
+</CustomFieldTranslation>

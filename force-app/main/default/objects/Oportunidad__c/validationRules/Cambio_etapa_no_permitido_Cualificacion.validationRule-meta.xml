@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cambio_etapa_no_permitido_Cualificacion</fullName>
+    <active>true</active>
+    <description>No se puede pasar a etapa oferta o negociacion y cierre sin tener la aprobación preliminar</description>
+    <errorConditionFormula>AND(
+				$User.Email &lt;&gt; &quot;cau-def@ibermatica.com&quot;,
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				$Profile.Name &lt;&gt; &quot;Admin Custom Ibermatica CRM&quot;,
+				$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
+				RecordType.DeveloperName == &apos;Ayesa&apos;,
+				Clonada__c = FALSE,
+				ISPICKVAL(PRIORVALUE(Etapa__c),&apos;Cualificación&apos;),
+				OR(
+								AND(
+												ISPICKVAL(Etapa__c,&quot;Oferta&quot;),
+												Decision_Go_Smart_BPM_Offer__c != &apos;Aprobado&apos;
+
+								) ,
+								ISPICKVAL(Etapa__c,&quot;Cerrada&quot;)
+
+				)
+)</errorConditionFormula>
+    <errorMessage>Cambio de etapa no permitido</errorMessage>
+</ValidationRule>

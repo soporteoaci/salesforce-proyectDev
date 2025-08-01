@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Close the opportunity when you become aware of the outcome. If awarded the bid, we suggest closing it once the PSP (Project Structure Plan) has been opened.</help>
+    <label>Closing Status</label>
+    <name>Estado_de_Cierre__c</name>
+    <picklistValues>
+        <masterLabel>Anulada</masterLabel>
+        <translation>Cancelled</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contratada</masterLabel>
+        <translation>Contracted</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Presentada</masterLabel>
+        <translation>Not Submitted</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perdida</masterLabel>
+        <translation>Lost</translation>
+    </picklistValues>
+</CustomFieldTranslation>

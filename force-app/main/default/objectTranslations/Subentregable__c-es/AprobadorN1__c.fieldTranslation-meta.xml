@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Normalmente el cliente. Una vez aprobado pasa al Aprobador Final --></help>
+    <label><!-- Aprobador Nivel 1 --></label>
+    <name>AprobadorN1__c</name>
+    <relationshipLabel><!-- Entregables (Aprobador Nivel 1) --></relationshipLabel>
+</CustomFieldTranslation>

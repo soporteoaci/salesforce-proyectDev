@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_Contrato</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Gestión contratos</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin Custom</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin Custom</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SolutionManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SolutionManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>ContractManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>ContractManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Analytics Cloud Integration User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Analytics Cloud Integration User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Analytics Cloud Security User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Analytics Cloud Security User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AYESA Administrador</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AYESA Administrador</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ayesa Partner Portal Perfil</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ayesa Partner Portal Perfil</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter External User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter External User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter Free User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter Free User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter Moderator User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter Moderator User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Cliente AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Cliente AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Clientes Perfil</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Clientes Perfil</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Consultor AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Consultor AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>CRM Licitaciones</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>CRM Licitaciones</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>External Identity User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>External Identity User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Force.com - App Subscription User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Force.com - App Subscription User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Incidencias Perfil</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Incidencias Perfil</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestor Proyecto AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestor Proyecto AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Guest License User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Guest License User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Legal AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Legal AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Prueba Gestor Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Prueba Gestor Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Responsable CRM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Responsable CRM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Usuario CRM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Usuario CRM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>System Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>System Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Usuario CRM Ingenieria</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Usuario CRM Ingenieria</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>MarketingProfile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>MarketingProfile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>StandardAul</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>StandardAul</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Standard</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Standard</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RP_Gestion Contrato</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RP_Gestion Contrato</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RP_Gestion Contrato</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_Contrato</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_Contrato</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Legal AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Usuario CRM Ingenieria</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Usuario CRM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_Contrato</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Responsable CRM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Prueba Gestor Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Guest License User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestor Proyecto AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Incidencias Perfil</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Force.com - App Subscription User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>External Identity User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>CRM Licitaciones</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Consultor AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_Contrato</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>ContractManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SolutionManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin Custom</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RP_Gestion Contrato Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RP_Gestion Contrato Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RP_Gestion Contrato Plus Autorizado</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Plus_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RP_Gestion Contrato Plus Autorizado</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RP_Gestion Contrato Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Gesti_n_ContratoRP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RP_Gestion Contrato Plus Autorizado</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <recordType>Lets_Talk__c.Lets_talk_Contrato</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <recordType>Lets_Talk__c.Lets_talk_Contrato</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <recordType>Lets_Talk__c.Lets_talk_Contrato</recordType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <recordType>Lets_Talk__c.Lets_talk_Contrato</recordType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro_Proyecto</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <recordType>Lets_Talk__c.Lets_talk_Proyecto</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro_Proyecto</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <recordType>Lets_Talk__c.Lets_talk_Proyecto</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro_Proyecto</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <recordType>Lets_Talk__c.Lets_talk_Proyecto</recordType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lets_Talk_P_gina_de_registro_Proyecto</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Lets_Talk__c</pageOrSobjectType>
+        <recordType>Lets_Talk__c.Lets_talk_Proyecto</recordType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>KAM IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>KAM IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>KAM ENGINEERING</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Contrato_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contrato__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>KAM ENGINEERING</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Subentregable_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Subentregable__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>KAM ENGINEERING</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Subentregable_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Subentregable__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>KAM ENGINEERING</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Subentregable_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Subentregable__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>KAM IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Subentregable_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Subentregable__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>KAM IT&amp;DS</profile>
+    </profileActionOverrides>
+    <setupExperience>all</setupExperience>
+    <tabs>standard-home</tabs>
+    <tabs>Proyecto__c</tabs>
+    <tabs>Contrato__c</tabs>
+    <tabs>Comunicacion__c</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>Riesgos_OACI__c</tabs>
+    <tabs>Lets_Talk__c</tabs>
+    <tabs>Objetivo__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Gesti_n_contratos_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Iniciativa --></label>
+    <name>Iniciativa__c</name>
+    <picklistValues>
+        <masterLabel>API Management</masterLabel>
+        <translation><!-- API Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agile + Deployment</masterLabel>
+        <translation><!-- Agile + Deployment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agile Deployment</masterLabel>
+        <translation><!-- Agile Deployment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analítica Avanzada Utilities</masterLabel>
+        <translation><!-- Analítica Avanzada Utilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BIM</masterLabel>
+        <translation><!-- BIM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BIM Integrator</masterLabel>
+        <translation><!-- BIM Integrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BPC  HANA</masterLabel>
+        <translation><!-- BPC  HANA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Big Data + Cloud</masterLabel>
+        <translation><!-- Big Data + Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Big Data SSFF</masterLabel>
+        <translation><!-- Big Data SSFF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BigData en Cloud</masterLabel>
+        <translation><!-- BigData en Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biometría</masterLabel>
+        <translation><!-- Biometría --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blockchain Asset</masterLabel>
+        <translation><!-- Blockchain Asset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blockchain SSFF</masterLabel>
+        <translation><!-- Blockchain SSFF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ciberseguridad</masterLabel>
+        <translation><!-- Ciberseguridad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ciberseguridad OT Utilities</masterLabel>
+        <translation><!-- Ciberseguridad OT Utilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Experience</masterLabel>
+        <translation><!-- Customer Experience --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMP Neodata Servicios</masterLabel>
+        <translation><!-- DMP Neodata Servicios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DW Offloading</masterLabel>
+        <translation><!-- DW Offloading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design Thinking</masterLabel>
+        <translation><!-- Design Thinking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DevOps</masterLabel>
+        <translation><!-- DevOps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Workplace</masterLabel>
+        <translation><!-- Digital Workplace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance &amp; Operations</masterLabel>
+        <translation><!-- Finance &amp; Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geoespacial</masterLabel>
+        <translation><!-- Geoespacial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gobierno Digital</masterLabel>
+        <translation><!-- Gobierno Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hybrid Cloud Services</masterLabel>
+        <translation><!-- Hybrid Cloud Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INFO33+</masterLabel>
+        <translation><!-- INFO33+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IOT AWS</masterLabel>
+        <translation><!-- IOT AWS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imagen de marca</masterLabel>
+        <translation><!-- Imagen de marca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industria 4.0</masterLabel>
+        <translation><!-- Industria 4.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lenguaje Natural Salud</masterLabel>
+        <translation><!-- Lenguaje Natural Salud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liferay CMS</masterLabel>
+        <translation><!-- Liferay CMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDAP</masterLabel>
+        <translation><!-- MDAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machine Learning</masterLabel>
+        <translation><!-- Machine Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS/BSS</masterLabel>
+        <translation><!-- OSS/BSS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oferta Tradicional</masterLabel>
+        <translation><!-- Oferta Tradicional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Bank / Insurance</masterLabel>
+        <translation><!-- Open Bank / Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packaged Analytics</masterLabel>
+        <translation><!-- Packaged Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RGPD Analytics</masterLabel>
+        <translation><!-- RGPD Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RGPD SAP</masterLabel>
+        <translation><!-- RGPD SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RPA + TL/IC</masterLabel>
+        <translation><!-- RPA + TL/IC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail 5.0</masterLabel>
+        <translation><!-- Retail 5.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S4/HANA</masterLabel>
+        <translation><!-- S4/HANA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP Leonardo</masterLabel>
+        <translation><!-- SAP Leonardo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCP</masterLabel>
+        <translation><!-- SCP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salud Proactiva_OLD</masterLabel>
+        <translation><!-- Salud Proactiva_OLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salud proactiva</masterLabel>
+        <translation><!-- Salud proactiva --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios Digitales</masterLabel>
+        <translation><!-- Servicios Digitales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart Cities</masterLabel>
+        <translation><!-- Smart Cities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TV Market</masterLabel>
+        <translation><!-- TV Market --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Testing BI BigData</masterLabel>
+        <translation><!-- Testing BI BigData --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Testing Mobile</masterLabel>
+        <translation><!-- Testing Mobile --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

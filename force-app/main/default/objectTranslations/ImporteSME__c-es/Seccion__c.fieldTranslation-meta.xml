@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sección --></label>
+    <name>Seccion__c</name>
+    <picklistValues>
+        <masterLabel>HARD</masterLabel>
+        <translation><!-- HARD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTTO.HARD</masterLabel>
+        <translation><!-- MTTO.HARD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTTO.SOFT</masterLabel>
+        <translation><!-- MTTO.SOFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOFT</masterLabel>
+        <translation><!-- SOFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRV</masterLabel>
+        <translation><!-- SRV --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

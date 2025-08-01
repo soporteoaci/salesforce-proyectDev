@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_crear_importes</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+$User.Username &lt;&gt; &quot;cau-def@ibermatica.com&quot;,
+$User.Username &lt;&gt; &quot;x.antonana@ibermatica.com&quot;,
+				Etapa_Oportunidad__c = &apos;Cerrada&apos;
+
+)</errorConditionFormula>
+    <errorMessage>No se pueden modificar importes cuando la oportunidad está cerrada</errorMessage>
+</ValidationRule>

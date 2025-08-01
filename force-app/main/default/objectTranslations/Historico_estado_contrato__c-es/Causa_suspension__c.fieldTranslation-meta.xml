@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Causa suspensión --></label>
+    <name>Causa_suspension__c</name>
+    <picklistValues>
+        <masterLabel>CSUS1</masterLabel>
+        <translation>Crisis sanitaria</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSUS2</masterLabel>
+        <translation>Otros motivos ajenos a la crisis sanitaria</translation>
+    </picklistValues>
+</CustomFieldTranslation>

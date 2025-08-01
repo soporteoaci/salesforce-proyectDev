@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Con Preventa - - &gt; Responsable Preventa
+
+Sin Preventa - - &gt; Responsable Delivery Center -->
+    </help>
+    <label>Pre-sale cost estimate</label>
+    <name>Estimacion_coste_preventa__c</name>
+</CustomFieldTranslation>

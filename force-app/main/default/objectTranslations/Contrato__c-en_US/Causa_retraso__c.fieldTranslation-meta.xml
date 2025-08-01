@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Causes Delay</label>
+    <name>Causa_retraso__c</name>
+    <picklistValues>
+        <masterLabel>CR1</masterLabel>
+        <translation>The client slows down the work due to not being able to meet contractual requirements due to a health crisis</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CR2</masterLabel>
+        <translation>Other causes derived from the health crisis</translation>
+    </picklistValues>
+</CustomFieldTranslation>

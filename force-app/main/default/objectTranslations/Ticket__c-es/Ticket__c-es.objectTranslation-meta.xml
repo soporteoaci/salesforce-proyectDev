@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ticket</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Formato Ticket</layout>
+        <sections>
+            <label><!-- Ticket --></label>
+            <section>Ticket</section>
+        </sections>
+        <sections>
+            <label>Custom Link</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Ticket Cliente</layout>
+        <sections>
+            <label>Custom Link</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- El estado inicial del Ticket debe ser &quot;Nuevo&quot; --></errorMessage>
+        <name>Estado_Inicial_Nuevo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe seleccionar uno de los valores disponibles. --></errorMessage>
+        <name>Prioridad_Obligatoria</name>
+    </validationRules>
+</CustomObjectTranslation>

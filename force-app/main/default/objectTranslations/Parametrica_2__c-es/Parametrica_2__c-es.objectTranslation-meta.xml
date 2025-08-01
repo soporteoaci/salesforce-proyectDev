@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Parametrica Ibermática</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Parametricas Ibermática</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Formato Area Solucion Producto</layout>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato CNAE</layout>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato CPV</layout>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Centro Responsabilidad</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Entorno Tecnológico</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato GP - CR</layout>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Gestor Produccion</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Organizacion</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Pais</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Pipeline</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Provincia</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato SIC</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Sector</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Subsector</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato TIpo de Cambio</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato de CCI</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Área Conocimiento Tecnológico</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Horizontal</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Actualiza Maestro SUPER --></label>
+        <name>Actualiza_Maestro_SUPER</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Carga Maestro SUPER --></label>
+        <name>Carga_Maestro</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Elimina Maestro SUPER --></label>
+        <name>Elimina_Maestro_SUPER</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Area Conocimiento Tecnológico --></label>
+        <name>Area_Conocimiento_Tecnologico</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Area Solucion Producto --></label>
+        <name>Area_Solucion_Producto</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CCI --></label>
+        <name>CCI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CNAE --></label>
+        <name>CNAE</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CPV --></label>
+        <name>CPV</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Campaña --></label>
+        <name>Campanya</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Centro Responsabilidad --></label>
+        <name>Centro_Responsabilidad</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Entorno tecnológico --></label>
+        <name>Entorno_tecnologico</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Gestor Produccion --></label>
+        <name>Gestor_Produccion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Gestor Produccion - Centro Responsabilidad --></label>
+        <name>Gestor_Produccion_Centro_Responsabilidad</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Horizontal --></label>
+        <name>Horizontal</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Maestro de la organización Comercial , para la integración con Super --></description>
+        <label><!-- Organización Comercial --></label>
+        <name>Organizaci_n_Comercial</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Organización --></label>
+        <name>Organizacion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Paises --></label>
+        <name>Paises</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pipeline --></label>
+        <name>Pipeline</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Provincias --></label>
+        <name>Provincias</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SIC --></label>
+        <name>SIC</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sector --></label>
+        <name>Sector</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Subsector --></label>
+        <name>Subsector</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tipo de cambio --></label>
+        <name>Tipo_de_cambio</name>
+    </recordTypes>
+</CustomObjectTranslation>

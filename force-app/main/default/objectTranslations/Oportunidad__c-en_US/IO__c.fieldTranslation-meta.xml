@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Included the IO in Alejandría? http://Alejandria.ayesa.com</help>
+    <label>Included the IO in Alejandría?</label>
+    <name>IO__c</name>
+</CustomFieldTranslation>

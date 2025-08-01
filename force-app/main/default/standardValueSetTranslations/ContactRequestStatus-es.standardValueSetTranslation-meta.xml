@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Abandonado</masterLabel>
+        <translation>Abandoned</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contactado</masterLabel>
+        <translation>Counted</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Intentado</masterLabel>
+        <translation>Tried</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Nuevo</masterLabel>
+        <translation>New</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

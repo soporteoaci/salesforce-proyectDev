@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipoact__c</fullName>
+    <label>Tipo Actividad</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cita</fullName>
+                <default>false</default>
+                <label>Cita</label>
+            </value>
+            <value>
+                <fullName>Llamada</fullName>
+                <default>false</default>
+                <label>Llamada</label>
+            </value>
+            <value>
+                <fullName>Correo electrónico</fullName>
+                <default>false</default>
+                <label>Correo electrónico</label>
+            </value>
+            <value>
+                <fullName>Tareas</fullName>
+                <default>false</default>
+                <label>Tareas</label>
+            </value>
+            <value>
+                <fullName>Nota</fullName>
+                <default>false</default>
+                <label>Nota</label>
+            </value>
+            <value>
+                <fullName>Evento</fullName>
+                <default>false</default>
+                <label>Evento</label>
+            </value>
+            <value>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+                <label>Webinar</label>
+            </value>
+            <value>
+                <fullName>Lead digital</fullName>
+                <default>false</default>
+                <label>Lead digital</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Visita cita</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Visita cita</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

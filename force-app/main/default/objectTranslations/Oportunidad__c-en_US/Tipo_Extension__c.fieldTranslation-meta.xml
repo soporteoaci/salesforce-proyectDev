@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Extension Type</label>
+    <name>Tipo_Extension__c</name>
+    <picklistValues>
+        <masterLabel>Extensión CUTE</masterLabel>
+        <translation><!-- Extensión CUTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extensión Desglose</masterLabel>
+        <translation>Breakdown Extension</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extensión de ajuste o variación</masterLabel>
+        <translation>Rectifying Extension</translation>
+    </picklistValues>
+</CustomFieldTranslation>

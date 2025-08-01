@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Division__c</fullName>
+    <label>División ANTIGUA</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Area__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sector Público Latinoamérica</fullName>
+                <default>false</default>
+                <label>Sector Público Latinoamérica</label>
+            </value>
+            <value>
+                <fullName>Sector Privado Latinoamérica</fullName>
+                <default>false</default>
+                <label>Sector Privado Latinoamérica</label>
+            </value>
+            <value>
+                <fullName>BPO</fullName>
+                <default>false</default>
+                <label>BPO</label>
+            </value>
+            <value>
+                <fullName>Infraestructuras América</fullName>
+                <default>false</default>
+                <label>Infraestructuras América</label>
+            </value>
+            <value>
+                <fullName>Infraestructuras ROW</fullName>
+                <default>false</default>
+                <label>Infraestructuras ROW</label>
+            </value>
+            <value>
+                <fullName>Agua y medio ambiente América</fullName>
+                <default>false</default>
+                <label>Agua y medio ambiente América</label>
+            </value>
+            <value>
+                <fullName>Agua y medio ambiente ROW</fullName>
+                <default>false</default>
+                <label>Agua y medio ambiente ROW</label>
+            </value>
+            <value>
+                <fullName>Arquitectura y Management</fullName>
+                <default>false</default>
+                <label>Arquitectura y Management</label>
+            </value>
+            <value>
+                <fullName>Aeropuertos</fullName>
+                <default>false</default>
+                <label>Aeropuertos</label>
+            </value>
+            <value>
+                <fullName>Gestión Territorial</fullName>
+                <default>false</default>
+                <label>Gestión Territorial</label>
+            </value>
+            <value>
+                <fullName>España</fullName>
+                <default>false</default>
+                <label>España</label>
+            </value>
+            <value>
+                <fullName>Oil&amp;Gas</fullName>
+                <default>false</default>
+                <label>Oil&amp;Gas</label>
+            </value>
+            <value>
+                <fullName>Plantas proceso</fullName>
+                <default>false</default>
+                <label>Plantas proceso</label>
+            </value>
+            <value>
+                <fullName>Instalaciones</fullName>
+                <default>false</default>
+                <label>Energía e Instalaciones</label>
+            </value>
+            <value>
+                <fullName>Digital Infrastructures</fullName>
+                <default>false</default>
+                <label>Digital Infrastructures</label>
+            </value>
+            <value>
+                <fullName>Digital Services</fullName>
+                <default>false</default>
+                <label>Digital Services</label>
+            </value>
+            <value>
+                <fullName>Digital Factory</fullName>
+                <default>false</default>
+                <label>Digital Factory</label>
+            </value>
+            <value>
+                <fullName>Aeronáutica, Espacio y Defensa</fullName>
+                <default>false</default>
+                <label>Aeronáutica, Espacio y Defensa</label>
+            </value>
+            <value>
+                <fullName>Centro de Soluciones (I+D+i)</fullName>
+                <default>false</default>
+                <label>Centro de Soluciones (I+D+i)</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+            <value>
+                <fullName>Banca e Industria</fullName>
+                <default>false</default>
+                <label>Banca e Industria</label>
+            </value>
+            <value>
+                <fullName>Sector Público</fullName>
+                <default>false</default>
+                <label>Sector Público</label>
+            </value>
+            <value>
+                <fullName>Industria y Sector Público</fullName>
+                <default>false</default>
+                <label>Industria y Sector Público</label>
+            </value>
+            <value>
+                <fullName>Transporte</fullName>
+                <default>false</default>
+                <label>Transporte</label>
+            </value>
+            <value>
+                <fullName>Energía</fullName>
+                <default>false</default>
+                <label>Energía</label>
+            </value>
+            <value>
+                <fullName>Aeroespacial</fullName>
+                <default>false</default>
+                <label>Aeroespacial</label>
+            </value>
+            <value>
+                <fullName>I+D+i</fullName>
+                <default>false</default>
+                <label>I+D+i</label>
+            </value>
+            <value>
+                <fullName>Mercado Anglosajón</fullName>
+                <default>false</default>
+                <label>Mercado Anglosajón</label>
+            </value>
+            <value>
+                <fullName>M2C</fullName>
+                <default>false</default>
+                <label>M2C</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ATC</controllingFieldValue>
+            <valueName>Sector Público Latinoamérica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATC</controllingFieldValue>
+            <valueName>Sector Privado Latinoamérica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATC</controllingFieldValue>
+            <valueName>BPO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATC</controllingFieldValue>
+            <valueName>Utilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATC</controllingFieldValue>
+            <valueName>Banca e Industria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATC</controllingFieldValue>
+            <valueName>Sector Público</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATD</controllingFieldValue>
+            <valueName>Industria y Sector Público</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATD</controllingFieldValue>
+            <valueName>Transporte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATD</controllingFieldValue>
+            <valueName>Energía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATD</controllingFieldValue>
+            <valueName>Aeroespacial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATD</controllingFieldValue>
+            <valueName>I+D+i</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_CIVIL</controllingFieldValue>
+            <valueName>Infraestructuras América</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_CIVIL</controllingFieldValue>
+            <valueName>Infraestructuras ROW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_CIVIL</controllingFieldValue>
+            <valueName>Agua y medio ambiente América</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_CIVIL</controllingFieldValue>
+            <valueName>Agua y medio ambiente ROW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_CIVIL</controllingFieldValue>
+            <valueName>Arquitectura y Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_CIVIL</controllingFieldValue>
+            <valueName>Aeropuertos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_CIVIL</controllingFieldValue>
+            <valueName>Gestión Territorial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_CIVIL</controllingFieldValue>
+            <valueName>España</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_CIVIL</controllingFieldValue>
+            <valueName>Mercado Anglosajón</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_INDUSTRIAL</controllingFieldValue>
+            <valueName>Oil&amp;Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_INDUSTRIAL</controllingFieldValue>
+            <valueName>Plantas proceso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INGENIERIA_INDUSTRIAL</controllingFieldValue>
+            <valueName>Instalaciones</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

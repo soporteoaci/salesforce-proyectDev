@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sector_Cuenta__c</fullName>
+    <label>Sector Cuenta</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administración</fullName>
+                <default>false</default>
+                <label>Administración</label>
+            </value>
+            <value>
+                <fullName>Aeronáutica</fullName>
+                <default>false</default>
+                <label>Aeronáutica</label>
+            </value>
+            <value>
+                <fullName>Alimentación</fullName>
+                <default>false</default>
+                <label>Alimentación</label>
+            </value>
+            <value>
+                <fullName>Arquitectura y construcción</fullName>
+                <default>false</default>
+                <label>Arquitectura y construcción</label>
+            </value>
+            <value>
+                <fullName>Automatización</fullName>
+                <default>false</default>
+                <label>Automatización</label>
+            </value>
+            <value>
+                <fullName>Automoción</fullName>
+                <default>false</default>
+                <label>Automoción</label>
+            </value>
+            <value>
+                <fullName>Bienes de consumo</fullName>
+                <default>false</default>
+                <label>Bienes de consumo</label>
+            </value>
+            <value>
+                <fullName>Bienes de equipo</fullName>
+                <default>false</default>
+                <label>Bienes de equipo</label>
+            </value>
+            <value>
+                <fullName>Calderería, chapa y estructura metálica</fullName>
+                <default>false</default>
+                <label>Calderería, chapa y estructura metálica</label>
+            </value>
+            <value>
+                <fullName>Centros de investigación</fullName>
+                <default>false</default>
+                <label>Centros de investigación</label>
+            </value>
+            <value>
+                <fullName>Educacional</fullName>
+                <default>false</default>
+                <label>Educacional</label>
+            </value>
+            <value>
+                <fullName>Elec: instalaciones eléctricas</fullName>
+                <default>false</default>
+                <label>Elec: instalaciones eléctricas</label>
+            </value>
+            <value>
+                <fullName>Elec: material y equipo eléctrico</fullName>
+                <default>false</default>
+                <label>Elec: material y equipo eléctrico</label>
+            </value>
+            <value>
+                <fullName>Energía, procesos y útiles</fullName>
+                <default>false</default>
+                <label>Energía, procesos y útiles</label>
+            </value>
+            <value>
+                <fullName>Envases</fullName>
+                <default>false</default>
+                <label>Envases</label>
+            </value>
+            <value>
+                <fullName>Equipos electrónicos</fullName>
+                <default>false</default>
+                <label>Equipos electrónicos</label>
+            </value>
+            <value>
+                <fullName>Equipos para industria de procesos</fullName>
+                <default>false</default>
+                <label>Equipos para industria de procesos</label>
+            </value>
+            <value>
+                <fullName>Hi-Tech</fullName>
+                <default>false</default>
+                <label>Hi-Tech</label>
+            </value>
+            <value>
+                <fullName>Maquinaria agrícola y de obras públicas</fullName>
+                <default>false</default>
+                <label>Maquinaria agrícola y de obras públicas</label>
+            </value>
+            <value>
+                <fullName>Maquinaria de envase y embalaje</fullName>
+                <default>false</default>
+                <label>Maquinaria de envase y embalaje</label>
+            </value>
+            <value>
+                <fullName>Maquinaria especial</fullName>
+                <default>false</default>
+                <label>Maquinaria especial</label>
+            </value>
+            <value>
+                <fullName>Maquinaria fabricación</fullName>
+                <default>false</default>
+                <label>Maquinaria fabricación</label>
+            </value>
+            <value>
+                <fullName>Mecanizado subcontratación</fullName>
+                <default>false</default>
+                <label>Mecanizado subcontratación</label>
+            </value>
+            <value>
+                <fullName>Moldes y piezas de plástico</fullName>
+                <default>false</default>
+                <label>Moldes y piezas de plástico</label>
+            </value>
+            <value>
+                <fullName>Moldes, matrices, troqueles</fullName>
+                <default>false</default>
+                <label>Moldes, matrices, troqueles</label>
+            </value>
+            <value>
+                <fullName>Naval</fullName>
+                <default>false</default>
+                <label>Naval</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Servicios de ingeniería</fullName>
+                <default>false</default>
+                <label>Servicios de ingeniería</label>
+            </value>
+            <value>
+                <fullName>Transporte</fullName>
+                <default>false</default>
+                <label>Transporte</label>
+            </value>
+            <value>
+                <fullName>Alquiler</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alquiler</label>
+            </value>
+            <value>
+                <fullName>N/C</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>N/C</label>
+            </value>
+            <value>
+                <fullName>Pendiente</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pendiente</label>
+            </value>
+            <value>
+                <fullName>Reservado IB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reservado IB</label>
+            </value>
+            <value>
+                <fullName>Reservado Otros</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reservado Otros</label>
+            </value>
+            <value>
+                <fullName>SAM Account</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SAM Account</label>
+            </value>
+            <value>
+                <fullName>Start up</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Start up</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

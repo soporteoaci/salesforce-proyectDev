@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Negocio__c</fullName>
+    <label>Tipo de Negocio</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automatic Extension</fullName>
+                <default>false</default>
+                <label>Automatic Extension</label>
+            </value>
+            <value>
+                <fullName>Recurrent Extension</fullName>
+                <default>false</default>
+                <label>Recurrent Extension</label>
+            </value>
+            <value>
+                <fullName>Previous contract multiyear/multistage</fullName>
+                <default>false</default>
+                <label>Previous contract multiyear/multistage</label>
+            </value>
+            <value>
+                <fullName>Previous exclusive framework agreement</fullName>
+                <default>false</default>
+                <label>Previous exclusive framework agreement</label>
+            </value>
+            <value>
+                <fullName>Previous framework agreement with competitors</fullName>
+                <default>false</default>
+                <label>Previous framework agreement with competitors</label>
+            </value>
+            <value>
+                <fullName>New extension or variation</fullName>
+                <default>false</default>
+                <label>New extension or variation</label>
+            </value>
+            <value>
+                <fullName>New exclusive framework agreement</fullName>
+                <default>false</default>
+                <label>New exclusive framework agreement</label>
+            </value>
+            <value>
+                <fullName>New framework agreement with competitors</fullName>
+                <default>false</default>
+                <label>New framework agreement with competitors</label>
+            </value>
+            <value>
+                <fullName>New contract</fullName>
+                <default>false</default>
+                <label>New contract</label>
+            </value>
+            <value>
+                <fullName>New contract being incumbent</fullName>
+                <default>false</default>
+                <label>New contract being incumbent</label>
+            </value>
+            <value>
+                <fullName>New contract multiyear/multistage</fullName>
+                <default>false</default>
+                <label>New contract multiyear/multistage</label>
+            </value>
+            <value>
+                <fullName>Nuevo Cliente</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nuevo Cliente</label>
+            </value>
+            <value>
+                <fullName>Nuevo Negocio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nuevo Negocio</label>
+            </value>
+            <value>
+                <fullName>Prórrogas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Prórrogas</label>
+            </value>
+            <value>
+                <fullName>Renegociaciones</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Renegociaciones</label>
+            </value>
+            <value>
+                <fullName>Renovación de Contrato con Competidores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Renovación de Contrato con Competidores</label>
+            </value>
+            <value>
+                <fullName>Renovación de Contrato sin Competidores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Renovación de Contrato sin Competidores</label>
+            </value>
+            <value>
+                <fullName>Variación de negocio existente</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Variación de negocio existente</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

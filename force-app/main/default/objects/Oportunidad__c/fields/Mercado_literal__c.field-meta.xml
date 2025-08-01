@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mercado_literal__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Mercado__c, 
+					&apos;60029505&apos;, &apos;V-AERONAUTICS&apos;, 
+					&apos;60029409&apos;, &apos;V-ANGLO MARKET&apos;,
+					&apos;60029507&apos;, &apos;V-CITIES&apos;,
+					&apos;60029512&apos;, &apos;INDUSTRY, CONSUMER &amp; BUSINESS SERVICE&apos;,
+					&apos;60030704&apos;, &apos;V-INNO&apos;, 
+					&apos;60029413&apos;, &apos;DIGITAL ADMINISTRATION &amp; HEALTH&apos;,
+					&apos;60029482&apos;, &apos;RESOURCES &amp; ENVIRONMENT	&apos;,
+					&apos;60029494&apos;, &apos;TRANSPORTATION &amp; CITIES&apos;,
+					&apos;60029427&apos;, &apos;ENERGY &amp; UTILITIES&apos;,
+					&apos;60034542&apos;, &apos;BFSI &amp; TMT&apos;,
+					&apos;60031600&apos;, &apos;V-M2C&apos;,
+					 
+					&apos;60035584&apos;, &apos;V-SMEs&apos;,
+					&apos;60035586&apos;, &apos;V-LATAM&apos;,
+					&apos;BFSI&apos;, &apos;BFSI&apos;,
+					&apos;CONSUMER&apos;, &apos;CONSUMER&apos;,
+					&apos;DIGITAL ADMIN&apos;, &apos;DIGITAL ADMIN&apos;,
+					&apos;ENERGY &amp; UTILITIES&apos;, &apos;ENERGY &amp; UTILITIES&apos;,
+					&apos;GRUPO IBERMATICA&apos;,&apos;GRUPO IBERMATICA&apos;,
+					&apos;HEALTH&apos;,&apos;HEALTH&apos;,
+					&apos;ILA ARGENTINA&apos;, &apos;ILA ARGENTINA&apos;,
+					&apos;INTERFLEX&apos;, &apos;INTERFLEX&apos;,
+					&apos;MANUFACTURING&apos;, &apos;MANUFACTURING&apos;,
+					&apos;MICROSOFT&apos;, &apos;MICROSOFT&apos;,
+					&apos;ONCE GROUP&apos;,&apos;ONCE GROUP&apos;,
+					&apos;SCADA ARGENTINA&apos;,&apos;SCADA ARGENTINA&apos;,
+					&apos;SCADA CHILE&apos;,&apos;SCADA CHILE&apos;,
+					&apos;SCADA PERU&apos;,&apos;SCADA PERU&apos;,
+					&apos;SMART FACTORIES&apos;,&apos;SMART FACTORIES&apos;,
+					&apos;TMT&apos;,&apos;TMT&apos;,
+					&apos;INNOVACIÓN&apos;, &apos;INNOVACIÓN&apos;,
+						&apos; &apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mercado_literal</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

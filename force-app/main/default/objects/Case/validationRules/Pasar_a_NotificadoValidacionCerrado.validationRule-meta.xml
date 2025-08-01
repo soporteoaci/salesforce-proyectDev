@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pasar_a_NotificadoValidacionCerrado</fullName>
+    <active>false</active>
+    <description>No permite pasar a validado si no es el supervisor.</description>
+    <errorConditionFormula>ISCHANGED(Status) &amp;&amp; (ISPICKVAL(Status, &apos;Notificado&apos;) || ISPICKVAL(Status, &apos;Cerrado&apos;) || ISPICKVAL(Status, &apos;En validación&apos;)) &amp;&amp; Supervisor__c != $User.Id</errorConditionFormula>
+    <errorMessage>No puede pasar a Notificado, En Validación o Cerrado al menos que sea el supervisor del caso.</errorMessage>
+</ValidationRule>

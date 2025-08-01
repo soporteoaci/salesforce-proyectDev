@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProveedorInformado</fullName>
+    <active>true</active>
+    <description>Para la acción &quot;Pdt Terceros&quot; es obligatorio que informe el campo Proveedor.</description>
+    <errorConditionFormula>AND(ISPICKVAL( Accion__c , &quot;Pdt Terceros&quot;), ISBLANK( Proveedor2__c ) )</errorConditionFormula>
+    <errorMessage>Para la acción &apos;&apos;Pdt Proveedor&apos;&apos; es obligatorio que informe el campo &apos;&apos;Proveedor&apos;&apos;.</errorMessage>
+</ValidationRule>

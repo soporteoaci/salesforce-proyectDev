@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomHelpMenuSection xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customHelpMenuItems>
+        <linkUrl>https://ayesaoaci--c.eu8.visual.force.com/resource/1559821851000/SolicitudSSC?</linkUrl>
+        <masterLabel>¿Cómo crear Solicitudes?</masterLabel>
+        <sortOrder>1</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://ayesaoaci--c.eu8.visual.force.com/resource/1559821901000/ObservacionesSSC?</linkUrl>
+        <masterLabel>¿Cómo crear Observaciones?</masterLabel>
+        <sortOrder>2</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://ayesaoaci--c.eu8.visual.force.com/resource/1559821875000/AccionesSSC?</linkUrl>
+        <masterLabel>¿Cómo crear Acciones?</masterLabel>
+        <sortOrder>3</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://ayesaoaci--c.eu8.visual.force.com/resource/1559821922000/DocumentosSSC?</linkUrl>
+        <masterLabel>¿Cómo añadir Documentos a una Acción?</masterLabel>
+        <sortOrder>4</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://ayesaoaci--c.eu8.visual.force.com/resource/1559821551000/Manual_de_Usuario_SSC</linkUrl>
+        <masterLabel>Manual de Usuario SSC</masterLabel>
+        <sortOrder>5</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://ayesaoaci--c.eu8.visual.force.com/resource/1560180352000/SolicitudesSSC_Ingles?</linkUrl>
+        <masterLabel>How to create Requests?</masterLabel>
+        <sortOrder>6</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://ayesaoaci--c.eu8.visual.force.com/resource/1560180380000/ObservacionesSSC_Ingles?</linkUrl>
+        <masterLabel>How to create Observations?</masterLabel>
+        <sortOrder>7</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://ayesaoaci--c.eu8.visual.force.com/resource/1560180281000/AccionesSSC_Ingles?</linkUrl>
+        <masterLabel>How to create Actions?</masterLabel>
+        <sortOrder>8</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://ayesaoaci--c.eu8.visual.force.com/resource/1560180316000/DocumentosSSC_Ingles?</linkUrl>
+        <masterLabel>How to add Documents to an Action?</masterLabel>
+        <sortOrder>9</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://ayesaoaci--c.eu8.visual.force.com/resource/1560180032000/Manual_de_Usuario_SSC_Ingles</linkUrl>
+        <masterLabel>SSC User Manual</masterLabel>
+        <sortOrder>10</sortOrder>
+    </customHelpMenuItems>
+    <masterLabel>Seguimiento Soporte Corporativo</masterLabel>
+</CustomHelpMenuSection>

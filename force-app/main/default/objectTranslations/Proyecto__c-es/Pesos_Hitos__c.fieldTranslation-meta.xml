@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Se mostrará verde cuando los Hitos de sus Grupos de Entregables pesen el 100%. --></help>
+    <label><!-- Pesos Hitos --></label>
+    <name>Pesos_Hitos__c</name>
+</CustomFieldTranslation>

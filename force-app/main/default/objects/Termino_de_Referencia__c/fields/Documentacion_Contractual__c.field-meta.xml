@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Documentacion_Contractual__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Documentación Contractual</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>La documentación seleccionada no pertenece al proyecto del TDR.</errorMessage>
+        <filterItems>
+            <field>$Source.Proyecto__c</field>
+            <operation>equals</operation>
+            <valueField>Documentacion_Contractual__c.Proyecto__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Documentacion_Contractual__c</referenceTo>
+    <relationshipLabel>Términos de Referencia</relationshipLabel>
+    <relationshipName>Terminos_de_Referencia</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

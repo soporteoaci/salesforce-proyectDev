@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canal_de_anuncio__c</fullName>
+    <description>Canal por el que es publicada la oferta</description>
+    <inlineHelpText>Canal por el que es publicada la oferta/licitación</inlineHelpText>
+    <label>Canal de anuncio</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Plataforma de Contratación</fullName>
+                <default>false</default>
+                <label>Plataforma de Contratación</label>
+            </value>
+            <value>
+                <fullName>Publicación Oficial</fullName>
+                <default>false</default>
+                <label>Publicación Oficial</label>
+            </value>
+            <value>
+                <fullName>Publicación web</fullName>
+                <default>false</default>
+                <label>Publicación web</label>
+            </value>
+            <value>
+                <fullName>Invitación</fullName>
+                <default>false</default>
+                <label>Invitación</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

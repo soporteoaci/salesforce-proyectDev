@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campos_Cualificacion_RO</fullName>
+    <active>true</active>
+    <description>Campos de la preventa que solo puede modificar el RO</description>
+    <errorConditionFormula>AND(  $User.Email &lt;&gt; Owner:User.Email, 
+				
+					$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
+					$User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
+					$User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;,
+				RecordType.Name =&apos;Ayesa&apos;,
+					OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)), 
+					Clonada__c =FALSE,
+					OR(
+									ISCHANGED(Probabilidad__c),
+									ISCHANGED(Certificaciones_empresa__c), 
+									ISCHANGED(Solvencia_empresa__c ),
+									ISCHANGED(Certificaciones_perfiles__c ),
+									ISCHANGED(Analisis_penalizaciones_excluyentes__c), 
+									ISCHANGED(Tipo_Participacion_Ayesa__c ),
+									ISCHANGED(Participacion_Ayesa__c ),
+									ISCHANGED(Finalidad__c ),
+									ISCHANGED(Exige_venta_licencias__c ),
+									ISCHANGED(Licencias__c ),
+									ISCHANGED(Forma_de_pago__c ),
+									ISCHANGED(RIESGO__c ),
+									ISCHANGED(Riesgo_Principal__c ),
+									ISCHANGED(Gestion_CV__c)
+					)
+				)</errorConditionFormula>
+    <errorMessage>Está modificando campos que solo pueden ser informados por el Responsable de la Oportunidad (Propietario)</errorMessage>
+</ValidationRule>

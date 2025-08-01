@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SharePoint Document</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SharePoint Documents</value>
+    </caseValues>
+    <layouts>
+        <layout>Formato Archivo Externo</layout>
+        <sections>
+            <label>Personalised links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>File Code</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>URL is a required field</errorMessage>
+        <name>URL_LONG_Required</name>
+    </validationRules>
+    <webLinks>
+        <label>See Document</label>
+        <name>Ver_Documento</name>
+    </webLinks>
+</CustomObjectTranslation>

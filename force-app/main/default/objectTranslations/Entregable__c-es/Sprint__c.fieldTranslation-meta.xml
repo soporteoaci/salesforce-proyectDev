@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sprint --></label>
+    <name>Sprint__c</name>
+    <picklistValues>
+        <masterLabel>ARAUCO-Fase I</masterLabel>
+        <translation><!-- ARAUCO-Fase I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARAUCO-Fase II</masterLabel>
+        <translation><!-- ARAUCO-Fase II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARAUCO-Fase III</masterLabel>
+        <translation><!-- ARAUCO-Fase III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Fase 0.- Datos Maestros</masterLabel>
+        <translation><!-- MINFIN - Fase 0.- Datos Maestros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Fase 1A.- Varios Módulos</masterLabel>
+        <translation><!-- MINFIN - Fase 1A.- Varios Módulos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Fase 1B.- RYD</masterLabel>
+        <translation><!-- MINFIN - Fase 1B.- RYD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Fase 2.- Programación y Formulación</masterLabel>
+        <translation><!-- MINFIN - Fase 2.- Programación y Formulación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Fase 3.- Solución Completa e Integrada</masterLabel>
+        <translation><!-- MINFIN - Fase 3.- Solución Completa e Integrada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Garantía, Soporte y Mantenimiento</masterLabel>
+        <translation><!-- MINFIN - Garantía, Soporte y Mantenimiento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Gestión del Cambio</masterLabel>
+        <translation><!-- MINFIN - Gestión del Cambio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Informe Final</masterLabel>
+        <translation><!-- MINFIN - Informe Final --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Ingeniería de Detalle</masterLabel>
+        <translation><!-- MINFIN - Ingeniería de Detalle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Licenciamiento</masterLabel>
+        <translation><!-- MINFIN - Licenciamiento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Provisión de Ambientes</masterLabel>
+        <translation><!-- MINFIN - Provisión de Ambientes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Puesta en Producción e Implantación</masterLabel>
+        <translation><!-- MINFIN - Puesta en Producción e Implantación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINFIN - Transferencia del Conocimiento</masterLabel>
+        <translation><!-- MINFIN - Transferencia del Conocimiento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VANTI. ERP. W11.- ECS + Nómina</masterLabel>
+        <translation><!-- VANTI. ERP. W11.- ECS + Nómina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VANTI. ERP. W12.- P&amp;G + LMS</masterLabel>
+        <translation><!-- VANTI. ERP. W12.- P&amp;G + LMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VANTI. ERP. W13.- REC + S&amp;D</masterLabel>
+        <translation><!-- VANTI. ERP. W13.- REC + S&amp;D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VANTI. ERP. W2.- LO+FI</masterLabel>
+        <translation><!-- VANTI. ERP. W2.- LO+FI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VANTI. ERP. W3. BPC</masterLabel>
+        <translation><!-- VANTI. ERP. W3. BPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VANTI. ERP. W4. QM</masterLabel>
+        <translation><!-- VANTI. ERP. W4. QM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VANTI. ERP. WXX.- Todos</masterLabel>
+        <translation><!-- VANTI. ERP. WXX.- Todos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VANTI. ISU. W1. SSCC</masterLabel>
+        <translation><!-- VANTI. ISU. W1. SSCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VANTI. ISU. WXX. Todas</masterLabel>
+        <translation><!-- VANTI. ISU. WXX. Todas --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

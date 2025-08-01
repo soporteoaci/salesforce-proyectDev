@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Codigo Area Con Tecnologica --></label>
+    <name>Codigo_Area_Con_Tecnologica__c</name>
+</CustomFieldTranslation>

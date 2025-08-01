@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Promed_Inc_Cost_Promed__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (Coste_Promedio_Resto__c &gt; 0, IF (Coste_Promedio_Incurrido__c / Coste_Promedio_Resto__c &gt; 1.5, &apos;&gt; 1.5&apos;, &apos;&lt; 1.5&apos;), &apos;&lt; 1.5&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cost Promed Inc / Cost Promed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

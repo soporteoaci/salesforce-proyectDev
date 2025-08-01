@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interventor_a_L1_Metro_Bogot</fullName>
+    <columns>NAME</columns>
+    <columns>Nombre__c</columns>
+    <columns>Tipo__c</columns>
+    <columns>Estado__c</columns>
+    <columns>Categoria__c</columns>
+    <columns>Remitente__c</columns>
+    <columns>DestinatarioPrincipal__c</columns>
+    <columns>Fecha_de_Recepcion__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Contrato__c</field>
+        <operation>equals</operation>
+        <value>Interventoría L1 Metro Bogotá</value>
+    </filters>
+    <label>Interventoría L1 Metro Bogotá</label>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de seguimiento --></label>
+    <name>Tipo_de_seguimiento__c</name>
+    <picklistValues>
+        <masterLabel>Matriz TdR - Entregable</masterLabel>
+        <translation><!-- Matriz TdR - Entregable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No aplica</masterLabel>
+        <translation><!-- No aplica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pendiente matriz</masterLabel>
+        <translation><!-- Pendiente matriz --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seguimiento sin matriz TdR - Entregable</masterLabel>
+        <translation><!-- Seguimiento sin matriz TdR - Entregable --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

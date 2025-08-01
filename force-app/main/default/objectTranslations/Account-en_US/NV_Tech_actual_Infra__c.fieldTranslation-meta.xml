@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- M€ --></help>
+    <label>Infrastructure</label>
+    <name>NV_Tech_actual_Infra__c</name>
+</CustomFieldTranslation>

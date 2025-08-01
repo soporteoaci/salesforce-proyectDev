@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_Conocimiento_Tecnol_gico</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Parametrica_2__c.Area_Conocimiento_Tecnologico</value>
+    </filters>
+    <label>Area Conocimiento Tecnológico</label>
+</ListView>

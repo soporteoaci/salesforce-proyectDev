@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mis_OC_VB_Delivery_Oferta</fullName>
+    <columns>Codigo_OC__c</columns>
+    <columns>NAME</columns>
+    <columns>Cliente__c</columns>
+    <columns>Importe_total_sin_IVA__c</columns>
+    <columns>Propietario_custom__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Subfase__c</field>
+        <operation>equals</operation>
+        <value>Elaboración oferta</value>
+    </filters>
+    <filters>
+        <field>VB_linea_de_servicio__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Responsable_linea_de_servicio__c</field>
+        <operation>equals</operation>
+        <value>$USER</value>
+    </filters>
+    <label>Mis oportunidades VB Delivery Oferta</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Delivery_Center</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

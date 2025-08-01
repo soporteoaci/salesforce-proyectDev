@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Clase de oferta --></label>
+    <name>Clase_de_oferta__c</name>
+    <picklistValues>
+        <masterLabel>Acuerdo Marco / SDA Privado</masterLabel>
+        <translation><!-- Acuerdo Marco / SDA Privado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acuerdo Marco / SDA Público</masterLabel>
+        <translation><!-- Acuerdo Marco / SDA Público --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ampliación de Contrato</masterLabel>
+        <translation><!-- Ampliación de Contrato --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Información Previa</masterLabel>
+        <translation><!-- Información Previa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invitación Acuerdo Marco / SDA</masterLabel>
+        <translation><!-- Invitación Acuerdo Marco / SDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invitación Pública</masterLabel>
+        <translation><!-- Invitación Pública --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Licitación Pública</masterLabel>
+        <translation><!-- Licitación Pública --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oferta interco</masterLabel>
+        <translation><!-- Oferta interco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petición EOI / Pre-Calificación</masterLabel>
+        <translation><!-- Petición EOI / Pre-Calificación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Privada</masterLabel>
+        <translation><!-- Privada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pública</masterLabel>
+        <translation><!-- Pública --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registro Proveedores</masterLabel>
+        <translation><!-- Registro Proveedores --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

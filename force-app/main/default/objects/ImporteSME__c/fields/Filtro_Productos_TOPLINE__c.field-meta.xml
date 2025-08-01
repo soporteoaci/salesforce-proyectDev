@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Filtro_Productos_TOPLINE__c</fullName>
+    <formula>IF (
+				OR(
+								Producto__c  = &quot;2D-Draftsight (Dassault)&quot;,
+								Producto__c  = &quot;3DEXPERIENCE SOLIDWORKS Premium&quot;,
+								Producto__c  = &quot;3DEXPERIENCE SOLIDWORKS Standard&quot;,
+								Producto__c  = &quot;3D-SW Network (Dassault)&quot;,
+								Producto__c  = &quot;3D-SW Premium (Dassault)&quot;,
+								Producto__c  = &quot;3D-SW Professional (Dassault)&quot;,
+								Producto__c  = &quot;3D-SW Standard (Dassault)&quot;,
+								Producto__c  = &quot;3DX-SCU - 3D SCULPTOR OFFER&quot;,
+								Producto__c  = &quot;CSV-OC  -   COLLABORATIVE INDUSTRY INNOVATOR&quot;,
+								Producto__c  = &quot;IFW-OC  - COLLABORATIVE BUSINESS INNOVATOR&quot;,
+								Producto__c  = &quot;NBA-OC  - SOCIAL BUSINESS ANALYST&quot;,
+								Producto__c  = &quot;SW Composer (Dassault)&quot;,
+								Producto__c  = &quot;SW Electrical 3D (Dassault)&quot;,
+								Producto__c  = &quot;SW Flow Simulation (Dassault)&quot;,
+								Producto__c  = &quot;SW PDM Professional CAD Editor (Dassault)&quot;,
+								Producto__c  = &quot;SW Simulation (Dassault)&quot;,
+								Producto__c  = &quot;UES-OC COLLABORATIVE DESIGNER FOR SOLIDWORKS&quot;,
+								Producto__c  = &quot;WKLX-OC  -   LEARNING EXPERIENCES FOR 3DEXPERIENCE WORKS&quot;,
+								Producto__c  = &quot;WXD-OC  - 3D Creator&quot;,
+								Producto__c  = &quot;XFO-OC  - 3DSCLUPTOR&quot;,
+								Producto__c  = &quot;XPP-OC  - PROJECT PLANNER&quot;,
+								Producto__c  = &quot;XSM-OC3DEXPERIENCE SOLIDWORKS SIMULATION DESIGNER (XSM-OC). BRAND - SOLIDWORKS.&quot;,
+								Producto__c  = &quot;XW2-OC  -   3DEXPERIENCE SOLIDWORKS PROFESSIONAL PACKAGE&quot;,
+								Producto__c  = &quot;XWB-OC  - 3DEXPERIENCE SOLIDWORKS PROFESIONAL&quot;,
+								Producto__c  = &quot;XWBO-OC  -   3DEXPERIENCE SOLIDWORKS PROFESSIONAL OFFER&quot;,
+								Producto__c  = &quot;XWC-OC3DEXPERIENCE SOLIDWORKS PREMIUM (XWCP-OC), EN brand.) BRAND - SOLIDWORKS.&quot;,
+								Producto__c  = &quot;SCMW-O - SOLIDWORKS Premium Network with Cloud Services&quot;,
+								Producto__c  = &quot;SCOW-O - SOLIDWORKS Premium with Simulation Professional Network with Cloud Services&quot;,
+								Producto__c  = &quot;SCWW-O - SOLIDWORKS Standard Network with Cloud Services&quot;,
+								Producto__c  = &quot;SCPW-O - SOLIDWORKS Professional Network with Cloud Services&quot;,
+								Producto__c  = &quot;SCUW-O - SOLIDWORKS Premium with Simulation Premium Network with Cloud Services&quot;,
+								Producto__c  = &quot;SCOW - SOLIDWORKS Premium with Simulation Professional with Cloud Services&quot;,
+								Producto__c  = &quot;SCUW - SOLIDWORKS Premium with Simulation Premium with Cloud Services&quot; ,
+								Producto__c  = &quot;XWAO-OC – 3DEXPERIENCE SOLIDWORKS STANDARD OFFER&quot;,
+								Producto__c  = &quot;SWPRO-SOLIDWORKS Professional with Cloud Services&quot;,
+								Producto__c  = &quot;SWPRO-SOLIDWORKS Profesional with Cloud Services&quot;,
+								Producto__c  = &quot;SWPREM-SOLIDWORKS Premium with Cloud Services&quot;,
+								Producto__c  = &quot;SWC-SOLIDWORKS Standard with Cloud Services&quot;
+				), 
+				TRUE, 
+				FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Filtro_Productos_TOPLINE</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

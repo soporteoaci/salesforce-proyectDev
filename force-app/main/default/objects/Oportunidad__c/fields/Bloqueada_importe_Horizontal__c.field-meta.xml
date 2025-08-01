@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bloqueada_importe_Horizontal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Se bloquea cuando la cuenta es de tipo SC y el importe de la oportunidad es inferior al límite establecido por la línea de servicios</inlineHelpText>
+    <label>Bloqueada importe Linea de Servicio</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

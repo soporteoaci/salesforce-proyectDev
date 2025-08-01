@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Nota Ticket --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Nota Ticket --></value>
+    </caseValues>
+    <layouts>
+        <layout>Formato Nota IB</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Nota Ticket</layout>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Nota Ticket Cliente</layout>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Nombre de Nota Ticket --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage>If you select ``Assign´´ you can only modify the fields ``Assigned to ´´ and ``Comments´´</errorMessage>
+        <name>Accion_Asignar</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>With the ``action´´ type selected you can only modify the ``comments´´ fields</errorMessage>
+        <name>Accion_Modificacion_Cerrar_Resolver</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>If you select ``Supplier Pdt´´ you can only modify the ``Supplier´´ and ``Comments´´ fields</errorMessage>
+        <name>Accion_Nuevo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>If you select ``Rejection´´ you can only modify the fields ``Rejection Reason´´ and ``Comments´´</errorMessage>
+        <name>Accion_Rechazo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>It is not possible to select the chosen action on a ticket already resolved.</errorMessage>
+        <name>Accion_Resuelta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You do not have permissions to perform the selected action</errorMessage>
+        <name>Acciones_permitidas</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>For the ``Assign´´ action it is mandatory to inform the ´´Assigned to´´ field</errorMessage>
+        <name>AsignadoInformado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>For the ``PDT Provider´´ action, it is mandatory to inform the ``Supplier´´ field</errorMessage>
+        <name>ProveedorInformado</name>
+    </validationRules>
+</CustomObjectTranslation>

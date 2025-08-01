@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inventario_Produccion_media__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (Prod_media__c &gt; 0, IF (Inventario__c / Prod_media__c &gt; 6, &apos;&gt; 6&apos;, &apos;&lt; 6&apos;), &apos;&lt; 6&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Inventario / Producción media</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

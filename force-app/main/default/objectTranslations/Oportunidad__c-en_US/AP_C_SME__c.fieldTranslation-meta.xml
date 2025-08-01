@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indica que oportunidades vienen de piratería --></help>
+    <label><!-- AP&amp;C --></label>
+    <name>AP_C_SME__c</name>
+</CustomFieldTranslation>

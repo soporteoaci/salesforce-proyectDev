@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Acción --></label>
+    <name>Accion__c</name>
+    <picklistValues>
+        <masterLabel>Asignar</masterLabel>
+        <translation><!-- Asignar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cerrar</masterLabel>
+        <translation><!-- Cerrar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comentarios</masterLabel>
+        <translation><!-- Comentarios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pdt Terceros</masterLabel>
+        <translation><!-- Pdt Terceros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rechazar</masterLabel>
+        <translation><!-- Rechazar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolver</masterLabel>
+        <translation><!-- Resolver --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DIGITAL IMPACT - Business-Government portals</fullName>
+        <default>false</default>
+        <label>DIGITAL IMPACT - Business-Government portals</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL IMPACT - Mobile ecosystem</fullName>
+        <default>false</default>
+        <label>DIGITAL IMPACT - Mobile ecosystem</label>
+    </customValue>
+    <customValue>
+        <fullName>CYBER-SECURITY - Cyber-Security</fullName>
+        <default>false</default>
+        <label>CYBER-SECURITY - Cyber-Security</label>
+    </customValue>
+    <customValue>
+        <fullName>CYBER-SECURITY - Auditorías IT / OT</fullName>
+        <default>false</default>
+        <label>CYBER-SECURITY - Auditorías IT / OT</label>
+    </customValue>
+    <customValue>
+        <fullName>CYBER-SECURITY - Compliance</fullName>
+        <default>false</default>
+        <label>CYBER-SECURITY - Compliance</label>
+    </customValue>
+    <customValue>
+        <fullName>CYBER-SECURITY - Formación Ciber</fullName>
+        <default>false</default>
+        <label>CYBER-SECURITY - Formación Ciber</label>
+    </customValue>
+    <customValue>
+        <fullName>CYBER-SECURITY - MSSP SOC/CERT</fullName>
+        <default>false</default>
+        <label>CYBER-SECURITY - MSSP SOC/CERT</label>
+    </customValue>
+    <customValue>
+        <fullName>CYBER-SECURITY - Security Resseling</fullName>
+        <default>false</default>
+        <label>CYBER-SECURITY - Security Resseling</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOUD&amp;INFRASTRUCTURE - Hybrid IT</fullName>
+        <default>false</default>
+        <label>CLOUD&amp;INFRASTRUCTURE - Hybrid IT</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - Microsoft</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - Microsoft</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - Salesforce</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - Salesforce</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP Ariba</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP Ariba</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP C4</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP C4</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP Concur</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP Concur</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP Group Reporting</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP Group Reporting</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP RPA</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP RPA</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP SAC</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP SAC</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP SLCM</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP SLCM</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP SSFF</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP SSFF</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP Vistex</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP Vistex</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP ERP</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP ERP</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP ISU</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP ISU</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - SAP RRHH</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - SAP RRHH</label>
+    </customValue>
+    <customValue>
+        <fullName>DATA &amp; AI - Data visualization &amp; Analytics</fullName>
+        <default>false</default>
+        <label>DATA &amp; AI - Data visualization &amp; Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>DATA &amp; AI - Business Intelligence &amp; Data Warehouse</fullName>
+        <default>false</default>
+        <label>DATA &amp; AI - Business Intelligence &amp; Data Warehouse</label>
+    </customValue>
+    <customValue>
+        <fullName>DATA &amp; AI - Big Data enginerring</fullName>
+        <default>false</default>
+        <label>DATA &amp; AI - Big Data enginerring</label>
+    </customValue>
+    <customValue>
+        <fullName>DATA &amp; AI - Data Science &amp; Artificial Intelligence</fullName>
+        <default>false</default>
+        <label>DATA &amp; AI - Data Science &amp; Artificial Intelligence</label>
+    </customValue>
+    <customValue>
+        <fullName>DATA &amp; AI - Machine Learning</fullName>
+        <default>false</default>
+        <label>DATA &amp; AI - Machine Learning</label>
+    </customValue>
+    <customValue>
+        <fullName>DATA &amp; AI - RPA</fullName>
+        <default>false</default>
+        <label>DATA &amp; AI - RPA</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL IMPACT - DevSecOps</fullName>
+        <default>false</default>
+        <label>DIGITAL IMPACT - DevSecOps</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL IMPACT - Blockchain</fullName>
+        <default>false</default>
+        <label>DIGITAL IMPACT - Blockchain</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL IMPACT - Digital Experience-DX</fullName>
+        <default>false</default>
+        <label>DIGITAL IMPACT - Digital Experience-DX</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL IMPACT - Document Management-DMS</fullName>
+        <default>false</default>
+        <label>DIGITAL IMPACT - Document Management-DMS</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL IMPACT - IBERDOK</fullName>
+        <default>false</default>
+        <label>DIGITAL IMPACT - IBERDOK</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL IMPACT - Learning</fullName>
+        <default>false</default>
+        <label>DIGITAL IMPACT - Learning</label>
+    </customValue>
+    <customValue>
+        <fullName>INNOVATION - I3B-Desarrollos Sanidad</fullName>
+        <default>false</default>
+        <label>INNOVATION - I3B-Desarrollos Sanidad</label>
+    </customValue>
+    <customValue>
+        <fullName>INNOVATION - I3B-Eficiencia Energética</fullName>
+        <default>false</default>
+        <label>INNOVATION - I3B-Eficiencia Energética</label>
+    </customValue>
+    <customValue>
+        <fullName>INNOVATION - I3B-Industria 4.0</fullName>
+        <default>false</default>
+        <label>INNOVATION - I3B-Industria 4.0</label>
+    </customValue>
+    <customValue>
+        <fullName>INNOVATION - I3B-Innovación</fullName>
+        <default>false</default>
+        <label>INNOVATION - I3B-Innovación</label>
+    </customValue>
+    <customValue>
+        <fullName>INNOVATION - I3B-TIC Avanzadas</fullName>
+        <default>false</default>
+        <label>INNOVATION - I3B-TIC Avanzadas</label>
+    </customValue>
+    <customValue>
+        <fullName>APPLICATION MANAGED SERVICES - Accesibility</fullName>
+        <default>false</default>
+        <label>APPLICATION MANAGED SERVICES - Accesibility</label>
+    </customValue>
+    <customValue>
+        <fullName>APPLICATION MANAGED SERVICES - BPM-Process Management</fullName>
+        <default>false</default>
+        <label>APPLICATION MANAGED SERVICES - BPM-Process Management</label>
+    </customValue>
+    <customValue>
+        <fullName>APPLICATION MANAGED SERVICES - Consultancy</fullName>
+        <default>false</default>
+        <label>APPLICATION MANAGED SERVICES - Consultancy</label>
+    </customValue>
+    <customValue>
+        <fullName>APPLICATION MANAGED SERVICES - Application Maintenance</fullName>
+        <default>false</default>
+        <label>APPLICATION MANAGED SERVICES - Application Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>APPLICATION MANAGED SERVICES - Technical Office-PMO</fullName>
+        <default>false</default>
+        <label>APPLICATION MANAGED SERVICES - Technical Office-PMO</label>
+    </customValue>
+    <customValue>
+        <fullName>APPLICATION MANAGED SERVICES - Application Development</fullName>
+        <default>false</default>
+        <label>APPLICATION MANAGED SERVICES - Application Development</label>
+    </customValue>
+    <customValue>
+        <fullName>APPLICATION MANAGED SERVICES - Testing</fullName>
+        <default>false</default>
+        <label>APPLICATION MANAGED SERVICES - Testing</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOUD&amp;INFRASTRUCTURE - Equipment &amp; Licences</fullName>
+        <default>false</default>
+        <label>CLOUD&amp;INFRASTRUCTURE - Equipment &amp; Licences</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS OPERATIONS - OSS / BSS services</fullName>
+        <default>false</default>
+        <label>BUSINESS OPERATIONS - OSS / BSS services</label>
+    </customValue>
+    <customValue>
+        <fullName>MODERN WORKPLACE - Service Desk</fullName>
+        <default>false</default>
+        <label>MODERN WORKPLACE - Service Desk</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOUD&amp;INFRASTRUCTURE - Datacenter services</fullName>
+        <default>false</default>
+        <label>CLOUD&amp;INFRASTRUCTURE - Datacenter services</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOUD&amp;INFRASTRUCTURE - Networking</fullName>
+        <default>false</default>
+        <label>CLOUD&amp;INFRASTRUCTURE - Networking</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOUD&amp;INFRASTRUCTURE - Outsourcing ITO</fullName>
+        <default>false</default>
+        <label>CLOUD&amp;INFRASTRUCTURE - Outsourcing ITO</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOUD&amp;INFRASTRUCTURE - Infrastructure projects</fullName>
+        <default>false</default>
+        <label>CLOUD&amp;INFRASTRUCTURE - Infrastructure projects</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - ERP / CRM</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - ERP / CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - RPS</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - RPS</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - IBERPER</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - IBERPER</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - ING</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - ING</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - INTERFLEX</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - INTERFLEX</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTERPRISE PLATFORM - MES</fullName>
+        <default>false</default>
+        <label>ENTERPRISE PLATFORM - MES</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL IMPACT - GIS</fullName>
+        <default>false</default>
+        <label>DIGITAL IMPACT - GIS</label>
+    </customValue>
+    <customValue>
+        <fullName>CLOUD&amp;INFRASTRUCTURE - IaaS / PaaS Platforms</fullName>
+        <default>false</default>
+        <label>CLOUD&amp;INFRASTRUCTURE - IaaS / PaaS Platforms</label>
+    </customValue>
+    <description>Área Tecnología 
+Oportunidad / Referencia comercial</description>
+    <masterLabel>Área Tecnología Lista</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label><!-- Roles --></label>
+            <section>Roles</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- CloseCaseLightning --></label>
+        <name>CloseCaseLightning</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage>You can not change the status of the case manually other than from Open or Declined in development. Use Submit for Approval to evolve to status.</errorMessage>
+        <name>Cambio_de_Estado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>A case can only be submitted to support if the status is equal or open.</errorMessage>
+        <name>InformarSoporte</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Can not go to notified. In validation or closed unless you are the supervisor of the case.</errorMessage>
+        <name>Pasar_a_NotificadoValidacionCerrado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You cannot go to validated unless you are the supervisor of the case, or you submit the case for approval</errorMessage>
+        <name>Pasar_a_Validado</name>
+    </validationRules>
+    <webLinks>
+        <label>Unlock</label>
+        <name>Desbloquear</name>
+    </webLinks>
+</CustomObjectTranslation>

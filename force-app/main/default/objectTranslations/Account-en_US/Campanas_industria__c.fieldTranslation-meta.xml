@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Campañas industria --></label>
+    <name>Campanas_industria__c</name>
+</CustomFieldTranslation>

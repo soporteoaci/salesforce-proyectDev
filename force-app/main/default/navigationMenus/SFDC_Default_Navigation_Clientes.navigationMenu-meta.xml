@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Clientes</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>Proyectos</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Proyecto__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Grupos de entregables</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Entregable__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Entregables</label>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Subentregable__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Términos de referencia</label>
+        <position>4</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Termino_de_Referencia__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Comunicaciones</label>
+        <position>5</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Comunicacion__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Casos</label>
+        <position>6</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Case</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+</NavigationMenu>

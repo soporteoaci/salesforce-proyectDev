@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pipeline --></label>
+    <name>Pipeline__c</name>
+    <picklistValues>
+        <masterLabel>Anteriores</masterLabel>
+        <translation><!-- Anteriores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anteriores sin reselling</masterLabel>
+        <translation><!-- Anteriores sin reselling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hard 2025</masterLabel>
+        <translation><!-- Hard 2025 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipeline 2023</masterLabel>
+        <translation><!-- Pipeline 2023 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipeline 2024</masterLabel>
+        <translation><!-- Pipeline 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipeline 2025</masterLabel>
+        <translation><!-- Pipeline 2025 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipeline sin reselling 2023</masterLabel>
+        <translation><!-- Pipeline sin reselling 2023 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipeline sin reselling 2024</masterLabel>
+        <translation><!-- Pipeline sin reselling 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipeline sin reselling 2025</masterLabel>
+        <translation><!-- Pipeline sin reselling 2025 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

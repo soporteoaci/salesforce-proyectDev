@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indica el id que le corresponde a la oportunidad --></help>
+    <label><!-- Lead Id --></label>
+    <name>Lead_Id__c</name>
+</CustomFieldTranslation>

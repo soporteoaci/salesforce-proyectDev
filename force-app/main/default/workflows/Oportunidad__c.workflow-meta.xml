@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alerta_Aprobaci_n_Oportunidad_Propietario</fullName>
+        <description>Alerta Aprobación Oportunidad Propietario</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/Oportunidad_Aviso_preliminar</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerta_Aprobacion_Oportunidad</fullName>
+        <description>Alerta Aprobación Oportunidad</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/NewAction_SSC</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerta_creacion</fullName>
+        <description>Alerta creacion</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/Oportunidad_Aviso_preliminar</template>
+    </alerts>
+    <alerts>
+        <fullName>Envio_correo_aprobacion</fullName>
+        <description>Envio correo aprobacion</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/NewAction_SSC</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_AlertaQA_Risk_Pdte_Aprobacion</fullName>
+        <description>Oportunidad: Alerta QA&amp;Risk Pdte Aprobacion</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Director_Global_de_QA_Risk__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/Oportunidad_Alerta_QA_Risk_Pdte_Aprobacion</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Alerta_Aprobacion_Oferta_CCO</fullName>
+        <description>Oportunidad: Alerta Aprobacion Oferta CCO</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>arodriguezcaceres@ayesa.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Oportunidad_Aviso_oferta_CCO</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Alerta_Aprobacion_preliminar_CCO</fullName>
+        <description>Oportunidad: Alerta Aprobacion preliminar CCO</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>arodriguezcaceres@ayesa.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Oportunidad_Aviso_preliminar_CCO</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Alerta_Aviso_a_licitaciones_de_Ok_preliminar</fullName>
+        <ccEmails>licitaciones@ayesa.com</ccEmails>
+        <ccEmails>soporteoaci@ayesa.com</ccEmails>
+        <description>Oportunidad Alerta: Aviso a licitaciones de Ok preliminar</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>a.rodrig@gestion.ayesa.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>aat_soporteofertas@gestion.ayesa.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/Oportunidad_Alerta_Ok_preliminar_licitaciones</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Alerta_Cualificaci_n_finalizada</fullName>
+        <ccEmails>soporteoaci@ayesa.com</ccEmails>
+        <description>Oportunidad: Alerta Cualificación finalizada</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Oportunidad_Alerta_Cualificacion_finalizada</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Alerta_Subfase_Cualificacion_autoprovision</fullName>
+        <ccEmails>soporteoaci@ayesa.com</ccEmails>
+        <description>Oportunidad: Alerta Subfase Cualificación autoprovisión</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Auxiliar_Delivery_Center__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Responsable_linea_de_servicio__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Oportunidad_Alerta_Subfase_Cualificacion_autoprovision</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Alerta_Subfase_Cualificacion_con_preventa</fullName>
+        <ccEmails>soporteoaci@ayesa.com</ccEmails>
+        <description>Oportunidad: Alerta Subfase Cualificación con preventa</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Auxiliar_Preventa__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Responsable_Preventa__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Responsable_linea_de_servicio__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/Oportunidad_Alerta_Subfase_Cualificaci_n_con_preventa</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Aviso_Informado_PRL</fullName>
+        <ccEmails>serviciodeprevencion@ayesa.com.invalid</ccEmails>
+        <description>Oportunidad: Aviso Informado PRL</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Oportunidad_informado_PRL</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Aviso_aprobaci_n_Oferta_Internacional</fullName>
+        <ccEmails>soporteoaci@ayesa.com</ccEmails>
+        <description>Oportunidad: Aviso aprobación Oferta Internacional</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>icarrillo@gestion.ayesa.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Oportunidad_Aviso_Oferta_Internacional</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Aviso_aprobaci_n_Preliminar_Internacional</fullName>
+        <ccEmails>soporteoaci@ayesa.com</ccEmails>
+        <description>Oportunidad: Aviso aprobación Preliminar Internacional</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>icarrillo@gestion.ayesa.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Oportunidad_Aviso_preliminar_Internacional</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Aviso_aprobaci_n_QA_Economico_Internacional</fullName>
+        <ccEmails>soporteoaci@ayesa.com</ccEmails>
+        <description>Oportunidad: Aviso aprobación QA Economico Internacional</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>icarrillo@gestion.ayesa.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Oportunidad_Aviso_aprobaci_n_QA_Economico_Internacional</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidad_Aviso_oportunidad_ganada</fullName>
+        <ccEmails>rpozas@ayesa.com</ccEmails>
+        <description>Oportunidad. Aviso oportunidad ganada</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Responsable_de_Proyecto_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>aat_soporteofertas@gestion.ayesa.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>javier.ponce@gestion.ayesa.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Responsable_linea_de_servicio__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Oportunidad_Aviso_Subfase_Ganada</template>
+    </alerts>
+    <alerts>
+        <fullName>Recordatorio_convocar_reuni_n_QA</fullName>
+        <description>Recordatorio convocar reunión QA</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Ayesa/Recordatorio_Reuni_n_QA</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Actualizar_etapa</fullName>
+        <field>Etapa__c</field>
+        <literalValue>Cerrada</literalValue>
+        <name>Actualizar etapa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actualizar_etapa_2</fullName>
+        <field>Etapa__c</field>
+        <literalValue>Cerrada</literalValue>
+        <name>Actualizar etapa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actualizar_subfase</fullName>
+        <description>Actualizar a subfase aprobada</description>
+        <field>Subfase__c</field>
+        <literalValue>Aprobada</literalValue>
+        <name>Actualizar subfase</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actualizar_subfase_2</fullName>
+        <field>Subfase__c</field>
+        <literalValue>No presentada</literalValue>
+        <name>Actualizar subfase</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aprobado</fullName>
+        <field>Decision_aprobacion_acuerdo_de_socios__c</field>
+        <literalValue>Aprobado</literalValue>
+        <name>Aprobado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>En_proceso</fullName>
+        <field>Decision_aprobacion_acuerdo_de_socios__c</field>
+        <literalValue>En proceso</literalValue>
+        <name>En proceso</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rechazado</fullName>
+        <field>Decision_aprobacion_acuerdo_de_socios__c</field>
+        <literalValue>Rechazado</literalValue>
+        <name>Rechazado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Aprobación Fecha Limite</fullName>
+        <actions>
+            <name>Recordatorio_Limite_de_presentaci_n</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Oportunidad__c.Etapa__c</field>
+            <operation>equals</operation>
+            <value>Aprobada</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Etapa Pedir Codigo oferta</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Oportunidad__c.Etapa__c</field>
+            <operation>equals</operation>
+            <value>Pedir Código Oferta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Oportunidad__c.Oferta_SAP__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Reclamar_C_digo_de_Oferta</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Oportunidad__c.Fecha_sol_cod__c</offsetFromField>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Fecha presentación</fullName>
+        <actions>
+            <name>Fecha_Vencimiento</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Oportunidad__c.Fecha_limite_de_presentacion__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Tarea Pendiente QA</fullName>
+        <actions>
+            <name>Recordatorio_convocar_reuni_n_QA</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Reunion_QA</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Oportunidad__c.Etapa__c</field>
+            <operation>equals</operation>
+            <value>Pendiente QA</value>
+        </criteriaItems>
+        <description>Pendiente QA</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Reuni_n_QA</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Oportunidad__c.Fecha_limite_de_presentacion__c</offsetFromField>
+            <timeLength>-3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>Fecha_Vencimiento</fullName>
+        <assignedTo>javier.ponce@gestion.ayesa.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Oportunidad__c.Fecha_limite_de_presentacion__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Vencimiento Fecha Presentación</subject>
+    </tasks>
+    <tasks>
+        <fullName>Reclamar_C_digo_de_Oferta</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Se ha solicitado código de oferta pero han pasado 2 días y jno hemos obtenido respuesta, debe reclamarlo para poder avanzar la oportunidad</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Oportunidad__c.Fecha_limite_de_presentacion__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Reclamar Código de Oferta</subject>
+    </tasks>
+    <tasks>
+        <fullName>Recordatorio_Limite_de_presentaci_n</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Oportunidad__c.Fecha_limite_de_presentacion__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Recordatorio Limite de presentación</subject>
+    </tasks>
+    <tasks>
+        <fullName>Reuni_n_QA</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Faltan 3 días para que finalice la fecha límite de presentación, debe convocar la reunión para la aprobación del QA</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Oportunidad__c.Fecha_limite_de_presentacion__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Reunión QA</subject>
+    </tasks>
+    <tasks>
+        <fullName>Reunion_QA</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Ya dispone de código de oferta, no olvide convocar la reunión para QA</description>
+        <dueDateOffset>-3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Oportunidad__c.Fecha_limite_de_presentacion__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Recordatorio convocar reunion QA</subject>
+    </tasks>
+    <tasks>
+        <fullName>Revision_QA</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Debe convocar una reunión para la certificación de QA así como asegurar que toda la documentación esta correcta</description>
+        <dueDateOffset>-30</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Oportunidad__c.Fecha_estimada_de_cierre__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Revisión QA</subject>
+    </tasks>
+</Workflow>

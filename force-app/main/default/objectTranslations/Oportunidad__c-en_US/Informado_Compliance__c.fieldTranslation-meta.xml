@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Necesario si se va con socios o subcontratistas nominados o base no permanente --></help>
+    <label>Compliance Informed</label>
+    <name>Informado_Compliance__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No es necesario</masterLabel>
+        <translation>No, it is not necessary</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sí</masterLabel>
+        <translation>Yes</translation>
+    </picklistValues>
+</CustomFieldTranslation>

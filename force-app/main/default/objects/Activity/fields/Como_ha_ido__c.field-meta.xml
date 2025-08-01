@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Como_ha_ido__c</fullName>
+    <label>Cómo ha ido</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bien</fullName>
+                <default>false</default>
+                <label>Bien</label>
+            </value>
+            <value>
+                <fullName>Mal</fullName>
+                <default>false</default>
+                <label>Mal</label>
+            </value>
+            <value>
+                <fullName>Regular</fullName>
+                <default>false</default>
+                <label>Regular</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

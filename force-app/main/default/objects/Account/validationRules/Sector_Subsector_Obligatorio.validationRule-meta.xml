@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sector_Subsector_Obligatorio</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				$User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+
+
+				ISBLANK(TEXT(Sector__c))
+
+
+
+)</errorConditionFormula>
+    <errorMessage>Informe Sector y Subsector</errorMessage>
+</ValidationRule>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Fase --></label>
+    <name>Fase__c</name>
+    <picklistValues>
+        <masterLabel>Lead</masterLabel>
+        <translation><!-- Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead NO Cualifica</masterLabel>
+        <translation><!-- Lead NO Cualifica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ninguno</masterLabel>
+        <translation><!-- Ninguno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP-Demostrando</masterLabel>
+        <translation><!-- OP-Demostrando --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP-Ganada</masterLabel>
+        <translation><!-- OP-Ganada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP-Negociando condiciones de cierre</masterLabel>
+        <translation><!-- OP-Negociando condiciones de cierre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP-Ofertando CON competidores y NO favoritos</masterLabel>
+        <translation><!-- OP-Ofertando CON competidores y NO favoritos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP-Ofertando CON competidores y favoritos</masterLabel>
+        <translation><!-- OP-Ofertando CON competidores y favoritos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP-Ofertando SIN competidores</masterLabel>
+        <translation><!-- OP-Ofertando SIN competidores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP-Pendiente Demo</masterLabel>
+        <translation><!-- OP-Pendiente Demo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP-Pendiente de recibir pedido</masterLabel>
+        <translation><!-- OP-Pendiente de recibir pedido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP-Perdida</masterLabel>
+        <translation><!-- OP-Perdida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP-Pre Ganada</masterLabel>
+        <translation><!-- OP-Pre Ganada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspect</masterLabel>
+        <translation><!-- Suspect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspect Proviene de Lead/OP aplazada</masterLabel>
+        <translation><!-- Suspect Proviene de Lead/OP aplazada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspect-TL</masterLabel>
+        <translation><!-- Suspect-TL --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

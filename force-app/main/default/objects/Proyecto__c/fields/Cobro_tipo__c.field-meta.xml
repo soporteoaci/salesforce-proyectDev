@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cobro_tipo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND(Prod_Cobro__c &gt;0.95, Prod_Cobro__c&lt;1.05),&quot;Verdadero&quot;,&quot;Falso&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cobro</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

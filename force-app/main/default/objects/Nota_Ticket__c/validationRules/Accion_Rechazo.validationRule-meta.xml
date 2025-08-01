@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accion_Rechazo</fullName>
+    <active>true</active>
+    <description>Si selecciona &quot;Rechazo&quot; solo puede modificar los campos &quot;Motivo Rechazo&quot; y &quot;Comentarios&quot;.</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(Accion__c , &quot;Rechazar&quot;), 
+OR( 
+NOT(ISBLANK(Asignado_a__c)), 
+NOT(ISBLANK( Proveedor2__c )) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>Accion__c</errorDisplayField>
+    <errorMessage>Si selecciona &apos;&apos;Rechazo&apos;&apos; solo puede modificar los campos &apos;&apos;Motivo Rechazo&apos;&apos; y &apos;&apos;Comentarios&apos;&apos;.</errorMessage>
+</ValidationRule>

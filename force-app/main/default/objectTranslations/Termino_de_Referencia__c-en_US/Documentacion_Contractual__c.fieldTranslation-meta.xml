@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Contractual Documentation</label>
+    <lookupFilter>
+        <errorMessage>The selected documentation is not part of the RT project.</errorMessage>
+    </lookupFilter>
+    <name>Documentacion_Contractual__c</name>
+    <relationshipLabel>Terms of Reference</relationshipLabel>
+</CustomFieldTranslation>

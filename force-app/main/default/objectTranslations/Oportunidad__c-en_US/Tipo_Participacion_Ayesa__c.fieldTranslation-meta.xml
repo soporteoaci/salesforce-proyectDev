@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Type of Ayesa Company participation as Main contractor, subconsultant for a Main/Prime Consultant or Temporary Join Venture (TJV) --></help>
+    <label>Type of Ayesa Participation</label>
+    <name>Tipo_Participacion_Ayesa__c</name>
+    <picklistValues>
+        <masterLabel>Contratista Principal</masterLabel>
+        <translation>Main Contractor</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subcontratista</masterLabel>
+        <translation>Subcontractor</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTE</masterLabel>
+        <translation>TJV</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTE 100% Empresas Grupo</masterLabel>
+        <translation><!-- UTE 100% Empresas Grupo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

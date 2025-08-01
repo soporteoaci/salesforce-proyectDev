@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipologia__c</fullName>
+    <label>Tipo Producto/Servicio</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Direccion_Operaciones__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>Producto</label>
+            </value>
+            <value>
+                <fullName>ANTEPROYECTO / ESTUDIOS E INFORMES</fullName>
+                <default>false</default>
+                <label>ANTEPROYECTO / ESTUDIOS E INFORMES</label>
+            </value>
+            <value>
+                <fullName>INGENIERÍA DE LA PROPIEDAD</fullName>
+                <default>false</default>
+                <label>INGENIERÍA DE LA PROPIEDAD</label>
+            </value>
+            <value>
+                <fullName>INGENIERÍA BÁSICA / FEL</fullName>
+                <default>false</default>
+                <label>INGENIERÍA BÁSICA / FEL</label>
+            </value>
+            <value>
+                <fullName>INGENIERÍA DE DETALLE</fullName>
+                <default>false</default>
+                <label>INGENIERÍA DE DETALLE</label>
+            </value>
+            <value>
+                <fullName>INGENIERÍA Y SUMINISTROS</fullName>
+                <default>false</default>
+                <label>INGENIERÍA Y SUMINISTROS</label>
+            </value>
+            <value>
+                <fullName>LLAVES EN MANO</fullName>
+                <default>false</default>
+                <label>LLAVES EN MANO</label>
+            </value>
+            <value>
+                <fullName>EPC/CONSTRUCCIÓN</fullName>
+                <default>false</default>
+                <label>EPC/CONSTRUCCIÓN</label>
+            </value>
+            <value>
+                <fullName>DO/SUPERVISIÓN DE OBRA</fullName>
+                <default>false</default>
+                <label>DO/SUPERVISIÓN DE OBRA</label>
+            </value>
+            <value>
+                <fullName>REDACCIÓN DE PROYECTOS Y DIRECCIÓN DE OBRA</fullName>
+                <default>false</default>
+                <label>REDACCIÓN DE PROYECTOS Y DIRECCIÓN DE OBRA</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Proyecto</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>Servicios ANS</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>Mantenimiento de productos</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>Asistencia técnica</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Servicios sin ANS</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>Soluciones</label>
+            </value>
+            <value>
+                <fullName>Adm. Sistemas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Adm. Sistemas</label>
+            </value>
+            <value>
+                <fullName>Asistencias Técnicas y DO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Asistencias Técnicas y DO</label>
+            </value>
+            <value>
+                <fullName>Consultoría</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Consultoría</label>
+            </value>
+            <value>
+                <fullName>Estudios_y_Proyectos</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Estudios y Proyectos</label>
+            </value>
+            <value>
+                <fullName>Implantación</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Implantación</label>
+            </value>
+            <value>
+                <fullName>Implantación/Desarrollo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Implantación/Desarrollo</label>
+            </value>
+            <value>
+                <fullName>Licencias</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Licencias</label>
+            </value>
+            <value>
+                <fullName>Mantenimiento</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mantenimiento</label>
+            </value>
+            <value>
+                <fullName>Operación</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Operación</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>PMO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PMO</label>
+            </value>
+            <value>
+                <fullName>Servicio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Servicio</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>ANTEPROYECTO / ESTUDIOS E INFORMES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>INGENIERÍA DE LA PROPIEDAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>INGENIERÍA BÁSICA / FEL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>INGENIERÍA DE DETALLE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>INGENIERÍA Y SUMINISTROS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>LLAVES EN MANO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>EPC/CONSTRUCCIÓN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>DO/SUPERVISIÓN DE OBRA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>REDACCIÓN DE PROYECTOS Y DIRECCIÓN DE OBRA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>7</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

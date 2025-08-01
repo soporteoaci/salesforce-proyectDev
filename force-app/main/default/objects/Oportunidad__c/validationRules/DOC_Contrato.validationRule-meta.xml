@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DOC_Contrato</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+$User.Email &lt;&gt; &quot;a.rodrig@ayesa.com&quot;,
+$Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;,
+Record_Type_Name__c =&apos;Ayesa&apos;,
+AND(NOT(ISPICKVAL(Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
+NOT(ISPICKVAL(Tipo_Extension__c, &apos;Extensión CUTE&apos;))			
+),
+OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),
+ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION &apos;)
+),
+DOC_Contrato__c = false,
+ISPICKVAL(Subfase__c, &apos;Ganada&apos;)
+)</errorConditionFormula>
+    <errorMessage>Antes de avanzar a la subfase Ganada suba el documento &apos;Contrato/Contract&apos; en la pestaña Doc Power Alejandría</errorMessage>
+</ValidationRule>

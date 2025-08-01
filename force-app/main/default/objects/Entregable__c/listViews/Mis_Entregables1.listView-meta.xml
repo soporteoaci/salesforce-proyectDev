@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mis_Entregables1</fullName>
+    <columns>Fase__c</columns>
+    <columns>Entregable__c</columns>
+    <columns>NAME</columns>
+    <columns>Estado2__c</columns>
+    <columns>EDT__c</columns>
+    <columns>Descripcion_EDT__c</columns>
+    <columns>Peso_Entregable__c</columns>
+    <columns>AvanceContractual__c</columns>
+    <columns>AvanceTotal__c</columns>
+    <columns>Responsable__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Soy_Responsable__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Todos Mis Grupos de Entregables</label>
+</ListView>

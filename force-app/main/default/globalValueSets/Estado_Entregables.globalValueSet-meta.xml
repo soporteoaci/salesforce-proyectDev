@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cancelado</fullName>
+        <default>false</default>
+        <label>Cancelado</label>
+    </customValue>
+    <customValue>
+        <fullName>Pendiente</fullName>
+        <default>true</default>
+        <label>Pendiente</label>
+    </customValue>
+    <customValue>
+        <fullName>En proceso</fullName>
+        <default>false</default>
+        <label>En proceso</label>
+    </customValue>
+    <customValue>
+        <fullName>En Revisión Interna</fullName>
+        <default>false</default>
+        <label>En Revisión Interna</label>
+    </customValue>
+    <customValue>
+        <fullName>Finalizado</fullName>
+        <default>false</default>
+        <label>Finalizado</label>
+    </customValue>
+    <customValue>
+        <fullName>Liberado</fullName>
+        <default>false</default>
+        <label>Liberado</label>
+    </customValue>
+    <customValue>
+        <fullName>Firmado</fullName>
+        <default>false</default>
+        <label>Firmado</label>
+    </customValue>
+    <customValue>
+        <fullName>Pendiente de Firma</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Pendiente de Firma</label>
+    </customValue>
+    <customValue>
+        <fullName>En desarrollo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>En desarrollo</label>
+    </customValue>
+    <masterLabel>Estado Entregables</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

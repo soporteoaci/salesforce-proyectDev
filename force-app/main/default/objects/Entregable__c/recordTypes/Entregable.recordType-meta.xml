@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entregable</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Entregable</compactLayoutAssignment>
+    <description>Se trata de un entregable principal, el cuál puede contener subentregables.</description>
+    <label>Entregable</label>
+    <picklistValues>
+        <picklist>Estado2__c</picklist>
+        <values>
+            <fullName>Finalizado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firmado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liberado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fase__c</picklist>
+        <values>
+            <fullName>8 - Todas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construcción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diseño</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garantía</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Go Live y Soporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preparación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preparación Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pruebas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sprint__c</picklist>
+        <values>
+            <fullName>ARAUCO-Fase I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARAUCO-Fase II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARAUCO-Fase III</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Fase 0%2E- Datos Maestros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Fase 1A%2E- Varios Módulos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Fase 1B%2E- RYD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Fase 2%2E- Programación y Formulación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Fase 3%2E- Solución Completa e Integrada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Garantía%2C Soporte y Mantenimiento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Gestión del Cambio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Informe Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Ingeniería de Detalle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Licenciamiento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Provisión de Ambientes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Puesta en Producción e Implantación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINFIN - Transferencia del Conocimiento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VANTI%2E ERP%2E W11%2E- ECS %2B Nómina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VANTI%2E ERP%2E W12%2E- P%26G %2B LMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VANTI%2E ERP%2E W13%2E- REC %2B S%26D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VANTI%2E ERP%2E W2%2E- LO%2BFI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VANTI%2E ERP%2E W3%2E BPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VANTI%2E ERP%2E W4%2E QM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VANTI%2E ERP%2E WXX%2E- Todos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VANTI%2E ISU%2E W1%2E SSCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VANTI%2E ISU%2E WXX%2E Todas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subtipo__c</picklist>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo__c</picklist>
+        <values>
+            <fullName>Arquitectura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diseño Funcional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diseño Técnico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garantía%2C Soporte y Mantenimiento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestión del Cambio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestión del Proyecto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interfaces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licenciamiento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metodología</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migración</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pruebas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Puesta en Producción</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

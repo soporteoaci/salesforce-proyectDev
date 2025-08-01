@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- RO --></help>
+    <label>Risk</label>
+    <name>RIESGO__c</name>
+    <picklistValues>
+        <masterLabel>Alto Riesgo</masterLabel>
+        <translation>High risk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bajo Riesgo</masterLabel>
+        <translation>Low risk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sin riesgo</masterLabel>
+        <translation>No risk</translation>
+    </picklistValues>
+</CustomFieldTranslation>

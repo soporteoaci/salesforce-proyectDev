@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clase_de_oferta__c</fullName>
+    <label>Clase de oferta</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>-</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-</label>
+            </value>
+            <value>
+                <fullName>Acuerdo Marco</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Acuerdo Marco / SDA</label>
+            </value>
+            <value>
+                <fullName>Acuerdo Marco Privado</fullName>
+                <default>false</default>
+                <label>Acuerdo Marco / SDA Privado</label>
+            </value>
+            <value>
+                <fullName>Acuerdo Marco Público</fullName>
+                <default>false</default>
+                <label>Acuerdo Marco / SDA Público</label>
+            </value>
+            <value>
+                <fullName>Ampliación de Contrato</fullName>
+                <default>false</default>
+                <label>Ampliación de Contrato</label>
+            </value>
+            <value>
+                <fullName>Información Previa</fullName>
+                <default>false</default>
+                <label>Información Previa</label>
+            </value>
+            <value>
+                <fullName>Invitación Acuerdo Marco</fullName>
+                <default>false</default>
+                <label>Invitación Acuerdo Marco / SDA</label>
+            </value>
+            <value>
+                <fullName>Invitación Pública</fullName>
+                <default>false</default>
+                <label>Invitación Pública</label>
+            </value>
+            <value>
+                <fullName>Licitación Pública</fullName>
+                <default>false</default>
+                <label>Licitación Pública</label>
+            </value>
+            <value>
+                <fullName>Oferta interco</fullName>
+                <default>false</default>
+                <label>Oferta interco</label>
+            </value>
+            <value>
+                <fullName>Petición EOI / Pre-Calificación</fullName>
+                <default>false</default>
+                <label>Petición EOI / Pre-Calificación</label>
+            </value>
+            <value>
+                <fullName>Privada</fullName>
+                <default>false</default>
+                <label>Privada</label>
+            </value>
+            <value>
+                <fullName>Pública</fullName>
+                <default>false</default>
+                <label>Pública</label>
+            </value>
+            <value>
+                <fullName>Registro Proveedores</fullName>
+                <default>false</default>
+                <label>Registro Proveedores</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

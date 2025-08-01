@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Mercado --></label>
+    <name>Mercado__c</name>
+    <picklistValues>
+        <masterLabel>BFSI &amp; TMT</masterLabel>
+        <translation><!-- BFSI &amp; TMT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIGITAL ADMINISTRATION &amp; HEALTH</masterLabel>
+        <translation><!-- DIGITAL ADMINISTRATION &amp; HEALTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENERGY &amp; UTILITIES</masterLabel>
+        <translation><!-- ENERGY &amp; UTILITIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INDUSTRY, CONSUMER &amp; BUSINESS SERVICE</masterLabel>
+        <translation><!-- INDUSTRY, CONSUMER &amp; BUSINESS SERVICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INNOVATION</masterLabel>
+        <translation><!-- INNOVATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RESOURCES &amp; ENVIRONMENT</masterLabel>
+        <translation><!-- RESOURCES &amp; ENVIRONMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSPORTATION &amp; CITIES</masterLabel>
+        <translation><!-- TRANSPORTATION &amp; CITIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-LATAM</masterLabel>
+        <translation><!-- V-LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-SMEs</masterLabel>
+        <translation><!-- V-SMEs --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

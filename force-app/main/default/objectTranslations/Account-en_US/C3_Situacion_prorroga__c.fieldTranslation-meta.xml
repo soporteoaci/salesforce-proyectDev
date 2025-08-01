@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Contract 3 - Status (extension?)</label>
+    <name>C3_Situacion_prorroga__c</name>
+</CustomFieldTranslation>

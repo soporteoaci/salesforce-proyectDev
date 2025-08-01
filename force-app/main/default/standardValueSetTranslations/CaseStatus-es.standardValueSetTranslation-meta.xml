@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Abierto</masterLabel>
+        <translation>Open</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerrado</masterLabel>
+        <translation>Close</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En desarrollo</masterLabel>
+        <translation>Developing</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Liberado</masterLabel>
+        <translation>Released</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Notificado</masterLabel>
+        <translation>Notified</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pendiente Validación</masterLabel>
+        <translation>Validation Pending</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rechazado</masterLabel>
+        <translation>Refused</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Normally the client: Once approved, it goes to the final approver</help>
+    <label>Final Approver</label>
+    <name>AprobadorFinal__c</name>
+    <relationshipLabel>Deliverables (Final Approver)</relationshipLabel>
+</CustomFieldTranslation>

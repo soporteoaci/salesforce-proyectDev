@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Distinct activity within the sector the company is a part of.</help>
+    <label>Subsector</label>
+    <name>Subsector__c</name>
+    <picklistValues>
+        <masterLabel>Administración Autonómica</masterLabel>
+        <translation>Autonomous Administration</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administración Central</masterLabel>
+        <translation>Central Administration</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administración Latam</masterLabel>
+        <translation>Latam Administration</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administración Local</masterLabel>
+        <translation>Local Administration</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aeroespacial</masterLabel>
+        <translation>Aerospace</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agroalimentaria</masterLabel>
+        <translation>Agri-food</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agua</masterLabel>
+        <translation>Water</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alimentación bebidas y tabaco</masterLabel>
+        <translation>Food, drink and tobacco</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automoción</masterLabel>
+        <translation>Automotive</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bancos</masterLabel>
+        <translation>Banks</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cajas de Ahorros</masterLabel>
+        <translation>Savings banks</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calzado</masterLabel>
+        <translation>Footwear</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carbón</masterLabel>
+        <translation>Carbon</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Centros de Investigación</masterLabel>
+        <translation>Research centres</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Centros de formación en gral.</masterLabel>
+        <translation>Educational centers</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comercio Minorista</masterLabel>
+        <translation>Retail Business</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compañías de Banca/Seguros</masterLabel>
+        <translation>Banking/Insurance company</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construcciones Mecánicas</masterLabel>
+        <translation>Mechanical construction</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construcción</masterLabel>
+        <translation>Construcction</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construcción Maquinaria</masterLabel>
+        <translation>Construction machinery</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construcción/Promoción</masterLabel>
+        <translation>Construction/Promotion</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultoría</masterLabel>
+        <translation>Consulting firm</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Center</masterLabel>
+        <translation><!-- Contact Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corredurías/Mediadoras</masterLabel>
+        <translation>Brokers/Mediators</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribución</masterLabel>
+        <translation>Distribution</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribución y Logística</masterLabel>
+        <translation>Distribution &amp; Logistics</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Educación privada</masterLabel>
+        <translation>Private education</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electricidad</masterLabel>
+        <translation>Electricity</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emp. TT.II De la Admon.Autonó.</masterLabel>
+        <translation><!-- Emp. TT.II De la Admon.Autonó. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emp. TT.II De la Admon.Central</masterLabel>
+        <translation><!-- Emp. TT.II De la Admon.Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emp. TT.II De la Admon.Local</masterLabel>
+        <translation><!-- Emp. TT.II De la Admon.Local --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emp. TT.II relac. con Seguros</masterLabel>
+        <translation><!-- Emp. TT.II relac. con Seguros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emp. TT.II. Relac.con Finanzas</masterLabel>
+        <translation><!-- Emp. TT.II. Relac.con Finanzas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Empresas sector primario</masterLabel>
+        <translation>Primary sector companies</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entidades Aseguradoras</masterLabel>
+        <translation>Insurance companies</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entidades Financ. en general</masterLabel>
+        <translation>Financial institutions</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fabricación</masterLabel>
+        <translation>Manufacturing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fabricante Hardware</masterLabel>
+        <translation>Hardware Manufacturer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fabricante Software</masterLabel>
+        <translation>Software Manufacturer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fabricantes varios</masterLabel>
+        <translation>Various manufacturers</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Farmacéutica</masterLabel>
+        <translation>Pharmaceutical</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas</masterLabel>
+        <translation>Gas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hostelería y Turismo</masterLabel>
+        <translation>Hospitality industry &amp; Tourism</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingenierías</masterLabel>
+        <translation>Engineering</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inmobiliarias</masterLabel>
+        <translation>Real estate company</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Juguete</masterLabel>
+        <translation>Toy</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Material y equipo eléctrico</masterLabel>
+        <translation>electrical material and equipment</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media</masterLabel>
+        <translation>Media</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medios de comunicación escrita</masterLabel>
+        <translation>Print media</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moldes, Matrices, Troqueles</masterLabel>
+        <translation><!-- Moldes, Matrices, Troqueles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mutuas Salud</masterLabel>
+        <translation>Mutual health insurance company</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mutuas de Trabajo</masterLabel>
+        <translation>Mutual insurance companies</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OO. Relac. con Admon.Central</masterLabel>
+        <translation><!-- OO. Relac. con Admon.Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OO. Relac. con Admon.Local</masterLabel>
+        <translation><!-- OO. Relac. con Admon.Local --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OO. Relac.con Admon.Autonómica</masterLabel>
+        <translation><!-- OO. Relac.con Admon.Autonómica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OO. relacionados con Finanzas</masterLabel>
+        <translation><!-- OO. relacionados con Finanzas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OO. relacionados con Seguros</masterLabel>
+        <translation><!-- OO. relacionados con Seguros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operadores globales</masterLabel>
+        <translation>Global operators</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operadores locales</masterLabel>
+        <translation>Local operators</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otras EF</masterLabel>
+        <translation>Other FIs (Financial Institutions)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otras industrias</masterLabel>
+        <translation>Other industries</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros Servicios</masterLabel>
+        <translation>Other Services</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Papel</masterLabel>
+        <translation>Paper</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petróleo</masterLabel>
+        <translation>Oil</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petróleo y derivados</masterLabel>
+        <translation>Oil and oil products</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pharma</masterLabel>
+        <translation>Pharma</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prod. minerales no metálicos</masterLabel>
+        <translation>Non-metallic mineral products</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Química</masterLabel>
+        <translation>Chemical</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Química y farmacéutica</masterLabel>
+        <translation>Chemical and Pharmaceuticals</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio y Televisión</masterLabel>
+        <translation>Radio and television</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renovables</masterLabel>
+        <translation>Renewables</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sanidad Privada</masterLabel>
+        <translation>Private Health</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sanidad Pública</masterLabel>
+        <translation>Public Health</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seguros</masterLabel>
+        <translation>Insurance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios Sociosanitarios</masterLabel>
+        <translation>Social and health services</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios en general</masterLabel>
+        <translation>Services</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siderometalurgia</masterLabel>
+        <translation>Iron and steel industry</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subcontratación de Mecanizado</masterLabel>
+        <translation>Subcontracting machining</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tecnologías de la Información</masterLabel>
+        <translation>Information Technology</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecomunicaciones</masterLabel>
+        <translation>Telecommunications</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Textil y confección</masterLabel>
+        <translation>Textil and clothing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transporte</masterLabel>
+        <translation>Transport</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turismo y Hostelería</masterLabel>
+        <translation>Tourism and Catering</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Universidades</masterLabel>
+        <translation>Universities</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unión Europea</masterLabel>
+        <translation>European Union</translation>
+    </picklistValues>
+</CustomFieldTranslation>

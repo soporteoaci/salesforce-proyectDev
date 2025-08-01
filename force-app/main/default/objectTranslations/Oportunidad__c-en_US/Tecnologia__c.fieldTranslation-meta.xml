@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Select one or several technologies that will be used in the future PSP.  If you don&apos;t find what you are searching for, initiate a discrepancy report in https://helpdesk.ayesa.com</help>
+    <label>Technology</label>
+    <name>Tecnologia__c</name>
+    <picklistValues>
+        <masterLabel>AP-Administración electrónica</masterLabel>
+        <translation><!-- AP-Administración electrónica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AP-Smart Cities</masterLabel>
+        <translation><!-- AP-Smart Cities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arquitectura Empresarial</masterLabel>
+        <translation>Business Architecture</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BI</masterLabel>
+        <translation><!-- BI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BPM</masterLabel>
+        <translation><!-- BPM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Big Data</masterLabel>
+        <translation><!-- Big Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blockchain</masterLabel>
+        <translation><!-- Blockchain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Operations</masterLabel>
+        <translation><!-- Business Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-CIBERSEGURIDAD</masterLabel>
+        <translation><!-- COE-CIBERSEGURIDAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-CIBERSEGURIDAD AUDITORIAS IT/OT</masterLabel>
+        <translation><!-- COE-CIBERSEGURIDAD AUDITORIAS IT/OT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-CIBERSEGURIDAD COMPLIANCE</masterLabel>
+        <translation><!-- COE-CIBERSEGURIDAD COMPLIANCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-CIBERSEGURIDAD FORMACIÓN CIBER</masterLabel>
+        <translation><!-- COE-CIBERSEGURIDAD FORMACIÓN CIBER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-CIBERSEGURIDAD MSSP SOC/CERT</masterLabel>
+        <translation><!-- COE-CIBERSEGURIDAD MSSP SOC/CERT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-CIBERSEGURIDAD SECURITY RESSELING</masterLabel>
+        <translation><!-- COE-CIBERSEGURIDAD SECURITY RESSELING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-Hybrid IT / Cloud Computing</masterLabel>
+        <translation><!-- COE-Hybrid IT / Cloud Computing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-Microsoft</masterLabel>
+        <translation><!-- COE-Microsoft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-SAP</masterLabel>
+        <translation><!-- COE-SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-SAP Ariba</masterLabel>
+        <translation><!-- COE-SAP Ariba --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-SAP C4</masterLabel>
+        <translation><!-- COE-SAP C4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-SAP Concur</masterLabel>
+        <translation><!-- COE-SAP Concur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-SAP Group Reporting</masterLabel>
+        <translation><!-- COE-SAP Group Reporting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-SAP RPA</masterLabel>
+        <translation><!-- COE-SAP RPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-SAP SAC</masterLabel>
+        <translation><!-- COE-SAP SAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-SAP SLCM</masterLabel>
+        <translation><!-- COE-SAP SLCM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-SAP SSFF</masterLabel>
+        <translation><!-- COE-SAP SSFF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-SAP Vistex</masterLabel>
+        <translation><!-- COE-SAP Vistex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-Salesforce</masterLabel>
+        <translation><!-- COE-Salesforce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COE-Smart Factory &amp; OT</masterLabel>
+        <translation><!-- COE-Smart Factory &amp; OT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ciberseguridad</masterLabel>
+        <translation><!-- Ciberseguridad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIG-+DevOps / Agile</masterLabel>
+        <translation><!-- DIG-+DevOps / Agile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIG-BLOCKCHAIN</masterLabel>
+        <translation><!-- DIG-BLOCKCHAIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIG-DATA-Analytics-Artificial Intelligence</masterLabel>
+        <translation><!-- DIG-DATA-Analytics-Artificial Intelligence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIG-DX Digital Experience</masterLabel>
+        <translation><!-- DIG-DX Digital Experience --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIG-Gestión documental</masterLabel>
+        <translation><!-- DIG-Gestión documental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIG-HCM-Personas</masterLabel>
+        <translation><!-- DIG-HCM-Personas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIG-IBERDOK</masterLabel>
+        <translation><!-- DIG-IBERDOK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIG-Learning</masterLabel>
+        <translation><!-- DIG-Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIG-Movilidad</masterLabel>
+        <translation><!-- DIG-Movilidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIG-Portales y negocio digital</masterLabel>
+        <translation><!-- DIG-Portales y negocio digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desarrollo a Medida</masterLabel>
+        <translation>Tailor-made Development</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GIS</masterLabel>
+        <translation><!-- GIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Google</masterLabel>
+        <translation><!-- Google --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I3B-Desarrollos Sanidad</masterLabel>
+        <translation><!-- I3B-Desarrollos Sanidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I3B-Eficiencia Energética</masterLabel>
+        <translation><!-- I3B-Eficiencia Energética --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I3B-Industria 4.0</masterLabel>
+        <translation><!-- I3B-Industria 4.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I3B-Innovación</masterLabel>
+        <translation><!-- I3B-Innovación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I3B-TIC Avanzadas</masterLabel>
+        <translation><!-- I3B-TIC Avanzadas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IA</masterLabel>
+        <translation><!-- IA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IOT</masterLabel>
+        <translation><!-- IOT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITO</masterLabel>
+        <translation><!-- ITO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Java</masterLabel>
+        <translation><!-- Java --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machine Learning</masterLabel>
+        <translation><!-- Machine Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mesa de Ayuda</masterLabel>
+        <translation>Help Table</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft ,NET</masterLabel>
+        <translation><!-- Microsoft ,NET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Movilidad</masterLabel>
+        <translation>Mobility</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-Accesibilidad</masterLabel>
+        <translation><!-- OBA-Accesibilidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-BPM-Gestión procesos</masterLabel>
+        <translation><!-- OBA-BPM-Gestión procesos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-Consultoría</masterLabel>
+        <translation><!-- OBA-Consultoría --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-Desarrollo .NET</masterLabel>
+        <translation><!-- OBA-Desarrollo .NET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-Desarrollo HOST</masterLabel>
+        <translation><!-- OBA-Desarrollo HOST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-Desarrollo JAVA</masterLabel>
+        <translation><!-- OBA-Desarrollo JAVA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-Desarrollo Oracle</masterLabel>
+        <translation><!-- OBA-Desarrollo Oracle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-Mantenimiento Aplicaciones</masterLabel>
+        <translation><!-- OBA-Mantenimiento Aplicaciones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-Oficinas Técnicas</masterLabel>
+        <translation><!-- OBA-Oficinas Técnicas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-Proyectos software</masterLabel>
+        <translation><!-- OBA-Proyectos software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBA-Pruebas software</masterLabel>
+        <translation><!-- OBA-Pruebas software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBI-Arquitecturas tecnológicas</masterLabel>
+        <translation><!-- OBI-Arquitecturas tecnológicas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBI-BPO</masterLabel>
+        <translation><!-- OBI-BPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBI-Gestión Atención Usuarios</masterLabel>
+        <translation><!-- OBI-Gestión Atención Usuarios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBI-Gestión Datacenter</masterLabel>
+        <translation><!-- OBI-Gestión Datacenter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBI-Gestión Redes y Sistemas</masterLabel>
+        <translation><!-- OBI-Gestión Redes y Sistemas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBI-Outsourcing ITO</masterLabel>
+        <translation><!-- OBI-Outsourcing ITO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBI-Proyectos infraestructuras</masterLabel>
+        <translation><!-- OBI-Proyectos infraestructuras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oracle</masterLabel>
+        <translation><!-- Oracle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros</masterLabel>
+        <translation>Others</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMO</masterLabel>
+        <translation><!-- PMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP ERP</masterLabel>
+        <translation><!-- SAP ERP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP ISU</masterLabel>
+        <translation><!-- SAP ISU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP RRHH</masterLabel>
+        <translation>SAP HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-CRM</masterLabel>
+        <translation><!-- SOL-CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-ERP</masterLabel>
+        <translation><!-- SOL-ERP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-ERP-AXAPTA</masterLabel>
+        <translation><!-- SOL-ERP-AXAPTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-ERP-IBERBUILDING</masterLabel>
+        <translation><!-- SOL-ERP-IBERBUILDING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-ERP-NAV</masterLabel>
+        <translation><!-- SOL-ERP-NAV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-ERP-RPS</masterLabel>
+        <translation><!-- SOL-ERP-RPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-IBERPER</masterLabel>
+        <translation><!-- SOL-IBERPER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-ING</masterLabel>
+        <translation><!-- SOL-ING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-ING-CAD</masterLabel>
+        <translation><!-- SOL-ING-CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-ING-CAM</masterLabel>
+        <translation><!-- SOL-ING-CAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-ING-PDM</masterLabel>
+        <translation><!-- SOL-ING-PDM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-INTERFLEX</masterLabel>
+        <translation><!-- SOL-INTERFLEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-MES</masterLabel>
+        <translation><!-- SOL-MES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL-Otras soluciones SW</masterLabel>
+        <translation><!-- SOL-Otras soluciones SW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce</masterLabel>
+        <translation><!-- Salesforce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sistemas</masterLabel>
+        <translation>Systems</translation>
+    </picklistValues>
+</CustomFieldTranslation>

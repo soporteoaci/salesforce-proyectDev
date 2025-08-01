@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Level</label>
+    <name>NIVEL__c</name>
+    <picklistValues>
+        <masterLabel>Cargos del Dpto. Informática</masterLabel>
+        <translation><!-- Cargos del Dpto. Informática --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consejo Admón. y Altos Cargos</masterLabel>
+        <translation><!-- Consejo Admón. y Altos Cargos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desconocido</masterLabel>
+        <translation><!-- Desconocido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dirección General</masterLabel>
+        <translation><!-- Dirección General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Directores y Subdir de Función</masterLabel>
+        <translation><!-- Directores y Subdir de Función --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros cargos</masterLabel>
+        <translation><!-- Otros cargos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsables de Departamento</masterLabel>
+        <translation><!-- Responsables de Departamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subdirección General</masterLabel>
+        <translation><!-- Subdirección General --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

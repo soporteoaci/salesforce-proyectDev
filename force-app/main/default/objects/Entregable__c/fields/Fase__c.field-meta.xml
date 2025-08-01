@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fase__c</fullName>
+    <label>Fase</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Preparación</fullName>
+                <default>false</default>
+                <label>1 - Preparación Inicial</label>
+            </value>
+            <value>
+                <fullName>Diseño</fullName>
+                <default>false</default>
+                <label>2 - Diseño</label>
+            </value>
+            <value>
+                <fullName>Construcción</fullName>
+                <default>false</default>
+                <label>3 - Construcción</label>
+            </value>
+            <value>
+                <fullName>Pruebas</fullName>
+                <default>false</default>
+                <label>4 - Pruebas</label>
+            </value>
+            <value>
+                <fullName>Preparación Final</fullName>
+                <default>false</default>
+                <label>5 - Preparación Final</label>
+            </value>
+            <value>
+                <fullName>Go Live y Soporte</fullName>
+                <default>false</default>
+                <label>6 - Go Live y Soporte</label>
+            </value>
+            <value>
+                <fullName>Garantía</fullName>
+                <default>false</default>
+                <label>7 - Garantía</label>
+            </value>
+            <value>
+                <fullName>8 - Todas</fullName>
+                <default>false</default>
+                <label>8 - Todas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

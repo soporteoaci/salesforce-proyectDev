@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Se marca automáticamente cuando el entregable está en estado Aprobado. --></help>
+    <label>Close</label>
+    <name>Cerrado__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Commerce</label>
+    <name>CeBe__c</name>
+    <picklistValues>
+        <masterLabel>A1D00P</masterLabel>
+        <translation>General Civil Engineering</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A1D01P</masterLabel>
+        <translation>AyMA America Division (PROJECT)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A1D02P</masterLabel>
+        <translation>Infrastructure Division (PROJECT)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A1D03P</masterLabel>
+        <translation>Architectural and Management Division (PROJECT)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A1D04P</masterLabel>
+        <translation>Territorial Management Division (PROJECT)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A1D05P</masterLabel>
+        <translation>Airports Division (PROJECT)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A1D06P</masterLabel>
+        <translation>Infrastructure America (PROJECT)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A1D07P</masterLabel>
+        <translation>AyMA Europe, Asia, Africa Division (PROY)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A1D08P</masterLabel>
+        <translation>Spain Division</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D00P</masterLabel>
+        <translation>General Industry</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D01P</masterLabel>
+        <translation>Biotechnology</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D02P</masterLabel>
+        <translation>Oil &amp; Gas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D03P</masterLabel>
+        <translation>Process plants</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D04P</masterLabel>
+        <translation>Energy and Industrial Inst.</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D05P</masterLabel>
+        <translation>Energy</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D06P</masterLabel>
+        <translation>Power Transport Systems</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D07P</masterLabel>
+        <translation>Mining Complexes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D08P</masterLabel>
+        <translation>Water Treatments</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D09P</masterLabel>
+        <translation>Energy efficiency</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D10P</masterLabel>
+        <translation>EPC Construction</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2D11P</masterLabel>
+        <translation>Water</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3D00P</masterLabel>
+        <translation>General ACO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3D01P</masterLabel>
+        <translation>Banking and insurance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3D02P</masterLabel>
+        <translation>Water and Natural Resources</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3D04P</masterLabel>
+        <translation>Industry and Telco</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3D05P</masterLabel>
+        <translation>Public sector</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3D06P</masterLabel>
+        <translation>Healthcare</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3D07P</masterLabel>
+        <translation>Utilities</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3D08P</masterLabel>
+        <translation>Resources and Means</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A4D01P</masterLabel>
+        <translation>Water Systems and Environment</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A4D02P</masterLabel>
+        <translation>Transportation Systems</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A4D03P</masterLabel>
+        <translation>Systems in Energy and Industry</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A4D04P</masterLabel>
+        <translation>Security Systems</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A4D05P</masterLabel>
+        <translation>Data centers</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D00P</masterLabel>
+        <translation>General Smart Life</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D01P</masterLabel>
+        <translation>Smart Cities</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D02P</masterLabel>
+        <translation>Smart Grid Energy</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D03P</masterLabel>
+        <translation>Smart mobility</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D04P</masterLabel>
+        <translation>Smart Cloud</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D05P</masterLabel>
+        <translation>Smart Grid Special</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D06P</masterLabel>
+        <translation>Digital Site</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D07P</masterLabel>
+        <translation>ITO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D10P</masterLabel>
+        <translation>Water</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D11P</masterLabel>
+        <translation>Security</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D12P</masterLabel>
+        <translation>Operations and maintenance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D13P</masterLabel>
+        <translation>Special projects</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5D14P</masterLabel>
+        <translation>R + D + i</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A6D00P</masterLabel>
+        <translation>General Engineering Advanced Manufacturing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A6D01P</masterLabel>
+        <translation>Aeronautics</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A6D02P</masterLabel>
+        <translation>Digital factory</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A6D03P</masterLabel>
+        <translation>Defense and Space</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A8D00P</masterLabel>
+        <translation>General BPO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A8D01P</masterLabel>
+        <translation>ENEL BPO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A8D02P</masterLabel>
+        <translation>Public Sector and BPO Industry</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A8D03P</masterLabel>
+        <translation>Telco and Others Utilities BPO</translation>
+    </picklistValues>
+</CustomFieldTranslation>

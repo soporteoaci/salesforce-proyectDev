@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origen_Stock_Soft_Extensiones</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+		
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+						$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
+				Record_Type_Name__c =&apos;Ayesa&apos;,
+				Oportunidad_Relacionada__c &lt;&gt; null,
+				NOT(ISBLANK(TEXT(Origen__c))),
+				TEXT(PRIORVALUE(Origen__c)) &lt;&gt; TEXT(Origen__c)
+)</errorConditionFormula>
+    <errorMessage>No se puede modificar el campo origen en una Extensión</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocContractual</fullName>
+    <fields>Name</fields>
+    <fields>Nombre__c</fields>
+    <fields>Categoria__c</fields>
+    <fields>Enlace__c</fields>
+    <label>DocContractual</label>
+</CompactLayout>

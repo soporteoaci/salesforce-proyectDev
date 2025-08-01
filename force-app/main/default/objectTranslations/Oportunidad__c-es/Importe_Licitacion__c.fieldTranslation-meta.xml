@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- En el campo Importe total de Licitación (sin IVA) en se indicará todo el importe conocido de la licitación (es conocido en el momento de abrir la oportunidad) --></help>
+    <label><!-- Importe Total (sin IVA) € --></label>
+    <name>Importe_Licitacion__c</name>
+</CustomFieldTranslation>

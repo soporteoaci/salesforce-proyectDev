@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de Negocio Objetivo --></label>
+    <name>Tipo_de_Negocio_Objetivo__c</name>
+    <picklistValues>
+        <masterLabel>Automatic Extension</masterLabel>
+        <translation><!-- Automatic Extension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Extension or variation</masterLabel>
+        <translation><!-- New Extension or variation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New contract</masterLabel>
+        <translation><!-- New contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New contract being incumbent</masterLabel>
+        <translation><!-- New contract being incumbent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New contract multiyear/multistage</masterLabel>
+        <translation><!-- New contract multiyear/multistage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New exclusive framework agreement</masterLabel>
+        <translation><!-- New exclusive framework agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New framework agreement with competitors</masterLabel>
+        <translation><!-- New framework agreement with competitors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Previous exclusive framework agreement</masterLabel>
+        <translation><!-- Previous exclusive framework agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Previous framework agreement with competitors</masterLabel>
+        <translation><!-- Previous framework agreement with competitors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recurrent Extension</masterLabel>
+        <translation><!-- Recurrent Extension --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

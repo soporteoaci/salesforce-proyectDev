@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sector__c</fullName>
+    <inlineHelpText>Área diferenciada de la actividad económica y productiva en la que se engloba la empresa.</inlineHelpText>
+    <label>Sector</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Admón. Pública</fullName>
+                <default>false</default>
+                <label>Admón. Pública</label>
+            </value>
+            <value>
+                <fullName>Educación</fullName>
+                <default>false</default>
+                <label>Educación</label>
+            </value>
+            <value>
+                <fullName>Engineering and Architecture</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Engineering and Architecture</label>
+            </value>
+            <value>
+                <fullName>Financiero</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Financiero</label>
+            </value>
+            <value>
+                <fullName>Finanzas</fullName>
+                <default>false</default>
+                <label>Finanzas</label>
+            </value>
+            <value>
+                <fullName>Industria</fullName>
+                <default>false</default>
+                <label>Industria</label>
+            </value>
+            <value>
+                <fullName>Ingeniería Industrial</fullName>
+                <default>false</default>
+                <label>Ingeniería Industrial</label>
+            </value>
+            <value>
+                <fullName>Ingeniería y Arquitectura</fullName>
+                <default>false</default>
+                <label>Ingeniería y Arquitectura</label>
+            </value>
+            <value>
+                <fullName>Sanidad</fullName>
+                <default>false</default>
+                <label>Sanidad</label>
+            </value>
+            <value>
+                <fullName>Sector al que pertenece</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sector al que pertenece</label>
+            </value>
+            <value>
+                <fullName>Sector Público</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sector Público</label>
+            </value>
+            <value>
+                <fullName>Seguros</fullName>
+                <default>false</default>
+                <label>Seguros</label>
+            </value>
+            <value>
+                <fullName>Servicios</fullName>
+                <default>false</default>
+                <label>Servicios</label>
+            </value>
+            <value>
+                <fullName>Tecnologías de la información</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tecnologías de la información</label>
+            </value>
+            <value>
+                <fullName>Telco y Media</fullName>
+                <default>false</default>
+                <label>Telco y Media</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

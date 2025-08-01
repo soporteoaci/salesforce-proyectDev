@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DireccionRegalo__c</fullName>
+    <label>Dirección envió regalo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dirección Cliente</fullName>
+                <default>false</default>
+                <label>Dirección Cliente</label>
+            </value>
+            <value>
+                <fullName>Dirección Profesional</fullName>
+                <default>false</default>
+                <label>Dirección Profesional</label>
+            </value>
+            <value>
+                <fullName>Dirección Alternativa</fullName>
+                <default>false</default>
+                <label>Dirección Alternativa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Produccion_IC__c</fullName>
+    <description>Se calcula a partir de los datos en EUR de la FdP</description>
+    <formula>IF(impcontrato_FdP_EUR__c&lt;&gt;0, PR_FdP_EUR__c / impcontrato_FdP_EUR__c,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Producción / IC (FdP EUR)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

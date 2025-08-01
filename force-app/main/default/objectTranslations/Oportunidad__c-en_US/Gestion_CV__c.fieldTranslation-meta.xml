@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Estimación de la dedicación de horas de gestión de CVs en la ON. Para completarlo, el RO debe coordinarse con Soporte a Ofertas --></help>
+    <label><!-- Gestión Curricular --></label>
+    <name>Gestion_CV__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organizacion_Ibermatica__c</fullName>
+    <label>Organización Ibermática</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AVIATION</fullName>
+                <default>false</default>
+                <label>AVIATION</label>
+            </value>
+            <value>
+                <fullName>BFS</fullName>
+                <default>false</default>
+                <label>BFS</label>
+            </value>
+            <value>
+                <fullName>BPO UTILITIES</fullName>
+                <default>false</default>
+                <label>BPO UTILITIES</label>
+            </value>
+            <value>
+                <fullName>BUILDING EMEA &amp; ASIA</fullName>
+                <default>false</default>
+                <label>BUILDING EMEA &amp; ASIA</label>
+            </value>
+            <value>
+                <fullName>BUILDING LATAM</fullName>
+                <default>false</default>
+                <label>BUILDING LATAM</label>
+            </value>
+            <value>
+                <fullName>BUILDING SPAIN</fullName>
+                <default>false</default>
+                <label>BUILDING SPAIN</label>
+            </value>
+            <value>
+                <fullName>CONSUMER &amp; BUSINESS SERVICES</fullName>
+                <default>false</default>
+                <label>CONSUMER &amp; BUSINESS SERVICES</label>
+            </value>
+            <value>
+                <fullName>DIGITAL ADMINISTRATION</fullName>
+                <default>false</default>
+                <label>DIGITAL ADMINISTRATION</label>
+            </value>
+            <value>
+                <fullName>ENEL</fullName>
+                <default>false</default>
+                <label>ENEL</label>
+            </value>
+            <value>
+                <fullName>ENERGY</fullName>
+                <default>false</default>
+                <label>ENERGY</label>
+            </value>
+            <value>
+                <fullName>ENVIRONMENT</fullName>
+                <default>false</default>
+                <label>ENVIRONMENT</label>
+            </value>
+            <value>
+                <fullName>GRUPO IBERMATICA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRUPO IBERMATICA</label>
+            </value>
+            <value>
+                <fullName>HEALTH</fullName>
+                <default>false</default>
+                <label>HEALTH</label>
+            </value>
+            <value>
+                <fullName>HYDRAULIC WORKS</fullName>
+                <default>false</default>
+                <label>HYDRAULIC WORKS</label>
+            </value>
+            <value>
+                <fullName>IBERDROLA</fullName>
+                <default>false</default>
+                <label>IBERDROLA</label>
+            </value>
+            <value>
+                <fullName>ILA ARGENTINA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ILA ARGENTINA</label>
+            </value>
+            <value>
+                <fullName>INDUSTRY</fullName>
+                <default>false</default>
+                <label>INDUSTRY</label>
+            </value>
+            <value>
+                <fullName>INFRA. SUPERVISIONS</fullName>
+                <default>false</default>
+                <label>INFRA. SUPERVISIONS</label>
+            </value>
+            <value>
+                <fullName>INNOVATION</fullName>
+                <default>false</default>
+                <label>INNOVATION</label>
+            </value>
+            <value>
+                <fullName>INSURANCE</fullName>
+                <default>false</default>
+                <label>INSURANCE</label>
+            </value>
+            <value>
+                <fullName>INTERFLEX</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>INTERFLEX</label>
+            </value>
+            <value>
+                <fullName>LAND MANAGEMENT</fullName>
+                <default>false</default>
+                <label>LAND MANAGEMENT</label>
+            </value>
+            <value>
+                <fullName>MANUFACTURING</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MANUFACTURING</label>
+            </value>
+            <value>
+                <fullName>MARINE &amp; COASTALS</fullName>
+                <default>false</default>
+                <label>MARINE &amp; COASTALS</label>
+            </value>
+            <value>
+                <fullName>MICROSOFT</fullName>
+                <default>false</default>
+                <label>MICROSOFT</label>
+            </value>
+            <value>
+                <fullName>Nueva Org</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nueva Org</label>
+            </value>
+            <value>
+                <fullName>OIL &amp; GAS</fullName>
+                <default>false</default>
+                <label>OIL &amp; GAS</label>
+            </value>
+            <value>
+                <fullName>ONCE</fullName>
+                <default>false</default>
+                <label>ONCE</label>
+            </value>
+            <value>
+                <fullName>PROCESS PLANTS</fullName>
+                <default>false</default>
+                <label>PROCESS PLANTS</label>
+            </value>
+            <value>
+                <fullName>RAILWAY/METRO</fullName>
+                <default>false</default>
+                <label>RAILWAY/METRO</label>
+            </value>
+            <value>
+                <fullName>RAILWAY SYSTEMS</fullName>
+                <default>false</default>
+                <label>RAILWAY SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>RESOURCES</fullName>
+                <default>false</default>
+                <label>RESOURCES</label>
+            </value>
+            <value>
+                <fullName>ROADS</fullName>
+                <default>false</default>
+                <label>ROADS</label>
+            </value>
+            <value>
+                <fullName>SCADA ARGENTINA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SCADA ARGENTINA</label>
+            </value>
+            <value>
+                <fullName>SCADA CHILE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SCADA CHILE</label>
+            </value>
+            <value>
+                <fullName>SCADA PERU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SCADA PERU</label>
+            </value>
+            <value>
+                <fullName>SMART FACTORIES</fullName>
+                <default>false</default>
+                <label>SMART FACTORIES</label>
+            </value>
+            <value>
+                <fullName>TMT</fullName>
+                <default>false</default>
+                <label>TMT</label>
+            </value>
+            <value>
+                <fullName>TRANSPORT. CATALONIA</fullName>
+                <default>false</default>
+                <label>TRANSPORT. CATALONIA</label>
+            </value>
+            <value>
+                <fullName>TRANSPORT EMEA &amp; ASIA</fullName>
+                <default>false</default>
+                <label>TRANSPORT EMEA &amp; ASIA</label>
+            </value>
+            <value>
+                <fullName>TRANSPORT LATAM</fullName>
+                <default>false</default>
+                <label>TRANSPORT LATAM</label>
+            </value>
+            <value>
+                <fullName>UTILITIES ESPAÑA</fullName>
+                <default>false</default>
+                <label>UTILITIES ESPAÑA</label>
+            </value>
+            <value>
+                <fullName>UTILITIES LATAM</fullName>
+                <default>false</default>
+                <label>UTILITIES LATAM</label>
+            </value>
+            <value>
+                <fullName>WATER &amp; ENVIRON. EMEA &amp; ASIA</fullName>
+                <default>false</default>
+                <label>WATER &amp; ENVIRON. EMEA &amp; ASIA</label>
+            </value>
+            <value>
+                <fullName>WATER &amp; ENVIRONM. LATAM</fullName>
+                <default>false</default>
+                <label>WATER &amp; ENVIRONM. LATAM</label>
+            </value>
+            <value>
+                <fullName>WATER CATALONIA</fullName>
+                <default>false</default>
+                <label>WATER CATALONIA</label>
+            </value>
+            <value>
+                <fullName>WATER SUPERVISIONS</fullName>
+                <default>false</default>
+                <label>WATER SUPERVISIONS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carsharing_WishiLife</fullName>
+    <columns>CodigoSubentregable__c</columns>
+    <columns>NAME</columns>
+    <columns>Estado__c</columns>
+    <columns>Avance__c</columns>
+    <columns>Peso__c</columns>
+    <columns>ResponsableN1__c</columns>
+    <columns>ResponsableN2__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Proyecto_Entregable__c</field>
+        <operation>equals</operation>
+        <value>Carsharing WishiLife</value>
+    </filters>
+    <label>Carsharing WishiLife</label>
+    <sharedTo>
+        <group>Carsharing_WishiLife_Consultores</group>
+    </sharedTo>
+</ListView>

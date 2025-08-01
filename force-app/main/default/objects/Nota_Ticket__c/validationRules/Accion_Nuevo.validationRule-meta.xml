@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accion_Nuevo</fullName>
+    <active>true</active>
+    <description>Si selecciona &quot;Nuevo&quot; solo puede modificar los campos &quot;Comentarios&quot;</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(Accion__c , &quot;Nuevo&quot;), 
+OR(NOT(ISBLANK(Asignado_a__c)),NOT(ISBLANK( Proveedor2__c ))) 
+)</errorConditionFormula>
+    <errorDisplayField>Accion__c</errorDisplayField>
+    <errorMessage>Si selecciona &apos;&apos;Pdt Proveedor&apos;&apos; solo puede modificar los campos &apos;&apos;Proveedor&apos;&apos; y &apos;&apos;Comentarios&apos;&apos;</errorMessage>
+</ValidationRule>

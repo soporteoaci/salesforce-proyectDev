@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Margen_Plan_Margen_Prev__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (Margen_Previsto__c &lt;&gt; 0, IF (ABS(margenplan__c / Margen_Previsto__c) &gt; 0.15, &apos;&gt; 15%&apos;, &apos;&lt; 15%&apos;), &apos;&lt; 15%&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Margen Plan / Margen Prev</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

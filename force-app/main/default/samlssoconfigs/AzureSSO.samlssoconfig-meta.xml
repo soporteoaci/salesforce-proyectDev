@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>https://sts.windows.net/b245367b-55a3-4d61-92d0-992b771e1d1f/</issuer>
+    <loginUrl>https://login.microsoftonline.com/b245367b-55a3-4d61-92d0-992b771e1d1f/saml2</loginUrl>
+    <name>Single Sign-On (correo electrónico corporativo)</name>
+    <oauthTokenEndpoint>https://ayesaoaci--pre.sandbox.my.salesforce.com/services/oauth2/token?so=00D9O00000HwUxT</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P19N000000024u</requestSigningCertId>
+    <salesforceLoginUrl>https://ayesaoaci--pre.sandbox.my.salesforce.com?so=00D9O00000HwUxT</salesforceLoginUrl>
+    <samlEntityId>https://ayesaoaci.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <singleLogoutBinding>RedirectBinding</singleLogoutBinding>
+    <singleLogoutUrl>https://login.microsoftonline.com/b245367b-55a3-4d61-92d0-992b771e1d1f/saml2</singleLogoutUrl>
+    <useConfigRequestMethod>false</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>true</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC8DCCAdigAwIBAgIQagG029TipIRDAlowV8rsRzANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yMjEyMTMxODEyMTFaFw0yNTEyMTMxODEyMTBaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq1OAe9JtjNoLX609uAwmont+jrJjFZWQhsCfdUb5BdrTd4yQTPs17Ez4WwvhKN9pndQHhb+jgfFqvWq3nVsbMJfSP/jSsc4ScXG8E9HshaeRyGvkfLR5GqBtbVIYy9+RrzE1buXs4xyi+r+0SEh1lDMT7nazpe8uvjxB5GtvPQhOzWbIiBqkFQ7SiQrFyuU/jvRZAfdwgOBQhQZnqqz7nkIMJsnloLulh5uytEtG8FJACT7kD5SppIeSdnfu8JbYrMia/wSUu7YKbVBF8mgkcbINK7Jzw1vdU33QFNa/so+0SamyRe7ES/w2zM2a3ADiFT/d/HM+pQV8dvXceqec2QIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAvCqp7N0E9pdJZzvhq0UfhZX/fZEub3jBnk2YFixYyxNSYAFgbP1Oc+KH0P5xh1SQcDQoTGZyMPGPacWzEwdBH15g8KwCC/kAOISQIHGgQkj0CAi4e+xMna1bzzZKYiy0xKI7BrwWuV/C+HVnC3AOcZUK2PLLP5fqmNiSHTSX4Tlwn6dzpJEN6XBENmkEjdCxlg/H9zcdNF4a/ZdaYTxJsV1M4aNLp/ccEWlJN8+Fm0ClwohUN90ZFTnYnQE2uLJqTPJgywp5Q9QArzMofyPy8KsWlDqIJ+p5d6HO7w2lDHO3+rC835M1mntIEJLFV0L6Do+9yKwuHC8MSkB0HvF8n</validationCert>
+</SamlSsoConfig>

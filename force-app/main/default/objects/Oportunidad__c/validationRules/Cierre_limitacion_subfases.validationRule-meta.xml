@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cierre_limitacion_subfases</fullName>
+    <active>true</active>
+    <description>Se limitan las subfases dependiendo de la clase de oferta</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+				ISPICKVAL(Etapa__c, &apos;Cerrada&apos;),
+				OR(
+								AND(
+												ISPICKVAL(Clase_de_oferta__c , &apos;Privada&apos;),
+												OR( 
+																ISPICKVAL(Subfase__c,&apos;Esperando decisión con competidores favoritos&apos;),
+																ISPICKVAL(Subfase__c,&apos;Esperando decisión con competidores NO favoritos&apos;),
+																ISPICKVAL(Subfase__c,&apos;Esperando decisión sin competidores&apos;),
+																ISPICKVAL(Subfase__c,&apos;Elegidos técnicamente: Pte sobre económico&apos;)
+												)
+
+								),
+								AND(   
+												ISPICKVAL(Clase_de_oferta__c,&apos;Pública&apos;),
+												OR(
+																ISPICKVAL(Subfase__c,&apos;Defendiendo con competidores favoritos&apos;),
+																ISPICKVAL(Subfase__c,&apos;Defendiendo con competidores NO favoritos&apos;),
+																ISPICKVAL(Subfase__c,&apos;Defendiendo sin competidores&apos;),
+																ISPICKVAL(Subfase__c,&apos;Negociando condiciones de cierre&apos;) 
+												)
+
+								) 
+				)
+)</errorConditionFormula>
+    <errorDisplayField>Subfase__c</errorDisplayField>
+    <errorMessage>No se puede elegir esta subfase por la clase de oferta de la oportunidad</errorMessage>
+</ValidationRule>

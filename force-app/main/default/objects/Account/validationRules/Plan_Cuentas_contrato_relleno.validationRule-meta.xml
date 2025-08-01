@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plan_Cuentas_contrato_relleno</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Contratos_actuales__c, &quot;Si&quot;),
+    OR(
+        AND(
+            ISBLANK(C1_Fecha_inicio__c),
+            ISBLANK(C2_Fecha_inicio__c),
+            ISBLANK(C3_Fecha_inicio__c),
+            ISBLANK(C4_Fecha_inicio__c)
+        ),
+        AND(
+            NOT(ISBLANK(C1_Fecha_inicio__c)),
+            OR(
+                ISBLANK(C1_Fecha_fin__c),
+                ISBLANK(C1_Importe__c),
+                ISBLANK(C1_Situacion_prorroga__c),
+                ISPICKVAL(C1_Linea_de_Servicio__c, &quot;&quot;)
+               )
+        ),
+        AND(
+            NOT(ISBLANK(C2_Fecha_inicio__c)),
+            OR(
+                ISBLANK(C2_Fecha_fin__c),
+                ISBLANK(C2_Importe__c),
+                ISBLANK(C2_Situacion_prorroga__c),
+                ISPICKVAL(C2_Linea_de_Servicio__c, &quot;&quot;)
+               )
+        ),
+        AND(
+            NOT(ISBLANK(C3_Fecha_inicio__c)),
+            OR(
+                ISBLANK(C3_Fecha_fin__c),
+                ISBLANK(C3_Importe__c),
+                ISBLANK(C3_Situacion_prorroga__c),
+                ISPICKVAL(C3_Linea_de_Servicio__c, &quot;&quot;)
+               )
+        ),
+        AND(
+            NOT(ISBLANK(C4_Fecha_inicio__c)),
+            OR(
+                ISBLANK(C4_Fecha_fin__c),
+                ISBLANK(C4_Importe__c),
+                ISBLANK(C4_Situacion_prorroga__c),
+                ISPICKVAL(C4_Linea_de_Servicio__c, &quot;&quot;)
+               )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Deben estar todos los campos del contrato rellenos</errorMessage>
+</ValidationRule>

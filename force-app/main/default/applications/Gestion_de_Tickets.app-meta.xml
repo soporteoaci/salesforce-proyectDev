@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#FDB42D</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Gestión Tickets</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Gestión Tickets</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Inicio_CRM</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Usuario CRM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>OACI_Home_Page_Consultant</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Consultor AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Inicio_CRM</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>CRM Licitaciones</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Inicio_CRM</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Responsable CRM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>OACI_Home_Page_Customer_new</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Cliente AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SolutionManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>ContractManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Analytics Cloud Integration User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Analytics Cloud Security User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AYESA Administrador</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ayesa Partner Portal Perfil</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter External User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter Free User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter Moderator User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Consultor AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>External Identity User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Force.com - App Subscription User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Incidencias Perfil</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestor Proyecto AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Guest License User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Legal AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>System Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>MarketingProfile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>StandardAul</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Standard</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets_Usuario</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Cliente AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets_Usuario</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Cliente AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AYESA Administrador</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestor Proyecto AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>External Identity User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Guest License User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Consultor AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Standard</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter Free User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter Moderator User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Analytics Cloud Integration User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>ContractManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Analytics Cloud Security User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>MarketingProfile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>System Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SolutionManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Force.com - App Subscription User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ayesa Partner Portal Perfil</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Chatter External User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Técnica de Proyecto</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Legal AYESA</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>StandardAul</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>P_gina_Tickets</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Ticket__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Gestión Incidencias Perfil</profile>
+    </profileActionOverrides>
+    <tabs>Ticket__c</tabs>
+    <tabs>standard-Feed</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>standard-Task</tabs>
+    <tabs>Objetivo__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Gesti_n_de_Tickets_UtilityBar</utilityBar>
+</CustomApplication>

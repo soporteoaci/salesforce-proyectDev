@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permisos para que los Directores vean los planes de cuenta de todas las cuentas.</description>
+    <isLicensed>false</isLicensed>
+    <label>Permisos Directores sobre Plan de Cuentas</label>
+</CustomPermission>

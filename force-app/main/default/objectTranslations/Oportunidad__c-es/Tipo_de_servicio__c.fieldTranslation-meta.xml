@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de servicio --></label>
+    <name>Tipo_de_servicio__c</name>
+    <picklistValues>
+        <masterLabel>Hardware Reselling</masterLabel>
+        <translation><!-- Hardware Reselling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Managed services</masterLabel>
+        <translation><!-- Managed services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project-based services</masterLabel>
+        <translation><!-- Project-based services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Reselling</masterLabel>
+        <translation><!-- Software Reselling --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

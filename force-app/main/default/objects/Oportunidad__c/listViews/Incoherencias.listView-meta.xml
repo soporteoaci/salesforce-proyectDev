@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incoherencias</fullName>
+    <columns>NAME</columns>
+    <columns>Codigo_OC__c</columns>
+    <columns>Oferta_SAP__c</columns>
+    <columns>Cliente__c</columns>
+    <columns>Division__c</columns>
+    <columns>Fecha_estimada_de_cierre__c</columns>
+    <columns>Fecha_limite_de_presentacion__c</columns>
+    <columns>Oport_en_presupuesto_Ayesa__c</columns>
+    <columns>Etapa__c</columns>
+    <columns>Importe_adjudicacion__c</columns>
+    <columns>Estado_de_Cierre__c</columns>
+    <columns>Importe_Contratacion__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Propietario_custom__c</field>
+        <operation>contains</operation>
+        <value>alonso</value>
+    </filters>
+    <label>Incoherencias</label>
+</ListView>

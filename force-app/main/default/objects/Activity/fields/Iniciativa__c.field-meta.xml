@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Iniciativa__c</fullName>
+    <label>Iniciativa</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agile + Deployment</fullName>
+                <default>false</default>
+                <label>Agile + Deployment</label>
+            </value>
+            <value>
+                <fullName>Agile Deployment</fullName>
+                <default>false</default>
+                <label>Agile Deployment</label>
+            </value>
+            <value>
+                <fullName>Analítica Avanzada Utilities</fullName>
+                <default>false</default>
+                <label>Analítica Avanzada Utilities</label>
+            </value>
+            <value>
+                <fullName>API Management</fullName>
+                <default>false</default>
+                <label>API Management</label>
+            </value>
+            <value>
+                <fullName>Big Data + Cloud</fullName>
+                <default>false</default>
+                <label>Big Data + Cloud</label>
+            </value>
+            <value>
+                <fullName>Big Data SSFF</fullName>
+                <default>false</default>
+                <label>Big Data SSFF</label>
+            </value>
+            <value>
+                <fullName>BigData en Cloud</fullName>
+                <default>false</default>
+                <label>BigData en Cloud</label>
+            </value>
+            <value>
+                <fullName>BIM</fullName>
+                <default>false</default>
+                <label>BIM</label>
+            </value>
+            <value>
+                <fullName>BIM Integrator</fullName>
+                <default>false</default>
+                <label>BIM Integrator</label>
+            </value>
+            <value>
+                <fullName>Biometría</fullName>
+                <default>false</default>
+                <label>Biometría</label>
+            </value>
+            <value>
+                <fullName>Blockchain Asset</fullName>
+                <default>false</default>
+                <label>Blockchain Asset</label>
+            </value>
+            <value>
+                <fullName>Blockchain SSFF</fullName>
+                <default>false</default>
+                <label>Blockchain SSFF</label>
+            </value>
+            <value>
+                <fullName>BPC  HANA</fullName>
+                <default>false</default>
+                <label>BPC  HANA</label>
+            </value>
+            <value>
+                <fullName>Ciberseguridad</fullName>
+                <default>false</default>
+                <label>Ciberseguridad</label>
+            </value>
+            <value>
+                <fullName>Ciberseguridad OT Utilities</fullName>
+                <default>false</default>
+                <label>Ciberseguridad OT Utilities</label>
+            </value>
+            <value>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+                <label>Customer Experience</label>
+            </value>
+            <value>
+                <fullName>Design Thinking</fullName>
+                <default>false</default>
+                <label>Design Thinking</label>
+            </value>
+            <value>
+                <fullName>DevOps</fullName>
+                <default>false</default>
+                <label>DevOps</label>
+            </value>
+            <value>
+                <fullName>Digital Workplace</fullName>
+                <default>false</default>
+                <label>Digital Workplace</label>
+            </value>
+            <value>
+                <fullName>DMP Neodata Servicios</fullName>
+                <default>false</default>
+                <label>DMP Neodata Servicios</label>
+            </value>
+            <value>
+                <fullName>DW Offloading</fullName>
+                <default>false</default>
+                <label>DW Offloading</label>
+            </value>
+            <value>
+                <fullName>Finance &amp; Operations</fullName>
+                <default>false</default>
+                <label>Finance &amp; Operations</label>
+            </value>
+            <value>
+                <fullName>Geoespacial</fullName>
+                <default>false</default>
+                <label>Geoespacial</label>
+            </value>
+            <value>
+                <fullName>Gobierno Digital</fullName>
+                <default>false</default>
+                <label>Gobierno Digital</label>
+            </value>
+            <value>
+                <fullName>Hybrid Cloud Services</fullName>
+                <default>false</default>
+                <label>Hybrid Cloud Services</label>
+            </value>
+            <value>
+                <fullName>Imagen de marca</fullName>
+                <default>false</default>
+                <label>Imagen de marca</label>
+            </value>
+            <value>
+                <fullName>Industria 4.0</fullName>
+                <default>false</default>
+                <label>Industria 4.0</label>
+            </value>
+            <value>
+                <fullName>INFO33+</fullName>
+                <default>false</default>
+                <label>INFO33+</label>
+            </value>
+            <value>
+                <fullName>IOT AWS</fullName>
+                <default>false</default>
+                <label>IOT AWS</label>
+            </value>
+            <value>
+                <fullName>Lenguaje Natural Salud</fullName>
+                <default>false</default>
+                <label>Lenguaje Natural Salud</label>
+            </value>
+            <value>
+                <fullName>Liferay CMS</fullName>
+                <default>false</default>
+                <label>Liferay CMS</label>
+            </value>
+            <value>
+                <fullName>Machine Learning</fullName>
+                <default>false</default>
+                <label>Machine Learning</label>
+            </value>
+            <value>
+                <fullName>MDAP</fullName>
+                <default>false</default>
+                <label>MDAP</label>
+            </value>
+            <value>
+                <fullName>Oferta Tradicional</fullName>
+                <default>false</default>
+                <label>Oferta Tradicional</label>
+            </value>
+            <value>
+                <fullName>Open Bank / Insurance</fullName>
+                <default>false</default>
+                <label>Open Bank / Insurance</label>
+            </value>
+            <value>
+                <fullName>OSS/BSS</fullName>
+                <default>false</default>
+                <label>OSS/BSS</label>
+            </value>
+            <value>
+                <fullName>Packaged Analytics</fullName>
+                <default>false</default>
+                <label>Packaged Analytics</label>
+            </value>
+            <value>
+                <fullName>Retail 5.0</fullName>
+                <default>false</default>
+                <label>Retail 5.0</label>
+            </value>
+            <value>
+                <fullName>RGPD Analytics</fullName>
+                <default>false</default>
+                <label>RGPD Analytics</label>
+            </value>
+            <value>
+                <fullName>RGPD SAP</fullName>
+                <default>false</default>
+                <label>RGPD SAP</label>
+            </value>
+            <value>
+                <fullName>RPA + TL/IC</fullName>
+                <default>false</default>
+                <label>RPA + TL/IC</label>
+            </value>
+            <value>
+                <fullName>S4/HANA</fullName>
+                <default>false</default>
+                <label>S4/HANA</label>
+            </value>
+            <value>
+                <fullName>Salud proactiva</fullName>
+                <default>false</default>
+                <label>Salud proactiva</label>
+            </value>
+            <value>
+                <fullName>Salud Proactiva_OLD</fullName>
+                <default>false</default>
+                <label>Salud Proactiva_OLD</label>
+            </value>
+            <value>
+                <fullName>SAP Leonardo</fullName>
+                <default>false</default>
+                <label>SAP Leonardo</label>
+            </value>
+            <value>
+                <fullName>SCP</fullName>
+                <default>false</default>
+                <label>SCP</label>
+            </value>
+            <value>
+                <fullName>Servicios Digitales</fullName>
+                <default>false</default>
+                <label>Servicios Digitales</label>
+            </value>
+            <value>
+                <fullName>Smart Cities</fullName>
+                <default>false</default>
+                <label>Smart Cities</label>
+            </value>
+            <value>
+                <fullName>Testing BI BigData</fullName>
+                <default>false</default>
+                <label>Testing BI BigData</label>
+            </value>
+            <value>
+                <fullName>Testing Mobile</fullName>
+                <default>false</default>
+                <label>Testing Mobile</label>
+            </value>
+            <value>
+                <fullName>TV Market</fullName>
+                <default>false</default>
+                <label>TV Market</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

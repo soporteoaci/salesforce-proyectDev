@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Modo de presentación --></label>
+    <name>Modo_de_presentacion__c</name>
+    <picklistValues>
+        <masterLabel>Física</masterLabel>
+        <translation><!-- Física --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telemática</masterLabel>
+        <translation><!-- Telemática --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

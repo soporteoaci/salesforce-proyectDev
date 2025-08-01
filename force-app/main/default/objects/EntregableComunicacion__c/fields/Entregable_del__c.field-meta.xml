@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entregable_del__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Grupo de Entregables</label>
+    <referenceTo>Entregable__c</referenceTo>
+    <relationshipLabel>Comunicaciones Relacionadas</relationshipLabel>
+    <relationshipName>ComunicacionesRelacionadas_del</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

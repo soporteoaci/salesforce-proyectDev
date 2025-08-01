@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo Objetivo --></label>
+    <name>Tipo_Objetivo__c</name>
+    <picklistValues>
+        <masterLabel>Apertura Cuenta</masterLabel>
+        <translation><!-- Apertura Cuenta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crecimiento a cuenta TOP</masterLabel>
+        <translation><!-- Crecimiento a cuenta TOP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Posicionamiento Oferta</masterLabel>
+        <translation><!-- Posicionamiento Oferta --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

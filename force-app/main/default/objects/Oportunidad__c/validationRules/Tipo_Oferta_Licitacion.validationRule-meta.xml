@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_Oferta_Licitacion</fullName>
+    <active>false</active>
+    <description>Si la Etapa es distinta de Abierta o Pedido Cod Oferta, el Estado de madurez debe ser Licitacion. En el caso de cerrar desde Abierta una oportunidad no lo requerimos</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;, 
+RecordType.DeveloperName == &apos;Ayesa&apos;,
+
+(NOT(ISPICKVAL(Etapa__c, &quot;Abierta&quot;)) &amp;&amp; NOT(ISPICKVAL(Etapa__c, &quot;Pedido Código Oferta&quot;))) &amp;&amp; NOT(ISPICKVAL(Tipo_de_Oportunidad__c, &quot;Licitación&quot;))
+&amp;&amp; NOT(ISPICKVAL(PRIORVALUE(Etapa__c), &quot;Abierta&quot;))
+
+)</errorConditionFormula>
+    <errorMessage>El Estado de madurez debe de ser Licitación para etapas distintas de Abierta o Pedido Cod Oferta.</errorMessage>
+</ValidationRule>

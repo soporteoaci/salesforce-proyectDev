@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Comments of the collaboration with ibermatica for the opportunity</help>
+    <label>Cross Selling Comment</label>
+    <name>Comentario_Cross_Selling__c</name>
+</CustomFieldTranslation>

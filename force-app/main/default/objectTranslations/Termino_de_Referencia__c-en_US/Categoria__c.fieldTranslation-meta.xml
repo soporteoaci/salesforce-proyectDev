@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Category</label>
+    <name>Categoria__c</name>
+    <picklistValues>
+        <masterLabel>Calidad</masterLabel>
+        <translation>Quality</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desarrollos</masterLabel>
+        <translation>Developing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Formación</masterLabel>
+        <translation>Training</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Funcional</masterLabel>
+        <translation>Funtional</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garantía</masterLabel>
+        <translation>Warrranty</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General</masterLabel>
+        <translation>General</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General-Oferta</masterLabel>
+        <translation>General-Offer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gestión del Cambio</masterLabel>
+        <translation>Change Management</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interfases</masterLabel>
+        <translation>Interfaces</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation><!-- Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Licencias</masterLabel>
+        <translation>Licenses</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mantenimiento</masterLabel>
+        <translation>Maintenance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medios materiales</masterLabel>
+        <translation>Material Resources</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metodología</masterLabel>
+        <translation>Methodology</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros</masterLabel>
+        <translation>Others</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal</masterLabel>
+        <translation>Personal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seguridad</masterLabel>
+        <translation>Security</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soporte</masterLabel>
+        <translation>Support</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Técnico</masterLabel>
+        <translation>Technical</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Usabilidad</masterLabel>
+        <translation>Usability</translation>
+    </picklistValues>
+</CustomFieldTranslation>

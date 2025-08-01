@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Se marca automáticamente cuando el estado es Aceptado --></help>
+    <label><!-- Cerrado --></label>
+    <name>Cerrado__c</name>
+</CustomFieldTranslation>

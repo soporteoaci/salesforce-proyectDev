@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gestion_CV__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Estimación de la dedicación de horas de gestión de CVs en la ON. Para completarlo, el RO debe coordinarse con Soporte a Ofertas</inlineHelpText>
+    <label>Gestión Curricular</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

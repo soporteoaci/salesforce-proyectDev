@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Cambia_la_etapa</name>
+        <label>¿Cambia la etapa?</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Si</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Subfase__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Subfase__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Actualizar_Probabilidad_al_30</targetReference>
+            </connector>
+            <label>Si</label>
+        </rules>
+    </decisions>
+    <description>Cuando una oportunidad pase a la subfase Esperando decisión, se actualiza la probabilidad de éxito a 30%.</description>
+    <environments>Default</environments>
+    <interviewLabel>Oportunidad: Flujo actualización probabilidad 30% {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Oportunidad: Flujo actualización probabilidad 30%</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Actualizar_Probabilidad_al_30</name>
+        <label>Actualizar Probabilidad al 30%</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Probabilidad__c</field>
+            <value>
+                <stringValue>30</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Cambia_la_etapa</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Direccion_Operaciones__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ENGINEERING</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Etapa__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Cerrada</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Subfase__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Esperando decisión</stringValue>
+            </value>
+        </filters>
+        <object>Oportunidad__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

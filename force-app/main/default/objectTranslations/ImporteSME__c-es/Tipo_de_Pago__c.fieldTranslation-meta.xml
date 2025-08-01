@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de Pago --></label>
+    <name>Tipo_de_Pago__c</name>
+    <picklistValues>
+        <masterLabel>PLC</masterLabel>
+        <translation><!-- PLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSC</masterLabel>
+        <translation><!-- PSC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QLC</masterLabel>
+        <translation><!-- QLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSC</masterLabel>
+        <translation><!-- QSC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YLC</masterLabel>
+        <translation><!-- YLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YSC</masterLabel>
+        <translation><!-- YSC --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

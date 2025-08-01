@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gestor_de_produccion_lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Gestor de produccion</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Parametrica_2__c.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>Gestor Produccion</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Parametrica_2__c</referenceTo>
+    <relationshipLabel>Parametricas Ibermática (Gestor de produccion)</relationshipLabel>
+    <relationshipName>Gestor_de_produccion_lookup</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

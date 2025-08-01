@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Todos_los_Entregables_Aceptados</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>Fase__c</columns>
+    <columns>Entregable__c</columns>
+    <columns>NAME</columns>
+    <columns>Estado2__c</columns>
+    <columns>EDT__c</columns>
+    <columns>Descripcion_EDT__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Entregable__c.Entregable</value>
+    </filters>
+    <filters>
+        <field>Estado2__c</field>
+        <operation>equals</operation>
+        <value>Firmado</value>
+    </filters>
+    <label>Todo Grupo de Entregables Aceptado</label>
+</ListView>

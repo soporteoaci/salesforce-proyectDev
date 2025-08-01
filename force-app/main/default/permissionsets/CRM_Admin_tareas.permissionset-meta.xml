@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Da visibilidad sobre el campo tipo actividad admin en las tareas</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.Tipo_Actividad_Administrador__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.Tipo_Actividad_Administrador__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM Admin tareas</label>
+</PermissionSet>

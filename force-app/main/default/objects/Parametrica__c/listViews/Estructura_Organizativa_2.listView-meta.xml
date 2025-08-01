@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estructura_Organizativa_2</fullName>
+    <columns>NAME</columns>
+    <columns>Maestro__c</columns>
+    <columns>Valor__c</columns>
+    <columns>Responsable_Preventa__c</columns>
+    <columns>Responsable__c</columns>
+    <columns>Responsable_Area_Pais_ING__c</columns>
+    <columns>Responsable_Area_Pais_IT__c</columns>
+    <columns>Auxiliar_Preventa__c</columns>
+    <columns>Auxiliar_Delivery_Center__c</columns>
+    <columns>Mercado_lookup__c</columns>
+    <columns>Pais__c</columns>
+    <columns>Importe_limite_Horizontal__c</columns>
+    <columns>Importe_B1_B2__c</columns>
+    <columns>Importe_B3__c</columns>
+    <columns>Importe_B4__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Maestro__c</field>
+        <operation>equals</operation>
+        <value>Mercado</value>
+    </filters>
+    <label>Estructura Organizativa</label>
+    <sharedTo>
+        <group>Admins</group>
+    </sharedTo>
+</ListView>

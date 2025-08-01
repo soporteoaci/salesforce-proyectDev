@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Grupo de Entregables</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Grupos de Entregables</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Formato Entregable</layout>
+        <sections>
+            <label>Contractual Progress</label>
+            <section>Avance Contractual</section>
+        </sections>
+        <sections>
+            <label><!-- Deadlines --></label>
+            <section>Deadlines</section>
+        </sections>
+        <sections>
+            <label>Details</label>
+            <section>Detalles</section>
+        </sections>
+        <sections>
+            <label>Amounts</label>
+            <section>Importes</section>
+        </sections>
+        <sections>
+            <label>Custom Link</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Se trata de un entregable principal, el cuál puede contener subentregables. --></description>
+        <label><!-- Entregable --></label>
+        <name>Entregable</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- El proyecto asignado no tiene informado el Documentalista. --></errorMessage>
+        <name>Documentalista_Proyecto</name>
+    </validationRules>
+</CustomObjectTranslation>

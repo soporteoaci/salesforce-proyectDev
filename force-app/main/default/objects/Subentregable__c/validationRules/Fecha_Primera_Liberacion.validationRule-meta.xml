@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_Primera_Liberacion</fullName>
+    <active>true</active>
+    <description>Cuando haya una Fecha Primera Liberación no se podrá modificar</description>
+    <errorConditionFormula>AND(
+				
+				ISCHANGED(Fecha_Primera_Liberacion__c),
+				NOT(ISBLANK(PRIORVALUE(Fecha_Primera_Liberacion__c))),
+    $Profile.Name &lt;&gt; &apos;Gestión Técnica de Proyecto&apos;,
+				$Profile.Name&lt;&gt;&apos;Administrador del sistema&apos; )</errorConditionFormula>
+    <errorDisplayField>Fecha_Primera_Liberacion__c</errorDisplayField>
+    <errorMessage>No puede cambiar la Fecha de Primera Liberación</errorMessage>
+</ValidationRule>

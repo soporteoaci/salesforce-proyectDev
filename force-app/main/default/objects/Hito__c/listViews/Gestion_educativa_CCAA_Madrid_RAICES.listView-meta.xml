@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gestion_educativa_CCAA_Madrid_RAICES</fullName>
+    <columns>Proyecto__c</columns>
+    <columns>NAME</columns>
+    <columns>Descripcion__c</columns>
+    <columns>Fecha_Fin__c</columns>
+    <columns>Hito_Anterior__c</columns>
+    <columns>Peso_Facturacion__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Proyecto__c</field>
+        <operation>equals</operation>
+        <value>Gestión educativa CCAA Madrid. RAICES</value>
+    </filters>
+    <label>Gestión educativa CCAA Madrid. RAICES</label>
+    <sharedTo></sharedTo>
+</ListView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Importe</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Importes</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Formato Importe SME</layout>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- No se pueden modificar importes cuando la oportunidad está cerrada --></errorMessage>
+        <name>No_crear_importes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informar Area --></errorMessage>
+        <name>Seccion_SRV</name>
+    </validationRules>
+</CustomObjectTranslation>

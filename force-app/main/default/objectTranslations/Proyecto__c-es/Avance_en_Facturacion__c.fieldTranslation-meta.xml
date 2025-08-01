@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Facturación Real / Importe Contrato --></help>
+    <label><!-- Avance en Facturación --></label>
+    <name>Avance_en_Facturacion__c</name>
+</CustomFieldTranslation>

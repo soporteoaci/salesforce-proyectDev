@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Supervision_CRM_ACO_LATAM_BRASIL</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión CRM ACO LATAM BRASIL</label>
+        <sharedTo>
+            <group>Supervisor_CRM_ACO_LATAM_BRASIL</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Brasil</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>CONSULTORÍA,SMART LIFE,INGENIERIA FABRICACIÓN AVANZADA,BPO</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supervision_CRM_ACO_LATAM_CHILE</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión CRM ACO LATAM CHILE</label>
+        <sharedTo>
+            <group>Supervisor_CRM_ACO_LATAM_CHILE</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Chile</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>CONSULTORÍA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supervision_CRM_ACO_LATAM_PERU</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión CRM ACO LATAM PERU</label>
+        <sharedTo>
+            <group>Supervisor_CRM_ACO_LATAM_PERU</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Perú</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>CONSULTORÍA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supervision_ING_ARABIA_SAUDI</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión ING ARABIA SAUDI</label>
+        <sharedTo>
+            <group>Supervisor_ING_ARABIA_SAUDI</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Arabia Saudí</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>INGENIERIA CIVIL Y ARQUITECTURA,INGENIERIA INDUSTRIAL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Omán</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supervision_ING_COLOMBIA</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión ING COLOMBIA</label>
+        <sharedTo>
+            <group>Supervisor_ING_COLOMBIA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Colombia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>INGENIERIA CIVIL Y ARQUITECTURA,INGENIERIA INDUSTRIAL</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supervision_ING_ECUADOR</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión ING ECUADOR</label>
+        <sharedTo>
+            <group>Supervisor_ING_ECUADOR</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Ecuador</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>INGENIERIA CIVIL Y ARQUITECTURA,INGENIERIA INDUSTRIAL</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supervision_ING_INDIA</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión ING INDIA</label>
+        <sharedTo>
+            <group>Supervisor_ING_INDIA</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>India</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>INGENIERIA CIVIL Y ARQUITECTURA,INGENIERIA INDUSTRIAL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Bangladesh</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supervision_ING_MEXICO</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión ING MEXICO</label>
+        <sharedTo>
+            <group>Supervisor_ING_MEXICO</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>INGENIERIA CIVIL Y ARQUITECTURA,INGENIERIA INDUSTRIAL</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supervision_ING_PANAMA</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión ING PANAMA</label>
+        <sharedTo>
+            <group>Supervisor_ING_PANAMA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Panamá</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>INGENIERIA CIVIL Y ARQUITECTURA,INGENIERIA INDUSTRIAL</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supervision_ING_PERU</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión ING PERU</label>
+        <sharedTo>
+            <group>Supervisor_ING_PERU</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Perú</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>INGENIERIA CIVIL Y ARQUITECTURA,INGENIERIA INDUSTRIAL</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supervision_ING_POLONIA</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión ING POLONIA</label>
+        <sharedTo>
+            <group>Supervisor_ING_POLONIA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Polonia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_area__c</field>
+            <operation>equals</operation>
+            <value>INGENIERIA CIVIL Y ARQUITECTURA,INGENIERIA INDUSTRIAL</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Supervision</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Supervisión</label>
+        <sharedTo>
+            <role>Supervision</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Presidencia</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Supervision_Legal</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Supervisión Legal</label>
+        <sharedTo>
+            <group>Supervision_Legal</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>CRM</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

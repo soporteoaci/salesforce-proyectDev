@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Se_ha_creado_tramite_creaci_n_proyecto__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Se ha creado un trámite en el tramitador para la creación de proyecto en SAP</description>
+    <inlineHelpText>Marque esta casilla si se ha creado un trámite en el tramitador para la creación de proyecto en SAP</inlineHelpText>
+    <label>Se ha creado tramite creación proyecto</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

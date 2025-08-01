@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPV</fullName>
+    <columns>NAME</columns>
+    <columns>CPV__c</columns>
+    <columns>Descripcion_CPV__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Parametrica_2__c.CPV</value>
+    </filters>
+    <label>CPV</label>
+</ListView>

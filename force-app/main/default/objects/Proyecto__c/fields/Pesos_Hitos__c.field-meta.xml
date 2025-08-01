@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pesos_Hitos__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Pesos_Hitos_Facturacion__c =1 , 
+IMAGE( $Setup.Semaforo__c.Semaforo_Verde__c , &quot;Verde&quot;,30,30), 
+IMAGE($Setup.Semaforo__c.Semaforo_rojo__c, &quot;Rojo&quot;,30,30) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Se mostrará verde cuando los Hitos de sus Grupos de Entregables pesen el 100%.</inlineHelpText>
+    <label>Pesos Hitos</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

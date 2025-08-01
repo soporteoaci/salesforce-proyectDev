@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Referencia Comercial --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Referencia Comercial --></value>
+    </caseValues>
+    <layouts>
+        <layout>Referencia Comercial Layout</layout>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Referencia Comercial Name --></nameFieldLabel>
+    <quickActions>
+        <label><!-- Actualizar --></label>
+        <name>Actualizar</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Documentación --></label>
+        <name>Documentacion</name>
+    </quickActions>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

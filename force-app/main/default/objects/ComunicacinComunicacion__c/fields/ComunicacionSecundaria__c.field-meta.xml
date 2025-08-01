@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ComunicacionSecundaria__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Comunicación Secundaria</label>
+    <referenceTo>Comunicacion__c</referenceTo>
+    <relationshipLabel>Comunicaciones Anteriores</relationshipLabel>
+    <relationshipName>ComunicacionComunicaciones1</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

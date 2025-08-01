@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Title_and_Description</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISNEW()),  OR(ISCHANGED( Name ),  ISCHANGED( Description__c )))</errorConditionFormula>
+    <errorMessage>Los campos Acción y Descripción no pueden editarse. Si ha cometido un error, proceda a cancelar la acción y cree una nueva.</errorMessage>
+</ValidationRule>

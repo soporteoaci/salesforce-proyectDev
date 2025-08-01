@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Ella</masterLabel>
+        <translation>She</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ella/Ellos</masterLabel>
+        <translation>She/They</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ellos</masterLabel>
+        <translation>They</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>No enumerado</masterLabel>
+        <translation>Not Listed</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Él</masterLabel>
+        <translation>He</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Él/Ellos</masterLabel>
+        <translation>He/They</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

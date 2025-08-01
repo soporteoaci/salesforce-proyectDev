@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_pasar_A_Pendiente_QA</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;, $Profile.Name &lt;&gt;&quot;Usuario CRM Otros&quot;,
+RecordType.DeveloperName= &apos;Ayesa&apos; ,
+LEN( Oferta_SAP__c )=0 &amp;&amp; ISPICKVAL( Etapa__c , &quot;Preparando QA&quot;)
+
+)</errorConditionFormula>
+    <errorMessage>Cambio de etapa no permitida. Debe recibir el código de oferta por parte del equipo de licitaciones y se actualizará el estado de forma automática.</errorMessage>
+</ValidationRule>

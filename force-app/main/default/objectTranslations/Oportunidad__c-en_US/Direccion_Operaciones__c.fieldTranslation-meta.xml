@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Operations Area</label>
+    <name>Direccion_Operaciones__c</name>
+    <picklistValues>
+        <masterLabel>ENGINEERING</masterLabel>
+        <translation><!-- ENGINEERING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INNOVATION</masterLabel>
+        <translation><!-- INNOVATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT</masterLabel>
+        <translation><!-- IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT&amp;DS</masterLabel>
+        <translation><!-- IT&amp;DS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

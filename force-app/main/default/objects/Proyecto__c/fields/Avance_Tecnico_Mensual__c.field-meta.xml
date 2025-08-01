@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avance_Tecnico_Mensual__c</fullName>
+    <description>Guarda el sumatorio del campo Avance Total Mes de los Grupos de Entregables cuando se actualizan los datos económicos del Proyecto de forma mensual.</description>
+    <label>Avance Técnico Mensual</label>
+    <summarizedField>Entregable__c.Avance_Total_Mes__c</summarizedField>
+    <summaryForeignKey>Entregable__c.Proyecto__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

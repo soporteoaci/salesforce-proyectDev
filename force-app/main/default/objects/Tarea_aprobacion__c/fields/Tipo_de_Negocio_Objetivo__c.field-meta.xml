@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Negocio_Objetivo__c</fullName>
+    <label>Tipo de Negocio Objetivo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automatic Extension</fullName>
+                <default>false</default>
+                <label>Automatic Extension</label>
+            </value>
+            <value>
+                <fullName>Recurrent Extension</fullName>
+                <default>false</default>
+                <label>Recurrent Extension</label>
+            </value>
+            <value>
+                <fullName>Previous exclusive framework agreement</fullName>
+                <default>false</default>
+                <label>Previous exclusive framework agreement</label>
+            </value>
+            <value>
+                <fullName>Previous framework agreement with competitors</fullName>
+                <default>false</default>
+                <label>Previous framework agreement with competitors</label>
+            </value>
+            <value>
+                <fullName>New Extension or variation</fullName>
+                <default>false</default>
+                <label>New Extension or variation</label>
+            </value>
+            <value>
+                <fullName>New exclusive framework agreement</fullName>
+                <default>false</default>
+                <label>New exclusive framework agreement</label>
+            </value>
+            <value>
+                <fullName>New framework agreement with competitors</fullName>
+                <default>false</default>
+                <label>New framework agreement with competitors</label>
+            </value>
+            <value>
+                <fullName>New contract being incumbent</fullName>
+                <default>false</default>
+                <label>New contract being incumbent</label>
+            </value>
+            <value>
+                <fullName>New contract</fullName>
+                <default>false</default>
+                <label>New contract</label>
+            </value>
+            <value>
+                <fullName>New contract multiyear/multistage</fullName>
+                <default>false</default>
+                <label>New contract multiyear/multistage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

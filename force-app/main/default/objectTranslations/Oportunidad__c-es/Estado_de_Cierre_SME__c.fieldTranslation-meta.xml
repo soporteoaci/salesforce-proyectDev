@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Estado de cierre --></label>
+    <name>Estado_de_Cierre_SME__c</name>
+    <picklistValues>
+        <masterLabel>Anulada</masterLabel>
+        <translation><!-- Anulada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contratada</masterLabel>
+        <translation><!-- Contratada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Presentada</masterLabel>
+        <translation><!-- No Presentada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perdida</masterLabel>
+        <translation><!-- Perdida --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Gestor de produccion --></label>
+    <name>Gestor_de_produccion_lookup__c</name>
+    <relationshipLabel><!-- Parametricas Ibermática (Gestor de produccion) --></relationshipLabel>
+</CustomFieldTranslation>

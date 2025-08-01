@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo Sinergia --></label>
+    <name>Motivo_Cross_Selling__c</name>
+    <picklistValues>
+        <masterLabel>Cliente</masterLabel>
+        <translation><!-- Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conocimiento de Mercados</masterLabel>
+        <translation><!-- Conocimiento de Mercados --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geografía</masterLabel>
+        <translation><!-- Geografía --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Línea de Servicio</masterLabel>
+        <translation><!-- Línea de Servicio --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

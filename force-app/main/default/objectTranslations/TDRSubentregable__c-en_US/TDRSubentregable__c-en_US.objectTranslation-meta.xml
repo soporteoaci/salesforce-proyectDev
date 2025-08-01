@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Relación Entregable con TDR --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Relación Entregable con TDR --></value>
+    </caseValues>
+    <layouts>
+        <layout>Formato TDRSubentregable</layout>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Código TDR-ENT --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage>The TDR and the Deliverable must belong to the same Project</errorMessage>
+        <name>Mismo_proyecto</name>
+    </validationRules>
+</CustomObjectTranslation>

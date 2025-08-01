@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oportunidad_Padre__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Extensión de desglose a la que se le ha creado una extensión rectificativa</inlineHelpText>
+    <label>Oportunidad Padre</label>
+    <referenceTo>Oportunidad__c</referenceTo>
+    <relationshipLabel>Opportunities Ayesa (Oportunidad Padre)</relationshipLabel>
+    <relationshipName>Opportunities_Ayesa</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

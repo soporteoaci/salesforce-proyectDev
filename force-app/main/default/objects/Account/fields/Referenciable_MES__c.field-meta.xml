@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referenciable_MES__c</fullName>
+    <label>Referenciable MES</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Si</label>
+            </value>
+            <value>
+                <fullName>175540000</fullName>
+                <default>false</default>
+                <label>Visita Referencia</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

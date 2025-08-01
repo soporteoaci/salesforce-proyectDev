@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado_de_Cierre__c</fullName>
+    <inlineHelpText>Cierre la oportunidad cuando sepa el desenlace.</inlineHelpText>
+    <label>Estado de Cierre</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Perdida</fullName>
+                <default>false</default>
+                <label>Perdida</label>
+            </value>
+            <value>
+                <fullName>Anulada</fullName>
+                <default>false</default>
+                <label>Anulada</label>
+            </value>
+            <value>
+                <fullName>No Presentada</fullName>
+                <default>false</default>
+                <label>No Presentada</label>
+            </value>
+            <value>
+                <fullName>Contratada</fullName>
+                <default>false</default>
+                <label>Contratada</label>
+            </value>
+            <value>
+                <fullName>Adjudicada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Adjudicada</label>
+            </value>
+            <value>
+                <fullName>Ganada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ganada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

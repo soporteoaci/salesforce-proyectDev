@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copia_de_Mis_oportunidades_ptes_cualificar_DC</fullName>
+    <columns>NAME</columns>
+    <columns>Codigo_OC__c</columns>
+    <columns>Cliente__c</columns>
+    <columns>Importe_total_sin_IVA__c</columns>
+    <columns>Propietario_custom__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Subfase__c</field>
+        <operation>equals</operation>
+        <value>Cualificación con preventa</value>
+    </filters>
+    <filters>
+        <field>Capacidad_preventa_redaccion_oferta__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Responsable_Preventa__c</field>
+        <operation>equals</operation>
+        <value>$USER</value>
+    </filters>
+    <label>Mis oportunidades pte cualifica Preventa</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Delivery_Center</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

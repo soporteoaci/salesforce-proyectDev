@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado_Realizada</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				NOT(CONTAINS($Profile.Name, &apos;Marketing&apos;)),
+				NOT(CONTAINS($Profile.Name, &apos;SME&apos;)),
+				ISPICKVAL(Status, &apos;Realizada&apos;),
+				OR(
+								ISBLANK(TEXT(Como_ha_ido__c)),
+								ISBLANK(TEXT(Siguiente_Paso__c))
+				)
+)</errorConditionFormula>
+    <errorMessage>Informe los campos Cómo ha ido y Siguiente paso</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Referencia Comercial --></label>
+    <name>Referencia_Comercial__c</name>
+    <picklistValues>
+        <masterLabel>No, por no ser relevante</masterLabel>
+        <translation><!-- No, por no ser relevante --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No, porque ya existe</masterLabel>
+        <translation><!-- No, porque ya existe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sí</masterLabel>
+        <translation><!-- Sí --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

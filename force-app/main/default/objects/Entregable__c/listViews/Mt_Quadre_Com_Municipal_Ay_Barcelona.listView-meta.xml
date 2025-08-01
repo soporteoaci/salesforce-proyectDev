@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mt_Quadre_Com_Municipal_Ay_Barcelona</fullName>
+    <columns>Fase__c</columns>
+    <columns>Entregable__c</columns>
+    <columns>NAME</columns>
+    <columns>Estado__c</columns>
+    <columns>Hito__c</columns>
+    <columns>Peso_Hito_Facturacion__c</columns>
+    <columns>Peso_Entregable__c</columns>
+    <columns>AvanceContractual__c</columns>
+    <columns>AvanceTotal__c</columns>
+    <columns>Responsable__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Proyecto__c</field>
+        <operation>equals</operation>
+        <value>Mt Quadre Com. Municipal Ay. Barcelona</value>
+    </filters>
+    <label>Mt Quadre Com. Municipal Ay. Barcelona</label>
+    <sharedTo>
+        <group>CM_Ayto_Barcelona_Consultores</group>
+    </sharedTo>
+</ListView>

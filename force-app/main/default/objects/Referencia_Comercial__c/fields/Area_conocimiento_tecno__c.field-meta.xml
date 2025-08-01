@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_conocimiento_tecno__c</fullName>
+    <label>Área Conocimiento Tecnológica</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AP-Administración electrónica</fullName>
+                <default>false</default>
+                <label>AP-Administración electrónica</label>
+            </value>
+            <value>
+                <fullName>AP-Smart Cities</fullName>
+                <default>false</default>
+                <label>AP-Smart Cities</label>
+            </value>
+            <value>
+                <fullName>COE-CIBERSEGURIDAD</fullName>
+                <default>false</default>
+                <label>COE-CIBERSEGURIDAD</label>
+            </value>
+            <value>
+                <fullName>COE-CIBERSEGURIDAD AUDITORIAS IT/OT</fullName>
+                <default>false</default>
+                <label>COE-CIBERSEGURIDAD AUDITORIAS IT/OT</label>
+            </value>
+            <value>
+                <fullName>COE-CIBERSEGURIDAD COMPLIANCE</fullName>
+                <default>false</default>
+                <label>COE-CIBERSEGURIDAD COMPLIANCE</label>
+            </value>
+            <value>
+                <fullName>COE-CIBERSEGURIDAD FORMACIÓN CIBER</fullName>
+                <default>false</default>
+                <label>COE-CIBERSEGURIDAD FORMACIÓN CIBER</label>
+            </value>
+            <value>
+                <fullName>COE-CIBERSEGURIDAD MSSP SOC/CERT</fullName>
+                <default>false</default>
+                <label>COE-CIBERSEGURIDAD MSSP SOC/CERT</label>
+            </value>
+            <value>
+                <fullName>COE-CIBERSEGURIDAD SECURITY RESSELING</fullName>
+                <default>false</default>
+                <label>COE-CIBERSEGURIDAD SECURITY RESSELING</label>
+            </value>
+            <value>
+                <fullName>COE-Hybrid IT / Cloud Computing</fullName>
+                <default>false</default>
+                <label>COE-Hybrid IT / Cloud Computing</label>
+            </value>
+            <value>
+                <fullName>COE-Microsoft</fullName>
+                <default>false</default>
+                <label>COE-Microsoft</label>
+            </value>
+            <value>
+                <fullName>COE-Salesforce</fullName>
+                <default>false</default>
+                <label>COE-Salesforce</label>
+            </value>
+            <value>
+                <fullName>COE-SAP</fullName>
+                <default>false</default>
+                <label>COE-SAP</label>
+            </value>
+            <value>
+                <fullName>COE-SAP Ariba</fullName>
+                <default>false</default>
+                <label>COE-SAP Ariba</label>
+            </value>
+            <value>
+                <fullName>COE-SAP C4</fullName>
+                <default>false</default>
+                <label>COE-SAP C4</label>
+            </value>
+            <value>
+                <fullName>COE-SAP Concur</fullName>
+                <default>false</default>
+                <label>COE-SAP Concur</label>
+            </value>
+            <value>
+                <fullName>COE-SAP Group Reporting</fullName>
+                <default>false</default>
+                <label>COE-SAP Group Reporting</label>
+            </value>
+            <value>
+                <fullName>COE-SAP RPA</fullName>
+                <default>false</default>
+                <label>COE-SAP RPA</label>
+            </value>
+            <value>
+                <fullName>COE-SAP SAC</fullName>
+                <default>false</default>
+                <label>COE-SAP SAC</label>
+            </value>
+            <value>
+                <fullName>COE-SAP SLCM</fullName>
+                <default>false</default>
+                <label>COE-SAP SLCM</label>
+            </value>
+            <value>
+                <fullName>COE-SAP SSFF</fullName>
+                <default>false</default>
+                <label>COE-SAP SSFF</label>
+            </value>
+            <value>
+                <fullName>COE-SAP Vistex</fullName>
+                <default>false</default>
+                <label>COE-SAP Vistex</label>
+            </value>
+            <value>
+                <fullName>COE-Smart Factory &amp; OT</fullName>
+                <default>false</default>
+                <label>COE-Smart Factory &amp; OT</label>
+            </value>
+            <value>
+                <fullName>DIG-+DevOps / Agile</fullName>
+                <default>false</default>
+                <label>DIG-+DevOps / Agile</label>
+            </value>
+            <value>
+                <fullName>DIG-BLOCKCHAIN</fullName>
+                <default>false</default>
+                <label>DIG-BLOCKCHAIN</label>
+            </value>
+            <value>
+                <fullName>DIG-DATA-Analytics-Artificial Intelligence</fullName>
+                <default>false</default>
+                <label>DIG-DATA-Analytics-Artificial Intelligence</label>
+            </value>
+            <value>
+                <fullName>DIG-DX Digital Experience</fullName>
+                <default>false</default>
+                <label>DIG-DX Digital Experience</label>
+            </value>
+            <value>
+                <fullName>DIG-Gestión documental</fullName>
+                <default>false</default>
+                <label>DIG-Gestión documental</label>
+            </value>
+            <value>
+                <fullName>DIG-HCM-Personas</fullName>
+                <default>false</default>
+                <label>DIG-HCM-Personas</label>
+            </value>
+            <value>
+                <fullName>DIG-IBERDOK</fullName>
+                <default>false</default>
+                <label>DIG-IBERDOK</label>
+            </value>
+            <value>
+                <fullName>DIG-Learning</fullName>
+                <default>false</default>
+                <label>DIG-Learning</label>
+            </value>
+            <value>
+                <fullName>DIG-Movilidad</fullName>
+                <default>false</default>
+                <label>DIG-Movilidad</label>
+            </value>
+            <value>
+                <fullName>DIG-Portales y negocio digital</fullName>
+                <default>false</default>
+                <label>DIG-Portales y negocio digital</label>
+            </value>
+            <value>
+                <fullName>I3B-Desarrollos Sanidad</fullName>
+                <default>false</default>
+                <label>I3B-Desarrollos Sanidad</label>
+            </value>
+            <value>
+                <fullName>I3B-Eficiencia Energética</fullName>
+                <default>false</default>
+                <label>I3B-Eficiencia Energética</label>
+            </value>
+            <value>
+                <fullName>I3B-Industria 4.0</fullName>
+                <default>false</default>
+                <label>I3B-Industria 4.0</label>
+            </value>
+            <value>
+                <fullName>I3B-Innovación</fullName>
+                <default>false</default>
+                <label>I3B-Innovación</label>
+            </value>
+            <value>
+                <fullName>I3B-TIC Avanzadas</fullName>
+                <default>false</default>
+                <label>I3B-TIC Avanzadas</label>
+            </value>
+            <value>
+                <fullName>OBA-Accesibilidad</fullName>
+                <default>false</default>
+                <label>OBA-Accesibilidad</label>
+            </value>
+            <value>
+                <fullName>OBA-BPM-Gestión procesos</fullName>
+                <default>false</default>
+                <label>OBA-BPM-Gestión procesos</label>
+            </value>
+            <value>
+                <fullName>OBA-Consultoría</fullName>
+                <default>false</default>
+                <label>OBA-Consultoría</label>
+            </value>
+            <value>
+                <fullName>OBA-Desarrollo .NET</fullName>
+                <default>false</default>
+                <label>OBA-Desarrollo .NET</label>
+            </value>
+            <value>
+                <fullName>OBA-Desarrollo HOST</fullName>
+                <default>false</default>
+                <label>OBA-Desarrollo HOST</label>
+            </value>
+            <value>
+                <fullName>OBA-Desarrollo JAVA</fullName>
+                <default>false</default>
+                <label>OBA-Desarrollo JAVA</label>
+            </value>
+            <value>
+                <fullName>OBA-Desarrollo Oracle</fullName>
+                <default>false</default>
+                <label>OBA-Desarrollo Oracle</label>
+            </value>
+            <value>
+                <fullName>OBA-Mantenimiento Aplicaciones</fullName>
+                <default>false</default>
+                <label>OBA-Mantenimiento Aplicaciones</label>
+            </value>
+            <value>
+                <fullName>OBA-Oficinas Técnicas</fullName>
+                <default>false</default>
+                <label>OBA-Oficinas Técnicas</label>
+            </value>
+            <value>
+                <fullName>OBA-Proyectos software</fullName>
+                <default>false</default>
+                <label>OBA-Proyectos software</label>
+            </value>
+            <value>
+                <fullName>OBA-Pruebas software</fullName>
+                <default>false</default>
+                <label>OBA-Pruebas software</label>
+            </value>
+            <value>
+                <fullName>OBI-Arquitecturas tecnológicas</fullName>
+                <default>false</default>
+                <label>OBI-Arquitecturas tecnológicas</label>
+            </value>
+            <value>
+                <fullName>OBI-BPO</fullName>
+                <default>false</default>
+                <label>OBI-BPO</label>
+            </value>
+            <value>
+                <fullName>OBI-Gestión Atención Usuarios</fullName>
+                <default>false</default>
+                <label>OBI-Gestión Atención Usuarios</label>
+            </value>
+            <value>
+                <fullName>OBI-Gestión Datacenter</fullName>
+                <default>false</default>
+                <label>OBI-Gestión Datacenter</label>
+            </value>
+            <value>
+                <fullName>OBI-Gestión Redes y Sistemas</fullName>
+                <default>false</default>
+                <label>OBI-Gestión Redes y Sistemas</label>
+            </value>
+            <value>
+                <fullName>OBI-Outsourcing ITO</fullName>
+                <default>false</default>
+                <label>OBI-Outsourcing ITO</label>
+            </value>
+            <value>
+                <fullName>OBI-Proyectos infraestructuras</fullName>
+                <default>false</default>
+                <label>OBI-Proyectos infraestructuras</label>
+            </value>
+            <value>
+                <fullName>SOL-CRM</fullName>
+                <default>false</default>
+                <label>SOL-CRM</label>
+            </value>
+            <value>
+                <fullName>SOL-ERP</fullName>
+                <default>false</default>
+                <label>SOL-ERP</label>
+            </value>
+            <value>
+                <fullName>SOL-ERP-AXAPTA</fullName>
+                <default>false</default>
+                <label>SOL-ERP-AXAPTA</label>
+            </value>
+            <value>
+                <fullName>SOL-ERP-IBERBUILDING</fullName>
+                <default>false</default>
+                <label>SOL-ERP-IBERBUILDING</label>
+            </value>
+            <value>
+                <fullName>SOL-ERP-NAV</fullName>
+                <default>false</default>
+                <label>SOL-ERP-NAV</label>
+            </value>
+            <value>
+                <fullName>SOL-ERP-RPS</fullName>
+                <default>false</default>
+                <label>SOL-ERP-RPS</label>
+            </value>
+            <value>
+                <fullName>SOL-IBERPER</fullName>
+                <default>false</default>
+                <label>SOL-IBERPER</label>
+            </value>
+            <value>
+                <fullName>SOL-ING</fullName>
+                <default>false</default>
+                <label>SOL-ING</label>
+            </value>
+            <value>
+                <fullName>SOL-ING-CAD</fullName>
+                <default>false</default>
+                <label>SOL-ING-CAD</label>
+            </value>
+            <value>
+                <fullName>SOL-ING-CAM</fullName>
+                <default>false</default>
+                <label>SOL-ING-CAM</label>
+            </value>
+            <value>
+                <fullName>SOL-ING-PDM</fullName>
+                <default>false</default>
+                <label>SOL-ING-PDM</label>
+            </value>
+            <value>
+                <fullName>SOL-INTERFLEX</fullName>
+                <default>false</default>
+                <label>SOL-INTERFLEX</label>
+            </value>
+            <value>
+                <fullName>SOL-MES</fullName>
+                <default>false</default>
+                <label>SOL-MES</label>
+            </value>
+            <value>
+                <fullName>SOL-Otras soluciones SW</fullName>
+                <default>false</default>
+                <label>SOL-Otras soluciones SW</label>
+            </value>
+            <value>
+                <fullName>AP-Administración Local</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AP-Administración Local</label>
+            </value>
+            <value>
+                <fullName>AP-Contabilidad Pública</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AP-Contabilidad Pública</label>
+            </value>
+            <value>
+                <fullName>AP-Interior y Seguridad Pública</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AP-Interior y Seguridad Pública</label>
+            </value>
+            <value>
+                <fullName>AP-Justicia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AP-Justicia</label>
+            </value>
+            <value>
+                <fullName>AP-Otras</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AP-Otras</label>
+            </value>
+            <value>
+                <fullName>AP-Procesos Electorales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AP-Procesos Electorales</label>
+            </value>
+            <value>
+                <fullName>AP-Recursos Humanos</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AP-Recursos Humanos</label>
+            </value>
+            <value>
+                <fullName>AP-Sociedad Información</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AP-Sociedad Información</label>
+            </value>
+            <value>
+                <fullName>AP-Tráfico</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AP-Tráfico</label>
+            </value>
+            <value>
+                <fullName>AP-Vivienda</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AP-Vivienda</label>
+            </value>
+            <value>
+                <fullName>EDU-Universidad pública</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EDU-Universidad pública</label>
+            </value>
+            <value>
+                <fullName>FIN-Finanzas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FIN-Finanzas</label>
+            </value>
+            <value>
+                <fullName>FIN-Seguros</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FIN-Seguros</label>
+            </value>
+            <value>
+                <fullName>SAL-Farmacéuticas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SAL-Farmacéuticas</label>
+            </value>
+            <value>
+                <fullName>SAL-Mutuas de salud</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SAL-Mutuas de salud</label>
+            </value>
+            <value>
+                <fullName>SAL-Sanidad pública</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SAL-Sanidad pública</label>
+            </value>
+            <value>
+                <fullName>SER-Servicios en general</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SER-Servicios en general</label>
+            </value>
+            <value>
+                <fullName>SER-Transporte</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SER-Transporte</label>
+            </value>
+            <value>
+                <fullName>SOL-GLOBAL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SOL-GLOBAL</label>
+            </value>
+            <value>
+                <fullName>UTI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UTI</label>
+            </value>
+            <value>
+                <fullName>UTI-Agua</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UTI-Agua</label>
+            </value>
+            <value>
+                <fullName>UTI-Electricidad</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UTI-Electricidad</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Possibility of unilateral termination</label>
+    <name>Posibilidad_de_resoluci_n_unilateral__c</name>
+</CustomFieldTranslation>

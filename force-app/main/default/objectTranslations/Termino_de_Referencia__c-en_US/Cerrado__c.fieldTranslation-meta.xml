@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Automatically checked when status is accepted</help>
+    <label>Closed</label>
+    <name>Cerrado__c</name>
+</CustomFieldTranslation>

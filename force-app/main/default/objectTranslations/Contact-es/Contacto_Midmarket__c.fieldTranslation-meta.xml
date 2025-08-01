@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contacto Midmarket --></label>
+    <name>Contacto_Midmarket__c</name>
+    <picklistValues>
+        <masterLabel>Calidad</masterLabel>
+        <translation><!-- Calidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comercial</masterLabel>
+        <translation><!-- Comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compras</masterLabel>
+        <translation><!-- Compras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentación</masterLabel>
+        <translation><!-- Documentación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financiero</masterLabel>
+        <translation><!-- Financiero --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gerente</masterLabel>
+        <translation><!-- Gerente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gestión Mtto. ERP</masterLabel>
+        <translation><!-- Gestión Mtto. ERP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gestión Mtto. ING</masterLabel>
+        <translation><!-- Gestión Mtto. ING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gestión Mtto. MES</masterLabel>
+        <translation><!-- Gestión Mtto. MES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I+D+i</masterLabel>
+        <translation><!-- I+D+i --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT</masterLabel>
+        <translation><!-- IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingeniería-Electrónica</masterLabel>
+        <translation><!-- Ingeniería-Electrónica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingeniería-Eléctrica</masterLabel>
+        <translation><!-- Ingeniería-Eléctrica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingeniería-Mecánica</masterLabel>
+        <translation><!-- Ingeniería-Mecánica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logística-ERP/Almacen</masterLabel>
+        <translation><!-- Logística-ERP/Almacen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logística-MES</masterLabel>
+        <translation><!-- Logística-MES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mantenimiento</masterLabel>
+        <translation><!-- Mantenimiento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Montaje</masterLabel>
+        <translation><!-- Montaje --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros</masterLabel>
+        <translation><!-- Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Procesos</masterLabel>
+        <translation><!-- Procesos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Producción</masterLabel>
+        <translation><!-- Producción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Programador CNC</masterLabel>
+        <translation><!-- Programador CNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propietario</masterLabel>
+        <translation><!-- Propietario --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proyectos</masterLabel>
+        <translation><!-- Proyectos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RRHH</masterLabel>
+        <translation><!-- RRHH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAT</masterLabel>
+        <translation><!-- SAT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

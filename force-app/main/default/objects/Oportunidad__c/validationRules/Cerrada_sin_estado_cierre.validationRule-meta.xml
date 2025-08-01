@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cerrada_sin_estado_cierre</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+		 RecordType.DeveloperName &lt;&gt; &apos;Ayesa&apos;,
+OR(
+ISPICKVAL( Etapa__c , &apos;Cerrada&apos;),
+ISPICKVAL(Etapa_Fase__c,&apos;Cerrada&apos;)
+),
+ISPICKVAL( Estado_de_Cierre__c , &quot;&quot;)
+)</errorConditionFormula>
+    <errorMessage>Debe seleccionar el Estado de cierre</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Permisos_BL</name>
+    </customPermissions>
+    <description>Acceso al campo Bussines Unit  de los de BL</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Oportunidad__c.Departamento__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM Bussines Unit BL</label>
+</PermissionSet>

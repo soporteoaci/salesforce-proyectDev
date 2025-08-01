@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de proyecto --></label>
+    <name>Tipo_de_proyecto__c</name>
+    <picklistValues>
+        <masterLabel>AMS</masterLabel>
+        <translation><!-- AMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asistencia Técnica</masterLabel>
+        <translation><!-- Asistencia Técnica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BPM</masterLabel>
+        <translation><!-- BPM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultoría</masterLabel>
+        <translation><!-- Consultoría --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITO</masterLabel>
+        <translation><!-- ITO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMO</masterLabel>
+        <translation><!-- PMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proyecto por hitos</masterLabel>
+        <translation><!-- Proyecto por hitos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios AM</masterLabel>
+        <translation><!-- Servicios AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suministro</masterLabel>
+        <translation><!-- Suministro --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

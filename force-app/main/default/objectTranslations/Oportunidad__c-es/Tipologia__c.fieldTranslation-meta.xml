@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo Producto/Servicio --></label>
+    <name>Tipologia__c</name>
+    <picklistValues>
+        <masterLabel>ANTEPROYECTO / ESTUDIOS E INFORMES</masterLabel>
+        <translation><!-- ANTEPROYECTO / ESTUDIOS E INFORMES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asistencia técnica</masterLabel>
+        <translation><!-- Asistencia técnica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DO/SUPERVISIÓN DE OBRA</masterLabel>
+        <translation><!-- DO/SUPERVISIÓN DE OBRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPC/CONSTRUCCIÓN</masterLabel>
+        <translation><!-- EPC/CONSTRUCCIÓN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGENIERÍA BÁSICA / FEL</masterLabel>
+        <translation><!-- INGENIERÍA BÁSICA / FEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGENIERÍA DE DETALLE</masterLabel>
+        <translation><!-- INGENIERÍA DE DETALLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGENIERÍA DE LA PROPIEDAD</masterLabel>
+        <translation><!-- INGENIERÍA DE LA PROPIEDAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGENIERÍA Y SUMINISTROS</masterLabel>
+        <translation><!-- INGENIERÍA Y SUMINISTROS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LLAVES EN MANO</masterLabel>
+        <translation><!-- LLAVES EN MANO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mantenimiento de productos</masterLabel>
+        <translation><!-- Mantenimiento de productos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Producto</masterLabel>
+        <translation><!-- Producto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proyecto</masterLabel>
+        <translation><!-- Proyecto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REDACCIÓN DE PROYECTOS Y DIRECCIÓN DE OBRA</masterLabel>
+        <translation><!-- REDACCIÓN DE PROYECTOS Y DIRECCIÓN DE OBRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios ANS</masterLabel>
+        <translation><!-- Servicios ANS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios sin ANS</masterLabel>
+        <translation><!-- Servicios sin ANS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soluciones</masterLabel>
+        <translation><!-- Soluciones --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contabiliza__c</fullName>
+    <description>Informe nº ofertas presentadas</description>
+    <formula>IF(Oportunidad_Relacionada__c = null, true, 
+				YEAR(Fecha_limite_de_presentacion__c )  &lt;&gt; YEAR(Oportunidad_Relacionada__r.Fecha_limite_de_presentacion__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contabiliza</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

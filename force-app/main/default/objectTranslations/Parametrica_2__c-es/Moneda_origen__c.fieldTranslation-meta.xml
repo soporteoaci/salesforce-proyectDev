@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Moneda origen --></label>
+    <name>Moneda_origen__c</name>
+    <picklistValues>
+        <masterLabel>Peso argentino</masterLabel>
+        <translation><!-- Peso argentino --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

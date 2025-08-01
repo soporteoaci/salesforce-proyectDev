@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mercado__c</fullName>
+    <label>Mercado</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>60029505</fullName>
+                <default>false</default>
+                <label>V-AERONAUTICS</label>
+            </value>
+            <value>
+                <fullName>V-ANGLO MARKET</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-ANGLO MARKET</label>
+            </value>
+            <value>
+                <fullName>60034542</fullName>
+                <default>false</default>
+                <label>V-BFSI, TELCO &amp; MEDIA</label>
+            </value>
+            <value>
+                <fullName>V-CITIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-CITIES</label>
+            </value>
+            <value>
+                <fullName>60029413</fullName>
+                <default>false</default>
+                <label>V-DIGITAL ADMINISTRATION &amp; HEALTH</label>
+            </value>
+            <value>
+                <fullName>60030704</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-INNO</label>
+            </value>
+            <value>
+                <fullName>60029512</fullName>
+                <default>false</default>
+                <label>V-MANUFACT. &amp; COMSUMER</label>
+            </value>
+            <value>
+                <fullName>60029482</fullName>
+                <default>false</default>
+                <label>V-RESOURCES &amp; ENVIRONMENT</label>
+            </value>
+            <value>
+                <fullName>60029494</fullName>
+                <default>false</default>
+                <label>V-TRANSPORTATION &amp; CITIES</label>
+            </value>
+            <value>
+                <fullName>60029427</fullName>
+                <default>false</default>
+                <label>V-UTILITIES &amp; ENERGY</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

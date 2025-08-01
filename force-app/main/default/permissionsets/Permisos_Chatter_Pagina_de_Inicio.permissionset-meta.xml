@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Permiso_Chatter_Pagina_Inicio</name>
+    </customPermissions>
+    <description>Permiso para ver el Chatter en la página de Inicio. Se usará sólo para perfiles IT&amp;DS, Directores de Mercado, responsables de Delivery Center y de Preventa</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Permisos Chatter Pagina de Inicio</label>
+</PermissionSet>

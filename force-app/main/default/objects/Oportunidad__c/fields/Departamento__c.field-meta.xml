@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Departamento__c</fullName>
+    <label>Departamento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Assessment &amp; Planning</fullName>
+                <default>false</default>
+                <label>Assessment &amp; Planning</label>
+            </value>
+            <value>
+                <fullName>Belfast</fullName>
+                <default>false</default>
+                <label>Belfast</label>
+            </value>
+            <value>
+                <fullName>Dublin</fullName>
+                <default>false</default>
+                <label>Dublin</label>
+            </value>
+            <value>
+                <fullName>Environmental Services</fullName>
+                <default>false</default>
+                <label>Environmental Services</label>
+            </value>
+            <value>
+                <fullName>Environmental UK</fullName>
+                <default>false</default>
+                <label>Environmental UK</label>
+            </value>
+            <value>
+                <fullName>Flooding-Cork</fullName>
+                <default>false</default>
+                <label>Flooding-Cork</label>
+            </value>
+            <value>
+                <fullName>Galway</fullName>
+                <default>false</default>
+                <label>Galway</label>
+            </value>
+            <value>
+                <fullName>Guildford Geo</fullName>
+                <default>false</default>
+                <label>Guildford Geo</label>
+            </value>
+            <value>
+                <fullName>Guildford Structures</fullName>
+                <default>false</default>
+                <label>Guildford Structures</label>
+            </value>
+            <value>
+                <fullName>London</fullName>
+                <default>false</default>
+                <label>London</label>
+            </value>
+            <value>
+                <fullName>Major Projects</fullName>
+                <default>false</default>
+                <label>Major Projects</label>
+            </value>
+            <value>
+                <fullName>Manchester</fullName>
+                <default>false</default>
+                <label>Manchester</label>
+            </value>
+            <value>
+                <fullName>Marine Ireland</fullName>
+                <default>false</default>
+                <label>Marine Ireland</label>
+            </value>
+            <value>
+                <fullName>Marine UK</fullName>
+                <default>false</default>
+                <label>Marine UK</label>
+            </value>
+            <value>
+                <fullName>Middle East</fullName>
+                <default>false</default>
+                <label>Middle East</label>
+            </value>
+            <value>
+                <fullName>Water Ireland</fullName>
+                <default>false</default>
+                <label>Water Ireland</label>
+            </value>
+            <value>
+                <fullName>Water UK</fullName>
+                <default>false</default>
+                <label>Water UK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

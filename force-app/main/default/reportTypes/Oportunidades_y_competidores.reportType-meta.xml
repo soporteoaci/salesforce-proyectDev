@@ -1,0 +1,1645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Oportunidad__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Oportunidades personalizadas que pueden tener o no competidores</description>
+    <label>CRM Oportunidades</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad Id.</displayNameOverride>
+            <field>Id</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tipo_Oportunidad__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Propietario</displayNameOverride>
+            <field>Owner</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Tema</displayNameOverride>
+            <field>Name</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha de creación</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Creado por</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha de la última modificación</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Pais_del_cliente__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Última modificación por</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Última fecha de actividad</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Pais_Origen__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Subfase__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Pais_IT__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Título Oficial</displayNameOverride>
+            <field>Nombre_Corto__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cliente</displayNameOverride>
+            <field>Cliente__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contacto Principal</displayNameOverride>
+            <field>Contacto_Principal__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Area</displayNameOverride>
+            <field>Area__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Negocio</displayNameOverride>
+            <field>Negocio__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Código Oportunidad Comercial</displayNameOverride>
+            <field>Codigo_OC__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>División ANTIGUA</displayNameOverride>
+            <field>Division__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>País</displayNameOverride>
+            <field>Pais__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Código Oferta SAP</displayNameOverride>
+            <field>Oferta_SAP__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen Previsto Euros</displayNameOverride>
+            <field>Margen_Previsto_Euros__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe total ofertado (sin IVA) Euros</displayNameOverride>
+            <field>Importe_total_sin_IVA__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Total Ofertado en divisa local</displayNameOverride>
+            <field>Importe_en_divisa_local__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe en Euros</displayNameOverride>
+            <field>Importe_euros__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha de cierre</displayNameOverride>
+            <field>Fecha_estimada_de_cierre__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>% Margen estimado (incluye recargos)</displayNameOverride>
+            <field>Margen_estimado_incluye_recargos__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Probabilidad</displayNameOverride>
+            <field>Probabilidad__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha presentación</displayNameOverride>
+            <field>Fecha_limite_de_presentacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo de registro</displayNameOverride>
+            <field>RecordType</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Plazo de ejecución estimado (meses)</displayNameOverride>
+            <field>Plazo_de_ejecuci_n_meses__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Contratado Año (€) (Importe SAP)</displayNameOverride>
+            <field>Contratado_a_o_oportunidad__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Producción estimada año oportunidad (€)</displayNameOverride>
+            <field>Producci_n_estimada_a_o_oportunidad__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha adjudicación</displayNameOverride>
+            <field>Fecha_adjudicacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Producción estimada año poderada</displayNameOverride>
+            <field>Produccion_estimada_a_o_poderada__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo de Participación</displayNameOverride>
+            <field>Tipo_Participacion_Ayesa__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>% Participación Ayesa</displayNameOverride>
+            <field>Participacion_Ayesa__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Diversificación</displayNameOverride>
+            <field>Diversificacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>% K</displayNameOverride>
+            <field>K__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>¿Ha incluido el IO en Alejandría?</displayNameOverride>
+            <field>IO__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>% de Baja Ofertado</displayNameOverride>
+            <field>Porcentaje_de_Baja_Ofertado__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Observaciones</displayNameOverride>
+            <field>Observaciones__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>¿Ha incluido el IRPO en Alejandría?</displayNameOverride>
+            <field>IRPO__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad Matriz</displayNameOverride>
+            <field>Oportunidad_Relacionada__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Adjudicada</displayNameOverride>
+            <field>Adjudicada__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CPV</displayNameOverride>
+            <field>CPV__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Etapa</displayNameOverride>
+            <field>Etapa__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SS</displayNameOverride>
+            <field>SS__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>% M</displayNameOverride>
+            <field>M__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Estado de madurez</displayNameOverride>
+            <field>Tipo_de_Oportunidad__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Ponderado</displayNameOverride>
+            <field>Importe_Ponderado__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Área de negocio</displayNameOverride>
+            <field>Area_de_negocio__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Adjudicatario</displayNameOverride>
+            <field>Adjudicatario__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oport. contemplada en presupuesto Ayesa</displayNameOverride>
+            <field>Oport_en_presupuesto_Ayesa__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actualizar Estado</displayNameOverride>
+            <field>Actualizar_Estado__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Producto</displayNameOverride>
+            <field>Producto__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AETIC</displayNameOverride>
+            <field>AETIC__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Área de negocio N1</displayNameOverride>
+            <field>Area_de_negocio_N1__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Subcontrataciones nominadas</displayNameOverride>
+            <field>Subcontrataciones__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tecnología</displayNameOverride>
+            <field>Tecnologia__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Estado de Cierre</displayNameOverride>
+            <field>Estado_de_Cierre__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cuenta Principal</displayNameOverride>
+            <field>Cuenta_Principal__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Área de negocio N2</displayNameOverride>
+            <field>Area_de_negocio_N2__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Existencia de Incoherencias</displayNameOverride>
+            <field>Existencia_de_Incoherencias__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sociedad</displayNameOverride>
+            <field>Sociedad_Ayesa__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo Producto/Servicio</displayNameOverride>
+            <field>Tipologia__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Big Deal</displayNameOverride>
+            <field>Oportunidad_estrategica__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Oferta sin impuestos</displayNameOverride>
+            <field>Importe_Oferta_sin_impuestos__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Innovación</displayNameOverride>
+            <field>Innovacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Proyecto Especial</displayNameOverride>
+            <field>Proyecto_Especial__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Total (sin IVA) €</displayNameOverride>
+            <field>Importe_Licitacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Clase de oferta</displayNameOverride>
+            <field>Clase_de_oferta__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha firma contrato</displayNameOverride>
+            <field>Fecha_firma_contrato__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>% Margen contrato</displayNameOverride>
+            <field>Margen_contrato__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Mercado</displayNameOverride>
+            <field>Mercado__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>División / Sector de Mercado</displayNameOverride>
+            <field>DivisionPicklist__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Subdivisión / Subsector de Mercado</displayNameOverride>
+            <field>Subdivision1__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Subdivisión 2</displayNameOverride>
+            <field>Subdivision2__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Mercado_literal</displayNameOverride>
+            <field>Mercado_literal__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección Operaciones</displayNameOverride>
+            <field>Direccion_Operaciones__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ETC Value Offering</displayNameOverride>
+            <field>ETC_Value_Offering__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ETC&amp;Innovación</displayNameOverride>
+            <field>ETC_Innovaci_n__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Departamento RO</displayNameOverride>
+            <field>Departamento_RO__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ETC</displayNameOverride>
+            <field>ETC__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FiscalYear</displayNameOverride>
+            <field>FiscalYear__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FiscalQuarter</displayNameOverride>
+            <field>FiscalQuarter__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Costes</displayNameOverride>
+            <field>Costes__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo Propuesto Servicio Atenea</displayNameOverride>
+            <field>C_digo_proyecto_Servicio_Atenea__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Motivo de cierre</displayNameOverride>
+            <field>Motivo_Perdido__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Modelo de Servicio</displayNameOverride>
+            <field>Modelo_de_Servicio__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Modo de presentación</displayNameOverride>
+            <field>Modo_de_presentacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Detalle modo de presentación</displayNameOverride>
+            <field>Detalle_modo_de_presentaci_n__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha Creacion</displayNameOverride>
+            <field>Fecha_Creacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Departamento</displayNameOverride>
+            <field>Departamento__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sinergias</displayNameOverride>
+            <field>Cross_Selling__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comentario Sinergia</displayNameOverride>
+            <field>Comentario_Cross_Selling__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Negocio Recurrente/Nuevo</displayNameOverride>
+            <field>Negocio_Recurrente__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen Ofertado €</displayNameOverride>
+            <field>Margen_Ofertado_Euros__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Horizontal</displayNameOverride>
+            <field>Horizontal__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo de proyecto</displayNameOverride>
+            <field>Tipo_de_proyecto__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Número Oportunidad</displayNameOverride>
+            <field>NUMOPORT__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Computar</displayNameOverride>
+            <field>Computar__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Porcentaje Comercial Apoyo</displayNameOverride>
+            <field>PORCCOMAPOYO__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comercial Apoyo</displayNameOverride>
+            <field>COMAPOYO__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Validación económica DEF</displayNameOverride>
+            <field>VALIDACIONDEF__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha última revisión Q0</displayNameOverride>
+            <field>FECULTREVISIONQ0__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Valoración Q0</displayNameOverride>
+            <field>VALORACIONQ0__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Riesgo</displayNameOverride>
+            <field>RIESGO__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Observaciones Q0</displayNameOverride>
+            <field>OBSERVACIONESQ0__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe OCP</displayNameOverride>
+            <field>IMPORTEOCP__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rentabilidad OCP</displayNameOverride>
+            <field>RENTABILIDADOCP__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Nº Oportunidad (Industria)</displayNameOverride>
+            <field>N_Oportunidad_Industria__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad VIP</displayNameOverride>
+            <field>Oportunidad_VIP__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Componente Ciberseguridad</displayNameOverride>
+            <field>componente_ciber__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>NextGeneration</displayNameOverride>
+            <field>NextGeneration__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CR Super</displayNameOverride>
+            <field>CR_Super__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>% Rentabilidad</displayNameOverride>
+            <field>RENTPPTO__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fase</displayNameOverride>
+            <field>Fase__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Organización Ibermática</displayNameOverride>
+            <field>Organizacion_Ibermatica__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Organización Ibermática Literal</displayNameOverride>
+            <field>Oraganizacion_Ibermatica_Literal__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Código Oferta Súper</displayNameOverride>
+            <field>Codigo_Oferta_Super__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Business Developer</displayNameOverride>
+            <field>BusinessDeveloper__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Porcentaje Business Developer</displayNameOverride>
+            <field>Porcentaje_Business_Developer__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referencia Comercial</displayNameOverride>
+            <field>Referencia_Comercial__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>GP_Super</displayNameOverride>
+            <field>GP_Super__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Estado oportunidad</displayNameOverride>
+            <field>Estado_oportunidad__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Servicio</displayNameOverride>
+            <field>importe_servicio__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe HW</displayNameOverride>
+            <field>importe_productoHard__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe SW</displayNameOverride>
+            <field>importe_productoSoft__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Mtto. HW</displayNameOverride>
+            <field>importe_mtoHard__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Mtto. SW</displayNameOverride>
+            <field>importe_mtoSoft__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen Servicio</displayNameOverride>
+            <field>margen_servicio__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen HW</displayNameOverride>
+            <field>margen_productoHard__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen SW</displayNameOverride>
+            <field>margen_productoSoft__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen Mtto. HW</displayNameOverride>
+            <field>margen_mtoHard__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen Mtto. SW</displayNameOverride>
+            <field>margen_mtoSoft__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Desglose importes</displayNameOverride>
+            <field>Desglose_importes__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rentabilidad HW</displayNameOverride>
+            <field>Rentabilidad_HW__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rentabilidad Mtto. HW</displayNameOverride>
+            <field>Rentabilidad_Mtto_HW__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rentabilidad SW</displayNameOverride>
+            <field>Rentabilidad_SW__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rentabilidad Mtto. SW</displayNameOverride>
+            <field>Rentabilidad_Mtto_SW__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rentabilidad Servicio</displayNameOverride>
+            <field>Rentabilidad_Serv__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Etapa Fase</displayNameOverride>
+            <field>Etapa_Fase__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>% éxito</displayNameOverride>
+            <field>Porcentaje_existo_form__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo CCI</displayNameOverride>
+            <field>Codigo_CCI__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Propietario</displayNameOverride>
+            <field>Propietario_custom__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Comercial Apoyo</displayNameOverride>
+            <field>Importe_Comercial_Apoyo__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Propietario</displayNameOverride>
+            <field>Importe_Propietario__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe total IB</displayNameOverride>
+            <field>Importe_total_IB__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen total IB</displayNameOverride>
+            <field>Margen_total_IB__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Inside Sales</displayNameOverride>
+            <field>Inside_Siles__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha Siguiente Paso</displayNameOverride>
+            <field>Fecha_SP__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaña</displayNameOverride>
+            <field>Campanya__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contacto implantación</displayNameOverride>
+            <field>Contacto_implantacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contacto facturación</displayNameOverride>
+            <field>Contacto_facturacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Última actividad cuenta</displayNameOverride>
+            <field>Ultima_actividad_cuenta__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe Business Developer</displayNameOverride>
+            <field>Importe_Business_Developer__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Clonada</displayNameOverride>
+            <field>Clonada__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Informacion desglose</displayNameOverride>
+            <field>Informacion_desglose__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Mostrar OCP seccion</displayNameOverride>
+            <field>Mostrar_OCP_seccion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe limite OCP</displayNameOverride>
+            <field>Importe_limite_OCP__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Coherencia en los datos</displayNameOverride>
+            <field>Imagen_Incoherencia_de_datos__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Area SME</displayNameOverride>
+            <field>Area_IB__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CCI</displayNameOverride>
+            <field>CCI_valor__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Capacidad ejecución</displayNameOverride>
+            <field>Capacidad_ejecucion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Decisión aprobación acuerdo de socios</displayNameOverride>
+            <field>Decision_aprobacion_acuerdo_de_socios__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cualificación tipo de negocio</displayNameOverride>
+            <field>Cualificaci_n_tipo_de_negocio__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe total ofertado (sin IVA) local</displayNameOverride>
+            <field>Importe_total_ofertado_sin_IVA_local__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Composición UTE</displayNameOverride>
+            <field>Composicion_UTE__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enviar aprobación Borrador Acuerdo Socio</displayNameOverride>
+            <field>Aprobacion_Borrador_Acuerdo_de_Socios__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email CEO y COO</displayNameOverride>
+            <field>Email_CEO_COO__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>División / Sector de Mercados</displayNameOverride>
+            <field>Sector_de_Mercados__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Director de División</displayNameOverride>
+            <field>Director_Division__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Estimación coste preventa</displayNameOverride>
+            <field>Estimacion_coste_preventa__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Director Compliance</displayNameOverride>
+            <field>Director_Compliance__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección Financiera Corporativa</displayNameOverride>
+            <field>Direccion_Financiera_Corporativa__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen Previsto Local</displayNameOverride>
+            <field>Margen_Previsto_Local__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Director Global de QA &amp; Risk</displayNameOverride>
+            <field>Director_Global_de_QA_Risk__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Delivery Center</displayNameOverride>
+            <field>Delivery_Center__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Divisa</displayNameOverride>
+            <field>CurrencyIsoCode</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Director País</displayNameOverride>
+            <field>Director_Pais__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Estado de cierre</displayNameOverride>
+            <field>Estado_de_Cierre_SME__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Director de Mercado</displayNameOverride>
+            <field>Director_de_Mercado__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Decision Oferta Smart BPM Offer</displayNameOverride>
+            <field>Decision_Oferta_Smart_BPM_Offer__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Decisión Aprobación Oferta</displayNameOverride>
+            <field>Decision_Aprobacion_Oferta__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen Business Developer</displayNameOverride>
+            <field>Margen_Business_Developer__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen Comercial Apoyo</displayNameOverride>
+            <field>Margen_Comercial_Apoyo__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Decisión Go Preliminar</displayNameOverride>
+            <field>Decision_Go_Smart_BPM_Offer__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Decisión QA Técnico</displayNameOverride>
+            <field>Decision_QA_Tecnico__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen Propietario</displayNameOverride>
+            <field>Margen_Propietario__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Internacional</displayNameOverride>
+            <field>Internacional__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Decisión QA Económico</displayNameOverride>
+            <field>Decision_QA_Economico__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Certificaciones perfiles</displayNameOverride>
+            <field>Certificaciones_perfiles__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Borrado Lógico</displayNameOverride>
+            <field>Borrado_Logico__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FICEPI Owner</displayNameOverride>
+            <field>FICEPI_Owner__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo CR Super</displayNameOverride>
+            <field>Codigo_CR_Super__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo FICEPI Gestor Produccion</displayNameOverride>
+            <field>Codigo_FICEPI_GP__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rentabilidad</displayNameOverride>
+            <field>Rentabilidad__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo Org Comercial IB</displayNameOverride>
+            <field>Codigo_Org_Comercial_IB__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo Area Con Tecnologica</displayNameOverride>
+            <field>Codigo_Area_Con_Tecnologica__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Riesgo literal</displayNameOverride>
+            <field>Riesgo_literal__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>GUID Clip</displayNameOverride>
+            <field>GUID_Clip__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Siguiente Paso</displayNameOverride>
+            <field>Siguiente_Paso__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo CR HW Super</displayNameOverride>
+            <field>Codigo_CR_HW_Super__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo CR SW Super</displayNameOverride>
+            <field>Codigo_CR_SW_Super__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comentario Siguiente Paso</displayNameOverride>
+            <field>Comentario_Siguiente_Paso__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha inicio producción</displayNameOverride>
+            <field>Fecha_inicio_produccion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha Suspect</displayNameOverride>
+            <field>Fecha_Suspect__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha Lead</displayNameOverride>
+            <field>Fecha_Lead__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha Oportunity</displayNameOverride>
+            <field>Fecha_Oportunity__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Bloqueada</displayNameOverride>
+            <field>Bloqueada__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo Campaña</displayNameOverride>
+            <field>Tipo_Campa_a__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Perfil cambia estado suspect</displayNameOverride>
+            <field>Perfil_cambia_estado_suspect__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Perfil cambia estado lead</displayNameOverride>
+            <field>Perfil_cambia_estado_lead__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Perfil cambia estado opportunity</displayNameOverride>
+            <field>Perfil_cambia_estado_opportunity__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Modificar importes</displayNameOverride>
+            <field>Modificar_importes__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Record Type Name</displayNameOverride>
+            <field>Record_Type_Name__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Documentacion IB</displayNameOverride>
+            <field>Documentacion_IB__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Extensión</displayNameOverride>
+            <field>Extension__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FICEPI Business Developer</displayNameOverride>
+            <field>FICEPI_Business_Developer__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner Rol</displayNameOverride>
+            <field>Owner_Rol__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Mes Cierre</displayNameOverride>
+            <field>Mes_Cierre__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Propietario old Ibermatica</displayNameOverride>
+            <field>Propietario_old_Ibermatica__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Creador Oportunidad es IS</displayNameOverride>
+            <field>Creador_Oportunidad_es_IS__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Creadas SME IS Clip</displayNameOverride>
+            <field>Creadas_SME_IS_Clip__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad : Oportunidad Matriz : Código Oportunidad Comercial</displayNameOverride>
+            <field>Oportunidad_Relacionada__c.Codigo_OC__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad : Referencia Comercial : Referencia Comercial Id.</displayNameOverride>
+            <field>Referencia_Comercial_lookup__c.Id</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Margen Ponderado</displayNameOverride>
+            <field>Margen_Ponderado__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipificación Manual</displayNameOverride>
+            <field>Tipificacion_Manual__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Observaciones Administrador</displayNameOverride>
+            <field>Observaciones_Administrador__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Nº Ftes</displayNameOverride>
+            <field>N_Ftes__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Código AJI</displayNameOverride>
+            <field>Codigo_AJI__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comprobación MARGEN</displayNameOverride>
+            <field>Comprobaci_n_MARGEN__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Decisión Socios</displayNameOverride>
+            <field>Decision_Socios__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Decisión Subcontrataciones</displayNameOverride>
+            <field>Decision_Subcontrataciones__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo OC Relacionada</displayNameOverride>
+            <field>Codigo_OC_Relacionada__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referencia Comercial</displayNameOverride>
+            <field>Referencia_Comercial_lookup__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CR HW Super</displayNameOverride>
+            <field>CR_HW_Super__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Título corto SAP</displayNameOverride>
+            <field>Titulo_corto_SAP__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Nº mes presentacion</displayNameOverride>
+            <field>N_mes_presentacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CR SW Super</displayNameOverride>
+            <field>CR_SW_Super__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo Estado de Cierre</displayNameOverride>
+            <field>Codigo_Estado_de_Cierre__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad : Cliente : Sector de Mercado IT</displayNameOverride>
+            <field>Cliente__c.Sector_de_Mercado_IT__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Importe final</displayNameOverride>
+            <field>Importe_final__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha presentacion</displayNameOverride>
+            <field>Fecha_presentacion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sale Opportunity Code Old</displayNameOverride>
+            <field>Codigo_OC2__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contabiliza</displayNameOverride>
+            <field>Contabiliza__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Pipeline</displayNameOverride>
+            <field>Pipeline__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad : Comercial Apoyo : FICEPI</displayNameOverride>
+            <field>COMAPOYO__c.FICEPI__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sinergias</displayNameOverride>
+            <field>Cross_Selling_Picklist__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>VTH Technology - Level 2</displayNameOverride>
+            <field>VTH_Technology_Level_2__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad : Cliente : AccountId18Char</displayNameOverride>
+            <field>Cliente__c.ActOn__AccountId18Char__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad : Contacto implantación : Contacto Id 18</displayNameOverride>
+            <field>Contacto_implantacion__c.Contacto_Id_18__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad Id 18</displayNameOverride>
+            <field>Oportunidad_Id_18__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad : Contacto Principal : Contacto Id 18</displayNameOverride>
+            <field>Contacto_Principal__c.Contacto_Id_18__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Motivo de excepción</displayNameOverride>
+            <field>Motivo_de_excepcion__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad : Contacto facturación : Contacto Id 18</displayNameOverride>
+            <field>Contacto_facturacion__c.Contacto_Id_18__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oportunidad : Campaña : Campaña Id 18</displayNameOverride>
+            <field>Campanya__c.Campa_a_Id_18__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tipo_de_servicio__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tipo_de_contrato__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cloud_On_premise__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Service_Model__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>URL_Carpeta__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DOC_Contrato__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Innovation_Work_Stream__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tipo_Induccion_1__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tipo_Induccion_2__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tipo_Induccion_3__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tipo_Induccion_4__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Proyecto_Inductor_1__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Proyecto_Inductor_2__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Proyecto_Inductor_3__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Proyecto_Inductor_4__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Decisi_n_Equipo_Preventa__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tipo_para_Informe__c</field>
+            <table>Oportunidad__c</table>
+        </columns>
+        <masterLabel>Oportunidades</masterLabel>
+    </sections>
+</ReportType>

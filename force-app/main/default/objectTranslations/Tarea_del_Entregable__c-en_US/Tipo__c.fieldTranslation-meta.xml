@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Tipe</label>
+    <name>Tipo__c</name>
+    <picklistValues>
+        <masterLabel>Acta</masterLabel>
+        <translation><!-- Acta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Configuración</masterLabel>
+        <translation>Configuration</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diseño</masterLabel>
+        <translation>Design</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oficio</masterLabel>
+        <translation>Job</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plan de trabajo</masterLabel>
+        <translation>Workplan</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presentación</masterLabel>
+        <translation>Presentation</translation>
+    </picklistValues>
+</CustomFieldTranslation>

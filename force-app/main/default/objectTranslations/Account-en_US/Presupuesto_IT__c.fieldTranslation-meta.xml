@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>IT budget</label>
+    <name>Presupuesto_IT__c</name>
+    <picklistValues>
+        <masterLabel>1M€-5M€</masterLabel>
+        <translation><!-- 1M€-5M€ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt;1M</masterLabel>
+        <translation><!-- &lt;1M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;5M€</masterLabel>
+        <translation><!-- &gt;5M€ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

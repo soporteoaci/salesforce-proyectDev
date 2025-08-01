@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Referencia del expediente en MS Power Automate --></help>
+    <label><!-- ID Registro Dataverso --></label>
+    <name>id_registro_dataverso__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicar el importe correspondiente de Ayesa en la UTE --></help>
+    <label><!-- Importe UTE Ayesa --></label>
+    <name>Importe_adjudicacion__c</name>
+</CustomFieldTranslation>

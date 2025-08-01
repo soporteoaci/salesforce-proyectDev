@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Comunicación</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Comunicaciones</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Formato Correo</layout>
+        <sections>
+            <label>Details</label>
+            <section>Detalles</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Oficio</layout>
+        <sections>
+            <label>Details</label>
+            <section>Detalles</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Comunicación que representa un Acta --></description>
+        <label><!-- Acta --></label>
+        <name>Acta</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Comunicación que representa un Correo Electrónico --></description>
+        <label><!-- Correo Electrónico --></label>
+        <name>Correo_Electronico</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Comunicación que representa un Oficio Enviado o Recibido. --></description>
+        <label><!-- Oficio --></label>
+        <name>Oficio</name>
+    </recordTypes>
+</CustomObjectTranslation>

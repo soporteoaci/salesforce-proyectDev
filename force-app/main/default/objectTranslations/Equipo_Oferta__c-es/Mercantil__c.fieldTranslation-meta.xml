@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Mercantil --></label>
+    <name>Mercantil__c</name>
+    <picklistValues>
+        <masterLabel>0002 - AYESA ENGINEERING S.A</masterLabel>
+        <translation><!-- 0002 - AYESA ENGINEERING S.A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0003 - AYESA ING. Y ARQU., S.A.</masterLabel>
+        <translation><!-- 0003 - AYESA ING. Y ARQU., S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0004 - ALIA GESTION S.L.</masterLabel>
+        <translation><!-- 0004 - ALIA GESTION S.L. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0005 - AYNOVA, S.A.U.</masterLabel>
+        <translation><!-- 0005 - AYNOVA, S.A.U. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0007 - ACT SISTEMAS, S.L.U.</masterLabel>
+        <translation><!-- 0007 - ACT SISTEMAS, S.L.U. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0012 - AYESA MDE, S.A.</masterLabel>
+        <translation><!-- 0012 - AYESA MDE, S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0018 - AYESA AIR CONTROL S.L.</masterLabel>
+        <translation><!-- 0018 - AYESA AIR CONTROL S.L. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0021 - AYESA MEXICO,S.A. de C.V.</masterLabel>
+        <translation><!-- 0021 - AYESA MEXICO,S.A. de C.V. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0023 - AYESA SUCURSAL POLONIA</masterLabel>
+        <translation><!-- 0023 - AYESA SUCURSAL POLONIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0024 - AYESA POLSKA SP. Z O.O.</masterLabel>
+        <translation><!-- 0024 - AYESA POLSKA SP. Z O.O. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0025 - AYESA MAROC, S.A.R.L</masterLabel>
+        <translation><!-- 0025 - AYESA MAROC, S.A.R.L --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0027 - AYESA IMPLEMEN. TECN. S.A</masterLabel>
+        <translation><!-- 0027 - AYESA IMPLEMEN. TECN. S.A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0030 - AYESA ALGERIE S.A.R.L.</masterLabel>
+        <translation><!-- 0030 - AYESA ALGERIE S.A.R.L. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0034 - AYESA SERVICIOS S RL DECV</masterLabel>
+        <translation><!-- 0034 - AYESA SERVICIOS S RL DECV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0035 - ALIA WORLDWIDE, S.L.</masterLabel>
+        <translation><!-- 0035 - ALIA WORLDWIDE, S.L. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0036 - AYESA BRANCH OFFICE</masterLabel>
+        <translation><!-- 0036 - AYESA BRANCH OFFICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0040 - AYESA ENGINYERIA SERVEIS</masterLabel>
+        <translation><!-- 0040 - AYESA ENGINYERIA SERVEIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0045 - ATECH ADVAN. SOL.</masterLabel>
+        <translation><!-- 0045 - ATECH ADVAN. SOL. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0047 - ATECH BPO, S.L.</masterLabel>
+        <translation><!-- 0047 - ATECH BPO, S.L. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0048 - UNITEC</masterLabel>
+        <translation><!-- 0048 - UNITEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0049 - INSOTECH INTERNATIONAL</masterLabel>
+        <translation><!-- 0049 - INSOTECH INTERNATIONAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0050 - AYESA PERÚ</masterLabel>
+        <translation><!-- 0050 - AYESA PERÚ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0053 - AYESA INDIA PRIVATE LIMIT</masterLabel>
+        <translation><!-- 0053 - AYESA INDIA PRIVATE LIMIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0054 - AYESA COLOMBIA SAS</masterLabel>
+        <translation><!-- 0054 - AYESA COLOMBIA SAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0056 - AYESA PANAMÁ</masterLabel>
+        <translation><!-- 0056 - AYESA PANAMÁ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0057 - AAT PANAMÁ RUC</masterLabel>
+        <translation><!-- 0057 - AAT PANAMÁ RUC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0058 - AYESA PANAMÁ RUC</masterLabel>
+        <translation><!-- 0058 - AYESA PANAMÁ RUC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0059 - AYESA COLOMBIA SUCURSAL</masterLabel>
+        <translation><!-- 0059 - AYESA COLOMBIA SUCURSAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0060 - AAT ECUADOR</masterLabel>
+        <translation><!-- 0060 - AAT ECUADOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0061 - AYESA ECUADOR</masterLabel>
+        <translation><!-- 0061 - AYESA ECUADOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0062 - AYESA CHILE</masterLabel>
+        <translation><!-- 0062 - AYESA CHILE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0063 - AAT CHILE</masterLabel>
+        <translation><!-- 0063 - AAT CHILE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0064 - AAT COLOMBIA Filial</masterLabel>
+        <translation><!-- 0064 - AAT COLOMBIA Filial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0065 - AAT COLOMBIA Sucursal</masterLabel>
+        <translation><!-- 0065 - AAT COLOMBIA Sucursal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0066 - AYESA LTD</masterLabel>
+        <translation><!-- 0066 - AYESA LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0067 - AAT ITALIA</masterLabel>
+        <translation><!-- 0067 - AAT ITALIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0068 - AAT MEXICO</masterLabel>
+        <translation><!-- 0068 - AAT MEXICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0070 - ACTEA DESARROLLO SOLUC.</masterLabel>
+        <translation><!-- 0070 - ACTEA DESARROLLO SOLUC. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0071 - AAT CHILE AGENCIA</masterLabel>
+        <translation><!-- 0071 - AAT CHILE AGENCIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0072 - AYESA DE COLOMBIA</masterLabel>
+        <translation><!-- 0072 - AYESA DE COLOMBIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0073 - AYESA EPC WORLD, S.A.</masterLabel>
+        <translation><!-- 0073 - AYESA EPC WORLD, S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0078 - AYESA ARABIA SAUDI SUCUR.</masterLabel>
+        <translation><!-- 0078 - AYESA ARABIA SAUDI SUCUR. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0079 - CONSORCIO AYESA S A</masterLabel>
+        <translation><!-- 0079 - CONSORCIO AYESA S A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0080 - E&amp;A RENEWABLE SOLUTIONS</masterLabel>
+        <translation><!-- 0080 - E&amp;A RENEWABLE SOLUTIONS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0081 - SIST. COMERCIALES BRASIL</masterLabel>
+        <translation><!-- 0081 - SIST. COMERCIALES BRASIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0082 - CONSORCIO A&amp;E PERÚ</masterLabel>
+        <translation><!-- 0082 - CONSORCIO A&amp;E PERÚ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0083 - ATECH BPO MARRUECOS SARL</masterLabel>
+        <translation><!-- 0083 - ATECH BPO MARRUECOS SARL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0086 - AAT PERU SUCURSAL</masterLabel>
+        <translation><!-- 0086 - AAT PERU SUCURSAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0087 - AAC Alemania</masterLabel>
+        <translation><!-- 0087 - AAC Alemania --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0088 - SUM INFRA-VENTURE MEXICO</masterLabel>
+        <translation><!-- 0088 - SUM INFRA-VENTURE MEXICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0089 - AYESA PROJETOS BRASIL LTD</masterLabel>
+        <translation><!-- 0089 - AYESA PROJETOS BRASIL LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0092 - AYESA SUCURSAL PORTUGAL</masterLabel>
+        <translation><!-- 0092 - AYESA SUCURSAL PORTUGAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0093 - AYESA ARCHITECTURAL ENGIN</masterLabel>
+        <translation><!-- 0093 - AYESA ARCHITECTURAL ENGIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0094 - ATECH BPO SUC COLOMBIA</masterLabel>
+        <translation><!-- 0094 - ATECH BPO SUC COLOMBIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0095 - Ayesa IA Agencia Chile</masterLabel>
+        <translation><!-- 0095 - Ayesa IA Agencia Chile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0099 - M2C CONSULTING &amp; PROCEDUR</masterLabel>
+        <translation><!-- 0099 - M2C CONSULTING &amp; PROCEDUR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0145 - AYESA SERV. DIG. AVANZADO</masterLabel>
+        <translation><!-- 0145 - AYESA SERV. DIG. AVANZADO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0146 - EMERGYA DIGITAL SOLUTIONS</masterLabel>
+        <translation><!-- 0146 - EMERGYA DIGITAL SOLUTIONS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0151 - BYRNELOOBY</masterLabel>
+        <translation><!-- 0151 - BYRNELOOBY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0170 - AYESA IBERMÁTICA, S.A.U.</masterLabel>
+        <translation><!-- 0170 - AYESA IBERMÁTICA, S.A.U. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0171 - ITS</masterLabel>
+        <translation><!-- 0171 - ITS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0172 - EL ARTE DE MEDIR EN DIGITAL</masterLabel>
+        <translation><!-- 0172 - EL ARTE DE MEDIR EN DIGITAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0173 - I3B</masterLabel>
+        <translation><!-- 0173 - I3B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0175 - TECNET</masterLabel>
+        <translation><!-- 0175 - TECNET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0176 - IBERMÁTICA USA, LLC</masterLabel>
+        <translation><!-- 0176 - IBERMÁTICA USA, LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0178 - SQEDIO</masterLabel>
+        <translation><!-- 0178 - SQEDIO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0180 - SMARTTECH INDUSTRY SOFTWARE SOLUTIONS, S.L</masterLabel>
+        <translation><!-- 0180 - SMARTTECH INDUSTRY SOFTWARE SOLUTIONS, S.L --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0181 - IBERMÁTICA ANDORRA</masterLabel>
+        <translation><!-- 0181 - IBERMÁTICA ANDORRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IB67 - IBERMATICA PERU S.A.C.</masterLabel>
+        <translation><!-- IB67 - IBERMATICA PERU S.A.C. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

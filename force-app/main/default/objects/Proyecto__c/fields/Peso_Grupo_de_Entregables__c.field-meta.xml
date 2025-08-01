@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Peso_Grupo_de_Entregables__c</fullName>
+    <description>Sumatorio de GE: Peso Grupo de Entregables</description>
+    <label>Peso Grupo de Entregables</label>
+    <summarizedField>Entregable__c.Peso_Entregable__c</summarizedField>
+    <summaryForeignKey>Entregable__c.Proyecto__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

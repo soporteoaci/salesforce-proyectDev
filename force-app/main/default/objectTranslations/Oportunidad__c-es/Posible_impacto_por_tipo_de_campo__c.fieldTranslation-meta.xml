@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Posible impacto por tipo de campo --></label>
+    <name>Posible_impacto_por_tipo_de_campo__c</name>
+</CustomFieldTranslation>

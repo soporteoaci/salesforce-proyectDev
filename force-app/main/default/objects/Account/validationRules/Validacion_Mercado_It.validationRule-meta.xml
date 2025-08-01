@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Mercado_It</fullName>
+    <active>true</active>
+    <description>Validamos que el campo Sector Mercado IT sea obligatorio para los admin cuando la  Clase de Cuenta es Top o Aspiracional</description>
+    <errorConditionFormula>AND( 
+				OR(
+								$Profile.Name =&apos;Administrador del sistema&apos;,
+								$Profile.Name = &apos;Admin Custom Ibermatica CRM&apos;
+				),
+				OR(
+								ISPICKVAL(Clase_de_cuenta__c, &apos;Top&apos;),
+								ISPICKVAL(Clase_de_cuenta__c, &apos;Aspiracional&apos;),
+								ISPICKVAL(Clase_de_cuenta__c, &apos;Clientes&apos;)
+				),
+				ISPICKVAL(Sector_de_Mercado_IT__c, &apos;&apos;)
+
+)</errorConditionFormula>
+    <errorDisplayField>Sector_de_Mercado_IT__c</errorDisplayField>
+    <errorMessage>El campo Mercado IT es de obligatorio cumplimiento</errorMessage>
+</ValidationRule>

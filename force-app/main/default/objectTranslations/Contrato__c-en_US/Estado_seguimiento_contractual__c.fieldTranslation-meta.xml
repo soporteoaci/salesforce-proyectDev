@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Estado seguimiento contractual --></label>
+    <name>Estado_seguimiento_contractual__c</name>
+    <picklistValues>
+        <masterLabel>En seguimiento</masterLabel>
+        <translation><!-- En seguimiento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finalizado</masterLabel>
+        <translation><!-- Finalizado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No aplica</masterLabel>
+        <translation><!-- No aplica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parado</masterLabel>
+        <translation><!-- Parado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pendiente inicio seguimiento</masterLabel>
+        <translation><!-- Pendiente inicio seguimiento --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriccion_etapa_Margen_Contratado</fullName>
+    <active>false</active>
+    <description>Para poder cerrar como contratada debe indicar el Margen Contratado %</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+RecordType.DeveloperName == &apos;Ayesa&apos;,
+
+ISPICKVAL( Etapa__c , &quot;Cerrada&quot; ) &amp;&amp;
+ISPICKVAL( Estado_de_Cierre__c , &quot;Contratada&quot;) &amp;&amp;
+ISBLANK(Margen_contrato__c)
+
+)</errorConditionFormula>
+    <errorMessage>Para poder cerrar como contratada debe indicar el Margen Contratado %</errorMessage>
+</ValidationRule>

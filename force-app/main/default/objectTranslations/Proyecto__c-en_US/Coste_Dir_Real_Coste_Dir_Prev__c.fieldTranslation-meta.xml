@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Cost Dir Real/Cost Dir After (FdP EUR)</label>
+    <name>Coste_Dir_Real_Coste_Dir_Prev__c</name>
+</CustomFieldTranslation>

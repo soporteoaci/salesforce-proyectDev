@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TDR</fullName>
+    <fields>Name</fields>
+    <fields>Nombre__c</fields>
+    <fields>Estado__c</fields>
+    <fields>Proyecto__c</fields>
+    <label>TDR</label>
+</CompactLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Porcentaje_de_Baja_Ofertado__c</fullName>
+    <description>% de Baja Ofertado</description>
+    <formula>IF(OR(Importe_Licitacion__c != 0, Importe_Licitacion__c != null) ,1 -  Importe_total_sin_IVA__c / Importe_Licitacion__c,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>% de Baja Ofertado</inlineHelpText>
+    <label>% de Baja Ofertado</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

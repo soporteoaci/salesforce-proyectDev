@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Oportunidad__c</fullName>
+    <description>“Oferta a realizar” cuando sabemos que el cliente ya ha asignado presupuesto y el RFP saldrá en breve. “Licitación” cuando el RFP ha sido publicado y estamos en periodo de elaborar la oferta. “Petición de EOI”, cuando el RFI es a través de multilaterales</description>
+    <label>Estado de madurez</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Interés contrastado del cliente</fullName>
+                <default>false</default>
+                <label>Interés contrastado del cliente</label>
+            </value>
+            <value>
+                <fullName>Interés generado por nosotros</fullName>
+                <default>false</default>
+                <label>Interés generado por nosotros</label>
+            </value>
+            <value>
+                <fullName>Licitación</fullName>
+                <default>false</default>
+                <label>Licitación</label>
+            </value>
+            <value>
+                <fullName>RFP</fullName>
+                <default>false</default>
+                <label>RFP</label>
+            </value>
+            <value>
+                <fullName>-</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-</label>
+            </value>
+            <value>
+                <fullName>Acuerdo Marco</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Acuerdo Marco</label>
+            </value>
+            <value>
+                <fullName>Anuncio de Información previa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Anuncio de Información previa</label>
+            </value>
+            <value>
+                <fullName>B1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>B1</label>
+            </value>
+            <value>
+                <fullName>B2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>B2</label>
+            </value>
+            <value>
+                <fullName>B3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>B3</label>
+            </value>
+            <value>
+                <fullName>B4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>B4</label>
+            </value>
+            <value>
+                <fullName>Convenio Marco</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Convenio Marco</label>
+            </value>
+            <value>
+                <fullName>Interés inicial del cliente</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Interés inicial del cliente</label>
+            </value>
+            <value>
+                <fullName>Invitación Acuerdo Marco</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invitación Acuerdo Marco</label>
+            </value>
+            <value>
+                <fullName>Invitación Pública</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invitación Pública</label>
+            </value>
+            <value>
+                <fullName>Licitación Pública</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Licitación Pública</label>
+            </value>
+            <value>
+                <fullName>Negociado con publicidad</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Negociado con publicidad</label>
+            </value>
+            <value>
+                <fullName>Negociado sin publicidad</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Negociado sin publicidad</label>
+            </value>
+            <value>
+                <fullName>Oferta a realizar</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oferta a realizar</label>
+            </value>
+            <value>
+                <fullName>Oferta para Licitación</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oferta para Licitación</label>
+            </value>
+            <value>
+                <fullName>Oportunidad</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oportunidad</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Otro</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Petición de EOI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Petición de EOI</label>
+            </value>
+            <value>
+                <fullName>Petición de EOI / Pre-Calificación</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Petición de EOI / Pre-Calificación</label>
+            </value>
+            <value>
+                <fullName>Precalificación</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Precalificación</label>
+            </value>
+            <value>
+                <fullName>Precalificación presentada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Precalificación presentada</label>
+            </value>
+            <value>
+                <fullName>Precalificados</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Precalificados</label>
+            </value>
+            <value>
+                <fullName>Presentación</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Presentación</label>
+            </value>
+            <value>
+                <fullName>Privada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Privada</label>
+            </value>
+            <value>
+                <fullName>Renovación</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Renovación</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

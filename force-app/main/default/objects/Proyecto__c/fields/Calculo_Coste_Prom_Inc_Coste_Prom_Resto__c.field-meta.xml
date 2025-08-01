@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calculo_Coste_Prom_Inc_Coste_Prom_Resto__c</fullName>
+    <description>Calculado con los datos de EUR de la FdP</description>
+    <externalId>false</externalId>
+    <formula>IF(Coste_Promedio_Resto_EUR__c &lt;&gt; 0 , Coste_Promedio_Incurrido_EUR__c / Coste_Promedio_Resto_EUR__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cálculo Coste Prom Inc/Coste Prom Resto</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

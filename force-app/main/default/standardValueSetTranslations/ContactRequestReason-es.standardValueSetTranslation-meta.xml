@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Caso</masterLabel>
+        <translation>Case</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cuenta</masterLabel>
+        <translation>Account</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Facturación</masterLabel>
+        <translation>Billing</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>General</masterLabel>
+        <translation>General</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Otro</masterLabel>
+        <translation>Other</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pedido</masterLabel>
+        <translation>Lost</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Producto</masterLabel>
+        <translation>Product</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

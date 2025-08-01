@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Email donde se notificaran las solicitudes de código de oferta de Ingeniería. Se pueden añadir varias direcciones separadas por ; --></help>
+    <label><!-- Email Licitaciones ING. --></label>
+    <name>Email_Licitaciones_ING__c</name>
+</CustomFieldTranslation>

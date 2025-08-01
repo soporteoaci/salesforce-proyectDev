@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Actividad diferenciada dentro del sector en el que se engloba la empresa. --></help>
+    <label><!-- Subsector --></label>
+    <name>Subsector__c</name>
+    <picklistValues>
+        <masterLabel>Administración Autonómica</masterLabel>
+        <translation><!-- Administración Autonómica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administración Central</masterLabel>
+        <translation><!-- Administración Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administración Latam</masterLabel>
+        <translation><!-- Administración Latam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administración Local</masterLabel>
+        <translation><!-- Administración Local --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aeroespacial</masterLabel>
+        <translation><!-- Aeroespacial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agroalimentaria</masterLabel>
+        <translation><!-- Agroalimentaria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agua</masterLabel>
+        <translation><!-- Agua --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alimentación bebidas y tabaco</masterLabel>
+        <translation><!-- Alimentación bebidas y tabaco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automoción</masterLabel>
+        <translation><!-- Automoción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bancos</masterLabel>
+        <translation><!-- Bancos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cajas de Ahorros</masterLabel>
+        <translation><!-- Cajas de Ahorros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calzado</masterLabel>
+        <translation><!-- Calzado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carbón</masterLabel>
+        <translation><!-- Carbón --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Centros de Investigación</masterLabel>
+        <translation><!-- Centros de Investigación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Centros de formación en gral.</masterLabel>
+        <translation><!-- Centros de formación en gral. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comercio Minorista</masterLabel>
+        <translation><!-- Comercio Minorista --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compañías de Banca/Seguros</masterLabel>
+        <translation><!-- Compañías de Banca/Seguros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construcciones Mecánicas</masterLabel>
+        <translation><!-- Construcciones Mecánicas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construcción</masterLabel>
+        <translation><!-- Construcción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construcción Maquinaria</masterLabel>
+        <translation><!-- Construcción Maquinaria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construcción/Promoción</masterLabel>
+        <translation><!-- Construcción/Promoción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultoría</masterLabel>
+        <translation><!-- Consultoría --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Center</masterLabel>
+        <translation><!-- Contact Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corredurías/Mediadoras</masterLabel>
+        <translation><!-- Corredurías/Mediadoras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribución</masterLabel>
+        <translation><!-- Distribución --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribución y Logística</masterLabel>
+        <translation><!-- Distribución y Logística --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Educación privada</masterLabel>
+        <translation><!-- Educación privada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electricidad</masterLabel>
+        <translation><!-- Electricidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emp. TT.II De la Admon.Autonó.</masterLabel>
+        <translation><!-- Emp. TT.II De la Admon.Autonó. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emp. TT.II De la Admon.Central</masterLabel>
+        <translation><!-- Emp. TT.II De la Admon.Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emp. TT.II De la Admon.Local</masterLabel>
+        <translation><!-- Emp. TT.II De la Admon.Local --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emp. TT.II relac. con Seguros</masterLabel>
+        <translation><!-- Emp. TT.II relac. con Seguros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emp. TT.II. Relac.con Finanzas</masterLabel>
+        <translation><!-- Emp. TT.II. Relac.con Finanzas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Empresas sector primario</masterLabel>
+        <translation><!-- Empresas sector primario --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entidades Aseguradoras</masterLabel>
+        <translation><!-- Entidades Aseguradoras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entidades Financ. en general</masterLabel>
+        <translation><!-- Entidades Financ. en general --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fabricación</masterLabel>
+        <translation><!-- Fabricación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fabricante Hardware</masterLabel>
+        <translation><!-- Fabricante Hardware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fabricante Software</masterLabel>
+        <translation><!-- Fabricante Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fabricantes varios</masterLabel>
+        <translation><!-- Fabricantes varios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Farmacéutica</masterLabel>
+        <translation><!-- Farmacéutica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas</masterLabel>
+        <translation><!-- Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hostelería y Turismo</masterLabel>
+        <translation><!-- Hostelería y Turismo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingenierías</masterLabel>
+        <translation><!-- Ingenierías --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inmobiliarias</masterLabel>
+        <translation><!-- Inmobiliarias --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Juguete</masterLabel>
+        <translation><!-- Juguete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Material y equipo eléctrico</masterLabel>
+        <translation><!-- Material y equipo eléctrico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media</masterLabel>
+        <translation><!-- Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medios de comunicación escrita</masterLabel>
+        <translation><!-- Medios de comunicación escrita --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moldes, Matrices, Troqueles</masterLabel>
+        <translation><!-- Moldes, Matrices, Troqueles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mutuas Salud</masterLabel>
+        <translation><!-- Mutuas Salud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mutuas de Trabajo</masterLabel>
+        <translation><!-- Mutuas de Trabajo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OO. Relac. con Admon.Central</masterLabel>
+        <translation><!-- OO. Relac. con Admon.Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OO. Relac. con Admon.Local</masterLabel>
+        <translation><!-- OO. Relac. con Admon.Local --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OO. Relac.con Admon.Autonómica</masterLabel>
+        <translation><!-- OO. Relac.con Admon.Autonómica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OO. relacionados con Finanzas</masterLabel>
+        <translation><!-- OO. relacionados con Finanzas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OO. relacionados con Seguros</masterLabel>
+        <translation><!-- OO. relacionados con Seguros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operadores globales</masterLabel>
+        <translation><!-- Operadores globales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operadores locales</masterLabel>
+        <translation><!-- Operadores locales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otras EF</masterLabel>
+        <translation><!-- Otras EF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otras industrias</masterLabel>
+        <translation><!-- Otras industrias --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros Servicios</masterLabel>
+        <translation><!-- Otros Servicios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Papel</masterLabel>
+        <translation><!-- Papel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petróleo</masterLabel>
+        <translation><!-- Petróleo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petróleo y derivados</masterLabel>
+        <translation><!-- Petróleo y derivados --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pharma</masterLabel>
+        <translation><!-- Pharma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prod. minerales no metálicos</masterLabel>
+        <translation><!-- Prod. minerales no metálicos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Química</masterLabel>
+        <translation><!-- Química --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Química y farmacéutica</masterLabel>
+        <translation><!-- Química y farmacéutica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio y Televisión</masterLabel>
+        <translation><!-- Radio y Televisión --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renovables</masterLabel>
+        <translation><!-- Renovables --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sanidad Privada</masterLabel>
+        <translation><!-- Sanidad Privada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sanidad Pública</masterLabel>
+        <translation><!-- Sanidad Pública --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seguros</masterLabel>
+        <translation><!-- Seguros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios Sociosanitarios</masterLabel>
+        <translation><!-- Servicios Sociosanitarios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios en general</masterLabel>
+        <translation><!-- Servicios en general --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siderometalurgia</masterLabel>
+        <translation><!-- Siderometalurgia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subcontratación de Mecanizado</masterLabel>
+        <translation><!-- Subcontratación de Mecanizado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tecnologías de la Información</masterLabel>
+        <translation><!-- Tecnologías de la Información --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecomunicaciones</masterLabel>
+        <translation><!-- Telecomunicaciones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Textil y confección</masterLabel>
+        <translation><!-- Textil y confección --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transporte</masterLabel>
+        <translation><!-- Transporte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turismo y Hostelería</masterLabel>
+        <translation><!-- Turismo y Hostelería --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Universidades</masterLabel>
+        <translation><!-- Universidades --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unión Europea</masterLabel>
+        <translation><!-- Unión Europea --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

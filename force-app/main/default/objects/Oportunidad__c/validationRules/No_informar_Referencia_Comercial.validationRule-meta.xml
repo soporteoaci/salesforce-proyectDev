@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_informar_Referencia_Comercial</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				$User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+				RecordType.DeveloperName != &apos;Ibermatica_Latam&apos;,
+				
+				OR(NOT(ISPICKVAL(Referencia_Comercial__c, &apos;&apos;)),   
+							NOT(ISBLANK(Referencia_Comercial_lookup__c))
+						),
+				CONTAINS(RecordType.Name,&apos;Ibermatica&apos;), 
+				Extension__c =false,
+
+				NOT(ISPICKVAL(Estado_de_Cierre__c, &apos;Contratada&apos;)), 
+				NOT(ISPICKVAL(Etapa_Fase__c, &apos;Cerrada&apos;))
+)</errorConditionFormula>
+    <errorMessage>No se puede informar la referencia comercial hasta que la oportunidad esté Cerrada y Contratada</errorMessage>
+</ValidationRule>

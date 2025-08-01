@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subfase__c</fullName>
+    <label>Subfase</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Etapa__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alta</fullName>
+                <default>false</default>
+                <label>Alta</label>
+            </value>
+            <value>
+                <fullName>Cualificación con autoprovisión</fullName>
+                <default>false</default>
+                <label>Cualificación con autoprovisión</label>
+            </value>
+            <value>
+                <fullName>Cualificación con preventa</fullName>
+                <default>false</default>
+                <label>Cualificación con preventa</label>
+            </value>
+            <value>
+                <fullName>Pte ok preliminar</fullName>
+                <default>false</default>
+                <label>Pte ok preliminar</label>
+            </value>
+            <value>
+                <fullName>Elaboración oferta</fullName>
+                <default>false</default>
+                <label>Elaboración oferta</label>
+            </value>
+            <value>
+                <fullName>Pte. Aprobación</fullName>
+                <default>false</default>
+                <label>Pte. Aprobación</label>
+            </value>
+            <value>
+                <fullName>Aprobada</fullName>
+                <default>false</default>
+                <label>Aprobada</label>
+            </value>
+            <value>
+                <fullName>Esperando decisión</fullName>
+                <default>false</default>
+                <label>Esperando decisión</label>
+            </value>
+            <value>
+                <fullName>Defendiendo con competidores favoritos</fullName>
+                <default>false</default>
+                <label>(Privada) Defendiendo con competidores favoritos</label>
+            </value>
+            <value>
+                <fullName>Defendiendo con competidores NO favoritos</fullName>
+                <default>false</default>
+                <label>(Privada) Defendiendo con competidores NO favoritos</label>
+            </value>
+            <value>
+                <fullName>Defendiendo sin competidores</fullName>
+                <default>false</default>
+                <label>(Privada) Defendiendo sin competidores</label>
+            </value>
+            <value>
+                <fullName>Negociando condiciones de cierre</fullName>
+                <default>false</default>
+                <label>(Privada) Negociando condiciones de cierre</label>
+            </value>
+            <value>
+                <fullName>Esperando decisión con competidores favoritos</fullName>
+                <default>false</default>
+                <label>(Pública) Esperando decisión con competidores favoritos</label>
+            </value>
+            <value>
+                <fullName>Esperando decisión con competidores NO favoritos</fullName>
+                <default>false</default>
+                <label>(Pública) Esperando decisión con competidores NO favoritos</label>
+            </value>
+            <value>
+                <fullName>Esperando decisión sin competidores</fullName>
+                <default>false</default>
+                <label>(Pública) Esperando decisión sin competidores</label>
+            </value>
+            <value>
+                <fullName>Elegidos técnicamente: Pte sobre económico</fullName>
+                <default>false</default>
+                <label>(Pública) Elegidos técnicamente: Pte sobre económico</label>
+            </value>
+            <value>
+                <fullName>Ganada pendiente contrato</fullName>
+                <default>false</default>
+                <label>Ganada pendiente contrato</label>
+            </value>
+            <value>
+                <fullName>Ganada</fullName>
+                <default>false</default>
+                <label>Ganada</label>
+            </value>
+            <value>
+                <fullName>Perdida</fullName>
+                <default>false</default>
+                <label>Perdida</label>
+            </value>
+            <value>
+                <fullName>Aplazada / anulada</fullName>
+                <default>false</default>
+                <label>Aplazada / anulada</label>
+            </value>
+            <value>
+                <fullName>No presentada</fullName>
+                <default>false</default>
+                <label>No presentada</label>
+            </value>
+            <value>
+                <fullName>Pte. Aprobación Ejecutiva (CEO y COO)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pte. Aprobación Ejecutiva (CEO y COO)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cualificación</controllingFieldValue>
+            <valueName>Alta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cualificación</controllingFieldValue>
+            <valueName>Cualificación con autoprovisión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cualificación</controllingFieldValue>
+            <valueName>Cualificación con preventa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cualificación</controllingFieldValue>
+            <valueName>Pte ok preliminar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cualificación</controllingFieldValue>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Aplazada / anulada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cualificación</controllingFieldValue>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <valueName>No presentada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <valueName>Elaboración oferta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <valueName>Pte. Aprobación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <valueName>Aprobada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Esperando decisión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Defendiendo con competidores favoritos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Defendiendo con competidores NO favoritos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Defendiendo sin competidores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Negociando condiciones de cierre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Esperando decisión con competidores favoritos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Esperando decisión con competidores NO favoritos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Esperando decisión sin competidores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Elegidos técnicamente: Pte sobre económico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Ganada pendiente contrato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Ganada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Perdida</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

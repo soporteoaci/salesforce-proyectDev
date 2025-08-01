@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipo_preventa</fullName>
+    <active>true</active>
+    <description>AND(
+	OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;), ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+	ISBLANK(Equipo_Preventa__c),
+	Preventa__c = true,
+	ISPICKVAL(Subfase__c, &apos;Pte ok preliminar&apos;)
+			)</description>
+    <errorConditionFormula>AND(
+			$Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
+	OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;), ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+	Equipo_Oferta__c=&quot;&quot;,
+	Preventa__c = true,
+	ISPICKVAL(Subfase__c, &apos;Pte ok preliminar&apos;)
+			)</errorConditionFormula>
+    <errorMessage>Al ser una oportunidad con Preventa hay que informar el Equipo Oferta en la pestaña &apos;Cualificación&apos;</errorMessage>
+</ValidationRule>

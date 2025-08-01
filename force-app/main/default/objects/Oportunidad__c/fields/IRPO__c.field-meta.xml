@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IRPO__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>¿Ha incluido IRPO en Alejandría? http://Alejandria.ayesa.com</description>
+    <inlineHelpText>¿Ha incluido IRPO en Alejandría? http://Alejandria.ayesa.com</inlineHelpText>
+    <label>¿Ha incluido el IRPO en Alejandría?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ciudad_de_la_Justicia_de_Alicante</fullName>
+    <columns>Proyecto__c</columns>
+    <columns>NAME</columns>
+    <columns>Descripcion__c</columns>
+    <columns>Fecha_Fin__c</columns>
+    <columns>Hito_Anterior__c</columns>
+    <columns>Peso_Facturacion__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Proyecto__c</field>
+        <operation>equals</operation>
+        <value>Ciudad de la Justicia de Alicante</value>
+    </filters>
+    <label>Ciudad de la Justicia de Alicante</label>
+    <sharedTo>
+        <group>Ciudad_Justicia_Alicante</group>
+    </sharedTo>
+</ListView>

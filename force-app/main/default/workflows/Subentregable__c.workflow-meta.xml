@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Borrar_Fecha_Real_Entrega</fullName>
+        <field>Fecha_Real_de_Liberacion__c</field>
+        <name>Borrar Fecha de Entrega</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Borrar_Fecha_Real_Inicio</fullName>
+        <field>Fecha_Real_de_Paso_a_Inicio__c</field>
+        <name>Borrar Fecha Real Inicio</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Borrar_Fecha_de_Liberacion</fullName>
+        <field>FechaLimiteLiberacion__c</field>
+        <name>Borrar Fecha de Liberación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Borrar_Firma_Aprobador_1</fullName>
+        <field>Fecha_Firma_Aprobador_1__c</field>
+        <name>Entregable: Borrar Firma Aprobador 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Estado_a_Desarrollo</fullName>
+        <field>Estado__c</field>
+        <literalValue>En desarrollo</literalValue>
+        <name>Entregable: Estado a Desarrollo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Estado_a_Liberado</fullName>
+        <field>Estado__c</field>
+        <literalValue>Liberado</literalValue>
+        <name>Entregable: Estado a Liberado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Estado_a_Pendiente</fullName>
+        <field>Estado__c</field>
+        <literalValue>Pendiente</literalValue>
+        <name>Entregable: Estado a Pendiente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Estado_a_RevInterna</fullName>
+        <field>Estado__c</field>
+        <literalValue>En Revisión Interna</literalValue>
+        <name>Entregable: Estado a RevInterna</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Fecha_Firma_Aprobador_1</fullName>
+        <field>Fecha_Firma_Aprobador_1__c</field>
+        <formula>TODAY()</formula>
+        <name>Entregable: Fecha Firma Aprobador 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Fecha_Limite_Firma_14</fullName>
+        <field>FechaLimiteFirma__c</field>
+        <formula>IF(ISBLANK(FechaLimiteFirma__c),TODAY()+14,FechaLimiteFirma__c)</formula>
+        <name>Entregable: Fecha Límite Firma +14</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Fecha_Limite_Liberacion_7</fullName>
+        <field>FechaLimiteLiberacion__c</field>
+        <formula>IF(ISBLANK(FechaLimiteLiberacion__c),TODAY()+7,FechaLimiteLiberacion__c)</formula>
+        <name>Entregable: Fecha Límite Liberación +7</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Fecha_Primer_Envio</fullName>
+        <field>Fecha_Primer_Envio_Firma__c</field>
+        <formula>IF(ISBLANK(Fecha_Primer_Envio_Firma__c),TODAY(),Fecha_Primer_Envio_Firma__c)</formula>
+        <name>Entregable: Fecha Primer Envío</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Fecha_Real_Entrega</fullName>
+        <field>FechaRealPasoRevision__c</field>
+        <formula>NOW()</formula>
+        <name>Entregable: Fecha Real Entrega</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Fecha_Real_de_Liberacion</fullName>
+        <field>Fecha_Real_de_Liberacion__c</field>
+        <formula>NOW()</formula>
+        <name>Entregable: Fecha Real de Liberación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Limite_Firma_7</fullName>
+        <field>FechaLimiteFirma__c</field>
+        <formula>IF(ISBLANK(FechaLimiteFirma__c),TODAY()+7,FechaLimiteFirma__c)</formula>
+        <name>Entregable: Límite Firma + 7</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Entregable_Numero_Envio_a_Firmas</fullName>
+        <field>Numero_de_Envios_a_Firma__c</field>
+        <formula>Numero_de_Envios_a_Firma__c +1</formula>
+        <name>Entregable: Numero Envío a Firmas</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Fecha_Real_de_Paso_a_Inicio</fullName>
+        <field>Fecha_Real_de_Paso_a_Inicio__c</field>
+        <formula>NOW()</formula>
+        <name>Fecha Real de Paso a Inicio</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IsApex</fullName>
+        <description>De true a falso.</description>
+        <field>IsApex__c</field>
+        <literalValue>0</literalValue>
+        <name>IsApex</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Borrar_Fecha_Solic_Acepta</fullName>
+        <field>Fecha_Real_de_Solicitud_de_Aceptacion__c</field>
+        <name>Subentregable: Borrar Fecha Solic Acepta</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Completar_Avance</fullName>
+        <field>Avance__c</field>
+        <formula>1</formula>
+        <name>Subentregable: Completar Avance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Fecha_Real_de_Entrega</fullName>
+        <field>FechaRealPasoRevision__c</field>
+        <formula>NOW()</formula>
+        <name>Subentregable: Fecha Real de Entrega</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Fecha_Real_de_Firma</fullName>
+        <field>Fecha_Real_de_Firma__c</field>
+        <formula>NOW()</formula>
+        <name>Subentregable: Fecha Real de Firma</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Fecha_Soli_Aceptaci_n</fullName>
+        <field>Fecha_Real_de_Solicitud_de_Aceptacion__c</field>
+        <formula>NOW()</formula>
+        <name>Subentregable: Fecha Soli Aceptación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_L_mite_Liberacion_7</fullName>
+        <field>FechaLimiteLiberacion__c</field>
+        <formula>TODAY()+7</formula>
+        <name>Subentregable: Límite Liberacion + 7</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Limite_Firma_14</fullName>
+        <field>FechaLimiteFirma__c</field>
+        <formula>TODAY()+14</formula>
+        <name>Subentregable: Límite Firma + 14</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Pasar_a_Desarrollo</fullName>
+        <field>Estado__c</field>
+        <literalValue>En desarrollo</literalValue>
+        <name>Subentregable: Pasar a Desarrollo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Pasar_a_Firmad</fullName>
+        <field>Estado__c</field>
+        <literalValue>Firmado</literalValue>
+        <name>Subentregable: Pasar a Firmado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Pasar_a_Liberado</fullName>
+        <field>Estado__c</field>
+        <literalValue>Liberado</literalValue>
+        <name>Subentregable: Pasar a Liberado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Pasar_a_Pdte_Aceptacion</fullName>
+        <field>Estado__c</field>
+        <literalValue>Pendiente de Aceptación</literalValue>
+        <name>Subentregable: Pasar a Pdte Aceptación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subentregable_Pasar_a_Revisi_n_Interna</fullName>
+        <field>Estado__c</field>
+        <literalValue>En Revisión Interna</literalValue>
+        <name>Subentregable: Pasar a Revisión Interna</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>IsApex</fullName>
+        <actions>
+            <name>IsApex</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Subentregable__c.IsApex__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

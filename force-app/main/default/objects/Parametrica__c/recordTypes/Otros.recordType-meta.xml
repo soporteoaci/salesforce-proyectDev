@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Otros</fullName>
+    <active>true</active>
+    <label>Otros</label>
+    <picklistValues>
+        <picklist>Linea_de_Servicio__c</picklist>
+        <values>
+            <fullName>Application services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climate%2C Sustainability %26 Digital Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud %26 Infrastructure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data %26 AI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering Design %26 Architecture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modern Workplace %26 End - User support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Management Consultancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-Latam</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Maestro__c</picklist>
+        <values>
+            <fullName>CCO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director Q%26A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>División</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mercado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>País</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

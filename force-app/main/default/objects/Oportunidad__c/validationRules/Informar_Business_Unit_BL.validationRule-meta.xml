@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Informar_Business_Unit_BL</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+				ISPICKVAL(Sociedad_Ayesa__c,&apos;0151&apos;),
+				ISBLANK(TEXT(Departamento__c))  
+)</errorConditionFormula>
+    <errorDisplayField>Departamento__c</errorDisplayField>
+    <errorMessage>Informe el departamento</errorMessage>
+</ValidationRule>

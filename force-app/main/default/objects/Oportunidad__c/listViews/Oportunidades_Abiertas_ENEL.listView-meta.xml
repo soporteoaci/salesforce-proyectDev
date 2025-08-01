@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oportunidades_Abiertas_ENEL</fullName>
+    <columns>Oferta_SAP__c</columns>
+    <columns>Division__c</columns>
+    <columns>NAME</columns>
+    <columns>Cliente__c</columns>
+    <columns>Contratado_a_o_oportunidad__c</columns>
+    <columns>Importe_total_sin_IVA__c</columns>
+    <columns>Codigo_OC__c</columns>
+    <columns>Probabilidad__c</columns>
+    <columns>Negocio__c</columns>
+    <columns>Pais__c</columns>
+    <columns>Fecha_limite_de_presentacion__c</columns>
+    <columns>Fecha_estimada_de_cierre__c</columns>
+    <columns>Oport_en_presupuesto_Ayesa__c</columns>
+    <columns>Etapa__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Etapa__c</field>
+        <operation>notEqual</operation>
+        <value>Cerrada</value>
+    </filters>
+    <filters>
+        <field>Area__c</field>
+        <operation>equals</operation>
+        <value>ATC</value>
+    </filters>
+    <filters>
+        <field>Division__c</field>
+        <operation>equals</operation>
+        <value>ENEL</value>
+    </filters>
+    <label>Oportunidades Abiertas ENEL</label>
+    <sharedTo></sharedTo>
+</ListView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indica el estado del Entregable al que corresponde la evidencia --></help>
+    <label><!-- Evidencia Estado Entregable --></label>
+    <name>Evidencia_Estado_Entregable__c</name>
+    <picklistValues>
+        <masterLabel>Finalizado</masterLabel>
+        <translation><!-- Finalizado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firmado</masterLabel>
+        <translation><!-- Firmado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberado</masterLabel>
+        <translation><!-- Liberado --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

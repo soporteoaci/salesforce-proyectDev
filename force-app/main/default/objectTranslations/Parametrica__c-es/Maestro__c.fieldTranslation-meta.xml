@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Maestro --></label>
+    <name>Maestro__c</name>
+    <picklistValues>
+        <masterLabel>Asesoría Jurídica</masterLabel>
+        <translation><!-- Asesoría Jurídica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Authorised Officer</masterLabel>
+        <translation><!-- Authorised Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Unit</masterLabel>
+        <translation><!-- Business Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCO</masterLabel>
+        <translation><!-- CCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEO</masterLabel>
+        <translation><!-- CEO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CMO</masterLabel>
+        <translation><!-- CMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COO</masterLabel>
+        <translation><!-- COO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSO</masterLabel>
+        <translation><!-- CSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance</masterLabel>
+        <translation><!-- Compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery Center</masterLabel>
+        <translation><!-- Delivery Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dir. Financiera Corporativa</masterLabel>
+        <translation><!-- Dir. Financiera Corporativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dir. Intenacional</masterLabel>
+        <translation><!-- Dir. Intenacional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director Q&amp;A</masterLabel>
+        <translation><!-- Director Q&amp;A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>División</masterLabel>
+        <translation><!-- División --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Línea de Sevicios</masterLabel>
+        <translation><!-- Línea de Sevicios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mercado</masterLabel>
+        <translation><!-- Mercado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>País</masterLabel>
+        <translation><!-- País --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resp. Preventa</masterLabel>
+        <translation><!-- Resp. Preventa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sociedad</masterLabel>
+        <translation><!-- Sociedad --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

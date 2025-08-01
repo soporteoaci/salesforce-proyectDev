@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Decisión Equipo Preventa --></label>
+    <name>Decisi_n_Equipo_Preventa__c</name>
+    <picklistValues>
+        <masterLabel>Go</masterLabel>
+        <translation><!-- Go --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Go</masterLabel>
+        <translation><!-- No Go --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

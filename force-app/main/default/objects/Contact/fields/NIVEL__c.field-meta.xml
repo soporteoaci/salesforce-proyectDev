@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NIVEL__c</fullName>
+    <label>Nivel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consejo Admón. y Altos Cargos</fullName>
+                <default>false</default>
+                <label>Consejo Admón. y Altos Cargos</label>
+            </value>
+            <value>
+                <fullName>Dirección General</fullName>
+                <default>false</default>
+                <label>Dirección General</label>
+            </value>
+            <value>
+                <fullName>Subdirección General</fullName>
+                <default>false</default>
+                <label>Subdirección General</label>
+            </value>
+            <value>
+                <fullName>Directores y Subdir de Función</fullName>
+                <default>false</default>
+                <label>Directores y Subdir de Función</label>
+            </value>
+            <value>
+                <fullName>Responsables de Departamento</fullName>
+                <default>false</default>
+                <label>Responsables de Departamento</label>
+            </value>
+            <value>
+                <fullName>Cargos del Dpto. Informática</fullName>
+                <default>false</default>
+                <label>Cargos del Dpto. Informática</label>
+            </value>
+            <value>
+                <fullName>Desconocido</fullName>
+                <default>false</default>
+                <label>Desconocido</label>
+            </value>
+            <value>
+                <fullName>Otros cargos</fullName>
+                <default>false</default>
+                <label>Otros cargos</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

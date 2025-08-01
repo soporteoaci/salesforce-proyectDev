@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Adjudicada_obligatorio_con_fecha</fullName>
+    <active>false</active>
+    <description>Check adjudicada debe ser marcado cuando la fecha de adjudicación es informada.</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+RecordType.DeveloperName == &apos;Ayesa&apos;,
+ 
+NOT ISBLANK(Fecha_adjudicacion__c) &amp;&amp;  Adjudicada__c != TRUE
+
+)</errorConditionFormula>
+    <errorDisplayField>Adjudicada__c</errorDisplayField>
+    <errorMessage>El check &quot;Adjudicada&quot; debe de ser marcado cuando la fecha de adjudicación es informada.</errorMessage>
+</ValidationRule>

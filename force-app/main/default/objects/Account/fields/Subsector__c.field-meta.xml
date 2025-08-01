@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subsector__c</fullName>
+    <inlineHelpText>Actividad diferenciada dentro del sector en el que se engloba la empresa.</inlineHelpText>
+    <label>Subsector</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sector__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Administración Autonómica</fullName>
+                <default>false</default>
+                <label>Administración Autonómica</label>
+            </value>
+            <value>
+                <fullName>Administración Central</fullName>
+                <default>false</default>
+                <label>Administración Central</label>
+            </value>
+            <value>
+                <fullName>Administración Latam</fullName>
+                <default>false</default>
+                <label>Administración Latam</label>
+            </value>
+            <value>
+                <fullName>Administración Local</fullName>
+                <default>false</default>
+                <label>Administración Local</label>
+            </value>
+            <value>
+                <fullName>Aeroespacial</fullName>
+                <default>false</default>
+                <label>Aeroespacial</label>
+            </value>
+            <value>
+                <fullName>Agroalimentaria</fullName>
+                <default>false</default>
+                <label>Agroalimentaria</label>
+            </value>
+            <value>
+                <fullName>Agua</fullName>
+                <default>false</default>
+                <label>Agua</label>
+            </value>
+            <value>
+                <fullName>Alimentación bebidas y tabaco</fullName>
+                <default>false</default>
+                <label>Alimentación bebidas y tabaco</label>
+            </value>
+            <value>
+                <fullName>Automoción</fullName>
+                <default>false</default>
+                <label>Automoción</label>
+            </value>
+            <value>
+                <fullName>Bancos</fullName>
+                <default>false</default>
+                <label>Bancos</label>
+            </value>
+            <value>
+                <fullName>Cajas de Ahorros</fullName>
+                <default>false</default>
+                <label>Cajas de Ahorros</label>
+            </value>
+            <value>
+                <fullName>Calzado</fullName>
+                <default>false</default>
+                <label>Calzado</label>
+            </value>
+            <value>
+                <fullName>Carbón</fullName>
+                <default>false</default>
+                <label>Carbón</label>
+            </value>
+            <value>
+                <fullName>Centros de formación en gral.</fullName>
+                <default>false</default>
+                <label>Centros de formación en gral.</label>
+            </value>
+            <value>
+                <fullName>Centros de Investigación</fullName>
+                <default>false</default>
+                <label>Centros de Investigación</label>
+            </value>
+            <value>
+                <fullName>Comercio Minorista</fullName>
+                <default>false</default>
+                <label>Comercio Minorista</label>
+            </value>
+            <value>
+                <fullName>Compañías de Banca/Seguros</fullName>
+                <default>false</default>
+                <label>Compañías de Banca/Seguros</label>
+            </value>
+            <value>
+                <fullName>Construcción</fullName>
+                <default>false</default>
+                <label>Construcción</label>
+            </value>
+            <value>
+                <fullName>Construcción/Promoción</fullName>
+                <default>false</default>
+                <label>Construcción/Promoción</label>
+            </value>
+            <value>
+                <fullName>Construcciones Mecánicas</fullName>
+                <default>false</default>
+                <label>Construcciones Mecánicas</label>
+            </value>
+            <value>
+                <fullName>Construcción Maquinaria</fullName>
+                <default>false</default>
+                <label>Construcción Maquinaria</label>
+            </value>
+            <value>
+                <fullName>Consultoría</fullName>
+                <default>false</default>
+                <label>Consultoría</label>
+            </value>
+            <value>
+                <fullName>Contact Center</fullName>
+                <default>false</default>
+                <label>Contact Center</label>
+            </value>
+            <value>
+                <fullName>Corredurías/Mediadoras</fullName>
+                <default>false</default>
+                <label>Corredurías/Mediadoras</label>
+            </value>
+            <value>
+                <fullName>Distribución</fullName>
+                <default>false</default>
+                <label>Distribución</label>
+            </value>
+            <value>
+                <fullName>Distribución y Logística</fullName>
+                <default>false</default>
+                <label>Distribución y Logística</label>
+            </value>
+            <value>
+                <fullName>Educación privada</fullName>
+                <default>false</default>
+                <label>Educación privada</label>
+            </value>
+            <value>
+                <fullName>Electricidad</fullName>
+                <default>false</default>
+                <label>Electricidad</label>
+            </value>
+            <value>
+                <fullName>Emp. TT.II. Relac.con Finanzas</fullName>
+                <default>false</default>
+                <label>Emp. TT.II. Relac.con Finanzas</label>
+            </value>
+            <value>
+                <fullName>Emp. TT.II De la Admon.Autonó.</fullName>
+                <default>false</default>
+                <label>Emp. TT.II De la Admon.Autonó.</label>
+            </value>
+            <value>
+                <fullName>Emp. TT.II De la Admon.Central</fullName>
+                <default>false</default>
+                <label>Emp. TT.II De la Admon.Central</label>
+            </value>
+            <value>
+                <fullName>Emp. TT.II De la Admon.Local</fullName>
+                <default>false</default>
+                <label>Emp. TT.II De la Admon.Local</label>
+            </value>
+            <value>
+                <fullName>Emp. TT.II relac. con Seguros</fullName>
+                <default>false</default>
+                <label>Emp. TT.II relac. con Seguros</label>
+            </value>
+            <value>
+                <fullName>Empresas sector primario</fullName>
+                <default>false</default>
+                <label>Empresas sector primario</label>
+            </value>
+            <value>
+                <fullName>Entidades Aseguradoras</fullName>
+                <default>false</default>
+                <label>Entidades Aseguradoras</label>
+            </value>
+            <value>
+                <fullName>Entidades Financ. en general</fullName>
+                <default>false</default>
+                <label>Entidades Financ. en general</label>
+            </value>
+            <value>
+                <fullName>Fabricación</fullName>
+                <default>false</default>
+                <label>Fabricación</label>
+            </value>
+            <value>
+                <fullName>Fabricante Hardware</fullName>
+                <default>false</default>
+                <label>Fabricante Hardware</label>
+            </value>
+            <value>
+                <fullName>Fabricante Software</fullName>
+                <default>false</default>
+                <label>Fabricante Software</label>
+            </value>
+            <value>
+                <fullName>Fabricantes varios</fullName>
+                <default>false</default>
+                <label>Fabricantes varios</label>
+            </value>
+            <value>
+                <fullName>Farmacéutica</fullName>
+                <default>false</default>
+                <label>Farmacéutica</label>
+            </value>
+            <value>
+                <fullName>Gas</fullName>
+                <default>false</default>
+                <label>Gas</label>
+            </value>
+            <value>
+                <fullName>Hostelería y Turismo</fullName>
+                <default>false</default>
+                <label>Hostelería y Turismo</label>
+            </value>
+            <value>
+                <fullName>Ingenierías</fullName>
+                <default>false</default>
+                <label>Ingenierías</label>
+            </value>
+            <value>
+                <fullName>Inmobiliarias</fullName>
+                <default>false</default>
+                <label>Inmobiliarias</label>
+            </value>
+            <value>
+                <fullName>Juguete</fullName>
+                <default>false</default>
+                <label>Juguete</label>
+            </value>
+            <value>
+                <fullName>Material y equipo eléctrico</fullName>
+                <default>false</default>
+                <label>Material y equipo eléctrico</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Medios de comunicación escrita</fullName>
+                <default>false</default>
+                <label>Medios de comunicación escrita</label>
+            </value>
+            <value>
+                <fullName>Moldes, Matrices, Troqueles</fullName>
+                <default>false</default>
+                <label>Moldes, Matrices, Troqueles</label>
+            </value>
+            <value>
+                <fullName>Mutuas de Trabajo</fullName>
+                <default>false</default>
+                <label>Mutuas de Trabajo</label>
+            </value>
+            <value>
+                <fullName>Mutuas Salud</fullName>
+                <default>false</default>
+                <label>Mutuas Salud</label>
+            </value>
+            <value>
+                <fullName>OO. Relac.con Admon.Autonómica</fullName>
+                <default>false</default>
+                <label>OO. Relac.con Admon.Autonómica</label>
+            </value>
+            <value>
+                <fullName>OO. Relac. con Admon.Central</fullName>
+                <default>false</default>
+                <label>OO. Relac. con Admon.Central</label>
+            </value>
+            <value>
+                <fullName>OO. Relac. con Admon.Local</fullName>
+                <default>false</default>
+                <label>OO. Relac. con Admon.Local</label>
+            </value>
+            <value>
+                <fullName>OO. relacionados con Finanzas</fullName>
+                <default>false</default>
+                <label>OO. relacionados con Finanzas</label>
+            </value>
+            <value>
+                <fullName>OO. relacionados con Seguros</fullName>
+                <default>false</default>
+                <label>OO. relacionados con Seguros</label>
+            </value>
+            <value>
+                <fullName>Operadores globales</fullName>
+                <default>false</default>
+                <label>Operadores globales</label>
+            </value>
+            <value>
+                <fullName>Operadores locales</fullName>
+                <default>false</default>
+                <label>Operadores locales</label>
+            </value>
+            <value>
+                <fullName>Otras EF</fullName>
+                <default>false</default>
+                <label>Otras EF</label>
+            </value>
+            <value>
+                <fullName>Otras industrias</fullName>
+                <default>false</default>
+                <label>Otras industrias</label>
+            </value>
+            <value>
+                <fullName>Otros Servicios</fullName>
+                <default>false</default>
+                <label>Otros Servicios</label>
+            </value>
+            <value>
+                <fullName>Papel</fullName>
+                <default>false</default>
+                <label>Papel</label>
+            </value>
+            <value>
+                <fullName>Petróleo</fullName>
+                <default>false</default>
+                <label>Petróleo</label>
+            </value>
+            <value>
+                <fullName>Petróleo y derivados</fullName>
+                <default>false</default>
+                <label>Petróleo y derivados</label>
+            </value>
+            <value>
+                <fullName>Pharma</fullName>
+                <default>false</default>
+                <label>Pharma</label>
+            </value>
+            <value>
+                <fullName>Prod. minerales no metálicos</fullName>
+                <default>false</default>
+                <label>Prod. minerales no metálicos</label>
+            </value>
+            <value>
+                <fullName>Química</fullName>
+                <default>false</default>
+                <label>Química</label>
+            </value>
+            <value>
+                <fullName>Química y farmacéutica</fullName>
+                <default>false</default>
+                <label>Química y farmacéutica</label>
+            </value>
+            <value>
+                <fullName>Radio y Televisión</fullName>
+                <default>false</default>
+                <label>Radio y Televisión</label>
+            </value>
+            <value>
+                <fullName>Renovables</fullName>
+                <default>false</default>
+                <label>Renovables</label>
+            </value>
+            <value>
+                <fullName>Sanidad Privada</fullName>
+                <default>false</default>
+                <label>Sanidad Privada</label>
+            </value>
+            <value>
+                <fullName>Sanidad Pública</fullName>
+                <default>false</default>
+                <label>Sanidad Pública</label>
+            </value>
+            <value>
+                <fullName>Seguros</fullName>
+                <default>false</default>
+                <label>Seguros</label>
+            </value>
+            <value>
+                <fullName>Servicios en general</fullName>
+                <default>false</default>
+                <label>Servicios en general</label>
+            </value>
+            <value>
+                <fullName>Servicios Sociosanitarios</fullName>
+                <default>false</default>
+                <label>Servicios Sociosanitarios</label>
+            </value>
+            <value>
+                <fullName>Siderometalurgia</fullName>
+                <default>false</default>
+                <label>Siderometalurgia</label>
+            </value>
+            <value>
+                <fullName>Subcontratación de Mecanizado</fullName>
+                <default>false</default>
+                <label>Subcontratación de Mecanizado</label>
+            </value>
+            <value>
+                <fullName>Tecnologías de la Información</fullName>
+                <default>false</default>
+                <label>Tecnologías de la Información</label>
+            </value>
+            <value>
+                <fullName>Telecomunicaciones</fullName>
+                <default>false</default>
+                <label>Telecomunicaciones</label>
+            </value>
+            <value>
+                <fullName>Textil y confección</fullName>
+                <default>false</default>
+                <label>Textil y confección</label>
+            </value>
+            <value>
+                <fullName>Transporte</fullName>
+                <default>false</default>
+                <label>Transporte</label>
+            </value>
+            <value>
+                <fullName>Turismo y Hostelería</fullName>
+                <default>false</default>
+                <label>Turismo y Hostelería</label>
+            </value>
+            <value>
+                <fullName>Unión Europea</fullName>
+                <default>false</default>
+                <label>Unión Europea</label>
+            </value>
+            <value>
+                <fullName>Universidades</fullName>
+                <default>false</default>
+                <label>Universidades</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Seguros</controllingFieldValue>
+            <valueName>Compañías de Banca/Seguros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seguros</controllingFieldValue>
+            <valueName>Corredurías/Mediadoras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seguros</controllingFieldValue>
+            <valueName>Emp. TT.II relac. con Seguros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seguros</controllingFieldValue>
+            <valueName>Entidades Aseguradoras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seguros</controllingFieldValue>
+            <valueName>Mutuas de Trabajo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seguros</controllingFieldValue>
+            <valueName>OO. relacionados con Seguros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Educación</controllingFieldValue>
+            <valueName>Centros de formación en gral.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Educación</controllingFieldValue>
+            <valueName>Universidades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sanidad</controllingFieldValue>
+            <valueName>Mutuas Salud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sanidad</controllingFieldValue>
+            <valueName>Pharma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sanidad</controllingFieldValue>
+            <valueName>Sanidad Privada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sanidad</controllingFieldValue>
+            <valueName>Sanidad Pública</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sanidad</controllingFieldValue>
+            <valueName>Servicios Sociosanitarios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Administración Autonómica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Administración Central</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Administración Latam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Administración Local</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Emp. TT.II De la Admon.Autonó.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Emp. TT.II De la Admon.Central</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Emp. TT.II De la Admon.Local</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>OO. Relac.con Admon.Autonómica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>OO. Relac. con Admon.Central</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>OO. Relac. con Admon.Local</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Unión Europea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finanzas</controllingFieldValue>
+            <valueName>Bancos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finanzas</controllingFieldValue>
+            <valueName>Cajas de Ahorros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finanzas</controllingFieldValue>
+            <valueName>Emp. TT.II. Relac.con Finanzas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finanzas</controllingFieldValue>
+            <valueName>Entidades Financ. en general</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finanzas</controllingFieldValue>
+            <valueName>OO. relacionados con Finanzas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Aeroespacial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Alimentación bebidas y tabaco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Automoción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Calzado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Construcciones Mecánicas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Construcción Maquinaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Empresas sector primario</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Fabricantes varios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Juguete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Material y equipo eléctrico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Moldes, Matrices, Troqueles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Papel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Petróleo y derivados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Prod. minerales no metálicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Química y farmacéutica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Siderometalurgia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Subcontratación de Mecanizado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Textil y confección</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Centros de Investigación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Construcción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Contact Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Distribución y Logística</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Hostelería y Turismo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Ingenierías</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Inmobiliarias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Servicios en general</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Tecnologías de la Información</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Transporte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telco y Media</controllingFieldValue>
+            <valueName>Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telco y Media</controllingFieldValue>
+            <valueName>Medios de comunicación escrita</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telco y Media</controllingFieldValue>
+            <valueName>Operadores globales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telco y Media</controllingFieldValue>
+            <valueName>Operadores locales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telco y Media</controllingFieldValue>
+            <valueName>Radio y Televisión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telco y Media</controllingFieldValue>
+            <valueName>Telecomunicaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Agua</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Carbón</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Electricidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Petróleo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Renovables</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

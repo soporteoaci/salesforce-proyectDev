@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Horizontal__c</fullName>
+    <label>Horizontal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>H-SCSO ADJUNTO</fullName>
+                <default>false</default>
+                <label>H-SCSO ADJUNTO</label>
+            </value>
+            <value>
+                <fullName>H-ING. CIVIL y ARQ</fullName>
+                <default>false</default>
+                <label>H-ING. CIVIL y ARQ</label>
+            </value>
+            <value>
+                <fullName>H-ING. INDUSTRIAL</fullName>
+                <default>false</default>
+                <label>H-ING. INDUSTRIAL</label>
+            </value>
+            <value>
+                <fullName>H-AEROSPACIAL</fullName>
+                <default>false</default>
+                <label>H-AEROSPACIAL</label>
+            </value>
+            <value>
+                <fullName>H-INTEGRACIONES INTEL.</fullName>
+                <default>false</default>
+                <label>H-INTEGRACIONES INTEL.</label>
+            </value>
+            <value>
+                <fullName>H-INGENIERÍA 4.0</fullName>
+                <default>false</default>
+                <label>H-INGENIERÍA 4.0</label>
+            </value>
+            <value>
+                <fullName>H-CSO IND</fullName>
+                <default>false</default>
+                <label>H-CSO IND</label>
+            </value>
+            <value>
+                <fullName>H-BPO</fullName>
+                <default>false</default>
+                <label>H-BPO</label>
+            </value>
+            <value>
+                <fullName>H-AD/AM SERVICES</fullName>
+                <default>false</default>
+                <label>H-AD/AM SERVICES</label>
+            </value>
+            <value>
+                <fullName>H-ITO</fullName>
+                <default>false</default>
+                <label>H-ITO</label>
+            </value>
+            <value>
+                <fullName>H-SAP</fullName>
+                <default>false</default>
+                <label>H-SAP</label>
+            </value>
+            <value>
+                <fullName>H-SALESFORCE</fullName>
+                <default>false</default>
+                <label>H-SALESFORCE</label>
+            </value>
+            <value>
+                <fullName>H-SERVICIOS LATAM</fullName>
+                <default>false</default>
+                <label>H-SERVICIOS LATAM</label>
+            </value>
+            <value>
+                <fullName>H-STAFF SD&amp;TI</fullName>
+                <default>false</default>
+                <label>H-STAFF SD&amp;TI</label>
+            </value>
+            <value>
+                <fullName>H-CIENCIA DEL DATO &amp; PROCESOS</fullName>
+                <default>false</default>
+                <label>H-CIENCIA DEL DATO &amp; PROCESOS</label>
+            </value>
+            <value>
+                <fullName>H-EXTERNOS SD&amp;TI</fullName>
+                <default>false</default>
+                <label>H-EXTERNOS SD&amp;TI</label>
+            </value>
+            <value>
+                <fullName>H-M2C DATOS</fullName>
+                <default>false</default>
+                <label>H-M2C DATOS</label>
+            </value>
+            <value>
+                <fullName>H-M2C DESARROLLO</fullName>
+                <default>false</default>
+                <label>H-M2C DESARROLLO</label>
+            </value>
+            <value>
+                <fullName>H-M2C ITO</fullName>
+                <default>false</default>
+                <label>H-M2C ITO</label>
+            </value>
+            <value>
+                <fullName>H-PLANIFICACION, RIESGO Y CONTROL ING</fullName>
+                <default>false</default>
+                <label>H-PLANIFICACION, RIESGO Y CONTROL ING</label>
+            </value>
+            <value>
+                <fullName>H-PLANIFICACION, RIESGO Y CONTRO DS&amp;TI</fullName>
+                <default>false</default>
+                <label>H-PLANIFICACION, RIESGO Y CONTRO DS&amp;TI</label>
+            </value>
+            <value>
+                <fullName>H-SISTEMAS DE GESTION ING</fullName>
+                <default>false</default>
+                <label>H-SISTEMAS DE GESTION ING</label>
+            </value>
+            <value>
+                <fullName>H-SISTEMAS DE GESTION DS&amp;TI</fullName>
+                <default>false</default>
+                <label>H-SISTEMAS DE GESTION DS&amp;TI</label>
+            </value>
+            <value>
+                <fullName>H-SISTEMAS DE GESTION AAC</fullName>
+                <default>false</default>
+                <label>H-SISTEMAS DE GESTION AAC</label>
+            </value>
+            <value>
+                <fullName>H-DIGITAL</fullName>
+                <default>false</default>
+                <label>H-DIGITAL</label>
+            </value>
+            <value>
+                <fullName>BPS</fullName>
+                <default>false</default>
+                <label>BPS</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity</fullName>
+                <default>false</default>
+                <label>Cybersecurity</label>
+            </value>
+            <value>
+                <fullName>DAA</fullName>
+                <default>false</default>
+                <label>DAA</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+            <value>
+                <fullName>Digital-Latam</fullName>
+                <default>false</default>
+                <label>Digital-Latam</label>
+            </value>
+            <value>
+                <fullName>Hybrid IT</fullName>
+                <default>false</default>
+                <label>Hybrid IT</label>
+            </value>
+            <value>
+                <fullName>ITO</fullName>
+                <default>false</default>
+                <label>ITO</label>
+            </value>
+            <value>
+                <fullName>Microsoft</fullName>
+                <default>false</default>
+                <label>Microsoft</label>
+            </value>
+            <value>
+                <fullName>SAP</fullName>
+                <default>false</default>
+                <label>SAP</label>
+            </value>
+            <value>
+                <fullName>Smart Factories</fullName>
+                <default>false</default>
+                <label>Smart Factories</label>
+            </value>
+            <value>
+                <fullName>SW Devep.</fullName>
+                <default>false</default>
+                <label>SW Devep.</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>Oferta Base</fullName>
+                <default>false</default>
+                <label>Oferta Base</label>
+            </value>
+            <value>
+                <fullName>Innovación</fullName>
+                <default>false</default>
+                <label>Innovación</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- A ser confirmado por el Director de Mercado/División --></help>
+    <label><!-- Innovación --></label>
+    <name>Innovacion__c</name>
+</CustomFieldTranslation>

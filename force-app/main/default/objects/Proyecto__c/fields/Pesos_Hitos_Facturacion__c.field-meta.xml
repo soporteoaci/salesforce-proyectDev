@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pesos_Hitos_Facturacion__c</fullName>
+    <description>Suma el total de campos &quot;PESO FACTURACIÓN&quot; de todos los hitos del proyecto.</description>
+    <label>Pesos Hitos Facturación</label>
+    <summarizedField>Hito__c.Peso_Facturacion__c</summarizedField>
+    <summaryForeignKey>Hito__c.Proyecto__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

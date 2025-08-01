@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Status</label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Abierta</masterLabel>
+        <translation>Open</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelada</masterLabel>
+        <translation>Cancel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cerrada</masterLabel>
+        <translation>Close</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>En proceso</masterLabel>
+        <translation>In Process</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Validada</masterLabel>
+        <translation>Validated</translation>
+    </picklistValues>
+</CustomFieldTranslation>

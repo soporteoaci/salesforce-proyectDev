@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oficio</fullName>
+    <active>true</active>
+    <description>Comunicación que representa un Oficio Enviado o Recibido.</description>
+    <label>Oficio</label>
+    <picklistValues>
+        <picklist>Categoria__c</picklist>
+        <values>
+            <fullName>Entrante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saliente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Estado__c</picklist>
+        <values>
+            <fullName>Atendido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente de Atender</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo__c</picklist>
+        <values>
+            <fullName>Correo Postal</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personalmente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

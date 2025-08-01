@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Type</label>
+    <name>Tipo__c</name>
+    <picklistValues>
+        <masterLabel>Aprobación Preventa</masterLabel>
+        <translation><!-- Aprobación Preventa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Borrador Acuerdo Socios</masterLabel>
+        <translation><!-- Borrador Acuerdo Socios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oferta</masterLabel>
+        <translation>Offer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oferta QA Económico</masterLabel>
+        <translation><!-- Oferta QA Económico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oferta QA Técnico</masterLabel>
+        <translation><!-- Oferta QA Técnico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preliminar</masterLabel>
+        <translation><!-- Preliminar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Socios</masterLabel>
+        <translation>Partner</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subcontratacion</masterLabel>
+        <translation>Subcontracting</translation>
+    </picklistValues>
+</CustomFieldTranslation>

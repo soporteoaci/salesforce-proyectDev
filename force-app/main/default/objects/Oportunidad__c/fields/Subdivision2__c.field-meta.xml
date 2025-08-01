@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subdivision2__c</fullName>
+    <description>Valores para la picklist Subdivisión 2</description>
+    <label>Subdivisión 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Subdivision1__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>V-A.V. E-FLEXIBILITY</fullName>
+                <default>false</default>
+                <label>V-A.V. E-FLEXIBILITY</label>
+            </value>
+            <value>
+                <fullName>V-A.V. E-MOBILITY</fullName>
+                <default>false</default>
+                <label>V-A.V. E-MOBILITY</label>
+            </value>
+            <value>
+                <fullName>V-BSN GENERATION</fullName>
+                <default>false</default>
+                <label>V-BSN GENERATION</label>
+            </value>
+            <value>
+                <fullName>V-C.OP IB COMERCIAL METERING</fullName>
+                <default>false</default>
+                <label>V-C.OP IB COMERCIAL METERING</label>
+            </value>
+            <value>
+                <fullName>V- C.OP IB COMERCIAL METERING</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V- C.OP IB COMERCIAL METERING</label>
+            </value>
+            <value>
+                <fullName>V-C.OP IB CUSTOMER MANAGEMENT</fullName>
+                <default>false</default>
+                <label>V-C.OP IB CUSTOMER MANAGEMENT</label>
+            </value>
+            <value>
+                <fullName>V-C.OP IB METERING, BILLING, CREDIT</fullName>
+                <default>false</default>
+                <label>V-C.OP IB METERING, BILLING, CREDIT</label>
+            </value>
+            <value>
+                <fullName>V- C.OP IB METERING, BILLING, CREDIT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V- C.OP IB METERING, BILLING, CREDIT</label>
+            </value>
+            <value>
+                <fullName>V-C.OP LATAM CUST. MANAGEMENT</fullName>
+                <default>false</default>
+                <label>V-C.OP LATAM CUST. MANAGEMENT</label>
+            </value>
+            <value>
+                <fullName>V-C.OP LATAM LEGACY</fullName>
+                <default>false</default>
+                <label>V-C.OP LATAM LEGACY</label>
+            </value>
+            <value>
+                <fullName>V-C.OP LATAM METER,BILL,CREDIT</fullName>
+                <default>false</default>
+                <label>V-C.OP LATAM METER,BILL,CREDIT</label>
+            </value>
+            <value>
+                <fullName>V-Dm Ib Dig Channels Comerc</fullName>
+                <default>false</default>
+                <label>V-Dm Ib Dig Channels Comerc</label>
+            </value>
+            <value>
+                <fullName>V-Dm Ib GDP Comer</fullName>
+                <default>false</default>
+                <label>V-Dm Ib GDP Comer</label>
+            </value>
+            <value>
+                <fullName>V-Dm Ib GDP Distrib</fullName>
+                <default>false</default>
+                <label>V-Dm Ib GDP Distrib</label>
+            </value>
+            <value>
+                <fullName>V-Dm Lat Dig Channels Comerc</fullName>
+                <default>false</default>
+                <label>V-Dm Lat Dig Channels Comerc</label>
+            </value>
+            <value>
+                <fullName>V-Dm Lat GDP Comerc</fullName>
+                <default>false</default>
+                <label>V-Dm Lat GDP Comerc</label>
+            </value>
+            <value>
+                <fullName>V-Dm Lat GDP Distrib</fullName>
+                <default>false</default>
+                <label>V-Dm Lat GDP Distrib</label>
+            </value>
+            <value>
+                <fullName>V-Enel GDP</fullName>
+                <default>false</default>
+                <label>V-Enel GDP</label>
+            </value>
+            <value>
+                <fullName>V-Enel GDP Brasil</fullName>
+                <default>false</default>
+                <label>V-Enel GDP Brasil</label>
+            </value>
+            <value>
+                <fullName>V-Enel GDP Colombia</fullName>
+                <default>false</default>
+                <label>V-Enel GDP Colombia</label>
+            </value>
+            <value>
+                <fullName>V-Enel GDP España</fullName>
+                <default>false</default>
+                <label>V-Enel GDP España</label>
+            </value>
+            <value>
+                <fullName>V-Enel GDP Italia</fullName>
+                <default>false</default>
+                <label>V-Enel GDP Italia</label>
+            </value>
+            <value>
+                <fullName>V-Enel GDP Peru</fullName>
+                <default>false</default>
+                <label>V-Enel GDP Peru</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N Brasil L2</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N Brasil L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N Brasil L4</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N Brasil L4</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N Chile L2</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N Chile L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N Chile L4</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N Chile L4</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N Colombia L2</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N Colombia L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N Colombia L4</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N Colombia L4</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N España L2</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N España L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N España L4</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N España L4</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N Italia L2</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N Italia L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N Italia L4</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N Italia L4</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N - L2 Italia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-Enel I&amp;N - L2 Italia</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N Peru L2</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N Peru L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel I&amp;N Peru L4</fullName>
+                <default>false</default>
+                <label>V-Enel I&amp;N Peru L4</label>
+            </value>
+            <value>
+                <fullName>V-Enel Market Latam</fullName>
+                <default>false</default>
+                <label>V-Enel Market Latam</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Brasil L1</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Brasil L1</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Brasil L2</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Brasil L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Brasil L5</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Brasil L5</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Chile L1</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Chile L1</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Chile L2</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Chile L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Chile L5</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Chile L5</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Colombia L1</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Colombia L1</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Colombia L2</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Colombia L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Colombia L5</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Colombia L5</label>
+            </value>
+            <value>
+                <fullName>V-ENEL MK España L1</fullName>
+                <default>false</default>
+                <label>V-ENEL MK España L1</label>
+            </value>
+            <value>
+                <fullName>V-ENEL MK España L2</fullName>
+                <default>false</default>
+                <label>V-ENEL MK España L2</label>
+            </value>
+            <value>
+                <fullName>V-ENEL MK España Otros</fullName>
+                <default>false</default>
+                <label>V-ENEL MK España Otros</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Peru L1</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Peru L1</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Peru L2</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Peru L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel Mk Peru L5</fullName>
+                <default>false</default>
+                <label>V-Enel Mk Peru L5</label>
+            </value>
+            <value>
+                <fullName>V-Enel X</fullName>
+                <default>false</default>
+                <label>V-Enel X</label>
+            </value>
+            <value>
+                <fullName>V-Enel X Colombia L1</fullName>
+                <default>false</default>
+                <label>V-Enel X Colombia L1</label>
+            </value>
+            <value>
+                <fullName>V-Enel X España L1</fullName>
+                <default>false</default>
+                <label>V-Enel X España L1</label>
+            </value>
+            <value>
+                <fullName>V-Enel X España L2</fullName>
+                <default>false</default>
+                <label>V-Enel X España L2</label>
+            </value>
+            <value>
+                <fullName>V-Enel X España L3</fullName>
+                <default>false</default>
+                <label>V-Enel X España L3</label>
+            </value>
+            <value>
+                <fullName>V-GPG GENERATION</fullName>
+                <default>false</default>
+                <label>V-GPG GENERATION</label>
+            </value>
+            <value>
+                <fullName>V-I&amp;N OP. CUSTOMER MANAGEMENT</fullName>
+                <default>false</default>
+                <label>V-I&amp;N OP. CUSTOMER MANAGEMENT</label>
+            </value>
+            <value>
+                <fullName>V-I&amp;N OP. ERP SOLUTIONS</fullName>
+                <default>false</default>
+                <label>V-I&amp;N OP. ERP SOLUTIONS</label>
+            </value>
+            <value>
+                <fullName>V-I&amp;N OP. GRIDS</fullName>
+                <default>false</default>
+                <label>V-I&amp;N OP. GRIDS</label>
+            </value>
+            <value>
+                <fullName>V-I&amp;N OP. METERING, BILLING, CREDIT</fullName>
+                <default>false</default>
+                <label>V-I&amp;N OP. METERING, BILLING, CREDIT</label>
+            </value>
+            <value>
+                <fullName>V-I&amp;N OP. METERING &amp; FIELD</fullName>
+                <default>false</default>
+                <label>V-I&amp;N OP. METERING &amp; FIELD</label>
+            </value>
+            <value>
+                <fullName>V-I&amp;N OP. PLATFORM BASED ERP</fullName>
+                <default>false</default>
+                <label>V-I&amp;N OP. PLATFORM BASED ERP</label>
+            </value>
+            <value>
+                <fullName>V-M2C BANCA DIVISION</fullName>
+                <default>false</default>
+                <label>V-M2C BANCA DIVISION</label>
+            </value>
+            <value>
+                <fullName>V-M2C ORANGE, BAT</fullName>
+                <default>false</default>
+                <label>V-M2C ORANGE, BAT</label>
+            </value>
+            <value>
+                <fullName>V-M2C SEGUROS NO SALUD</fullName>
+                <default>false</default>
+                <label>V-M2C SEGUROS NO SALUD</label>
+            </value>
+            <value>
+                <fullName>V-M2C SEGUROS SALUD</fullName>
+                <default>false</default>
+                <label>V-M2C SEGUROS SALUD</label>
+            </value>
+            <value>
+                <fullName>V-M2C TELEFONICA</fullName>
+                <default>false</default>
+                <label>V-M2C TELEFONICA</label>
+            </value>
+            <value>
+                <fullName>V-M2C VODAFONE</fullName>
+                <default>false</default>
+                <label>V-M2C VODAFONE</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>60051189</controllingFieldValue>
+            <valueName>V-A.V. E-FLEXIBILITY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60051189</controllingFieldValue>
+            <valueName>V-A.V. E-MOBILITY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60051189</controllingFieldValue>
+            <valueName>V-Enel X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60051189</controllingFieldValue>
+            <valueName>V-Enel X Colombia L1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60051189</controllingFieldValue>
+            <valueName>V-Enel X España L1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60051189</controllingFieldValue>
+            <valueName>V-Enel X España L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60051189</controllingFieldValue>
+            <valueName>V-Enel X España L3</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

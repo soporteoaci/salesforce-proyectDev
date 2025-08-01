@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPV_varios__c</fullName>
+    <inlineHelpText>CPV es un sistema de identificación y categorización de todas las actividades económicas susceptibles de ser contratadas mediante licitación o concurso público en la Unión Europea. Elija uno o varios valores.</inlineHelpText>
+    <label>CPV varios</label>
+    <length>500</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

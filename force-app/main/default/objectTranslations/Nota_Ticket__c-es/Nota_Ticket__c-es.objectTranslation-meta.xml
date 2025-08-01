@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Nota Ticket</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Notas Ticket</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Formato Nota IB</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Nota Ticket</layout>
+        <sections>
+            <label>Custom Link</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Nota Ticket Cliente</layout>
+        <sections>
+            <label>Custom Link</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Si selecciona &apos;&apos;Asignar&apos;&apos; solo puede modificar los campos &apos;&apos;Asignado a&apos;&apos; y &apos;&apos;Comentarios&apos;&apos; --></errorMessage>
+        <name>Accion_Asignar</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Con el tipo de &apos;&apos;Acción&apos;&apos; seleccionado solo puede modificar el campo &apos;&apos;Comentarios&apos;&apos;. --></errorMessage>
+        <name>Accion_Modificacion_Cerrar_Resolver</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Si selecciona &apos;&apos;Pdt Proveedor&apos;&apos; solo puede modificar los campos &apos;&apos;Proveedor&apos;&apos; y &apos;&apos;Comentarios&apos;&apos; --></errorMessage>
+        <name>Accion_Nuevo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Si selecciona &apos;&apos;Rechazo&apos;&apos; solo puede modificar los campos &apos;&apos;Motivo Rechazo&apos;&apos; y &apos;&apos;Comentarios&apos;&apos;. --></errorMessage>
+        <name>Accion_Rechazo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No es posible seleccionar la acción elegida sobre un Ticket ya resuelto. --></errorMessage>
+        <name>Accion_Resuelta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Usted no tiene permisos para realizar la acción seleccionada. --></errorMessage>
+        <name>Acciones_permitidas</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para la acción &apos;&apos;Asignar&apos;&apos; es obligatorio que informe el campo &apos;&apos;Asignado a&apos;&apos; --></errorMessage>
+        <name>AsignadoInformado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para la acción &apos;&apos;Pdt Proveedor&apos;&apos; es obligatorio que informe el campo &apos;&apos;Proveedor&apos;&apos;. --></errorMessage>
+        <name>ProveedorInformado</name>
+    </validationRules>
+</CustomObjectTranslation>

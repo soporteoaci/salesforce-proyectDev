@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Capacitación</masterLabel>
+        <translation>Training</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Incidencia</masterLabel>
+        <translation>Incidence</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Informes</masterLabel>
+        <translation>Inform</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Interno</masterLabel>
+        <translation>Internal</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mejora</masterLabel>
+        <translation>Improvement</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Migración</masterLabel>
+        <translation>Migration</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Otros</masterLabel>
+        <translation>Others</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pruebas</masterLabel>
+        <translation>Evidence</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Revisión de Documentos</masterLabel>
+        <translation>Document Review</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

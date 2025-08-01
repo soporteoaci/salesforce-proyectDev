@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_Abierta__c</fullName>
+    <description>Se informa mediante un PB con la fecha NOW al crearse/modificarse un caso a diferente de “Bloqueado”. El PB “Ticket Bloqueado” se encarga de limpiar la Fecha Bloqueo.</description>
+    <label>Fecha Abierta</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

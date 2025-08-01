@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Moneda --></label>
+    <name>Moneda__c</name>
+    <picklistValues>
+        <masterLabel>Balboa panameño</masterLabel>
+        <translation><!-- Balboa panameño --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boliviano</masterLabel>
+        <translation><!-- Boliviano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corona noruega</masterLabel>
+        <translation><!-- Corona noruega --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dinar argelino</masterLabel>
+        <translation><!-- Dinar argelino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dirham marroquí</masterLabel>
+        <translation><!-- Dirham marroquí --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dong vietnamita</masterLabel>
+        <translation><!-- Dong vietnamita --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dólar</masterLabel>
+        <translation><!-- Dólar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Euro europeo</masterLabel>
+        <translation><!-- Euro europeo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forint húngaro</masterLabel>
+        <translation><!-- Forint húngaro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Franco guineano</masterLabel>
+        <translation><!-- Franco guineano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Griwna ucraniano</masterLabel>
+        <translation><!-- Griwna ucraniano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Libra esterlina</masterLabel>
+        <translation><!-- Libra esterlina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nuevo sol</masterLabel>
+        <translation><!-- Nuevo sol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peso chileno</masterLabel>
+        <translation><!-- Peso chileno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peso colombiano</masterLabel>
+        <translation><!-- Peso colombiano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peso dominicano</masterLabel>
+        <translation><!-- Peso dominicano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peso filipino</masterLabel>
+        <translation><!-- Peso filipino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peso mexicano</masterLabel>
+        <translation><!-- Peso mexicano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rand sudafricano</masterLabel>
+        <translation><!-- Rand sudafricano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real brasileño</masterLabel>
+        <translation><!-- Real brasileño --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rial omaní</masterLabel>
+        <translation><!-- Rial omaní --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riyal saudí</masterLabel>
+        <translation><!-- Riyal saudí --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rublo ruso</masterLabel>
+        <translation><!-- Rublo ruso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rupia india</masterLabel>
+        <translation><!-- Rupia india --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taka bangladeshí</masterLabel>
+        <translation><!-- Taka bangladeshí --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yuan chino</masterLabel>
+        <translation><!-- Yuan chino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zloty polaco</masterLabel>
+        <translation><!-- Zloty polaco --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Check the box to deactivate the account</help>
+    <label>Desactivate</label>
+    <name>Desactivar__c</name>
+</CustomFieldTranslation>

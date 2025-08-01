@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Stage</label>
+    <name>Etapa__c</name>
+    <picklistValues>
+        <masterLabel>Captación</masterLabel>
+        <translation><!-- Captación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cualificación</masterLabel>
+        <translation>Qualification</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demostrando</masterLabel>
+        <translation><!-- Demostrando --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oferta</masterLabel>
+        <translation>Offer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presentada (negociación y cierre)</masterLabel>
+        <translation>Presented (negotiation and closing)</translation>
+    </picklistValues>
+</CustomFieldTranslation>

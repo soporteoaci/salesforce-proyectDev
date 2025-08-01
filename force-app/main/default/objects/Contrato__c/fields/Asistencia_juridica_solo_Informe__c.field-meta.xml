@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asistencia_juridica_solo_Informe__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Documentando_incidencias__c = true, $Label.GC_Asis_Jur_Contactado_CL , 
+IF( AND(Documentando_incidencias__c = false,    NOT(ISPICKVAL(Reqs_Contractuales_sobre_Presencialidad__c ,&apos;&apos;))), $Label.GC_Asis_Jur_No_Contactado_CL  ,
+$Label.GC_Sin_informacion_CL))</formula>
+    <label>Asistencia jurídica solo Informe</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

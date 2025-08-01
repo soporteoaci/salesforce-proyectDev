@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Objetivo__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Objetivo</label>
+    <referenceTo>Objetivo__c</referenceTo>
+    <relationshipLabel>Equipos Oferta</relationshipLabel>
+    <relationshipName>Equipos_Oferta</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

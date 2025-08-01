@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Promotores --></label>
+    <name>Promotores__c</name>
+    <picklistValues>
+        <masterLabel>Francisco Ruiz Ruiseño Riera</masterLabel>
+        <translation><!-- Francisco Ruiz Ruiseño Riera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Germán del Real</masterLabel>
+        <translation><!-- Germán del Real --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ignacio Hinojosa</masterLabel>
+        <translation><!-- Ignacio Hinojosa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jose Bores Borrero</masterLabel>
+        <translation><!-- Jose Bores Borrero --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joseba Inchaurraga</masterLabel>
+        <translation><!-- Joseba Inchaurraga --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>José Antonio García Bermudo</masterLabel>
+        <translation><!-- José Antonio García Bermudo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>José Luis Manzanares Abásolo</masterLabel>
+        <translation><!-- José Luis Manzanares Abásolo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>José Luis Manzanares Japón</masterLabel>
+        <translation><!-- José Luis Manzanares Japón --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Juan de Cea Garcia</masterLabel>
+        <translation><!-- Juan de Cea Garcia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Juan de Dios Hermosin</masterLabel>
+        <translation><!-- Juan de Dios Hermosin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Luis Castillo</masterLabel>
+        <translation><!-- Luis Castillo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rafael Fernández Cantillana</masterLabel>
+        <translation><!-- Rafael Fernández Cantillana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rosalío Alonso Peces</masterLabel>
+        <translation><!-- Rosalío Alonso Peces --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stefan Pardo Kolesch</masterLabel>
+        <translation><!-- Stefan Pardo Kolesch --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Subnivel --></label>
+    <name>SUBNIVEL__c</name>
+    <picklistValues>
+        <masterLabel>Asesores externos</masterLabel>
+        <translation><!-- Asesores externos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concejales</masterLabel>
+        <translation><!-- Concejales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consejero Delegado</masterLabel>
+        <translation><!-- Consejero Delegado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consejeros de Comunidades Autónomas</masterLabel>
+        <translation><!-- Consejeros de Comunidades Autónomas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decanos</masterLabel>
+        <translation><!-- Decanos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desconocido</masterLabel>
+        <translation><!-- Desconocido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diputados</masterLabel>
+        <translation><!-- Diputados --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director Ciberseguridad</masterLabel>
+        <translation><!-- Director Ciberseguridad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director Comercial</masterLabel>
+        <translation><!-- Director Comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director Económico-Financiero</masterLabel>
+        <translation><!-- Director Económico-Financiero --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director General</masterLabel>
+        <translation><!-- Director General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director General Adjunto</masterLabel>
+        <translation><!-- Director General Adjunto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director Transformación Digital</masterLabel>
+        <translation><!-- Director Transformación Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director Técnico</masterLabel>
+        <translation><!-- Director Técnico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director adjunto a la función</masterLabel>
+        <translation><!-- Director adjunto a la función --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director de Compras</masterLabel>
+        <translation><!-- Director de Compras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director de Función</masterLabel>
+        <translation><!-- Director de Función --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director de Marketing - Comunicaciones</masterLabel>
+        <translation><!-- Director de Marketing - Comunicaciones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director de Operaciones</masterLabel>
+        <translation><!-- Director de Operaciones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director de Organización y Sistemas</masterLabel>
+        <translation><!-- Director de Organización y Sistemas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director de Producción</masterLabel>
+        <translation><!-- Director de Producción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director de RRHH - Personal</masterLabel>
+        <translation><!-- Director de RRHH - Personal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director de Recursos Humanos</masterLabel>
+        <translation><!-- Director de Recursos Humanos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director e-Business</masterLabel>
+        <translation><!-- Director e-Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Empleados sin nivel de responsabilidad específico</masterLabel>
+        <translation><!-- Empleados sin nivel de responsabilidad específico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jefe de Proyectos</masterLabel>
+        <translation><!-- Jefe de Proyectos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ministros</masterLabel>
+        <translation><!-- Ministros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Máximo Responsable de la Universidad</masterLabel>
+        <translation><!-- Máximo Responsable de la Universidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Máximo responsable de la Administración</masterLabel>
+        <translation><!-- Máximo responsable de la Administración --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros</masterLabel>
+        <translation><!-- Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros altos cargos</masterLabel>
+        <translation><!-- Otros altos cargos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros responsables de departamento de Inf.</masterLabel>
+        <translation><!-- Otros responsables de departamento de Inf. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presidente</masterLabel>
+        <translation><!-- Presidente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rector</masterLabel>
+        <translation><!-- Rector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsable Económico-Financiero</masterLabel>
+        <translation><!-- Responsable Económico-Financiero --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsable de CAD</masterLabel>
+        <translation><!-- Responsable de CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsable de Organización y Sistemas</masterLabel>
+        <translation><!-- Responsable de Organización y Sistemas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsable de Recursos Humanos</masterLabel>
+        <translation><!-- Responsable de Recursos Humanos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsable de Tecnologías</masterLabel>
+        <translation><!-- Responsable de Tecnologías --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsable de departamento</masterLabel>
+        <translation><!-- Responsable de departamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsable de desarrollo</masterLabel>
+        <translation><!-- Responsable de desarrollo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsable de explotación</masterLabel>
+        <translation><!-- Responsable de explotación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsable de sistemas</masterLabel>
+        <translation><!-- Responsable de sistemas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sin cargo</masterLabel>
+        <translation><!-- Sin cargo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subdir  Org y Sistemas/Inform.</masterLabel>
+        <translation><!-- Subdir  Org y Sistemas/Inform. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subdirector Económico Financiero</masterLabel>
+        <translation><!-- Subdirector Económico Financiero --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subdirector General</masterLabel>
+        <translation><!-- Subdirector General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subdirector General Adjunto</masterLabel>
+        <translation><!-- Subdirector General Adjunto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subdirector de Función</masterLabel>
+        <translation><!-- Subdirector de Función --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subdirector de RRHH/Personal</masterLabel>
+        <translation><!-- Subdirector de RRHH/Personal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Viceconsejeros</masterLabel>
+        <translation><!-- Viceconsejeros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vicedecano</masterLabel>
+        <translation><!-- Vicedecano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vicepresidente</masterLabel>
+        <translation><!-- Vicepresidente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vicerrector</masterLabel>
+        <translation><!-- Vicerrector --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- RO --></help>
+    <label><!-- Riesgo Principal --></label>
+    <name>Riesgo_Principal__c</name>
+    <picklistValues>
+        <masterLabel>Alcance</masterLabel>
+        <translation><!-- Alcance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conocimiento</masterLabel>
+        <translation><!-- Conocimiento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plazos</masterLabel>
+        <translation><!-- Plazos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recursos</masterLabel>
+        <translation><!-- Recursos --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

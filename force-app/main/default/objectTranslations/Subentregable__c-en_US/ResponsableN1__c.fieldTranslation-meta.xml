@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Level 1 Manager</label>
+    <name>ResponsableN1__c</name>
+    <relationshipLabel>Deliverables (Responsible level 1)</relationshipLabel>
+</CustomFieldTranslation>

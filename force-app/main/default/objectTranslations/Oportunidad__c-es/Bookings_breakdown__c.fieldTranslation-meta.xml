@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Diversification breakdown --></label>
+    <name>Bookings_breakdown__c</name>
+    <picklistValues>
+        <masterLabel>Cross-selling</masterLabel>
+        <translation><!-- Cross-selling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Names</masterLabel>
+        <translation><!-- New Names --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Up-selling</masterLabel>
+        <translation><!-- Up-selling --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

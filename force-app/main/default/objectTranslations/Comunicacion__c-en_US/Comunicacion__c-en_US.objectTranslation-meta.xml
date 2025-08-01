@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Communication</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Communications</value>
+    </caseValues>
+    <layouts>
+        <layout>Formato Correo</layout>
+        <sections>
+            <label>Details</label>
+            <section>Detalles</section>
+        </sections>
+        <sections>
+            <label>Personalized Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Oficio</layout>
+        <sections>
+            <label>Details</label>
+            <section>Detalles</section>
+        </sections>
+        <sections>
+            <label>Personalized Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Communication Code</nameFieldLabel>
+    <recordTypes>
+        <description>Communication that represents an act</description>
+        <label><!-- Acta --></label>
+        <name>Acta</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Communication that represents an email</description>
+        <label>E-mail</label>
+        <name>Correo_Electronico</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Communication that represents a trade sent or received</description>
+        <label><!-- Oficio --></label>
+        <name>Oficio</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

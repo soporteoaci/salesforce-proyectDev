@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contratos_Seguimiento_OACI_2</fullName>
+    <columns>Codigo_SAP__c</columns>
+    <columns>NAME</columns>
+    <columns>UsuarioControl__c</columns>
+    <columns>IC_en_EUR__c</columns>
+    <columns>IC_moneda_contrato__c</columns>
+    <columns>Autorizados__c</columns>
+    <columns>URL_Carpeta_Contrato_PA__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SeguimientoContractual__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Contratos Seguimiento OACI</label>
+    <sharedTo>
+        <role>Supervision</role>
+    </sharedTo>
+</ListView>

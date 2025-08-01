@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- SME --></label>
+            <section>SME</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>New Opportunity</label>
+        <name>Nueva_Oportunidad</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>New Task</label>
+        <name>Nueva_task</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Cuarentena --></label>
+        <name>Cuarentena</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General --></label>
+        <name>General</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Deben estar todos los campos del contrato rellenos --></errorMessage>
+        <name>Plan_Cuentas_contrato_relleno</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform Sector and Subgroup</errorMessage>
+        <name>Sector_Subsector_Obligatorio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- El campo Mercado IT es de obligatorio cumplimiento --></errorMessage>
+        <name>Validacion_Mercado_It</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Act_On_Account_Report --></label>
+        <name>ActOn__Act_On_Account_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Gestionar_Duplicados --></label>
+        <name>Gestionar_Duplicados</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Approver that definitively confirms the resolution of the case and therefore its closure</help>
+    <label>Final Approver</label>
+    <name>Aprobador_Final__c</name>
+    <relationshipLabel>Cases (Final Approver)</relationshipLabel>
+</CustomFieldTranslation>

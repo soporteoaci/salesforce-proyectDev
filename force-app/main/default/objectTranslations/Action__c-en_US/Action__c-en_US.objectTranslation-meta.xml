@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Action</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Actions</value>
+    </caseValues>
+    <layouts>
+        <layout>Formato Acción</layout>
+        <sections>
+            <label>Tracking Information</label>
+            <section>Información de Seguimiento</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Acción Cancelada</layout>
+        <sections>
+            <label>Tracking Information</label>
+            <section>Información de Seguimiento</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Action</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Cancel --></label>
+        <name>Cancel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Draft --></label>
+        <name>Draft</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Close actions can not be modified</errorMessage>
+        <name>Canceled_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The commitment date must be later than today</errorMessage>
+        <name>EndDate_after_Today</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>In Process actions can only change to: Open, Close or Cancel</errorMessage>
+        <name>In_Progress_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>An action must be created in the ``open´´ state</errorMessage>
+        <name>New_Action_is_Open</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Open actions can only change to: In Process, Close or Cancel</errorMessage>
+        <name>Open_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The corporate follow-up task is in a validated state. It is not allowed to add new actions.</errorMessage>
+        <name>SSC_Validated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The actions and descriptions can not be modified</errorMessage>
+        <name>Update_Title_and_Description</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Validated actions can not be modified</errorMessage>
+        <name>Validated_Status</name>
+    </validationRules>
+</CustomObjectTranslation>

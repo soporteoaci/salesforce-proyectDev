@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Functional_classification_Level_1ID</label>
+    <name>Clasificacion_funcional_Nivel_1ID__c</name>
+    <relationshipLabel>Opportunities</relationshipLabel>
+</CustomFieldTranslation>

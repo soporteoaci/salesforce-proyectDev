@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPV_select_Ingenieria</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;,
+NOT(
+    OR(
+       $Profile.Name = &apos;Administrador del sistema&apos;,
+							$Profile.Name = &apos;System Administrator&apos;)
+				),				
+ISPICKVAL(Direccion_Operaciones__c,&apos;ENGINEERING&apos;),
+RecordType.Name = &apos;Ayesa&apos;,
+ISPICKVAL(Pais__c, &apos;ES&apos;),
+ISBLANK(CPV_varios__c),
+NOT(ISPICKVAL(Subfase__c,&apos;Alta&apos;)),
+AND(
+   Importe_total_sin_IVA__c &gt;= 19000,
+   OR(
+      ISPICKVAL(Clase_de_oferta__c, &apos;Acuerdo Marco / SDA Público&apos;),
+      ISPICKVAL(Clase_de_oferta__c, &apos;Ampliación de Contrato&apos;),
+      ISPICKVAL(Clase_de_oferta__c, &apos;Invitación Pública&apos;),
+      ISPICKVAL(Clase_de_oferta__c, &apos;Licitación Pública&apos;),
+      ISPICKVAL(Clase_de_oferta__c, &apos;Pública&apos;)
+      )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>CPV_varios__c</errorDisplayField>
+    <errorMessage>Seleccione un valor para el campo CPV en la pestaña &quot;Más Información&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Informar_Referencia_Comercial_Nombre</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+				OR(
+								Referencia_Comercial_lookup__c== &quot;&quot;,
+								ISBLANK(Tecnologia__c)	
+				),
+				NOT( ISPICKVAL(Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
+				NOT( ISPICKVAL(Tipo_Extension__c, &apos;Extensión CUTE&apos;)),				
+				OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;), ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+				$User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
+    $User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
+    $Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
+				ISPICKVAL(Referencia_Comercial__c, &quot;No, porque ya existe&quot;),
+				
+				OR(
+								AND(
+												RecordType.Name=&apos;Ayesa&apos;,
+												ISPICKVAL(Etapa__c,&apos;Cerrada&apos;),
+												ISPICKVAL(Subfase__c, &apos;Ganada&apos;)
+								),
+
+								AND(
+												CONTAINS(RecordType.Name,&apos;Ibermatica&apos;),
+												OR(
+																ISPICKVAL( Etapa__c , &apos;Cerrada&apos;),
+																ISPICKVAL(Etapa_Fase__c,&apos;Cerrada&apos;)
+												),
+												ISPICKVAL(Estado_de_Cierre__c, &apos;Contratada&apos;)
+								)
+				)
+
+)</errorConditionFormula>
+    <errorDisplayField>Referencia_Comercial_lookup__c</errorDisplayField>
+    <errorMessage>Informe la Referencia Comercial relacionada y el campo Tecnología en la pestaña de Cierre</errorMessage>
+</ValidationRule>

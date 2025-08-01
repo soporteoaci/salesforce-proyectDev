@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Negocio --></label>
+    <name>Negocio__c</name>
+    <picklistValues>
+        <masterLabel>Administración estatal</masterLabel>
+        <translation><!-- Administración estatal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administración local</masterLabel>
+        <translation><!-- Administración local --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administración regional</masterLabel>
+        <translation><!-- Administración regional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admon Gral Estado</masterLabel>
+        <translation><!-- Admon Gral Estado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aeropuertos</masterLabel>
+        <translation><!-- Aeropuertos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agua</masterLabel>
+        <translation><!-- Agua --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arquitectura y management</masterLabel>
+        <translation><!-- Arquitectura y management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asuntos Sociales y Medio Ambiente</masterLabel>
+        <translation><!-- Asuntos Sociales y Medio Ambiente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Banca y Seguro</masterLabel>
+        <translation><!-- Banca y Seguro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ciudades y Puertos 4.0</masterLabel>
+        <translation><!-- Ciudades y Puertos 4.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cultura PMO y Calidad</masterLabel>
+        <translation><!-- Cultura PMO y Calidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diseño y Certificación</masterLabel>
+        <translation><!-- Diseño y Certificación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENEL BPO</masterLabel>
+        <translation><!-- ENEL BPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Educación</masterLabel>
+        <translation><!-- Educación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Empleo, ITO e Innovación</masterLabel>
+        <translation><!-- Empleo, ITO e Innovación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel GDP L1</masterLabel>
+        <translation><!-- Enel GDP L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel GDP L3</masterLabel>
+        <translation><!-- Enel GDP L3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N Brasil L2</masterLabel>
+        <translation><!-- Enel I&amp;N Brasil L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N Brasil L4</masterLabel>
+        <translation><!-- Enel I&amp;N Brasil L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N Chile L2</masterLabel>
+        <translation><!-- Enel I&amp;N Chile L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N Chile L4</masterLabel>
+        <translation><!-- Enel I&amp;N Chile L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N Colombia L2</masterLabel>
+        <translation><!-- Enel I&amp;N Colombia L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N Colombia L4</masterLabel>
+        <translation><!-- Enel I&amp;N Colombia L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N España L2</masterLabel>
+        <translation><!-- Enel I&amp;N España L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N España L4</masterLabel>
+        <translation><!-- Enel I&amp;N España L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N Peru L2</masterLabel>
+        <translation><!-- Enel I&amp;N Peru L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N Peru L4</masterLabel>
+        <translation><!-- Enel I&amp;N Peru L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N – L2 Italia</masterLabel>
+        <translation><!-- Enel I&amp;N – L2 Italia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel I&amp;N – L4 Italia</masterLabel>
+        <translation><!-- Enel I&amp;N – L4 Italia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Brasil L1</masterLabel>
+        <translation><!-- Enel Mk Brasil L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Brasil L2</masterLabel>
+        <translation><!-- Enel Mk Brasil L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Brasil L5</masterLabel>
+        <translation><!-- Enel Mk Brasil L5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Chile L1</masterLabel>
+        <translation><!-- Enel Mk Chile L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Chile L2</masterLabel>
+        <translation><!-- Enel Mk Chile L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Chile L5</masterLabel>
+        <translation><!-- Enel Mk Chile L5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Colombia L1</masterLabel>
+        <translation><!-- Enel Mk Colombia L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Colombia L2</masterLabel>
+        <translation><!-- Enel Mk Colombia L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Colombia L5</masterLabel>
+        <translation><!-- Enel Mk Colombia L5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk España L1</masterLabel>
+        <translation><!-- Enel Mk España L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk España L2</masterLabel>
+        <translation><!-- Enel Mk España L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk España Otros</masterLabel>
+        <translation><!-- Enel Mk España Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Peru L1</masterLabel>
+        <translation><!-- Enel Mk Peru L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Peru L2</masterLabel>
+        <translation><!-- Enel Mk Peru L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Mk Peru L5</masterLabel>
+        <translation><!-- Enel Mk Peru L5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel Otros</masterLabel>
+        <translation><!-- Enel Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enel X</masterLabel>
+        <translation><!-- Enel X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estructuras</masterLabel>
+        <translation><!-- Estructuras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ferrocarriles</masterLabel>
+        <translation><!-- Ferrocarriles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gestión territorial</masterLabel>
+        <translation><!-- Gestión territorial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industria</masterLabel>
+        <translation><!-- Industria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingeniería de Fabricación</masterLabel>
+        <translation><!-- Ingeniería de Fabricación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingeniería del terreno</masterLabel>
+        <translation><!-- Ingeniería del terreno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Innovación</masterLabel>
+        <translation><!-- Innovación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalaciones del transporte</masterLabel>
+        <translation><!-- Instalaciones del transporte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logística y Movilidad</masterLabel>
+        <translation><!-- Logística y Movilidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Madrid</masterLabel>
+        <translation><!-- Madrid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Middle Market</masterLabel>
+        <translation><!-- Middle Market --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Obras hidráulicas</masterLabel>
+        <translation><!-- Obras hidráulicas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Obras viales</masterLabel>
+        <translation><!-- Obras viales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros</masterLabel>
+        <translation><!-- Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros (ATD)</masterLabel>
+        <translation><!-- Otros (ATD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planificación y medio ambiente</masterLabel>
+        <translation><!-- Planificación y medio ambiente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP - Andalucia Educacion</masterLabel>
+        <translation><!-- SP - Andalucia Educacion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP - Andalucia Empleo Justicia</masterLabel>
+        <translation><!-- SP - Andalucia Empleo Justicia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP - Andalucia Hacienda y Sanidad</masterLabel>
+        <translation><!-- SP - Andalucia Hacienda y Sanidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP - Andalucia Mid Market</masterLabel>
+        <translation><!-- SP - Andalucia Mid Market --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP - Cataluña</masterLabel>
+        <translation><!-- SP - Cataluña --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP - Madrid 1</masterLabel>
+        <translation><!-- SP - Madrid 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP - Madrid 2</masterLabel>
+        <translation><!-- SP - Madrid 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP - Norte de España</masterLabel>
+        <translation><!-- SP - Norte de España --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP - Sur de España</masterLabel>
+        <translation><!-- SP - Sur de España --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP BPO</masterLabel>
+        <translation><!-- SP BPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sanidad, ECOFIN y RRHH</masterLabel>
+        <translation><!-- Sanidad, ECOFIN y RRHH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sector Público</masterLabel>
+        <translation><!-- Sector Público --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios</masterLabel>
+        <translation><!-- Servicios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervisión de obras</masterLabel>
+        <translation><!-- Supervisión de obras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tecnológicos</masterLabel>
+        <translation><!-- Tecnológicos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transporte Ferroviario</masterLabel>
+        <translation><!-- Transporte Ferroviario --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTIL BPO</masterLabel>
+        <translation><!-- UTIL BPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities</masterLabel>
+        <translation><!-- Utilities --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Concede permisos para editar esos campos en la oportunidad</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Oportunidad__c.Bloqueada_importe_Horizontal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Oportunidad__c.Tipificacion_Manual__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM Oportunidad: Tipificacion Manual y Bloqueo Linea Servicio</label>
+</PermissionSet>

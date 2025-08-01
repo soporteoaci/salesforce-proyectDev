@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Entregable</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Entregables</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Formato Entregable</layout>
+        <sections>
+            <label><!-- Deadlines --></label>
+            <section>Deadlines</section>
+        </sections>
+        <sections>
+            <label>Details</label>
+            <section>Detalles</section>
+        </sections>
+        <sections>
+            <label>Production</label>
+            <section>Producción</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Entregable Gestión Técnica de Proyecto</layout>
+        <sections>
+            <label><!-- Deadlines --></label>
+            <section>Deadlines</section>
+        </sections>
+        <sections>
+            <label>Details</label>
+            <section>Detalles</section>
+        </sections>
+        <sections>
+            <label>Production</label>
+            <section>Producción</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Actualizar subentregable --></label>
+        <name>Actualizar</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Debe Enviar a Aprobación para modificar el Estado --></errorMessage>
+        <name>Cambio_de_Estado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- El estado ha cambiado a Firmado, actualiza la Fecha Real de Firma --></errorMessage>
+        <name>Estado_cambia_a_Firmado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Actualiza la Fecha Real de Liberación --></errorMessage>
+        <name>Estado_cambia_a_Firmado_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- El estado ha cambiado a Liberado, actualiza la Fecha Real de Liberación --></errorMessage>
+        <name>Estado_cambia_a_Liberado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Solo el perfil Gestión Técnica de Proyecto puede cambiar la Fecha Fin Contractual --></errorMessage>
+        <name>Fecha_Fin_Contractual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No puede cambiar la Fecha de Primera Liberación --></errorMessage>
+        <name>Fecha_Primera_Liberacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La fecha real de firma no puede ser posterior al día actual --></errorMessage>
+        <name>Fecha_real_firma_menor_igual_hoy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La fecha real de liberación no puede ser posterior al dia actual --></errorMessage>
+        <name>Fecha_real_liberacion_menor_igual_hoy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No puede pasar a Entregado el Subentregable. Debe ser el aprobador del subentregable, el responsable del Entregable, o enviar el subentregable para aprobación. --></errorMessage>
+        <name>Pasar_a_Entregado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- El Resposable Cliente que ha seleccionado no pertenece a los Contactos de la Cuenta relacionada con el Entregable --></errorMessage>
+        <name>Responsable_Cliente</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Los campos: Responsable Nivel 1, Responsable Nivel 2, Aprobador Nivel 1 y Aprobador Final deben estar informados para su correcta tramitación. --></errorMessage>
+        <name>Responsables_Informados</name>
+    </validationRules>
+</CustomObjectTranslation>

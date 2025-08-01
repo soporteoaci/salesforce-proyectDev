@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Actualiza_Prob_0</name>
+        <label>Actualiza Probabilidad 0</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>0</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Actualiza_Probabilidad_0</name>
+        <label>Actualiza Probabilidad 0</label>
+        <locationX>1898</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>0</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Actualiza_Probabilidad_100</name>
+        <label>Actualiza Probabilidad 100</label>
+        <locationX>842</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>100</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Actualiza_Probabilidad_30</name>
+        <label>Actualiza Probabilidad 30</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>30</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Actualiza_Probabilidad_50</name>
+        <label>Actualiza Probabilidad 50</label>
+        <locationX>1106</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>50</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Actualiza_Probabilidad_70</name>
+        <label>Actualiza Probabilidad 70</label>
+        <locationX>1370</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>70</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Actualiza_Probabilidad_90</name>
+        <label>Actualiza Probabilidad 90</label>
+        <locationX>578</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>90</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Copia_1_de_Actualiza_Probabilidad_30</name>
+        <label>Copia 1 de Actualiza Probabilidad 30</label>
+        <locationX>1634</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>30</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Subfase</name>
+        <label>Subfase</label>
+        <locationX>974</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Actualiza_Probabilidad_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Resultado predeterminado</defaultConnectorLabel>
+        <rules>
+            <name>X0</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Perdida</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Aplazada / anulada</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Actualiza_Prob_0</targetReference>
+            </connector>
+            <label>0 %</label>
+        </rules>
+        <rules>
+            <name>X30</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Esperando decisión con competidores NO favoritos</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Defendiendo con competidores NO favoritos</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Actualiza_Probabilidad_30</targetReference>
+            </connector>
+            <label>30 %</label>
+        </rules>
+        <rules>
+            <name>X90</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Defendiendo sin competidores</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Esperando decisión sin competidores</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Negociando condiciones de cierre</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Actualiza_Probabilidad_90</targetReference>
+            </connector>
+            <label>90 %</label>
+        </rules>
+        <rules>
+            <name>X100</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ganada pendiente contrato</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ganada</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Actualiza_Probabilidad_100</targetReference>
+            </connector>
+            <label>100 %</label>
+        </rules>
+        <rules>
+            <name>X50</name>
+            <conditionLogic>(1 OR 2 OR 3) AND (4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Esperando decisión con competidores favoritos</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Defendiendo con competidores favoritos</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Elegidos técnicamente: Pte sobre económico</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Tipo_de_Negocio__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Nuevo Negocio</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Tipo_de_Negocio__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Nuevo Cliente</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Actualiza_Probabilidad_50</targetReference>
+            </connector>
+            <label>50 % NN</label>
+        </rules>
+        <rules>
+            <name>X70</name>
+            <conditionLogic>(1 OR 2 OR 3) AND 4 AND 5</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Esperando decisión con competidores favoritos</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Defendiendo con competidores favoritos</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Elegidos técnicamente: Pte sobre económico</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Tipo_de_Negocio__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Nuevo Negocio</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Tipo_de_Negocio__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Nuevo Cliente</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Actualiza_Probabilidad_70</targetReference>
+            </connector>
+            <label>70 % NC</label>
+        </rules>
+        <rules>
+            <name>X30_ENG_y_Esperando_Decisi_n</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Direccion_Operaciones__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ENGINEERING</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subfase__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Esperando decisión</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copia_1_de_Actualiza_Probabilidad_30</targetReference>
+            </connector>
+            <label>30% ENG y Esperando Decisión</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Oportunidad: Porcentaje existo Etapa Cierre {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Oportunidad: Etapa Cierre</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>848</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Subfase</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Etapa__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Cerrada</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Record_Type_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ayesa</stringValue>
+            </value>
+        </filters>
+        <object>Oportunidad__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

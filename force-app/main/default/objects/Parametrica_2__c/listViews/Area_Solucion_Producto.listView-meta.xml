@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_Solucion_Producto</fullName>
+    <columns>NAME</columns>
+    <columns>Area__c</columns>
+    <columns>Solucion__c</columns>
+    <columns>Producto__c</columns>
+    <columns>Modulo__c</columns>
+    <columns>Estado__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Parametrica_2__c.Area_Solucion_Producto</value>
+    </filters>
+    <filters>
+        <field>Solucion__c</field>
+        <operation>equals</operation>
+        <value>ERP-GLOBAL</value>
+    </filters>
+    <filters>
+        <field>Producto__c</field>
+        <operation>equals</operation>
+        <value>RPS</value>
+    </filters>
+    <label>Area Solucion Producto</label>
+</ListView>

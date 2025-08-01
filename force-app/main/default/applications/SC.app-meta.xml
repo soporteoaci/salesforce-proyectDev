@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#005DB5</headerColor>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Soporte Corporativo</label>
+    <navType>Standard</navType>
+    <tabs>Home_SSC</tabs>
+    <tabs>SSC__c</tabs>
+    <tabs>Action__c</tabs>
+    <tabs>Objetivo__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>SC_UtilityBar</utilityBar>
+</CustomApplication>

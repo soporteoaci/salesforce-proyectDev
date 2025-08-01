@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cambio_de_Estado</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Status),OR(NOT(ISPICKVAL(Status, &apos;En desarrollo&apos;)),OR(PRIORVALUE(Status)== &apos;Abierto&apos;,PRIORVALUE(Status)== &apos;Rechazado&apos;)), NOT( $Permission.AdministratorException))</errorConditionFormula>
+    <errorMessage>No puede cambiar el Estado del caso manualmente al menos que sea desde Abierto o Rechazado a En Desarrollo. Use Enviar para Aprobación para evolucionar el estado.</errorMessage>
+</ValidationRule>

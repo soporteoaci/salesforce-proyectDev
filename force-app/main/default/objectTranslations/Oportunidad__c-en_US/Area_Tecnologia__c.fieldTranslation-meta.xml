@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Elija una o varias tecnologías que se utilizarían en el futuro PEP. --></help>
+    <label><!-- Área Tecnología --></label>
+    <name>Area_Tecnologia__c</name>
+</CustomFieldTranslation>

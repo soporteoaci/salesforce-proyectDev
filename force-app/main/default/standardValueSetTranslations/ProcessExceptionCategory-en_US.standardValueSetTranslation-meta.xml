@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Activación de pedido</masterLabel>
+        <translation>Order Activation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aprobación de pedido</masterLabel>
+        <translation>Order Approval</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Facturación</masterLabel>
+        <translation>Billing</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Order Item Summary To Asset</masterLabel>
+        <translation><!-- Order Item Summary To Asset --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Order To Asset</masterLabel>
+        <translation><!-- Order To Asset --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Order To Billing Schedule</masterLabel>
+        <translation><!-- Order To Billing Schedule --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pago</masterLabel>
+        <translation>Payment</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pago de suscripción</masterLabel>
+        <translation><!-- Pago de suscripción --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Place Order</masterLabel>
+        <translation><!-- Place Order --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Realización</masterLabel>
+        <translation>Realization</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sindicación de catálogo</masterLabel>
+        <translation><!-- Sindicación de catálogo --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

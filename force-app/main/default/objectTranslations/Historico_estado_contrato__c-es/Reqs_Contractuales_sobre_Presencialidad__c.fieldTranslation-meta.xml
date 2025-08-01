@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reqs. Contractuales sobre Presencialidad --></label>
+    <name>Reqs_Contractuales_sobre_Presencialidad__c</name>
+    <picklistValues>
+        <masterLabel>R10</masterLabel>
+        <translation>R10 Sin exigencia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R20</masterLabel>
+        <translation>R20 Presencia normal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R21</masterLabel>
+        <translation>R21 Prohibida gobierno</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R22</masterLabel>
+        <translation>R22 Prohibida Cliente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R23</masterLabel>
+        <translation>R23 AYESA solicita no Presencia</translation>
+    </picklistValues>
+</CustomFieldTranslation>

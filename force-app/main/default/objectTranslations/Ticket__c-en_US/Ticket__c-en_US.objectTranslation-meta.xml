@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Ticket --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Ticket --></value>
+    </caseValues>
+    <layouts>
+        <layout>Formato Ticket</layout>
+        <sections>
+            <label>Ticket</label>
+            <section>Ticket</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Ticket Cliente</layout>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Nombre del Ticket --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage>The initial state of the Ticket must be ``New´´</errorMessage>
+        <name>Estado_Inicial_Nuevo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You must select one of the available values</errorMessage>
+        <name>Prioridad_Obligatoria</name>
+    </validationRules>
+</CustomObjectTranslation>

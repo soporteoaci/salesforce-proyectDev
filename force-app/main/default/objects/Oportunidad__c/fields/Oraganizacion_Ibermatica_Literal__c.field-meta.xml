@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oraganizacion_Ibermatica_Literal__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Organizacion_Ibermatica__c,
+&apos;AVIATION&apos;, &apos;60029503&apos;,
+&apos;BFS&apos;, &apos;60029514&apos;,
+&apos;BPO UTILITIES&apos;,&apos;60029481&apos;,
+&apos;BUILDING EMEA &amp; ASIA&apos;,&apos;60029509&apos;,
+&apos;BUILDING LATAM&apos;, &apos;60029508&apos;,
+&apos;BUILDING SPAIN&apos;, &apos;60029510&apos;,
+&apos;CONSUMER &amp; BUSINESS SERVICES&apos;, &apos;60029513&apos;,
+&apos;DIGITAL ADMINISTRATION&apos;,&apos;60049219&apos;,
+&apos;ENEL&apos;,&apos;60029428&apos;,
+&apos;ENERGY&apos;,&apos;60029475&apos;,
+&apos;ENVIRONMENT&apos;,&apos;60029489&apos;,
+&apos;HEALTH&apos;,&apos;60048556&apos;,
+&apos;HYDRAULIC WORKS&apos;, &apos;60029488&apos;,
+&apos;IBERDROLA&apos;, &apos;60048557&apos;,
+&apos;INDUSTRY&apos;, &apos;60048559&apos;,
+&apos;INFRA. SUPERVISIONS&apos;,&apos;60029500&apos;,
+&apos;INNOVATION&apos;,&apos;60030704&apos;,
+&apos;INSURANCE&apos;,&apos;60031603&apos;,
+&apos;LAND MANAGEMENT&apos;,&apos;60029416&apos;,
+&apos;MARINE &amp; COASTALS&apos;,&apos;MARINE &amp; COASTALS&apos;,
+&apos;MICROSOFT&apos;, &apos;60050044&apos;,
+&apos;OIL &amp; GAS&apos;,&apos;60029483&apos;,
+&apos;ONCE&apos;,&apos;60048560&apos;,
+&apos;PROCESS PLANTS&apos;,&apos;60029484&apos;,
+&apos;RAILWAY SYSTEMS&apos;,&apos;60029501&apos;,
+&apos;RAILWAY/METRO&apos;,&apos;60029499&apos;,
+&apos;RESOURCES&apos;,&apos;60048558&apos;,
+&apos;ROADS&apos;,&apos;60029498&apos;,
+&apos;SMART FACTORIES&apos;,&apos;60035584&apos;,
+&apos;TMT&apos;,&apos;60033576&apos;,
+&apos;TRANSPORT EMEA &amp; ASIA&apos;, &apos;60029496&apos;,
+&apos;TRANSPORT LATAM&apos;, &apos;60029495&apos;,
+&apos;TRANSPORT CATALONIA&apos;, &apos;60029502&apos;,
+&apos;UTILITIES ESPAÑA&apos;,&apos;60029478&apos;,
+&apos;UTILITIES LATAM&apos;,&apos;60029480&apos;,
+&apos;WATER &amp; ENVIRON. EMEA &amp; ASIA&apos;,&apos;60029486&apos;,
+&apos;WATER &amp; ENVIRONM. LATAM&apos;,&apos;60029485&apos;,
+&apos;WATER CATALONIA&apos;,&apos;60029492&apos;,
+&apos;WATER SUPERVISIONS&apos;,&apos;60029490&apos;,
+&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Organización Ibermática Literal</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

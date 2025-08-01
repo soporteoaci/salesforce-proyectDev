@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Envío del formulario de página de inicio realizado correctamente</masterLabel>
+        <translation>Sending of properly filled out home page form</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Error en el envío del formulario de página de inicio</masterLabel>
+        <translation>Error sending the home page form</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vista de página de inicio</masterLabel>
+        <translation>View of home page</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

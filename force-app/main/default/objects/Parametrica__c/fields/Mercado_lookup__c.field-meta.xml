@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mercado_lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Mercado</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Parametrica__c.Maestro__c</field>
+            <operation>equals</operation>
+            <value>Mercado</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Parametrica__c</referenceTo>
+    <relationshipLabel>Paramétricas</relationshipLabel>
+    <relationshipName>Mercado_lookup</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

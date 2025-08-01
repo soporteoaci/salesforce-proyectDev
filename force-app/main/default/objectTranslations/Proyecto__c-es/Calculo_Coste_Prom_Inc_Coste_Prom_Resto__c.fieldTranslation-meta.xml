@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cálculo Coste Prom Inc/Coste Prom Resto --></label>
+    <name>Calculo_Coste_Prom_Inc_Coste_Prom_Resto__c</name>
+</CustomFieldTranslation>

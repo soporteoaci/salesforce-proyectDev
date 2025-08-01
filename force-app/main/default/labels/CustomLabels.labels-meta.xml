@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CRM_Causas_no_tasadas_y_ambiguas_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Causas no tasadas y ambiguas</shortDescription>
+        <value>No existen causas no tasadas y ambiguas de resolución del contrato. Asimismo, el contratista no asume la totalidad de extracostes por la terminación por parte de un tercero del proyecto en caso de resolución.</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Centro</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Centro</shortDescription>
+        <value>Centro</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Checks_de_confirmacion_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Checks de confirmación</shortDescription>
+        <value>Por favor, confirme que ha chequeado el borrador del contrato y ha verificado los siguientes aspectos:</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Cliente</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Cliente</shortDescription>
+        <value>Cliente</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Cod_Cliente_SAP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Cod_Cliente_SAP</shortDescription>
+        <value>Código Cliente SAP</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Consulta_Departamento_Legal_CL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Consulta Departamento Legal</shortDescription>
+        <value>Consulte con el Departamento legal antes de solicitar el código de oferta si se encuentra en algún caso de los anteriores y la licitación no permitiese la formulación de observaciones a los Términos de Referencia</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Division_SAP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Division_SAP</shortDescription>
+        <value>División SAP</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Emplazamiento</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Emplazamiento</shortDescription>
+        <value>Emplazamiento</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Enviado_correo_a_licitaciones_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Enviado correo a licitaciones</shortDescription>
+        <value>Se ha guardado y enviado el correo al departamento de licitaciones, puede cerrar la solicitud volviendo a la oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Falta_definicion_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Falta definición del objeto</shortDescription>
+        <value>Existe definición del objeto del contrato, no obligándose el contratista a realizar cualquier actividad que le solicite el cliente</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Fecha_Apertura_Orden</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Fecha_Apertura_Orden</shortDescription>
+        <value>Fecha Apertura Orden</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Fecha_Fin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Fecha_Fin</shortDescription>
+        <value>Fecha Fin</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Fecha_Inicio</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Fecha_Inicio</shortDescription>
+        <value>Fecha Inicio</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Generar_Oferta</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Generar_Oferta</shortDescription>
+        <value>Generar Oferta</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Guardar</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Guardar</shortDescription>
+        <value>Guardar</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ING_GP</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ING_GP</shortDescription>
+        <value>Director división</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ING_RUP</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ING_RUP</shortDescription>
+        <value>Responsable último de oferta</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Importe_Licitacion</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Importe_Licitacion</shortDescription>
+        <value>Importe Licitación €</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Margen_Previsto</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Margen_Previsto</shortDescription>
+        <value>Margen Previsto €</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Nacional</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Nacional</shortDescription>
+        <value>Nacional (Internacional si queda desmarcado)</value>
+    </labels>
+    <labels>
+        <fullName>CRM_No_existe_limitacion_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>No existe limitación</shortDescription>
+        <value>Existe limitación de la responsabilidad del contratista.</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Notific_Op_Incoherente_Col1</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Notific_Op_Incoherente_Col1</shortDescription>
+        <value>Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Notific_Op_Incoherente_Col2</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Notific_Op_Incoherente_Col2</shortDescription>
+        <value>Cuenta</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Notific_Op_Incoherente_cabecera</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Notific_Op_Incoherente_cabecera</shortDescription>
+        <value>Hola,&lt;br/&gt;
+&lt;br/&gt;
+A continuación se detalla su lista de oportunidades incoherentes actual.&lt;br/&gt;&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Notific_Op_Incoherente_pie</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Notific_Op_Incoherente_pie</shortDescription>
+        <value>&lt;br/&gt;&lt;br/&gt;
+Por favor, revíselas.&lt;br/&gt;
+&lt;br/&gt;
+Saludos,</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Num_Oferta</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Num_Oferta</shortDescription>
+        <value>Nº de Oferta</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Objetivos_Proyecto</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Objetivos_Proyecto</shortDescription>
+        <value>Objetivos del proyecto</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Oferta_guardada_correctamente_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Oferta guardada correctamente</shortDescription>
+        <value>Se ha guardado la oferta de forma correcta</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Pais</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Pais</shortDescription>
+        <value>País</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Posibilidad_de_resolucion_unilateral_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Posibilidad de resolución unilateral</shortDescription>
+        <value>No existe posibilidad de resolución unilateral, ejecutiva y sin facultad de disputa de la misma.</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_ActualizaErrorMsg</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_ActualizaErrorMsg</shortDescription>
+        <value>No se ha podido guardar la información de proyectos inductores.</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_GuardadoMsg</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_GuardadoMsg</shortDescription>
+        <value>Datos de proyectos inductores guardados correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_Guardar</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_Guardar</shortDescription>
+        <value>Guardar</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_ProgErrorMsg</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_ProgErrorMsg</shortDescription>
+        <value>Debes de indicar al menos un proyecto inductor.</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_ProgProyErrorMsg</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_ProgProyErrorMsg</shortDescription>
+        <value>Debes de indicar el programa al que pertenecen el/los proyecto/s inductor/es.</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_Programa</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_Programa</shortDescription>
+        <value>Programa</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_ProyErrorMsg</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_ProyErrorMsg</shortDescription>
+        <value>Debes de indicar el proyecto inductor asociado al tipo seleccionado.</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_ProyInductor</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_ProyInductor</shortDescription>
+        <value>Proyecto inductor</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_Tipo</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_Tipo</shortDescription>
+        <value>Tipo inducción</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_TipoErrorMsg</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_TipoErrorMsg</shortDescription>
+        <value>Debes de indicar el tipo de inducción del proyecto seleccionado.</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_Titulo</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_Titulo</shortDescription>
+        <value>Proyectos I+D+i Inductores</value>
+    </labels>
+    <labels>
+        <fullName>CRM_ProyI_D_i_ToastTitulo</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CRM_ProyI+D+i_ToastTitulo</shortDescription>
+        <value>Información Proyectos Inductores</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Proyecto_Especial</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Proyecto_Especial</shortDescription>
+        <value>Proyecto Especial</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Resolucion_por_conveniencia_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Resolución por conveniencia</shortDescription>
+        <value>No existe resolución por conveniencia sin indemnización de ningún tipo con solo 30 días de preaviso.</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Responsable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Responsable</shortDescription>
+        <value>Responsable</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Se_incluye_lucro_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Se incluye lucro</shortDescription>
+        <value>No se incluye expresamente el lucro cesante, indirecto, consecuencial, moral, etc…</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Solicitud_de_codigo_Oferta_y_Soporte_a_Oferta</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Solicitud_de_codigo_Oferta_y_Soporte_a_Oferta</shortDescription>
+        <value>Solicitud de código Oferta y Soporte a Oferta</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Subtipo_Trabajo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Subtipo_Trabajo</shortDescription>
+        <value>Subtipo de trabajo</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Tipo_Trabajo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Tipo_Trabajo</shortDescription>
+        <value>Tipo de trabajo</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Volver_a_Oportunidad</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Volver_a_Oportunidad</shortDescription>
+        <value>Volver a Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>GC_Asis_Jur_Contactado_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Asis Jur Contactado</shortDescription>
+        <value>Ha contactado</value>
+    </labels>
+    <labels>
+        <fullName>GC_Asis_Jur_No_Contactado_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Asis Jur No Contactado</shortDescription>
+        <value>No ha contactado</value>
+    </labels>
+    <labels>
+        <fullName>GC_Asistencia</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Asistencia</shortDescription>
+        <value>Asistencia Jurídica</value>
+    </labels>
+    <labels>
+        <fullName>GC_Asistencia_01</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Asistencia 01</shortDescription>
+        <value>He contactado con el despacho de abogados local.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Asistencia_02</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Asistencia 02</shortDescription>
+        <value>Estoy coordinado con los servicios centrales de Asesoría Jurídica.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Asistencia_03</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Asistencia 03</shortDescription>
+        <value>Necesito asistencia de los servicios centrales de Asesoría Jurídica.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Causa</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Causa</shortDescription>
+        <value>Causa</value>
+    </labels>
+    <labels>
+        <fullName>GC_Causa_01</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Causa 01</shortDescription>
+        <value>El cliente ralentiza los trabajos por no poder cumplir requisitos contractuales debido a crisis sanitaria</value>
+    </labels>
+    <labels>
+        <fullName>GC_Causa_02</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Causa 02</shortDescription>
+        <value>Otras causas derivadas de la crisis sanitaria</value>
+    </labels>
+    <labels>
+        <fullName>GC_Causa_03</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Causa 03</shortDescription>
+        <value>Crisis sanitaria</value>
+    </labels>
+    <labels>
+        <fullName>GC_Causa_04</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Causa 04</shortDescription>
+        <value>Otros motivos ajenos a la crisis sanitaria</value>
+    </labels>
+    <labels>
+        <fullName>GC_Codigo_AJI</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Codigo AJI</shortDescription>
+        <value>Código AJI</value>
+    </labels>
+    <labels>
+        <fullName>GC_Contrato_Resuelto</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Contrato Resuelto</shortDescription>
+        <value>Contrato Resuelto.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Contrato_Suspendido</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Contrato Suspendido</shortDescription>
+        <value>Contrato Suspendido temporalmente</value>
+    </labels>
+    <labels>
+        <fullName>GC_Costes_Extras</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Costes Extras</shortDescription>
+        <value>Estimar costes totales (moneda local)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Costes_cliente</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Costes cliente</shortDescription>
+        <value>Costes extra aceptados por el cliente  (moneda local)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Costes_reclamar</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Costes reclamar</shortDescription>
+        <value>Costes a reclamar (moneda local)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Costes_totales</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Costes totales</shortDescription>
+        <value>Costes totales suspensión (moneda local)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Costes_totales_resolucion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Costes totales resolucion</shortDescription>
+        <value>Costes totales resolución (moneda local)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Derecho_reclamacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Derecho reclamacion</shortDescription>
+        <value>Derecho de reclamación(SI/NO)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Derecho_reclamacion_por</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Derecho reclamacion por</shortDescription>
+        <value>Derecho a reclamación por los costes incurridos durante la suspensión(SI/NO)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Divisa</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Divisa</shortDescription>
+        <value>Divisa</value>
+    </labels>
+    <labels>
+        <fullName>GC_Documentar_incidencias</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Documentar incidencias</shortDescription>
+        <value>¿Se ha contactado con Asesoría Jurídica para las incidencias contractuales derivadas de la crisis sanitaria?(S/N)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Email_Recordatorio00</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Email Recordatorio00</shortDescription>
+        <value>Estimado/a</value>
+    </labels>
+    <labels>
+        <fullName>GC_Email_Recordatorio00_Eng</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Email Recordatorio00 Eng</shortDescription>
+        <value>Dear</value>
+    </labels>
+    <labels>
+        <fullName>GC_Email_Recordatorio01</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Email Recordatorio01</shortDescription>
+        <value>Su contrato &quot;</value>
+    </labels>
+    <labels>
+        <fullName>GC_Email_Recordatorio01_Eng</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Email Recordatorio01 Eng</shortDescription>
+        <value>Your contract &quot;</value>
+    </labels>
+    <labels>
+        <fullName>GC_Email_Recordatorio02</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Email Recordatorio02</shortDescription>
+        <value>&quot; fue actualizado por última vez hace más de un mes.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Email_Recordatorio02_Eng</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Email Recordatorio02 Eng</shortDescription>
+        <value>&quot; it was last updated more than a month ago.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Email_Recordatorio03</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Email Recordatorio03</shortDescription>
+        <value>Por favor, acceda al siguiente link e indique si continúa en la misma situación o si ha sufrido alguna modificación.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Email_Recordatorio03_Eng</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Email Recordatorio03 Eng</shortDescription>
+        <value>Please click on the following link and indicate if the contract continues in the same situation or if there has been any modification.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Email_Recordatorio_Asunto</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Email Recordatorio Asunto</shortDescription>
+        <value>Recordatorio de actualización de estado de contrato</value>
+    </labels>
+    <labels>
+        <fullName>GC_Email_Recordatorio_Asunto_Eng</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC_Email_Recordatorio_Asunto_Eng</shortDescription>
+        <value>Contract Status Update Reminder</value>
+    </labels>
+    <labels>
+        <fullName>GC_Error_01</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Error 01</shortDescription>
+        <value>Debe marcar alguna de las opciones de &quot;Requisitos de presencialidad&quot;</value>
+    </labels>
+    <labels>
+        <fullName>GC_Error_02</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Error 02</shortDescription>
+        <value>Debe marcar alguna de las opciones de &quot;Situación actual de contrato&quot;</value>
+    </labels>
+    <labels>
+        <fullName>GC_Error_03</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Error 03</shortDescription>
+        <value>Es necesario rellenar todos los campos</value>
+    </labels>
+    <labels>
+        <fullName>GC_Error_04</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Error 04</shortDescription>
+        <value>El estado actual del contrato no permite realizar modificaciones</value>
+    </labels>
+    <labels>
+        <fullName>GC_Error_05</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Error 05</shortDescription>
+        <value>Debe marcar alguna de las opciones de &quot;Previsión situación de contrato a 1 mes&quot;&apos;</value>
+    </labels>
+    <labels>
+        <fullName>GC_Estado_contrato_no_cambiado</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Estado contrato no cambiado</shortDescription>
+        <value>El estado del contrato no ha cambiado</value>
+    </labels>
+    <labels>
+        <fullName>GC_Estimar_costes</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Estimar costes</shortDescription>
+        <value>Estimar costes extras</value>
+    </labels>
+    <labels>
+        <fullName>GC_Falso</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Falso</shortDescription>
+        <value>Falso</value>
+    </labels>
+    <labels>
+        <fullName>GC_Guardar</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Guardar</shortDescription>
+        <value>Guardar</value>
+    </labels>
+    <labels>
+        <fullName>GC_Info_Mensaje</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Info Mensaje</shortDescription>
+        <value>Registro actualizado correctamente</value>
+    </labels>
+    <labels>
+        <fullName>GC_Meses</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Meses</shortDescription>
+        <value>Estimar meses de retraso</value>
+    </labels>
+    <labels>
+        <fullName>GC_Negociacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Negociacion</shortDescription>
+        <value>¿La negociciación está aceptada?(SI/NO)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Negociacion_cerrada</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Negociacion cerrada</shortDescription>
+        <value>¿La negociciación está cerrada?(SI/NO)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Negociar_modificacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Negociar modificacion</shortDescription>
+        <value>¿Se está negociando modificación contractual?(SI/NO)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Negociar_modificacion_01</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Negociar modificacion 01</shortDescription>
+        <value>¿Se está negociando modificación contractual?</value>
+    </labels>
+    <labels>
+        <fullName>GC_No</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>GC_No_Retrasos</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC No Retrasos</shortDescription>
+        <value>Aunque no existan retrasos ¿se está negociando una modificación contractual como consecuencia de la crisis sanitaria que afecta a la normal ejecución del contrato?</value>
+    </labels>
+    <labels>
+        <fullName>GC_Prevision_Situacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Prevision Situacion</shortDescription>
+        <value>Previsión situación de contrato a 1 mes</value>
+    </labels>
+    <labels>
+        <fullName>GC_Prevision_Situacion_AppMobile</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Prevision Situacion AppMobile</shortDescription>
+        <value>Previsión sit.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Requisito_01</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Requisito 01</shortDescription>
+        <value>Mi contrato no exige presencialidad</value>
+    </labels>
+    <labels>
+        <fullName>GC_Requisito_02</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Requisito 02</shortDescription>
+        <value>Mi contrato sí exige presencialidad</value>
+    </labels>
+    <labels>
+        <fullName>GC_Requisito_R10</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Requisito R10</shortDescription>
+        <value>R10: Mi contrato no exige que todo o parte del equipo desarrolle su trabajo en una ubicación concreta.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Requisito_R20</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Requisito R20</shortDescription>
+        <value>R20: El personal puede acudir a la ubicación en donde el contrato exige que se realice la prestación de servicios.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Requisito_R21</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Requisito R21</shortDescription>
+        <value>R21: El Gobierno del país ha prohibido desplazarse a la ubicación presencial para la prestación del servicio.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Requisito_R22</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Requisito R22</shortDescription>
+        <value>R22: El Cliente me ha solicitado realizar la prestación del servicio en una ubicación diferente a la prevista en el contrato (ej. teletrabajo).</value>
+    </labels>
+    <labels>
+        <fullName>GC_Requisito_R23</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Requisito R23</shortDescription>
+        <value>R23: Ayesa solicita realizar la prestación del servicio desde una ubicación diferente a la prevista en el contrato.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Requisitos</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Requisitos</shortDescription>
+        <value>Requisitos Contractuales sobre Presencialidad</value>
+    </labels>
+    <labels>
+        <fullName>GC_Requisitos_AppMobile</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Requisitos	AppMobile</shortDescription>
+        <value>Req.Presencialidad</value>
+    </labels>
+    <labels>
+        <fullName>GC_Retraso_01</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Retraso 01</shortDescription>
+        <value>El cliente ralentiza el proyecto</value>
+    </labels>
+    <labels>
+        <fullName>GC_Retraso_02</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Retraso 02</shortDescription>
+        <value>AYESA ralentiza el proyecto</value>
+    </labels>
+    <labels>
+        <fullName>GC_Retraso_03</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Retraso 03</shortDescription>
+        <value>Ambos ralentizan el proyecto</value>
+    </labels>
+    <labels>
+        <fullName>GC_Retrasos</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Retrasos</shortDescription>
+        <value>Se prevén retrasos debido a las medidas adoptadas como consecuencia de la crisis sanitaria.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Seleccion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Seleccion</shortDescription>
+        <value>Seleccione...</value>
+    </labels>
+    <labels>
+        <fullName>GC_Seleccion_01</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Seleccion 01</shortDescription>
+        <value>Seleccione una...</value>
+    </labels>
+    <labels>
+        <fullName>GC_Seleccion_divisa</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Seleccion divisa</shortDescription>
+        <value>Seleccione divisa...</value>
+    </labels>
+    <labels>
+        <fullName>GC_Si</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Si</shortDescription>
+        <value>Si</value>
+    </labels>
+    <labels>
+        <fullName>GC_Sin_informacion_CL</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Sin informacion</shortDescription>
+        <value>Sin información</value>
+    </labels>
+    <labels>
+        <fullName>GC_Situacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Situacion</shortDescription>
+        <value>Situación Actual Contrato</value>
+    </labels>
+    <labels>
+        <fullName>GC_Situacion_01</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Situacion 01</shortDescription>
+        <value>En ejecución con normalidad.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Situacion_AppMobile</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC_Situacion_AppMobile</shortDescription>
+        <value>Sit.Actual</value>
+    </labels>
+    <labels>
+        <fullName>GC_Situacion_S10</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Situacion S10</shortDescription>
+        <value>S10: En ejecución con normalidad.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Situacion_S10_01</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Situacion S10 01</shortDescription>
+        <value>¿Se prevén costes extras? (SI/NO)</value>
+    </labels>
+    <labels>
+        <fullName>GC_Situacion_S11</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Situacion S11</shortDescription>
+        <value>S11: Se prevén retrasos y/o costes extras debido a las medidas adoptadas por la crisis sanitaria.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Situacion_S12</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Situacion S12</shortDescription>
+        <value>S12: Aunque no existan retrasos y/o costes extras se está negociando una modificación contractual como consecuencia de la crisis sanitaria que afecta a la normal ejecución del contrato</value>
+    </labels>
+    <labels>
+        <fullName>GC_Situacion_S20</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Situacion S20</shortDescription>
+        <value>S20: Contrato Suspendido temporalmente</value>
+    </labels>
+    <labels>
+        <fullName>GC_Situacion_S30</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Situacion S30</shortDescription>
+        <value>S30: Contrato Resuelto.</value>
+    </labels>
+    <labels>
+        <fullName>GC_Verdadero</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>GC Verdadero</shortDescription>
+        <value>Verdadero</value>
+    </labels>
+</CustomLabels>

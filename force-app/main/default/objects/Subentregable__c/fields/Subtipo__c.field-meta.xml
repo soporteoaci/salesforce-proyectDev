@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtipo__c</fullName>
+    <label>Subtipo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Tipo__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Subtipo_Entregable</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Licenciamiento</controllingFieldValue>
+            <controllingFieldValue>Metodología</controllingFieldValue>
+            <controllingFieldValue>Garantía, Soporte y Mantenimiento</controllingFieldValue>
+            <controllingFieldValue>Puesta en Producción</controllingFieldValue>
+            <controllingFieldValue>Diseño Funcional</controllingFieldValue>
+            <controllingFieldValue>Diseño Técnico</controllingFieldValue>
+            <controllingFieldValue>Pruebas</controllingFieldValue>
+            <controllingFieldValue>Arquitectura</controllingFieldValue>
+            <controllingFieldValue>Formación</controllingFieldValue>
+            <controllingFieldValue>Migración</controllingFieldValue>
+            <controllingFieldValue>Interfaces</controllingFieldValue>
+            <controllingFieldValue>Otros</controllingFieldValue>
+            <controllingFieldValue>Gestión del Proyecto</controllingFieldValue>
+            <controllingFieldValue>Gestión del Cambio</controllingFieldValue>
+            <valueName>Otros</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

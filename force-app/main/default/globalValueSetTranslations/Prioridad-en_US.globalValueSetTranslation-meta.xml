@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>1 - Muy Alta</masterLabel>
+        <translation>Very High</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2 - Alta</masterLabel>
+        <translation>High</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3 - Media</masterLabel>
+        <translation>Medium</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4 - Baja</masterLabel>
+        <translation>Low</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>5 - Muy Baja</masterLabel>
+        <translation>Very Low</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

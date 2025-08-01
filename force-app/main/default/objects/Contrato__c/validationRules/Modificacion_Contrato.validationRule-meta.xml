@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modificacion_Contrato</fullName>
+    <active>true</active>
+    <description>Solo algunos usuarios podrán cambiar los datos</description>
+    <errorConditionFormula>AND(
+				$User.Id  &lt;&gt;  OwnerId,
+				$User.Id  &lt;&gt;  Autorizado__r.Id,
+				$User.Id  &lt;&gt;  Autorizado_2__r.Id,
+				$User.Id  &lt;&gt;  Autorizado_3__r.Id,
+				$Profile.Name &lt;&gt; &apos;Gestión Técnica de Proyecto&apos;,
+				NOT(CONTAINS($Profile.Name, &apos;Admin&apos;))
+)</errorConditionFormula>
+    <errorMessage>No tiene permisos para modificar este contrato</errorMessage>
+</ValidationRule>

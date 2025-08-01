@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <label>Tipo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Preliminar</fullName>
+                <default>false</default>
+                <label>Preliminar</label>
+            </value>
+            <value>
+                <fullName>Oferta</fullName>
+                <default>false</default>
+                <label>Oferta</label>
+            </value>
+            <value>
+                <fullName>Socios</fullName>
+                <default>false</default>
+                <label>Socios</label>
+            </value>
+            <value>
+                <fullName>Subcontratas</fullName>
+                <default>false</default>
+                <label>Subcontratacion</label>
+            </value>
+            <value>
+                <fullName>Borrador Acuerdo Socios</fullName>
+                <default>false</default>
+                <label>Borrador Acuerdo Socios</label>
+            </value>
+            <value>
+                <fullName>Oferta QA Técnico</fullName>
+                <default>false</default>
+                <label>Oferta QA Técnico</label>
+            </value>
+            <value>
+                <fullName>Oferta QA Económico</fullName>
+                <default>false</default>
+                <label>Oferta QA Económico</label>
+            </value>
+            <value>
+                <fullName>Aprobación Preventa</fullName>
+                <default>false</default>
+                <label>Aprobación Preventa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

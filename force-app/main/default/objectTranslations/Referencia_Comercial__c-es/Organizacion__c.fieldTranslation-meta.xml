@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Organización --></label>
+    <name>Organizacion__c</name>
+    <picklistValues>
+        <masterLabel>BFSI</masterLabel>
+        <translation><!-- BFSI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONSUMER</masterLabel>
+        <translation><!-- CONSUMER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIGITAL ADMIN</masterLabel>
+        <translation><!-- DIGITAL ADMIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENERGY &amp; UTILITIES</masterLabel>
+        <translation><!-- ENERGY &amp; UTILITIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRUPO IBERMATICA</masterLabel>
+        <translation><!-- GRUPO IBERMATICA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEALTH</masterLabel>
+        <translation><!-- HEALTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ILA ARGENTINA</masterLabel>
+        <translation><!-- ILA ARGENTINA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INTERFLEX</masterLabel>
+        <translation><!-- INTERFLEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MANUFACTURING</masterLabel>
+        <translation><!-- MANUFACTURING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MICROSOFT</masterLabel>
+        <translation><!-- MICROSOFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nueva Org</masterLabel>
+        <translation><!-- Nueva Org --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ONCE GROUP</masterLabel>
+        <translation><!-- ONCE GROUP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCADA ARGENTINA</masterLabel>
+        <translation><!-- SCADA ARGENTINA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCADA CHILE</masterLabel>
+        <translation><!-- SCADA CHILE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCADA PERU</masterLabel>
+        <translation><!-- SCADA PERU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMART FACTORIES</masterLabel>
+        <translation><!-- SMART FACTORIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TMT</masterLabel>
+        <translation><!-- TMT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

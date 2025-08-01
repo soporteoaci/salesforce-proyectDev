@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActOn__Lead_Send_Act_On_Email</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Send Act-On Email</masterLabel>
+    <openType>replace</openType>
+    <page>ActOn__Lead_Sent_ActOn_Email</page>
+    <protected>false</protected>
+</WebLink>

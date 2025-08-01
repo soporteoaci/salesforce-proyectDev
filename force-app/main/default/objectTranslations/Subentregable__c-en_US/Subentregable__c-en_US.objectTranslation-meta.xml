@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deliverable</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deliverables</value>
+    </caseValues>
+    <layouts>
+        <layout>Formato Entregable</layout>
+        <sections>
+            <label>Deadlines</label>
+            <section>Deadlines</section>
+        </sections>
+        <sections>
+            <label>Details</label>
+            <section>Detalles</section>
+        </sections>
+        <sections>
+            <label>Production</label>
+            <section>Producción</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Entregable Gestión Técnica de Proyecto</layout>
+        <sections>
+            <label><!-- Deadlines --></label>
+            <section>Deadlines</section>
+        </sections>
+        <sections>
+            <label>Details</label>
+            <section>Detalles</section>
+        </sections>
+        <sections>
+            <label>Production</label>
+            <section>Producción</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Deliverables Name</nameFieldLabel>
+    <quickActions>
+        <label><!-- Actualizar subentregable --></label>
+        <name>Actualizar</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Must send to approved to change status</errorMessage>
+        <name>Cambio_de_Estado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The status has changed to Signed, update the actual date of the signing.</errorMessage>
+        <name>Estado_cambia_a_Firmado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Actualiza la Fecha Real de Liberación --></errorMessage>
+        <name>Estado_cambia_a_Firmado_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The status has changed to Released, update the Actual Release Date.</errorMessage>
+        <name>Estado_cambia_a_Liberado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Only the Technical Project Management profile can change the Contract End Date.</errorMessage>
+        <name>Fecha_Fin_Contractual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You can not change the date of the first Release.</errorMessage>
+        <name>Fecha_Primera_Liberacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The actual signing date cannot be later than the current day</errorMessage>
+        <name>Fecha_real_firma_menor_igual_hoy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The actual release date cannot be later than the current day</errorMessage>
+        <name>Fecha_real_liberacion_menor_igual_hoy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You can not move the subdeliverable to delivered. You must be the approver of the sub-deliverable, responsible for the deliverable, or submit the sub-deliverable for approval.</errorMessage>
+        <name>Pasar_a_Entregado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The customer manager you have selected does not belong to the Contacts of the account related to the deliverable.</errorMessage>
+        <name>Responsable_Cliente</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The fields: Level 1 Responsible, Level 2 Responsible, Level 1 Approver and Final Level Approver must be informed for their correct processing.</errorMessage>
+        <name>Responsables_Informados</name>
+    </validationRules>
+</CustomObjectTranslation>

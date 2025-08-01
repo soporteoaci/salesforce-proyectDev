@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Pdt_Ok_preliminar</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
+				ISPICKVAL(Subfase__c, &apos;Pte ok preliminar&apos;),
+				OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;), ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+				OR( 
+								
+								ISBLANK(Estimacion_coste_preventa__c),
+								ISBLANK(TEXT(Adecuacion_precio_objetivo__c)),
+								ISBLANK(TEXT(Certificaciones_empresa__c)),
+								ISBLANK(TEXT(Solvencia_empresa__c)),
+								ISBLANK(TEXT(Certificaciones_perfiles__c )),
+								ISBLANK(TEXT(Analisis_penalizaciones_excluyentes__c)),
+								ISBLANK(TEXT(Capacidad_preventa_redaccion_oferta__c)),
+							 ISBLANK(TEXT(Capacidad_ejecucion__c)),
+								ISBLANK(TEXT(Viabilidad_ejecucion__c )),
+								ISBLANK(TEXT(Finalidad__c )),
+								ISBLANK(TEXT(Forma_de_pago__c)),
+								ISBLANK(TEXT(Exige_venta_licencias__c )),
+								ISBLANK(TEXT( Informado_AJI__c)),
+								ISBLANK(TEXT( Informado_Compliance__c)),
+								ISBLANK(TEXT( Informar_PRL__c)),
+								ISBLANK(Gestion_CV__c),
+								
+						
+								IF (ISPICKVAL(Exige_venta_licencias__c ,&apos;Sí&apos;), ISBLANK(Licencias__c),false),
+								IF(NOT(ISPICKVAL(RIESGO__c, &apos;3&apos;)), ISBLANK(TEXT(Riesgo_Principal__c )),false)
+				)   
+)</errorConditionFormula>
+    <errorMessage>Los campos de la pestaña Cualificación deben de ser informados por el responsable indicado antes de avanzar a la subfase Pte ok Preliminar</errorMessage>
+</ValidationRule>

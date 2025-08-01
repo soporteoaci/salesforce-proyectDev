@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- M€. Mes anterior en curso --></help>
+    <label>Revenue for AYESA 2024</label>
+    <name>Ingresos__c</name>
+</CustomFieldTranslation>

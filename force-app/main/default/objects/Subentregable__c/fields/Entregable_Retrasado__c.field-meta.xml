@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entregable_Retrasado__c</fullName>
+    <description>Aquellos entregables que cumplan Fecha Primera Liberación &gt; Fecha Fin Contractual</description>
+    <formula>IF(  DATEVALUE(Fecha_Primera_Liberacion__c)  &gt;  FechaLimiteLiberacion__c, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Entregable Retrasado</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Licitaciones__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <defaultValue>&quot;j.moreno@ayesa.com&quot;</defaultValue>
+    <description>Email al que se enviarán los correos de petición de ofertas</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Email al que se enviarán los correos de petición de ofertas</inlineHelpText>
+    <label>Email Licitaciones</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>true</unique>
+</CustomField>

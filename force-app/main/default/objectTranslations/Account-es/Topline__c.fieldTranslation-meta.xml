@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Topline --></label>
+    <name>Topline__c</name>
+    <picklistValues>
+        <masterLabel>Alquiler</masterLabel>
+        <translation><!-- Alquiler --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Educacional</masterLabel>
+        <translation><!-- Educacional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/C</masterLabel>
+        <translation><!-- N/C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pendiente</masterLabel>
+        <translation><!-- Pendiente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reservado IB</masterLabel>
+        <translation><!-- Reservado IB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reservado Otros</masterLabel>
+        <translation><!-- Reservado Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAM Account</masterLabel>
+        <translation><!-- SAM Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start up</masterLabel>
+        <translation><!-- Start up --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

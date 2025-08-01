@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Si la oportunidad es en UTE este campo muestra el importe UTE Ayesa, si no va en UTE muestra el Importe total Oferttado (sin IVA) euros --></help>
+    <label><!-- Importe final --></label>
+    <name>Importe_final__c</name>
+</CustomFieldTranslation>

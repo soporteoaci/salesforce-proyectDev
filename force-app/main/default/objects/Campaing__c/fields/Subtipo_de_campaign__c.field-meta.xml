@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtipo_de_campaign__c</fullName>
+    <label>Subtipo de campaña</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Tipo_campaign__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Blog</fullName>
+                <default>false</default>
+                <label>Blog</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>Otros RRSS</fullName>
+                <default>false</default>
+                <label>Otros RRSS</label>
+            </value>
+            <value>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+                <label>Twitter</label>
+            </value>
+            <value>
+                <fullName>Youtube</fullName>
+                <default>false</default>
+                <label>Youtube</label>
+            </value>
+            <value>
+                <fullName>Linkedlin</fullName>
+                <default>false</default>
+                <label>Linkedlin</label>
+            </value>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <label>Web</label>
+            </value>
+            <value>
+                <fullName>Web IB-Industria</fullName>
+                <default>false</default>
+                <label>Web IB-Industria</label>
+            </value>
+            <value>
+                <fullName>SW (HotLead, Varportal)</fullName>
+                <default>false</default>
+                <label>SW (HotLead, Varportal)</label>
+            </value>
+            <value>
+                <fullName>Solucion</fullName>
+                <default>false</default>
+                <label>Solucion</label>
+            </value>
+            <value>
+                <fullName>Sectoriales</fullName>
+                <default>false</default>
+                <label>Sectoriales</label>
+            </value>
+            <value>
+                <fullName>Zonales (Polig.Ind.)</fullName>
+                <default>false</default>
+                <label>Zonales (Polig.Ind.)</label>
+            </value>
+            <value>
+                <fullName>Colaborador</fullName>
+                <default>false</default>
+                <label>Colaborador</label>
+            </value>
+            <value>
+                <fullName>IB y Otras fuentes</fullName>
+                <default>false</default>
+                <label>IB y Otras fuentes</label>
+            </value>
+            <value>
+                <fullName>Petición Cliente</fullName>
+                <default>false</default>
+                <label>Petición Cliente</label>
+            </value>
+            <value>
+                <fullName>AP&amp;C_Generacion</fullName>
+                <default>false</default>
+                <label>AP&amp;C_Generacion</label>
+            </value>
+            <value>
+                <fullName>AP&amp;C_Gestion</fullName>
+                <default>false</default>
+                <label>AP&amp;C_Gestion</label>
+            </value>
+            <value>
+                <fullName>Prensa (digital, escrita)</fullName>
+                <default>false</default>
+                <label>Prensa (digital, escrita)</label>
+            </value>
+            <value>
+                <fullName>Cumplimiento Agenda</fullName>
+                <default>false</default>
+                <label>Cumplimiento Agenda</label>
+            </value>
+            <value>
+                <fullName>Operaciones</fullName>
+                <default>false</default>
+                <label>Operaciones</label>
+            </value>
+            <value>
+                <fullName>Plan de cuentas</fullName>
+                <default>false</default>
+                <label>Plan de cuentas</label>
+            </value>
+            <value>
+                <fullName>Actividad Propia</fullName>
+                <default>false</default>
+                <label>Actividad Propia</label>
+            </value>
+            <value>
+                <fullName>Presentacion</fullName>
+                <default>false</default>
+                <label>Presentacion</label>
+            </value>
+            <value>
+                <fullName>Webex Comercial</fullName>
+                <default>false</default>
+                <label>Webex Comercial</label>
+            </value>
+            <value>
+                <fullName>Webex Tecnica</fullName>
+                <default>false</default>
+                <label>Webex Tecnica</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Campaña Prospeccion</controllingFieldValue>
+            <valueName>Solucion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Prospeccion</controllingFieldValue>
+            <valueName>Sectoriales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Prospeccion</controllingFieldValue>
+            <valueName>Zonales (Polig.Ind.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Regular</controllingFieldValue>
+            <valueName>Colaborador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Regular</controllingFieldValue>
+            <valueName>IB y Otras fuentes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Regular</controllingFieldValue>
+            <valueName>Petición Cliente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Regular</controllingFieldValue>
+            <valueName>AP&amp;C_Generacion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Regular</controllingFieldValue>
+            <valueName>AP&amp;C_Gestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Regular</controllingFieldValue>
+            <valueName>Prensa (digital, escrita)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Regular</controllingFieldValue>
+            <valueName>Cumplimiento Agenda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Regular</controllingFieldValue>
+            <valueName>Operaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Regular</controllingFieldValue>
+            <valueName>Plan de cuentas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Regular</controllingFieldValue>
+            <valueName>Actividad Propia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Digital</controllingFieldValue>
+            <valueName>Blog</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Digital</controllingFieldValue>
+            <valueName>Facebook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Digital</controllingFieldValue>
+            <valueName>Otros RRSS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Digital</controllingFieldValue>
+            <valueName>Twitter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Digital</controllingFieldValue>
+            <valueName>Youtube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Digital</controllingFieldValue>
+            <valueName>Linkedlin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Digital</controllingFieldValue>
+            <valueName>Web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Digital</controllingFieldValue>
+            <valueName>Web IB-Industria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campaña Digital</controllingFieldValue>
+            <valueName>SW (HotLead, Varportal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eventos</controllingFieldValue>
+            <valueName>Presentacion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eventos</controllingFieldValue>
+            <valueName>Webex Comercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eventos</controllingFieldValue>
+            <valueName>Webex Tecnica</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

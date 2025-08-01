@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Principales riesgos identificados en relación a la presentación de la oferta y/o en la propia ejecución del contrato, en caso de ser adjudicatarios. --></help>
+    <label><!-- Riesgos fundamentales --></label>
+    <name>Riesgos_fundamentales__c</name>
+</CustomFieldTranslation>

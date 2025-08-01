@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accion_Asignar</fullName>
+    <active>true</active>
+    <description>Si selecciona &quot;Asignar&quot; solo puede modificar los campos &quot;Asignado a&quot; y &quot;Comentarios&quot;</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(Accion__c , &quot;Asignar&quot;), 
+NOT(ISBLANK(Proveedor2__c)) 
+)</errorConditionFormula>
+    <errorDisplayField>Accion__c</errorDisplayField>
+    <errorMessage>Si selecciona &apos;&apos;Asignar&apos;&apos; solo puede modificar los campos &apos;&apos;Asignado a&apos;&apos; y &apos;&apos;Comentarios&apos;&apos;</errorMessage>
+</ValidationRule>

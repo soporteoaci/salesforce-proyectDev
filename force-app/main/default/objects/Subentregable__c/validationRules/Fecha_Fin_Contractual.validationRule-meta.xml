@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_Fin_Contractual</fullName>
+    <active>true</active>
+    <description>Solo el perfil Gestión Técnica de Proyecto puede cambiar la fecha fin contractual</description>
+    <errorConditionFormula>AND(
+				$Profile.Name != &apos;Administrador del sistema&apos;,
+				IsApex__c = false,
+				$Profile.Name != &apos;Gestión Técnica de Proyecto&apos;,
+				ISCHANGED(FechaLimiteLiberacion__c)
+)</errorConditionFormula>
+    <errorMessage>Solo el perfil Gestión Técnica de Proyecto puede cambiar la Fecha Fin Contractual</errorMessage>
+</ValidationRule>

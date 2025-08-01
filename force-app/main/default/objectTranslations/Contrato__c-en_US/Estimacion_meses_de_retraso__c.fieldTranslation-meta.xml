@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Months of Delays</label>
+    <name>Estimacion_meses_de_retraso__c</name>
+</CustomFieldTranslation>

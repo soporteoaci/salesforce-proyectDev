@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organizacion__c</fullName>
+    <label>Organización</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>-</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-</label>
+            </value>
+            <value>
+                <fullName>BANKING</fullName>
+                <default>false</default>
+                <label>BANKING</label>
+            </value>
+            <value>
+                <fullName>Cambio de partner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cambio de partner</label>
+            </value>
+            <value>
+                <fullName>CLI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CLI</label>
+            </value>
+            <value>
+                <fullName>Cli indirecto</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cli indirecto</label>
+            </value>
+            <value>
+                <fullName>CON</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CON</label>
+            </value>
+            <value>
+                <fullName>CONSUMER</fullName>
+                <default>false</default>
+                <label>CONSUMER</label>
+            </value>
+            <value>
+                <fullName>DIGITAL ADMIN</fullName>
+                <default>false</default>
+                <label>DIGITAL ADMIN</label>
+            </value>
+            <value>
+                <fullName>Distribuido</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Distribuido</label>
+            </value>
+            <value>
+                <fullName>ENERGY &amp; UTILITIES</fullName>
+                <default>false</default>
+                <label>ENERGY &amp; UTILITIES</label>
+            </value>
+            <value>
+                <fullName>GRUPO IBERMATICA</fullName>
+                <default>false</default>
+                <label>GRUPO IBERMATICA</label>
+            </value>
+            <value>
+                <fullName>HEALTH</fullName>
+                <default>false</default>
+                <label>HEALTH</label>
+            </value>
+            <value>
+                <fullName>ILA ARGENTINA</fullName>
+                <default>false</default>
+                <label>ILA ARGENTINA</label>
+            </value>
+            <value>
+                <fullName>INSURANCE</fullName>
+                <default>false</default>
+                <label>INSURANCE</label>
+            </value>
+            <value>
+                <fullName>INTERFLEX</fullName>
+                <default>false</default>
+                <label>INTERFLEX</label>
+            </value>
+            <value>
+                <fullName>MANUFACTURING</fullName>
+                <default>false</default>
+                <label>MANUFACTURING</label>
+            </value>
+            <value>
+                <fullName>MICROSOFT</fullName>
+                <default>false</default>
+                <label>MICROSOFT</label>
+            </value>
+            <value>
+                <fullName>N/R</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>N/R</label>
+            </value>
+            <value>
+                <fullName>NC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NC</label>
+            </value>
+            <value>
+                <fullName>ONCE GROUP</fullName>
+                <default>false</default>
+                <label>ONCE GROUP</label>
+            </value>
+            <value>
+                <fullName>SCADA ARGENTINA</fullName>
+                <default>false</default>
+                <label>SCADA ARGENTINA</label>
+            </value>
+            <value>
+                <fullName>SCADA CHILE</fullName>
+                <default>false</default>
+                <label>SCADA CHILE</label>
+            </value>
+            <value>
+                <fullName>SCADA PERU</fullName>
+                <default>false</default>
+                <label>SCADA PERU</label>
+            </value>
+            <value>
+                <fullName>SMART FACTORIES</fullName>
+                <default>false</default>
+                <label>SMART FACTORIES</label>
+            </value>
+            <value>
+                <fullName>TMT</fullName>
+                <default>false</default>
+                <label>TMT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

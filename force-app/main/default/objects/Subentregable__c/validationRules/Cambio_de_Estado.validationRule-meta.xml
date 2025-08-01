@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cambio_de_Estado</fullName>
+    <active>false</active>
+    <description>Solo el administrador puede modificar Estados distintos a &quot;Pendiente&quot;.</description>
+    <errorConditionFormula>AND(ISCHANGED( Estado__c ),NOT(ISPICKVAL(Estado__c , &apos;Pendiente&apos;)),NOT(PRIORVALUE(Estado__c )==&apos;Pendiente&apos;),NOT(PRIORVALUE(Estado__c )==&apos;En desarrollo&apos;), NOT($Permission.AdministratorException))</errorConditionFormula>
+    <errorMessage>Debe Enviar a Aprobación para modificar el Estado</errorMessage>
+</ValidationRule>

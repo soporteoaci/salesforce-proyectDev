@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Total Amount for Ayesa Company at the moment of being awarded (It could be different from final amount contracted)</help>
+    <label>Awarded amount for Ayesa Company(€)</label>
+    <name>Importe_adjudicacion__c</name>
+</CustomFieldTranslation>

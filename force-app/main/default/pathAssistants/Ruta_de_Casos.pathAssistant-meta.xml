@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Ruta de Casos</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Si empiezas a trabajar en el caso, por favor, ponlo en curso.&lt;/p&gt;</info>
+        <picklistValueName>Abierto</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;¡Bien! El caso está cerrado.&lt;/p&gt;</info>
+        <picklistValueName>Cerrado</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Supervisor__c</fieldNames>
+        <info>&lt;p&gt;Una vez finalice los trabajos necesarios Envíe para Aprobación el caso para que el Supervisor del caso apruebe el trabajo. Si no tiene supervisor, el caso pasará a Cerrado automáticamente.&lt;/p&gt;</info>
+        <picklistValueName>En desarrollo</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Aprobador__c</fieldNames>
+        <info>&lt;p&gt;El caso está pendiente de aprobación por parte del Jefe de Proyecto. Una vez lo acepte pasará a estar pendiente de validación por parte del Aprobador.&lt;/p&gt;</info>
+        <picklistValueName>Liberado</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Aprobador__c</fieldNames>
+        <info>&lt;p&gt;El caso está pendiente de probar por parte del aprobador. Si acepta el caso pasará a cerrado, si no volverá a estado Abierto.&lt;/p&gt;</info>
+        <picklistValueName>Notificado</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

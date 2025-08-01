@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IB_SME_Contacto_Facturacion</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+$Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;,
+$User.Email &lt;&gt; &quot;ebravo@ayesa.com&quot;,
+RecordType.Name =&apos;Ibermatica SME&apos;,
+OR (ISPICKVAL(Etapa_Fase__c,&apos;Demostrando&apos;),
+ISPICKVAL(Etapa_Fase__c,&apos;Oferta&apos;),
+ISPICKVAL(Etapa_Fase__c,&apos;Cerrada&apos;)
+),
+
+ISBLANK(Contacto_facturacion__c )
+
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Contacto_facturacion__c</errorDisplayField>
+    <errorMessage>Informe el Contacto de Facturación antes de avanzar a la siguiente etapa</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paises</fullName>
+    <columns>NAME</columns>
+    <columns>Denominacion__c</columns>
+    <columns>Codigo_Externo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Parametrica_2__c.Paises</value>
+    </filters>
+    <label>Paises</label>
+</ListView>

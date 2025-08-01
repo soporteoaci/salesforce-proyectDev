@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cambio_Autorizado</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED(Autorizado__c),
+$Profile.Name&lt;&gt;&apos;Administrador del sistema&apos;,
+$User.Username &lt;&gt; Owner:User.Username
+)</errorConditionFormula>
+    <errorDisplayField>Autorizado__c</errorDisplayField>
+    <errorMessage>No puede cambiar el autorizado si no es el propietario del contrato o su perfil es diferente a Administrador del Sistema</errorMessage>
+</ValidationRule>

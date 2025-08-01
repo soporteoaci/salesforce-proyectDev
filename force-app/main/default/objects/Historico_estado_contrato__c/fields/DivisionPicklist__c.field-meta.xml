@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DivisionPicklist__c</fullName>
+    <label>División</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>V-AERONAUTICS</fullName>
+                <default>false</default>
+                <label>V-AERONAUTICS</label>
+            </value>
+            <value>
+                <fullName>V-AGE</fullName>
+                <default>false</default>
+                <label>V-AGE</label>
+            </value>
+            <value>
+                <fullName>V-AUSTRALIA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-AUSTRALIA</label>
+            </value>
+            <value>
+                <fullName>V-AVIATION</fullName>
+                <default>false</default>
+                <label>V-AVIATION</label>
+            </value>
+            <value>
+                <fullName>V-BANKING</fullName>
+                <default>false</default>
+                <label>V-BANKING</label>
+            </value>
+            <value>
+                <fullName>V-BPO (PS)</fullName>
+                <default>false</default>
+                <label>V-BPO (PS)</label>
+            </value>
+            <value>
+                <fullName>V-BPO (U&amp;E)</fullName>
+                <default>false</default>
+                <label>V-BPO (U&amp;E)</label>
+            </value>
+            <value>
+                <fullName>V-BUILDING EMEA &amp; ASIA</fullName>
+                <default>false</default>
+                <label>V-BUILDING EMEA &amp; ASIA</label>
+            </value>
+            <value>
+                <fullName>V-BUILDING LATAM</fullName>
+                <default>false</default>
+                <label>V-BUILDING LATAM</label>
+            </value>
+            <value>
+                <fullName>V-BUILDING SPAIN</fullName>
+                <default>false</default>
+                <label>V-BUILDING SPAIN</label>
+            </value>
+            <value>
+                <fullName>V-COMUNIDAD DE MADRID</fullName>
+                <default>false</default>
+                <label>V-COMUNIDAD DE MADRID</label>
+            </value>
+            <value>
+                <fullName>V-CONTROL GESTION AERONAUTICA</fullName>
+                <default>false</default>
+                <label>V-CONTROL GESTION AERONAUTICA</label>
+            </value>
+            <value>
+                <fullName>V-CULTURA Y TURISMO</fullName>
+                <default>false</default>
+                <label>V-CULTURA Y TURISMO</label>
+            </value>
+            <value>
+                <fullName>V-DESARROLLO SOST Y TURISMO</fullName>
+                <default>false</default>
+                <label>V-DESARROLLO SOST Y TURISMO</label>
+            </value>
+            <value>
+                <fullName>V-E.E.U.U.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-E.E.U.U.</label>
+            </value>
+            <value>
+                <fullName>V-ECOFIN Y SANIDAD</fullName>
+                <default>false</default>
+                <label>V-ECOFIN Y SANIDAD</label>
+            </value>
+            <value>
+                <fullName>V-EDUCACION</fullName>
+                <default>false</default>
+                <label>V-EDUCACION</label>
+            </value>
+            <value>
+                <fullName>V-EMPLEO E INNOVACION</fullName>
+                <default>false</default>
+                <label>V-EMPLEO E INNOVACION</label>
+            </value>
+            <value>
+                <fullName>V-ENEL</fullName>
+                <default>false</default>
+                <label>V-ENEL</label>
+            </value>
+            <value>
+                <fullName>V-ENERGY ENG.</fullName>
+                <default>false</default>
+                <label>V-ENERGY ENG.</label>
+            </value>
+            <value>
+                <fullName>V-ENVIRONMENT</fullName>
+                <default>false</default>
+                <label>V-ENVIRONMENT</label>
+            </value>
+            <value>
+                <fullName>V-ETC VALUE OFFERING (C)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-ETC VALUE OFFERING (C)</label>
+            </value>
+            <value>
+                <fullName>V-ETC VALUE OFFERING (PS)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-ETC VALUE OFFERING (PS)</label>
+            </value>
+            <value>
+                <fullName>V-ETC VALUE OFFERING (R&amp;E)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-ETC VALUE OFFERING (R&amp;E)</label>
+            </value>
+            <value>
+                <fullName>V-ETC VALUE OFFERING (T)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-ETC VALUE OFFERING (T)</label>
+            </value>
+            <value>
+                <fullName>V-ETC VALUE OFFERING (U&amp;E)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-ETC VALUE OFFERING (U&amp;E)</label>
+            </value>
+            <value>
+                <fullName>V-GESTION TERRITORIAL</fullName>
+                <default>false</default>
+                <label>V-GESTION TERRITORIAL</label>
+            </value>
+            <value>
+                <fullName>V-HYDRAULIC WORKS</fullName>
+                <default>false</default>
+                <label>V-HYDRAULIC WORKS</label>
+            </value>
+            <value>
+                <fullName>V-INDUSTRY</fullName>
+                <default>false</default>
+                <label>V-INDUSTRY</label>
+            </value>
+            <value>
+                <fullName>V-INFRA. SUPERVISIONS</fullName>
+                <default>false</default>
+                <label>V-INFRA. SUPERVISIONS</label>
+            </value>
+            <value>
+                <fullName>V-INNO</fullName>
+                <default>false</default>
+                <label>V-INNO</label>
+            </value>
+            <value>
+                <fullName>V-INSURANCE</fullName>
+                <default>false</default>
+                <label>V-INSURANCE</label>
+            </value>
+            <value>
+                <fullName>V-M2C</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-M2C</label>
+            </value>
+            <value>
+                <fullName>V-OIL&amp;GAS</fullName>
+                <default>false</default>
+                <label>V-OIL&amp;GAS</label>
+            </value>
+            <value>
+                <fullName>V-PROCESS PLANTS</fullName>
+                <default>false</default>
+                <label>V-PROCESS PLANTS</label>
+            </value>
+            <value>
+                <fullName>V-RAILWAYS/METRO</fullName>
+                <default>false</default>
+                <label>V-RAILWAYS/METRO</label>
+            </value>
+            <value>
+                <fullName>V-RAILWAY SYSTEMS</fullName>
+                <default>false</default>
+                <label>V-RAILWAY SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>V-ROADS</fullName>
+                <default>false</default>
+                <label>V-ROADS</label>
+            </value>
+            <value>
+                <fullName>V-SOCIALES</fullName>
+                <default>false</default>
+                <label>V-SOCIALES</label>
+            </value>
+            <value>
+                <fullName>V-TELCO</fullName>
+                <default>false</default>
+                <label>V-TELCO</label>
+            </value>
+            <value>
+                <fullName>V-TRANSPORT. CATALONIA</fullName>
+                <default>false</default>
+                <label>V-TRANSPORT. CATALONIA</label>
+            </value>
+            <value>
+                <fullName>V-TRANSPORT EMEA &amp; ASIA</fullName>
+                <default>false</default>
+                <label>V-TRANSPORT EMEA &amp; ASIA</label>
+            </value>
+            <value>
+                <fullName>V-TRANSPORT LATAM</fullName>
+                <default>false</default>
+                <label>V-TRANSPORT LATAM</label>
+            </value>
+            <value>
+                <fullName>V-TRANSPORT SPAIN</fullName>
+                <default>false</default>
+                <label>V-TRANSPORT SPAIN</label>
+            </value>
+            <value>
+                <fullName>V-U.K. &amp; IRELAND</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>V-U.K. &amp; IRELAND</label>
+            </value>
+            <value>
+                <fullName>V-UTILITIES ESPAÑA</fullName>
+                <default>false</default>
+                <label>V-UTILITIES ESPAÑA</label>
+            </value>
+            <value>
+                <fullName>V-UTILITIES LATAM</fullName>
+                <default>false</default>
+                <label>V-UTILITIES LATAM</label>
+            </value>
+            <value>
+                <fullName>V-WATER &amp; ENVIROM. EMEA &amp; ASIA</fullName>
+                <default>false</default>
+                <label>V-WATER &amp; ENVIROM. EMEA &amp; ASIA</label>
+            </value>
+            <value>
+                <fullName>V-WATER &amp; ENVIROM. LATAM</fullName>
+                <default>false</default>
+                <label>V-WATER &amp; ENVIROM. LATAM</label>
+            </value>
+            <value>
+                <fullName>V-WATER &amp; ENVIROM. SPAIN</fullName>
+                <default>false</default>
+                <label>V-WATER &amp; ENVIROM. SPAIN</label>
+            </value>
+            <value>
+                <fullName>V-WATER CATALONIA</fullName>
+                <default>false</default>
+                <label>V-WATER CATALONIA</label>
+            </value>
+            <value>
+                <fullName>V-WATER SUPERVISIONS</fullName>
+                <default>false</default>
+                <label>V-WATER SUPERVISIONS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

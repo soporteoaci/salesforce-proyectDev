@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Es_propietario__c</fullName>
+    <formula>$User.Id = Owner.Id</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Es propietario</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

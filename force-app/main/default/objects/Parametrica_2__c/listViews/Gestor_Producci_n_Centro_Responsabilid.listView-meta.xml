@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gestor_Producci_n_Centro_Responsabilid</fullName>
+    <columns>NAME</columns>
+    <columns>Gestor_de_produccion_lookup__c</columns>
+    <columns>Centro_Res_Super_lookup__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Parametrica_2__c.Gestor_Produccion_Centro_Responsabilidad</value>
+    </filters>
+    <label>Gestor Producción-Centro Responsabilidad</label>
+</ListView>

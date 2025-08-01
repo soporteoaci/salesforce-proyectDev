@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campo_Comentario_Cross_Selling</fullName>
+    <active>false</active>
+    <description>Cuando se marque la casilla de Cross Selling se obliga a informar un comentario de la colaboración</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+
+ Cross_Selling__c = True,  
+ ISBLANK(	Comentario_Cross_Selling__c ) 
+ 
+)</errorConditionFormula>
+    <errorMessage>Si ha marcado la casilla de Cross Selling debe informar una comentario de cual es la colaboración entre compañías del grupo para esta Oportunidad.</errorMessage>
+</ValidationRule>

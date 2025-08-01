@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <entityName>Oportunidad__c</entityName>
+    <fieldName>Etapa__c</fieldName>
+    <masterLabel>Etapa Oportunidad</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Fecha_estimada_de_cierre__c</fieldNames>
+        <fieldNames>Estado_de_Cierre__c</fieldNames>
+        <fieldNames>Fecha_firma_contrato__c</fieldNames>
+        <fieldNames>Margen_contrato__c</fieldNames>
+        <info>&lt;p&gt;Indique el resultado del cierre y la fecha REAL de cierre.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Si la oportunidad se cierra como Ganada, recuerde iniciar el trámite de creación de proyecto en SAP.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Si la oportunidad se cierra como Contratada, recuerde indicar la fecha de firma del contrato.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;En el campo &lt;i&gt;Importe total (sin IVA) en Euros&lt;/i&gt; se debe indicar todo el contrato (incluida la parte del posible socio) y en el campo &lt;i&gt;Contratado año oportunidad (€)&lt;/i&gt; se indicará la parte correspondiente a Ayesa del contrato.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Confirme el % Margen contratado.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Confirme el % Margen estimado incluyendo recargos.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Especifique la Tecnología y Producto o Servicio del proyecto en la parte inferior del formulario.&lt;/p&gt;</info>
+        <picklistValueName>Cerrada</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

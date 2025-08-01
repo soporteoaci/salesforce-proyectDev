@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriccion_etapa_fecha_firma_contrato</fullName>
+    <active>false</active>
+    <description>La fecha de firma del contrato debe estar rellena y no puede ser posterior al día actual</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+				RecordType.DeveloperName &lt;&gt; &apos;Ibermatica_SME&apos;,
+
+				ISPICKVAL( Etapa__c , &quot;Cerrada&quot; ) &amp;&amp;
+				ISPICKVAL( Subfase__c , &quot;Ganada&quot;) &amp;&amp;
+				(
+								( Fecha_firma_contrato__c &gt; DATEVALUE(NOW())) ||
+								ISBLANK(Fecha_firma_contrato__c)
+				)
+
+			)</errorConditionFormula>
+    <errorMessage>La fecha de firma del contrato debe estar rellena y no puede ser posterior al día actual</errorMessage>
+</ValidationRule>

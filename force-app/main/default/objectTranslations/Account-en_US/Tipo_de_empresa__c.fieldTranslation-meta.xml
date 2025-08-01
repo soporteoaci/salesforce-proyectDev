@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Company Type</label>
+    <name>Tipo_de_empresa__c</name>
+    <picklistValues>
+        <masterLabel>ETO</masterLabel>
+        <translation><!-- ETO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTO</masterLabel>
+        <translation><!-- MTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTS</masterLabel>
+        <translation><!-- MTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTROS</masterLabel>
+        <translation>OTHERS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TS</masterLabel>
+        <translation><!-- TS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

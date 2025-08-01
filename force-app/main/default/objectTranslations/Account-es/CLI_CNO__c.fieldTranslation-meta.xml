@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CLI / CNO --></label>
+    <name>CLI_CNO__c</name>
+    <picklistValues>
+        <masterLabel>CLIs</masterLabel>
+        <translation><!-- CLIs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CNOs</masterLabel>
+        <translation><!-- CNOs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INACTIVO</masterLabel>
+        <translation><!-- INACTIVO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCLI</masterLabel>
+        <translation><!-- NCLI --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

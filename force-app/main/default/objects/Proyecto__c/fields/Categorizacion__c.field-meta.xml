@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categorizacion__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Recurso__c =&quot;Verdadero&quot;, &quot;RECURSO&quot;,
+			If(Facturacion_tipo__c =&quot;Verdadero&quot;, &quot;FACTURACIÓN&quot;,
+					 IF(Cobro_tipo__c =&quot;Verdadero&quot;,&quot;COBRO&quot;,
+							    IF(Otros_productos__c =&quot;Verdadero&quot;,&quot;PROD. OK&quot;,&quot;PROD.AUDI.&quot;)
+							)
+					)
+			)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Categorización</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

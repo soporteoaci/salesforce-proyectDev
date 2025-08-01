@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Oportunidad__c</entityName>
+    <fieldName>Etapa__c</fieldName>
+    <masterLabel>Etapa Oportunidad Ayesa</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Etapa__c</fieldNames>
+        <fieldNames>Subfase__c</fieldNames>
+        <fieldNames>Motivo_Perdido__c</fieldNames>
+        <fieldNames>Fecha_estimada_de_cierre__c</fieldNames>
+        <fieldNames>Fecha_firma_contrato__c</fieldNames>
+        <picklistValueName>Cerrada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Etapa__c</fieldNames>
+        <fieldNames>Subfase__c</fieldNames>
+        <fieldNames>Motivo_Perdido__c</fieldNames>
+        <picklistValueName>Cualificación</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Etapa__c</fieldNames>
+        <fieldNames>Subfase__c</fieldNames>
+        <fieldNames>Motivo_Perdido__c</fieldNames>
+        <picklistValueName>Oferta</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Ayesa</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner ayesa</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner ayesa</value>
+    </caseValues>
+    <layouts>
+        <layout>Formato Socio</layout>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Subcontrata</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Partner Name</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Socio --></label>
+        <name>Socio</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Subcontratación --></label>
+        <name>Subcontratacion</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

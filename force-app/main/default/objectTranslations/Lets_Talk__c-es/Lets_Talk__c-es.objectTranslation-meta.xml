@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lets Talk</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lets Talk</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Formato Lets Talk Contrato</layout>
+        <sections>
+            <label>Send Email</label>
+            <section>Enviar email</section>
+        </sections>
+        <sections>
+            <label>Save Answer</label>
+            <section>Guardar respuesta</section>
+        </sections>
+        <sections>
+            <label>Custom Link</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Lets Talk Proyecto</layout>
+        <sections>
+            <label>Send Email</label>
+            <section>Enviar email</section>
+        </sections>
+        <sections>
+            <label>Save Answer</label>
+            <section>Guardar respuesta</section>
+        </sections>
+        <sections>
+            <label>Custom Link</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Send mail</label>
+        <name>Enviar_correo</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Send mail</label>
+        <name>Enviar_correo_proyecto</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Save Answer</label>
+        <name>Guardar_respuesta</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Save Answer</label>
+        <name>Guardar_respuesta_proyecto</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Lets talk Contrato --></label>
+        <name>Lets_talk_Contrato</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lets talk Proyecto --></label>
+        <name>Lets_talk_Proyecto</name>
+    </recordTypes>
+</CustomObjectTranslation>

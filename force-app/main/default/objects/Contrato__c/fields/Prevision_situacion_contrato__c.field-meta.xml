@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevision_situacion_contrato__c</fullName>
+    <label>Previsión situación contrato</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>S10</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>S10</label>
+            </value>
+            <value>
+                <fullName>S11</fullName>
+                <color>#FF9900</color>
+                <default>false</default>
+                <label>S11</label>
+            </value>
+            <value>
+                <fullName>S12</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+                <label>S12</label>
+            </value>
+            <value>
+                <fullName>S20</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>S20</label>
+            </value>
+            <value>
+                <fullName>S30</fullName>
+                <color>#000000</color>
+                <default>false</default>
+                <label>S30</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

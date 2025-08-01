@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Zone</label>
+    <name>Zona__c</name>
+    <picklistValues>
+        <masterLabel>Centro</masterLabel>
+        <translation>Centre</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Este</masterLabel>
+        <translation>East</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internacional</masterLabel>
+        <translation>International</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noroeste</masterLabel>
+        <translation>Northwest</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norte</masterLabel>
+        <translation>North</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oeste</masterLabel>
+        <translation>West</translation>
+    </picklistValues>
+</CustomFieldTranslation>

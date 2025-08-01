@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mismo_proyecto</fullName>
+    <active>false</active>
+    <description>Obliga a que coincida el Proyecto del Entregable y del TDR</description>
+    <errorConditionFormula>Subentregable__r.Grupos_de_Entregables__r.Hito__r.Proyecto__c  &lt;&gt; TerminoReferencia__r.Proyecto__c</errorConditionFormula>
+    <errorMessage>El TDR y el Entregable deben pertenecer al mismo Proyecto.</errorMessage>
+</ValidationRule>

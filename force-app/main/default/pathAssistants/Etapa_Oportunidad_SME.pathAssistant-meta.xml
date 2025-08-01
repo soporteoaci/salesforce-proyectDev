@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Oportunidad__c</entityName>
+    <fieldName>Etapa_Fase__c</fieldName>
+    <masterLabel>Etapa Oportunidad SME</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Estado_oportunidad__c</fieldNames>
+        <fieldNames>Fase__c</fieldNames>
+        <picklistValueName>Captación</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Estado_oportunidad__c</fieldNames>
+        <fieldNames>Fase__c</fieldNames>
+        <fieldNames>Estado_de_Cierre__c</fieldNames>
+        <picklistValueName>Cerrada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Estado_oportunidad__c</fieldNames>
+        <fieldNames>Fase__c</fieldNames>
+        <picklistValueName>Cualificación</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Estado_oportunidad__c</fieldNames>
+        <fieldNames>Fase__c</fieldNames>
+        <picklistValueName>Demostrando</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Estado_oportunidad__c</fieldNames>
+        <fieldNames>Fase__c</fieldNames>
+        <picklistValueName>Oferta</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Ibermatica_SME</recordTypeName>
+</PathAssistant>

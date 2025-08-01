@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Induction type associated with the inductor project</help>
+    <label>Induction Type 1</label>
+    <name>Tipo_Induccion_1__c</name>
+</CustomFieldTranslation>

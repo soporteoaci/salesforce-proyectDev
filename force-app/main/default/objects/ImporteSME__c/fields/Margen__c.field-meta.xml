@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Margen__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+				AND(
+								ISPICKVAL(Seccion__c,&apos;SRV&apos;), 
+								Horas__c &lt;&gt; 0
+				)
+,
+				Importe__c - VALUE(TEXT(Coste_horas__c))*Horas__c , 
+				Importe__c-Coste__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Margen</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

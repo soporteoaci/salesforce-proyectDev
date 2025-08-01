@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sprint__c</fullName>
+    <label>Sprint</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ARAUCO-Fase I</fullName>
+                <default>false</default>
+                <label>ARAUCO-Fase I</label>
+            </value>
+            <value>
+                <fullName>ARAUCO-Fase II</fullName>
+                <default>false</default>
+                <label>ARAUCO-Fase II</label>
+            </value>
+            <value>
+                <fullName>ARAUCO-Fase III</fullName>
+                <default>false</default>
+                <label>ARAUCO-Fase III</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Fase 0.- Datos Maestros</fullName>
+                <default>false</default>
+                <label>MINFIN - Fase 0.- Datos Maestros</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Fase 1A.- Varios Módulos</fullName>
+                <default>false</default>
+                <label>MINFIN - Fase 1A.- Varios Módulos</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Fase 1B.- RYD</fullName>
+                <default>false</default>
+                <label>MINFIN - Fase 1B.- RYD</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Fase 2.- Programación y Formulación</fullName>
+                <default>false</default>
+                <label>MINFIN - Fase 2.- Programación y Formulación</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Fase 3.- Solución Completa e Integrada</fullName>
+                <default>false</default>
+                <label>MINFIN - Fase 3.- Solución Completa e Integrada</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Garantía, Soporte y Mantenimiento</fullName>
+                <default>false</default>
+                <label>MINFIN - Garantía, Soporte y Mantenimiento</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Gestión del Cambio</fullName>
+                <default>false</default>
+                <label>MINFIN - Gestión del Cambio</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Informe Final</fullName>
+                <default>false</default>
+                <label>MINFIN - Informe Final</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Ingeniería de Detalle</fullName>
+                <default>false</default>
+                <label>MINFIN - Ingeniería de Detalle</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Licenciamiento</fullName>
+                <default>false</default>
+                <label>MINFIN - Licenciamiento</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Provisión de Ambientes</fullName>
+                <default>false</default>
+                <label>MINFIN - Provisión de Ambientes</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Puesta en Producción e Implantación</fullName>
+                <default>false</default>
+                <label>MINFIN - Puesta en Producción e Implantación</label>
+            </value>
+            <value>
+                <fullName>MINFIN - Transferencia del Conocimiento</fullName>
+                <default>false</default>
+                <label>MINFIN - Transferencia del Conocimiento</label>
+            </value>
+            <value>
+                <fullName>VANTI. ERP. W11.- ECS + Nómina</fullName>
+                <default>false</default>
+                <label>VANTI. ERP. W11.- ECS + Nómina</label>
+            </value>
+            <value>
+                <fullName>VANTI. ERP. W12.- P&amp;G + LMS</fullName>
+                <default>false</default>
+                <label>VANTI. ERP. W12.- P&amp;G + LMS</label>
+            </value>
+            <value>
+                <fullName>VANTI. ERP. W13.- REC + S&amp;D</fullName>
+                <default>false</default>
+                <label>VANTI. ERP. W13.- REC + S&amp;D</label>
+            </value>
+            <value>
+                <fullName>VANTI. ERP. W2.- LO+FI</fullName>
+                <default>false</default>
+                <label>VANTI. ERP. W2.- LO+FI</label>
+            </value>
+            <value>
+                <fullName>VANTI. ERP. W3. BPC</fullName>
+                <default>false</default>
+                <label>VANTI. ERP. W3. BPC</label>
+            </value>
+            <value>
+                <fullName>VANTI. ERP. W4. QM</fullName>
+                <default>false</default>
+                <label>VANTI. ERP. W4. QM</label>
+            </value>
+            <value>
+                <fullName>VANTI. ERP. WXX.- Todos</fullName>
+                <default>false</default>
+                <label>VANTI. ERP. WXX.- Todos</label>
+            </value>
+            <value>
+                <fullName>VANTI. ISU. W1. SSCC</fullName>
+                <default>false</default>
+                <label>VANTI. ISU. W1. SSCC</label>
+            </value>
+            <value>
+                <fullName>VANTI. ISU. WXX. Todas</fullName>
+                <default>false</default>
+                <label>VANTI. ISU. WXX. Todas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

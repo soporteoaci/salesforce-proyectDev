@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Importe_total_ofertado_sin_IVA</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				Record_Type_Name__c =&apos;Ayesa&apos;,
+				OR(
+								AND(
+
+												NOT(CONTAINS(Owner_Rol__c, &apos;Latam&apos;)), 
+												ISBLANK(Importe_total_sin_IVA__c),
+												ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;)
+								),
+								AND(
+												CONTAINS(Owner_Rol__c, &apos;Latam&apos;),
+												ISBLANK(Importe_total_ofertado_sin_IVA_local__c),
+												ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;)
+								)
+				)
+)</errorConditionFormula>
+    <errorMessage>Informe el campo Importe total ofertado (sin IVA) en la pestaña Datos Económicos antes de avanzar a la siguiente fase</errorMessage>
+</ValidationRule>

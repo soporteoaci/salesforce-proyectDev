@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Creador_Oportunidad_es_IS__c</fullName>
+    <formula>AND(
+				CONTAINS(	Record_Type_Name__c , &apos;SME&apos;),
+		  		OR(CONTAINS(CreatedBy.UserRole.Name, &apos;IS &apos;),
+							Creadas_SME_IS_Clip__c =true)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Creador Oportunidad es IS</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

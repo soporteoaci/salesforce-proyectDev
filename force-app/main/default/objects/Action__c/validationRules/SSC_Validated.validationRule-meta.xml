@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSC_Validated</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNEW()  &amp;&amp;  ISPICKVAL( Task_LK__r.Status__c , &apos;Validado&apos;)</errorConditionFormula>
+    <errorMessage>La tarea de seguimiento corporativo se encuentra en estado validada. 
+No esta permitido añadir nuevas acciones.</errorMessage>
+</ValidationRule>

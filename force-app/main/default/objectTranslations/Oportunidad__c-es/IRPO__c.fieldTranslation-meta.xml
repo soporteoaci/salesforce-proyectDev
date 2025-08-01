@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ¿Ha incluido IRPO en Alejandría? http://Alejandria.ayesa.com --></help>
+    <label><!-- ¿Ha incluido el IRPO en Alejandría? --></label>
+    <name>IRPO__c</name>
+</CustomFieldTranslation>

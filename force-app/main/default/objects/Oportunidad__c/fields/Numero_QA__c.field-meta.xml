@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Numero_QA__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  AND(Importe_total_sin_IVA__c &gt; 1000000, ISPICKVAL(Direccion_Operaciones__c, &quot;IT&amp;DS&quot;)), 
+  1,
+  IF(
+    AND(ISPICKVAL(Direccion_Operaciones__c, &quot;IT&amp;DS&quot;), ISPICKVAL(Delivery_Center__c, &quot;Cloud &amp; infrastructure (C3)&quot;)), 
+    2,
+    IF(
+      AND(
+        ISPICKVAL(Direccion_Operaciones__c, &quot;IT&amp;DS&quot;), 
+        ISPICKVAL(Tipologia__c, &quot;6&quot;),
+        OR(
+          AND(Importe_total_sin_IVA__c &gt; 1000000, ISPICKVAL(Pais_IT__c, &quot;ES&quot;), ISPICKVAL(Se_produce_fuera_Spain__c, &quot;No&quot;)),
+          AND(Importe_total_sin_IVA__c &gt; 500000, NOT(ISPICKVAL(Pais_IT__c, &quot;ES&quot;)) || ISPICKVAL(Se_produce_fuera_Spain__c, &quot;Sí&quot;))
+        )
+      ),
+      1,
+      IF(
+        AND(ISPICKVAL(Direccion_Operaciones__c, &quot;IT&amp;DS&quot;), ISPICKVAL(Tipologia__c, &quot;4&quot;), Importe_total_sin_IVA__c &gt; 500000),
+        2,
+        IF(
+          AND(ISPICKVAL(Direccion_Operaciones__c, &quot;IT&amp;DS&quot;), ISPICKVAL(Linea_de_Servicio__c, &quot;Business Operation&quot;), Importe_total_sin_IVA__c &gt; 500000),
+          2,
+          IF(
+            AND(
+              ISPICKVAL(Direccion_Operaciones__c, &quot;IT&amp;DS&quot;), 
+              ISPICKVAL(Tipologia__c, &quot;1&quot;),
+              OR(
+                AND(Importe_total_sin_IVA__c &gt; 1000000, ISPICKVAL(Pais_IT__c, &quot;ES&quot;), ISPICKVAL(Se_produce_fuera_Spain__c, &quot;No&quot;)),
+                AND(Importe_total_sin_IVA__c &gt; 500000, NOT(ISPICKVAL(Pais_IT__c, &quot;ES&quot;)) || ISPICKVAL(Se_produce_fuera_Spain__c, &quot;Sí&quot;))
+              )
+            ),
+            2,
+            IF(
+              OR(
+                AND(
+                  CONTAINS(TEXT(Clase_de_oferta__c), &quot;Acuerdo Marco&quot;), 
+                  ISPICKVAL(Tipologia__c, &quot;3&quot;),
+                  ISPICKVAL(Analisis_penalizaciones_excluyentes__c, &quot;Moderadas&quot;) || ISPICKVAL(Analisis_penalizaciones_excluyentes__c, &quot;Muy exigentes&quot;)
+                ),
+                AND(CONTAINS(TEXT(Clase_de_oferta__c), &quot;Acuerdo Marco&quot;), Director_Pais__r.Email = &quot;icarrillo@ayesa.com&quot;)
+              ),
+              IF(
+                OR(
+                  AND(Importe_total_sin_IVA__c &gt; 1000000, ISPICKVAL(Pais_IT__c, &quot;ES&quot;), ISPICKVAL(Se_produce_fuera_Spain__c, &quot;No&quot;)),
+                  AND(Importe_total_sin_IVA__c &gt; 500000, NOT(ISPICKVAL(Pais_IT__c, &quot;ES&quot;)) || ISPICKVAL(Se_produce_fuera_Spain__c, &quot;Sí&quot;))
+                ),
+                2,
+                3
+              ),
+              IF(
+                OR(
+                  AND(CONTAINS(TEXT(Clase_de_oferta__c), &quot;Acuerdo Marco&quot;), Importe_total_sin_IVA__c &gt; 1000000, ISPICKVAL(Pais_IT__c, &quot;ES&quot;), ISPICKVAL(Se_produce_fuera_Spain__c, &quot;No&quot;)),
+                  AND(CONTAINS(TEXT(Clase_de_oferta__c), &quot;Acuerdo Marco&quot;), Importe_total_sin_IVA__c &gt; 500000, NOT(ISPICKVAL(Pais_IT__c, &quot;ES&quot;)) || ISPICKVAL(Se_produce_fuera_Spain__c, &quot;Sí&quot;)),
+                  AND(CONTAINS(TEXT(Clase_de_oferta__c), &quot;Acuerdo Marco&quot;), ISPICKVAL(Tipo_Participacion_Ayesa__c, &quot;UTE&quot;))
+                ),
+                1,
+                0
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>0 --&gt; 0,
+
+1 --&gt; QA Económico,
+
+2 --&gt; QA Económico y Técnico,
+
+3 --&gt; QA Técnico</inlineHelpText>
+    <label>Numero QA</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

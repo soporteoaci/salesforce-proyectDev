@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Desglose_Ganadas_restriccion</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Tipo_Extension__c, &apos;Extensión Desglose&apos;),
+ISPICKVAL(Subfase__c, &apos;Ganada&apos;),
+NOT(ISBLANK(Oportunidad_Relacionada__c)),
+NOT(ISPICKVAL(Oportunidad_Relacionada__r.Subfase__c, &apos;Ganada&apos;))
+
+)</errorConditionFormula>
+    <errorMessage>No puede cerrar esta oportunidad como ganada ya que su oportunidad matriz no está ganada</errorMessage>
+</ValidationRule>

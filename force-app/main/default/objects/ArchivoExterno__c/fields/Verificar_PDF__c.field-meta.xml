@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verificar_PDF__c</fullName>
+    <description>Comprueba que la dirección URL referencie a un documento PDF</description>
+    <formula>IF(UPPER(TRIM(RIGHT(URL__c, 3)))=&apos;PDF&apos;, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Verificar PDF</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

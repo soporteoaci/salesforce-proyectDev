@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organizaciones_Comerciales</fullName>
+    <columns>NAME</columns>
+    <columns>Organizacion_Comercial__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Estado__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Parametrica_2__c.Organizacion</value>
+    </filters>
+    <label>Organizaciones Comerciales</label>
+</ListView>

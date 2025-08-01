@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ptes_Cualificar_DC_Modern_W_EU</fullName>
+    <booleanFilter>1 AND 3 AND (2 OR 4)</booleanFilter>
+    <columns>Codigo_OC__c</columns>
+    <columns>NAME</columns>
+    <columns>Cliente__c</columns>
+    <columns>Importe_total_sin_IVA__c</columns>
+    <columns>Propietario_custom__c</columns>
+    <columns>Linea_de_Servicio__c</columns>
+    <columns>Delivery_Center__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Subfase__c</field>
+        <operation>equals</operation>
+        <value>Cualificación con autoprovisión,Cualificación con preventa</value>
+    </filters>
+    <filters>
+        <field>Capacidad_preventa_redaccion_oferta__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Linea_de_Servicio__c</field>
+        <operation>equals</operation>
+        <value>Modern Workplace &amp; End - User support</value>
+    </filters>
+    <filters>
+        <field>Capacidad_ejecucion__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Ptes Cualificar DC Modern W &amp; EU</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Modern_Workplace_End_User_support</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

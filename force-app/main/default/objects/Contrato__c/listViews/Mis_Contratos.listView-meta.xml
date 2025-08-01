@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mis_Contratos</fullName>
+    <columns>Codigo_SAP__c</columns>
+    <columns>NAME</columns>
+    <columns>Sub_area__c</columns>
+    <columns>CeBe__c</columns>
+    <columns>Pais__c</columns>
+    <columns>Estado__c</columns>
+    <columns>Situacion_Actual_Contrato__c</columns>
+    <columns>Prevision_situacion_contrato__c</columns>
+    <columns>Reqs_Contractuales_sobre_Presencialidad__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>Fecha_control_correos__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Mis Contratos</label>
+    <sharedTo>
+        <group>Gestion_contratos_Usuarios_Espa_ol</group>
+    </sharedTo>
+</ListView>

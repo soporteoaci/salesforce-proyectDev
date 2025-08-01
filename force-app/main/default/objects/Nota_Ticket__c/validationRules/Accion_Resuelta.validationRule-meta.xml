@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accion_Resuelta</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Ticket__r.Estado__c,&quot;Resuelto&quot;), OR(ISPICKVAL(Accion__c , &quot;Resolver&quot;),ISPICKVAL(Accion__c , &quot;Rechazar&quot;)),NOT($Permission.AdministratorException))</errorConditionFormula>
+    <errorMessage>No es posible seleccionar la acción elegida sobre un Ticket ya resuelto.</errorMessage>
+</ValidationRule>

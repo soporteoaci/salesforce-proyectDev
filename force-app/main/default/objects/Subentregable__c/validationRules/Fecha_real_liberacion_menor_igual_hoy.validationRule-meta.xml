@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_real_liberacion_menor_igual_hoy</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				Fecha_Real_de_Liberacion__c &gt; DATETIMEVALUE(Now()),
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				$User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Fecha_Real_de_Liberacion__c</errorDisplayField>
+    <errorMessage>La fecha real de liberación no puede ser posterior al dia actual</errorMessage>
+</ValidationRule>

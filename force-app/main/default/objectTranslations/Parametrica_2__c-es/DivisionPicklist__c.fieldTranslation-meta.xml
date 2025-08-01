@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- División / Sector de Mercado --></label>
+    <name>DivisionPicklist__c</name>
+    <picklistValues>
+        <masterLabel>AVIATION</masterLabel>
+        <translation><!-- AVIATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BFS</masterLabel>
+        <translation><!-- BFS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BPO UTILITIES</masterLabel>
+        <translation><!-- BPO UTILITIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BUILDING EMEA &amp; ASIA</masterLabel>
+        <translation><!-- BUILDING EMEA &amp; ASIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BUILDING LATAM</masterLabel>
+        <translation><!-- BUILDING LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BUILDING SPAIN</masterLabel>
+        <translation><!-- BUILDING SPAIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONSUMER &amp; BUSINESS SERVICES</masterLabel>
+        <translation><!-- CONSUMER &amp; BUSINESS SERVICES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIGITAL ADMINISTRATION</masterLabel>
+        <translation><!-- DIGITAL ADMINISTRATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENEL</masterLabel>
+        <translation><!-- ENEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENERGY</masterLabel>
+        <translation><!-- ENERGY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENERGY &amp; UTILITIES</masterLabel>
+        <translation><!-- ENERGY &amp; UTILITIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENVIRONMENT</masterLabel>
+        <translation><!-- ENVIRONMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEALTH</masterLabel>
+        <translation><!-- HEALTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HYDRAULIC WORKS</masterLabel>
+        <translation><!-- HYDRAULIC WORKS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBERDROLA</masterLabel>
+        <translation><!-- IBERDROLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INDUSTRY</masterLabel>
+        <translation><!-- INDUSTRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INFRA. SUPERVISIONS</masterLabel>
+        <translation><!-- INFRA. SUPERVISIONS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INNOVATION</masterLabel>
+        <translation><!-- INNOVATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSURANCE</masterLabel>
+        <translation><!-- INSURANCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAND MANAGEMENT</masterLabel>
+        <translation><!-- LAND MANAGEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARINE &amp; COASTALS</masterLabel>
+        <translation><!-- MARINE &amp; COASTALS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MICROSOFT</masterLabel>
+        <translation><!-- MICROSOFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OIL &amp; GAS</masterLabel>
+        <translation><!-- OIL &amp; GAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ONCE</masterLabel>
+        <translation><!-- ONCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROCESS PLANTS</masterLabel>
+        <translation><!-- PROCESS PLANTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAILWAY SYSTEMS</masterLabel>
+        <translation><!-- RAILWAY SYSTEMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAILWAY/METRO</masterLabel>
+        <translation><!-- RAILWAY/METRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RESOURCES</masterLabel>
+        <translation><!-- RESOURCES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROADS</masterLabel>
+        <translation><!-- ROADS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMART FACTORIES</masterLabel>
+        <translation><!-- SMART FACTORIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TMT</masterLabel>
+        <translation><!-- TMT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSPORT EMEA &amp; ASIA</masterLabel>
+        <translation><!-- TRANSPORT EMEA &amp; ASIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSPORT LATAM</masterLabel>
+        <translation><!-- TRANSPORT LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSPORT. CATALONIA</masterLabel>
+        <translation><!-- TRANSPORT. CATALONIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES ESPAÑA</masterLabel>
+        <translation><!-- UTILITIES ESPAÑA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES LATAM</masterLabel>
+        <translation><!-- UTILITIES LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-LATAM</masterLabel>
+        <translation><!-- V-LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WATER &amp; ENVIRON. EMEA &amp; ASIA</masterLabel>
+        <translation><!-- WATER &amp; ENVIRON. EMEA &amp; ASIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WATER &amp; ENVIRONM. LATAM</masterLabel>
+        <translation><!-- WATER &amp; ENVIRONM. LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WATER CATALONIA</masterLabel>
+        <translation><!-- WATER CATALONIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WATER SUPERVISIONS</masterLabel>
+        <translation><!-- WATER SUPERVISIONS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Departamento --></label>
+    <name>Departamento__c</name>
+    <picklistValues>
+        <masterLabel>Assessment &amp; Planning</masterLabel>
+        <translation><!-- Assessment &amp; Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belfast</masterLabel>
+        <translation><!-- Belfast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dublin</masterLabel>
+        <translation><!-- Dublin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Services</masterLabel>
+        <translation><!-- Environmental Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental UK</masterLabel>
+        <translation><!-- Environmental UK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooding-Cork</masterLabel>
+        <translation><!-- Flooding-Cork --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Galway</masterLabel>
+        <translation><!-- Galway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guildford Geo</masterLabel>
+        <translation><!-- Guildford Geo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guildford Structures</masterLabel>
+        <translation><!-- Guildford Structures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>London</masterLabel>
+        <translation><!-- London --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Major Projects</masterLabel>
+        <translation><!-- Major Projects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manchester</masterLabel>
+        <translation><!-- Manchester --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine Ireland</masterLabel>
+        <translation><!-- Marine Ireland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine UK</masterLabel>
+        <translation><!-- Marine UK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Middle East</masterLabel>
+        <translation><!-- Middle East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Ireland</masterLabel>
+        <translation><!-- Water Ireland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water UK</masterLabel>
+        <translation><!-- Water UK --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

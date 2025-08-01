@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Nº Empleado Responsable SAP --></label>
+    <name>Numero_Empleado_Responsable__c</name>
+</CustomFieldTranslation>

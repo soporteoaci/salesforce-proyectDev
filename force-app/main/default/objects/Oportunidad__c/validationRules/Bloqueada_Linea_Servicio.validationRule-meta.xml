@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bloqueada_Linea_Servicio</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+					$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+					$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$User.Email &lt;&gt; &apos;powersalesforce@ayesa.com&apos;,
+				
+					OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+					Bloqueada_importe_Horizontal__c =true,
+					PRIORVALUE(Bloqueada_importe_Horizontal__c) = true,
+					OR(NOT(ISPICKVAL(Etapa__c,&apos;Cualificación&apos;)),
+								AND(
+												NOT(ISPICKVAL(Subfase__c,&apos;Alta&apos;)),
+												NOT(ISPICKVAL(Subfase__c, &apos;No presentada&apos;)),
+												NOT(ISPICKVAL(Subfase__c, &apos;Aplazada / anulada&apos;))
+								)
+							)
+	)</errorConditionFormula>
+    <errorMessage>La oportunidad está bloqueada por el importe límite de la línea de servicio y por el tipo de cuenta</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo campaña --></label>
+    <name>Tipo_campaign__c</name>
+    <picklistValues>
+        <masterLabel>Campaña Digital</masterLabel>
+        <translation><!-- Campaña Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Campaña Prospeccion</masterLabel>
+        <translation><!-- Campaña Prospeccion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Campaña Regular</masterLabel>
+        <translation><!-- Campaña Regular --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eventos</masterLabel>
+        <translation><!-- Eventos --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

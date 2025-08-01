@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subentregable__c</fullName>
+    <label>Entregable</label>
+    <referenceTo>Subentregable__c</referenceTo>
+    <relationshipLabel>Relaciones Entregables con TDR</relationshipLabel>
+    <relationshipName>TDRsEntregables</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

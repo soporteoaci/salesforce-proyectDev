@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Otros_productos__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND( Coste_Dir_Real_Coste_Dir_Prev__c &gt; Produccion_IC__c, Produccion_IC__c&gt;  Facturacion_IC__c), &quot;Verdadero&quot;, &quot;Falso&quot;  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Otros productos</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

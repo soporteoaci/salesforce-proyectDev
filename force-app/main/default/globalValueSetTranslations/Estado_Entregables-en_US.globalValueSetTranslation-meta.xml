@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Cancelado</masterLabel>
+        <translation>Cancelled</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En Revisión Interna</masterLabel>
+        <translation>Under Internal Review</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En proceso</masterLabel>
+        <translation>In Process</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Finalizado</masterLabel>
+        <translation>Finalized</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Firmado</masterLabel>
+        <translation>Signed</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Liberado</masterLabel>
+        <translation>Released</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pendiente</masterLabel>
+        <translation>Pending</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

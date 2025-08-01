@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Anulado</masterLabel>
+        <translation>Canceled</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Con triaje</masterLabel>
+        <translation>With Triage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En pausa</masterLabel>
+        <translation>Pause</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ignorado</masterLabel>
+        <translation>Ignored</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Nuevo</masterLabel>
+        <translation>New</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Resuelto</masterLabel>
+        <translation>Resolved</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

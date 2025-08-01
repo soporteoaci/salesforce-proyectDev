@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SUBNIVEL__c</fullName>
+    <label>Subnivel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NIVEL__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Presidente</fullName>
+                <default>false</default>
+                <label>Presidente</label>
+            </value>
+            <value>
+                <fullName>Vicepresidente</fullName>
+                <default>false</default>
+                <label>Vicepresidente</label>
+            </value>
+            <value>
+                <fullName>Consejero Delegado</fullName>
+                <default>false</default>
+                <label>Consejero Delegado</label>
+            </value>
+            <value>
+                <fullName>Máximo responsable de la Administración</fullName>
+                <default>false</default>
+                <label>Máximo responsable de la Administración</label>
+            </value>
+            <value>
+                <fullName>Ministros</fullName>
+                <default>false</default>
+                <label>Ministros</label>
+            </value>
+            <value>
+                <fullName>Rector</fullName>
+                <default>false</default>
+                <label>Rector</label>
+            </value>
+            <value>
+                <fullName>Vicerrector</fullName>
+                <default>false</default>
+                <label>Vicerrector</label>
+            </value>
+            <value>
+                <fullName>Otros altos cargos</fullName>
+                <default>false</default>
+                <label>Otros altos cargos</label>
+            </value>
+            <value>
+                <fullName>Director General</fullName>
+                <default>false</default>
+                <label>Director General</label>
+            </value>
+            <value>
+                <fullName>Director General Adjunto</fullName>
+                <default>false</default>
+                <label>Director General Adjunto</label>
+            </value>
+            <value>
+                <fullName>Consejeros de Comunidades Autónomas</fullName>
+                <default>false</default>
+                <label>Consejeros de Comunidades Autónomas</label>
+            </value>
+            <value>
+                <fullName>Diputados</fullName>
+                <default>false</default>
+                <label>Diputados</label>
+            </value>
+            <value>
+                <fullName>Concejales</fullName>
+                <default>false</default>
+                <label>Concejales</label>
+            </value>
+            <value>
+                <fullName>Decanos</fullName>
+                <default>false</default>
+                <label>Decanos</label>
+            </value>
+            <value>
+                <fullName>Subdirector General</fullName>
+                <default>false</default>
+                <label>Subdirector General</label>
+            </value>
+            <value>
+                <fullName>Subdirector General Adjunto</fullName>
+                <default>false</default>
+                <label>Subdirector General Adjunto</label>
+            </value>
+            <value>
+                <fullName>Viceconsejeros</fullName>
+                <default>false</default>
+                <label>Viceconsejeros</label>
+            </value>
+            <value>
+                <fullName>Vicedecano</fullName>
+                <default>false</default>
+                <label>Vicedecano</label>
+            </value>
+            <value>
+                <fullName>Director de Función</fullName>
+                <default>false</default>
+                <label>Director de Función</label>
+            </value>
+            <value>
+                <fullName>Director adjunto a la función</fullName>
+                <default>false</default>
+                <label>Director adjunto a la función</label>
+            </value>
+            <value>
+                <fullName>Director de Organización y Sistemas</fullName>
+                <default>false</default>
+                <label>Director de Organización y Sistemas</label>
+            </value>
+            <value>
+                <fullName>Director de Recursos Humanos</fullName>
+                <default>false</default>
+                <label>Director de Recursos Humanos</label>
+            </value>
+            <value>
+                <fullName>Director Económico-Financiero</fullName>
+                <default>false</default>
+                <label>Director Económico-Financiero</label>
+            </value>
+            <value>
+                <fullName>Subdirector de Función</fullName>
+                <default>false</default>
+                <label>Subdirector de Función</label>
+            </value>
+            <value>
+                <fullName>Responsable de departamento</fullName>
+                <default>false</default>
+                <label>Responsable de departamento</label>
+            </value>
+            <value>
+                <fullName>Responsable de CAD</fullName>
+                <default>false</default>
+                <label>Responsable de CAD</label>
+            </value>
+            <value>
+                <fullName>Responsable de Organización y Sistemas</fullName>
+                <default>false</default>
+                <label>Responsable de Organización y Sistemas</label>
+            </value>
+            <value>
+                <fullName>Responsable de Recursos Humanos</fullName>
+                <default>false</default>
+                <label>Responsable de Recursos Humanos</label>
+            </value>
+            <value>
+                <fullName>Responsable Económico-Financiero</fullName>
+                <default>false</default>
+                <label>Responsable Económico-Financiero</label>
+            </value>
+            <value>
+                <fullName>Responsable de desarrollo</fullName>
+                <default>false</default>
+                <label>Responsable de desarrollo</label>
+            </value>
+            <value>
+                <fullName>Responsable de explotación</fullName>
+                <default>false</default>
+                <label>Responsable de explotación</label>
+            </value>
+            <value>
+                <fullName>Responsable de sistemas</fullName>
+                <default>false</default>
+                <label>Responsable de sistemas</label>
+            </value>
+            <value>
+                <fullName>Responsable de Tecnologías</fullName>
+                <default>false</default>
+                <label>Responsable de Tecnologías</label>
+            </value>
+            <value>
+                <fullName>Jefe de Proyectos</fullName>
+                <default>false</default>
+                <label>Jefe de Proyectos</label>
+            </value>
+            <value>
+                <fullName>Otros responsables de departamento de Inf.</fullName>
+                <default>false</default>
+                <label>Otros responsables de departamento de Inf.</label>
+            </value>
+            <value>
+                <fullName>Empleados sin nivel de responsabilidad específico</fullName>
+                <default>false</default>
+                <label>Empleados sin nivel de responsabilidad específico</label>
+            </value>
+            <value>
+                <fullName>Asesores externos</fullName>
+                <default>false</default>
+                <label>Asesores externos</label>
+            </value>
+            <value>
+                <fullName>Sin cargo</fullName>
+                <default>false</default>
+                <label>Sin cargo</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Máximo Responsable de la Universidad</fullName>
+                <default>false</default>
+                <label>Máximo Responsable de la Universidad</label>
+            </value>
+            <value>
+                <fullName>Director Comercial</fullName>
+                <default>false</default>
+                <label>Director Comercial</label>
+            </value>
+            <value>
+                <fullName>Director Técnico</fullName>
+                <default>false</default>
+                <label>Director Técnico</label>
+            </value>
+            <value>
+                <fullName>Director de Producción</fullName>
+                <default>false</default>
+                <label>Director de Producción</label>
+            </value>
+            <value>
+                <fullName>Director de RRHH - Personal</fullName>
+                <default>false</default>
+                <label>Director de RRHH - Personal</label>
+            </value>
+            <value>
+                <fullName>Director e-Business</fullName>
+                <default>false</default>
+                <label>Director e-Business</label>
+            </value>
+            <value>
+                <fullName>Subdirector Económico Financiero</fullName>
+                <default>false</default>
+                <label>Subdirector Económico Financiero</label>
+            </value>
+            <value>
+                <fullName>Director de Operaciones</fullName>
+                <default>false</default>
+                <label>Director de Operaciones</label>
+            </value>
+            <value>
+                <fullName>Director de Marketing - Comunicaciones</fullName>
+                <default>false</default>
+                <label>Director de Marketing - Comunicaciones</label>
+            </value>
+            <value>
+                <fullName>Director de Compras</fullName>
+                <default>false</default>
+                <label>Director de Compras</label>
+            </value>
+            <value>
+                <fullName>Director Ciberseguridad</fullName>
+                <default>false</default>
+                <label>Director Ciberseguridad</label>
+            </value>
+            <value>
+                <fullName>Director Transformación Digital</fullName>
+                <default>false</default>
+                <label>Director Transformación Digital</label>
+            </value>
+            <value>
+                <fullName>Desconocido</fullName>
+                <default>false</default>
+                <label>Desconocido</label>
+            </value>
+            <value>
+                <fullName>Subdirector de RRHH/Personal</fullName>
+                <default>false</default>
+                <label>Subdirector de RRHH/Personal</label>
+            </value>
+            <value>
+                <fullName>Subdir  Org y Sistemas/Inform.</fullName>
+                <default>false</default>
+                <label>Subdir  Org y Sistemas/Inform.</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Consejo Admón. y Altos Cargos</controllingFieldValue>
+            <valueName>Presidente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consejo Admón. y Altos Cargos</controllingFieldValue>
+            <valueName>Vicepresidente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consejo Admón. y Altos Cargos</controllingFieldValue>
+            <valueName>Consejero Delegado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consejo Admón. y Altos Cargos</controllingFieldValue>
+            <valueName>Máximo responsable de la Administración</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consejo Admón. y Altos Cargos</controllingFieldValue>
+            <valueName>Vicerrector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consejo Admón. y Altos Cargos</controllingFieldValue>
+            <valueName>Otros altos cargos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consejo Admón. y Altos Cargos</controllingFieldValue>
+            <valueName>Máximo Responsable de la Universidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dirección General</controllingFieldValue>
+            <valueName>Ministros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dirección General</controllingFieldValue>
+            <valueName>Director General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dirección General</controllingFieldValue>
+            <valueName>Director General Adjunto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dirección General</controllingFieldValue>
+            <valueName>Consejeros de Comunidades Autónomas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dirección General</controllingFieldValue>
+            <valueName>Diputados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dirección General</controllingFieldValue>
+            <valueName>Concejales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dirección General</controllingFieldValue>
+            <valueName>Decanos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dirección General</controllingFieldValue>
+            <controllingFieldValue>Subdirección General</controllingFieldValue>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <controllingFieldValue>Responsables de Departamento</controllingFieldValue>
+            <valueName>Otros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subdirección General</controllingFieldValue>
+            <valueName>Subdirector General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subdirección General</controllingFieldValue>
+            <valueName>Subdirector General Adjunto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subdirección General</controllingFieldValue>
+            <valueName>Viceconsejeros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subdirección General</controllingFieldValue>
+            <valueName>Vicedecano</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director de Función</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director adjunto a la función</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director de Organización y Sistemas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director de Recursos Humanos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director Económico-Financiero</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Subdirector de Función</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director Comercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director Técnico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director de Producción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director de RRHH - Personal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director e-Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Subdirector Económico Financiero</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director de Operaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director de Marketing - Comunicaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director de Compras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director Ciberseguridad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Director Transformación Digital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Subdirector de RRHH/Personal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Directores y Subdir de Función</controllingFieldValue>
+            <valueName>Subdir  Org y Sistemas/Inform.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Responsables de Departamento</controllingFieldValue>
+            <valueName>Responsable de departamento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Responsables de Departamento</controllingFieldValue>
+            <valueName>Responsable de CAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Responsables de Departamento</controllingFieldValue>
+            <valueName>Responsable de Organización y Sistemas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Responsables de Departamento</controllingFieldValue>
+            <valueName>Responsable de Recursos Humanos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Responsables de Departamento</controllingFieldValue>
+            <valueName>Responsable Económico-Financiero</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargos del Dpto. Informática</controllingFieldValue>
+            <valueName>Responsable de desarrollo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargos del Dpto. Informática</controllingFieldValue>
+            <valueName>Responsable de explotación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargos del Dpto. Informática</controllingFieldValue>
+            <valueName>Responsable de sistemas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargos del Dpto. Informática</controllingFieldValue>
+            <valueName>Responsable de Tecnologías</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargos del Dpto. Informática</controllingFieldValue>
+            <valueName>Jefe de Proyectos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargos del Dpto. Informática</controllingFieldValue>
+            <valueName>Otros responsables de departamento de Inf.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desconocido</controllingFieldValue>
+            <valueName>Desconocido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otros cargos</controllingFieldValue>
+            <valueName>Empleados sin nivel de responsabilidad específico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otros cargos</controllingFieldValue>
+            <valueName>Asesores externos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otros cargos</controllingFieldValue>
+            <valueName>Sin cargo</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformarSoporte</fullName>
+    <active>true</active>
+    <description>Solo puede enviarse el caso a soporte si el estado es Abierto</description>
+    <errorConditionFormula>ISCHANGED(Informar_a_Soporte__c) &amp;&amp; (NOT(ISPICKVAL(Status, &apos;Abierto&apos;)))</errorConditionFormula>
+    <errorDisplayField>AssetId</errorDisplayField>
+    <errorMessage>Solo se puede enviar un caso a soporte si el estado es igual a Abierto</errorMessage>
+</ValidationRule>

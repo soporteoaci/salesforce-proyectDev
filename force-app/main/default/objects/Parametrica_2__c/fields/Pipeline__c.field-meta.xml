@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline__c</fullName>
+    <label>Pipeline</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pipeline 2024</fullName>
+                <default>false</default>
+                <label>Pipeline 2024</label>
+            </value>
+            <value>
+                <fullName>Pipeline 2023</fullName>
+                <default>false</default>
+                <label>Pipeline 2023</label>
+            </value>
+            <value>
+                <fullName>Pipeline sin reselling 2024</fullName>
+                <default>false</default>
+                <label>Pipeline sin reselling 2024</label>
+            </value>
+            <value>
+                <fullName>Pipeline sin reselling 2023</fullName>
+                <default>false</default>
+                <label>Pipeline sin reselling 2023</label>
+            </value>
+            <value>
+                <fullName>Anteriores</fullName>
+                <default>false</default>
+                <label>Anteriores</label>
+            </value>
+            <value>
+                <fullName>Anteriores sin reselling</fullName>
+                <default>false</default>
+                <label>Anteriores sin reselling</label>
+            </value>
+            <value>
+                <fullName>Pipeline 2025</fullName>
+                <default>false</default>
+                <label>Pipeline 2025</label>
+            </value>
+            <value>
+                <fullName>Pipeline sin reselling 2025</fullName>
+                <default>false</default>
+                <label>Pipeline sin reselling 2025</label>
+            </value>
+            <value>
+                <fullName>Hard 2025</fullName>
+                <default>false</default>
+                <label>Hard 2025</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

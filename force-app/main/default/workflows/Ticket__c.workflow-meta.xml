@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Nuevo_Ticket</fullName>
+        <description>Nuevo Ticket</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CRI</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>alexander.garrido@aguaquito.gob.ec</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Ayesa/Nuevo_Ticket</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Cerrar_Ticket</fullName>
+        <field>Estado__c</field>
+        <literalValue>Cerrado</literalValue>
+        <name>Cerrar Ticket</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Cierre5Dias</fullName>
+        <actions>
+            <name>Cerrar_Ticket</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Ticket__c.Estado__c</field>
+            <operation>equals</operation>
+            <value>Rechazado,Resuelto</value>
+        </criteriaItems>
+        <description>Se cierra el ticket tras llevar 5 días en estado Resuelto</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

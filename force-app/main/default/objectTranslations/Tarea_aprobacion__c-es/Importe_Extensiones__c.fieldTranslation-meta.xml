@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Importe de las extensiones --></help>
+    <label><!-- Importe Extensiones --></label>
+    <name>Importe_Extensiones__c</name>
+</CustomFieldTranslation>

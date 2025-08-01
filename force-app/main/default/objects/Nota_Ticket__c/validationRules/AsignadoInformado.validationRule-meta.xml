@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AsignadoInformado</fullName>
+    <active>true</active>
+    <description>Para la acción &quot;Asignar&quot; es obligatorio que informe el campo &quot;Asignado a&quot;</description>
+    <errorConditionFormula>AND(ISPICKVAL( Accion__c , &quot;Asignar&quot;), ISBLANK( Asignado_a__c ), $User.ProfileId &lt;&gt; &quot;00e0N000001ABpH&quot; )</errorConditionFormula>
+    <errorMessage>Para la acción &apos;&apos;Asignar&apos;&apos; es obligatorio que informe el campo &apos;&apos;Asignado a&apos;&apos;</errorMessage>
+</ValidationRule>

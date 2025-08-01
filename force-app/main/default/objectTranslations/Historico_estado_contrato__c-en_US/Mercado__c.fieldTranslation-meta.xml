@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Money</label>
+    <name>Mercado__c</name>
+    <picklistValues>
+        <masterLabel>V-AERONAUTICS</masterLabel>
+        <translation><!-- V-AERONAUTICS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-BFSI, TELCO &amp; MEDIA</masterLabel>
+        <translation><!-- V-BFSI, TELCO &amp; MEDIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-DIGITAL ADMINISTRATION &amp; HEALTH</masterLabel>
+        <translation><!-- V-DIGITAL ADMINISTRATION &amp; HEALTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-MANUFACT. &amp; COMSUMER</masterLabel>
+        <translation><!-- V-MANUFACT. &amp; COMSUMER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-RESOURCES &amp; ENVIRONMENT</masterLabel>
+        <translation><!-- V-RESOURCES &amp; ENVIRONMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-TRANSPORTATION &amp; CITIES</masterLabel>
+        <translation><!-- V-TRANSPORTATION &amp; CITIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-UTILITIES &amp; ENERGY</masterLabel>
+        <translation><!-- V-UTILITIES &amp; ENERGY --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

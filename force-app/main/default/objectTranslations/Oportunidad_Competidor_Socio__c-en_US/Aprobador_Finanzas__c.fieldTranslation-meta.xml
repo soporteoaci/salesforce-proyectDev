@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Corporate Finance Approver</label>
+    <name>Aprobador_Finanzas__c</name>
+    <relationshipLabel><!-- Oportunidades-Socios (Aprobador Finanzas) --></relationshipLabel>
+</CustomFieldTranslation>

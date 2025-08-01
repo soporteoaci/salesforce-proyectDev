@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_contrato__c</fullName>
+    <label>Tipo de contrato</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fixed price</fullName>
+                <default>false</default>
+                <label>Fixed price</label>
+            </value>
+            <value>
+                <fullName>Fixed price per sprint</fullName>
+                <default>false</default>
+                <label>Fixed price per sprint</label>
+            </value>
+            <value>
+                <fullName>Time and materials</fullName>
+                <default>false</default>
+                <label>Time and materials</label>
+            </value>
+            <value>
+                <fullName>Consumption or per unit</fullName>
+                <default>false</default>
+                <label>Consumption or per unit</label>
+            </value>
+            <value>
+                <fullName>Business outcome</fullName>
+                <default>false</default>
+                <label>Business outcome</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

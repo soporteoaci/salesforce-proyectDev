@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub-área --></label>
+    <name>Sub_area__c</name>
+    <picklistValues>
+        <masterLabel>A1</masterLabel>
+        <translation>INGENIERIA CIVIL Y ARQUITECTURA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2</masterLabel>
+        <translation>INGENIERIA INDUSTRIAL</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3</masterLabel>
+        <translation>CONSULTORÍA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5</masterLabel>
+        <translation>SMART LIFE</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A6</masterLabel>
+        <translation>INGENIERIA FABRICACIÓN AVANZADA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A8</masterLabel>
+        <translation>BPO</translation>
+    </picklistValues>
+</CustomFieldTranslation>

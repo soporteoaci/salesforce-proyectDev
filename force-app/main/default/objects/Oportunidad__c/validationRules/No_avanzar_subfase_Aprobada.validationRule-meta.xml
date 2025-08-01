@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_avanzar_subfase_Aprobada</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+				$Profile.Name &lt;&gt;&quot;Administrador del sistema&quot;,
+				OR(
+								AND(
+												OR(ISPICKVAL(Direccion_Operaciones__c, &apos;ENGINEERING&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+												ISPICKVAL(Subfase__c,&apos;Aprobada&apos;),
+												TEXT(Decision_Aprobacion_Oferta__c)&lt;&gt; &apos;Aprobado&apos;
+								),
+
+
+								AND(
+												ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),
+												ISPICKVAL(Subfase__c,&apos;Aprobada&apos;),
+												OR(
+																AND(
+																				Numero_QA__c =2,
+																				OR(
+																								TEXT(Decision_QA_Economico__c) &lt;&gt; &apos;Go&apos;,
+																								TEXT(Decision_QA_Tecnico__c)  &lt;&gt; &apos;Go&apos;
+																				)
+																),
+
+																AND(
+																				Numero_QA__c =1,
+																				TEXT(Decision_QA_Economico__c) &lt;&gt; &apos;Go&apos;
+																),
+																AND(
+																				Numero_QA__c =0,
+																				ISPICKVAL(Subfase__c,&apos;Aprobada&apos;),
+																				TEXT(Decision_Aprobacion_Oferta__c)&lt;&gt; &apos;Aprobado&apos;
+																),
+																AND(
+																		Numero_QA__c =3,
+																					TEXT(Decision_QA_Tecnico__c) &lt;&gt; &apos;Go&apos;
+
+																)
+															
+												)
+								)
+				))</errorConditionFormula>
+    <errorMessage>No puede avanzar de subfase al no tener las aprobaciones de la Oferta</errorMessage>
+</ValidationRule>

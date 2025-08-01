@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tramite_check</fullName>
+    <active>false</active>
+    <description>Si la oferta esta Aprobada, antes de Cerrar debe iniciar el trámite de creación de proyecto en SAP y marcar la casilla correspondiente</description>
+    <errorConditionFormula>ISPICKVAL( Etapa__c , &quot;Cerrada&quot; ) &amp;&amp; 
+ (( Se_ha_creado_tramite_creaci_n_proyecto__c = false)
+&amp;&amp;  OR(ISPICKVAL(Estado_de_Cierre__c , &quot;Ganada&quot;),ISPICKVAL(Estado_de_Cierre__c , &quot;Contratada&quot;),ISPICKVAL(Estado_de_Cierre__c , &quot;Adjudicada&quot;)))</errorConditionFormula>
+    <errorMessage>Si la oferta esta Aprobada, antes de Cerrar debe iniciar el trámite de creación de proyecto en SAP y marcar la casilla correspondiente</errorMessage>
+</ValidationRule>

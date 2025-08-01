@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promotores__c</fullName>
+    <label>Promotores</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>José Luis Manzanares Japón</fullName>
+                <default>false</default>
+                <label>José Luis Manzanares Japón</label>
+            </value>
+            <value>
+                <fullName>José Luis Manzanares Abásolo</fullName>
+                <default>false</default>
+                <label>José Luis Manzanares Abásolo</label>
+            </value>
+            <value>
+                <fullName>Rosalío Alonso Peces</fullName>
+                <default>false</default>
+                <label>Rosalío Alonso Peces</label>
+            </value>
+            <value>
+                <fullName>Germán del Real</fullName>
+                <default>false</default>
+                <label>Germán del Real</label>
+            </value>
+            <value>
+                <fullName>Ignacio Hinojosa</fullName>
+                <default>false</default>
+                <label>Ignacio Hinojosa</label>
+            </value>
+            <value>
+                <fullName>José Antonio García Bermudo</fullName>
+                <default>false</default>
+                <label>José Antonio García Bermudo</label>
+            </value>
+            <value>
+                <fullName>Joseba Inchaurraga</fullName>
+                <default>false</default>
+                <label>Joseba Inchaurraga</label>
+            </value>
+            <value>
+                <fullName>Juan de Cea Garcia</fullName>
+                <default>false</default>
+                <label>Juan de Cea Garcia</label>
+            </value>
+            <value>
+                <fullName>Luis Castillo</fullName>
+                <default>false</default>
+                <label>Luis Castillo</label>
+            </value>
+            <value>
+                <fullName>Rafael Fernández Cantillana</fullName>
+                <default>false</default>
+                <label>Rafael Fernández Cantillana</label>
+            </value>
+            <value>
+                <fullName>Stefan Pardo Kolesch</fullName>
+                <default>false</default>
+                <label>Stefan Pardo Kolesch</label>
+            </value>
+            <value>
+                <fullName>Juan de Dios Hermosin</fullName>
+                <default>false</default>
+                <label>Juan de Dios Hermosin</label>
+            </value>
+            <value>
+                <fullName>Francisco Ruiz Ruiseño Riera</fullName>
+                <default>false</default>
+                <label>Francisco Ruiz Ruiseño Riera</label>
+            </value>
+            <value>
+                <fullName>Jose Bores Borrero</fullName>
+                <default>false</default>
+                <label>Jose Bores Borrero</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

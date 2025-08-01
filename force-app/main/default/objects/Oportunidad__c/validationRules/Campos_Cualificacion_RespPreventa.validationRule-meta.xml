@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campos_Cualificacion_RespPreventa</fullName>
+    <active>true</active>
+    <description>Campos que cuando la oportunidad tiene preventa solo puede modificar el responsable de preventa</description>
+    <errorConditionFormula>AND(
+				$User.Username &lt;&gt; &apos;bllanos@ayesa.com&apos;,
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				OR(
+								AND(
+												NOT(ISPICKVAL(Delivery_Center__c,&apos;Salesforce&apos;)),
+												NOT(ISPICKVAL(Linea_de_Servicio__c,&apos;SAP&apos;)),
+												AND(
+																$User.Email &lt;&gt; Responsable_Preventa__r.Email ,
+																AND(Responsable_Preventa__r.Email =&apos;mmabe@ayesa.com&apos;, $User.Email &lt;&gt;&apos;mrubioro@ayesa.com&apos; )
+												)
+								),
+								AND(
+												ISPICKVAL(Delivery_Center__c,&apos;Salesforce&apos;), 
+												AND( $User.Email &lt;&gt; Responsable_Preventa__r.Email, $User.Email &lt;&gt;&apos;jruizp@ayesa.com&apos;)
+								),
+								AND(
+												ISPICKVAL(Linea_de_Servicio__c,&apos;SAP&apos;), 
+												AND( NOT(CONTAINS(TEXT(Delivery_Center__c),$UserRole.Name)), $User.Email &lt;&gt;&apos;jruizp@ayesa.com&apos;)
+								)
+				),
+				OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+				Preventa__c =true,
+				OR(
+								ISCHANGED(Estimacion_coste_preventa__c),
+								ISCHANGED(Adecuacion_precio_objetivo__c),
+								ISCHANGED(Capacidad_preventa_redaccion_oferta__c)
+
+				)
+)</errorConditionFormula>
+    <errorMessage>Está modificando campos que solo pueden ser informados por el Responsable de Preventa: Estimación coste preventa, Adecuación precio objetivo, Capacidad preventa redacción oferta.</errorMessage>
+</ValidationRule>

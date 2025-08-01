@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Situación Actual Contrato --></label>
+    <name>Situacion_Actual_Contrato__c</name>
+    <picklistValues>
+        <masterLabel>S10 Ejec.Normal</masterLabel>
+        <translation>S10 Ejec.Normal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S11 Ejec. con Retrasos</masterLabel>
+        <translation>S11 Ejec. con Retrasos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S12 Modf. Contrac.</masterLabel>
+        <translation>S12 Modf. Contrac.</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S20 Suspendido</masterLabel>
+        <translation>S20 Suspendido</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S30 Resuelto</masterLabel>
+        <translation>S30 Resuelto</translation>
+    </picklistValues>
+</CustomFieldTranslation>

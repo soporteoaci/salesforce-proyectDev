@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Decisión QA Técnico --></label>
+    <name>Decision_QA_Tecnico__c</name>
+    <picklistValues>
+        <masterLabel>Go</masterLabel>
+        <translation><!-- Go --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No go</masterLabel>
+        <translation><!-- No go --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

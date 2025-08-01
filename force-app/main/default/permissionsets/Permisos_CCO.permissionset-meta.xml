@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permisos para Alejandro 
+Cuentas Clase de cuenta editable</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Clase_de_cuenta__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM Permisos CCO</label>
+</PermissionSet>

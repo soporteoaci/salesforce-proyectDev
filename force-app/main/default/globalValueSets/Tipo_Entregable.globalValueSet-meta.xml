@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Arquitectura</fullName>
+        <default>false</default>
+        <label>Arquitectura</label>
+    </customValue>
+    <customValue>
+        <fullName>Diseño Funcional</fullName>
+        <default>false</default>
+        <label>Diseño Funcional</label>
+    </customValue>
+    <customValue>
+        <fullName>Diseño Técnico</fullName>
+        <default>false</default>
+        <label>Diseño Técnico</label>
+    </customValue>
+    <customValue>
+        <fullName>Formación</fullName>
+        <default>false</default>
+        <label>Formación</label>
+    </customValue>
+    <customValue>
+        <fullName>Gestión del Cambio</fullName>
+        <default>false</default>
+        <label>Gestión del Cambio</label>
+    </customValue>
+    <customValue>
+        <fullName>Gestión del Proyecto</fullName>
+        <default>false</default>
+        <label>Gestión del Proyecto</label>
+    </customValue>
+    <customValue>
+        <fullName>Interfaces</fullName>
+        <default>false</default>
+        <label>Interfaces</label>
+    </customValue>
+    <customValue>
+        <fullName>Licenciamiento</fullName>
+        <default>false</default>
+        <label>Licenciamiento</label>
+    </customValue>
+    <customValue>
+        <fullName>Metodología</fullName>
+        <default>false</default>
+        <label>Metodología</label>
+    </customValue>
+    <customValue>
+        <fullName>Migración</fullName>
+        <default>false</default>
+        <label>Migración</label>
+    </customValue>
+    <customValue>
+        <fullName>Otros</fullName>
+        <default>false</default>
+        <label>Otros</label>
+    </customValue>
+    <customValue>
+        <fullName>Pruebas</fullName>
+        <default>false</default>
+        <label>Pruebas</label>
+    </customValue>
+    <customValue>
+        <fullName>Garantía, Soporte y Mantenimiento</fullName>
+        <default>false</default>
+        <label>Garantía, Soporte y Mantenimiento</label>
+    </customValue>
+    <customValue>
+        <fullName>Puesta en Producción</fullName>
+        <default>false</default>
+        <label>Puesta en Producción</label>
+    </customValue>
+    <masterLabel>Tipo Entregable</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

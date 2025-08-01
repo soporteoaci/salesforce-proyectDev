@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Alemania</masterLabel>
+        <translation>Germany</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Andorra</masterLabel>
+        <translation>Andorra</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Angola</masterLabel>
+        <translation>Angola</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Arabia Saudí</masterLabel>
+        <translation>KSA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Argelia</masterLabel>
+        <translation>Algeria</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Argentina</masterLabel>
+        <translation>Argentina</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Australia</masterLabel>
+        <translation>Australia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Austria</masterLabel>
+        <translation>Austria</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Azerbaiyán</masterLabel>
+        <translation>Azerbaijan</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bahrein</masterLabel>
+        <translation>Bahrain</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bangladesh</masterLabel>
+        <translation>Bangladesh</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bielorrusia</masterLabel>
+        <translation>Belarus</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bolivia</masterLabel>
+        <translation>Bolivia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Brasil</masterLabel>
+        <translation>Brazil</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bulgaria</masterLabel>
+        <translation>Bulgaria</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bélgica</masterLabel>
+        <translation>Belgium</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Canadá</masterLabel>
+        <translation>Canada</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chile</masterLabel>
+        <translation>Chile</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>China</masterLabel>
+        <translation>China</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Colombia</masterLabel>
+        <translation>Colombia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Corea</masterLabel>
+        <translation>Korea</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Costa Rica</masterLabel>
+        <translation>Costa Rica</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Costa de Marfil</masterLabel>
+        <translation>Ivory Coast</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Croacia</masterLabel>
+        <translation>Croatia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cuba</masterLabel>
+        <translation>Cuba</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dinamarca</masterLabel>
+        <translation>Denmark</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E.A.U.</masterLabel>
+        <translation>UAE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EE.UU.</masterLabel>
+        <translation>USA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ecuador</masterLabel>
+        <translation><!-- Ecuador --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Egipto</masterLabel>
+        <translation>Egypt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>El Salvador</masterLabel>
+        <translation><!-- El Salvador --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Emiratos Árabes</masterLabel>
+        <translation>UAE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Eslovaquia</masterLabel>
+        <translation>Slovakia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>España</masterLabel>
+        <translation>Spain</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Estonia</masterLabel>
+        <translation><!-- Estonia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Etiopía</masterLabel>
+        <translation>Ethiopia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Filipinas</masterLabel>
+        <translation>Philippines</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Finlandia</masterLabel>
+        <translation>Finland</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Francia</masterLabel>
+        <translation>France</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Grecia</masterLabel>
+        <translation>Greece</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Guatemala</masterLabel>
+        <translation><!-- Guatemala --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Guinea</masterLabel>
+        <translation><!-- Guinea --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Guyana</masterLabel>
+        <translation><!-- Guyana --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Honduras</masterLabel>
+        <translation><!-- Honduras --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hungría</masterLabel>
+        <translation>Hungary</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>India</masterLabel>
+        <translation><!-- India --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Irak</masterLabel>
+        <translation>Iraq</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Irlanda</masterLabel>
+        <translation>Ireland</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Irán</masterLabel>
+        <translation>Iran</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Israel</masterLabel>
+        <translation><!-- Israel --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Italia</masterLabel>
+        <translation>Italy</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Japón</masterLabel>
+        <translation>Japan</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Jordania</masterLabel>
+        <translation>Jordan</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kosovo</masterLabel>
+        <translation><!-- Kosovo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kuwait</masterLabel>
+        <translation><!-- Kuwait --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Letonia</masterLabel>
+        <translation>Latvia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Libia</masterLabel>
+        <translation>Libya</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lituania</masterLabel>
+        <translation>Lithuania</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Luxemburgo</masterLabel>
+        <translation>Luxembourg</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Madagascar</masterLabel>
+        <translation><!-- Madagascar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Malasia</masterLabel>
+        <translation>Malaysia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Malta</masterLabel>
+        <translation><!-- Malta --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Marruecos</masterLabel>
+        <translation>Morocco</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mauritania</masterLabel>
+        <translation><!-- Mauritania --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mauritius</masterLabel>
+        <translation><!-- Mauritius --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mozambique</masterLabel>
+        <translation><!-- Mozambique --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>México</masterLabel>
+        <translation>Mexico</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Nepal</masterLabel>
+        <translation><!-- Nepal --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Nicaragua</masterLabel>
+        <translation><!-- Nicaragua --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Noruega</masterLabel>
+        <translation>Norway</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Nueva Caledonia</masterLabel>
+        <translation>New Caledonia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OSEP LATAM</masterLabel>
+        <translation><!-- OSEP LATAM --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OSEP ROW</masterLabel>
+        <translation><!-- OSEP ROW --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Omán</masterLabel>
+        <translation>Oman</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pakistán</masterLabel>
+        <translation>Pakistan</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Panamá</masterLabel>
+        <translation>Panama</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Paraguay</masterLabel>
+        <translation><!-- Paraguay --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Países Bajos</masterLabel>
+        <translation>Netherlands</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Perú</masterLabel>
+        <translation>Peru</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Polonia</masterLabel>
+        <translation>Poland</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Portugal</masterLabel>
+        <translation><!-- Portugal --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Puerto Rico</masterLabel>
+        <translation><!-- Puerto Rico --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qatar</masterLabel>
+        <translation><!-- Qatar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Reino Unido</masterLabel>
+        <translation>United Kingdom</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>República Checa</masterLabel>
+        <translation>Czech Republic</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>República Dominicana</masterLabel>
+        <translation>Dominican Republic</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rumania</masterLabel>
+        <translation>Romania</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rusia</masterLabel>
+        <translation>RUSSIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Senegal</masterLabel>
+        <translation><!-- Senegal --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Serbia</masterLabel>
+        <translation><!-- Serbia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Siria</masterLabel>
+        <translation>Syria</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Somalia</masterLabel>
+        <translation><!-- Somalia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sri Lanka</masterLabel>
+        <translation><!-- Sri Lanka --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sudáfrica</masterLabel>
+        <translation>South Africa</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sudán</masterLabel>
+        <translation>Sudan</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Suecia</masterLabel>
+        <translation>Sweden</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Suiza</masterLabel>
+        <translation>Switzerland</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tanzania</masterLabel>
+        <translation><!-- Tanzania --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Turquía</masterLabel>
+        <translation>Turkey</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Túnez</masterLabel>
+        <translation>Tunisia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ucrania</masterLabel>
+        <translation>Ukraine</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Uruguay</masterLabel>
+        <translation><!-- Uruguay --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Uzbekistán</masterLabel>
+        <translation>Uzbekistan</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Venezuela</masterLabel>
+        <translation><!-- Venezuela --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vietnam</masterLabel>
+        <translation><!-- Vietnam --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Zambia</masterLabel>
+        <translation><!-- Zambia --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

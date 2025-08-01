@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ptes_Cualificar_DC_Digital_Impact</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+    <columns>Codigo_OC__c</columns>
+    <columns>NAME</columns>
+    <columns>Cliente__c</columns>
+    <columns>Importe_total_sin_IVA__c</columns>
+    <columns>Propietario_custom__c</columns>
+    <columns>Linea_de_Servicio__c</columns>
+    <columns>Delivery_Center__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Subfase__c</field>
+        <operation>equals</operation>
+        <value>Cualificación con autoprovisión,Cualificación con preventa</value>
+    </filters>
+    <filters>
+        <field>Capacidad_preventa_redaccion_oferta__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Delivery_Center__c</field>
+        <operation>equals</operation>
+        <value>Application services (A1),Application services (A2),Application services (A3)</value>
+    </filters>
+    <filters>
+        <field>Linea_de_Servicio__c</field>
+        <operation>equals</operation>
+        <value>Digital impact</value>
+    </filters>
+    <label>Ptes Cualificar DC Digital Impact</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Digital_impact</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

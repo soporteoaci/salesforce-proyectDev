@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accion__c</fullName>
+    <description>Indica la acción que se va a realizar con el Ticket</description>
+    <label>Acción</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asignar</fullName>
+                <default>false</default>
+                <label>Asignar</label>
+            </value>
+            <value>
+                <fullName>Cerrar</fullName>
+                <default>false</default>
+                <label>Cerrar</label>
+            </value>
+            <value>
+                <fullName>Pdt Terceros</fullName>
+                <default>false</default>
+                <label>Pdt Terceros</label>
+            </value>
+            <value>
+                <fullName>Comentarios</fullName>
+                <default>true</default>
+                <label>Comentarios</label>
+            </value>
+            <value>
+                <fullName>Rechazar</fullName>
+                <default>false</default>
+                <label>Rechazar</label>
+            </value>
+            <value>
+                <fullName>Resolver</fullName>
+                <default>false</default>
+                <label>Resolver</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

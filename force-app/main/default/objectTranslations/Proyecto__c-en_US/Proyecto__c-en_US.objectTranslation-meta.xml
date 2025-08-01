@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <layouts>
+        <layout>Formato Proyecto</layout>
+        <sections>
+            <label>Details and Progress</label>
+            <section>Detalles y Avance</section>
+        </sections>
+        <sections>
+            <label>Roles</label>
+            <section>Roles</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Proyecto Boton Calcular TDR</layout>
+        <sections>
+            <label><!-- Control KPI OACI --></label>
+            <section>Control KPI OACI</section>
+        </sections>
+        <sections>
+            <label>Economic Data</label>
+            <section>Datos Económicos (Ficha de Proyecto)</section>
+        </sections>
+        <sections>
+            <label>Economic Data New Indicators</label>
+            <section>Datos económicos nuevos indicadores</section>
+        </sections>
+        <sections>
+            <label>Details and Progress</label>
+            <section>Detalles y Avance</section>
+        </sections>
+        <sections>
+            <label>Dates</label>
+            <section>Fechas</section>
+        </sections>
+        <sections>
+            <label>Roles</label>
+            <section>Roles</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Proyecto Detalles</layout>
+        <sections>
+            <label>Economic Data</label>
+            <section>Datos Económicos</section>
+        </sections>
+        <sections>
+            <label>Details and Progress</label>
+            <section>Detalles y Avance</section>
+        </sections>
+        <sections>
+            <label>Roles</label>
+            <section>Roles</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Project Name</nameFieldLabel>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Update Amounts</label>
+        <name>Actualizar_Importes</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Update ToRs</label>
+        <name>Actualizar_TDRs</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Mass sending to approval</label>
+        <name>Aprobacion_Masiva</name>
+    </quickActions>
+    <recordTypes>
+        <description>Creation</description>
+        <label>Creation</label>
+        <name>Creacion</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Definitive</description>
+        <label>Definitive</label>
+        <name>Definitivo</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

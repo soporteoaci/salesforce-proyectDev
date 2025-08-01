@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Fecha en la que se firma el contrato con el cliente --></help>
+    <label><!-- Fecha firma contrato --></label>
+    <name>Fecha_firma_contrato__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participacion_Ayesa_limitacion</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &apos;Administrador del sistema.&apos;,
+NOT(ISPICKVAL(Tipo_Participacion_Ayesa__c,&apos;UTE&apos;)),
+Participacion_Ayesa__c =100
+)</errorConditionFormula>
+    <errorDisplayField>Participacion_Ayesa__c</errorDisplayField>
+    <errorMessage>La participación debe ser 100%</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mis_objetivos_propietario</fullName>
+    <columns>NAME</columns>
+    <columns>Cuenta__c</columns>
+    <columns>Estado__c</columns>
+    <columns>Fecha_ini__c</columns>
+    <columns>Fecha_max__c</columns>
+    <columns>Linea_de_Servicio__c</columns>
+    <columns>Orgcomercial__c</columns>
+    <columns>Tipo_Objetivo__c</columns>
+    <columns>vnprev__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Mis Objetivos</label>
+</ListView>

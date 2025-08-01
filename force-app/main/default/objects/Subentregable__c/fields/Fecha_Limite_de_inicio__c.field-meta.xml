@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_Limite_de_inicio__c</fullName>
+    <description>Fecha en la cual se debe iniciar la elaboración de los soportes de cada entregable, este campo servirá para establecer una fecha en la cual se pueda asignar cada entregable a su responsable</description>
+    <label>Fecha Inicio Plan</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

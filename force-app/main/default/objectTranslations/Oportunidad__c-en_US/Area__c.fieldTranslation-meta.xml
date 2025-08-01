@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Area</label>
+    <name>Area__c</name>
+    <picklistValues>
+        <masterLabel>ATC</masterLabel>
+        <translation><!-- ATC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATD</masterLabel>
+        <translation><!-- ATD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGENIERÍA CIVIL Y ARQUITECTURA</masterLabel>
+        <translation>CIVIL ENGINEERING AND ARCHITECTURE</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGENIERÍA INDUSTRIAL</masterLabel>
+        <translation>INDUSTRIAL ENGINEERING</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M2C</masterLabel>
+        <translation><!-- M2C --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

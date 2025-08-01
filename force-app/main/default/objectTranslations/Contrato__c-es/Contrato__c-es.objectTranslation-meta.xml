@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contrato</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contratos</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Contrato Layout</layout>
+        <sections>
+            <label>New Section</label>
+            <section>Nueva sección</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contrato Layout Admin</layout>
+        <sections>
+            <label>Custom Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>New Section</label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label>OACI Contract Review</label>
+            <section>OACI Contract Review</section>
+        </sections>
+        <sections>
+            <label><!-- Seguimiento contractual --></label>
+            <section>Seguimiento contractual</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contrato Supervision Layout</layout>
+        <sections>
+            <label>New Section</label>
+            <section>Nueva sección</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Importador Tasking --></label>
+        <name>Importador_Tasking</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage>You cannot change the authorized if you are not the owner of the account or if your profile is different from System Administrator</errorMessage>
+        <name>Cambio_Autorizado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sus permisos no permiten cambiar de propietario un contrato</errorMessage>
+        <name>Cambio_de_propietario_de_contrato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You do not have permissions to modify this contract</errorMessage>
+        <name>Modificacion_Contrato</name>
+    </validationRules>
+</CustomObjectTranslation>

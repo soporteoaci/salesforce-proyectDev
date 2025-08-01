@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Lets Talk Reply Message</label>
+    <name>Lets_Talk_Cuerpo_Mensaje__c</name>
+</CustomFieldTranslation>

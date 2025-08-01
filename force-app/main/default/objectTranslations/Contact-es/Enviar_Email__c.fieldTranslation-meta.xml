@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Al marcar la casilla se indica que no se envía email al Contacto --></help>
+    <label><!-- No Enviar Email --></label>
+    <name>Enviar_Email__c</name>
+</CustomFieldTranslation>

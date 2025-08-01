@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campo_Nivel_Subnivel_IB</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				$Profile.Name =&apos;Usuario Ibermatica Latam&apos;,
+				$Profile.Name = &apos;Usuario Ibermatica Large Account&apos;,
+				ISPICKVAL(NIVEL__c,&apos;&apos;) 
+)</errorConditionFormula>
+    <errorDisplayField>NIVEL__c</errorDisplayField>
+    <errorMessage>Debe informar el Nivel y Subnivel</errorMessage>
+</ValidationRule>

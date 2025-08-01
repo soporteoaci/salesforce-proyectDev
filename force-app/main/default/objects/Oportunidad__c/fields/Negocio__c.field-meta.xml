@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negocio__c</fullName>
+    <label>Negocio</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Division__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administración estatal</fullName>
+                <default>false</default>
+                <label>Administración estatal</label>
+            </value>
+            <value>
+                <fullName>Administración regional</fullName>
+                <default>false</default>
+                <label>Administración regional</label>
+            </value>
+            <value>
+                <fullName>Administración local</fullName>
+                <default>false</default>
+                <label>Administración local</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+            <value>
+                <fullName>Banca y Seguro</fullName>
+                <default>false</default>
+                <label>Banca y Seguro</label>
+            </value>
+            <value>
+                <fullName>Industria</fullName>
+                <default>false</default>
+                <label>Industria</label>
+            </value>
+            <value>
+                <fullName>Servicios</fullName>
+                <default>false</default>
+                <label>Servicios</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>SP - Andalucia Hacienda y Sanidad</fullName>
+                <default>false</default>
+                <label>SP - Andalucia Hacienda y Sanidad</label>
+            </value>
+            <value>
+                <fullName>SP - Andalucia Empleo Justicia</fullName>
+                <default>false</default>
+                <label>SP - Andalucia Empleo Justicia</label>
+            </value>
+            <value>
+                <fullName>SP - Andalucia Mid Market</fullName>
+                <default>false</default>
+                <label>SP - Andalucia Mid Market</label>
+            </value>
+            <value>
+                <fullName>SP - Andalucia Educacion</fullName>
+                <default>false</default>
+                <label>SP - Andalucia Educacion</label>
+            </value>
+            <value>
+                <fullName>SP - Madrid 1</fullName>
+                <default>false</default>
+                <label>SP - Madrid 1</label>
+            </value>
+            <value>
+                <fullName>SP - Madrid 2</fullName>
+                <default>false</default>
+                <label>SP - Madrid 2</label>
+            </value>
+            <value>
+                <fullName>SP - Cataluña</fullName>
+                <default>false</default>
+                <label>SP - Cataluña</label>
+            </value>
+            <value>
+                <fullName>SP - Norte de España</fullName>
+                <default>false</default>
+                <label>SP - Norte de España</label>
+            </value>
+            <value>
+                <fullName>SP - Sur de España</fullName>
+                <default>false</default>
+                <label>SP - Sur de España</label>
+            </value>
+            <value>
+                <fullName>Obras viales</fullName>
+                <default>false</default>
+                <label>Obras viales</label>
+            </value>
+            <value>
+                <fullName>Arquitectura y management</fullName>
+                <default>false</default>
+                <label>Arquitectura y management</label>
+            </value>
+            <value>
+                <fullName>Ferrocarriles</fullName>
+                <default>false</default>
+                <label>Ferrocarriles</label>
+            </value>
+            <value>
+                <fullName>Instalaciones del transporte</fullName>
+                <default>false</default>
+                <label>Instalaciones del transporte</label>
+            </value>
+            <value>
+                <fullName>Obras hidráulicas</fullName>
+                <default>false</default>
+                <label>Obras hidráulicas</label>
+            </value>
+            <value>
+                <fullName>Planificación y medio ambiente</fullName>
+                <default>false</default>
+                <label>Planificación y medio ambiente</label>
+            </value>
+            <value>
+                <fullName>Estructuras</fullName>
+                <default>false</default>
+                <label>Estructuras</label>
+            </value>
+            <value>
+                <fullName>Ingeniería del terreno</fullName>
+                <default>false</default>
+                <label>Ingeniería del terreno</label>
+            </value>
+            <value>
+                <fullName>Gestión territorial</fullName>
+                <default>false</default>
+                <label>Gestión territorial</label>
+            </value>
+            <value>
+                <fullName>Aeropuertos</fullName>
+                <default>false</default>
+                <label>Aeropuertos</label>
+            </value>
+            <value>
+                <fullName>Supervisión de obras</fullName>
+                <default>false</default>
+                <label>Supervisión de obras</label>
+            </value>
+            <value>
+                <fullName>Ingeniería de Fabricación</fullName>
+                <default>false</default>
+                <label>Ingeniería de Fabricación</label>
+            </value>
+            <value>
+                <fullName>Diseño y Certificación</fullName>
+                <default>false</default>
+                <label>Diseño y Certificación</label>
+            </value>
+            <value>
+                <fullName>Otros (ATD)</fullName>
+                <default>false</default>
+                <label>Otros (ATD)</label>
+            </value>
+            <value>
+                <fullName>Innovación</fullName>
+                <default>false</default>
+                <label>Innovación</label>
+            </value>
+            <value>
+                <fullName>ENEL BPO</fullName>
+                <default>false</default>
+                <label>ENEL BPO</label>
+            </value>
+            <value>
+                <fullName>SP BPO</fullName>
+                <default>false</default>
+                <label>SP BPO</label>
+            </value>
+            <value>
+                <fullName>UTIL BPO</fullName>
+                <default>false</default>
+                <label>UTIL BPO</label>
+            </value>
+            <value>
+                <fullName>Asuntos Sociales y Medio Ambiente</fullName>
+                <default>false</default>
+                <label>Asuntos Sociales y Medio Ambiente</label>
+            </value>
+            <value>
+                <fullName>Cultura PMO y Calidad</fullName>
+                <default>false</default>
+                <label>Cultura PMO y Calidad</label>
+            </value>
+            <value>
+                <fullName>Educación</fullName>
+                <default>false</default>
+                <label>Educación</label>
+            </value>
+            <value>
+                <fullName>Empleo, ITO e Innovación</fullName>
+                <default>false</default>
+                <label>Empleo, ITO e Innovación</label>
+            </value>
+            <value>
+                <fullName>Madrid</fullName>
+                <default>false</default>
+                <label>Madrid</label>
+            </value>
+            <value>
+                <fullName>Sanidad, ECOFIN y RRHH</fullName>
+                <default>false</default>
+                <label>Sanidad, ECOFIN y RRHH</label>
+            </value>
+            <value>
+                <fullName>Enel GDP L1</fullName>
+                <default>false</default>
+                <label>Enel GDP L1</label>
+            </value>
+            <value>
+                <fullName>Enel GDP L3</fullName>
+                <default>false</default>
+                <label>Enel GDP L3</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N – L2 Italia</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N – L2 Italia</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N – L4 Italia</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N – L4 Italia</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N Brasil L2</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N Brasil L2</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N Brasil L4</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N Brasil L4</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N Chile L2</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N Chile L2</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N Chile L4</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N Chile L4</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N Colombia L2</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N Colombia L2</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N Colombia L4</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N Colombia L4</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N España L2</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N España L2</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N España L4</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N España L4</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N Peru L2</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N Peru L2</label>
+            </value>
+            <value>
+                <fullName>Enel I&amp;N Peru L4</fullName>
+                <default>false</default>
+                <label>Enel I&amp;N Peru L4</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Brasil L1</fullName>
+                <default>false</default>
+                <label>Enel Mk Brasil L1</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Brasil L2</fullName>
+                <default>false</default>
+                <label>Enel Mk Brasil L2</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Brasil L5</fullName>
+                <default>false</default>
+                <label>Enel Mk Brasil L5</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Chile L1</fullName>
+                <default>false</default>
+                <label>Enel Mk Chile L1</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Chile L2</fullName>
+                <default>false</default>
+                <label>Enel Mk Chile L2</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Chile L5</fullName>
+                <default>false</default>
+                <label>Enel Mk Chile L5</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Colombia L1</fullName>
+                <default>false</default>
+                <label>Enel Mk Colombia L1</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Colombia L2</fullName>
+                <default>false</default>
+                <label>Enel Mk Colombia L2</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Colombia L5</fullName>
+                <default>false</default>
+                <label>Enel Mk Colombia L5</label>
+            </value>
+            <value>
+                <fullName>Enel Mk España L1</fullName>
+                <default>false</default>
+                <label>Enel Mk España L1</label>
+            </value>
+            <value>
+                <fullName>Enel Mk España L2</fullName>
+                <default>false</default>
+                <label>Enel Mk España L2</label>
+            </value>
+            <value>
+                <fullName>Enel Mk España Otros</fullName>
+                <default>false</default>
+                <label>Enel Mk España Otros</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Peru L1</fullName>
+                <default>false</default>
+                <label>Enel Mk Peru L1</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Peru L2</fullName>
+                <default>false</default>
+                <label>Enel Mk Peru L2</label>
+            </value>
+            <value>
+                <fullName>Enel Mk Peru L5</fullName>
+                <default>false</default>
+                <label>Enel Mk Peru L5</label>
+            </value>
+            <value>
+                <fullName>Enel Otros</fullName>
+                <default>false</default>
+                <label>Enel Otros</label>
+            </value>
+            <value>
+                <fullName>Enel X</fullName>
+                <default>false</default>
+                <label>Enel X</label>
+            </value>
+            <value>
+                <fullName>Middle Market</fullName>
+                <default>false</default>
+                <label>Middle Market</label>
+            </value>
+            <value>
+                <fullName>Sector Público</fullName>
+                <default>false</default>
+                <label>Sector Público</label>
+            </value>
+            <value>
+                <fullName>Agua</fullName>
+                <default>false</default>
+                <label>Agua</label>
+            </value>
+            <value>
+                <fullName>Transporte Ferroviario</fullName>
+                <default>false</default>
+                <label>Transporte Ferroviario</label>
+            </value>
+            <value>
+                <fullName>Ciudades y Puertos 4.0</fullName>
+                <default>false</default>
+                <label>Ciudades y Puertos 4.0</label>
+            </value>
+            <value>
+                <fullName>Logística y Movilidad</fullName>
+                <default>false</default>
+                <label>Logística y Movilidad</label>
+            </value>
+            <value>
+                <fullName>Tecnológicos</fullName>
+                <default>false</default>
+                <label>Tecnológicos</label>
+            </value>
+            <value>
+                <fullName>Admon Gral Estado</fullName>
+                <default>false</default>
+                <label>Admon Gral Estado</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Obras viales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Arquitectura y management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Ferrocarriles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Instalaciones del transporte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Obras hidráulicas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Planificación y medio ambiente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Estructuras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Ingeniería del terreno</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Gestión territorial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Aeropuertos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arquitectura y Management</controllingFieldValue>
+            <controllingFieldValue>Mercado Anglosajón</controllingFieldValue>
+            <controllingFieldValue>Aeropuertos</controllingFieldValue>
+            <controllingFieldValue>Gestión Territorial</controllingFieldValue>
+            <controllingFieldValue>España</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras América</controllingFieldValue>
+            <controllingFieldValue>Infraestructuras ROW</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente América</controllingFieldValue>
+            <controllingFieldValue>Agua y medio ambiente ROW</controllingFieldValue>
+            <valueName>Supervisión de obras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aeronáutica, Espacio y Defensa</controllingFieldValue>
+            <controllingFieldValue>Aeroespacial</controllingFieldValue>
+            <valueName>Ingeniería de Fabricación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aeronáutica, Espacio y Defensa</controllingFieldValue>
+            <controllingFieldValue>Aeroespacial</controllingFieldValue>
+            <valueName>Diseño y Certificación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Centro de Soluciones (I+D+i)</controllingFieldValue>
+            <controllingFieldValue>Aeroespacial</controllingFieldValue>
+            <valueName>Otros (ATD)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Centro de Soluciones (I+D+i)</controllingFieldValue>
+            <controllingFieldValue>I+D+i</controllingFieldValue>
+            <valueName>Innovación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel GDP L1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel GDP L3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N – L2 Italia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N – L4 Italia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N Brasil L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N Brasil L4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N Chile L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N Chile L4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N Colombia L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N Colombia L4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N España L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N España L4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N Peru L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel I&amp;N Peru L4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Brasil L1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Brasil L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Brasil L5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Chile L1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Chile L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Chile L5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Colombia L1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Colombia L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Colombia L5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk España L1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk España L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk España Otros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Peru L1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Peru L2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Mk Peru L5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel Otros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Enel X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Middle Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BPO</controllingFieldValue>
+            <valueName>ENEL BPO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BPO</controllingFieldValue>
+            <valueName>SP BPO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BPO</controllingFieldValue>
+            <valueName>UTIL BPO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Banca e Industria</controllingFieldValue>
+            <controllingFieldValue>Sector Privado Latinoamérica</controllingFieldValue>
+            <controllingFieldValue>Energía</controllingFieldValue>
+            <valueName>Utilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Banca e Industria</controllingFieldValue>
+            <controllingFieldValue>Sector Privado Latinoamérica</controllingFieldValue>
+            <valueName>Banca y Seguro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Banca e Industria</controllingFieldValue>
+            <controllingFieldValue>Industria y Sector Público</controllingFieldValue>
+            <controllingFieldValue>Sector Privado Latinoamérica</controllingFieldValue>
+            <valueName>Industria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Banca e Industria</controllingFieldValue>
+            <controllingFieldValue>Sector Privado Latinoamérica</controllingFieldValue>
+            <valueName>Servicios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Banca e Industria</controllingFieldValue>
+            <controllingFieldValue>Sector Privado Latinoamérica</controllingFieldValue>
+            <valueName>Otros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>SP - Andalucia Hacienda y Sanidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>SP - Andalucia Empleo Justicia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>SP - Andalucia Mid Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>SP - Andalucia Educacion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>SP - Madrid 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>SP - Madrid 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>SP - Cataluña</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>SP - Norte de España</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>SP - Sur de España</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>Asuntos Sociales y Medio Ambiente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>Cultura PMO y Calidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>Educación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>Empleo, ITO e Innovación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>Madrid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>Sanidad, ECOFIN y RRHH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público</controllingFieldValue>
+            <valueName>Admon Gral Estado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria y Sector Público</controllingFieldValue>
+            <valueName>Sector Público</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria y Sector Público</controllingFieldValue>
+            <valueName>Agua</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público Latinoamérica</controllingFieldValue>
+            <valueName>Administración estatal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público Latinoamérica</controllingFieldValue>
+            <valueName>Administración regional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sector Público Latinoamérica</controllingFieldValue>
+            <valueName>Administración local</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transporte</controllingFieldValue>
+            <valueName>Transporte Ferroviario</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transporte</controllingFieldValue>
+            <valueName>Ciudades y Puertos 4.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transporte</controllingFieldValue>
+            <valueName>Logística y Movilidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aeroespacial</controllingFieldValue>
+            <valueName>Tecnológicos</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

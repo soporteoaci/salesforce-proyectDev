@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fase__c</fullName>
+    <label>Fase</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Etapa_Fase__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Suspect</fullName>
+                <default>false</default>
+                <label>Suspect</label>
+            </value>
+            <value>
+                <fullName>Suspect-TL</fullName>
+                <default>false</default>
+                <label>Suspect-TL</label>
+            </value>
+            <value>
+                <fullName>Lead</fullName>
+                <default>false</default>
+                <label>Lead</label>
+            </value>
+            <value>
+                <fullName>Lead NO Cualifica</fullName>
+                <default>false</default>
+                <label>Lead NO Cualifica</label>
+            </value>
+            <value>
+                <fullName>OP-Pediente Demo</fullName>
+                <default>false</default>
+                <label>OP-Pendiente Demo</label>
+            </value>
+            <value>
+                <fullName>OP-Negociando condiciones de cierre</fullName>
+                <default>false</default>
+                <label>OP-Negociando condiciones de cierre</label>
+            </value>
+            <value>
+                <fullName>OP-Pendiente de recibir pedido</fullName>
+                <default>false</default>
+                <label>OP-Pendiente de recibir pedido</label>
+            </value>
+            <value>
+                <fullName>OP-Pre Ganada</fullName>
+                <default>false</default>
+                <label>OP-Pre Ganada</label>
+            </value>
+            <value>
+                <fullName>OP-Demostrando</fullName>
+                <default>false</default>
+                <label>OP-Demostrando</label>
+            </value>
+            <value>
+                <fullName>OP-Perdida</fullName>
+                <default>false</default>
+                <label>OP-Perdida</label>
+            </value>
+            <value>
+                <fullName>OP-Ofertando CON competidores y NO favoritos</fullName>
+                <default>false</default>
+                <label>OP-Ofertando CON competidores y NO favoritos</label>
+            </value>
+            <value>
+                <fullName>OP-Ofertando CON competidores y favoritos</fullName>
+                <default>false</default>
+                <label>OP-Ofertando CON competidores y favoritos</label>
+            </value>
+            <value>
+                <fullName>OP-Ofertando SIN competidores</fullName>
+                <default>false</default>
+                <label>OP-Ofertando SIN competidores</label>
+            </value>
+            <value>
+                <fullName>OP-Ganada</fullName>
+                <default>false</default>
+                <label>OP-Ganada</label>
+            </value>
+            <value>
+                <fullName>Ninguno</fullName>
+                <default>false</default>
+                <label>Ninguno</label>
+            </value>
+            <value>
+                <fullName>Suspect Proviene de Lead/OP aplazada</fullName>
+                <default>false</default>
+                <label>Suspect Proviene de Lead/OP aplazada</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Captación</controllingFieldValue>
+            <valueName>Suspect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Captación</controllingFieldValue>
+            <valueName>Suspect-TL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Captación</controllingFieldValue>
+            <controllingFieldValue>Cualificación</controllingFieldValue>
+            <controllingFieldValue>Demostrando</controllingFieldValue>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>Suspect Proviene de Lead/OP aplazada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cualificación</controllingFieldValue>
+            <valueName>Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cualificación</controllingFieldValue>
+            <valueName>Lead NO Cualifica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demostrando</controllingFieldValue>
+            <valueName>OP-Pediente Demo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demostrando</controllingFieldValue>
+            <valueName>OP-Demostrando</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demostrando</controllingFieldValue>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>OP-Perdida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <valueName>OP-Negociando condiciones de cierre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <valueName>OP-Pendiente de recibir pedido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <valueName>OP-Ofertando CON competidores y NO favoritos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <valueName>OP-Ofertando CON competidores y favoritos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oferta</controllingFieldValue>
+            <valueName>OP-Ofertando SIN competidores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>OP-Pre Ganada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerrada</controllingFieldValue>
+            <valueName>OP-Ganada</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

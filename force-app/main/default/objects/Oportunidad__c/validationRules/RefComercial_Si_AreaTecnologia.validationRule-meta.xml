@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RefComercial_Si_AreaTecnologia</fullName>
+    <active>true</active>
+    <description>Para poder crear la nueva referencia comercial debe elegir una o varias tecnologías que se utilizarían en el futuro PEP.</description>
+    <errorConditionFormula>AND(
+$User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;,
+$User.Email &lt;&gt; &quot;ebravo@ayesa.com&quot;,
+NOT( ISPICKVAL(Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
+ISPICKVAL(Referencia_Comercial__c, &quot;Sí&quot;),
+ISBLANK(Area_Tecnologia__c)
+)</errorConditionFormula>
+    <errorDisplayField>Area_Tecnologia__c</errorDisplayField>
+    <errorMessage>Para poder crear la nueva referencia comercial debe elegir una o varias tecnologías que se utilizarían en el futuro PEP.</errorMessage>
+</ValidationRule>

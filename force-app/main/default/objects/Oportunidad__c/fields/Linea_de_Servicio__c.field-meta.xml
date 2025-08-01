@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Linea_de_Servicio__c</fullName>
+    <label>Línea de Servicio</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Direccion_Operaciones__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Horizontal</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>Climate, Sustainability &amp; Digital Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>Engineering Design &amp; Architecture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENGINEERING</controllingFieldValue>
+            <valueName>Project Management Consultancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <controllingFieldValue>INNOVATION</controllingFieldValue>
+            <valueName>Data &amp; AI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>Application services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>Business Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>Cloud &amp; Infrastructure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <controllingFieldValue>INNOVATION</controllingFieldValue>
+            <valueName>Cybersecurity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <controllingFieldValue>INNOVATION</controllingFieldValue>
+            <valueName>Digital impact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>Microsoft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>Modern Workplace &amp; End - User support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>Salesforce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>SAP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT&amp;DS</controllingFieldValue>
+            <valueName>V-Latam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNOVATION</controllingFieldValue>
+            <valueName>Innovation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNOVATION</controllingFieldValue>
+            <valueName>Quantum</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

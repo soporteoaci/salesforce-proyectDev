@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Brasil</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Brasil</label>
+        <sharedTo>
+            <role>Brasil</role>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Brasil</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Application_Services</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Application Services</label>
+        <sharedTo>
+            <group>Compartir_Application_Services</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 2 OR 3 OR 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <field>Linea_de_Servicio__c</field>
+            <operation>equals</operation>
+            <value>Application services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Delivery Center (A1)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Delivery Center (A2)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Delivery Center (A3)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Aviation</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Aviation</label>
+        <sharedTo>
+            <group>Compartir_Division_Aviation</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>AVIATION</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Building_Spain</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Building Spain</label>
+        <sharedTo>
+            <group>Division_Building_Spain</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>BUILDING SPAIN</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Cloud_Infra</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Cloud &amp; Infra</label>
+        <sharedTo>
+            <group>Compartir_Cloud_Infra</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Linea_de_Servicio__c</field>
+            <operation>equals</operation>
+            <value>Cloud &amp; Infrastructure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Digital_Impact</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Digital Impact</label>
+        <sharedTo>
+            <group>Compartir_Digital_Impact</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5) AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Linea_de_Servicio__c</field>
+            <operation>equals</operation>
+            <value>Digital impact</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Digital impact</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Delivery Center (A1)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Delivery Center (A2)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Delivery Center (A3)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Divisi_n_Process_Plants</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir División Process Plants</label>
+        <sharedTo>
+            <group>Compartir_Process_Plants</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>PROCESS PLANTS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Division_Roads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Division Roads</label>
+        <sharedTo>
+            <group>Compartir_division_Roads</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>ROADS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_IT_DS</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir IT&amp;DS</label>
+        <sharedTo>
+            <group>Compartir_IT_DS</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>IT&amp;DS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Mercado_Industry</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Mercado Industry</label>
+        <sharedTo>
+            <group>Compartir_Mercado_INDUSTRY</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Mercado__c</field>
+            <operation>equals</operation>
+            <value>&quot;INDUSTRY, CONSUMER &amp; BUSINESS SERVICE&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Modern_Workplace</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Modern Workplace</label>
+        <sharedTo>
+            <group>Compartir_Modern</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Linea_de_Servicio__c</field>
+            <operation>equals</operation>
+            <value>Modern Workplace &amp; End - User support</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Pais_peru</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Pais peru</label>
+        <sharedTo>
+            <group>Pa_s_Per</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Perú</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Panama</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Panamá</label>
+        <sharedTo>
+            <role>Panama</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Panamá</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sociedad_Ayesa__c</field>
+            <operation>equals</operation>
+            <value>0058 - AYESA PANAMÁ RUC,0056 - AYESA PANAMÁ,0057 - AAT PANAMÁ RUC</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Railway_Metro</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Railway/Metro</label>
+        <sharedTo>
+            <group>Compartir_Railway_metro</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>RAILWAY/METRO</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Water_EMEA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Water EMEA</label>
+        <sharedTo>
+            <group>Division_water_EMEA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>WATER &amp; ENVIRON. EMEA &amp; ASIA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Water_Environ_LATAM</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Water &amp; Environ. LATAM</label>
+        <sharedTo>
+            <group>Compartir_Water_Environment_LATAM</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>WATER &amp; ENVIRONM. LATAM</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_division_Transport_Latam</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir division Transport Latam</label>
+        <sharedTo>
+            <group>Compartir_division_transport_latam</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>TRANSPORT LATAM</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_transport_catalonia</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir transport catalonia</label>
+        <sharedTo>
+            <group>Compartir_Transport_Catalonia</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>TRANSPORT. CATALONIA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Delivery_Center_Business_Operations</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Delivery Center Business Operations</label>
+        <sharedTo>
+            <role>Business_Operations</role>
+        </sharedTo>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Linea_de_Servicio__c</field>
+            <operation>equals</operation>
+            <value>Business Operations</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Business Operations</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Delivery_Center_Cybersecurity</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Delivery Center Cybersecurity</label>
+        <sharedTo>
+            <role>Cybersecurity</role>
+        </sharedTo>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Cybersecurity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Linea_de_Servicio__c</field>
+            <operation>equals</operation>
+            <value>Cybersecurity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Delivery_Center_Microsoft</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Delivery Center Microsoft</label>
+        <sharedTo>
+            <role>Microsoft_DC</role>
+        </sharedTo>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Linea_de_Servicio__c</field>
+            <operation>equals</operation>
+            <value>Microsoft</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Microsoft</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Delivery_Center_Salesforce</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Delivery Center Salesforce</label>
+        <sharedTo>
+            <role>Salesforce</role>
+        </sharedTo>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Salesforce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Linea_de_Servicio__c</field>
+            <operation>equals</operation>
+            <value>Salesforce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Delivery_SAP</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Delivery SAP</label>
+        <sharedTo>
+            <group>Compartir_SAP</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Linea_de_Servicio__c</field>
+            <operation>equals</operation>
+            <value>SAP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>SAP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Division_Building_EMEA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Division Building EMEA</label>
+        <sharedTo>
+            <group>Division_Building_EMEA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>BUILDING EMEA &amp; ASIA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Division_Environment</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Division Environment</label>
+        <sharedTo>
+            <group>Division_Environment</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>ENVIRONMENT</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Division_Hydraulic_Works</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Division Hydraulic Works</label>
+        <sharedTo>
+            <role>HYDRAULIC_WORKS</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>HYDRAULIC WORKS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Division_Oil_Gas</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Division Oil &amp; Gas</label>
+        <sharedTo>
+            <group>Division_Oil_GAa</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>OIL &amp; GAS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>V-OIL&amp;GAS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Division_Water_catalu_a</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Division Water cataluña</label>
+        <sharedTo>
+            <group>Division_Water_Catalu_a</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>WATER CATALONIA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Division_transport_EMEA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Division transport EMEA</label>
+        <sharedTo>
+            <group>Division_transport_EMEA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>TRANSPORT EMEA &amp; ASIA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Division_water_supervision</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Division water supervision</label>
+        <sharedTo>
+            <group>Division_water_supervisions</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>WATER SUPERVISIONS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ENERGY_OLD</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ENERGY OLD</label>
+        <sharedTo>
+            <group>ENERGY_OLD</group>
+        </sharedTo>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>V-ENERGY ENG.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>ENERGY</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ENGENIERING_OLD</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ENGENIERING OLD</label>
+        <sharedTo>
+            <group>ENGENERI_NG_OLD</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Ecuador</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Ecuador</label>
+        <sharedTo>
+            <role>Ecuador</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Ecuador</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>India</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>India</label>
+        <sharedTo>
+            <role>India</role>
+        </sharedTo>
+        <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>India</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pais_cliente__c</field>
+            <operation>contains</operation>
+            <value>India</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>KSA_Bahrein_Dubai_Oman</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>KSA, Bahrein, Dubai, Oman</label>
+        <sharedTo>
+            <role>KSA_Bahrein_Dubai_Oman</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Emiratos Árabes,Arabia Saudí,Bahrein,Omán</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Linea_servicio_Data_AI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Linea servicio Data &amp; AI</label>
+        <sharedTo>
+            <group>Compartir_Data_AI</group>
+        </sharedTo>
+        <booleanFilter>2 AND (1 OR 3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <field>Linea_de_Servicio__c</field>
+            <operation>equals</operation>
+            <value>AI &amp; Digital Experience</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Emergya</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Digital Experience</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>Data &amp; AI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Mexico</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Mexico</label>
+        <sharedTo>
+            <role>Mexico</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Op_Mercado_Anglo_Market</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Compartir todas las oportunidades de Mercado Anglo Market</description>
+        <label>Op Mercado Anglo Market</label>
+        <sharedTo>
+            <group>Compartir_Mercado_ANGLO_MARKET</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Mercado__c</field>
+            <operation>equals</operation>
+            <value>V-ANGLO MARKET</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sociedad_Ayesa__c</field>
+            <operation>equals</operation>
+            <value>0151 - BYRNELOOBY Middle East,0151 - BYRNELOOBY UK,0151 - BYRNELOOBY Irlanda</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Reino Unido</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Op_Mercado_Public_Services</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Compartir oportunidades con Mercado Public Services</description>
+        <label>Op Mercado Public Services</label>
+        <sharedTo>
+            <group>Compartir_Mercado_PUBLIC_SERVICES</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Mercado__c</field>
+            <operation>equals</operation>
+            <value>DIGITAL ADMINISTRATION &amp; HEALTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Op_Mercado_Resources_Environment</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Compartir todas las oportunidades con Mercado Resources &amp; Environment</description>
+        <label>Op Mercado Resources &amp; Environment</label>
+        <sharedTo>
+            <group>Compartir_Mercado_RESOURCES_ENVIRONMENT</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Mercado__c</field>
+            <operation>equals</operation>
+            <value>RESOURCES &amp; ENVIRONMENT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Op_Mercado_Transportation</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Compartir oportunidades con Mercado Transportation</description>
+        <label>Op Mercado Transportation</label>
+        <sharedTo>
+            <group>Compartir_Mercado_TRANSPORTATION</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Negocio__c</field>
+            <operation>equals</operation>
+            <value>Ferrocarriles,Obras viales,Instalaciones del transporte</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Division__c</field>
+            <operation>equals</operation>
+            <value>Infraestructuras ROW,Infraestructuras América</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Mercado__c</field>
+            <operation>equals</operation>
+            <value>TRANSPORTATION &amp; CITIES</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Op_Mercado_Utilities_Energy</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Compartir todas las oportunidades con Mercado Utilities &amp; Energy</description>
+        <label>Op Mercado Utilities &amp; Energy</label>
+        <sharedTo>
+            <group>Compartir_Mercado_UTILITIES_ENERGY</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Mercado__c</field>
+            <operation>equals</operation>
+            <value>ENERGY &amp; UTILITIES</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Presupuesto</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Oportunidades_Innovacion</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Oportunidades Innovacion</label>
+        <sharedTo>
+            <group>Compartir_Innovacion</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Mercado__c</field>
+            <operation>equals</operation>
+            <value>INNOVATION</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pais_Colombia</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Pais Colombia</label>
+        <sharedTo>
+            <group>Compartir_Pais_Colombia</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Colombia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Ayesa</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Polonia</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Polonia</label>
+        <sharedTo>
+            <roleAndSubordinates>Polonia</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>Pais__c</field>
+            <operation>equals</operation>
+            <value>Polonia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Railway_System</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Railway System</label>
+        <sharedTo>
+            <group>Compartir_Railway_Systems</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>RAILWAY SYSTEMS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SUPERVISION</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SUPERVISION</label>
+        <sharedTo>
+            <group>Supervision</group>
+        </sharedTo>
+        <booleanFilter>2 AND (1 OR 3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>INFRA. SUPERVISIONS,WATER SUPERVISIONS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Direccion_Operaciones__c</field>
+            <operation>equals</operation>
+            <value>ENGINEERING</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>V-INFRA. SUPERVISIONS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DivisionPicklist__c</field>
+            <operation>equals</operation>
+            <value>V-WATER SUPERVISIONS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>V_Latam</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>V-Latam</label>
+        <sharedTo>
+            <role>V_Latam</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Delivery_Center__c</field>
+            <operation>equals</operation>
+            <value>V-Latam</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

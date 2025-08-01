@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referencia_Comercial_Si</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+NOT( ISPICKVAL(Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
+ISPICKVAL(Referencia_Comercial__c, &quot;Sí&quot;),
+ISBLANK(Tecnologia__c)
+)</errorConditionFormula>
+    <errorDisplayField>Tecnologia__c</errorDisplayField>
+    <errorMessage>Informe la tecnología para poder crear la nueva referencia comercial</errorMessage>
+</ValidationRule>

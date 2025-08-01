@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Conjunto de permisos para usuarios con gestión sobre campos asociados a la integración con PowerAutomate</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Oportunidad__c.Crear_expediente__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Oportunidad__c.Oferta_SAP__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PowerAutomate</label>
+</PermissionSet>

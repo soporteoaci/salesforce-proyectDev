@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Ayesa</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunities Ayesa</value>
+    </caseValues>
+    <layouts>
+        <layout>Formato Oportunidad</layout>
+        <sections>
+            <label><!-- Ayesa participation --></label>
+            <section>Ayesa participation</section>
+        </sections>
+        <sections>
+            <label><!-- Categorisation --></label>
+            <section>Categorisation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Data --></label>
+            <section>Financial Data</section>
+        </sections>
+        <sections>
+            <label><!-- IB --></label>
+            <section>IB</section>
+        </sections>
+        <sections>
+            <label>Offer and Closing</label>
+            <section>Offer and Closing</section>
+        </sections>
+        <sections>
+            <label><!-- Offering --></label>
+            <section>Offering</section>
+        </sections>
+        <sections>
+            <label><!-- Remarks --></label>
+            <section>Remarks</section>
+        </sections>
+        <sections>
+            <label><!-- Responsibles --></label>
+            <section>Responsibles</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Oportunidad LATAM/Large</layout>
+        <sections>
+            <label><!-- Categorización --></label>
+            <section>Categorización</section>
+        </sections>
+        <sections>
+            <label><!-- Datos económicos --></label>
+            <section>Datos económicos</section>
+        </sections>
+        <sections>
+            <label><!-- Fechas --></label>
+            <section>Fechas</section>
+        </sections>
+        <sections>
+            <label><!-- IB --></label>
+            <section>IB</section>
+        </sections>
+        <sections>
+            <label><!-- Observaciones --></label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label><!-- Oferta y Cierre --></label>
+            <section>Oferta y Cierre</section>
+        </sections>
+        <sections>
+            <label><!-- Offering --></label>
+            <section>Offering</section>
+        </sections>
+        <sections>
+            <label><!-- Participación Ayesa --></label>
+            <section>Participación Ayesa</section>
+        </sections>
+        <sections>
+            <label><!-- Smart BPM Offer --></label>
+            <section>Smart BPM Offer</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Oportunidad M2C</layout>
+        <sections>
+            <label>Categorisation</label>
+            <section>Categorización</section>
+        </sections>
+        <sections>
+            <label>Financial Data</label>
+            <section>Datos económicos</section>
+        </sections>
+        <sections>
+            <label>Dates</label>
+            <section>Fechas</section>
+        </sections>
+        <sections>
+            <label>Remarks</label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label>Offer and Closing</label>
+            <section>Oferta y Cierre</section>
+        </sections>
+        <sections>
+            <label><!-- Offering --></label>
+            <section>Offering</section>
+        </sections>
+        <sections>
+            <label>Ayesa participation</label>
+            <section>Participación Ayesa</section>
+        </sections>
+        <sections>
+            <label><!-- Smart BPM Offer --></label>
+            <section>Smart BPM Offer</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Oportunidad Otros</layout>
+        <sections>
+            <label>Categorisation</label>
+            <section>Categorización</section>
+        </sections>
+        <sections>
+            <label>Financial Data</label>
+            <section>Datos económicos</section>
+        </sections>
+        <sections>
+            <label>Dates</label>
+            <section>Fechas</section>
+        </sections>
+        <sections>
+            <label>Remarks</label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label>Offer and Closing</label>
+            <section>Oferta y Cierre</section>
+        </sections>
+        <sections>
+            <label><!-- Offering --></label>
+            <section>Offering</section>
+        </sections>
+        <sections>
+            <label>Ayesa participation</label>
+            <section>Participación Ayesa</section>
+        </sections>
+        <sections>
+            <label><!-- Smart BPM Offer --></label>
+            <section>Smart BPM Offer</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Oportunidad SME</layout>
+        <sections>
+            <label><!-- Categorización --></label>
+            <section>Categorización</section>
+        </sections>
+        <sections>
+            <label><!-- Datos económicos --></label>
+            <section>Datos económicos</section>
+        </sections>
+        <sections>
+            <label><!-- Fechas --></label>
+            <section>Fechas</section>
+        </sections>
+        <sections>
+            <label><!-- IB --></label>
+            <section>IB</section>
+        </sections>
+        <sections>
+            <label><!-- Observaciones --></label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label><!-- Oferta y Cierre --></label>
+            <section>Oferta y Cierre</section>
+        </sections>
+        <sections>
+            <label><!-- Offering --></label>
+            <section>Offering</section>
+        </sections>
+        <sections>
+            <label><!-- Participación Ayesa --></label>
+            <section>Participación Ayesa</section>
+        </sections>
+        <sections>
+            <label><!-- Smart BPM Offer --></label>
+            <section>Smart BPM Offer</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Topic</nameFieldLabel>
+    <quickActions>
+        <label><!-- Actualizar importes --></label>
+        <name>Actualizar_importes</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Clone Opportunity</label>
+        <name>Clonar_Oportunidad</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Documentation</label>
+        <name>Documentacion</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Extender Oportunidad --></label>
+        <name>Extender_Oportunidad</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>New Task</label>
+        <name>Nueva_tarea</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Offer ING</label>
+        <name>Oferta_Ingenieria</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Imputación Preventa --></label>
+        <name>Preventa</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SUPER Preventa --></label>
+        <name>SUPER_Preventa</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Flujo de Ayesa --></description>
+        <label><!-- Ayesa --></label>
+        <name>Ayesa</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Flujo de Ibermatica Large Account --></description>
+        <label><!-- Ibermatica Large Account --></label>
+        <name>Ibermatica_Large_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Flujo de Ibermatica Latam --></description>
+        <label><!-- Ibermatica Latam --></label>
+        <name>Ibermatica_Latam</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Flujo de Ibermatica SME --></description>
+        <label><!-- Ibermatica SME --></label>
+        <name>Ibermatica_SME</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Presupuesto --></label>
+        <name>Presupuesto</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Prior to changing status to Approved pending Submittal, you must have entered the SAP Offer code</errorMessage>
+        <name>Aprobacion_con_datos_QA_informados</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The Opportunity is blocked by the Delivery Center Block and by the account type</errorMessage>
+        <name>Bloqueada_Linea_Servicio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se permite seleccionar &quot;STOCK&quot; como origen cuando la Dirección de Operaciones es IT&amp;DS. Por favor, selecciona otro valor. --></errorMessage>
+        <name>Bloquear_Origen_STOCK_IT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The Opportunity has an approval in process, no modification is allowed</errorMessage>
+        <name>Bloqueo_Por_Aprobacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the CPV field in the More Information tab</errorMessage>
+        <name>CPV_Ingenieria</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Seleccione un valor para el campo CPV en la pestaña &quot;Más Información&quot; --></errorMessage>
+        <name>CPV_select_Ingenieria</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
+        <name>Cambio_etapa_no_permitido_Cualificacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
+        <name>Cambio_etapa_no_permitido_Oferta_ITDS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cannot advance to subphase Pending Approval without approval from the Delivery Center</errorMessage>
+        <name>Cambio_no_permitido_Pdte_Aprobacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>If you have checked the Cross Selling box, you must provide a comment about the collaboration with Ibermatica for this Opportunity.</errorMessage>
+        <name>Campo_Comentario_Cross_Selling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe rellenar los campos obligatorios: Service Model, Cloud / On-premise, Diversification Breakdown, Contacto Principal, Tipo Producto/Servicio --></errorMessage>
+        <name>CamposObligatoriosOpp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Está modificando campos que solo puede informar el Responsable Delivery Center: Estimación coste preventa, Adecuación precio objetivo, Capacidad ejecución, Viabilidad ejecución, Capacidad preventa redacción oferta, Nº FTEs --></errorMessage>
+        <name>Campos_Cuali_LineaServicios_NoPreventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Está modificando campos que solo puede informar el Responsable Delivery Center: Capacidad ejecución, Viabilidad ejecución, Nº FTEs --></errorMessage>
+        <name>Campos_Cuali_LineaServicios_Preventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You are modifying fields that can only be reported by the Opportunity Responsible</errorMessage>
+        <name>Campos_Cualificacion_RO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Está modificando campos que solo pueden ser informados por el Responsable de Preventa: Estimación coste preventa, Adecuación precio objetivo, Capacidad preventa redacción oferta. --></errorMessage>
+        <name>Campos_Cualificacion_RespPreventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The opportunity is blocked because it is in the Closed stage. If you want to make a change, contact the System Administrator or the Financial Controller.</errorMessage>
+        <name>Cerrada_Bloqueada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>In order to close the opportunity as Contracted or awarded, you must indicate the Contracted year opportunity (€)</errorMessage>
+        <name>Cerrada_sin_contratado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You must select the closure Status</errorMessage>
+        <name>Cerrada_sin_estado_cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The ``Awarded´´ check must be marked when the award date is informed</errorMessage>
+        <name>Check_Adjudicada_obligatorio_con_fecha</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Must report if any occurrence outside of Spain in the Qualification tab before moving on to the next subphase</errorMessage>
+        <name>Check_produce_fuera_Spain</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>This subphase cannot be selected due to the type of offer of the opportunity</errorMessage>
+        <name>Cierre_limitacion_subfases</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cannot generate an opportunity if the Client does not have the Sector and Subsector informed</errorMessage>
+        <name>Cliente_Sector_Subsector</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The opportunity cannot be closed as won as the client does not have SAP Account IB #. Please contact CAU-DEF</errorMessage>
+        <name>Codigo_Contable_Cliente</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Before proceeding to Pending Approval it must have the SAP Bid Code filled in</errorMessage>
+        <name>Codigo_Oferta_SAP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>In order to go to contracted, you must indicate the contract amount.</errorMessage>
+        <name>Contratada_sin_importe_contratado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You must specify an amount in the Contracted Year Opportunity (€) field</errorMessage>
+        <name>Contratado_Ano_Introducido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The Contracted year opportunity must be less than the total Amount in euros.</errorMessage>
+        <name>ContratoAnoMenorImporteTotal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe rellenar el campo &apos;Motivo de excepción&apos; antes de guardar los cambios. --></errorMessage>
+        <name>Control_de_cambios_Admin_Custom_Ibermati</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The Opportunity has presale, you cannot select this subphase</errorMessage>
+        <name>Cualificacion_con_preventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The Opportunity does not have presale according to its type. If you need presale, please consult with the administrator</errorMessage>
+        <name>Cualificacion_sin_preventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cannot create an Opportunity related to a blocked Client</errorMessage>
+        <name>Cuenta_Bloqueada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Antes de avanzar a la subfase Ganada suba el documento &apos;Contrato/Contract&apos; en la pestaña Doc Power Alejandría --></errorMessage>
+        <name>DOC_Contrato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No puede cerrar esta oportunidad como ganada ya que su oportunidad matriz no está ganada --></errorMessage>
+        <name>Desglose_Ganadas_restriccion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>This opportunity has a breakdown of amounts, you cannot modify the Amount fields</errorMessage>
+        <name>Desglose_importes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Please upload the mandatory documentation of the Opportunity to New file before closing it</errorMessage>
+        <name>Documentacion_Cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cannot advance to Approved stage as CEO &amp; COO Email field is not informed</errorMessage>
+        <name>Email_CEO_COO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Al ser una oportunidad con Preventa hay que informar el Equipo Oferta en la pestaña &apos;Cualificación&apos; --></errorMessage>
+        <name>Equipo_preventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform Bid Status</errorMessage>
+        <name>Estado_de_madurez_ITDS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para oportunidades de la Dirección Operaciones ENGINEERING solo son seleccionables en esta etapa: Esperando decisión, Ganada pendiente de contrato, Ganada, Perdida y Aplazada / anulada. --></errorMessage>
+        <name>Etapa_Cierre_ING</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No puede avanzar a la subfase &apos;Esperando decisión&apos; ya que solo es seleccionable para oportunidades de la Dirección Operaciones ENGINEERING. --></errorMessage>
+        <name>Etapa_Cierre_limitacion_Subfase_ITDS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The submittal date must be prior to or the same as the closing date</errorMessage>
+        <name>Fecha_Presentacion_Cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Submission Date must be before or equal to the Closing Date and Closing Date must be before or equal to the Production Start Date</errorMessage>
+        <name>Fecha_SME</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Award date is mandatory for awarded opportunities</errorMessage>
+        <name>Fecha_adjudicacion_obligatoria</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Closing Date must be later than the month prior to the current month</errorMessage>
+        <name>Fecha_cierre_posterior_mes_pasado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>For closing status ``Contracted´´, the closing date must be equal to the contract signature date</errorMessage>
+        <name>Fecha_de_cierre_igual_a_fecha_contratado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Compruebe que están informados el Centro de Responsabilidad y Gestor de Producción para avanzar a la siguiente etapa. --></errorMessage>
+        <name>Gestor_Produccion_IB</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the Billing Contact before proceeding to the next stage</errorMessage>
+        <name>IB_SME_Contacto_Facturacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the Main Contact before proceeding to the next stage</errorMessage>
+        <name>IB_SME_Contacto_Principal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the following fields before proceeding to the next stage: Main Contact, Billing Contact and Amounts</errorMessage>
+        <name>IB_SME_Etapa_Oferta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe Gestor de Producción y Centro de Responsabilidad para avanzar a la siguiente etapa --></errorMessage>
+        <name>IB_SME_GP_CR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the fields in the “Economic Data” tab before proceeding to the next stage</errorMessage>
+        <name>IB_SME_Importes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the Main Contact</errorMessage>
+        <name>ITDS_Contacto_Principal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The total amount of an opportunity cannot be 0</errorMessage>
+        <name>Importe_Total_no_puede_ser_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the Awarded amount for Ayesa Company(€) field in the “Economic Data” tab before proceeding to the next phase</errorMessage>
+        <name>Importe_UTE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Award amount is required for awarded opportunities</errorMessage>
+        <name>Importe_adjudicacion_obligatorio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the field Submitted offer Amount(excluding VAT) in the “Economic Data” tab before proceeding to the next phase</errorMessage>
+        <name>Importe_total_ofertado_sin_IVA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform Business Unit</errorMessage>
+        <name>Informar_Business_Unit_BL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Must inform the AJI code</errorMessage>
+        <name>Informar_Codigo_AJI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the Delivery Center before proceeding to the next subphase</errorMessage>
+        <name>Informar_DeliveryCenter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe la Referencia Comercial relacionada y el campo Área Tecnología en la pestaña de Cierre --></errorMessage>
+        <name>Informar_Ref_Comercial_Nombre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the Commercial reference field on the Closing tab as it is a won and closed opportunity</errorMessage>
+        <name>Informar_Referencia_Comercial</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the related Commercial Reference and the Technology field in the Closing Tab</errorMessage>
+        <name>Informar_Referencia_Comercial_Nombre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el responsable de proyecto en la pestaña &apos;Cierre&apos; --></errorMessage>
+        <name>Informar_Responsable_Proyecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform Contract signing date before closing the opportunity</errorMessage>
+        <name>Informar_fecha_firma_de_contrato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Al ser una sinergia, informa el porcentaje de sinergia --></errorMessage>
+        <name>Informar_porcentaje_Sinergia</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>As it is an Engineering opportunity it cannot advance to this subphase</errorMessage>
+        <name>Ingenieria_subfases</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Award date must be greater than filing date</errorMessage>
+        <name>Mayor_o_igual_que_fecha_presentacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>For awarded opportunities, the award date must be less than or equal to the close date</errorMessage>
+        <name>Menor_o_igual_que_fecha_cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The award date must be less than or equal to the contract signing date</errorMessage>
+        <name>Menor_o_igual_que_fecha_firma_contrato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You must fill in the Market, Division and Operations Address fields.</errorMessage>
+        <name>Mercado_Division_Obligatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform Reason for closing</errorMessage>
+        <name>Motivo_de_cierre_obligatorio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cannot advance from subphase as there is no Offer approvals</errorMessage>
+        <name>No_avanzar_subfase_Aprobada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cannot inform the Commercial Reference until the Opportunity is Closed and Contracted</errorMessage>
+        <name>No_informar_Referencia_Comercial</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cannot modify the following fields: Market, Market Sector, Market Subsector, Services, Delivery Center</errorMessage>
+        <name>No_modificar_Mercados</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Changing the stage is not permitted. You must receive the offer code from the tender team and the status will be automatically updated.</errorMessage>
+        <name>No_pasar_A_Pendiente_QA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>To switch the status to &quot;Request Offer Code&quot; you must click on offer, fill out the data and click on &quot;Request Offer code and Support to Offer&quot;</errorMessage>
+        <name>No_pasar_A_pedir_cod_oferta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cannot advance to this subphase as it is an Engineering Opportunity</errorMessage>
+        <name>No_preventa_Ingenieria</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cannot inform the Related Opportunity with an Extension</errorMessage>
+        <name>Oportunidad_Matriz_no_es_Extension</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the opportunity from which it originates</errorMessage>
+        <name>Origen_Soft_Stock</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cannot modify the Origin field in an Extension</errorMessage>
+        <name>Origen_Stock_Soft_Extensiones</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Please inform the Client Country</errorMessage>
+        <name>Pais_cliente</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La participación debe ser 100% --></errorMessage>
+        <name>Participacion_Ayesa_limitacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para cambiar el % de Participación debe ponerse en contacto con CAU-CRM, una vez modificado se enviarán las solicitudes de aprobación pertinente --></errorMessage>
+        <name>Participacion_Etapa_negociacion_y_cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>If the field “Is it require license sales?” is set to “No”, you cannot inform the field “Licenses %” in the Qualification tab</errorMessage>
+        <name>Porcentaje_Licencias</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You must indicate the Total Amount (without VAT) in Euros of the opportunity to be able to pass it to presented.</errorMessage>
+        <name>Presentada_Importe_Total_Ofertado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>For the status to change to Submitted, you must send a copy of the submitted offer to Offers Support / Upload the offer to Alejandría and check the applicable block.</errorMessage>
+        <name>Presentada_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The Estimated Production of the Opportunity cannot be greater than the total Amount.</errorMessage>
+        <name>Produccion_Estimada_Menor_Importe_total</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para poder crear la nueva referencia comercial debe elegir una o varias tecnologías que se utilizarían en el futuro PEP. --></errorMessage>
+        <name>RefComercial_Si_AreaTecnologia</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform the Technology to be able to create the new Commercial Reference</errorMessage>
+        <name>Referencia_Comercial_Si</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You must fill Bid Manager field before moving on to the next subphase</errorMessage>
+        <name>ResponsableTecnico_Informado_ENG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>It can only be considered won if its status is submitted.</errorMessage>
+        <name>Restriccion_Estado_Ganada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
+        <name>Restriccion_Etapa_Abierta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
+        <name>Restriccion_Etapa_Aprobada_QA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
+        <name>Restriccion_Etapa_Cerrada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
+        <name>Restriccion_Etapa_Pedido_Codigo_Oferta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
+        <name>Restriccion_Etapa_Preparando_QA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
+        <name>Restriccion_Etapa_Presentada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>In order to close as contracted, you must indicate the contracted margin %</errorMessage>
+        <name>Restriccion_etapa_Margen_Contratado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Must indicate the % Profitability of the opportunity to be able to pass it on to Presented</errorMessage>
+        <name>Restriccion_etapa_Rentabilidad</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Closing date cannot be later than the current day.</errorMessage>
+        <name>Restriccion_etapa_fecha_cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Signing date must be filled and cannot be later than the current day.</errorMessage>
+        <name>Restriccion_etapa_fecha_firma_contrato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The submittal date cannot be later than the current day</errorMessage>
+        <name>Restriccion_etapa_fecha_presentacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inform Market Subsector</errorMessage>
+        <name>Subsector_mercado_oblig_DA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The maturity Status must be Tender for different stages of Open or Offer Code ordered.</errorMessage>
+        <name>Tipo_Oferta_Licitacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>If the offer is Approved, prior to Closing you must initiate the process of creating a project in SAP and check the applicable block</errorMessage>
+        <name>Tramite_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Before proceeding to Pending Approval, the Draft Agreement Partners Decision must be approved.</errorMessage>
+        <name>Validacion_Borrador_Acuerdo_de_socios</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The fields of the “Qualification” tab must be informed by the Responsible before proceeding to the “Pending Preliminar ok” subphase</errorMessage>
+        <name>Validacion_Pdt_Ok_preliminar</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The fields in the “Qualification” tab: Type of Ayesa Participation, Participation % and Subcontracting must be filled in before proceeding to the “Pending Preliminar ok” subphase</errorMessage>
+        <name>Validacion_Pdt_Ok_preliminar_Cualifi</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Before proceeding to Pending Approval report the fields in the &apos;Information&apos; section of the &apos;Offer&apos; tab.</errorMessage>
+        <name>informacion_Correo_Aprobacion_Oferta</name>
+    </validationRules>
+    <webLinks>
+        <label>Clone</label>
+        <name>Clonar</name>
+    </webLinks>
+    <webLinks>
+        <label>Offer</label>
+        <name>Oferta</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Fecha_Vencimiento</name>
+        <subject>Submittal Date Deadline</subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description>An offer code has been requested but 2 days have elapsed and we have not received a response; you must submit a claim in order to move forward with the opportunity</description>
+        <name>Reclamar_C_digo_de_Oferta</name>
+        <subject>Claim Offer Code</subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Recordatorio_Limite_de_presentaci_n</name>
+        <subject>Submittal Limit reminder</subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description>3 days are left before the submittal limit date is reached; you must schedule the meeting for QA approval</description>
+        <name>Reuni_n_QA</name>
+        <subject>QA Meeting</subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description>Offer code is nor available; do not forget to call the meeting for QA</description>
+        <name>Reunion_QA</name>
+        <subject>Reminder to call QA meeting</subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description>You must schedule a meeting for the QA certification as well as ensure that all the documentation is correct</description>
+        <name>Revision_QA</name>
+        <subject>QA Review</subject>
+    </workflowTasks>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cualificacion_sin_preventa</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+		$Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
+			$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
+				
+				OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+ISPICKVAL(Subfase__c,&apos;Cualificación con preventa&apos;), 
+Preventa__c = false,
+				NOT(ISCHANGED(Preventa__c) )
+)</errorConditionFormula>
+    <errorMessage>La oportunidad no tiene preventa según su tipificación, si necesita preventa consulte con el administrador.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Costes aceptados por retraso euros --></label>
+    <name>Costes_aceptados_por_retraso_euros__c</name>
+</CustomFieldTranslation>

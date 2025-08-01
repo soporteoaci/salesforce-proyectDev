@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ILG/OLG --></label>
+    <name>ILG_OLG__c</name>
+    <picklistValues>
+        <masterLabel>ILG</masterLabel>
+        <translation><!-- ILG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OLG</masterLabel>
+        <translation><!-- OLG --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <label>Tipo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acta</fullName>
+                <default>false</default>
+                <label>Acta</label>
+            </value>
+            <value>
+                <fullName>Configuración</fullName>
+                <default>false</default>
+                <label>Configuración</label>
+            </value>
+            <value>
+                <fullName>Diseño</fullName>
+                <default>false</default>
+                <label>Diseño</label>
+            </value>
+            <value>
+                <fullName>Oficio</fullName>
+                <default>false</default>
+                <label>Oficio</label>
+            </value>
+            <value>
+                <fullName>Plan de trabajo</fullName>
+                <default>false</default>
+                <label>Plan de trabajo</label>
+            </value>
+            <value>
+                <fullName>Presentación</fullName>
+                <default>false</default>
+                <label>Presentación</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriccion_etapa_fecha_presentacion</fullName>
+    <active>false</active>
+    <description>La fecha de presentación no puede ser posterior al día actual</description>
+    <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+RecordType.DeveloperName &lt;&gt; &apos;Ibermatica_SME&apos;,
+
+ISPICKVAL( Etapa__c , &quot;Presentada&quot; ) &amp;&amp;
+( Fecha_limite_de_presentacion__c &gt; DATEVALUE(NOW()))
+
+)</errorConditionFormula>
+    <errorMessage>La fecha de presentación no puede ser posterior al día actual</errorMessage>
+</ValidationRule>

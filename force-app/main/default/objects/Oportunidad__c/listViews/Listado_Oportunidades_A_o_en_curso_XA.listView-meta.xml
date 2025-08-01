@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Listado_Oportunidades_A_o_en_curso_XA</fullName>
+    <columns>NAME</columns>
+    <columns>Codigo_OC__c</columns>
+    <columns>Etapa__c</columns>
+    <columns>Subfase__c</columns>
+    <columns>Probabilidad__c</columns>
+    <columns>Cliente__c</columns>
+    <columns>Fecha_presentacion__c</columns>
+    <columns>Fecha_estimada_de_cierre__c</columns>
+    <columns>Sociedad_Ayesa__c</columns>
+    <columns>Tipo_de_Negocio__c</columns>
+    <columns>Fecha_Creacion__c</columns>
+    <columns>Importe_total_sin_IVA__c</columns>
+    <columns>Margen_Previsto_Euros__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Fecha_estimada_de_cierre__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2024</value>
+    </filters>
+    <label>Mis Oportunidades Año en curso</label>
+</ListView>

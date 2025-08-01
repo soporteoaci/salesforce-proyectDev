@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MINFIN_Ecuador</fullName>
+    <columns>Categoria__c</columns>
+    <columns>NAME</columns>
+    <columns>Nombre__c</columns>
+    <columns>Estado__c</columns>
+    <columns>Descripcion__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Proyecto__c</field>
+        <operation>equals</operation>
+        <value>MINFIN Ecuador</value>
+    </filters>
+    <label>MINFIN Ecuador</label>
+    <sharedTo>
+        <group>MINFIN_Ecuador</group>
+    </sharedTo>
+</ListView>

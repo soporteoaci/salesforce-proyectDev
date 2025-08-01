@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finalidad__c</fullName>
+    <inlineHelpText>RO</inlineHelpText>
+    <label>Finalidad</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Apertura cliente</fullName>
+                <default>false</default>
+                <label>Apertura cliente</label>
+            </value>
+            <value>
+                <fullName>Rentabilidad económica</fullName>
+                <default>false</default>
+                <label>Rentabilidad económica</label>
+            </value>
+            <value>
+                <fullName>Desarrollo conocimiento</fullName>
+                <default>false</default>
+                <label>Desarrollo conocimiento</label>
+            </value>
+            <value>
+                <fullName>Posición defensiva</fullName>
+                <default>false</default>
+                <label>Posición defensiva</label>
+            </value>
+            <value>
+                <fullName>Rentabilidad futura</fullName>
+                <default>false</default>
+                <label>Rentabilidad futura</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

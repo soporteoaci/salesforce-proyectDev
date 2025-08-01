@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presentada_Importe_Total_Ofertado</fullName>
+    <active>true</active>
+    <description>Debe indicar el Importe total ofertado de la oportunidad para poder pasarla a presentada.</description>
+    <errorConditionFormula>AND(
+					$User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+					RecordType.DeveloperName &lt;&gt; &apos;Ibermatica_SME&apos;,
+					ISPICKVAL( Etapa__c , &quot;Presentada&quot; ) ,
+
+					OR(
+									AND(
+													RecordType.DeveloperName =&apos;Ayesa&apos;,
+													( ISNULL(Importe_total_sin_IVA__c) || Importe_total_sin_IVA__c &lt;= 0)
+									),
+									AND(
+													CONTAINS(RecordType.DeveloperName,&apos;Ibermatica&apos;),
+													ISNULL(Importe_total_sin_IVA__c)
+									)
+
+					)
+	)</errorConditionFormula>
+    <errorMessage>Debe indicar el Importe total ofertado de la oportunidad para poder pasarla a presentada.</errorMessage>
+</ValidationRule>
