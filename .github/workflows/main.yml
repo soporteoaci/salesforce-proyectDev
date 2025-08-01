@@ -455,7 +455,7 @@ jobs:
         shell: cmd
         run: |
           echo Workspace: %GITHUB_WORKSPACE%
-          sf project retrieve start --manifest "%GITHUB_WORKSPACE%\manifest\package.xml" --target-org ayesaoaci--proyectdev
+          sf project retrieve start --manifest "%GITHUB_WORKSPACE%\manifest\package.xml" --target-org ProyectDev
 
       # ✅ 8. Commit y push
       - name: Commit and push changes
@@ -470,6 +470,6 @@ jobs:
             Write-Host "No changes to commit."
           } else {
             $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-            git commit -m "Sync from ayesaoaci--proyectdev $timestamp"
+            git commit -m "Sync from ProyectDev $timestamp"
             git push
           }
