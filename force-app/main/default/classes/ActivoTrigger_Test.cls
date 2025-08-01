@@ -1,5 +1,4 @@
 @isTest
-//Prueba Ariel PUSH
 public class ActivoTrigger_Test {
     @isTest
     public static void activo_test(){
