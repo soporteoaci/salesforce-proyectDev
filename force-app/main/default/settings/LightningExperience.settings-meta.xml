@@ -3,7 +3,7 @@
     <activeThemeName>Ayesa</activeThemeName>
     <enableAccessCheckCrucPref>false</enableAccessCheckCrucPref>
     <enableApiUserLtngOutAccessPref>false</enableApiUserLtngOutAccessPref>
-    <enableAuraCDNPref>false</enableAuraCDNPref>
+    <enableAuraCDNPref>true</enableAuraCDNPref>
     <enableAuraSecStaticResCRUCPref>false</enableAuraSecStaticResCRUCPref>
     <enableDeferRenderingWorkspacePage>true</enableDeferRenderingWorkspacePage>
     <enableErrorExperienceEnabled>false</enableErrorExperienceEnabled>

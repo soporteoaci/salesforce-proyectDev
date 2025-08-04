@@ -327,7 +327,7 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <displayNameOverride>Oportunidad</displayNameOverride>
-            <field>Oportunidad_del__c</field>
+            <field>Opportunity__c</field>
             <table>Activity</table>
         </columns>
         <columns>

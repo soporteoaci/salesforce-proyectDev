@@ -4,13 +4,13 @@ global class CRM_Notific_Op_Incoherentes implements Database.Batchable<sObject>{
     global Database.QueryLocator start(Database.BatchableContext BC){
         system.debug('Ejecución de consulta de oportunidades incoherentes...');
         
-        string query='SELECT Id, Name, OwnerId, Owner.name, Owner.email FROM Oportunidad__c WHERE Existencia_de_Incoherencias__c = true and (Etapa__c != \'Cerrada\' or estado_de_cierre__c = \'Contratada\') order by OwnerId' + (Test.isRunningTest()?' LIMIT 10':'');                
+        string query='SELECT Id, Name, OwnerId, Owner.name, Owner.email FROM Opportunity WHERE Existencia_de_Incoherencias__c = true and (Etapa__c != \'Cerrada\' or estado_de_cierre__c = \'Contratada\') order by OwnerId' + (Test.isRunningTest()?' LIMIT 10':'');                
 
         return Database.getQueryLocator(query);
         
     }
     
-    global void execute(Database.BatchableContext BC, List<Oportunidad__c> ownerByOppIncoherente){
+    global void execute(Database.BatchableContext BC, List<Opportunity> ownerByOppIncoherente){
         system.debug('Tamaño de lista de oportunidades con INCOHERENCIAS:  ' + ownerByOppIncoherente.size());
                
        	//Se crea lista de emails
@@ -18,7 +18,7 @@ global class CRM_Notific_Op_Incoherentes implements Database.Batchable<sObject>{
         
         //Guardo los Id's de los usuarios (idioma 1.1)
         Set <Id> lista_Ids_RPS = new Set<Id>();
-        for (Oportunidad__c opp : ownerByOppIncoherente){
+        for (Opportunity opp : ownerByOppIncoherente){
             lista_Ids_RPS.add(opp.OwnerId);
         }
         //system.debug('Total de usuarios:  '+ lista_Ids_RPS.size());
