@@ -29,7 +29,7 @@ public class CRM_Notific_Op_Incoher_Schedule_Test {
     
     @isTest static void scheduleClassTest2() {
         
-        List<Oportunidad__c> ownerByOppIncoherente = [SELECT Id, Name, OwnerId, Owner.name, Owner.email FROM Oportunidad__c WHERE Existencia_de_Incoherencias__c = true order by OwnerId LIMIT 1];
+        List<Opportunity> ownerByOppIncoherente = [SELECT Id, Name, OwnerId, Owner.name, Owner.email FROM Opportunity WHERE Existencia_de_Incoherencias__c = true order by OwnerId LIMIT 1];
         
         Test.startTest();
        	
@@ -77,7 +77,7 @@ public class CRM_Notific_Op_Incoher_Schedule_Test {
         );
         insert cuenta1;
         
-        Oportunidad__c oppIncoherente = new Oportunidad__c(
+        Opportunity oppIncoherente = new Opportunity(
         	Nombre_Corto__c = 'Prueba notificacion incoherencia',
             Name = 'Prueba',
             Cliente__c = cuenta1.Id,
