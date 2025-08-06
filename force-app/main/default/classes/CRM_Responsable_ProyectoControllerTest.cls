@@ -12,17 +12,17 @@ public class CRM_Responsable_ProyectoControllerTest {
         Contact Contacto = new Contact (FirstName='Prueba',LastName ='Prueba', AccountId= Cliente.Id);
         insert contacto;
         
-        Id RecordTypeAyesa = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
-        Id recordTypeId = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByDeveloperName().get('Ibermatica_SME').getRecordTypeId();
+        Id RecordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
+        Id recordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Ibermatica_SME').getRecordTypeId();
         
         //Oportunidad        
-        Oportunidad__c oportunidad= new Oportunidad__c(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
+        Opportunity oportunidad= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
                                                           Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                                           Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
         insert oportunidad;
 
         Test.startTest();
-        Oportunidad__c result = CRM_Responsable_ProyectoController.obtenerOportunidad(oportunidad.Id);
+        Opportunity result = CRM_Responsable_ProyectoController.obtenerOportunidad(oportunidad.Id);
         Test.stopTest();
 
         System.assertNotEquals(result, null, 'La oportunidad no ha sido encontrada');
@@ -62,11 +62,11 @@ public class CRM_Responsable_ProyectoControllerTest {
         Contact Contacto = new Contact (FirstName='Prueba',LastName ='Prueba', AccountId= Cliente.Id);
         insert contacto;
         
-        Id RecordTypeAyesa = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
-        Id recordTypeId = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByDeveloperName().get('Ibermatica_SME').getRecordTypeId();
+        Id RecordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
+        Id recordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Ibermatica_SME').getRecordTypeId();
         
         //Oportunidad        
-        Oportunidad__c testOpp= new Oportunidad__c(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
+        Opportunity testOpp= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
                                                           Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                                           Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
         insert testOpp;
@@ -78,7 +78,7 @@ public class CRM_Responsable_ProyectoControllerTest {
         Test.stopTest();
 
         testOpp = [SELECT Responsable_de_Proyecto_Nombre__c, Responsable_de_Proyecto_Email__c, Responsable_de_Proyecto__c 
-                   FROM Oportunidad__c WHERE Id = :testOpp.Id LIMIT 1];
+                   FROM Opportunity WHERE Id = :testOpp.Id LIMIT 1];
 
         System.assertEquals(testOpp.Responsable_de_Proyecto_Nombre__c, 'Usuario de Prueba', 'El nombre del responsable no coincide');
         System.assertEquals(testOpp.Responsable_de_Proyecto_Email__c, 'null@null.com', 'El email del responsable no coincide');
@@ -96,11 +96,11 @@ public class CRM_Responsable_ProyectoControllerTest {
         Contact Contacto = new Contact (FirstName='Prueba',LastName ='Prueba', AccountId= Cliente.Id);
         insert contacto;
         
-        Id RecordTypeAyesa = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
-        Id recordTypeId = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByDeveloperName().get('Ibermatica_SME').getRecordTypeId();
+        Id RecordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
+        Id recordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Ibermatica_SME').getRecordTypeId();
         
         //Oportunidad        
-        Oportunidad__c testOpp= new Oportunidad__c(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
+        Opportunity testOpp= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
                                                           Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                                           Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
         insert testOpp;

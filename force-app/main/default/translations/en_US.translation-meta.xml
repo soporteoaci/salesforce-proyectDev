@@ -1222,6 +1222,10 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
+        <fullName>Opportunity_Etapa_Cierre</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
         <fullName>Opportunity_Obtener_Responsables</fullName>
     </flowDefinitions>
     <flowDefinitions>

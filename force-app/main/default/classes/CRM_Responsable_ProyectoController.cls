@@ -2,9 +2,9 @@ public with sharing class CRM_Responsable_ProyectoController {
     
     // obtener valores de la oportunidad
     @AuraEnabled
-    public static Oportunidad__c obtenerOportunidad(String oppId) {
+    public static Opportunity obtenerOportunidad(String oppId) {
         try {
-            return [SELECT Id, Responsable_de_Proyecto__c, Responsable_de_Proyecto_Nombre__c, Responsable_de_Proyecto_Email__c FROM Oportunidad__c WHERE Id = :oppId LIMIT 1];
+            return [SELECT Id, Responsable_de_Proyecto__c, Responsable_de_Proyecto_Nombre__c, Responsable_de_Proyecto_Email__c FROM Opportunity WHERE Id = :oppId LIMIT 1];
         } catch (Exception e) {
             throw new AuraHandledException('Error al obtener los datos de la oportunidad: ' + e.getMessage());
         }
@@ -50,7 +50,7 @@ public with sharing class CRM_Responsable_ProyectoController {
         }
         
         try {
-            Oportunidad__c opp = [SELECT Id, Responsable_de_Proyecto__c, Responsable_de_Proyecto_Nombre__c, Responsable_de_Proyecto_Email__c FROM Oportunidad__c WHERE Id = :oppId LIMIT 1];
+            Opportunity opp = [SELECT Id, Responsable_de_Proyecto__c, Responsable_de_Proyecto_Nombre__c, Responsable_de_Proyecto_Email__c FROM Opportunity WHERE Id = :oppId LIMIT 1];
             
             // separamos responsble en nombre y email
             String[] partesResponsable = responsable.split(' - ');
@@ -75,7 +75,7 @@ public with sharing class CRM_Responsable_ProyectoController {
         }
     }
     
-    //Realiza la misma validación que CamposObligatoriosOpp en Oportunidad__c
+    //Realiza la misma validación que CamposObligatoriosOpp en Opportunity
     @AuraEnabled
     public static Boolean esCampoResponsableRequerido() {
         User u = [SELECT Email, Profile.Name FROM User WHERE Id = :UserInfo.getUserId()];
