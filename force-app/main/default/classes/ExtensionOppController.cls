@@ -3,10 +3,10 @@ public class ExtensionOppController {
     @AuraEnabled
     public static String getTypeOpp(Id idOportunidad){
         
-        Oportunidad__c opp =[SELECT id, name, codigo_OC__c,Oportunidad_Relacionada__c, RecordType.Name,Direccion_Operaciones__c,Etapa__c,Subfase__c,Tipo_Extension__c,fecha_firma_contrato__c,
+        Opportunity opp =[SELECT id, name, codigo_OC__c,Oportunidad_Relacionada__c, RecordType.Name,Direccion_Operaciones__c,Etapa__c,Subfase__c,Tipo_Extension__c,fecha_firma_contrato__c,
                              fecha_estimada_de_cierre__c, Fecha_limite_de_presentacion__c, Plazo_de_ejecuci_n_meses__c,RENTPPTO__c, Importe_Licitacion__c, probabilidad__c, tipo_de_negocio__c,
                              Origen__c
-                             from Oportunidad__c where Id =: idOportunidad];
+                             from Opportunity where Id =: idOportunidad];
         //12/01/2024
         String result ='';
         JSONGenerator gen = JSON.createGenerator(true);
@@ -16,7 +16,7 @@ public class ExtensionOppController {
         
         //Recuperamos los valores de las líneas de servicio
         List<String> options = new List<String>();
-        Map<Object,List<String>> mapa_valores =  getDependentPicklistValues(Oportunidad__c.Linea_de_Servicio__c);
+        Map<Object,List<String>> mapa_valores =  getDependentPicklistValues(Opportunity.Linea_de_Servicio__c);
         
         options=  mapa_valores.get(opp.Direccion_Operaciones__c);
         
@@ -34,24 +34,24 @@ public class ExtensionOppController {
                                                     String tipoExtension,String lineaServicio, String Origen){
         String idOpp;
         System.debug('Extiendo oportunidad: '+ tipoExtension);
-        Id recordTypeSME = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ibermatica SME').getRecordTypeId();
-        Id recordTypeLarge = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ibermatica Large Account').getRecordTypeId();
-        Id recordTypeLatam = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ibermatica Latam').getRecordTypeId();
-        Id recordTypeAyesa = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
+        Id recordTypeSME = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ibermatica SME').getRecordTypeId();
+        Id recordTypeLarge = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ibermatica Large Account').getRecordTypeId();
+        Id recordTypeLatam = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ibermatica Latam').getRecordTypeId();
+        Id recordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
         
-        DescribeSObjectResult describeResult = Oportunidad__c.getSObjectType().getDescribe();   
+        DescribeSObjectResult describeResult = Opportunity.getSObjectType().getDescribe();   
         List<String> fieldNames = new List<String>(describeResult.fields.getMap().keySet());    
         String query = ' SELECT ' + String.join( fieldNames, ',' ) +    ' FROM ' +describeResult.getName() + ' WHERE id = :idOportunidad LIMIT 1 ';
-        List<Oportunidad__c> records = Database.query(query);   
+        List<Opportunity> records = Database.query(query);   
         
-        Oportunidad__c oppClonada = new Oportunidad__c();
+        Opportunity oppClonada = new Opportunity();
         oppClonada = records.get(0);
         //.clone(false,true,false,false);
         
         System.debug('Oportunidad a Extender: ' + records);
         System.debug('Oportunidad a Extender: ' + oppClonada.RecordTypeId +'/' + oppClonada.Record_Type_Name__c);
         
-        Oportunidad__c oppExtension = new Oportunidad__c();
+        Opportunity oppExtension = new Opportunity();
         
         
         oppExtension.Crear_expediente__c = false;
@@ -130,7 +130,7 @@ public class ExtensionOppController {
             Map<String, String> labelToApiMap = new Map<String, String>();
             
             // Obtener metadata del campo picklist
-            Schema.DescribeFieldResult fieldResult = Oportunidad__c.Linea_de_Servicio__c.getDescribe();
+            Schema.DescribeFieldResult fieldResult = Opportunity.Linea_de_Servicio__c.getDescribe();
             List<Schema.PicklistEntry> valores = fieldResult.getPicklistValues();
             
             // Llenar el mapa: Label => API
@@ -287,7 +287,7 @@ public class ExtensionOppController {
         oppExtension.Codigo_CR_HW_Super__c=OppClonada.Codigo_CR_HW_Super__c;
         oppExtension.Codigo_FICEPI_GP__c=OppClonada.Codigo_FICEPI_GP__c;
         
-        oppExtension.Contacto_facturacion__c =OppClonada.Contacto_facturacion__c;
+      //  oppExtension.Contacto_facturacion__c =OppClonada.Contacto_facturacion__c;
      //   oppExtension.Codigo_Org_Comercial_IB__c=OppClonada.Codigo_Org_Comercial_IB__c;
     //    oppExtension.Organizacion_Ibermatica__c=OppClonada.Organizacion_Ibermatica__c;
         // oppExtension.Plazo_de_ejecuci_n_meses__c=OppClonada.Plazo_de_ejecuci_n_meses__c;

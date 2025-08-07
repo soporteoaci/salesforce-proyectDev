@@ -2,23 +2,23 @@ public class CloneOppController {
     @AuraEnabled
     public static String getTypeOpp(Id idOportunidad){
         
-        Oportunidad__c opp =[SELECT id, name, codigo_OC__c, RecordType.Name from Oportunidad__c where Id =: idOportunidad];
+        Opportunity opp =[SELECT id, name, codigo_OC__c, RecordType.Name from Opportunity where Id =: idOportunidad];
         
         return opp.RecordType.Name;
     }
     @AuraEnabled
     public static String clonarOportunidad(Id idOportunidad, String nombreOpp, Date fechaCierre, Date fechaPresentacion, Double margenEstimado, Integer plazoEjecucion, Double importeTotal){
         String idOpp;
-        Id recordTypeSME = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ibermatica SME').getRecordTypeId();
-        Id recordTypeLarge = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ibermatica Large Account').getRecordTypeId();
-        Id recordTypeLatam = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ibermatica Latam').getRecordTypeId();
-        Id recordTypeAyesa = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
-        DescribeSObjectResult describeResult = Oportunidad__c.getSObjectType().getDescribe();	
+        Id recordTypeSME = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ibermatica SME').getRecordTypeId();
+        Id recordTypeLarge = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ibermatica Large Account').getRecordTypeId();
+        Id recordTypeLatam = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ibermatica Latam').getRecordTypeId();
+        Id recordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
+        DescribeSObjectResult describeResult = Opportunity.getSObjectType().getDescribe();	
         List<String> fieldNames = new List<String>(describeResult.fields.getMap().keySet());	
         String query = ' SELECT ' + String.join( fieldNames, ',' ) +	' FROM ' +describeResult.getName() + ' WHERE id = :idOportunidad LIMIT 1 ';
-        List<Oportunidad__c> records = Database.query(query);	
+        List<Opportunity> records = Database.query(query);	
         
-        Oportunidad__c oppClonada = new Oportunidad__c();
+        Opportunity oppClonada = new Opportunity();
         oppClonada = records.get(0).clone(false,true,false,false);
         
         System.debug('Oportunidad a Clonar: ' + idOportunidad);
@@ -68,7 +68,7 @@ public class CloneOppController {
         oppClonada.Importe_en_divisa_local__c = null;
         oppClonada.Importe_adjudicacion__c = null;
         oppClonada.Producci_n_estimada_a_o_oportunidad__c = null;
-        oppClonada.Produccion_estimada_a_o_poderada__c = null;
+  //      oppClonada.Produccion_estimada_a_o_poderada__c = null;
         oppClonada.Importe_Contratacion__c = null;
         oppClonada.Margen_Previsto_Euros__c=null;
         oppClonada.Margen_Previsto_Local__c=0;
@@ -99,7 +99,7 @@ public class CloneOppController {
         oppClonada.Referencia_Comercial__c = null;
         oppClonada.Referencia_Comercial_lookup__c = null;
         oppClonada.Estado_de_Cierre__c='';
-        oppClonada.Estado_de_Cierre_SME__c='';
+      //  oppClonada.Estado_de_Cierre_SME__c='';
 
         //Fechas     
         oppClonada.Adjudicada__c = false;
@@ -111,10 +111,10 @@ public class CloneOppController {
         oppClonada.Objetivo_del_proyecto__c = null;
         
         //Otros
-        oppClonada.Departamento_RO__c = null;
+      //  oppClonada.Departamento_RO__c = null;
         oppClonada.Enviado_la_oferta_a_soporte__c = false;
         oppClonada.Oferta_SAP__c = null;
-        oppClonada.Responsable__c = null;
+     //   oppClonada.Responsable__c = null;
         oppClonada.Oportunidad_Relacionada__c=null;
         oppClonada.Oportunidad_Padre__c=null;
         oppClonada.GUIDOPORTUNIDAD__c = '';
@@ -138,11 +138,11 @@ public class CloneOppController {
         if(oppClonada.RecordTypeId != recordTypeSME){
             oppClonada.Tipificacion_Manual__c=false;
             oppClonada.Decision_Go_Smart_BPM_Offer__c='';
-            oppClonada.Decision_Oferta_Smart_BPM_Offer__c='';
-            oppClonada.Estado_Smart_BPM_Offer__c='';
-            oppClonada.Etapa_Smart_BPM_Offer__c='';
+         //   oppClonada.Decision_Oferta_Smart_BPM_Offer__c='';
+         //   oppClonada.Estado_Smart_BPM_Offer__c='';
+         //   oppClonada.Etapa_Smart_BPM_Offer__c='';
             oppClonada.URL_Expediente__c = null;
-            oppClonada.id_registro_dataverso__c = null;
+         //   oppClonada.id_registro_dataverso__c = null;
             oppClonada.Decision_QA_Economico__c ='';
             oppClonada.Decision_QA_Tecnico__c= '';
             oppClonada.Decision_Aprobacion_Oferta__c='';
