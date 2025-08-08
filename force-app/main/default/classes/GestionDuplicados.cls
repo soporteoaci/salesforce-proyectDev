@@ -185,8 +185,8 @@ public with sharing class GestionDuplicados {
         
         try {
             Map<String, Set<String>> permitidos = new Map<String, Set<String>>{
-                'Contact' => new Set<String>{ 'Account', 'Oportunidad__c', 'Contactos_Campanyas__c', 'Task' },
-                'Account' => new Set<String>{ 'Account', 'Contact', 'Oportunidad__c', 'Objetivo__c', 'Task', 'Referencia_Comercial__c', 'Activo__c' }
+                'Contact' => new Set<String>{ 'Account', 'Opportunity', 'Contactos_Campanyas__c', 'Task' },
+                'Account' => new Set<String>{ 'Account', 'Contact', 'Opportunity', 'Objetivo__c', 'Task', 'Referencia_Comercial__c', 'Activo__c' }
             };
     
             Set<String> relacionadosValidos = permitidos.get(objetoApi);
