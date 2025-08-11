@@ -37,12 +37,12 @@ public class LoadFileController {
                 archivo.ArchivoContent__c= file.get(0).ContentDocumentId;
                 insert archivo;
                 try{
-                    List <Oportunidad__c > op = [SELECT id,DOC_Contrato__c
-                                                 FROM Oportunidad__c where Id =: recordId  LIMIT 1];
+                    List <Opportunity > op = [SELECT id,DOC_Contrato__c
+                                                 FROM Opportunity where Id =: recordId  LIMIT 1];
                     //Actualizar el check de la oportunidad
                     if (op.size()>0 && tipoArchivo=='Contrato/Contract'){
                         
-                        Oportunidad__c oc = marcar_casilla_Oportunidad(tipoArchivo, op[0]); 
+                        Opportunity oc = marcar_casilla_Oportunidad(tipoArchivo, op[0]); 
                         update oc;   
                     }         
                     
@@ -209,7 +209,7 @@ public class LoadFileController {
         
     }
     
-    private static Oportunidad__c marcar_casilla_Oportunidad (String tipoArchivo, Oportunidad__c op){
+    private static Opportunity marcar_casilla_Oportunidad (String tipoArchivo, Opportunity op){
         
         /*  if(tipoArchivo=='Estudio de implicaciones fiscales/Tax Implications Study'){
 op.DOC_Estudio_de_implicaciones_fiscales__c = true;
