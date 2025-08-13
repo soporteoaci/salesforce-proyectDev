@@ -187,6 +187,7 @@
             <label>No</label>
         </rules>
     </decisions>
+    <description>Se elimina la condicion inicial de RecordType = Ayesa</description>
     <environments>Default</environments>
     <formulas>
         <name>Margen_Previsto_Calculo</name>
@@ -227,7 +228,7 @@
         <connector>
             <targetReference>Importe_UTE_informado</targetReference>
         </connector>
-        <filterLogic>(1 OR 2 OR 3 OR 5) AND 4</filterLogic>
+        <filterLogic>1 OR 2 OR 3 OR 4</filterLogic>
         <filters>
             <field>Importe_total_sin_IVA__c</field>
             <operator>IsChanged</operator>
@@ -247,13 +248,6 @@
             <operator>IsChanged</operator>
             <value>
                 <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Record_Type_Name__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Ayesa</stringValue>
             </value>
         </filters>
         <filters>

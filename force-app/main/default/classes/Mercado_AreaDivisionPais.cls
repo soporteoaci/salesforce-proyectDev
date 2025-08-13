@@ -1,6 +1,6 @@
 public class Mercado_AreaDivisionPais {
     
-    public static void Mercado_inicio(Oportunidad__c op){
+    public static void Mercado_inicio(Opportunity op){
         String crearExpediente = '';
         //13/09/2022 Sociedades para crear expediente en Smart BPM Offer. Las sociedades con true son las que se crearán.Se exluyen así las nuevas que se creen como M2C y BL
         list <Parametrica__c> Sociedad_oportunidad = [SELECT Id, Tipo__c, Sociedad_API__c, Sociedad_crear_expediente__c FROM Parametrica__c Where Tipo__c='SOCIEDAD' and Sociedad_API__c =: op.Sociedad_Ayesa__c LIMIT 1];
@@ -129,7 +129,7 @@ op.Crear_expediente__c=false;
         }
     }
     
-    public static void MercadoPais(Oportunidad__c op){
+    public static void MercadoPais(Opportunity op){
         System.debug('Entro en MercadoPais');
         System.debug('Valor de op.Mercado__c: ' + op.Mercado__c);
         if(op.Mercado__c != null){
@@ -259,7 +259,7 @@ op.Crear_expediente__c=false;
     
     
     /*--------****PAÍSES LATINOAMÉRICA****--------*/
-    public static void MercadoPaisLatam(Oportunidad__c op){
+    public static void MercadoPaisLatam(Opportunity op){
         
         if(op.Mercado__c != null){
             

@@ -13107,7 +13107,31 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Opportunity_Alerta_Aviso_a_licitaciones_de_Ok_preliminar</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Alerta_Cualificaci_n_con_preventa</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Alerta_Cualificacion_con_autoprovision</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Opportunity_Avanzar_etapa_Oferta_Elaboracion_Oferta</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Aviso_Aprobacion_Internacional</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Aviso_Aprobacion_Preliminar_CCO</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Aviso_informado_PRL</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -13135,7 +13159,15 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Opportunity_Cualificacion_completa</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Opportunity_Etapa_Cierre</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Ganada</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>2</activeVersionNumber>
+    <description>Mandamos un correo electrónico para informar que la oportunidad ha sido gnada</description>
+    <masterLabel>Opportunity: Aviso subfase Ganada</masterLabel>
+</FlowDefinition>

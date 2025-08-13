@@ -1190,7 +1190,31 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
+        <fullName>Opportunity_Alerta_Aviso_a_licitaciones_de_Ok_preliminar</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Alerta_Cualificaci_n_con_preventa</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Alerta_Cualificacion_con_autoprovision</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
         <fullName>Opportunity_Avanzar_etapa_Oferta_Elaboracion_Oferta</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Aviso_Aprobacion_Internacional</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Aviso_Aprobacion_Preliminar_CCO</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Aviso_informado_PRL</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
@@ -1218,7 +1242,15 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
+        <fullName>Opportunity_Cualificacion_completa</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
         <fullName>Opportunity_Etapa_Cierre</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Ganada</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
