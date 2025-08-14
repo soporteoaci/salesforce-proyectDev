@@ -19,12 +19,12 @@ public class CreacionOfertaController {
         System.debug('Profile: ' + userProfile.Name);
         
         // Recuperamos datos de la oportunidad
-        List<Oportunidad__c> opps = [select id, Name ,Falta_definicion_del_objeto__c,
-                                     No_existe_Limitacion__c,
-                                     Se_incluye_lucro__c,
-                                     Posibilidad_de_resoluci_n_unilateral__c,
-                                     Resoluci_n_por_conveniencia__c,
-                                     Causas_no_tasadas_y_ambiguas__c,
+        List<Opportunity> opps = [select id, Name ,Falta_definicion_del_objeto__c,
+                                    // No_existe_Limitacion__c,
+                                    // Se_incluye_lucro__c,
+                                   //  Posibilidad_de_resoluci_n_unilateral__c,
+                                   //  Resoluci_n_por_conveniencia__c,
+                                   //  Causas_no_tasadas_y_ambiguas__c,
                                      Codigo_OC__c,
                                      //Codigo_OC2__c,
                                      Objetivo_del_proyecto__c,
@@ -32,13 +32,13 @@ public class CreacionOfertaController {
                                      Division_SAP__c,
                                      Fecha_limite_de_presentacion__c,
                                      Fecha_estimada_de_cierre__c,
-                                     Plazo_de_ejecuci_n_meses__c,Fecha_Fin_PEP_cal__c,
-                                     Importe_euros__c,
+                                     Plazo_de_ejecuci_n_meses__c,//Fecha_Fin_PEP_cal__c,
+                                    // Importe_euros__c,
                                      Importe_total_sin_IVA__c,
                                      Jefe_de_Proyecto__c,
                                      GP__c,
                                      RUP__c,
-                                     Probabilidad_CRM_SAP__c,
+                                    // Probabilidad_CRM_SAP__c,
                                      Area_de_negocio__c,
                                      Area_de_negocio_N1__c,
                                      Area_de_negocio_N2__c,
@@ -50,8 +50,8 @@ public class CreacionOfertaController {
                                      Territorio_ejecucion__c,
                                      Territorio_cliente__c,
                                      Centro__c,
-                                     Grupo__c,
-                                     Subgrupo__c,
+                                   //  Grupo__c,
+                                   //  Subgrupo__c,
                                      Probabilidad__c,
                                      Clasificacion_funcional_Nivel_1__c,
                                      Clasificacion_funcional_Nivel_2__c,
@@ -63,13 +63,13 @@ public class CreacionOfertaController {
                                      Cliente__r.SAP_Account__c,
                                      Oferta_SAP__c,
                                      Etapa__c
-                                     from Oportunidad__c  where id = :idOpportunity];
+                                     from Opportunity  where id = :idOpportunity];
         
         System.debug('Opp size:'+ opps.size());
         
         if (opps.size() > 0) {
             status = 'OK';
-            Oportunidad__c opportunity = opps.get(0);
+            Opportunity opportunity = opps.get(0);
             //system.debug(opportunity.cliente__r.name);
             //10/2022
             //Si el objetivo del proyecto (nombre oferta) está vacío cogemos Tema (40)
@@ -245,8 +245,8 @@ La búsqueda de clientes puede hacerse por:
         JSONGenerator gen = JSON.createGenerator(true); 
         gen.writeStartObject();
         
-        Oportunidad__c oppAux = (Oportunidad__c)System.JSON.deserialize(Oport, Oportunidad__c.class);
-        Oportunidad__c opportunity = [select id from Oportunidad__c where id = :idOpportunity];
+        Opportunity oppAux = (Opportunity)System.JSON.deserialize(Oport, Opportunity.class);
+        Opportunity opportunity = [select id from Opportunity where id = :idOpportunity];
         
         System.debug('oppAux.Division_SAP__c: ' + oppAux.Division_SAP__c);
         System.debug('opportunity: ' + opportunity);
@@ -280,7 +280,7 @@ La búsqueda de clientes puede hacerse por:
         System.debug('email_licitaciones: ' + email_licitaciones);
         
         String Mensaje= System.Label.CRM_Enviado_correo_a_licitaciones_CL; //Mensaje de confirmacion de envio de correo - Etiqueta personalizada
-        Oportunidad__c oppAux = (Oportunidad__c)System.JSON.deserialize(Oport, Oportunidad__c.class);
+        Opportunity oppAux = (Opportunity)System.JSON.deserialize(Oport, Opportunity.class);
 
         //Tomar valor de configuracion del report
         //  ApexPages.PageReference report = new ApexPages.PageReference('https://ayesaoaci--crmdev.cs83.my.salesforce.com/00O4E000000XiaDUAS/view&export=1&enc=UTF-8&xf=xls');
@@ -307,7 +307,7 @@ La búsqueda de clientes puede hacerse por:
         
         //Cogemos al propietario de la opp para ponerlo en el correo como CC
         System.debug('oppAux ->' +oppAux);
-        Oportunidad__c opOwner = [select id, OwnerId from Oportunidad__c where id = :oppAux.id];
+        Opportunity opOwner = [select id, OwnerId from Opportunity where id = :oppAux.id];
         System.debug('opOwner ->' +opOwner);
         User owner = [SELECT Name, Email FROM User WHERE Id= :opOwner.OwnerId];
         System.debug('owner ->' +owner); 
@@ -358,7 +358,7 @@ La búsqueda de clientes puede hacerse por:
             +'</td></tr><tr style="height: 18px;"><td style="width: 137px; height: 18px;"><span style="color: #3366ff;">Fecha inicio PEP</span></td><td style="width: 356px; height: 18px;">&nbsp;'
             + (oppAux.Fecha_estimada_de_cierre_calc__c).format()
             +'</td><td style="width: 200px; height: 18px;"><span style="color: #3366ff;">Fecha fin PEP</span></td><td style="width: 360px; height: 18px;" colspan="3">&nbsp;'
-            + (oppAux.Fecha_Fin_PEP_cal__c).format()
+           // + (oppAux.Fecha_Fin_PEP_cal__c).format()
             +'</td></tr><tr style="height: 12px;"><td style="width: 137px; height: 12px;"><span style="color: #3366ff;">Probabilidad</span></td><td style="width: 356px; height: 12px;">&nbsp;'
             +oppAux.Probabilidad__c 
             +'</td><td style="width: 200px; height: 12px;"><span style="color: #3366ff;">Plazo en meses</span></td><td style="width: 10px; height: 12px;" colspan="3">&nbsp; &nbsp;'
@@ -420,7 +420,7 @@ La búsqueda de clientes puede hacerse por:
             System.debug('Se ha enviado el email');
         }
         
-        Oportunidad__c opportunity = [select id from Oportunidad__c where id = :oppAux.id];
+        Opportunity opportunity = [select id from Opportunity where id = :oppAux.id];
             
         opportunity.Fecha_sol_cod__c = date.today();
         opportunity.Actualizar_Estado__c=true;
@@ -471,18 +471,20 @@ system.debug(CENTRO[0]);*/
         //system.debug(Mapa_Parametrica);
         
         //Obtención de datos de la oportunidad
-        List<Oportunidad__c> opps = [select id, Name ,Falta_definicion_del_objeto__c,
-                                     No_existe_Limitacion__c, Se_incluye_lucro__c,
-                                     Posibilidad_de_resoluci_n_unilateral__c, Resoluci_n_por_conveniencia__c,
-                                     Causas_no_tasadas_y_ambiguas__c, 
+        List<Opportunity> opps = [select id, Name ,Falta_definicion_del_objeto__c,
+                                    // No_existe_Limitacion__c,
+                                    // Se_incluye_lucro__c,
+                                    // Posibilidad_de_resoluci_n_unilateral__c, Resoluci_n_por_conveniencia__c,
+                                    // Causas_no_tasadas_y_ambiguas__c, 
                                      Codigo_OC__c, 
                                      //Codigo_OC2__c,
                                      Objetivo_del_proyecto__c, Cliente__c,
                                      Division_SAP__c, Fecha_limite_de_presentacion__c,
-                                     Fecha_estimada_de_cierre__c, Plazo_de_ejecuci_n_meses__c,Fecha_Fin_PEP_cal__c,
-                                     Importe_euros__c, Importe_total_sin_IVA__c,
+                                     Fecha_estimada_de_cierre__c, Plazo_de_ejecuci_n_meses__c,//Fecha_Fin_PEP_cal__c,
+                                     //Importe_euros__c, 
+                                     Importe_total_sin_IVA__c,
                                      Jefe_de_Proyecto__c, GP__c,
-                                     RUP__c, Probabilidad_CRM_SAP__c,
+                                     RUP__c,// Probabilidad_CRM_SAP__c,
                                      Area_de_negocio__c, Area_de_negocio_N1__c,
                                      Area_de_negocio_N2__c,
                                      Fecha_estimada_de_cierre_calc__c,
@@ -493,8 +495,8 @@ system.debug(CENTRO[0]);*/
                                      Territorio_ejecucion__c,
                                      Territorio_cliente__c,
                                      Centro__c,
-                                     Grupo__c,
-                                     Subgrupo__c,
+                                    // Grupo__c,
+                                    // Subgrupo__c,
                                      Probabilidad__c,
                                      Clasificacion_funcional_Nivel_1__c,
                                      Clasificacion_funcional_Nivel_2__c,
@@ -512,12 +514,12 @@ system.debug(CENTRO[0]);*/
                                      Proyecto_Inductor_3__c,
                                      Tipo_Induccion_3__c,
                                      Proyecto_Inductor_4__c,
-                                     Tipo_Induccion_4__c,
+                                     Tipo_Induccion_4__c
                                      //07/2022
-                                     ETC__c
-                                     from Oportunidad__c  where id = :idOpportunity];
+                                     //ETC__c
+                                     from Opportunity  where id = :idOpportunity];
         
-        Oportunidad__c opportunity = new Oportunidad__c();
+        Opportunity opportunity = new Opportunity();
         if (opps.size() > 0) {
             opportunity = opps.get(0);
             //system.debug(opportunity.cliente__r.name); 
@@ -538,16 +540,16 @@ system.debug(CENTRO[0]);*/
         String ETC='';
         DateTime dt = opportunity.Fecha_estimada_de_cierre_calc__c;
         fechaInicio = dt.format('yyyy-MM-dd');
-        dt = opportunity.Fecha_Fin_PEP_cal__c;
+       // dt = opportunity.Fecha_Fin_PEP_cal__c;
         fechaFin = dt.format('yyyy-MM-dd');	
         dt = opportunity.Fecha_limite_de_presentacion__c;
         fechaPresentacion = dt.format('yyyy-MM-dd');	
         
         clienteSAPCod = opportunity.Cliente__r.SAP_Account__c.leftPad(10, '0'); //completamos con 0 hasta 10 caracteres
         //07/2022
-        if(opportunity.ETC__c != null){
-        ETC = opportunity.ETC__c;
-        }
+      //  if(opportunity.ETC__c != null){
+      //  ETC = opportunity.ETC__c;
+      //  }
         //Control de MODO con respecto al código del Centro    
         List<Parametrica__c> centro = Mapa_Parametrica.get('CENTRO');    
         System.debug('Mapa_Parametrica.centro: ' + centro);
@@ -744,22 +746,22 @@ system.debug(CENTRO[0]);*/
         system.debug('Codigo de territorio de cliente: ' + paisClienteCod);
         
         //Control de GRUPO para el valor seleccionado    
-        List<Parametrica__c> grupos = Mapa_Parametrica.get('GRUPO');    
-        for (integer i=0; i<grupos.size(); i++ ){
-            if (grupos[i].Valor__c == opportunity.Grupo__c){
-                grupoCod = grupos[i].Name;
-            }        
-        }
-        system.debug('Codigo de Grupo: ' + grupoCod);
+     //   List<Parametrica__c> grupos = Mapa_Parametrica.get('GRUPO');    
+     //   for (integer i=0; i<grupos.size(); i++ ){
+     //       if (grupos[i].Valor__c == opportunity.Grupo__c){
+     //           grupoCod = grupos[i].Name;
+     //       }        
+     //   }
+     //   system.debug('Codigo de Grupo: ' + grupoCod);
         
         //Control de SUBGRUPO para el valor seleccionado    
-        List<Parametrica__c> subgrupos = Mapa_Parametrica.get('SUBGRUPO');    
-        for (integer i=0; i<subgrupos.size(); i++ ){
-            if (subgrupos[i].Valor__c == opportunity.Subgrupo__c){
-                subGrupoCod = subgrupos[i].Name;
-            }        
-        }
-        system.debug('Codigo de Subgrupo: ' + subGrupoCod);
+    //    List<Parametrica__c> subgrupos = Mapa_Parametrica.get('SUBGRUPO');    
+    //    for (integer i=0; i<subgrupos.size(); i++ ){
+    //        if (subgrupos[i].Valor__c == opportunity.Subgrupo__c){
+    //            subGrupoCod = subgrupos[i].Name;
+    //        }        
+    //    }
+   //    system.debug('Codigo de Subgrupo: ' + subGrupoCod);
         
         //Control de SECTOR CLIENTE para el valor seleccionado    
         List<Parametrica__c> sectorcliente = Mapa_Parametrica.get('SECTOR_CLIENTE');    
@@ -1043,10 +1045,10 @@ system.debug(CENTRO[0]);*/
         
         PRPS_element3.ZZCLAVECON ='';
         //07/2022
-        if(opportunity.ETC__c != null){
-        PRPS_element3.YYSERVICIO=ETC;
-        system.debug('PRPS_element3.YYSERVICIO: ' + ETC );
-        }
+    //    if(opportunity.ETC__c != null){
+    //    PRPS_element3.YYSERVICIO=ETC;
+    //    system.debug('PRPS_element3.YYSERVICIO: ' + ETC );
+    //    }
 
         PRPS_Table.item = new CRM_SAP_WS_Controller.PRPS[3];
         PRPS_Table.item[0] = PRPS_element1;
@@ -1155,7 +1157,7 @@ system.debug(CENTRO[0]);*/
         CRM_SAP_WS_Controller.YWS_CREAR_OFERTA_CRM_RFC soapFunction = new CRM_SAP_WS_Controller.YWS_CREAR_OFERTA_CRM_RFC();
         
         //07/2022 añado a response el campo YYSERVICIO que es ETC
-        try {   
+     /*   try {   
             response_x= soapFunction.YPS_CREAR_OFERTA_CRM_RFC('L01', opportunity.Proyecto_Inductor_1__c, opportunity.Proyecto_Inductor_2__c, opportunity.Proyecto_Inductor_3__c, opportunity.Proyecto_Inductor_4__c, opportunity.Programa_Inductor__c, 
                                                               '', IHPA_Table, PROJ_Table, PRPS_Table, PRTE_Table, RETURN_Table, TLINE_Table, YPS013_Table, YPS066_Table, YPS068_Table, YPS100_Table, opportunity.Tipo_Induccion_1__c, opportunity.Tipo_Induccion_2__c, opportunity.Tipo_Induccion_3__c, opportunity.Tipo_Induccion_4__c,opportunity.ETC__c);
             System.debug('Respuesta Completa SAP: ' + response_x);       
@@ -1196,7 +1198,7 @@ system.debug(CENTRO[0]);*/
             System.debug('Error no esperado al invocar SAP Service YPS_CREAR_OFERTA_CRM_RFC: ' + ex);
             gen.writeStringField('status', 'Error'); 
             gen.writeStringField('message', 'Se ha producido un error al invocar la generación de oferta en SAP.');             
-        }
+        }*/
         
         gen.writeEndObject();
         result = gen.getAsString();
@@ -1205,7 +1207,7 @@ system.debug(CENTRO[0]);*/
         return result;
     }
     
-    public static Boolean updateOportunidad (Oportunidad__c opp) { 
+    public static Boolean updateOportunidad (Opportunity opp) { 
         
         opp.Tipo_de_Oportunidad__c = 'Licitación';
         

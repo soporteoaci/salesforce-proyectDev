@@ -20,7 +20,7 @@ public class Tarea_aprobacion_Test {
     public static void Aprobacion_Oferta(){
         Test.startTest();
         
-        Id RecordTypeAyesa = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
+        Id RecordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
         //System.debug('Id RecordType de Estructura Organizativa: '+ RecordTypeEst);
         Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
         insert Cliente;
@@ -34,7 +34,7 @@ public class Tarea_aprobacion_Test {
         //String codigoId= param2.Id;
         //Codigo_Org_Comercial_IB__c=codigoId
         
-        Oportunidad__c op= new Oportunidad__c(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
+        Opportunity op= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
                                               Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', 	Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                               Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS');
         op.CreatedDate=system.today();
@@ -45,14 +45,14 @@ public class Tarea_aprobacion_Test {
         
         // Creamos tarea de aprobacion
         List <Tarea_aprobacion__c> tareas_insert = new List <Tarea_aprobacion__c> (); 
-        Tarea_aprobacion__c tarea1 = new Tarea_aprobacion__c (Name='Aprobador 1', Fecha_solicitud__c = System.today(), Decision__c ='En proceso', Tipo__c = 'Preliminar', Oportunidad__c = op.Id);
+        Tarea_aprobacion__c tarea1 = new Tarea_aprobacion__c (Name='Aprobador 1', Fecha_solicitud__c = System.today(), Decision__c ='En proceso', Tipo__c = 'Preliminar', Opportunity__c = op.Id);
         tareas_insert.add(tarea1);
-        Tarea_aprobacion__c tarea2 = new Tarea_aprobacion__c (Name='Aprobador 1', Fecha_solicitud__c = System.today(), Decision__c ='En proceso', Tipo__c = 'Preliminar', Oportunidad__c = op.Id);
+        Tarea_aprobacion__c tarea2 = new Tarea_aprobacion__c (Name='Aprobador 1', Fecha_solicitud__c = System.today(), Decision__c ='En proceso', Tipo__c = 'Preliminar', Opportunity__c = op.Id);
         tareas_insert.add(tarea2);
         
-        Tarea_aprobacion__c tarea3 = new Tarea_aprobacion__c (Name='Aprobador 1', Fecha_solicitud__c = System.today(), Decision__c ='En proceso', Tipo__c = 'Oferta', Oportunidad__c = op.Id);
+        Tarea_aprobacion__c tarea3 = new Tarea_aprobacion__c (Name='Aprobador 1', Fecha_solicitud__c = System.today(), Decision__c ='En proceso', Tipo__c = 'Oferta', Opportunity__c = op.Id);
         tareas_insert.add(tarea3);
-        Tarea_aprobacion__c tarea4 = new Tarea_aprobacion__c (Name='Aprobador 1', Fecha_solicitud__c = System.today(), Decision__c ='En proceso', Tipo__c = 'Oferta', Oportunidad__c = op.Id);
+        Tarea_aprobacion__c tarea4 = new Tarea_aprobacion__c (Name='Aprobador 1', Fecha_solicitud__c = System.today(), Decision__c ='En proceso', Tipo__c = 'Oferta', Opportunity__c = op.Id);
         tareas_insert.add(tarea4);
         
         insert tareas_insert;

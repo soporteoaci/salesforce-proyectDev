@@ -15,8 +15,8 @@ public class CreacionOfertaControllerTest {
     @isTest static void test_carga_datos_ok(){
         
         // Test data setup
-        TestDataFactory.initParametricas();
-        Oportunidad__c oports = TestDataFactory.createOportunidad('Cualificación', 'AAT - TORRE PELLI');
+    //    TestDataFactory.initParametricas();
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
         
         
         // Perform test
@@ -79,12 +79,12 @@ public class CreacionOfertaControllerTest {
     @isTest static void test_saveOpp_Ok(){
 
         // Test data setup
-        TestDataFactory.initParametricas();
-        Oportunidad__c oports = TestDataFactory.createOportunidad('Cualificación', 'AAT - TORRE PELLI');
+        //TestDataFactory.initParametricas();
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
                 
         // Perform test
         Test.startTest();  
-        Oportunidad__c oportunidad = TestDataFactory.getOportunidad(oports.Id);
+        Opportunity oportunidad = TestDataFactory.getOpportunity(oports.Id);
         //Comentado por cambio en las etapas 2024
         //oportunidad.Etapa__c = 'Pedido Código Oferta';  //Cambio de estado permitido
         
@@ -101,12 +101,12 @@ public class CreacionOfertaControllerTest {
     @isTest static void test_saveOpp_Error(){
 
         // Test data setup
-        TestDataFactory.initParametricas();
-        Oportunidad__c oports = TestDataFactory.createOportunidad('Cualificación', 'AAT - TORRE PELLI');
+       // TestDataFactory.initParametricas();
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
         
         // Perform test
         Test.startTest();    
-        Oportunidad__c oportunidad = TestDataFactory.getOportunidad(oports.Id);
+        Opportunity oportunidad = TestDataFactory.getOpportunity(oports.Id);
         oportunidad.Etapa__c = 'Presentada';  //Cambio de estado no permitido
         
         
@@ -124,12 +124,12 @@ public class CreacionOfertaControllerTest {
     @isTest static void test_EnvioCorreo () { 
 		
         // Test data setup
-        TestDataFactory.initParametricas();
-        Oportunidad__c oports = TestDataFactory.createOportunidad('Cualificación', 'AAT - TORRE PELLI');
+        //TestDataFactory.initParametricas();
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
         
         // Perform test
         Test.startTest();  
-        Oportunidad__c oportunidad = TestDataFactory.getOportunidad(oports.Id);
+        Opportunity oportunidad = TestDataFactory.getOpportunity(oports.Id);
         String jsonOport = System.JSON.serialize(oportunidad);        
         String resultStr = CreacionOfertaController.EnvioCorreo(jsonOport);
         Test.stopTest();
@@ -140,9 +140,9 @@ public class CreacionOfertaControllerTest {
     @isTest static void test_OfferGeneratorApex_Ok () { 
 		
         // Test data setup
-        TestDataFactory.initParametricas();
+        //TestDataFactory.initParametricas();
         //Comentado por cambio en las etapas 2024 Pedido Código Oferta --> Cualificación
-        Oportunidad__c oports = TestDataFactory.createOportunidad('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
         
         // Perform test
         Test.startTest();        
@@ -158,9 +158,9 @@ public class CreacionOfertaControllerTest {
     @isTest static void test_OfferGeneratorApex_Ok2 () { 
 		
         // Test data setup
-        TestDataFactory.initParametricas();
+        //TestDataFactory.initParametricas();
         //Comentado por cambio en las etapas 2024 Pedido Código Oferta --> Cualificación
-        Oportunidad__c oports = TestDataFactory.createOportunidad('Cualificación', 'AAT - TORRE PELLI 2');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI 2');
         
         // Perform test
         Test.startTest();        
@@ -176,8 +176,8 @@ public class CreacionOfertaControllerTest {
     @isTest static void test_OfferGeneratorApex_Error () { 
 		
         // Test data setup
-        TestDataFactory.initParametricas();
-        Oportunidad__c oports = TestDataFactory.createOportunidad('Cualificación', 'AAT - TORRE PELLI');
+        //TestDataFactory.initParametricas();
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
         
         // Perform test
         Test.startTest();

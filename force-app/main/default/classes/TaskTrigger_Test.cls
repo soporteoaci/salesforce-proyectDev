@@ -20,7 +20,7 @@ public class TaskTrigger_Test {
     public static void crear_update_tarea(){
         Test.startTest();
         
-        Id RecordTypeAyesa = Schema.SObjectType.Oportunidad__c.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
+        Id RecordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
         //System.debug('Id RecordType de Estructura Organizativa: '+ RecordTypeEst);
         Account Cliente= new Account(Name='Cliente 12345', SAP_Account__c='12345', Alias__c='Cliente',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
         insert Cliente;
@@ -28,7 +28,7 @@ public class TaskTrigger_Test {
         Contact contacto = new Contact (LastName ='Contacto prueba', FirstName ='Nombre', accountid = cliente.Id);
         insert contacto;
         //Oportunidad creada solo con Mercado y Division
-        Oportunidad__c op= new Oportunidad__c(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
+        Opportunity op= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
                                                           Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', 	Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                                           Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
         op.CreatedDate=system.today();
@@ -50,30 +50,30 @@ public class TaskTrigger_Test {
         
         tarea.WhatId=null;
        	tarea.Clic_comercial__c=null;
-        tarea.Oportunidad__c=op.id;
+        tarea.Opportunity__c=op.id;
         update tarea;
         
         tarea.WhatId=null;
        	tarea.Clic_comercial__c=null;
-        tarea.Oportunidad__c=op.id;
+        tarea.Opportunity__c=op.id;
         update tarea;
         
         tarea.WhatId=op.id;
        	tarea.Clic_comercial__c=null;
-        tarea.Oportunidad__c=null;
+        tarea.Opportunity__c=null;
         tarea.Objetivo__c=null;
         update tarea;
         
         
         tarea.WhatId=obj.id;
        	tarea.Clic_comercial__c=null;
-        tarea.Oportunidad__c=null;
+        tarea.Opportunity__c=null;
         tarea.Objetivo__c=null;
         update tarea;
         
         tarea.WhatId=null;
        	tarea.Clic_comercial__c=null;
-        tarea.Oportunidad__c=null;
+        tarea.Opportunity__c=null;
         tarea.Objetivo__c=obj.id;
         update tarea;
        

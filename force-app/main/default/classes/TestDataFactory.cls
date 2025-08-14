@@ -109,28 +109,28 @@ public class TestDataFactory {
 
     
     
-    public static Oportunidad__c getOportunidad(String idOpportunity) {
+    public static Opportunity getOpportunity(String idOpportunity) {
         
-        List<Oportunidad__c> opps =  [select id, Name ,Falta_definicion_del_objeto__c,
-                                      No_existe_Limitacion__c,
-                                      Se_incluye_lucro__c,
-                                      Posibilidad_de_resoluci_n_unilateral__c,
-                                      Resoluci_n_por_conveniencia__c,
-                                      Causas_no_tasadas_y_ambiguas__c,
+        List<Opportunity> opps =  [select id, Name ,//Falta_definicion_del_objeto__c
+                                      //No_existe_Limitacion__c,
+                                      //Se_incluye_lucro__c,
+                                      //Posibilidad_de_resoluci_n_unilateral__c,
+                                      //Resoluci_n_por_conveniencia__c,
+                                      //Causas_no_tasadas_y_ambiguas__c,
                                       //Codigo_OC__c,
-                                      Codigo_OC2__c,
+                                      //Codigo_OC2__c,
                                       Objetivo_del_proyecto__c,
                                       Cliente__c,
                                       Division_SAP__c,
                                       Fecha_limite_de_presentacion__c,
                                       Fecha_estimada_de_cierre__c,
-                                      Plazo_de_ejecuci_n_meses__c,Fecha_Fin_PEP_cal__c,
-                                      Importe_euros__c,
+                                      Plazo_de_ejecuci_n_meses__c,//Fecha_Fin_PEP_cal__c,
+                                      //Importe_euros__c,
                                       Importe_total_sin_IVA__c,
                                       Jefe_de_Proyecto__c,
                                       GP__c,
                                       RUP__c,
-                                      Probabilidad_CRM_SAP__c,
+                                      //Probabilidad_CRM_SAP__c,
                                       Area_de_negocio__c,
                                       Area_de_negocio_N1__c,
                                       Area_de_negocio_N2__c,
@@ -142,8 +142,8 @@ public class TestDataFactory {
                                       Territorio_ejecucion__c,
                                       Territorio_cliente__c,
                                       Centro__c,
-                                      Grupo__c,
-                                      Subgrupo__c,
+                                      //Grupo__c,
+                                      //Subgrupo__c,
                                       Probabilidad__c,
                                       Clasificacion_funcional_Nivel_1__c,
                                       Clasificacion_funcional_Nivel_2__c,
@@ -155,7 +155,7 @@ public class TestDataFactory {
                                       Cliente__r.SAP_Account__c,
                                       Oferta_SAP__c,
                                       Etapa__c
-                                      from Oportunidad__c  where id = :idOpportunity];
+                                      from Opportunity  where id = :idOpportunity];
         
         if (opps.size() > 0) {
             return opps.get(0);
