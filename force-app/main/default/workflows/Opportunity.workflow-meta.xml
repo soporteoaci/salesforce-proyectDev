@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>Alerta_Aprobacion_Opportunity</fullName>
+        <description>Alerta Aprobación Opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/NewAction_SSC</template>
+    </alerts>
+    <alerts>
         <fullName>Alerta_Aprobacion_Opportunity_Propietario</fullName>
         <description>Alerta Aprobación Opportunity Propietario</description>
         <protected>false</protected>
@@ -10,6 +21,28 @@
         <senderAddress>soporteoaci@ayesa.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Ayesa/Oportunidad_Aviso_preliminar</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerta_creacion</fullName>
+        <description>Alerta creacion</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/Oportunidad_Aviso_preliminar</template>
+    </alerts>
+    <alerts>
+        <fullName>Envio_correo_aprobacion</fullName>
+        <description>Envio correo aprobacion</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/NewAction_SSC</template>
     </alerts>
     <alerts>
         <fullName>Opportunity_Alerta_Aprobacion_Oferta_CCO</fullName>
@@ -202,5 +235,16 @@
         <senderAddress>soporteoaci@ayesa.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Oportunidad_Aviso_Subfase_Ganada</template>
+    </alerts>
+    <alerts>
+        <fullName>Recordatorio_convocar_reunion_QA</fullName>
+        <description>Recordatorio convocar reunión QA</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/Recordatorio_Reuni_n_QA</template>
     </alerts>
 </Workflow>

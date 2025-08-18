@@ -18,17 +18,17 @@ public class CreacionOfertaIngenieriaController {
         System.debug('Usuario: ' + userInfo.getProfileId());
         System.debug('Profile: ' + userProfile.Name);
         
-        if (!Schema.sObjectType.Oportunidad__c.isAccessible()){
+        if (!Schema.sObjectType.Opportunity.isAccessible()){
             return null;
         }
         
         // Recuperamos datos de la oportunidad
-        List<Oportunidad__c> opps = [select id, Name ,Falta_definicion_del_objeto__c,
-                                     No_existe_Limitacion__c,
-                                     Se_incluye_lucro__c,
-                                     Posibilidad_de_resoluci_n_unilateral__c,
-                                     Resoluci_n_por_conveniencia__c,
-                                     Causas_no_tasadas_y_ambiguas__c,
+        List<Opportunity> opps = [select id, Name ,Falta_definicion_del_objeto__c,
+                                     //No_existe_Limitacion__c,
+                                     //Se_incluye_lucro__c,
+                                     //Posibilidad_de_resoluci_n_unilateral__c,
+                                     //Resoluci_n_por_conveniencia__c,
+                                     //Causas_no_tasadas_y_ambiguas__c,
                                      Codigo_OC__c,
                                      //Codigo_OC2__c,
                                      Objetivo_del_proyecto__c,
@@ -46,18 +46,18 @@ public class CreacionOfertaIngenieriaController {
                                      Actualizar_Estado__c,
                                      Cliente__r.SAP_Account__c,
                                      Oferta_SAP__c,
-                                     CECO__c,
+                                     //CECO__c,
                                      RUP__c,
                                      GP__c,
-                                     Responsable__c,
-                                     Proyecto_Especial__c,
+                                     //Responsable__c,
+                                     //Proyecto_Especial__c,
                                      Fecha_Apertura__c,
                                      Tipo_de_Oportunidad__c,
-                                     Etapa__c, Nacional__c, Margen_Previsto_Euros__c, Emplazamiento__c, Division_SAP__c, Sociedad_Ayesa__c, Division_SAP_Ingenieria__c,
-                                     ETC__c
-                                     from Oportunidad__c  where id = :idOpportunity];
+                                     Etapa__c,/* Nacional__c,*/ Margen_Previsto_Euros__c, /*Emplazamiento__c,*/ Division_SAP__c, Sociedad_Ayesa__c, Division_SAP_Ingenieria__c
+                                     //ETC__c
+                                     from Opportunity  where id = :idOpportunity];
         
-        Oportunidad__c opportunity = null;
+        Opportunity opportunity = null;
         
         if (opps.size() > 0) {
             status = 'OK';
@@ -89,7 +89,7 @@ public class CreacionOfertaIngenieriaController {
             gen.writeObjectField('oportunidad', opportunity);
         }
         
-        //Oportunidad__c opportunity = opps.get(0);
+        //Opportunity opportunity = opps.get(0);
         
         // Recuperamos datos de parametricas
         List<Parametrica__c> params = [select Id, Name, Valor__c, Tipo__c, Tipo_Padre__c, Codigo_Padre__c, Activo__c, Permanente__c, Auxiliar__c 
@@ -221,10 +221,10 @@ public class CreacionOfertaIngenieriaController {
     
     @AuraEnabled
     public static String getIdCliente(String idOpp){
-        if (!Schema.sObjectType.Oportunidad__c.isAccessible()){
+        if (!Schema.sObjectType.Opportunity.isAccessible()){
             return null;
         }
-        Oportunidad__c oportunidad = [SELECT Cliente__c FROM Oportunidad__c WHERE id =:idOpp limit 1];
+        Opportunity oportunidad = [SELECT Cliente__c FROM Opportunity WHERE id =:idOpp limit 1];
         return oportunidad.Cliente__c;
     }
     
@@ -249,8 +249,8 @@ public class CreacionOfertaIngenieriaController {
         JSONGenerator gen = JSON.createGenerator(true); 
         gen.writeStartObject();
                 
-        Oportunidad__c oppAux = (Oportunidad__c)System.JSON.deserialize(Oport, Oportunidad__c.class);
-        Oportunidad__c opportunity = [select id from Oportunidad__c where id = :idOpportunity];
+        Opportunity oppAux = (Opportunity)System.JSON.deserialize(Oport, Opportunity.class);
+        Opportunity opportunity = [select id from Opportunity where id = :idOpportunity];
         
         opportunity=oppAux;
         
@@ -279,7 +279,7 @@ public class CreacionOfertaIngenieriaController {
         System.debug('email_licitaciones: ' + email_licitaciones);
         
         String Mensaje= System.Label.CRM_Enviado_correo_a_licitaciones_CL; //Mensaje de confirmacion de envio de correo - Etiqueta personalizada
-        Oportunidad__c oppAux = (Oportunidad__c)System.JSON.deserialize(opp, Oportunidad__c.class);
+        Opportunity oppAux = (Opportunity)System.JSON.deserialize(opp, Opportunity.class);
         
         
         
@@ -332,7 +332,7 @@ public class CreacionOfertaIngenieriaController {
             +'</td></tr><tr style="height: 18px;"><td style="width: 137px; height: 18px;"><span style="color: #3366ff;">Cliente</span></td><td style="width: 356px; height: 18px;" colspan="5">&nbsp; '
             + oppAux.Cliente__r.Name 
             +'</td></tr><tr style="height: 18px;"><td style="width: 137px; height: 18px;"><span style="color: #3366ff;">Responsable</span></td><td style="width: 356px; height: 18px;">'
-            + oppAux.Responsable__c
+           // + oppAux.Responsable__c
             +'</td><td style="width: 200px; height: 36px;"><span style="color: #3366ff;">Fecha limite presentaci&oacute;n</span></td><td style="width: 360px; height: 36px;" colspan="3">&nbsp;'
             + (oppAux.Fecha_limite_de_presentacion__c).format()
             +'</td></tr><tr style="height: 18px;"><td style="width: 137px; height: 18px;"><span style="color: #3366ff;">Fecha inicio PEP</span></td><td style="width: 356px; height: 18px;">&nbsp;'
@@ -356,7 +356,7 @@ public class CreacionOfertaIngenieriaController {
                 Messaging.sendEmail( new Messaging.SingleEmailMessage[] { message } );
             }
             
-            Oportunidad__c opportunity = [select id from Oportunidad__c where id = :oppAux.id];
+            Opportunity opportunity = [select id from Opportunity where id = :oppAux.id];
             
             opportunity.Fecha_sol_cod__c = date.today();
             opportunity.Actualizar_Estado__c=true;
@@ -392,17 +392,17 @@ public class CreacionOfertaIngenieriaController {
         
         string info = 'Oferta creada correctamente';
         
-        if (!Schema.sObjectType.Oportunidad__c.isAccessible()){
+        if (!Schema.sObjectType.Opportunity.isAccessible()){
             return null;
         }
         
         // Recuperamos datos de la oportunidad
-        List<Oportunidad__c> opps = [select id, Name ,Falta_definicion_del_objeto__c,
-                                     No_existe_Limitacion__c,
-                                     Se_incluye_lucro__c,
-                                     Posibilidad_de_resoluci_n_unilateral__c,
-                                     Resoluci_n_por_conveniencia__c,
-                                     Causas_no_tasadas_y_ambiguas__c,
+        List<Opportunity> opps = [select id, Name ,Falta_definicion_del_objeto__c,
+                                    // No_existe_Limitacion__c,
+                                    // Se_incluye_lucro__c,
+                                    // Posibilidad_de_resoluci_n_unilateral__c,
+                                    // Resoluci_n_por_conveniencia__c,
+                                    // Causas_no_tasadas_y_ambiguas__c,
                                      Codigo_OC__c,
                                      //Codigo_OC2__c,
                                      Objetivo_del_proyecto__c,
@@ -419,14 +419,14 @@ public class CreacionOfertaIngenieriaController {
                                      Actualizar_Estado__c,
                                      Cliente__r.SAP_Account__c,
                                      Oferta_SAP__c,
-                                     CECO__c,
+                                     //CECO__c,
                                      RUP__c,
                                      GP__c,
-                                     Responsable__c,
+                                     //Responsable__c,
                                      Tipo_de_Oportunidad__c,
                                      Fecha_Apertura__c,
-                                     Proyecto_Especial__c,
-                                     Etapa__c, Nacional__c, Margen_Previsto_Euros__c, Emplazamiento__c, Division_SAP__c, Sociedad_Ayesa__c, Division_SAP_Ingenieria__c, Margen_estimado_incluye_recargos__c,
+                                    // Proyecto_Especial__c,
+                                     Etapa__c, /*Nacional__c,*/ Margen_Previsto_Euros__c, /*Emplazamiento__c,*/ Division_SAP__c, Sociedad_Ayesa__c, Division_SAP_Ingenieria__c, Margen_estimado_incluye_recargos__c,
                                      Programa_Inductor__c,
                                      Proyecto_Inductor_1__c,
                                      Tipo_Induccion_1__c,
@@ -435,12 +435,12 @@ public class CreacionOfertaIngenieriaController {
                                      Proyecto_Inductor_3__c,
                                      Tipo_Induccion_3__c,
                                      Proyecto_Inductor_4__c,
-                                     Tipo_Induccion_4__c,
+                                     Tipo_Induccion_4__c
                                      //07/07/2022
-                                     ETC__c
-                                     from Oportunidad__c  where id = :idOpportunity];
+                                    // ETC__c
+                                     from Opportunity  where id = :idOpportunity];
         
-        Oportunidad__c opportunity = new Oportunidad__c();
+        Opportunity opportunity = new Opportunity();
         
         if (opps.size() > 0) {
             opportunity = opps.get(0);
@@ -485,8 +485,8 @@ public class CreacionOfertaIngenieriaController {
         
         codOfComercial = opportunity.Codigo_OC__c;
         //codOfComercial = opportunity.Codigo_OC2__c;
-        ceco = opportunity.CECO__c;
-        responsable = (opportunity.Responsable__c != null) ? opportunity.Responsable__c.substringAfterLast('- ') : null;
+        //ceco = opportunity.CECO__c;
+        //responsable = (opportunity.Responsable__c != null) ? opportunity.Responsable__c.substringAfterLast('- ') : null;
         objProyecto = (opportunity.Objetivo_del_proyecto__c != null && opportunity.Objetivo_del_proyecto__c.length() > 40) ? opportunity.Objetivo_del_proyecto__c.substring(0, 40) : opportunity.Objetivo_del_proyecto__c; //Limitamos a 40 caracteres
         //tituloCortoSAP = opportunity.Titulo_corto_SAP__c;
         if(opportunity.GP__c != null && opportunity.GP__c != '')
@@ -500,7 +500,7 @@ public class CreacionOfertaIngenieriaController {
         margen = String.valueOf(opportunity.Margen_estimado_incluye_recargos__c);
         
         //nOferta = opportunity.Oferta_SAP__c;
-        if(opportunity.Nacional__c == True){
+      /*  if(opportunity.Nacional__c == True){
             nacional = 'N';
         }else{
             nacional = 'I';
@@ -514,7 +514,7 @@ public class CreacionOfertaIngenieriaController {
         String ETC='';
         if (Opportunity.ETC__c !=null){
             ETC= opportunity.ETC__c;
-        }
+        }*/
         
         //Control de MODO con respecto al código del Centro    
         List<Parametrica__c> centro = Mapa_Parametrica.get('CENTRO');    
@@ -551,14 +551,14 @@ public class CreacionOfertaIngenieriaController {
         system.debug('Codigo de pais ejecucion: ' + paisCod);
         
         //Control de EMPLAZAMIENTO 
-        List<Parametrica__c> territorios = Mapa_Parametrica.get('EMPLAZAMIENTO');    
+      /*  List<Parametrica__c> territorios = Mapa_Parametrica.get('EMPLAZAMIENTO');    
         for (integer i=0; i<territorios.size(); i++ ){
             if (territorios[i].Valor__c == opportunity.Emplazamiento__c){
                 emplazamientoCod = territorios[i].Name;
             }          
         }
         system.debug('Codigo de emplazamiento Opp.: ' + opportunity.Emplazamiento__c);
-        system.debug('Codigo de emplazamiento: ' + emplazamientoCod);
+        system.debug('Codigo de emplazamiento: ' + emplazamientoCod);*/
 
         //Control de TIPO TRABAJO para el valor seleccionado    
         List<Parametrica__c> tipoTrs = Mapa_Parametrica.get('TIPO_TRABAJO');    
@@ -604,13 +604,8 @@ public class CreacionOfertaIngenieriaController {
         CRM_SAP_WS_Controller_OfIngen.YWS_PS_OFERTA_CRM_SALESFORCE soapFunction = new CRM_SAP_WS_Controller_OfIngen.YWS_PS_OFERTA_CRM_SALESFORCE();
         
         
-        try {
-            //07/2022 Incluyo al final ETC__c
-            system.debug('ha entrado try');
-            //response_x = soapFunction.YPS_OFERTA_CRM_SALESFORCE(ceco, centroCod, codSAPCli, objProyecto, cebe_division, emplazamientoCod, fechaApOrden, fechaFin, fechaInicio, GP, nacional, nOferta, paisCod, proyEspecial, responsable, RUP, subtipoTrCod, tipoTrCod, importe, margen, RETURN_Table);
-           /* response_x = soapFunction.YPS_OFERTA_CRM_SALESFORCE(ceco, centroCod, codSAPCli, tituloCortoSAP, cebe_division, emplazamientoCod, fechaApOrden, fechaFin, fechaInicio, GP, nacional, codOfComercial, paisCod, proyEspecial, responsable, RUP, subtipoTrCod, tipoTrCod, 
-                                                                importe, margen, opportunity.Proyecto_Inductor_1__c, opportunity.Proyecto_Inductor_2__c, opportunity.Proyecto_Inductor_3__c, opportunity.Proyecto_Inductor_4__c, opportunity.Programa_Inductor__c, opportunity.Tipo_Induccion_1__c, opportunity.Tipo_Induccion_2__c, opportunity.Tipo_Induccion_3__c,
-                                                                opportunity.Tipo_Induccion_4__c, RETURN_Table, opportunity.ETC__c);*/
+      /*  try {
+            
             //10/2022
             System.debug('Objetivo proyecto envio: ' + objProyecto);
             response_x = soapFunction.YPS_OFERTA_CRM_SALESFORCE(ceco, centroCod, codSAPCli, objProyecto, cebe_division, emplazamientoCod, fechaApOrden, fechaFin, fechaInicio, GP, nacional, codOfComercial, paisCod, proyEspecial, responsable, RUP, subtipoTrCod, tipoTrCod, 
@@ -658,7 +653,7 @@ public class CreacionOfertaIngenieriaController {
             System.debug('Error no esperado al invocar SAP Service YPS_OFERTA_CRM_SALESFORCE: ' + ex);
             gen.writeStringField('status', 'Error'); 
             gen.writeStringField('message', 'Se ha producido un error al invocar la generación de oferta en SAP.</br>' + ex.getMessage());             
-        }
+        }*/
         
         gen.writeEndObject();
         result = gen.getAsString();
@@ -668,7 +663,7 @@ public class CreacionOfertaIngenieriaController {
         
     }
     
-    public static Boolean updateOportunidad (Oportunidad__c opp) { 
+    public static Boolean updateOportunidad (Opportunity opp) { 
         
         opp.Tipo_de_Oportunidad__c = 'Licitación';
         
