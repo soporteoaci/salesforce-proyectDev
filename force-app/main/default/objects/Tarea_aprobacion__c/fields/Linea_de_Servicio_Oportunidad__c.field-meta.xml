@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Linea_de_Servicio_Oportunidad__c</fullName>
     <externalId>false</externalId>
-    <formula>TEXT(Oportunidad__r.Linea_de_Servicio__c )</formula>
+    <formula>TEXT(Opportunity__r.Linea_de_Servicio__c )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Línea de Servicio Oportunidad</label>
     <required>false</required>

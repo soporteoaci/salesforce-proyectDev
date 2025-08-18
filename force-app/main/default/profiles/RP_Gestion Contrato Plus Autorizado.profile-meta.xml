@@ -13115,6 +13115,22 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Opportunity_Aprobaci_n_Equipo_Preventa</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Aprobaci_n_Preliminar_Responsables</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Aprobaci_n_QA_Responsables</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Aprobacion_Oferta_Responsables</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Opportunity_Avanzar_etapa_Oferta_Elaboracion_Oferta</flow>
     </flowAccesses>
     <flowAccesses>
@@ -13151,6 +13167,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Opportunity_Comprobacion_aprobacion_Oportunidad_Socio</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Opportunity_Creacion_Inter_ITDS_Director_Pais</flow>
     </flowAccesses>
     <flowAccesses>
@@ -13168,6 +13188,14 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Opportunity_Obtener_Responsables</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Referencia_Comercial</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Socio_Aprobaci_n_Responsable</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

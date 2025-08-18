@@ -1,142 +1,159 @@
 trigger TaskTrigger on Task (before insert, before update) {
-    
-    System.debug('Trigger tarea');
-    
-    String emailAddress = UserInfo.getUserEmail();
-    //Recuperamos el usuario para no ejecutar el trigger
-    
-    No_ejecutar_triggers__c usuario_no_trigger = [SELECT Correo_usuario__c FROM No_ejecutar_triggers__c LIMIT 1];
-    
-    if(emailAddress != usuario_no_trigger.Correo_usuario__c){
-        
-        
-        for(Task tarea: trigger.new){
-          
-            //1. WhatId = null y Clic_Comercial__c != null --> WhatId=clic_Comercial__c
-            //2. WhatId != null y Clic_comercial__c =null --> SI WhatID es Account --> Clic_comercial__c = WhatID
-            
-            if(tarea.Fecha_Creacion__c==null){
-                tarea.Fecha_Creacion__c = system.today();
-                
-            }
-          
-            
-        
-            //CUENTAS
-            System.debug('CUENTA');
-            
-            if(tarea.WhatId == null && tarea.Clic_Comercial__c != null){
-                
-               System.debug('Actualizamos whatid con clic comercial');
-               tarea.WhatId=tarea.Clic_Comercial__c;
-                
-            }else if(tarea.WhatId != null && tarea.Clic_comercial__c ==null){
-                
-                String sObjName = tarea.WhatId.getSObjectType().getDescribe().getName();
-                System.debug('Tipo de registro WhatId CUENTA: '+ sObjName);
-                
-                if (sObjName =='Account'){
-                    System.debug('Actualizamos clic clomercial con  whatid');
-                    tarea.Clic_comercial__c=tarea.WhatId;
-                }
-                
-            }
-            
-         
-            
-            //3. WhoId = null y Contacto__c != null --> WhoId=Contacto__c
-            //4. WhoId != null y Contacto__c = null --> Si WhoId es Contact --> Contacto__c = WhoId        
-           
-            
-            //CONTACTOS
-            System.debug('CONTACTO');
-            
-            if(tarea.WhoId == null && tarea.Contacto__c != null){
-                
-                System.debug('Actualizamos whoId con contacto y clic comercial con la cuenta del contacto');
-           
-                tarea.WhoId=tarea.Contacto__c;
-                
-                Contact contact = [Select AccountId FROM Contact WHERE Id =: tarea.Contacto__c];            
-                tarea.Clic_comercial__c= contact.AccountId;
-                
-            }else if(tarea.WhoId != null && tarea.Contacto__c ==null){
-                
-                String sObjName = tarea.WhoId.getSObjectType().getDescribe().getName();
-                
-                System.debug('Tipo de registro WhoId CONTACTO: '+ sObjName);
-                
-                if (sObjName =='Contact'){
-                    System.debug('Actualizamos contacto y clic clomercial con whoid y cuenta del contacto respectivamente');
-                    tarea.Contacto__c=tarea.WhoId;
-                    Contact contact = [Select AccountId FROM Contact WHERE Id =: tarea.Contacto__c];            
-                    tarea.Clic_comercial__c= contact.AccountId;
-                }
-                
-            }
-            
-            //1. WhatId = null y Oportunidad != null --> WhatId=Oportunidad__c
-            //2. WhatId != null y Oportunidad__c =null --> SI WhatID es Oportunidad --> Oportunidad__c = WhatID
-            
-            //OPORTUNIDADES
-            System.debug('OPORTUNIDAD');
-            
-            if(tarea.WhatId == null && tarea.Oportunidad__c != null){
-                
-                System.debug('Actualizamos what id con oportunidad y clic comercial con la cuenta de la oc');
-                tarea.WhatId=tarea.Oportunidad__c;
-                
-                Oportunidad__c op = [Select Cliente__c FROM Oportunidad__c WHERE Id =: tarea.Oportunidad__c];            
-                tarea.Clic_comercial__c= op.Cliente__c;
-                
-            }else if(tarea.WhatId != null && tarea.Oportunidad__c ==null){
-                String sObjName = tarea.WhatId.getSObjectType().getDescribe().getName();
-                
-                System.debug('Tipo de registro WhatId OPORTUNIDAD: '+ sObjName);
-                
-                if (sObjName =='Oportunidad__c'){
-                    System.debug('Actualizamos oportunidad con  whatid y cliente con el de la oportunidad');
-                    tarea.Oportunidad__c=tarea.WhatId;
-                    Oportunidad__c op = [Select Cliente__c FROM Oportunidad__c WHERE Id =: tarea.Oportunidad__c]; 
-                    tarea.Clic_comercial__c = op.Cliente__c;
-                }
-                
-            }
-            
-            //OBJETIVOS  
-            System.debug('OBJETIVOS');
-            
-            if(tarea.WhatId == null && tarea.Objetivo__c != null){
-                
-                System.debug('Actualizamos whatid con objetivo y clic comercial con la cuenta del objetivo ');
-                tarea.WhatId=tarea.Objetivo__c;
-                
-                Objetivo__c op = [Select Cuenta__c FROM Objetivo__c WHERE Id =: tarea.Objetivo__c];
-                tarea.Clic_comercial__c= op.Cuenta__c;
-                
-                
-               // System.debug(tarea.Objetivo__c + '/ Cuenta del objetivo: '+ tarea.Objetivo__r.Cuenta__c);
-                
-            }else if(tarea.WhatId != null && tarea.Objetivo__c ==null){
-                
-                String sObjName = tarea.WhatId.getSObjectType().getDescribe().getName();
-                
-                System.debug('Tipo de registro WhatId OBJETIVO: '+ sObjName);
-                
-                if (sObjName =='Objetivo__c'){
-                    System.debug('Actualizamos objetivo con  whatid y el clic comercial con la cuenta del objetivo');
-                    tarea.Objetivo__c=tarea.WhatId;
-                    
-                    Objetivo__c ob = [Select Cuenta__c FROM Objetivo__c WHERE Id =: tarea.Objetivo__c];
-                    tarea.Clic_comercial__c = ob.Cuenta__c;
-                }
-                
-            }
-        
-        }
-         
-    }else{
-        System.debug('No ejecutamos trigger tarea');
+    // Control opcional para saltar ejecución (si existe configuración)
+    No_ejecutar_triggers__c cfg;
+    try {
+        List<No_ejecutar_triggers__c> cfgList = [
+            SELECT Correo_usuario__c
+            FROM No_ejecutar_triggers__c
+            LIMIT 1
+        ];
+        if (!cfgList.isEmpty()) cfg = cfgList[0];
+    } catch (Exception e) {
+        // Silencioso: no bloquear trigger por error en configuración
     }
-    
+    if (cfg != null && UserInfo.getUserEmail() == cfg.Correo_usuario__c) {
+        return;
+    }
+
+    // Recolectar Ids (bulk safe)
+    Set<Id> acctFieldIds      = new Set<Id>();
+    Set<Id> acctWhatIds       = new Set<Id>();
+    Set<Id> contactFieldIds   = new Set<Id>();
+    Set<Id> contactWhatIds    = new Set<Id>();
+    Set<Id> oppFieldIds       = new Set<Id>(); // desde campo custom Opportunity__c
+    Set<Id> oppWhatIds        = new Set<Id>(); // desde WhatId
+    Set<Id> objetivoFieldIds  = new Set<Id>();
+    Set<Id> objetivoWhatIds   = new Set<Id>();
+
+    for (Task t : Trigger.new) {
+        if (t.Clic_comercial__c != null) acctFieldIds.add(t.Clic_comercial__c);
+        if (t.Contacto__c       != null) contactFieldIds.add(t.Contacto__c);
+        if (t.Objetivo__c       != null) objetivoFieldIds.add(t.Objetivo__c);
+        if (t.Opportunity__c    != null) oppFieldIds.add(t.Opportunity__c); // CAMBIO: antes Oportunidad__c
+
+        if (t.WhatId != null) {
+            String sObjName = String.valueOf(t.WhatId.getSObjectType());
+            if (sObjName == 'Opportunity')  oppWhatIds.add(t.WhatId);
+            else if (sObjName == 'Account') acctWhatIds.add(t.WhatId);
+            else if (sObjName == 'Objetivo__c') objetivoWhatIds.add(t.WhatId);
+        }
+        if (t.WhoId != null) {
+            String sObjName = String.valueOf(t.WhoId.getSObjectType());
+            if (sObjName == 'Contact') contactWhatIds.add(t.WhoId);
+        }
+    }
+
+    // Queries (solo si hay Ids)
+    Map<Id, Opportunity> oppMap = new Map<Id, Opportunity>();
+    if (!oppFieldIds.isEmpty() || !oppWhatIds.isEmpty()) {
+        Set<Id> allOppIds = new Set<Id>();
+        allOppIds.addAll(oppFieldIds);
+        allOppIds.addAll(oppWhatIds);
+        for (Opportunity o : [
+            SELECT Id, Cliente__c
+            FROM Opportunity
+            WHERE Id IN :allOppIds
+        ]) {
+            oppMap.put(o.Id, o);
+        }
+    }
+
+    Map<Id, Account> acctMap = new Map<Id, Account>();
+    if (!acctFieldIds.isEmpty() || !acctWhatIds.isEmpty()) {
+        Set<Id> allAcctIds = new Set<Id>();
+        allAcctIds.addAll(acctFieldIds);
+        allAcctIds.addAll(acctWhatIds);
+        for (Account a : [
+            SELECT Id
+            FROM Account
+            WHERE Id IN :allAcctIds
+        ]) {
+            acctMap.put(a.Id, a);
+        }
+    }
+
+    Map<Id, Contact> contactMap = new Map<Id, Contact>();
+    if (!contactFieldIds.isEmpty() || !contactWhatIds.isEmpty()) {
+        Set<Id> allContactIds = new Set<Id>();
+        allContactIds.addAll(contactFieldIds);
+        allContactIds.addAll(contactWhatIds);
+        for (Contact c : [
+            SELECT Id, AccountId
+            FROM Contact
+            WHERE Id IN :allContactIds
+        ]) {
+            contactMap.put(c.Id, c);
+        }
+    }
+
+    Map<Id, Objetivo__c> objetivoMap = new Map<Id, Objetivo__c>();
+    if (!objetivoFieldIds.isEmpty() || !objetivoWhatIds.isEmpty()) {
+        Set<Id> allObjIds = new Set<Id>();
+        allObjIds.addAll(objetivoFieldIds);
+        allObjIds.addAll(objetivoWhatIds);
+        for (Objetivo__c ob : [
+            SELECT Id, Cuenta__c
+            FROM Objetivo__c
+            WHERE Id IN :allObjIds
+        ]) {
+            objetivoMap.put(ob.Id, ob);
+        }
+    }
+
+    // Lógica principal
+    for (Task t : Trigger.new) {
+
+        // Fecha de creación custom si vacía
+        if (t.Fecha_Creacion__c == null) {
+            t.Fecha_Creacion__c = Date.today();
+        }
+
+        // Account: sincronía WhatId <-> Clic_comercial__c
+        if (t.WhatId == null && t.Clic_comercial__c != null) {
+            t.WhatId = t.Clic_comercial__c;
+        } else if (t.WhatId != null && t.Clic_comercial__c == null) {
+            if (String.valueOf(t.WhatId.getSObjectType()) == 'Account') {
+                t.Clic_comercial__c = t.WhatId;
+            }
+        }
+
+        // Contact: sincronía WhoId <-> Contacto__c + rellenar Clic_comercial__c
+        if (t.WhoId == null && t.Contacto__c != null) {
+            t.WhoId = t.Contacto__c;
+            Contact c = contactMap.get(t.Contacto__c);
+            if (c != null) t.Clic_comercial__c = c.AccountId;
+        } else if (t.WhoId != null && t.Contacto__c == null) {
+            if (String.valueOf(t.WhoId.getSObjectType()) == 'Contact') {
+                t.Contacto__c = t.WhoId;
+                Contact c2 = contactMap.get(t.Contacto__c);
+                if (c2 != null) t.Clic_comercial__c = c2.AccountId;
+            }
+        }
+
+        // Opportunity: sincronía WhatId <-> Opportunity__c (CAMBIO: antes Oportunidad__c)
+        if (t.WhatId == null && t.Opportunity__c != null) {
+            t.WhatId = t.Opportunity__c;
+            Opportunity o = oppMap.get(t.Opportunity__c);
+            if (o != null) t.Clic_comercial__c = o.Cliente__c;
+        } else if (t.WhatId != null && t.Opportunity__c == null) {
+            if (String.valueOf(t.WhatId.getSObjectType()) == 'Opportunity') {
+                t.Opportunity__c = t.WhatId;
+                Opportunity o2 = oppMap.get(t.Opportunity__c);
+                if (o2 != null) t.Clic_comercial__c = o2.Cliente__c;
+            }
+        }
+
+        // Objetivo: sincronía WhatId <-> Objetivo__c
+        if (t.WhatId == null && t.Objetivo__c != null) {
+            t.WhatId = t.Objetivo__c;
+            Objetivo__c ob = objetivoMap.get(t.Objetivo__c);
+            if (ob != null) t.Clic_comercial__c = ob.Cuenta__c;
+        } else if (t.WhatId != null && t.Objetivo__c == null) {
+            if (String.valueOf(t.WhatId.getSObjectType()) == 'Objetivo__c') {
+                t.Objetivo__c = t.WhatId;
+                Objetivo__c ob2 = objetivoMap.get(t.Objetivo__c);
+                if (ob2 != null) t.Clic_comercial__c = ob2.Cuenta__c;
+            }
+        }
+    }
 }

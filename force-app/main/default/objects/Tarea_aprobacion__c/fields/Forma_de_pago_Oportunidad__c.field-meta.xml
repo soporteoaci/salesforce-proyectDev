@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Forma_de_pago_Oportunidad__c</fullName>
     <externalId>false</externalId>
-    <formula>TEXT(Oportunidad__r.Forma_de_pago__c)</formula>
+    <formula>TEXT(Opportunity__r.Forma_de_pago__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Forma de pago Oportunidad</label>
     <required>false</required>

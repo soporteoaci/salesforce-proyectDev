@@ -1,82 +1,128 @@
 @isTest
 public class TaskTrigger_Test {
-    
-     @testSetup static void setup() {
-          No_ejecutar_triggers__c saltar_trigger = new No_ejecutar_triggers__c();
-        saltar_trigger.Correo_usuario__c='';
-        insert saltar_trigger;
-         Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
-         insert Cliente;   
-            
-        CRM_Ibermatica_Configuration__c cs = new CRM_Ibermatica_Configuration__c();
-        cs.client_id__c='test';
-        cs.client_secret__c='test';
-        
-        insert cs;
-        
-      
+    @testSetup
+    static void setup() {
+        // Evitar salto de triggers (email vacío no coincide con ningún usuario real)
+        insert new No_ejecutar_triggers__c(Correo_usuario__c = '');
+        insert new CRM_Ibermatica_Configuration__c(client_id__c='test', client_secret__c='test');
     }
+
     @isTest
-    public static void crear_update_tarea(){
-        Test.startTest();
-        
-        Id RecordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
-        //System.debug('Id RecordType de Estructura Organizativa: '+ RecordTypeEst);
-        Account Cliente= new Account(Name='Cliente 12345', SAP_Account__c='12345', Alias__c='Cliente',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
-        insert Cliente;
-        
-        Contact contacto = new Contact (LastName ='Contacto prueba', FirstName ='Nombre', accountid = cliente.Id);
-        insert contacto;
-        //Oportunidad creada solo con Mercado y Division
-        Opportunity op= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60029413',DivisionPickList__c='60049219',
-                                                          Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', 	Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
-                                                          Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
-        op.CreatedDate=system.today();
-        
-        insert op;
-        
-        Task tarea = new task (Subject ='Prueba', WhatId =Cliente.Id,whoId=contacto.Id);
-        insert tarea;
-        
-        
-        Objetivo__c obj = new Objetivo__c (Name = 'Objetivo', Cuenta__c = cliente.Id);
+    static void crear_update_tarea() {
+        // Crear Opportunity con misma firma usada en Tarea_aprobacion_Test
+        Opportunity op = TestDataFactory.createOpportunity('Cualificación', 'Digital impact');
+        // Aseguramos tener Account y Contact asociados
+        Account acc;
+        Contact cto;
+        if (op.Cliente__c != null) {
+            acc = [SELECT Id FROM Account WHERE Id = :op.Cliente__c LIMIT 1];
+        } else {
+            acc = new Account(Name='Cuenta fallback', Sector__c='Educación', Subsector__c='Centros de formación en gral.');
+            insert acc;
+        }
+        if (op.Contacto_Principal__c != null) {
+            cto = [SELECT Id, AccountId FROM Contact WHERE Id = :op.Contacto_Principal__c LIMIT 1];
+        } else {
+            cto = new Contact(LastName='Contacto Fallback', AccountId=acc.Id);
+            insert cto;
+        }
+
+        // Objetivo relacionado
+        Objetivo__c obj = new Objetivo__c(Name='Objetivo prueba', Cuenta__c = acc.Id);
         insert obj;
 
-        tarea.WhatId=null;
-        tarea.Clic_comercial__c=cliente.Id;
-        tarea.WhoId=null;
-        tarea.Contacto__c=Contacto.Id;
+        // 0) Crear Task base ligada a Account + Contact
+        Task tarea = new Task(
+            Subject='Prueba',
+            Status='Not Started',
+            Priority='Normal',
+            WhatId = acc.Id,
+            WhoId = cto.Id
+        );
+        insert tarea;
+
+        // 1) Quitamos WhatId/WhoId y usamos campos custom para que el trigger los restaure
+        tarea.WhatId = null;
+        tarea.Clic_comercial__c = acc.Id;
+        tarea.WhoId = null;
+        tarea.Contacto__c = cto.Id;
         update tarea;
-        
-        tarea.WhatId=null;
-       	tarea.Clic_comercial__c=null;
-        tarea.Opportunity__c=op.id;
+
+        Task t1 = [
+            SELECT Id, WhatId, WhoId, Clic_comercial__c, Contacto__c, Opportunity__c, Objetivo__c
+            FROM Task
+            WHERE Id = :tarea.Id
+            LIMIT 1
+        ];
+        System.assertEquals(acc.Id, t1.WhatId, 'Debe rellenarse WhatId desde Clic_comercial__c');
+        System.assertEquals(cto.Id, t1.WhoId, 'Debe rellenarse WhoId desde Contacto__c');
+        System.assertEquals(acc.Id, t1.Clic_comercial__c, 'Clic_comercial__c debe seguir apuntando a la cuenta');
+        System.assertEquals(cto.Id, t1.Contacto__c, 'Contacto__c debe mantenerse');
+
+        // 2) Asignamos Opportunity__c y comprobamos sincronía con WhatId
+        tarea.WhatId = null;
+        tarea.Clic_comercial__c = null;
+        tarea.Opportunity__c = op.Id;
+        tarea.Contacto__c = null;
         update tarea;
-        
-        tarea.WhatId=null;
-       	tarea.Clic_comercial__c=null;
-        tarea.Opportunity__c=op.id;
+
+        Task t2 = [
+            SELECT Id, WhatId, Clic_comercial__c, Opportunity__c
+            FROM Task
+            WHERE Id = :tarea.Id
+            LIMIT 1
+        ];
+        System.assertEquals(op.Id, t2.WhatId, 'WhatId debe ser la Opportunity al informar Opportunity__c');
+        System.assertEquals(op.Id, t2.Opportunity__c, 'Opportunity__c debe permanecer');
+        System.assertEquals(op.Cliente__c, t2.Clic_comercial__c, 'Clic_comercial__c debe venir de la Opportunity');
+
+        // 3) Forzamos sólo WhatId (Opportunity) y limpiamos Opportunity__c para que se repueble
+        tarea.WhatId = op.Id;
+        tarea.Opportunity__c = null;
+        tarea.Clic_comercial__c = null;
         update tarea;
-        
-        tarea.WhatId=op.id;
-       	tarea.Clic_comercial__c=null;
-        tarea.Opportunity__c=null;
-        tarea.Objetivo__c=null;
+
+        Task t3 = [
+            SELECT Id, WhatId, Opportunity__c, Clic_comercial__c
+            FROM Task
+            WHERE Id = :tarea.Id
+            LIMIT 1
+        ];
+        System.assertEquals(op.Id, t3.WhatId, 'WhatId permanece en Opportunity');
+        System.assertEquals(op.Id, t3.Opportunity__c, 'Debe haberse rellenado Opportunity__c desde WhatId');
+        System.assertEquals(op.Cliente__c, t3.Clic_comercial__c, 'Clic_comercial__c desde Opportunity.Cliente__c');
+
+        // 4) Usamos Objetivo en WhatId para forzar mapeo a Objetivo__c y cuenta
+        tarea.WhatId = obj.Id;
+        tarea.Opportunity__c = null;
+        tarea.Clic_comercial__c = null;
         update tarea;
-        
-        
-        tarea.WhatId=obj.id;
-       	tarea.Clic_comercial__c=null;
-        tarea.Opportunity__c=null;
-        tarea.Objetivo__c=null;
+
+        Task t4 = [
+            SELECT Id, WhatId, Objetivo__c, Clic_comercial__c, Opportunity__c
+            FROM Task
+            WHERE Id = :tarea.Id
+            LIMIT 1
+        ];
+        System.assertEquals(obj.Id, t4.WhatId, 'WhatId debe ser el Objetivo');
+        System.assertEquals(obj.Id, t4.Objetivo__c, 'Objetivo__c debe poblarse desde WhatId');
+        System.assertEquals(acc.Id, t4.Clic_comercial__c, 'Clic_comercial__c debe venir de Objetivo.Cuenta__c');
+        System.assertEquals(null, t4.Opportunity__c, 'Opportunity__c no debe rellenarse en este paso');
+
+        // 5) Vuelta a Opportunity sólo via Opportunity__c
+        tarea.WhatId = null;
+        tarea.Opportunity__c = op.Id;
+        tarea.Clic_comercial__c = null;
         update tarea;
-        
-        tarea.WhatId=null;
-       	tarea.Clic_comercial__c=null;
-        tarea.Opportunity__c=null;
-        tarea.Objetivo__c=obj.id;
-        update tarea;
-       
-        
+
+        Task t5 = [
+            SELECT Id, WhatId, Opportunity__c, Clic_comercial__c
+            FROM Task
+            WHERE Id = :tarea.Id
+            LIMIT 1
+        ];
+        System.assertEquals(op.Id, t5.WhatId, 'WhatId debe igualarse a Opportunity__c');
+        System.assertEquals(op.Id, t5.Opportunity__c, 'Opportunity__c se mantiene');
+        System.assertEquals(op.Cliente__c, t5.Clic_comercial__c, 'Clic_comercial__c sincronizado de nuevo');
     }
 }

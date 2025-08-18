@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Necesidad_de_financiacion_Oportunidad__c</fullName>
     <externalId>false</externalId>
-    <formula>TEXT(Oportunidad__r.Necesidad_de_financiacion__c)</formula>
+    <formula>TEXT(Opportunity__r.Necesidad_de_financiacion__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Necesidad de financiación Oportunidad</label>
     <required>false</required>

@@ -10,7 +10,7 @@
         <field>Owner</field>
         <field>Fecha_solicitud__c</field>
         <field>Tipo__c</field>
-        <field>Oportunidad__c</field>
+        <field>Opportunity__c</field>
         <field>Importe_Oportunidad__c</field>
     </approvalPageFields>
     <approvalStep>

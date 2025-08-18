@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Consideraciones_especiales_Oportunidad__c</fullName>
     <externalId>false</externalId>
-    <formula>Oportunidad__r.Consideraciones_especiales__c</formula>
+    <formula>Opportunity__r.Consideraciones_especiales__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Consideraciones especiales Oportunidad</label>
     <required>false</required>

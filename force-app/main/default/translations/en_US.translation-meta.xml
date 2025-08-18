@@ -1206,6 +1206,30 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
+        <fullName>Opportunity_Aprobaci_n_Equipo_Preventa</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>vCuerpoEmail</name>
+            </textTemplates>
+        </flows>
+        <fullName>Opportunity_Aprobaci_n_Preliminar_Responsables</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Aprobaci_n_QA_Responsables</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>vCuerpoEmail</name>
+            </textTemplates>
+        </flows>
+        <fullName>Opportunity_Aprobacion_Oferta_Responsables</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
         <fullName>Opportunity_Avanzar_etapa_Oferta_Elaboracion_Oferta</fullName>
     </flowDefinitions>
     <flowDefinitions>
@@ -1241,6 +1265,39 @@
         <fullName>Opportunity_Cerrada_Ayesa</fullName>
     </flowDefinitions>
     <flowDefinitions>
+        <flows>
+            <customErrorMessages>
+                <developerName>Error_socios_creados</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_EN_PROCESO_Sub</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_NO_ENVIADO_1</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Error_subcontratas_no_creadas</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_EN_PROCESO_2</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_RECHAZADO_sub</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Suma_socios_por</developerName>
+                <field>Subfase__c</field>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_NO_ENVIADO_sub</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_RECHAZADO</developerName>
+            </customErrorMessages>
+        </flows>
+        <fullName>Opportunity_Comprobacion_aprobacion_Oportunidad_Socio</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
         <flows/>
         <fullName>Opportunity_Creacion_Inter_ITDS_Director_Pais</fullName>
     </flowDefinitions>
@@ -1259,6 +1316,14 @@
     <flowDefinitions>
         <flows/>
         <fullName>Opportunity_Obtener_Responsables</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Referencia_Comercial</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Socio_Aprobaci_n_Responsable</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>

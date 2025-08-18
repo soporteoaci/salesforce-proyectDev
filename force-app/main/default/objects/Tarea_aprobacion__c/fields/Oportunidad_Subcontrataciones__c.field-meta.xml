@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Oportunidad_Subcontrataciones__c</fullName>
     <externalId>false</externalId>
-    <formula>IF(ISPICKVAL(Oportunidad__r.Subcontrataciones__c,&apos;No&apos;), &apos;No&apos;, &apos;Sí&apos; )</formula>
+    <formula>IF(ISPICKVAL(Opportunity__r.Subcontrataciones__c,&apos;No&apos;), &apos;No&apos;, &apos;Sí&apos; )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Oportunidad Subcontrataciones</label>
     <required>false</required>

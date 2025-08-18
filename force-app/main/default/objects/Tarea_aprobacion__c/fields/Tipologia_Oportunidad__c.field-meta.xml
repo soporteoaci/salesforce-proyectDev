@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Tipologia_Oportunidad__c</fullName>
     <externalId>false</externalId>
-    <formula>TEXT(Oportunidad__r.Tipologia__c)</formula>
+    <formula>TEXT(Opportunity__r.Tipologia__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Tipología Oportunidad</label>
     <required>false</required>

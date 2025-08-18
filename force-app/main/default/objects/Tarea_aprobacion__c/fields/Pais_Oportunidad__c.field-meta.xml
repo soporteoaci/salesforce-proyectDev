@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Pais_Oportunidad__c</fullName>
     <externalId>false</externalId>
-    <formula>IF(ISPICKVAL(Oportunidad__r.Direccion_Operaciones__c,&apos;ENGINEERING&apos;), Oportunidad__r.Pais_del_cliente__c, Oportunidad__r.Pais_IT_Literal__c)</formula>
+    <formula>IF(ISPICKVAL(Opportunity__r.Direccion_Operaciones__c,&apos;ENGINEERING&apos;), Opportunity__r.Pais_del_cliente__c, Opportunity__r.Pais_IT_Literal__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>País Oportunidad</label>
     <required>false</required>

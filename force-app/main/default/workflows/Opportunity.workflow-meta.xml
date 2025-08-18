@@ -243,8 +243,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>soporteoaci@ayesa.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
+        <senderType>CurrentUser</senderType>
         <template>Ayesa/Recordatorio_Reuni_n_QA</template>
     </alerts>
 </Workflow>

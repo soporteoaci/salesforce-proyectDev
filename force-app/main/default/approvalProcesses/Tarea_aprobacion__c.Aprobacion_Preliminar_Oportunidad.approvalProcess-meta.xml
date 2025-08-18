@@ -9,7 +9,7 @@
         <field>Name</field>
         <field>Owner</field>
         <field>Fecha_solicitud__c</field>
-        <field>Oportunidad__c</field>
+        <field>Opportunity__c</field>
         <field>Cuenta_lookup__c</field>
         <field>Tipo__c</field>
     </approvalPageFields>

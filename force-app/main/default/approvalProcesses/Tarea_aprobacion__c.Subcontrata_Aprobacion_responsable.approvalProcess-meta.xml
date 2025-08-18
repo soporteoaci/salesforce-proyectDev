@@ -10,7 +10,7 @@
         <field>Owner</field>
         <field>Fecha_solicitud__c</field>
         <field>Subcontrata__c</field>
-        <field>Oportunidad__c</field>
+        <field>Opportunity__c</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
