@@ -734,6 +734,95 @@
         <fullName>Boton_Oportunidad_Correo_Preventa</fullName>
     </flowDefinitions>
     <flowDefinitions>
+        <flows>
+            <choices>
+                <name>No</name>
+            </choices>
+            <choices>
+                <name>S</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Copia_1_de_Copia_1_de_Visualizar</name>
+                </fields>
+                <name>Copia_1_Objetivo_de_ver</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copia_1_de_Visualizar</name>
+                </fields>
+                <name>Copia_2_de_ver</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Equipo_preventa</name>
+                </fields>
+                <fields>
+                    <name>Equipo_preventa_iterador</name>
+                </fields>
+                <fields>
+                    <name>Horas_estimadas</name>
+                </fields>
+                <fields>
+                    <name>Mercantil_picklist</name>
+                </fields>
+                <fields>
+                    <name>Nombre_y_apellidos</name>
+                </fields>
+                <name>Mensaje_preventa</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copia_1_de_ver</name>
+                </fields>
+                <fields>
+                    <name>Copia_2_de_Visualizar</name>
+                </fields>
+                <name>Objetivo_3_de_ver</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copia_1_de_Equipo_preventa</name>
+                </fields>
+                <fields>
+                    <name>Copia_1_de_Equipo_preventa_iterador</name>
+                </fields>
+                <fields>
+                    <name>Copia_1_de_Horas_estimadas</name>
+                </fields>
+                <fields>
+                    <name>Copia_1_de_Mercantil_picklist</name>
+                </fields>
+                <fields>
+                    <name>Copia_1_de_Nombre_y_apellidos</name>
+                </fields>
+                <name>Objetivo_Mensaje_preventa</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Visualizar</name>
+                </fields>
+                <fields>
+                    <name>ver</name>
+                </fields>
+                <name>ver_2</name>
+            </screens>
+            <textTemplates>
+                <name>Plantillamensaje</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Template_Preventa_con_Equipo</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Template_Preventa_con_Equipo_Objetivo</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Template_Preventa_sin_Equipo</name>
+            </textTemplates>
+        </flows>
+        <fullName>Boton_Opportunity_Correo_Preventa</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
         <flows/>
         <fullName>Caso_Actualizar_Supervisor</fullName>
     </flowDefinitions>
@@ -1320,6 +1409,10 @@
     <flowDefinitions>
         <flows/>
         <fullName>Opportunity_Socio_Aprobaci_n_Responsable</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Tipificacion</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
@@ -4270,6 +4363,10 @@
         <sections>
             <label>Opportunities</label>
             <name>Oportunidades</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
         </sections>
     </reportTypes>
     <reportTypes>

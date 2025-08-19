@@ -5795,6 +5795,25 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>VTH_Technology_Level_1__c</picklist>
+        <values>
+            <fullName>CIBERSECURITY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DATA %26 AI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIGITAL IMPACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUANTUM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>VTH_Technology_Level_2__c</picklist>
         <values>
             <fullName>Ciber Platfform powered by AI</fullName>

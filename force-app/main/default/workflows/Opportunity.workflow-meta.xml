@@ -131,7 +131,7 @@
         </recipients>
         <senderAddress>soporteoaci@ayesa.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Oportunidad_Alerta_Subfase_Cualificacion_autoprovision</template>
+        <template>Ayesa/Oportunidad_Alerta_Subfase_Cualificacion_autoprovision</template>
     </alerts>
     <alerts>
         <fullName>Opportunity_Alerta_Subfase_Cualificacion_con_preventa</fullName>
@@ -236,14 +236,219 @@
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Oportunidad_Aviso_Subfase_Ganada</template>
     </alerts>
-    <alerts>
-        <fullName>Recordatorio_convocar_reunion_QA</fullName>
-        <description>Recordatorio convocar reunión QA</description>
+    <fieldUpdates>
+        <fullName>Actualizar_etapa</fullName>
+        <field>Etapa__c</field>
+        <literalValue>Cerrada</literalValue>
+        <name>Actualizar etapa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
         <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Ayesa/Recordatorio_Reuni_n_QA</template>
-    </alerts>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actualizar_etapa_2</fullName>
+        <field>Etapa__c</field>
+        <literalValue>Cerrada</literalValue>
+        <name>Actualizar etapa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actualizar_subfase</fullName>
+        <field>Subfase__c</field>
+        <literalValue>Aprobada</literalValue>
+        <name>Actualizar subfase</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actualizar_subfase_2</fullName>
+        <field>Subfase__c</field>
+        <literalValue>No presentada</literalValue>
+        <name>Actualizar subfase</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aprobado</fullName>
+        <field>Decision_aprobacion_acuerdo_de_socios__c</field>
+        <literalValue>Aprobado</literalValue>
+        <name>Aprobado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>En_proceso</fullName>
+        <field>Decision_aprobacion_acuerdo_de_socios__c</field>
+        <literalValue>En proceso</literalValue>
+        <name>En proceso</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rechazado</fullName>
+        <field>Decision_aprobacion_acuerdo_de_socios__c</field>
+        <literalValue>Rechazado</literalValue>
+        <name>Rechazado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Aprobación Fecha Limite</fullName>
+        <actions>
+            <name>Recordatorio_Limite_de_presentaci_n</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Etapa__c</field>
+            <operation>equals</operation>
+            <value>Aprobada</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Etapa Pedir Codigo oferta</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Etapa__c</field>
+            <operation>equals</operation>
+            <value>Pedir Código Oferta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Oferta_SAP__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Reclamar_C_digo_de_Oferta</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Opportunity.Fecha_sol_cod__c</offsetFromField>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Fecha presentación</fullName>
+        <actions>
+            <name>Fecha_Vencimiento</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Fecha_limite_de_presentacion__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Tarea Pendiente QA</fullName>
+        <actions>
+            <name>Reunion_QA</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Etapa__c</field>
+            <operation>equals</operation>
+            <value>Pendiente QA</value>
+        </criteriaItems>
+        <description>Pendiente QA</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Reuni_n_QA</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Opportunity.Fecha_limite_de_presentacion__c</offsetFromField>
+            <timeLength>-3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>Fecha_Vencimiento</fullName>
+        <assignedTo>javier.ponce@gestion.ayesa.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Fecha_limite_de_presentacion__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Vencimiento Fecha Presentación</subject>
+    </tasks>
+    <tasks>
+        <fullName>Reclamar_C_digo_de_Oferta</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Se ha solicitado código de oferta pero han pasado 2 días sin respuesta</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Fecha_sol_cod__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Reclamar Código de Oferta</subject>
+    </tasks>
+    <tasks>
+        <fullName>Recordatorio_Limite_de_presentaci_n</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Fecha_limite_de_presentacion__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Recordatorio Limite de presentación</subject>
+    </tasks>
+    <tasks>
+        <fullName>Reuni_n_QA</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Faltan 3 días para la fecha límite de presentación</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Fecha_limite_de_presentacion__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Reunión QA</subject>
+    </tasks>
+    <tasks>
+        <fullName>Reunion_QA</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Ya dispone de código de oferta, convoque reunión QA</description>
+        <dueDateOffset>-3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Fecha_limite_de_presentacion__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Recordatorio convocar reunion QA</subject>
+    </tasks>
+    <tasks>
+        <fullName>Revision_QA</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Revisión QA con 30 días de antelación</description>
+        <dueDateOffset>-30</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Fecha_estimada_de_cierre__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Sin Iniciar</status>
+        <subject>Revisión QA</subject>
+    </tasks>
 </Workflow>

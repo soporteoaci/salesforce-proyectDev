@@ -715,6 +715,10 @@ Contacto Principal, Contacto Facturación e Importes -->
         <name>informacion_Correo_Aprobacion_Oferta</name>
     </validationRules>
     <webLinks>
+        <label><!-- Boton_prueba --></label>
+        <name>Boton_prueba</name>
+    </webLinks>
+    <webLinks>
         <label><!-- Clonar --></label>
         <name>Clonar</name>
     </webLinks>

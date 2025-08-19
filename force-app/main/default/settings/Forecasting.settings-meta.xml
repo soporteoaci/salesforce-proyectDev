@@ -1071,6 +1071,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -1499,6 +1515,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -1762,6 +1782,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -1869,6 +1893,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -2855,6 +2880,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -3283,6 +3324,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -3545,6 +3590,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -3652,6 +3701,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -4642,6 +4692,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -5070,6 +5136,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -5333,6 +5403,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -5440,6 +5514,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -6426,6 +6501,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -6854,6 +6945,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -7116,6 +7211,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -7223,6 +7322,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -8213,6 +8313,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -8641,6 +8757,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -8904,6 +9024,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -9011,6 +9135,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -9997,6 +10122,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -10425,6 +10566,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -10687,6 +10832,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -10794,6 +10943,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -11784,6 +11934,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -12212,6 +12378,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -12475,6 +12645,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -12582,6 +12756,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -13568,6 +13743,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -13996,6 +14187,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -14258,6 +14453,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -14365,6 +14564,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -15351,6 +15551,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -15779,6 +15995,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -16041,6 +16261,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -16148,6 +16372,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -17134,6 +17359,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -17562,6 +17803,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -17824,6 +18069,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -17931,6 +18180,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -18921,6 +19171,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -19349,6 +19615,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -19612,6 +19882,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -19719,6 +19993,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>
@@ -20705,6 +20980,22 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>New Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
+            <label>New Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>New Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
+            <label>New Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -21133,6 +21424,10 @@
             <label>Visto bueno Delivery Center</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAEJO</field>
+            <label>VTH Technology - Level 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywU</field>
             <label>VTH Technology - Level 2</label>
         </opportunityListFieldsLabelMappings>
@@ -21395,6 +21690,10 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000SAZPN</field>
+            <field>00N9O00000SAZaf</field>
+            <field>00N9O00000SALmv</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -21502,6 +21801,7 @@
             <field>00N9O00000OfyvU</field>
             <field>00N9O00000OfyvZ</field>
             <field>00N9O00000OfyvY</field>
+            <field>00N9O00000SAEJO</field>
             <field>00N9O00000OfywU</field>
             <field>TERR2_NAME</field>
             <field>TERR2_DESC</field>

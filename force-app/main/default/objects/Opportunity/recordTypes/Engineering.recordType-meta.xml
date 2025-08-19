@@ -4849,47 +4849,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Cualificación con autoprovisión</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Cualificación con preventa</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Defendiendo con competidores NO favoritos</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Defendiendo con competidores favoritos</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Defendiendo sin competidores</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Elaboración oferta</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Elegidos técnicamente%3A Pte sobre económico</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Esperando decisión</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Esperando decisión con competidores NO favoritos</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Esperando decisión con competidores favoritos</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Esperando decisión sin competidores</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4898,10 +4862,6 @@
         </values>
         <values>
             <fullName>Ganada pendiente contrato</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Negociando condiciones de cierre</fullName>
             <default>false</default>
         </values>
         <values>
@@ -5791,6 +5751,25 @@
         </values>
         <values>
             <fullName>Sí</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VTH_Technology_Level_1__c</picklist>
+        <values>
+            <fullName>CIBERSECURITY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DATA %26 AI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIGITAL IMPACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUANTUM</fullName>
             <default>false</default>
         </values>
     </picklistValues>

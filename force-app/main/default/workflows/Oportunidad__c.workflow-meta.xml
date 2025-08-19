@@ -131,7 +131,7 @@
         </recipients>
         <senderAddress>soporteoaci@ayesa.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/Oportunidad_Alerta_Subfase_Cualificacion_autoprovision</template>
+        <template>Ayesa/Oportunidad_Alerta_Subfase_Cualificacion_autoprovision</template>
     </alerts>
     <alerts>
         <fullName>Oportunidad_Alerta_Subfase_Cualificacion_con_preventa</fullName>
