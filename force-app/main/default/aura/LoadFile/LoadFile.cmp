@@ -8,13 +8,13 @@
     
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <h4 style="font-size: 15px;" class="slds-text-align_center">
-        <strong>Subir Archivo </strong>
+        <strong>{!$Label.c.CRM_Subir_Archivo}</strong>
     </h4>
     <lightning:layout verticalAlign="end">
         
         <lightning:layoutItem size="4" class="slds-align_absolute-center">       
-            <lightning:select name="tipoArchivo" aura:id="tipoArchivo" label="Tipo de Archivo" required="true" value= "Seleccione tipo" onchange="{!c.seleccionTipoArchivo}">
-                <option value="Seleccione tipo">Seleccione Tipo</option>
+            <lightning:select name="tipoArchivo" aura:id="tipoArchivo" label="Tipo de Archivo" required="true" value= "{!$Label.c.CRM_Tipo_de_Archivo}" onchange="{!c.seleccionTipoArchivo}">
+                <option value="{!$Label.c.CRM_Seleccione_Tipo}">{!$Label.c.CRM_Seleccione_Tipo}</option>
                 <option value="Aceptación de oferta/Acceptance of offer">Aceptación de oferta/Acceptance of offer</option>
                 <option value="Aclaraciones y respuestas a consultas/Clarifications and answers to queries">Aclaraciones y respuestas a consultas/Clarifications and answers to queries</option>
                 <option value="Acreditación del personal ofertado/Acreditation of bid personal">Acreditación del personal ofertado/Acreditation of bid personal</option>
@@ -76,7 +76,7 @@
         
         <lightning:layoutItem size="3" class="slds-align_absolute-center">   
              <lightning:select name="Carpeta" aura:id="Carpeta" label="Carpeta" required="true" value="{!v.carpetaDefault}" onchange="{!c.seleccionCarpeta}"> 
-                 	<option value="Seleccione carpeta">Seleccione carpeta</option>
+                 	<option value="Seleccione carpeta">{!$Label.c.CRM_Carpeta}</option>
                     <option value="01 Pliegos-Requisitos cliente">01 Pliegos-Requisitos cliente</option>
                     <option value="02 Oferta-Licitación/01 Administrativa">02 Oferta-Licitación/01 Administrativa</option>
                     <option value="02 Oferta-Licitación/02 Técnica">02 Oferta-Licitación/02 Técnica</option>

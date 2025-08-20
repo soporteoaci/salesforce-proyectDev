@@ -25,6 +25,30 @@
         <name>SC</name>
     </customApplications>
     <customLabels>
+        <label>Activities</label>
+        <name>CRM_Actividades</name>
+    </customLabels>
+    <customLabels>
+        <label>Open Activities</label>
+        <name>CRM_Actividades_Abiertas</name>
+    </customLabels>
+    <customLabels>
+        <label>Approvals</label>
+        <name>CRM_Aprobaciones</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunity Files</label>
+        <name>CRM_Archivos_de_la_Oportunidad</name>
+    </customLabels>
+    <customLabels>
+        <label>Blocks</label>
+        <name>CRM_Bloqueos</name>
+    </customLabels>
+    <customLabels>
+        <label>Folder</label>
+        <name>CRM_Carpeta</name>
+    </customLabels>
+    <customLabels>
         <label>There are no undetermined and ambiguous reasons for terminating the contract. Also, the contractor does not assume all of the extra termination costs incurred by a third party if the contract is terminated.</label>
         <name>CRM_Causas_no_tasadas_y_ambiguas_CL</name>
     </customLabels>
@@ -35,6 +59,10 @@
     <customLabels>
         <label>Please confirm you have checked the draft of the contract and have verified the following aspects:</label>
         <name>CRM_Checks_de_confirmacion_CL</name>
+    </customLabels>
+    <customLabels>
+        <label>Closing</label>
+        <name>CRM_Cierre</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Cliente --></label>
@@ -49,8 +77,36 @@
         <name>CRM_Consulta_Departamento_Legal_CL</name>
     </customLabels>
     <customLabels>
+        <label>Qualification</label>
+        <name>CRM_Cualificacion</name>
+    </customLabels>
+    <customLabels>
+        <label>Pre-Sales Qualification (Delivery Center)</label>
+        <name>CRM_Cualificacion_Preventa_DC</name>
+    </customLabels>
+    <customLabels>
+        <label>RO Qualification</label>
+        <name>CRM_Cualificacion_RO</name>
+    </customLabels>
+    <customLabels>
+        <label>Economic Data</label>
+        <name>CRM_Datos_Economicos</name>
+    </customLabels>
+    <customLabels>
+        <label>Required Data (after saving the record, more information becomes available to complete)</label>
+        <name>CRM_Datos_Obligatorios</name>
+    </customLabels>
+    <customLabels>
+        <label>Breakdown</label>
+        <name>CRM_Desglose</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Division_SAP --></label>
         <name>CRM_Division_SAP</name>
+    </customLabels>
+    <customLabels>
+        <label>Doc Power Alexandria</label>
+        <name>CRM_Doc_Power_Alejandria</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Emplazamiento --></label>
@@ -59,6 +115,10 @@
     <customLabels>
         <label>The email has been saved and sent to tender department; you can close the request and return to the opportunity</label>
         <name>CRM_Enviado_correo_a_licitaciones_CL</name>
+    </customLabels>
+    <customLabels>
+        <label>Bid Teams</label>
+        <name>CRM_Equipos_Oferta</name>
     </customLabels>
     <customLabels>
         <label>The scope of the contract is defined and the contractor is not required to carry out any action requested by the client.</label>
@@ -77,12 +137,24 @@
         <name>CRM_Fecha_Inicio</name>
     </customLabels>
     <customLabels>
+        <label>Dates</label>
+        <name>CRM_Fechas</name>
+    </customLabels>
+    <customLabels>
+        <label>General</label>
+        <name>CRM_General</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Generar_Oferta --></label>
         <name>CRM_Generar_Oferta</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Guardar --></label>
         <name>CRM_Guardar</name>
+    </customLabels>
+    <customLabels>
+        <label>Activity History</label>
+        <name>CRM_Historial_de_Actividades</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_ING_GP --></label>
@@ -97,8 +169,28 @@
         <name>CRM_Importe_Licitacion</name>
     </customLabels>
     <customLabels>
+        <label>Innovation Information</label>
+        <name>CRM_Info_Innovacion</name>
+    </customLabels>
+    <customLabels>
+        <label>Information</label>
+        <name>CRM_Informacion</name>
+    </customLabels>
+    <customLabels>
+        <label>General Information of the ON</label>
+        <name>CRM_Informacion_General_ON</name>
+    </customLabels>
+    <customLabels>
+        <label>System Information</label>
+        <name>CRM_Informacion_del_Sistema</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Margen_Previsto --></label>
         <name>CRM_Margen_Previsto</name>
+    </customLabels>
+    <customLabels>
+        <label>More Information</label>
+        <name>CRM_Mas_Informacion</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Nacional --></label>
@@ -129,12 +221,40 @@
         <name>CRM_Num_Oferta</name>
     </customLabels>
     <customLabels>
+        <label>Objectives</label>
+        <name>CRM_Objetivos</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Objetivos_Proyecto --></label>
         <name>CRM_Objetivos_Proyecto</name>
     </customLabels>
     <customLabels>
+        <label>Notes</label>
+        <name>CRM_Observaciones</name>
+    </customLabels>
+    <customLabels>
+        <label>Offer</label>
+        <name>CRM_Oferta_Seccion</name>
+    </customLabels>
+    <customLabels>
         <label>The bid has been properly saved</label>
         <name>CRM_Oferta_guardada_correctamente_CL</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunity - Partner</label>
+        <name>CRM_Oportunidad_Socio</name>
+    </customLabels>
+    <customLabels>
+        <label>Related Opportunities</label>
+        <name>CRM_Oportunidades_Relacionadas</name>
+    </customLabels>
+    <customLabels>
+        <label>Origin: Soft or Stock</label>
+        <name>CRM_Origen_Soft_o_Stock</name>
+    </customLabels>
+    <customLabels>
+        <label>Other</label>
+        <name>CRM_Otros</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Pais --></label>
@@ -197,6 +317,22 @@
         <name>CRM_Proyecto_Especial</name>
     </customLabels>
     <customLabels>
+        <label>Inductor Projects</label>
+        <name>CRM_Proyectos_Inductores</name>
+    </customLabels>
+    <customLabels>
+        <label>QA Completed</label>
+        <name>CRM_QA_Realizado</name>
+    </customLabels>
+    <customLabels>
+        <label>QAs</label>
+        <name>CRM_QAs</name>
+    </customLabels>
+    <customLabels>
+        <label>Related</label>
+        <name>CRM_Relacionados</name>
+    </customLabels>
+    <customLabels>
         <label>There is no termination out of convenience without any type of compensation with only a 30 day notice.</label>
         <name>CRM_Resolucion_por_conveniencia_CL</name>
     </customLabels>
@@ -205,20 +341,72 @@
         <name>CRM_Responsable</name>
     </customLabels>
     <customLabels>
+        <label>Project Owner</label>
+        <name>CRM_Responsable_del_Proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label>Owners</label>
+        <name>CRM_Responsables</name>
+    </customLabels>
+    <customLabels>
+        <label>Qualification Result</label>
+        <name>CRM_Resultado_de_la_Cualificacion</name>
+    </customLabels>
+    <customLabels>
         <label>Lost profit that is indirect, consequential, moral, etc., is not expressly included</label>
         <name>CRM_Se_incluye_lucro_CL</name>
+    </customLabels>
+    <customLabels>
+        <label>Select Folder</label>
+        <name>CRM_Seleccione_Carpeta</name>
+    </customLabels>
+    <customLabels>
+        <label>Select Type</label>
+        <name>CRM_Seleccione_Tipo</name>
+    </customLabels>
+    <customLabels>
+        <label>Synergies</label>
+        <name>CRM_Sinergias</name>
+    </customLabels>
+    <customLabels>
+        <label>Partners / Subcontracts</label>
+        <name>CRM_Socios_Subcontrataciones</name>
+    </customLabels>
+    <customLabels>
+        <label>Partners / Nominated Subcontracts (RO)</label>
+        <name>CRM_Socios_Subcontrataciones_Nominadas_RO</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Solicitud_de_codigo_Oferta_y_Soporte_a_Oferta --></label>
         <name>CRM_Solicitud_de_codigo_Oferta_y_Soporte_a_Oferta</name>
     </customLabels>
     <customLabels>
+        <label>Upload File</label>
+        <name>CRM_Subir_Archivo</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Subtipo_Trabajo --></label>
         <name>CRM_Subtipo_Trabajo</name>
     </customLabels>
     <customLabels>
+        <label>Approval Task</label>
+        <name>CRM_Tarea_de_Aprobacion</name>
+    </customLabels>
+    <customLabels>
+        <label>Strategic Technologies</label>
+        <name>CRM_Tecnologias_Estrategicas</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Tipo_Trabajo --></label>
         <name>CRM_Tipo_Trabajo</name>
+    </customLabels>
+    <customLabels>
+        <label>File Type</label>
+        <name>CRM_Tipo_de_Archivo</name>
+    </customLabels>
+    <customLabels>
+        <label>Related Users</label>
+        <name>CRM_Usuarios_Relacionados</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Volver_a_Oportunidad --></label>
@@ -1310,12 +1498,20 @@
         <fullName>Opportunity_Aprobaci_n_QA_Responsables</fullName>
     </flowDefinitions>
     <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Aprobacion_Oferta</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
         <flows>
             <textTemplates>
                 <name>vCuerpoEmail</name>
             </textTemplates>
         </flows>
         <fullName>Opportunity_Aprobacion_Oferta_Responsables</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Aprobacion_Preliminar</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
@@ -1416,6 +1612,10 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
+        <fullName>Opportunity_Socio_Aprobacion_Socio_Subcontrata</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
         <fullName>Opportunity_Tipificacion</fullName>
     </flowDefinitions>
     <flowDefinitions>
@@ -1425,6 +1625,10 @@
     <flowDefinitions>
         <flows/>
         <fullName>Orquestador_Oportunidad_Aprobaci_n_equipo_preventa</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Orquestador_Opportunity_Aprobaci_n_equipo_preventa</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>

@@ -13153,7 +13153,15 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Opportunity_Aprobacion_Oferta</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Opportunity_Aprobacion_Oferta_Responsables</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Aprobacion_Preliminar</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -13225,6 +13233,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Opportunity_Socio_Aprobacion_Socio_Subcontrata</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Opportunity_Tipificacion</flow>
     </flowAccesses>
     <flowAccesses>
@@ -13234,6 +13246,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Orquestador_Oportunidad_Aprobaci_n_equipo_preventa</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Orquestador_Opportunity_Aprobaci_n_equipo_preventa</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -13619,22 +13635,22 @@
         <recordType>Oportunidad__c.Ibermatica_SME</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
+        <layout>Opportunity-ENGINEERING</layout>
         <recordType>Opportunity.Engineering</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
+        <layout>Opportunity-INNOVATION</layout>
+        <recordType>Opportunity.Innovation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-IT%26DS</layout>
         <recordType>Opportunity.IT_DS</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Innovation</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
+        <layout>Opportunity-PRESUPUESTO</layout>
         <recordType>Opportunity.Presupuesto</recordType>
     </layoutAssignments>
     <layoutAssignments>

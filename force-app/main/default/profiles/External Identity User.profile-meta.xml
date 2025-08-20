@@ -13152,7 +13152,15 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Opportunity_Aprobacion_Oferta</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Opportunity_Aprobacion_Oferta_Responsables</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Aprobacion_Preliminar</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -13224,6 +13232,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Opportunity_Socio_Aprobacion_Socio_Subcontrata</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Opportunity_Tipificacion</flow>
     </flowAccesses>
     <flowAccesses>
@@ -13233,6 +13245,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Orquestador_Oportunidad_Aprobaci_n_equipo_preventa</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Orquestador_Opportunity_Aprobaci_n_equipo_preventa</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

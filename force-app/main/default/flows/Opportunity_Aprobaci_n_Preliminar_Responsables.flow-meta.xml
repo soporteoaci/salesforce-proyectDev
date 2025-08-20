@@ -419,7 +419,7 @@
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
-        <objectType>Oportunidad__c</objectType>
+        <objectType>Opportunity</objectType>
     </variables>
     <variables>
         <name>vExistenExtensiones</name>

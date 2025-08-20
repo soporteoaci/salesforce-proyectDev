@@ -915,4 +915,333 @@ Saludos,</value>
         <shortDescription>GC Verdadero</shortDescription>
         <value>Verdadero</value>
     </labels>
+    <labels>
+        <fullName>CRM_Actividades</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Actividades</shortDescription>
+        <value>Actividades</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Actividades_Abiertas</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Actividades Abiertas</shortDescription>
+        <value>Actividades Abiertas</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Aprobaciones</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Aprobaciones</shortDescription>
+        <value>Aprobaciones</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Archivos_de_la_Oportunidad</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Archivos de la Oportunidad</shortDescription>
+        <value>Archivos de la Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Bloqueos</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Bloqueos</shortDescription>
+        <value>Bloqueos</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Carpeta</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Carpeta</shortDescription>
+        <value>Carpeta</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Cierre</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Cierre</shortDescription>
+        <value>Cierre</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Cualificacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Cualificación</shortDescription>
+        <value>Cualificación</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Cualificacion_Preventa_DC</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Cualificación Preventa (Delivery Center)</shortDescription>
+        <value>Cualificación Preventa (Delivery Center)</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Cualificacion_RO</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Cualificación RO</shortDescription>
+        <value>Cualificación RO</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Datos_Economicos</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Datos Económicos</shortDescription>
+        <value>Datos Económicos</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Datos_Obligatorios</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Datos Obligatorios (una vez guardado hay que completar más información)</shortDescription>
+        <value>Datos Obligatorios (una vez guardado hay que completar más información)</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Desglose</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Desglose</shortDescription>
+        <value>Desglose</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Doc_Power_Alejandria</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Doc Power Alejandría</shortDescription>
+        <value>Doc Power Alejandría</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Equipos_Oferta</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Equipos Oferta</shortDescription>
+        <value>Equipos Oferta</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Fechas</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Fechas</shortDescription>
+        <value>Fechas</value>
+    </labels>
+    <labels>
+        <fullName>CRM_General</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>General</shortDescription>
+        <value>General</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Historial_de_Actividades</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Historial de Actividades</shortDescription>
+        <value>Historial de Actividades</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Info_Innovacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>General</shortDescription>
+        <value>General</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Informacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Información</shortDescription>
+        <value>Información</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Informacion_General_ON</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Información General de la ON</shortDescription>
+        <value>Información General de la ON</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Informacion_del_Sistema</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Información del Sistema</shortDescription>
+        <value>Información del Sistema</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Mas_Informacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Más información</shortDescription>
+        <value>Más información</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Objetivos</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Objetivos</shortDescription>
+        <value>Objetivos</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Observaciones</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Observaciones</shortDescription>
+        <value>Observaciones</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Oferta_Seccion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Oferta</shortDescription>
+        <value>Oferta</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Oportunidad_Socio</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Oportunidad - Socio</shortDescription>
+        <value>Oportunidad - Socio</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Oportunidades_Relacionadas</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Oportunidades Relacionadas</shortDescription>
+        <value>Oportunidades Relacionadas</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Origen_Soft_o_Stock</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Origen: Soft o Stock</shortDescription>
+        <value>Origen: Soft o Stock</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Otros</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Otros</shortDescription>
+        <value>Otros</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Proyectos_Inductores</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Proyectos Inductores</shortDescription>
+        <value>Proyectos Inductores</value>
+    </labels>
+    <labels>
+        <fullName>CRM_QA_Realizado</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>QA Realizado</shortDescription>
+        <value>QA Realizado</value>
+    </labels>
+    <labels>
+        <fullName>CRM_QAs</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>QAs</shortDescription>
+        <value>QAs</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Relacionados</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Relacionados</shortDescription>
+        <value>Relacionados</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Responsable_del_Proyecto</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Responsable del Proyecto</shortDescription>
+        <value>Responsable del Proyecto</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Responsables</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Responsables</shortDescription>
+        <value>Responsables</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Resultado_de_la_Cualificacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Resultado de la Cualificación</shortDescription>
+        <value>Resultado de la Cualificación</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Seleccione_Carpeta</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Seleccione Carpeta</shortDescription>
+        <value>Seleccione Carpeta</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Seleccione_Tipo</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Seleccione Tipo</shortDescription>
+        <value>Seleccione Tipo</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Sinergias</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Sinergias</shortDescription>
+        <value>Sinergias</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Socios_Subcontrataciones</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Socios Subcontrataciones</shortDescription>
+        <value>Socios Subcontrataciones</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Socios_Subcontrataciones_Nominadas_RO</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Socios/Subcontrataciones nominadas RO</shortDescription>
+        <value>Socios/Subcontrataciones nominadas RO</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Subir_Archivo</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Subir Archivo</shortDescription>
+        <value>Subir Archivo</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Tarea_de_Aprobacion</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Tarea de Aprobacion</shortDescription>
+        <value>Tarea de Aprobacion</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Tecnologias_Estrategicas</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Tecnologías Estratégicas</shortDescription>
+        <value>Tecnologías Estratégicas</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Tipo_de_Archivo</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Tipo de Archivo</shortDescription>
+        <value>Tipo de Archivo</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Usuarios_Relacionados</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Usuarios Relacionados</shortDescription>
+        <value>Usuarios Relacionados</value>
+    </labels>
 </CustomLabels>

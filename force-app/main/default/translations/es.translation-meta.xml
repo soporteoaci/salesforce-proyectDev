@@ -25,6 +25,30 @@
         <name>SC</name>
     </customApplications>
     <customLabels>
+        <label>Actividades</label>
+        <name>CRM_Actividades</name>
+    </customLabels>
+    <customLabels>
+        <label>Actividades Abiertas</label>
+        <name>CRM_Actividades_Abiertas</name>
+    </customLabels>
+    <customLabels>
+        <label>Aprobaciones</label>
+        <name>CRM_Aprobaciones</name>
+    </customLabels>
+    <customLabels>
+        <label>Archivos de la Oportunidad</label>
+        <name>CRM_Archivos_de_la_Oportunidad</name>
+    </customLabels>
+    <customLabels>
+        <label>Bloqueos</label>
+        <name>CRM_Bloqueos</name>
+    </customLabels>
+    <customLabels>
+        <label>Carpeta</label>
+        <name>CRM_Carpeta</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Causas no tasadas y ambiguas --></label>
         <name>CRM_Causas_no_tasadas_y_ambiguas_CL</name>
     </customLabels>
@@ -35,6 +59,10 @@
     <customLabels>
         <label><!-- Checks de confirmación --></label>
         <name>CRM_Checks_de_confirmacion_CL</name>
+    </customLabels>
+    <customLabels>
+        <label>Cierre</label>
+        <name>CRM_Cierre</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Cliente --></label>
@@ -49,8 +77,36 @@
         <name>CRM_Consulta_Departamento_Legal_CL</name>
     </customLabels>
     <customLabels>
+        <label>Cualificación</label>
+        <name>CRM_Cualificacion</name>
+    </customLabels>
+    <customLabels>
+        <label>Cualificación Preventa (Delivery Center)</label>
+        <name>CRM_Cualificacion_Preventa_DC</name>
+    </customLabels>
+    <customLabels>
+        <label>Cualificación RO</label>
+        <name>CRM_Cualificacion_RO</name>
+    </customLabels>
+    <customLabels>
+        <label>Datos Económicos</label>
+        <name>CRM_Datos_Economicos</name>
+    </customLabels>
+    <customLabels>
+        <label>Datos Obligatorios (una vez guardado el registro hay más información disponible para completar)</label>
+        <name>CRM_Datos_Obligatorios</name>
+    </customLabels>
+    <customLabels>
+        <label>Desglose</label>
+        <name>CRM_Desglose</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Division_SAP --></label>
         <name>CRM_Division_SAP</name>
+    </customLabels>
+    <customLabels>
+        <label>Doc Power Alejandría</label>
+        <name>CRM_Doc_Power_Alejandria</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Emplazamiento --></label>
@@ -59,6 +115,10 @@
     <customLabels>
         <label><!-- Enviado correo a licitaciones --></label>
         <name>CRM_Enviado_correo_a_licitaciones_CL</name>
+    </customLabels>
+    <customLabels>
+        <label>Equipos Oferta</label>
+        <name>CRM_Equipos_Oferta</name>
     </customLabels>
     <customLabels>
         <label><!-- Falta definición del objeto --></label>
@@ -77,12 +137,24 @@
         <name>CRM_Fecha_Inicio</name>
     </customLabels>
     <customLabels>
+        <label>Fechas</label>
+        <name>CRM_Fechas</name>
+    </customLabels>
+    <customLabels>
+        <label>General</label>
+        <name>CRM_General</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Generar_Oferta --></label>
         <name>CRM_Generar_Oferta</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Guardar --></label>
         <name>CRM_Guardar</name>
+    </customLabels>
+    <customLabels>
+        <label>Historial de Actividades</label>
+        <name>CRM_Historial_de_Actividades</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_ING_GP --></label>
@@ -97,8 +169,28 @@
         <name>CRM_Importe_Licitacion</name>
     </customLabels>
     <customLabels>
+        <label>Información de Innovación</label>
+        <name>CRM_Info_Innovacion</name>
+    </customLabels>
+    <customLabels>
+        <label>Información</label>
+        <name>CRM_Informacion</name>
+    </customLabels>
+    <customLabels>
+        <label>Información General de la ON</label>
+        <name>CRM_Informacion_General_ON</name>
+    </customLabels>
+    <customLabels>
+        <label>Información del Sistema</label>
+        <name>CRM_Informacion_del_Sistema</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Margen_Previsto --></label>
         <name>CRM_Margen_Previsto</name>
+    </customLabels>
+    <customLabels>
+        <label>Más información</label>
+        <name>CRM_Mas_Informacion</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Nacional --></label>
@@ -129,12 +221,40 @@
         <name>CRM_Num_Oferta</name>
     </customLabels>
     <customLabels>
+        <label>Objetivos</label>
+        <name>CRM_Objetivos</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Objetivos_Proyecto --></label>
         <name>CRM_Objetivos_Proyecto</name>
     </customLabels>
     <customLabels>
+        <label>Observaciones</label>
+        <name>CRM_Observaciones</name>
+    </customLabels>
+    <customLabels>
+        <label>Oferta</label>
+        <name>CRM_Oferta_Seccion</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Oferta guardada correctamente --></label>
         <name>CRM_Oferta_guardada_correctamente_CL</name>
+    </customLabels>
+    <customLabels>
+        <label>Oportunidad - Socio</label>
+        <name>CRM_Oportunidad_Socio</name>
+    </customLabels>
+    <customLabels>
+        <label>Oportunidades Relacionadas</label>
+        <name>CRM_Oportunidades_Relacionadas</name>
+    </customLabels>
+    <customLabels>
+        <label>Origen: Soft o Stock</label>
+        <name>CRM_Origen_Soft_o_Stock</name>
+    </customLabels>
+    <customLabels>
+        <label>Otros</label>
+        <name>CRM_Otros</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Pais --></label>
@@ -197,6 +317,22 @@
         <name>CRM_Proyecto_Especial</name>
     </customLabels>
     <customLabels>
+        <label>Proyectos Inductores</label>
+        <name>CRM_Proyectos_Inductores</name>
+    </customLabels>
+    <customLabels>
+        <label>QA Realizado</label>
+        <name>CRM_QA_Realizado</name>
+    </customLabels>
+    <customLabels>
+        <label>QAs</label>
+        <name>CRM_QAs</name>
+    </customLabels>
+    <customLabels>
+        <label>Relacionados</label>
+        <name>CRM_Relacionados</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Resolución por conveniencia --></label>
         <name>CRM_Resolucion_por_conveniencia_CL</name>
     </customLabels>
@@ -205,20 +341,72 @@
         <name>CRM_Responsable</name>
     </customLabels>
     <customLabels>
+        <label>Responsable del Proyecto</label>
+        <name>CRM_Responsable_del_Proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label>Responsables</label>
+        <name>CRM_Responsables</name>
+    </customLabels>
+    <customLabels>
+        <label>Resultado de la Cualificación</label>
+        <name>CRM_Resultado_de_la_Cualificacion</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Se incluye lucro --></label>
         <name>CRM_Se_incluye_lucro_CL</name>
+    </customLabels>
+    <customLabels>
+        <label>Seleccione Carpeta</label>
+        <name>CRM_Seleccione_Carpeta</name>
+    </customLabels>
+    <customLabels>
+        <label>Seleccione Tipo</label>
+        <name>CRM_Seleccione_Tipo</name>
+    </customLabels>
+    <customLabels>
+        <label>Sinergias</label>
+        <name>CRM_Sinergias</name>
+    </customLabels>
+    <customLabels>
+        <label>Socios Subcontrataciones</label>
+        <name>CRM_Socios_Subcontrataciones</name>
+    </customLabels>
+    <customLabels>
+        <label>Socios / Subcontrataciones nominadas RO</label>
+        <name>CRM_Socios_Subcontrataciones_Nominadas_RO</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Solicitud_de_codigo_Oferta_y_Soporte_a_Oferta --></label>
         <name>CRM_Solicitud_de_codigo_Oferta_y_Soporte_a_Oferta</name>
     </customLabels>
     <customLabels>
+        <label>Subir Archivo</label>
+        <name>CRM_Subir_Archivo</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Subtipo_Trabajo --></label>
         <name>CRM_Subtipo_Trabajo</name>
     </customLabels>
     <customLabels>
+        <label>Tarea de Aprobacion</label>
+        <name>CRM_Tarea_de_Aprobacion</name>
+    </customLabels>
+    <customLabels>
+        <label>Tecnologías Estratégicas</label>
+        <name>CRM_Tecnologias_Estrategicas</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Tipo_Trabajo --></label>
         <name>CRM_Tipo_Trabajo</name>
+    </customLabels>
+    <customLabels>
+        <label>Tipo de Archivo</label>
+        <name>CRM_Tipo_de_Archivo</name>
+    </customLabels>
+    <customLabels>
+        <label>Usuarios Relacionados</label>
+        <name>CRM_Usuarios_Relacionados</name>
     </customLabels>
     <customLabels>
         <label><!-- CRM_Volver_a_Oportunidad --></label>
@@ -1306,12 +1494,20 @@
         <fullName>Opportunity_Aprobaci_n_QA_Responsables</fullName>
     </flowDefinitions>
     <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Aprobacion_Oferta</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
         <flows>
             <textTemplates>
                 <name>vCuerpoEmail</name>
             </textTemplates>
         </flows>
         <fullName>Opportunity_Aprobacion_Oferta_Responsables</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_Aprobacion_Preliminar</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
@@ -1412,6 +1608,10 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
+        <fullName>Opportunity_Socio_Aprobacion_Socio_Subcontrata</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
         <fullName>Opportunity_Tipificacion</fullName>
     </flowDefinitions>
     <flowDefinitions>
@@ -1421,6 +1621,10 @@
     <flowDefinitions>
         <flows/>
         <fullName>Orquestador_Oportunidad_Aprobaci_n_equipo_preventa</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Orquestador_Opportunity_Aprobaci_n_equipo_preventa</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>

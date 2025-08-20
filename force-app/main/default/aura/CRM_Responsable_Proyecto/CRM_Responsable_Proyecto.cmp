@@ -19,7 +19,7 @@
         <h3 class="slds-section__title">
             <button aria-controls="componentList" class="slds-button slds-section__title-action" onclick="{!c.toggleSection}" data-auraId="Section">
                 <lightning:icon iconName="utility:switch" size="x-small" class="slds-section__title-action-icon slds-button__icon_left" alternativeText="button icon"/>
-                Responsable de Proyecto
+                {!$Label.c.CRM_Responsable_del_Proyecto}
             </button>
         </h3>
         
@@ -31,7 +31,7 @@
                 <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-6">
                     <div class="slds-grid slds-gutters slds-grid_vertical-align-end slds-p-left_small">
                         <div class="slds-col slds-size_2-of-3">
-                            <lightning:input type="text" required="{!v.esResponsableRequerido}" name="ResponsableProyecto" aura:id="ResponsableProyecto" label="Responsable de Proyecto" value="{!v.oportunidad.Responsable_de_Proyecto__c}" disabled="true" />
+                            <lightning:input type="text" required="{!v.esResponsableRequerido}" name="ResponsableProyecto" aura:id="ResponsableProyecto" label="{!$Label.c.CRM_Responsable_del_Proyecto}" value="{!v.oportunidad.Responsable_de_Proyecto__c}" disabled="true" />
                         </div>
                         <div class="slds-col slds-size_1-of-3 slds-p-around_none">
                             <button class="slds-button slds-button_neutral slds-align-middle" required="true" onclick="{!c.OpenModal}" value="Responsable_de_Proyecto__c">...</button>
