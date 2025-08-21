@@ -255,7 +255,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_AltaModOppSUPER</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_AltaModOppSUPERMock</apexClass>
@@ -263,7 +263,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_AltaModOppSUPER_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_BajaClienteSUPER</apexClass>
@@ -291,7 +291,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_BorradoOppSUPER_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_Boton_Nuevo_Importe</apexClass>
@@ -299,7 +299,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_Boton_Nuevo_Importe_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_CPVController</apexClass>
@@ -311,11 +311,11 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_CambiarEstadoOppWS</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_CambiarEstadoOppWS_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_Consulta_Doc_Controller</apexClass>
@@ -327,11 +327,11 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_Controller_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_ExisteDocNewFile</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_ExisteDocNewFileMock</apexClass>
@@ -339,15 +339,15 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_ExisteDocNewFile_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_ImportesSME</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_ImportesSME_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_Listado_Entornos_Tecnologicos</apexClass>
@@ -387,15 +387,15 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_MulesoftAPI_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_OCP</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_OCP_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_Update_ReferenciaComercial</apexClass>
@@ -403,11 +403,11 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_Update_ReferenciaComercial_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_ImportesSME_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_ImportesSME_Utils</apexClass>
@@ -415,7 +415,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_ImportesSME_Utils_Test</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_InfoProyectoInducido</apexClass>
@@ -8652,6 +8652,11 @@
         <editable>false</editable>
         <field>Opportunity.Direccion_Financiera_Corporativa__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Direccion_Operaciones__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>

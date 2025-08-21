@@ -5537,7 +5537,7 @@
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>1 AND 2 AND 8 AND ( ((7 OR 9) AND 5) OR (6 AND(3 AND 4 AND 5)) )</filterLogic>
         <filters>
-            <field>Etapa__c</field>
+            <field>StageName</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Oferta</stringValue>

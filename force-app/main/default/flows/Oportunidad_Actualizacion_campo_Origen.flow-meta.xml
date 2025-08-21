@@ -89,7 +89,7 @@
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Etapa__c</field>
+            <field>StageName</field>
             <value>
                 <stringValue>Oferta</stringValue>
             </value>
@@ -126,7 +126,7 @@
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Etapa__c</field>
+            <field>StageName</field>
             <value>
                 <stringValue>Cerrada</stringValue>
             </value>
@@ -162,7 +162,7 @@
             </value>
         </filters>
         <filters>
-            <field>Etapa__c</field>
+            <field>StageName</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Cualificación</stringValue>
@@ -175,7 +175,7 @@
                 <stringValue>Hard</stringValue>
             </value>
         </filters>
-        <object>Oportunidad__c</object>
+        <object>Opportunity</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>

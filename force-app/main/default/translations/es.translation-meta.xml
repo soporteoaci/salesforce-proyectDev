@@ -117,6 +117,10 @@
         <name>CRM_Enviado_correo_a_licitaciones_CL</name>
     </customLabels>
     <customLabels>
+        <label>Equipo Oferta</label>
+        <name>CRM_Equipo_Oferta</name>
+    </customLabels>
+    <customLabels>
         <label>Equipos Oferta</label>
         <name>CRM_Equipos_Oferta</name>
     </customLabels>
@@ -1548,22 +1552,16 @@
     <flowDefinitions>
         <flows>
             <customErrorMessages>
-                <developerName>Error_socios_creados</developerName>
+                <developerName>Mensaje_de_error_RECHAZADO</developerName>
             </customErrorMessages>
             <customErrorMessages>
-                <developerName>Mensaje_de_error_EN_PROCESO_Sub</developerName>
-            </customErrorMessages>
-            <customErrorMessages>
-                <developerName>Mensaje_de_error_NO_ENVIADO_1</developerName>
+                <developerName>Mensaje_de_error_RECHAZADO_sub</developerName>
             </customErrorMessages>
             <customErrorMessages>
                 <developerName>Error_subcontratas_no_creadas</developerName>
             </customErrorMessages>
             <customErrorMessages>
-                <developerName>Mensaje_de_error_EN_PROCESO_2</developerName>
-            </customErrorMessages>
-            <customErrorMessages>
-                <developerName>Mensaje_de_error_RECHAZADO_sub</developerName>
+                <developerName>Error_socios_creados</developerName>
             </customErrorMessages>
             <customErrorMessages>
                 <developerName>Suma_socios_por</developerName>
@@ -1573,7 +1571,13 @@
                 <developerName>Mensaje_de_error_NO_ENVIADO_sub</developerName>
             </customErrorMessages>
             <customErrorMessages>
-                <developerName>Mensaje_de_error_RECHAZADO</developerName>
+                <developerName>Mensaje_de_error_NO_ENVIADO_1</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_EN_PROCESO_Sub</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_EN_PROCESO_2</developerName>
             </customErrorMessages>
         </flows>
         <fullName>Opportunity_Comprobacion_aprobacion_Oportunidad_Socio</fullName>

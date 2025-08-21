@@ -17,10 +17,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Direccion_Operaciones__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>Participacion_Ayesa__c</field>
             </layoutItems>
             <layoutItems>
@@ -168,7 +164,6 @@
     <miniLayout>
         <fields>Clase_de_oferta__c</fields>
         <fields>Cliente__c</fields>
-        <fields>Direccion_Operaciones__c</fields>
         <fields>Participacion_Ayesa__c</fields>
         <fields>Sociedad_Ayesa__c</fields>
     </miniLayout>

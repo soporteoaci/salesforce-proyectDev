@@ -186,6 +186,30 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Probabilidad__c</fieldItem>
                 <identifier>RecordProbabilidad_cField3</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Etapa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Cerrada</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Probability</fieldItem>
+                <identifier>RecordProbabilityField2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Etapa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Cerrada</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -196,6 +220,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Tipo_de_Negocio__c</fieldItem>
                 <identifier>RecordTipo_de_Negocio_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Cualificaci_n_tipo_de_negocio__c</fieldItem>
+                <identifier>RecordCualificaci_n_tipo_de_negocio_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -217,23 +251,6 @@
                         <leftValue>{!$User.Email}</leftValue>
                         <operator>CONTAINS</operator>
                         <rightValue>rpozas@</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Probability</fieldItem>
-                <identifier>RecordProbabilityField2</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Etapa__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>Cerrada</rightValue>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
@@ -369,10 +386,16 @@
                 <fieldItem>Record.Service_Model__c</fieldItem>
                 <identifier>RecordService_Model_cField</identifier>
                 <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
                         <operator>CONTAINS</operator>
                         <rightValue>dmin</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Email}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>rpozas@</rightValue>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
@@ -385,6 +408,19 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Cloud_On_premise__c</fieldItem>
                 <identifier>RecordCloud_On_premise_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Email}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>rpozas@</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -415,16 +451,29 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Departamento__c</fieldItem>
                 <identifier>RecordDepartamento_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Cualificaci_n_tipo_de_negocio__c</fieldItem>
-                <identifier>RecordCualificaci_n_tipo_de_negocio_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Sociedad_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0151</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Sociedad_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0093</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Sociedad_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0151-IE</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Sociedad_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0151-BH</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-9376d07a-bfd3-47d7-a425-287c19793d4d</name>
@@ -575,16 +624,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Direccion_Operaciones__c</fieldItem>
-                <identifier>RecordDireccion_Operaciones_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Nombre_Corto__c</fieldItem>
                 <identifier>RecordNombre_Corto_cField2</identifier>
             </fieldInstance>
@@ -667,6 +706,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Importe_total_ofertado_sin_IVA_local__c</fieldItem>
                 <identifier>RecordImporte_total_ofertado_sin_IVA_local_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Divisa__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>EUR</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -749,10 +795,30 @@
                 <identifier>RecordOportunidad_Origen_cField2</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CloseDate</fieldItem>
+                <identifier>RecordCloseDateField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-e2743403-dcb6-4f2a-9f4a-c194f35d1a77</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -901,6 +967,29 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Departamento__c</fieldItem>
                 <identifier>RecordDepartamento_cField2</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Sociedad_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0151</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Sociedad_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0093</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Sociedad_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0151-IE</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Sociedad_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0151-BH</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -951,6 +1040,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Up_selling__c</fieldItem>
                 <identifier>RecordUp_selling_cField2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Bookings_breakdown__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Up-selling</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-423c6e2b-5f10-4a14-bd5d-421209a5bcb4</name>
@@ -1017,7 +1113,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>{!$Label.CRM_Informacion}</value>
+                    <value>{!$Label.CRM_Origen_Soft_o_Stock}</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection4</identifier>
@@ -1041,7 +1137,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>{!$Label.CRM_Origen_Soft_o_Stock}</value>
+                    <value>{!$Label.CRM_Informacion_del_Sistema}</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection5</identifier>
@@ -1089,6 +1185,29 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Tipo_Extension__c</fieldItem>
                 <identifier>RecordTipo_Extension_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Extension__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Tipo_Extension__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Extensión Desglose</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Tipo_Extension__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Extensión Rectificativa</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1149,6 +1268,19 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Elemento_PEP__c</fieldItem>
                 <identifier>RecordElemento_PEP_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Email}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>rpozas@</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-deca8d0c-9a5c-4c12-b09c-ce3f4d4decec</name>
@@ -1173,6 +1305,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Observaciones_Administrador__c</fieldItem>
                 <identifier>RecordObservaciones_Administrador_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1213,6 +1352,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Oportunidad_Padre__c</fieldItem>
                 <identifier>RecordOportunidad_Padre_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Oportunidad_Padre__r.Tipo_Extension__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Extensión Desglose</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1415,6 +1561,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Bloqueada_importe_Horizontal__c</fieldItem>
                 <identifier>RecordBloqueada_importe_Horizontal_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-ae74644e-4dfe-4acc-ad20-9115393d449f</name>
@@ -1429,6 +1582,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Bloqueo_por_aprobacion__c</fieldItem>
                 <identifier>RecordBloqueo_por_aprobacion_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-a499a6af-1109-4180-a0a7-9128b7f37463</name>
@@ -1609,6 +1769,19 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Importe_total_ofertado_sin_IVA_local__c</fieldItem>
                 <identifier>RecordImporte_total_ofertado_sin_IVA_local_cField2</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Owner_Rol__c}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>KAM Latam</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Divisa__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>EUR</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-f1b1bfef-adf2-4425-9cb5-918e2f042411</name>
@@ -1643,6 +1816,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Margen_Previsto_Euros__c</fieldItem>
                 <identifier>RecordMargen_Previsto_Euros_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Owner_Rol__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Latam</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1653,6 +1833,19 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Margen_Previsto_Local__c</fieldItem>
                 <identifier>RecordMargen_Previsto_Local_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Owner_Rol__c}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>KAM Latam</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Divisa__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>EUR</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1663,6 +1856,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Importe_adjudicacion__c</fieldItem>
                 <identifier>RecordImporte_adjudicacion_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Tipo_Participacion_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>UTE</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-86edb3eb-b60d-4b12-bf78-a9d2a1df2da8</name>
@@ -1989,6 +2189,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Se_produce_fuera_Spain__c</fieldItem>
                 <identifier>RecordSe_produce_fuera_Spain_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Pais_IT__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>ES</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1999,6 +2206,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Pais__c</fieldItem>
                 <identifier>RecordPais_cField3</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Se_produce_fuera_Spain__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Sí</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-86e45785-e081-47fa-82e5-e0dd275d4f38</name>
@@ -2037,6 +2251,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Probabilidad__c</fieldItem>
                 <identifier>RecordProbabilidad_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Etapa__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Cerrada</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2047,6 +2268,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Probability</fieldItem>
                 <identifier>RecordProbabilityField3</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Etapa__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Cerrada</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2461,6 +2689,39 @@
             <componentInstance>
                 <componentName>CRM_Formulario_Preventa</componentName>
                 <identifier>c_CRM_Formulario_Preventa</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Subfase__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Pte ok preliminar</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Subfase__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Aplazada / anulada</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Subfase__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>No presentada</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Subfase__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Ganada</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Subfase__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Perdida</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Bloqueo_por_aprobacion__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -2561,9 +2822,16 @@
                 <componentName>lst:dynamicRelatedList</componentName>
                 <identifier>lst_dynamicRelatedList</identifier>
                 <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
                     <criteria>
-                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
-                        <operator>NE</operator>
+                        <leftValue>{!Record.Tipo_Participacion_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>UTE</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Subcontrataciones__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Sí</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>
@@ -2862,10 +3130,16 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>{!$Label.CRM_Socios_Subcontrataciones_Nominadas_RO}</value>
+                    <value>{!$Label.CRM_Oferta_Seccion}</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection18</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -2880,10 +3154,16 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Información</value>
+                    <value>{!$Label.CRM_Informacion}</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection19</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -2898,10 +3178,16 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Socios Subcontrataciones</value>
+                    <value>{!$Label.CRM_Socios_Subcontrataciones}</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection20</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -2961,7 +3247,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListLabel</name>
-                    <value>Opportunities-Partners</value>
+                    <value>{!$Label.CRM_Oportunidad_Socio}</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showActionBar</name>
@@ -3052,6 +3338,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Estado_de_Cierre__c</fieldItem>
                 <identifier>RecordEstado_de_Cierre_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -3130,6 +3423,12 @@
             <componentInstance>
                 <componentName>CRM_Responsable_Proyecto</componentName>
                 <identifier>c_CRM_Responsable_Proyecto</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-s10fnnehfwa</name>
@@ -3558,6 +3857,12 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection23</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -3576,6 +3881,12 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection24</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -3594,12 +3905,24 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection25</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentName>LoadFileQA</componentName>
                 <identifier>c_LoadFileQA</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -3671,6 +3994,12 @@
                 </componentInstanceProperties>
                 <componentName>lst:dynamicRelatedList</componentName>
                 <identifier>lst_dynamicRelatedList3</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-229edfcb-2b28-49b5-89d0-135bb06a823c</name>
@@ -3756,6 +4085,19 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Numero_QA__c</fieldItem>
                 <identifier>RecordNumero_QA_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Email}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>soporteoaci</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -3843,166 +4185,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Decision_Go_Smart_BPM_Offer__c</fieldItem>
-                <identifier>RecordDecision_Go_Smart_BPM_Offer_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Decision_QA_Tecnico__c</fieldItem>
-                <identifier>RecordDecision_QA_Tecnico_cField3</identifier>
-                <visibilityRule>
-                    <booleanFilter>1 OR 2</booleanFilter>
-                    <criteria>
-                        <leftValue>{!Record.Numero_QA__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>1</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!Record.Numero_QA__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>2</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Email_CEO_COO__c</fieldItem>
-                <identifier>RecordEmail_CEO_COO_cField2</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Importe_Licitacion__c}</leftValue>
-                        <operator>GE</operator>
-                        <rightValue>1000000</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Decision_Socios__c</fieldItem>
-                <identifier>RecordDecision_Socios_cField2</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Tipo_Participacion_Ayesa__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>UTE</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-tgbm90xpxyo</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Numero_QA__c</fieldItem>
-                <identifier>RecordNumero_QA_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Decision_QA_Tecnico__c</fieldItem>
-                <identifier>RecordDecision_QA_Tecnico_cField4</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Numero_QA__c}</leftValue>
-                        <operator>GE</operator>
-                        <rightValue>2</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Decision_Aprobacion_Oferta__c</fieldItem>
-                <identifier>RecordDecision_Aprobacion_Oferta_cField2</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Numero_QA__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>0</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Decision_Subcontrataciones__c</fieldItem>
-                <identifier>RecordDecision_Subcontrataciones_cField2</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Subcontrataciones__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>Sí</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-1tc8c45mh9n</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-tgbm90xpxyo</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column50</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-1tc8c45mh9n</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column51</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-mfvbnqugoeg</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Propietario_custom__c</fieldItem>
                 <identifier>RecordPropietario_custom_cField2</identifier>
             </fieldInstance>
@@ -4043,6 +4225,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Director_Pais__c</fieldItem>
+                <identifier>RecordDirector_Pais_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Director_Internacional__c</fieldItem>
                 <identifier>RecordDirector_Internacional_cField</identifier>
             </fieldInstance>
@@ -4065,26 +4257,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Director_Compliance__c</fieldItem>
                 <identifier>RecordDirector_Compliance_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Director_Global_de_QA_Risk__c</fieldItem>
-                <identifier>RecordDirector_Global_de_QA_Risk_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Direccion_Financiera_Corporativa__c</fieldItem>
-                <identifier>RecordDireccion_Financiera_Corporativa_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-b0c84a92-61b8-490e-ba76-a05ae57a4bac</name>
@@ -4173,6 +4345,23 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Auxiliar_Delivery_Center__c</fieldItem>
+                <identifier>RecordAuxiliar_Delivery_Center_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Responsable_Preventa__c</fieldItem>
                 <identifier>RecordResponsable_Preventa_cField</identifier>
             </fieldInstance>
@@ -4185,6 +4374,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Auxiliar_Preventa__c</fieldItem>
                 <identifier>RecordAuxiliar_Preventa_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -4215,6 +4411,26 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.CSO__c</fieldItem>
                 <identifier>RecordCSO_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Director_Global_de_QA_Risk__c</fieldItem>
+                <identifier>RecordDirector_Global_de_QA_Risk_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Direccion_Financiera_Corporativa__c</fieldItem>
+                <identifier>RecordDireccion_Financiera_Corporativa_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-58d7454d-9827-4e9b-8f94-5e85f2f05b76</name>
@@ -4261,24 +4477,12 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection26</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-mfvbnqugoeg</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>horizontalAlignment</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Aprobaciones Admin (REVISAR SI ELIMINO)</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection27</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -4297,6 +4501,12 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection28</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -4523,6 +4733,12 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -4798,6 +5014,12 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-5b9d5c4c-7f67-431d-a510-86d5a47f4b82</name>
@@ -4968,6 +5190,12 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection29</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -5065,6 +5293,19 @@
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
                 <identifier>force_relatedListSingleContainer</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Email}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>soporteoaci</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Email}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>rburgos@</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-49be261c-fa51-4c48-b9bb-76ce001c0adf</name>

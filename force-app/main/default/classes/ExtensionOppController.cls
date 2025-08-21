@@ -3,8 +3,8 @@ public class ExtensionOppController {
     @AuraEnabled
     public static String getTypeOpp(Id idOportunidad){
         
-        Opportunity opp =[SELECT id, name, codigo_OC__c,Oportunidad_Relacionada__c, RecordType.Name,Direccion_Operaciones__c,Etapa__c,Subfase__c,Tipo_Extension__c,fecha_firma_contrato__c,
-                             fecha_estimada_de_cierre__c, Fecha_limite_de_presentacion__c, Plazo_de_ejecuci_n_meses__c,RENTPPTO__c, Importe_Licitacion__c, probabilidad__c, tipo_de_negocio__c,
+        Opportunity opp =[SELECT id, name, codigo_OC__c,Oportunidad_Relacionada__c, RecordType.Name,Direccion_Operaciones__c,StageName,Subfase__c,Tipo_Extension__c,fecha_firma_contrato__c,
+                             fecha_estimada_de_cierre__c, Fecha_limite_de_presentacion__c, Plazo_de_ejecuci_n_meses__c,RENTPPTO__c, Importe_Licitacion__c, Probability, tipo_de_negocio__c,
                              Origen__c
                              from Opportunity where Id =: idOportunidad];
         //12/01/2024
@@ -83,7 +83,7 @@ public class ExtensionOppController {
             //Para los otros tipos de registro AYESA
             oppExtension.RecordTypeId= recordTypeAyesa; 
             oppExtension.Desglose_importes__c = '';
-            oppExtension.Etapa__c = 'Cualificación';
+            oppExtension.StageName = 'Cualificación';
             oppExtension.Direccion_Operaciones__c= oppClonada.Direccion_Operaciones__c;
             oppExtension.Mercado__c= oppClonada.Mercado__c;
             oppExtension.DivisionPicklist__c= oppClonada.DivisionPicklist__c;
@@ -174,10 +174,10 @@ public class ExtensionOppController {
                     oppExtension.Direccion_Financiera_Corporativa__c=oppClonada.Direccion_Financiera_Corporativa__c;
 
                     If(oppExtension.Direccion_Operaciones__c == 'ENGINEERING'){
-                        oppExtension.Etapa__c ='Cerrada';
+                        oppExtension.StageName ='Cerrada';
                         oppExtension.Subfase__c ='Esperando decisión'; 
                     }else{
-                        oppExtension.Etapa__c ='Oferta';
+                        oppExtension.StageName ='Oferta';
                         oppExtension.Subfase__c ='Elaboración oferta';                        
                     }
                     
@@ -188,7 +188,7 @@ public class ExtensionOppController {
                 System.debug('Rectificativa');
                 oppExtension.Linea_de_Servicio__c=oppClonada.Linea_de_servicio__c;
                 oppExtension.Tipo_de_Negocio__c = tipoNegocio;
-                oppExtension.Etapa__c ='Cerrada';
+                oppExtension.StageName ='Cerrada';
                 oppExtension.Subfase__c ='Ganada';
                 oppExtension.Motivo_Perdido__c='Posicionamiento en cliente';
                 oppExtension.Fecha_firma_contrato__c = oppClonada.Fecha_firma_contrato__c;
@@ -266,7 +266,7 @@ public class ExtensionOppController {
         oppExtension.Participacion_Ayesa__c = 100;
         
         oppExtension.Cliente__c= oppClonada.Cliente__c;
-        oppExtension.Probabilidad__c = probabilidad;
+        oppExtension.Probability = Decimal.valueOf(probabilidad);
         oppExtension.Contacto_Principal__c= oppClonada.Contacto_Principal__c;
         oppExtension.Pais__c = oppClonada.Pais__c;
         oppExtension.Sociedad_Ayesa__c= oppClonada.Sociedad_Ayesa__c;
@@ -316,7 +316,7 @@ public class ExtensionOppController {
             if(!Test.isRunningTest()){
                 
                 if(tipoExtension == 'Extensión Rectificativa'){
-                    oppExtension.Etapa__c ='Cerrada';
+                    oppExtension.StageName ='Cerrada';
                     oppExtension.Subfase__c ='Ganada';
                 }
                 

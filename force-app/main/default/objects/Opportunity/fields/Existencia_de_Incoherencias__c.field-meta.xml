@@ -4,15 +4,15 @@
     <description>Validación de incoherencias en los datos de la oportunidad</description>
     <formula>OR(
   AND(
-    NOT ( ISPICKVAL(Etapa__c, &apos;Cerrada&apos;) ),
+    NOT ( ISPICKVAL(StageName, &apos;Cerrada&apos;) ),
     Fecha_limite_de_presentacion__c  &lt;  TODAY() 
   ),
   AND(
-    NOT ( ISPICKVAL(Etapa__c, &apos;Cerrada&apos;) ),
+    NOT ( ISPICKVAL(StageName, &apos;Cerrada&apos;) ),
     Fecha_estimada_de_cierre__c  &lt;  TODAY() 
   ),
   AND(
-    NOT ( ISPICKVAL(Etapa__c, &apos;Cualificación&apos;) ),
+    NOT ( ISPICKVAL(StageName, &apos;Cualificación&apos;) ),
     NOT ( ISPICKVAL(Tipo_de_Oportunidad__c, &apos;Licitación&apos;) )
   ),
   Fecha_estimada_de_cierre__c &lt;= Fecha_limite_de_presentacion__c

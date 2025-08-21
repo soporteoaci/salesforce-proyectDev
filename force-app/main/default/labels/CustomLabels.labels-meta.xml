@@ -1244,4 +1244,11 @@ Saludos,</value>
         <shortDescription>Usuarios Relacionados</shortDescription>
         <value>Usuarios Relacionados</value>
     </labels>
+    <labels>
+        <fullName>CRM_Equipo_Oferta</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Equipo Oferta</shortDescription>
+        <value>Equipo Oferta</value>
+    </labels>
 </CustomLabels>

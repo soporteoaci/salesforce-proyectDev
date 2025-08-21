@@ -25,10 +25,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>CRM_IB_AltaModOppSUPER</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>CRM_IB_BajaClienteSUPER</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -49,27 +45,11 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>CRM_IB_CambiarEstadoOppWS</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>CRM_IB_Consulta_Doc_Controller</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_Controller</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CRM_IB_Controller_Test</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CRM_IB_ExisteDocNewFile</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CRM_IB_ImportesSME</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -86,10 +66,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_MulesoftAPI</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CRM_IB_OCP</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>

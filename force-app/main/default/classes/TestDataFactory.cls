@@ -27,7 +27,7 @@ public class TestDataFactory {
             Contacto_Principal__c          = contacto.Id,
             Pais__c                        = 'ES',
             Sociedad_Ayesa__c              = '0002',
-            Probabilidad__c                = '10',
+            Probability                    = 10,
             Mercado__c                     = '60029413',
             DivisionPickList__c            = '60049219',
             Linea_de_Servicio__c           = lineaServicio,
@@ -41,7 +41,6 @@ public class TestDataFactory {
             Tipo_Participacion_Ayesa__c         = 'Contratista Principal',
             Participacion_Ayesa__c              = 100,
             Direccion_Operaciones__c            = 'IT&DS',
-            Etapa__c  = etapa,
             Subfase__c= 'Alta'  
         );
         insert opp;
@@ -144,7 +143,7 @@ public class TestDataFactory {
                                       Centro__c,
                                       //Grupo__c,
                                       //Subgrupo__c,
-                                      Probabilidad__c,
+                                      Probability,
                                       Clasificacion_funcional_Nivel_1__c,
                                       Clasificacion_funcional_Nivel_2__c,
                                       Clasificacion_funcional_Nivel_3__c,
@@ -154,7 +153,7 @@ public class TestDataFactory {
                                       Cliente__r.Name,
                                       Cliente__r.SAP_Account__c,
                                       Oferta_SAP__c,
-                                      Etapa__c
+                                      StageName
                                       from Opportunity  where id = :idOpportunity];
         
         if (opps.size() > 0) {

@@ -255,7 +255,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_AltaModOppSUPER</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_AltaModOppSUPERMock</apexClass>
@@ -311,7 +311,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_CambiarEstadoOppWS</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_CambiarEstadoOppWS_Test</apexClass>
@@ -331,7 +331,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_ExisteDocNewFile</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_ExisteDocNewFileMock</apexClass>
@@ -391,7 +391,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_OCP</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_OCP_Test</apexClass>
@@ -8648,6 +8648,11 @@
         <editable>false</editable>
         <field>Opportunity.Direccion_Financiera_Corporativa__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Direccion_Operaciones__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>

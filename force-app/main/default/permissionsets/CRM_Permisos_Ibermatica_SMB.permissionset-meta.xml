@@ -13,10 +13,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>CRM_IB_AltaModOppSUPER</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>CRM_IB_Boton_Nuevo_Importe</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -26,10 +22,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CRM_IB_Controller</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CRM_IB_ExisteDocNewFile</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>

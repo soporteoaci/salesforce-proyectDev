@@ -170,12 +170,12 @@ public class CRM_CentroResponsabilidad {
     public static String superPreventa(Id idOpp){
         System.debug('Super preventa Oportunidad');
         String mode ;
-        List<Opportunity> opp = [SELECT id,Codigo_OC__c,Etapa__c,Subfase__c
+        List<Opportunity> opp = [SELECT id,Codigo_OC__c,StageName,Subfase__c
                                     FROM Opportunity WHERE Id =:idOpp LIMIT 1];
         
         if(opp.get(0).Subfase__c== 'Ganada' || opp.get(0).Subfase__c== 'Perdida' || opp.get(0).Subfase__c== 'Aplazada / anulada'   || opp.get(0).Subfase__c== 'No presentada'){
             
-            //opp.get(0).Etapa__c == 'Cerrada'
+            //opp.get(0).StageName == 'Cerrada'
             mode = '&modo=R';
         }else{
             mode = '&modo=W';
@@ -191,9 +191,9 @@ public class CRM_CentroResponsabilidad {
     public static Boolean readOnlyCR(String oppId){        
         System.debug('Id oportunidad: ' + oppId);
         Boolean read = true;
-        Opportunity opp = [Select Id, Name, Etapa__c,Subfase__c
+        Opportunity opp = [Select Id, Name, StageName,Subfase__c
                               From Opportunity where id =: oppId Limit 1];
-        if(opp.Etapa__c == 'Cualificación'){
+        if(opp.StageName == 'Cualificación'){
             if(opp.Subfase__c == 'Alta' || opp.Subfase__c == 'Cualificacion con autoprovision' || opp.Subfase__c == 'Cualificación con preventa'){
                 read = false;
             }          

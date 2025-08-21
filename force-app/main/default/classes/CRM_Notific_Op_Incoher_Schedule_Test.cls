@@ -82,7 +82,7 @@ public class CRM_Notific_Op_Incoher_Schedule_Test {
             Name = 'Prueba',
             Cliente__c = cuenta1.Id,
             Pais__c = 'ES',
-            Probabilidad__c = '10',
+            Probability = 10,
             Area__c = 'ATC',
             Importe_Licitacion__c = 1000000,
             Margen_estimado_incluye_recargos__c = 0.1,

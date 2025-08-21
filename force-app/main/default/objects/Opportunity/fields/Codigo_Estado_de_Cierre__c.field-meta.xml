@@ -3,7 +3,7 @@
     <fullName>Codigo_Estado_de_Cierre__c</fullName>
     <description>Codigo estado de cierre para procesos Ibermatica (G,P,A)</description>
     <externalId>false</externalId>
-    <formula>IF (ispickval(Etapa__c,&apos;Cerrada&apos;) &amp;&amp; NOT(ISBLANK(TEXT(Estado_de_Cierre__c))),
+    <formula>IF (ispickval(StageName,&apos;Cerrada&apos;) &amp;&amp; NOT(ISBLANK(TEXT(Estado_de_Cierre__c))),
 				CASE(Estado_de_Cierre__c,
 									&apos;Contratada&apos;, &apos;G&apos;,
 									&apos;Perdida&apos;, &apos;P&apos;,

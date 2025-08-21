@@ -24,7 +24,7 @@
         <locationX>50</locationX>
         <locationY>242</locationY>
         <assignmentItems>
-            <assignToReference>vOpportunity.Etapa__c</assignToReference>
+            <assignToReference>vOpportunity.StageName</assignToReference>
             <operator>Assign</operator>
             <value>
                 <stringValue>Oferta</stringValue>

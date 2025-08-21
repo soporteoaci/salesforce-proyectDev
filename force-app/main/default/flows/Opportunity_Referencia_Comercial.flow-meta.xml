@@ -187,7 +187,7 @@
             </value>
         </filters>
         <filters>
-            <field>Etapa__c</field>
+            <field>StageName</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Cerrada</stringValue>

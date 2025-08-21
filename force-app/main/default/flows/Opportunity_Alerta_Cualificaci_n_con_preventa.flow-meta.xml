@@ -51,7 +51,7 @@
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Etapa__c</field>
+            <field>StageName</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Cualificación</stringValue>

@@ -34,11 +34,11 @@ insert Cliente; */
         Contact Contacto = new Contact (FirstName='Prueba',LastName ='Prueba', AccountId= Cliente.Id);
         insert contacto;
         //Oportunidad creada solo con Mercado y Division
-        Opportunity op= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id,Contacto_Principal__c = contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60034542',
+        Opportunity op= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id,Contacto_Principal__c = contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probability=10, Mercado__c='60034542',
                                               Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                               Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
         op.CreatedDate=system.today();
-        Opportunity opLatam= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id,Contacto_Principal__c = contacto.Id, Pais__c='EC',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60034542',
+        Opportunity opLatam= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id,Contacto_Principal__c = contacto.Id, Pais__c='EC',Sociedad_Ayesa__c='0002',Probability=10, Mercado__c='60034542',
                                                    Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                                    Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS',RecordTypeId = RecordTypeAyesa);
         
@@ -103,7 +103,7 @@ opLatam.Subdivision2__c='V-ENEL MK España L1';*/
         Contact Contacto = new Contact (FirstName='Prueba',LastName ='Prueba', AccountId= Cliente.Id);
         insert contacto;
         Id RecordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
-        Opportunity op= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id,Contacto_Principal__c = contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probabilidad__c='10', Mercado__c='60034542',
+        Opportunity op= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', Cliente__c=Cliente.Id,Contacto_Principal__c = contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probability=10, Mercado__c='60034542',
                                               Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                               Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
         

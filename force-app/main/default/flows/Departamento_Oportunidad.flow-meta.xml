@@ -59,7 +59,7 @@
         <locationX>50</locationX>
         <locationY>431</locationY>
         <inputAssignments>
-            <field>Departamento_RO__c</field>
+            <field>null__NotFound</field>
             <value>
                 <elementReference>$Record.Departamento__c</elementReference>
             </value>
@@ -80,10 +80,10 @@
                 <stringValue>0151 - BYRNELOOBY</stringValue>
             </value>
         </filters>
-        <object>Oportunidad__c</object>
+        <object>Opportunity</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>InvalidDraft</status>
     <triggerOrder>650</triggerOrder>
 </Flow>

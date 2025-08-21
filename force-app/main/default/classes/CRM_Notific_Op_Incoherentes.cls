@@ -4,7 +4,7 @@ global class CRM_Notific_Op_Incoherentes implements Database.Batchable<sObject>{
     global Database.QueryLocator start(Database.BatchableContext BC){
         system.debug('Ejecución de consulta de oportunidades incoherentes...');
         
-        string query='SELECT Id, Name, OwnerId, Owner.name, Owner.email FROM Opportunity WHERE Existencia_de_Incoherencias__c = true and (Etapa__c != \'Cerrada\' or estado_de_cierre__c = \'Contratada\') order by OwnerId' + (Test.isRunningTest()?' LIMIT 10':'');                
+        string query='SELECT Id, Name, OwnerId, Owner.name, Owner.email FROM Opportunity WHERE Existencia_de_Incoherencias__c = true and (StageName != \'Cerrada\' or estado_de_cierre__c = \'Contratada\') order by OwnerId' + (Test.isRunningTest()?' LIMIT 10':'');                
 
         return Database.getQueryLocator(query);
         

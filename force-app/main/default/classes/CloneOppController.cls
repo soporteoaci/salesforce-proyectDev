@@ -34,13 +34,13 @@ public class CloneOppController {
         if(oppClonada.RecordTypeId == recordTypeSME){
             oppClonada.Clase_de_oferta__c = 'Información Previa';
             oppClonada.Etapa_Fase__c = 'Captación';
-            oppClonada.Etapa__c = 'Captación';
+            oppClonada.StageName = 'Captación';
             oppClonada.Fase__c='Suspect';
             oppClonada.Modificar_importes__c= TRUE;
             
         }else{
             oppClonada.RecordTypeId=recordTypeAyesa;
-            oppClonada.Etapa__c = 'Cualificación';
+            oppClonada.StageName = 'Cualificación';
             oppClonada.Subfase__c = 'Alta';
             oppClonada.Modificar_importes__c= TRUE;
             

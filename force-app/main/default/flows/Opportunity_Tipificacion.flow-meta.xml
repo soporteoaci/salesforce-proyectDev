@@ -2140,7 +2140,7 @@
         </connector>
         <filterLogic>1 AND (2 OR 3 OR 4)</filterLogic>
         <filters>
-            <field>Etapa__c</field>
+            <field>StageName</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Cualificación</stringValue>

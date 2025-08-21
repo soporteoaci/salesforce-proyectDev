@@ -8,10 +8,10 @@
         <locationX>50</locationX>
         <locationY>395</locationY>
         <assignmentItems>
-            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <assignToReference>$Record.Probability</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>0</stringValue>
+                <numberValue>0.0</numberValue>
             </value>
         </assignmentItems>
         <connector>
@@ -24,10 +24,10 @@
         <locationX>1898</locationX>
         <locationY>395</locationY>
         <assignmentItems>
-            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <assignToReference>$Record.Probability</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>0</stringValue>
+                <numberValue>0.0</numberValue>
             </value>
         </assignmentItems>
         <connector>
@@ -40,10 +40,10 @@
         <locationX>842</locationX>
         <locationY>395</locationY>
         <assignmentItems>
-            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <assignToReference>$Record.Probability</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>100</stringValue>
+                <numberValue>100.0</numberValue>
             </value>
         </assignmentItems>
         <connector>
@@ -56,10 +56,10 @@
         <locationX>314</locationX>
         <locationY>395</locationY>
         <assignmentItems>
-            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <assignToReference>$Record.Probability</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>30</stringValue>
+                <numberValue>30.0</numberValue>
             </value>
         </assignmentItems>
         <connector>
@@ -72,10 +72,10 @@
         <locationX>1106</locationX>
         <locationY>395</locationY>
         <assignmentItems>
-            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <assignToReference>$Record.Probability</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>50</stringValue>
+                <numberValue>50.0</numberValue>
             </value>
         </assignmentItems>
         <connector>
@@ -88,10 +88,10 @@
         <locationX>1370</locationX>
         <locationY>395</locationY>
         <assignmentItems>
-            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <assignToReference>$Record.Probability</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>70</stringValue>
+                <numberValue>70.0</numberValue>
             </value>
         </assignmentItems>
         <connector>
@@ -104,10 +104,10 @@
         <locationX>578</locationX>
         <locationY>395</locationY>
         <assignmentItems>
-            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <assignToReference>$Record.Probability</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>90</stringValue>
+                <numberValue>90.0</numberValue>
             </value>
         </assignmentItems>
         <connector>
@@ -198,10 +198,10 @@
         <locationX>1634</locationX>
         <locationY>395</locationY>
         <assignmentItems>
-            <assignToReference>$Record.Probabilidad__c</assignToReference>
+            <assignToReference>$Record.Probability</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>30</stringValue>
+                <numberValue>30.0</numberValue>
             </value>
         </assignmentItems>
         <connector>
@@ -478,7 +478,7 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Etapa__c</field>
+            <field>StageName</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Cerrada</stringValue>
