@@ -130,7 +130,7 @@
                         </lightning:layoutItem>
                     </aura:if>
                     <lightning:layoutItem size="3" padding="horizontal-medium">
-                        <lightning:select name="probabilidad" label="Probabilidad" aura:id="probabilidad" required="true" value="{!v.Oportunidad.Probabilidad__c}">
+                        <lightning:select name="probabilidad" label="Probabilidad" aura:id="probabilidad" required="true" value="{!v.Oportunidad.Probability}">
                             <option value="0">0</option>
                             <option value="10">10</option>
                             <option value="30">30</option>

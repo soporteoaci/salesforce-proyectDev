@@ -536,6 +536,35 @@
         <label>Zambia</label>
     </customValue>
     <customValue>
+        <fullName>ME</fullName>
+        <default>false</default>
+        <label>Middle East</label>
+    </customValue>
+    <customValue>
+        <fullName>Greece</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Greece</label>
+    </customValue>
+    <customValue>
+        <fullName>UAE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>UAE</label>
+    </customValue>
+    <customValue>
+        <fullName>Bahrain</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bahrain</label>
+    </customValue>
+    <customValue>
+        <fullName>KSA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>KSA</label>
+    </customValue>
+    <customValue>
         <fullName>Ireland</fullName>
         <default>false</default>
         <isActive>false</isActive>
@@ -566,34 +595,10 @@
         <label>Arabia</label>
     </customValue>
     <customValue>
-        <fullName>Norway</fullName>
+        <fullName>USA</fullName>
         <default>false</default>
         <isActive>false</isActive>
-        <label>Norway</label>
-    </customValue>
-    <customValue>
-        <fullName>Sweden</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Sweden</label>
-    </customValue>
-    <customValue>
-        <fullName>Lithuania</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Lithuania</label>
-    </customValue>
-    <customValue>
-        <fullName>UAE</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>UAE</label>
-    </customValue>
-    <customValue>
-        <fullName>Greece</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Greece</label>
+        <label>USA</label>
     </customValue>
     <customValue>
         <fullName>Oman</fullName>
@@ -656,10 +661,28 @@
         <label>Mauritius</label>
     </customValue>
     <customValue>
+        <fullName>Norway</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Norway</label>
+    </customValue>
+    <customValue>
+        <fullName>Sweden</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sweden</label>
+    </customValue>
+    <customValue>
         <fullName>España</fullName>
         <default>false</default>
         <isActive>false</isActive>
         <label>España</label>
+    </customValue>
+    <customValue>
+        <fullName>Lithuania</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lithuania</label>
     </customValue>
     <customValue>
         <fullName>Latvia</fullName>
@@ -672,24 +695,6 @@
         <default>false</default>
         <isActive>false</isActive>
         <label>UK</label>
-    </customValue>
-    <customValue>
-        <fullName>Bahrain</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Bahrain</label>
-    </customValue>
-    <customValue>
-        <fullName>USA</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>USA</label>
-    </customValue>
-    <customValue>
-        <fullName>KSA</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>KSA</label>
     </customValue>
     <masterLabel>Países</masterLabel>
     <sorted>true</sorted>

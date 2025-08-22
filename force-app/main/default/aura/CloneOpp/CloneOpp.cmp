@@ -1,10 +1,10 @@
 <aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" controller="CloneOppController">
     
     <aura:attribute name="record" type="Object"/>
-    <aura:attribute name="caseRecord" type="Oportunidad__c"/>
+    <aura:attribute name="caseRecord" type="Opportunity"/>
     <aura:attribute name="recordError" type="String"/>
     
-    <aura:attribute name="dataRecord" type="Oportunidad__c"/>
+    <aura:attribute name="dataRecord" type="Opportunity"/>
     <aura:attribute name="RecordTypeName" type="String"/>
     
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>

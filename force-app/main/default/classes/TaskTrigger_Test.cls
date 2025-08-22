@@ -14,8 +14,8 @@ public class TaskTrigger_Test {
         // Aseguramos tener Account y Contact asociados
         Account acc;
         Contact cto;
-        if (op.Cliente__c != null) {
-            acc = [SELECT Id FROM Account WHERE Id = :op.Cliente__c LIMIT 1];
+        if (op.AccountId != null) {
+            acc = [SELECT Id FROM Account WHERE Id = :op.AccountId LIMIT 1];
         } else {
             acc = new Account(Name='Cuenta fallback', Sector__c='Educación', Subsector__c='Centros de formación en gral.');
             insert acc;
@@ -74,7 +74,7 @@ public class TaskTrigger_Test {
         ];
         System.assertEquals(op.Id, t2.WhatId, 'WhatId debe ser la Opportunity al informar Opportunity__c');
         System.assertEquals(op.Id, t2.Opportunity__c, 'Opportunity__c debe permanecer');
-        System.assertEquals(op.Cliente__c, t2.Clic_comercial__c, 'Clic_comercial__c debe venir de la Opportunity');
+        System.assertEquals(op.AccountId, t2.Clic_comercial__c, 'Clic_comercial__c debe venir de la Opportunity');
 
         // 3) Forzamos sólo WhatId (Opportunity) y limpiamos Opportunity__c para que se repueble
         tarea.WhatId = op.Id;
@@ -90,7 +90,7 @@ public class TaskTrigger_Test {
         ];
         System.assertEquals(op.Id, t3.WhatId, 'WhatId permanece en Opportunity');
         System.assertEquals(op.Id, t3.Opportunity__c, 'Debe haberse rellenado Opportunity__c desde WhatId');
-        System.assertEquals(op.Cliente__c, t3.Clic_comercial__c, 'Clic_comercial__c desde Opportunity.Cliente__c');
+        System.assertEquals(op.AccountId, t3.Clic_comercial__c, 'Clic_comercial__c desde Opportunity.AccountId');
 
         // 4) Usamos Objetivo en WhatId para forzar mapeo a Objetivo__c y cuenta
         tarea.WhatId = obj.Id;
@@ -123,6 +123,6 @@ public class TaskTrigger_Test {
         ];
         System.assertEquals(op.Id, t5.WhatId, 'WhatId debe igualarse a Opportunity__c');
         System.assertEquals(op.Id, t5.Opportunity__c, 'Opportunity__c se mantiene');
-        System.assertEquals(op.Cliente__c, t5.Clic_comercial__c, 'Clic_comercial__c sincronizado de nuevo');
+        System.assertEquals(op.AccountId, t5.Clic_comercial__c, 'Clic_comercial__c sincronizado de nuevo');
     }
 }

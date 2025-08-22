@@ -8,23 +8,44 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
+        <controllingField>VTH_Technology_Level_2__c</controllingField>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
                 <fullName>WS1</fullName>
                 <default>false</default>
-                <label>Next generation of AI-powered user experiences</label>
+                <label>WS1 - Next generation of AI-powered user experiences</label>
             </value>
             <value>
                 <fullName>WS2</fullName>
                 <default>false</default>
-                <label>Data-driven decision making and business operations</label>
+                <label>WS2 - Data-driven decision making and business operations</label>
             </value>
             <value>
                 <fullName>WS3</fullName>
                 <default>false</default>
-                <label>Secured cloud infrastructures and platforms</label>
+                <label>WS3 - Secured cloud infrastructures and platforms</label>
             </value>
         </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Quantum &amp; AI</controllingFieldValue>
+            <controllingFieldValue>Next generation of AI-powered user experiences (incluye Gen AI)</controllingFieldValue>
+            <controllingFieldValue>Ethic AI</controllingFieldValue>
+            <controllingFieldValue>Scalable &amp; Advanced Development (DevAid)</controllingFieldValue>
+            <valueName>WS1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data-driven decision making and business operations</controllingFieldValue>
+            <controllingFieldValue>Data Space</controllingFieldValue>
+            <controllingFieldValue>Low &amp; No Code Platforms</controllingFieldValue>
+            <controllingFieldValue>Super AppS</controllingFieldValue>
+            <valueName>WS2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secured cloud infrastructures and platforms</controllingFieldValue>
+            <controllingFieldValue>Ciber Platfform powered by AI</controllingFieldValue>
+            <controllingFieldValue>Quantum &amp; Ciber</controllingFieldValue>
+            <valueName>WS3</valueName>
+        </valueSettings>
     </valueSet>
 </CustomField>

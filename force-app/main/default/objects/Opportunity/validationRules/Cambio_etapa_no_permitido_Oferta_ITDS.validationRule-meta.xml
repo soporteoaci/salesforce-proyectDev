@@ -11,8 +11,8 @@
 				$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
 				RecordType.DeveloperName == &apos;Ayesa&apos;,
 				Clonada__c = FALSE,
-				ISPICKVAL(PRIORVALUE(Etapa__c),&quot;Oferta&quot;),
-				ISPICKVAL(Etapa__c, &apos;Cerrada&apos;),
+				ISPICKVAL(PRIORVALUE(StageName),&quot;Oferta&quot;),
+				ISPICKVAL(StageName, &apos;Cerrada&apos;),
 
 				OR(
 								AND(

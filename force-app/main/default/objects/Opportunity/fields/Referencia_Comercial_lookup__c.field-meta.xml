@@ -8,7 +8,7 @@
         <filterItems>
             <field>Referencia_Comercial__c.Clic_comercial__c</field>
             <operation>equals</operation>
-            <valueField>$Source.Cliente__c</valueField>
+            <valueField>$Source.AccountId</valueField>
         </filterItems>
         <isOptional>true</isOptional>
     </lookupFilter>

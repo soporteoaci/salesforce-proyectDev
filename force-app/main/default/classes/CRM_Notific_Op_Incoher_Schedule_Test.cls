@@ -80,7 +80,7 @@ public class CRM_Notific_Op_Incoher_Schedule_Test {
         Opportunity oppIncoherente = new Opportunity(
         	Nombre_Corto__c = 'Prueba notificacion incoherencia',
             Name = 'Prueba',
-            Cliente__c = cuenta1.Id,
+            AccountId = cuenta1.Id,
             Pais__c = 'ES',
             Probability = 10,
             Area__c = 'ATC',

@@ -10,7 +10,7 @@
 				NOT(ISPICKVAL(Delivery_Center__c, &apos;Cybersecurity Multi&apos;)),
 				NOT(ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
 				Oportunidad_Ibermatica__c =false,
-				ISPICKVAL(Etapa__c, &apos;Oferta&apos;),
+				ISPICKVAL(StageName, &apos;Oferta&apos;),
 				ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;),
 				ISBLANK( Oferta_SAP__c) 
 

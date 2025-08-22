@@ -254,7 +254,7 @@
         <inputAssignments>
             <field>Cuenta_lookup__c</field>
             <value>
-                <elementReference>Oportunidad.Cliente__c</elementReference>
+                <elementReference>Oportunidad.AccountId</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>

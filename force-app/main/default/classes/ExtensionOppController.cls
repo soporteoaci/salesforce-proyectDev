@@ -174,7 +174,7 @@ public class ExtensionOppController {
                     oppExtension.Direccion_Financiera_Corporativa__c=oppClonada.Direccion_Financiera_Corporativa__c;
 
                     If(oppExtension.Direccion_Operaciones__c == 'ENGINEERING'){
-                        oppExtension.StageName ='Cerrada';
+                        oppExtension.StageName ='Presentada (negociación y cierre)';
                         oppExtension.Subfase__c ='Esperando decisión'; 
                     }else{
                         oppExtension.StageName ='Oferta';
@@ -188,7 +188,7 @@ public class ExtensionOppController {
                 System.debug('Rectificativa');
                 oppExtension.Linea_de_Servicio__c=oppClonada.Linea_de_servicio__c;
                 oppExtension.Tipo_de_Negocio__c = tipoNegocio;
-                oppExtension.StageName ='Cerrada';
+                oppExtension.StageName ='Presentada (negociación y cierre)';
                 oppExtension.Subfase__c ='Ganada';
                 oppExtension.Motivo_Perdido__c='Posicionamiento en cliente';
                 oppExtension.Fecha_firma_contrato__c = oppClonada.Fecha_firma_contrato__c;
@@ -265,7 +265,7 @@ public class ExtensionOppController {
         oppExtension.Tipo_Participacion_Ayesa__c = 'Contratista Principal';
         oppExtension.Participacion_Ayesa__c = 100;
         
-        oppExtension.Cliente__c= oppClonada.Cliente__c;
+        oppExtension.AccountId= oppClonada.AccountId;
         oppExtension.Probability = Decimal.valueOf(probabilidad);
         oppExtension.Contacto_Principal__c= oppClonada.Contacto_Principal__c;
         oppExtension.Pais__c = oppClonada.Pais__c;
@@ -316,7 +316,7 @@ public class ExtensionOppController {
             if(!Test.isRunningTest()){
                 
                 if(tipoExtension == 'Extensión Rectificativa'){
-                    oppExtension.StageName ='Cerrada';
+                    oppExtension.StageName ='Presentada (negociación y cierre)';
                     oppExtension.Subfase__c ='Ganada';
                 }
                 

@@ -14,7 +14,7 @@
 					OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)), 
 					Clonada__c =FALSE,
 					OR(
-									ISCHANGED(Probabilidad__c),
+									ISCHANGED(Probability),
 									ISCHANGED(Certificaciones_empresa__c), 
 									ISCHANGED(Solvencia_empresa__c ),
 									ISCHANGED(Certificaciones_perfiles__c ),

@@ -303,4 +303,8 @@
         <masterLabel>IB67 - IBERMATICA PERU S.A.C.</masterLabel>
         <translation><!-- IB67 - IBERMATICA PERU S.A.C. --></translation>
     </picklistValues>
+    <picklistValues>
+        <masterLabel>ME01 - AYESA MIDDLE EAST</masterLabel>
+        <translation><!-- ME01 - AYESA MIDDLE EAST --></translation>
+    </picklistValues>
 </CustomFieldTranslation>

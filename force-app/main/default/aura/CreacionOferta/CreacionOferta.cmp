@@ -1,7 +1,7 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="CreacionOfertaController">
     
     <aura:attribute name="idOpp" type="String" default="" description="Id de la Oportunidad"/> 
-    <aura:attribute name="oportunidad" type="Oportunidad__c" default="" description="Oportunidad recuperada con los campos a mostrar en la pantalla"/>
+    <aura:attribute name="oportunidad" type="Opportunity" default="" description="Oportunidad recuperada con los campos a mostrar en la pantalla"/>
     <aura:attribute name="ofertaSAP" type="String" default="" description="Código de oferta SAP" />
     <aura:attribute name="preventa" type="Boolean" default="false" description="Preventa" />
     

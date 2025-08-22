@@ -39,7 +39,7 @@ History:
     <aura:attribute name="disabledGenOferButton" type="Boolean" default="false" description="Control del botón de Generar Oferta en SAP"/>
     <aura:attribute name="disabledEmailOferButton" type="Boolean" default="false" description="Control del botón de Solicitud"/>
     <aura:attribute name="idOpp" default="" type="String" description="Id de la Oportunidad"/> 
-    <aura:attribute name="oportunidad" type="Oportunidad__c" default="" description="Oportunidad recuperada con los campos a mostrar en la pantalla"/>
+    <aura:attribute name="oportunidad" type="Opportunity" default="" description="Oportunidad recuperada con los campos a mostrar en la pantalla"/>
     <aura:attribute name="responsable" type="String" default=""/>
     
     <aura:attribute name="clienteNombre" type="String" default="" description="Nombre Cliente para la búsqueda"/>

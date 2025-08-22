@@ -8,7 +8,7 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <controllingField>Linea_de_Servicio__c</controllingField>
+        <controllingField>VTH_Technology_Level_1__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -69,48 +69,48 @@
             </value>
         </valueSetDefinition>
         <valueSettings>
-            <controllingFieldValue>Data &amp; AI</controllingFieldValue>
+            <controllingFieldValue>DATA &amp; AI</controllingFieldValue>
             <valueName>Next generation of AI-powered user experiences (incluye Gen AI)</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Data &amp; AI</controllingFieldValue>
+            <controllingFieldValue>DATA &amp; AI</controllingFieldValue>
             <valueName>Data-driven decision making and business operations</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Data &amp; AI</controllingFieldValue>
+            <controllingFieldValue>DATA &amp; AI</controllingFieldValue>
             <valueName>Ethic AI</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Digital impact</controllingFieldValue>
-            <valueName>Data Space</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Digital impact</controllingFieldValue>
-            <valueName>Low &amp; No Code Platforms</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Digital impact</controllingFieldValue>
-            <valueName>Super AppS</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Digital impact</controllingFieldValue>
-            <valueName>Scalable &amp; Advanced Development (DevAid)</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Quantum</controllingFieldValue>
-            <valueName>Quantum &amp; Ciber</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Quantum</controllingFieldValue>
-            <valueName>Quantum &amp; AI</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Cybersecurity</controllingFieldValue>
+            <controllingFieldValue>CIBERSECURITY</controllingFieldValue>
             <valueName>Secured cloud infrastructures and platforms</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Cybersecurity</controllingFieldValue>
+            <controllingFieldValue>CIBERSECURITY</controllingFieldValue>
             <valueName>Ciber Platfform powered by AI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIGITAL IMPACT</controllingFieldValue>
+            <valueName>Data Space</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIGITAL IMPACT</controllingFieldValue>
+            <valueName>Low &amp; No Code Platforms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIGITAL IMPACT</controllingFieldValue>
+            <valueName>Super AppS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIGITAL IMPACT</controllingFieldValue>
+            <valueName>Scalable &amp; Advanced Development (DevAid)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>QUANTUM</controllingFieldValue>
+            <valueName>Quantum &amp; Ciber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>QUANTUM</controllingFieldValue>
+            <valueName>Quantum &amp; AI</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
