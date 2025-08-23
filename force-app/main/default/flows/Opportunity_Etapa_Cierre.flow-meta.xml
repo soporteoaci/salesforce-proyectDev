@@ -481,7 +481,7 @@
             <field>StageName</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Cerrada</stringValue>
+                <stringValue>Presentada (negociación y cierre)</stringValue>
             </value>
         </filters>
         <object>Opportunity</object>

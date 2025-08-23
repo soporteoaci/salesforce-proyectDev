@@ -4,7 +4,7 @@
     <description>Imagen descriptiva de existencia de incoherencia en los datos.</description>
     <externalId>false</externalId>
     <formula>IF(AND (
-	NOT (ISPICKVAL(StageName, &apos;Cerrada&apos;)),
+	NOT (ISPICKVAL(StageName, &apos;Presentada (negociación y cierre)&apos;)),
 	 LastModifiedDate &lt;  DATETIMEVALUE(ADDMONTHS(TODAY() ,-1)) 
 	)
 ,IMAGE(&quot;/sfc/servlet.shepherd/version/download/0680N00000ENbsV&quot;, &quot;Incoherencias parciales&quot;, 30, 30)

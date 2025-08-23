@@ -7,7 +7,7 @@
 
 AND(
 				Clonada__c = FALSE,
-	ISPICKVAL(PRIORVALUE(Etapa__c),&quot;Cerrada&quot;),
+	ISPICKVAL(PRIORVALUE(Etapa__c),&quot;Presentada (negociación y cierre)&quot;),
 	OR(
 		ISPICKVAL(Etapa__c,&quot;Pedido Código Oferta&quot;),
 		ISPICKVAL(Etapa__c,&quot;Preparando QA&quot;),

@@ -21,14 +21,14 @@
 				OR(
 								AND(
 												RecordType.Name=&apos;Ayesa&apos;,
-												ISPICKVAL(StageName,&apos;Cerrada&apos;),
+												ISPICKVAL(StageName,&apos;Presentada (negociación y cierre)&apos;),
 												ISPICKVAL(Subfase__c, &apos;Ganada&apos;)
 								),
 
 								AND(
 												CONTAINS(RecordType.Name,&apos;Ibermatica&apos;),
 												OR(
-																ISPICKVAL( StageName , &apos;Cerrada&apos;),
+																ISPICKVAL(StageName, &apos;Presentada (negociación y cierre)&apos;),
 																ISPICKVAL(Etapa_Fase__c,&apos;Cerrada&apos;)
 												),
 												ISPICKVAL(Estado_de_Cierre__c, &apos;Contratada&apos;)

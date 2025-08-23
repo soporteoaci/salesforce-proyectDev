@@ -174,8 +174,6 @@ public class CRM_CentroResponsabilidad {
                                     FROM Opportunity WHERE Id =:idOpp LIMIT 1];
         
         if(opp.get(0).Subfase__c== 'Ganada' || opp.get(0).Subfase__c== 'Perdida' || opp.get(0).Subfase__c== 'Aplazada / anulada'   || opp.get(0).Subfase__c== 'No presentada'){
-            
-            //opp.get(0).StageName == 'Cerrada'
             mode = '&modo=R';
         }else{
             mode = '&modo=W';

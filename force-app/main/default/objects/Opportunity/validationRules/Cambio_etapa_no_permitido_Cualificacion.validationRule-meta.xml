@@ -19,7 +19,7 @@ $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
 												Decision_Go_Smart_BPM_Offer__c != &apos;Aprobado&apos;
 
 								) ,
-								ISPICKVAL(StageName,&quot;Cerrada&quot;)
+								ISPICKVAL(StageName,&quot;Presentada (negociación y cierre)&quot;)
 
 				)
 )</errorConditionFormula>

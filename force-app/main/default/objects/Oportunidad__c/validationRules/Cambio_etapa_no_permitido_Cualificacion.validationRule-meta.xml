@@ -18,7 +18,7 @@
 												Decision_Go_Smart_BPM_Offer__c != &apos;Aprobado&apos;
 
 								) ,
-								ISPICKVAL(Etapa__c,&quot;Cerrada&quot;)
+								ISPICKVAL(Etapa__c,&quot;Presentada (negociación y cierre)&quot;)
 
 				)
 )</errorConditionFormula>

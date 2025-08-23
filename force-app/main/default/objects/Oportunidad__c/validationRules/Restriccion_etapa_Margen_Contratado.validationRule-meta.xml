@@ -6,7 +6,7 @@
     <errorConditionFormula>AND($User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
 RecordType.DeveloperName == &apos;Ayesa&apos;,
 
-ISPICKVAL( Etapa__c , &quot;Cerrada&quot; ) &amp;&amp;
+ISPICKVAL( Etapa__c , &quot;Presentada (negociación y cierre)&quot; ) &amp;&amp;
 ISPICKVAL( Estado_de_Cierre__c , &quot;Contratada&quot;) &amp;&amp;
 ISBLANK(Margen_contrato__c)
 

@@ -13,7 +13,7 @@ AND(
 		ISPICKVAL(Etapa__c,&quot;Pedido Código Oferta&quot;),
 		ISPICKVAL(Etapa__c,&quot;Preparando QA&quot;),
 		AND(
-			ISPICKVAL(Etapa__c,&quot;Cerrada&quot;),
+			ISPICKVAL(Etapa__c,&quot;Presentada (negociación y cierre)&quot;),
 			NOT(
 				OR(
 					ISPICKVAL(Estado_de_Cierre__c , &quot;Anulada&quot;),

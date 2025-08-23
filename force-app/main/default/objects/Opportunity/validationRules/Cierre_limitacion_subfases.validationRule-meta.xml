@@ -7,7 +7,7 @@
     $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
     $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
     $User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
-				ISPICKVAL(StageName, &apos;Cerrada&apos;),
+				ISPICKVAL(StageName, &apos;Presentada (negociación y cierre)&apos;),
 				OR(
 								AND(
 												ISPICKVAL(Clase_de_oferta__c , &apos;Privada&apos;),
