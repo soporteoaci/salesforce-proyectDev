@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Oportunidad Innovación</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <fieldNames>Subfase__c</fieldNames>
+        <fieldNames>Motivo_Perdido__c</fieldNames>
+        <picklistValueName>Oferta</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Motivo_Perdido__c</fieldNames>
+        <fieldNames>StageName</fieldNames>
+        <fieldNames>Subfase__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Fecha_firma_contrato__c</fieldNames>
+        <picklistValueName>Presentada (negociación y cierre)</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Innovaci_n</recordTypeName>
+</PathAssistant>

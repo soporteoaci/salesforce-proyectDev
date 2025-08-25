@@ -50,7 +50,7 @@ trigger TaskTrigger on Task (before insert, before update) {
         allOppIds.addAll(oppFieldIds);
         allOppIds.addAll(oppWhatIds);
         for (Opportunity o : [
-            SELECT Id, Cliente__c
+            SELECT Id, AccountId
             FROM Opportunity
             WHERE Id IN :allOppIds
         ]) {
@@ -134,12 +134,12 @@ trigger TaskTrigger on Task (before insert, before update) {
         if (t.WhatId == null && t.Opportunity__c != null) {
             t.WhatId = t.Opportunity__c;
             Opportunity o = oppMap.get(t.Opportunity__c);
-            if (o != null) t.Clic_comercial__c = o.Cliente__c;
+            if (o != null) t.Clic_comercial__c = o.AccountId;
         } else if (t.WhatId != null && t.Opportunity__c == null) {
             if (String.valueOf(t.WhatId.getSObjectType()) == 'Opportunity') {
                 t.Opportunity__c = t.WhatId;
                 Opportunity o2 = oppMap.get(t.Opportunity__c);
-                if (o2 != null) t.Clic_comercial__c = o2.Cliente__c;
+                if (o2 != null) t.Clic_comercial__c = o2.AccountId;
             }
         }
 

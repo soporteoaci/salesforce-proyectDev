@@ -243,7 +243,7 @@
         <inputAssignments>
             <field>Cuenta_lookup__c</field>
             <value>
-                <elementReference>Oportunidad_de_orquestador.Cliente__c</elementReference>
+                <elementReference>Oportunidad_de_orquestador.AccountId</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>

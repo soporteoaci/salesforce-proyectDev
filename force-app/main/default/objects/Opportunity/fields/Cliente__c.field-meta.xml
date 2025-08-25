@@ -6,7 +6,7 @@
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Oportunidades</relationshipLabel>
     <relationshipName>Oportunidades_Aux</relationshipName>
-    <required>true</required>
+    <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

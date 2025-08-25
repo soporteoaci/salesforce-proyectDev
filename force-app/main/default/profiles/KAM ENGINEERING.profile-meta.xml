@@ -8436,6 +8436,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Cliente__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Clonada__c</field>
         <readable>false</readable>
@@ -13509,19 +13514,19 @@
         <recordType>Oportunidad__c.Ibermatica_SME</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-ENGINEERING</layout>
-        <recordType>Opportunity.Engineering</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-INNOVATION</layout>
-        <recordType>Opportunity.Innovation</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-IT%26DS</layout>
         <recordType>Opportunity.IT_DS</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-PRESUPUESTO</layout>
+        <layout>Opportunity-Ingeniería</layout>
+        <recordType>Opportunity.Ingenier_a</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Innovación</layout>
+        <recordType>Opportunity.Innovaci_n</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Presupuesto</layout>
         <recordType>Opportunity.Presupuesto</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -13996,18 +14001,18 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.Engineering</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
         <default>true</default>
         <recordType>Opportunity.IT_DS</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Opportunity.Innovation</recordType>
+        <recordType>Opportunity.Ingenier_a</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Innovaci_n</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

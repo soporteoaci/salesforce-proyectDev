@@ -9,7 +9,7 @@
         <filterItems>
             <field>Contact.Account.Id</field>
             <operation>equals</operation>
-            <valueField>$Source.Cliente__c</valueField>
+            <valueField>$Source.AccountId</valueField>
         </filterItems>
         <isOptional>false</isOptional>
     </lookupFilter>

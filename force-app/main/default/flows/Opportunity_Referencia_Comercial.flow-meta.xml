@@ -122,7 +122,7 @@
         <inputAssignments>
             <field>Clic_comercial__c</field>
             <value>
-                <elementReference>$Record.Cliente__c</elementReference>
+                <elementReference>$Record.AccountId</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>

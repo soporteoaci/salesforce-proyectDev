@@ -2028,7 +2028,7 @@
             <field>Cuenta__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record.Cliente__c</elementReference>
+                <elementReference>$Record.AccountId</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
@@ -2051,7 +2051,7 @@
             <field>Clic_comercial__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record.Cliente__c</elementReference>
+                <elementReference>$Record.AccountId</elementReference>
             </value>
         </filters>
         <filters>

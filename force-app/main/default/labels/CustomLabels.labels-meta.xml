@@ -1251,4 +1251,11 @@ Saludos,</value>
         <shortDescription>Equipo Oferta</shortDescription>
         <value>Equipo Oferta</value>
     </labels>
+    <labels>
+        <fullName>CRM_Clone_Opp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM_Clone_Opp</shortDescription>
+        <value>Clonar Oportunidad</value>
+    </labels>
 </CustomLabels>

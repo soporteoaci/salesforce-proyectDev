@@ -69,6 +69,10 @@
         <name>CRM_Cliente</name>
     </customLabels>
     <customLabels>
+        <label>Clonar Oportunidad</label>
+        <name>CRM_Clone_Opp</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CRM_Cod_Cliente_SAP --></label>
         <name>CRM_Cod_Cliente_SAP</name>
     </customLabels>
