@@ -129,6 +129,11 @@
                 <label>SAP DC (S2)</label>
             </value>
             <value>
+                <fullName>SAP DC (S3)</fullName>
+                <default>false</default>
+                <label>SAP DC (S3)</label>
+            </value>
+            <value>
                 <fullName>V-Latam</fullName>
                 <default>false</default>
                 <label>V-Latam</label>
@@ -192,6 +197,10 @@
         <valueSettings>
             <controllingFieldValue>SAP</controllingFieldValue>
             <valueName>SAP DC S2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP</controllingFieldValue>
+            <valueName>SAP DC (S3)</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Business Operations</controllingFieldValue>

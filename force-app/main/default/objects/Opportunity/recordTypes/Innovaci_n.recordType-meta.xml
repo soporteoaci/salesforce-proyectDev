@@ -643,6 +643,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>SAP DC %28S3%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>SAP DC S1</fullName>
             <default>false</default>
         </values>
@@ -4850,7 +4854,7 @@
         <picklist>Subfase__c</picklist>
         <values>
             <fullName>Alta</fullName>
-            <default>false</default>
+            <default>true</default>
         </values>
         <values>
             <fullName>Aplazada %2F anulada</fullName>

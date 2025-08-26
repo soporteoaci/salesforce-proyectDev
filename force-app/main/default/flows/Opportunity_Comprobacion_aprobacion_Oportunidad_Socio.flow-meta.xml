@@ -869,7 +869,7 @@
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>1 AND 2</filterLogic>
         <filters>
-            <field>null__NotFound</field>
+            <field>StageName</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Oferta</stringValue>
@@ -886,7 +886,7 @@
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>InvalidDraft</status>
+    <status>Active</status>
     <triggerOrder>250</triggerOrder>
     <variables>
         <name>vDecisionFinalSocios</name>

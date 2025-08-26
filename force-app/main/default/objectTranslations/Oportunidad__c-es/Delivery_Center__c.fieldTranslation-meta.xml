@@ -87,6 +87,10 @@
         <translation><!-- SAP DC (S2) --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>SAP DC (S3)</masterLabel>
+        <translation><!-- SAP DC (S3) --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Salesforce</masterLabel>
         <translation><!-- Salesforce --></translation>
     </picklistValues>

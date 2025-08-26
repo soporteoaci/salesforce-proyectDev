@@ -820,7 +820,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Cloud %26 Infrastructure %28C1%29 - Implementation Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Cloud %26 Infrastructure %28C2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud %26 Infrastructure %28C2%29 - Implementation Projects</fullName>
             <default>false</default>
         </values>
         <values>
@@ -832,7 +840,19 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Cybersecurity Multi</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Data %26 AI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergya</fullName>
             <default>false</default>
         </values>
         <values>
@@ -853,6 +873,10 @@
         </values>
         <values>
             <fullName>SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP DC %28S3%29</fullName>
             <default>false</default>
         </values>
         <values>

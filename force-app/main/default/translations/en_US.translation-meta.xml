@@ -1560,13 +1560,19 @@
     <flowDefinitions>
         <flows>
             <customErrorMessages>
-                <developerName>Mensaje_de_error_RECHAZADO</developerName>
+                <developerName>Error_subcontratas_no_creadas</developerName>
             </customErrorMessages>
             <customErrorMessages>
                 <developerName>Mensaje_de_error_RECHAZADO_sub</developerName>
             </customErrorMessages>
             <customErrorMessages>
-                <developerName>Error_subcontratas_no_creadas</developerName>
+                <developerName>Mensaje_de_error_EN_PROCESO_Sub</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_NO_ENVIADO_sub</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Mensaje_de_error_EN_PROCESO_2</developerName>
             </customErrorMessages>
             <customErrorMessages>
                 <developerName>Error_socios_creados</developerName>
@@ -1576,16 +1582,10 @@
                 <field>Subfase__c</field>
             </customErrorMessages>
             <customErrorMessages>
-                <developerName>Mensaje_de_error_NO_ENVIADO_sub</developerName>
-            </customErrorMessages>
-            <customErrorMessages>
                 <developerName>Mensaje_de_error_NO_ENVIADO_1</developerName>
             </customErrorMessages>
             <customErrorMessages>
-                <developerName>Mensaje_de_error_EN_PROCESO_Sub</developerName>
-            </customErrorMessages>
-            <customErrorMessages>
-                <developerName>Mensaje_de_error_EN_PROCESO_2</developerName>
+                <developerName>Mensaje_de_error_RECHAZADO</developerName>
             </customErrorMessages>
         </flows>
         <fullName>Opportunity_Comprobacion_aprobacion_Oportunidad_Socio</fullName>
