@@ -835,16 +835,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Oportunidad_estrategica__c</fieldItem>
-                <identifier>RecordOportunidad_estrategica_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Sociedad_Ayesa__c</fieldItem>
                 <identifier>RecordSociedad_Ayesa_cField2</identifier>
             </fieldInstance>
@@ -1000,6 +990,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Porcentaje_Cross_Selling__c</fieldItem>
                 <identifier>RecordPorcentaje_Cross_Selling_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Cross_Selling_Picklist__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Sí</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1010,6 +1007,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Motivo_Cross_Selling__c</fieldItem>
                 <identifier>RecordMotivo_Cross_Selling_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Cross_Selling_Picklist__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Sí</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2035,16 +2039,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Fecha_adjudicacion__c</fieldItem>
                 <identifier>RecordFecha_adjudicacion_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Fecha_estimada_de_cierre__c</fieldItem>
-                <identifier>RecordFecha_estimada_de_cierre_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -4466,36 +4460,20 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Proyecto_Inductor_1__c</fieldItem>
-                <identifier>RecordProyecto_Inductor_1_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.New_Proyecto_Inductor_2__c</fieldItem>
                 <identifier>RecordNew_Proyecto_Inductor_2_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Proyecto_Inductor_2__c</fieldItem>
-                <identifier>RecordProyecto_Inductor_2_cField</identifier>
                 <visibilityRule>
                     <criteria>
-                        <leftValue>{!Record.Proyecto_Inductor_1__c}</leftValue>
+                        <leftValue>{!Record.New_Proyecto_Inductor_1__r.Codigo_OC_Relacionada__c}</leftValue>
                         <operator>NE</operator>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
         </itemInstances>
+        <name>Facet-eb9d2bcb-afbe-4c23-a48d-03e205fc0c5a</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -4504,19 +4482,9 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.New_Proyecto_Inductor_3__c</fieldItem>
                 <identifier>RecordNew_Proyecto_Inductor_3_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Proyecto_Inductor_3__c</fieldItem>
-                <identifier>RecordProyecto_Inductor_3_cField</identifier>
                 <visibilityRule>
                     <criteria>
-                        <leftValue>{!Record.Proyecto_Inductor_2__c}</leftValue>
+                        <leftValue>{!Record.New_Proyecto_Inductor_2__r.Codigo_OC_Relacionada__c}</leftValue>
                         <operator>NE</operator>
                     </criteria>
                 </visibilityRule>
@@ -4530,25 +4498,15 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.New_Proyecto_Inductor_4__c</fieldItem>
                 <identifier>RecordNew_Proyecto_Inductor_4_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Proyecto_Inductor_4__c</fieldItem>
-                <identifier>RecordProyecto_Inductor_4_cField</identifier>
                 <visibilityRule>
                     <criteria>
-                        <leftValue>{!Record.Proyecto_Inductor_3__c}</leftValue>
+                        <leftValue>{!Record.New_Proyecto_Inductor_3__r.Codigo_OC_Relacionada__c}</leftValue>
                         <operator>NE</operator>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-eb9d2bcb-afbe-4c23-a48d-03e205fc0c5a</name>
+        <name>Facet-45957a92-0c16-4ad2-9e1f-e85d67cc838b</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -4560,6 +4518,16 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
                 <identifier>flexipage_column</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-45957a92-0c16-4ad2-9e1f-e85d67cc838b</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column35</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-420b6290-9cdd-4aac-ad33-0b7269e12167</name>
