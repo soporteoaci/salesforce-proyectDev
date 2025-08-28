@@ -139,6 +139,7 @@
         <valueSettings>
             <controllingFieldValue>Oferta</controllingFieldValue>
             <controllingFieldValue>Cualificación</controllingFieldValue>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
             <valueName>Aplazada / anulada</valueName>
         </valueSettings>
         <valueSettings>
@@ -161,6 +162,54 @@
         <valueSettings>
             <controllingFieldValue>Cualificación</controllingFieldValue>
             <valueName>Pte ok preliminar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Esperando decisión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Defendiendo con competidores favoritos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Defendiendo con competidores NO favoritos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Defendiendo sin competidores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Negociando condiciones de cierre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Esperando decisión con competidores favoritos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Esperando decisión con competidores NO favoritos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Esperando decisión sin competidores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Elegidos técnicamente: Pte sobre económico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Ganada pendiente contrato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Ganada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Presentada (negociación y cierre)</controllingFieldValue>
+            <valueName>Perdida</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

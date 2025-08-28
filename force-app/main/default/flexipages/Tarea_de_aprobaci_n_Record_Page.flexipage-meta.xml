@@ -104,10 +104,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Oportunidad__c</fieldItem>
-                <identifier>RecordOportunidad_cField</identifier>
+                <fieldItem>Record.Opportunity__c</fieldItem>
+                <identifier>RecordOpportunity_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

@@ -1,41 +1,37 @@
 public class OpportunityTriggerHandler {
-    
+
+    /**
+     * Before-insert para Opportunity.
+     * - Informa Fecha_Creacion__c (sustituye al PB antiguo).
+     * - Fija StageName según el Record Type (DeveloperName):
+     *     Ingenier_a, IT_DS -> 'Cualificación'
+     *     Innovaci_n        -> 'Oferta'
+     *   Se asume que siempre viene RecordTypeId informado.
+     */
     public static void setDireccionOperacionesOnBeforeInsert(List<Opportunity> opps) {
         if (opps == null || opps.isEmpty()) return;
+        Map<String, String> stageByRt = new Map<String, String>{
+            'Ingenier_a' => 'Cualificación',
+            'IT_DS'      => 'Cualificación',
+            'Innovaci_n' => 'Oferta'
+        };
 
         Map<Id, Schema.RecordTypeInfo> rtById =
             Schema.SObjectType.Opportunity.getRecordTypeInfosById();
 
-        Id defaultRtId = null;
-        for (Schema.RecordTypeInfo info : Opportunity.SObjectType.getDescribe().getRecordTypeInfos()) {
-            if (info.isDefaultRecordTypeMapping()) {
-                defaultRtId = info.getRecordTypeId();
-                break;
-            }
-        }
-        
-        Map<String,String> mapRtNameToDireccion = new Map<String,String>{
-            'IT_DS'       => 'IT&DS',
-            'Innovaci_n'  => 'INNOVATION',
-            'Ingenier_a'  => 'ENGINEERING'
-        };
-                    
         for (Opportunity opp : opps) {
-            //Informa fecha de creación, suple a antiguo process builder.
-            opp.Fecha_Creacion__c = Date.today();
             if (opp == null) continue;
 
-            if (String.isNotBlank(opp.Direccion_Operaciones__c)) continue;
+            // 1) Fecha de creación (hoy)
+            opp.Fecha_Creacion__c = Date.today();
 
-            Id rtId = (opp.RecordTypeId != null) ? opp.RecordTypeId : defaultRtId;
-            if (rtId == null) continue;
-
-            Schema.RecordTypeInfo rti = rtById.get(rtId);
+            Schema.RecordTypeInfo rti = rtById.get(opp.RecordTypeId);
             if (rti == null) continue;
 
-            String direccion = mapRtNameToDireccion.get(rti.getDeveloperName());
-            if (direccion != null) {
-                opp.Direccion_Operaciones__c = direccion;
+            // 3) Asignar Stage por RT
+            String desiredStage = stageByRt.get(rti.getDeveloperName());
+            if (desiredStage != null) {
+                opp.StageName = desiredStage;
             }
         }
     }

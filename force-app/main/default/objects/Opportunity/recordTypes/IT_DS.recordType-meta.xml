@@ -737,20 +737,8 @@
     <picklistValues>
         <picklist>Direccion_Operaciones__c</picklist>
         <values>
-            <fullName>ENGINEERING</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>INNOVATION</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>IT</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>IT%26DS</fullName>
-            <default>false</default>
+            <default>true</default>
         </values>
     </picklistValues>
     <picklistValues>

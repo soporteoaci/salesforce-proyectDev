@@ -737,20 +737,8 @@
     <picklistValues>
         <picklist>Direccion_Operaciones__c</picklist>
         <values>
-            <fullName>ENGINEERING</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>INNOVATION</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>IT</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>IT%26DS</fullName>
-            <default>false</default>
+            <default>true</default>
         </values>
     </picklistValues>
     <picklistValues>
@@ -4853,23 +4841,11 @@
     <picklistValues>
         <picklist>Subfase__c</picklist>
         <values>
-            <fullName>Alta</fullName>
-            <default>true</default>
-        </values>
-        <values>
             <fullName>Aplazada %2F anulada</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Aprobada</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Cualificación con autoprovisión</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Cualificación con preventa</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4886,7 +4862,7 @@
         </values>
         <values>
             <fullName>Elaboración oferta</fullName>
-            <default>false</default>
+            <default>true</default>
         </values>
         <values>
             <fullName>Elegidos técnicamente%3A Pte sobre económico</fullName>
@@ -4926,10 +4902,6 @@
         </values>
         <values>
             <fullName>Perdida</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pte ok preliminar</fullName>
             <default>false</default>
         </values>
         <values>

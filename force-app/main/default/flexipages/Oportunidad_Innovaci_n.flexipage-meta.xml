@@ -603,6 +603,16 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Direccion_Operaciones__c</fieldItem>
+                <identifier>RecordDireccion_Operaciones_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
                     <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Sector_de_Mercados__c</fieldItem>
@@ -861,36 +871,6 @@
                         <rightValue>0151-BH</rightValue>
                     </criteria>
                 </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Cross_Selling_Picklist__c</fieldItem>
-                <identifier>RecordCross_Selling_Picklist_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Porcentaje_Cross_Selling__c</fieldItem>
-                <identifier>RecordPorcentaje_Cross_Selling_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Motivo_Cross_Selling__c</fieldItem>
-                <identifier>RecordMotivo_Cross_Selling_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-423c6e2b-5f10-4a14-bd5d-421209a5bcb4</name>
