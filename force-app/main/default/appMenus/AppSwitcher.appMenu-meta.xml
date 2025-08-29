@@ -200,4 +200,8 @@
         <name>standard__DataGovernanceConsole</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Login_App</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
 </AppMenu>

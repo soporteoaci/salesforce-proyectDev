@@ -24,7 +24,7 @@ public class CRM_IB_CPVController {
         
         // obtenermos los valores seleccionados previamente en el registro de oportunidad
         if (Id_oportunidad != null) {
-            Oportunidad__c opp = [SELECT Id, Name, CPV_varios__c FROM Oportunidad__c where Id =: Id_oportunidad];
+            Opportunity opp = [SELECT Id, Name, CPV_varios__c FROM Opportunity where Id =: Id_oportunidad];
             System.debug('Oportunidad recuperada "'+ opp.Name + '" y su/s valor/es CPV: ' + opp.CPV_varios__c  );
             if (opp.CPV_varios__c != null) {
                 List<String> valoresSeleccionados = opp.CPV_varios__c.split(';');
@@ -40,7 +40,7 @@ public class CRM_IB_CPVController {
         
         System.debug('saveOportunidad_CPV... CPV seleccionados: ' + seleccionCPV);
         
-        Oportunidad__c opp = [SELECT Id, Name, CPV_varios__c FROM Oportunidad__c where Id =: Id_oportunidad LIMIT 1];
+        Opportunity opp = [SELECT Id, Name, CPV_varios__c FROM Opportunity where Id =: Id_oportunidad LIMIT 1];
         
         if (String.isNotBlank(seleccionCPV)) {
             try{

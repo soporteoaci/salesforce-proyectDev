@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -51,10 +50,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Clase_de_oferta__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Cliente__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>

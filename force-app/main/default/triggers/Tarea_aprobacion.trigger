@@ -73,7 +73,7 @@ trigger Tarea_aprobacion on Tarea_aprobacion__c (after update, after insert, bef
             List<Opportunity> ops = [
                 SELECT Id, Decisi_n_Equipo_Preventa__c, Decision_Go_Smart_BPM_Offer__c, Decision_aprobacion_acuerdo_de_socios__c,
                        Decision_QA_Economico__c, Decision_QA_Tecnico__c, Decision_Aprobacion_Oferta__c, Numero_QA__c, Clonada__c,
-                       Etapa__c, Subfase__c, Bloqueo_por_aprobacion__c, Fecha_estimada_de_cierre__c, Decision_Socios__c,
+                       stageName, Subfase__c, Bloqueo_por_aprobacion__c, Fecha_estimada_de_cierre__c, Decision_Socios__c,
                        decision_subcontrataciones__c, Tiene_Oferta_QA__c
                 FROM Opportunity
                 WHERE Id IN :oportunidades
@@ -333,12 +333,12 @@ trigger Tarea_aprobacion on Tarea_aprobacion__c (after update, after insert, bef
         Decision_preliminar = resumenAprobacion(tareas_relacionadas_preliminar);
         if (Decision_preliminar != '') {
             if (Decision_preliminar == 'Aprobado') {
-                op.Etapa__c = 'Oferta';
+                op.stageName = 'Oferta';
                 op.Subfase__c = 'Elaboración oferta';
                 op.Bloqueo_por_aprobacion__c = false;
                 op.Clonada__c = true;
             } else if (Decision_preliminar == 'Rechazado') {
-                op.Etapa__c = 'Cualificación';
+                op.stageName = 'Cualificación';
                 op.Subfase__c = 'No presentada';
                 op.Bloqueo_por_aprobacion__c = false;
                 op.Clonada__c = true;

@@ -41,15 +41,13 @@
             
             <br></br>
             <!--EXENSION AYESA  -->
-           
-            <aura:if isTrue="{!OR(v.RecordTypeName == 'Ayesa',v.RecordTypeName == 'Ibermatica Large Account', v.RecordTypeName == 'Ibermatica Latam')}">   
+            
                 <lightning:layout pullToBoundary="medium">   
                     
                     <lightning:layoutItem size="6" padding="horizontal-medium">
                         <lightning:input name="inputName" label="Nombre Oportunidad" aura:id="inputName"  required="true" maxlength="80"/>
                     </lightning:layoutItem>
                     
-                    <aura:if isTrue="{!OR(v.RecordTypeName == 'Ayesa',v.RecordTypeName == 'Ibermatica Large Account', v.RecordTypeName == 'Ibermatica Latam')}">
                         <lightning:layoutItem size="3" padding="horizontal-medium">
                             
                             <lightning:select name="tipoExtension" label="Tipo Extensión" aura:id="tipoExtension" required="true" onchange="{! c.onChangeTipoExtension }">
@@ -96,8 +94,6 @@
                                 
                             </lightning:layoutItem>
                         </aura:if>
-                        
-                    </aura:if>
                     
                     
                 </lightning:layout>  
@@ -113,22 +109,17 @@
                     <lightning:layoutItem size="3" padding="horizontal-medium">
                         <lightning:input  type="number" name="inputPlazo" label="Plazo ejec. (meses)" aura:id="inputPlazo"  required="true" value="{!v.Oportunidad.Plazo_de_ejecuci_n_meses__c}" />
                     </lightning:layoutItem>
-                    
-                    <aura:if isTrue="{!OR(v.RecordTypeName == 'Ayesa',v.RecordTypeName == 'Ibermatica Large Account', v.RecordTypeName == 'Ibermatica Latam')}">
-                        <lightning:layoutItem size="3" padding="horizontal-medium">
-                            <lightning:input  type="number" name="inputMargenEstimado" label="% Rentabilidad" aura:id="inputMargenEstimado"  required="true" step="0.01"  />
-                        </lightning:layoutItem>
-                    </aura:if>
+                    <lightning:layoutItem size="3" padding="horizontal-medium">
+                        <lightning:input  type="number" name="inputMargenEstimado" label="% Rentabilidad" aura:id="inputMargenEstimado"  required="true" step="0.01"  />
+                    </lightning:layoutItem>
+
                 </lightning:layout>                
                 
                 <br></br>
                 <lightning:layout pullToBoundary="medium">
-                    <aura:if isTrue="{!OR(v.RecordTypeName == 'Ayesa',v.RecordTypeName == 'Ibermatica Large Account', v.RecordTypeName == 'Ibermatica Latam')}">
-                        
                         <lightning:layoutItem size="4" padding="horizontal-medium">
                             <lightning:input  type="number"  name="inputImporteTotalOfertado" label="Importe Total(sin IVA)€" aura:id="inputImporteTotalOfertado"  required="true" step="0.01"  />
                         </lightning:layoutItem>
-                    </aura:if>
                     <lightning:layoutItem size="3" padding="horizontal-medium">
                         <lightning:select name="probabilidad" label="Probabilidad" aura:id="probabilidad" required="true" value="{!v.Oportunidad.Probability}">
                             <option value="0">0</option>
@@ -179,76 +170,7 @@
                         </div>
                     </div>
                 </div>
-            </aura:if>
           
-            
-   
-            
-            <!--EXTENSION PARA IBERMATICA SME-->
-            <aura:if isTrue="{!v.RecordTypeName == 'Ibermatica SME'}">
-                <lightning:layout pullToBoundary="medium">   
-                    
-                    <lightning:layoutItem size="6" padding="horizontal-medium">
-                        <lightning:input name="inputName" label="Nombre Oportunidad" aura:id="inputName"  required="true" maxlength="80"/>
-                    </lightning:layoutItem>
-                    
-                    
-                </lightning:layout>  
-                <br></br>
-                
-                <lightning:layout pullToBoundary="medium">
-                    <lightning:layoutItem size="4" padding="horizontal-medium">
-                        <lightning:input type="date" name="inputFechaCierre" label="Fecha cierre" aura:id="inputFechaCierre"  required="true" />
-                    </lightning:layoutItem>
-                    <lightning:layoutItem size="4" padding="horizontal-medium">
-                        <lightning:input type="date" name="inputFechaPresentacion" label="Fecha presentación" aura:id="inputFechaPresentacion"  required="true" />   
-                    </lightning:layoutItem>
-                    <lightning:layoutItem size="4" padding="horizontal-medium">
-                        <lightning:input  type="number" name="inputPlazo" label="Plazo ejec. (meses)" aura:id="inputPlazo"  required="true" />
-                    </lightning:layoutItem>
-                </lightning:layout>                
-                
-                <br></br>
-                <lightning:layout pullToBoundary="medium">
-                    <lightning:layoutItem size="4" padding="horizontal-medium">
-                        <lightning:select name="probabilidad" label="Probabilidad" aura:id="probabilidad" required="true">
-                            <option value="0">0</option>
-                            <option value="10">10</option>
-                            <option value="30">30</option>
-                            <option value="50">50</option>
-                            <option value="70">70</option>
-                            <option value="90">90</option>
-                            <option value="100">100</option>
-                        </lightning:select>
-                    </lightning:layoutItem>
-                    
-                    
-                    
-                    <lightning:layoutItem size="8" padding="horizontal-medium">
-                        <lightning:select name="tipo_de_negocio" label="Tipo de Negocio" aura:id="tipo_de_negocio" required="true">
-                            <option value=""></option>
-                            <option value="Automatic Extension">Automatic Extension</option>
-                            <option value="Recurrent Extension">Recurrent Extension</option>
-                            <option value="Previous exclusive framework agreement">Previous exclusive framework agreement</option>
-                            <option value="Previous framework agreement with competitors">Previous framework agreement with competitors</option>
-                            <option value="New Extension or variation">New Extension or variation</option>
-                            <option value="New exclusive framework agreement">New exclusive framework agreement</option>
-                            <option value="New framework agreement with competitors">New framework agreement with competitors</option>
-                            <option value="New contract being incumbent">New contract being incumbent</option>
-                            <option value="New contract">New contract</option>
-                            <option value="New contract multiyear/multistage">New contract multiyear/multistage</option>
-                        </lightning:select>
-                    </lightning:layoutItem>
-                </lightning:layout> 
-                
-                <div class="slds-grid slds-align_absolute-center">
-                    <div class="slds-col slds-align_absolute-center">
-                        <div style="margin-top:25px;">
-                            <lightning:button aura:id="cloneBtn"  variant="brand" label="Extender" onclick="{!c.extensionOpp}" disabled="{!v.disabledSave}" />                        
-                        </div>
-                    </div>
-                </div> 
-            </aura:if>
         </aura:set>
     </aura:if>
     

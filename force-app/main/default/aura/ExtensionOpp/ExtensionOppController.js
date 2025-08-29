@@ -57,28 +57,23 @@
           var lineaServicio;
           var Origen =null;
           
-          if(recordTypeName == 'Ayesa' || recordTypeName== 'Ibermatica Large Account' || recordTypeName=='Ibermatica Latam'){
-           importeTotal = component.find("inputImporteTotalOfertado").get("v.value");
-           margenEstimado = component.find("inputMargenEstimado").get("v.value");
 
-           console.log('Origen: '+ Origen);
-           tipoExtension = component.find("tipoExtension").get("v.value");
-              
-              if(tipoExtension=='Extensión Desglose'){
-                  lineaServicio =component.find("LineasServicioPicklist").get("v.value");
-              }else{
-                  lineaServicio=null;
-              }
-              
-             // if(tipoExtension=='Extensión Rectificativa' && Oportunidad.Origen__c != null ){
-                 Origen  = component.find("Origen").get("v.value");
-             // }
-           
-          }else{
-              importeTotal=null;
-              margenEstimado=null;
-              
-          }
+        importeTotal = component.find("inputImporteTotalOfertado").get("v.value");
+        margenEstimado = component.find("inputMargenEstimado").get("v.value");
+
+        console.log('Origen: '+ Origen);
+        tipoExtension = component.find("tipoExtension").get("v.value");
+            
+            if(tipoExtension=='Extensión Desglose'){
+                lineaServicio =component.find("LineasServicioPicklist").get("v.value");
+            }else{
+                lineaServicio=null;
+            }
+            
+            // if(tipoExtension=='Extensión Rectificativa' && Oportunidad.Origen__c != null ){
+                Origen  = component.find("Origen").get("v.value");
+            // }
+
           
           
           

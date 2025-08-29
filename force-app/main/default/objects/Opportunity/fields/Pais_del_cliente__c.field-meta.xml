@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Pais_del_cliente__c</fullName>
     <externalId>false</externalId>
-    <formula>Cliente__r.Literal_Pais_Oportunidad__c</formula>
+    <formula>Account.Literal_Pais_Oportunidad__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>País del cliente</label>
     <required>false</required>

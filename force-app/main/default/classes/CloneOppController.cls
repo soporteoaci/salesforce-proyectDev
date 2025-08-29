@@ -9,10 +9,6 @@ public class CloneOppController {
     @AuraEnabled
     public static String clonarOportunidad(Id idOportunidad, String nombreOpp, Date fechaCierre, Date fechaPresentacion, Double margenEstimado, Integer plazoEjecucion, Double importeTotal){
         String idOpp;
-        Id recordTypeSME = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ibermatica SME').getRecordTypeId();
-        Id recordTypeLarge = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ibermatica Large Account').getRecordTypeId();
-        Id recordTypeLatam = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ibermatica Latam').getRecordTypeId();
-        Id recordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
         DescribeSObjectResult describeResult = Opportunity.getSObjectType().getDescribe();	
         List<String> fieldNames = new List<String>(describeResult.fields.getMap().keySet());	
         String query = ' SELECT ' + String.join( fieldNames, ',' ) +	' FROM ' +describeResult.getName() + ' WHERE id = :idOportunidad LIMIT 1 ';
@@ -27,25 +23,19 @@ public class CloneOppController {
         System.debug('Usuario actual (nuevo Owner) -> '+ UserInfo.getUserId());
         oppClonada.OwnerId = UserInfo.getUserId(); 
         
-        
         oppClonada.Crear_expediente__c = false;
         oppClonada.Fecha_creacion__c =  Date.today();
-        
-        if(oppClonada.RecordTypeId == recordTypeSME){
-            oppClonada.Clase_de_oferta__c = 'Información Previa';
-            oppClonada.Etapa_Fase__c = 'Captación';
-            oppClonada.StageName = 'Captación';
-            oppClonada.Fase__c='Suspect';
-            oppClonada.Modificar_importes__c= TRUE;
-            
-        }else{
-            oppClonada.RecordTypeId=recordTypeAyesa;
+        System.debug('Record Type Oportunidad Clonada: ' + oppClonada.RecordTypeId);
+        System.debug('Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get(\'Innovación\').getRecordTypeId(): ' + Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Innovación').getRecordTypeId());
+        if(oppClonada.RecordTypeId == Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Innovación').getRecordTypeId()){
+            oppClonada.StageName = 'Oferta';
+            oppClonada.Subfase__c = 'Elaboración oferta';
+        } else {
             oppClonada.StageName = 'Cualificación';
             oppClonada.Subfase__c = 'Alta';
-            oppClonada.Modificar_importes__c= TRUE;
-            
-        } 
-        
+        }
+        oppClonada.Modificar_importes__c= TRUE;
+
         //Informado en el componente
         oppClonada.Name = nombreOpp;
         oppClonada.Nombre_Corto__c = nombreOpp;
@@ -57,18 +47,14 @@ public class CloneOppController {
         oppClonada.Importe_Licitacion__c = importeTotal;
         //El importe total ofertado lo incluimos en la actualización para calcular el margen
         oppClonada.Contratado_a_o_oportunidad__c  = importeTotal; 
-        
-        
-        
-        
+
         //Importes
-        
-        
         oppClonada.Margen_contrato__c = null;
         oppClonada.Importe_en_divisa_local__c = null;
         oppClonada.Importe_adjudicacion__c = null;
         oppClonada.Producci_n_estimada_a_o_oportunidad__c = null;
-  //      oppClonada.Produccion_estimada_a_o_poderada__c = null;
+        
+        //oppClonada.Produccion_estimada_a_o_poderada__c = null;
         oppClonada.Importe_Contratacion__c = null;
         oppClonada.Margen_Previsto_Euros__c=null;
         oppClonada.Margen_Previsto_Local__c=0;
@@ -135,45 +121,44 @@ public class CloneOppController {
         //SCM - nuevo campo Equipo Oferta no debe copiarse a la nueva oportunidad
         oppClonada.Equipo_Oferta__c = '';        
         
-        if(oppClonada.RecordTypeId != recordTypeSME){
-            oppClonada.Tipificacion_Manual__c=false;
-            oppClonada.Decision_Go_Smart_BPM_Offer__c='';
-         //   oppClonada.Decision_Oferta_Smart_BPM_Offer__c='';
-         //   oppClonada.Estado_Smart_BPM_Offer__c='';
-         //   oppClonada.Etapa_Smart_BPM_Offer__c='';
-            oppClonada.URL_Expediente__c = null;
-         //   oppClonada.id_registro_dataverso__c = null;
-            oppClonada.Decision_QA_Economico__c ='';
-            oppClonada.Decision_QA_Tecnico__c= '';
-            oppClonada.Decision_Aprobacion_Oferta__c='';
-            oppClonada.Tecnologia__c='';
-            oppClonada.VB_linea_de_servicio__c='';
-            oppClonada.Email_CEO_COO__c ='';
-            oppClonada.Tipo_Extension__c='';
-            oppClonada.Preventa__c=false;
-            oppClonada.Oportunidad_estrategica__c=false;
-            
-            //¿Preventa?
-            oppClonada.Finalidad__c='';
-            oppClonada.Certificaciones_empresa__c='';
-            oppClonada.Solvencia_empresa__c='';
-            oppClonada.Certificaciones_perfiles__c='';
-            oppClonada.Analisis_penalizaciones_excluyentes__c='';
-            oppClonada.Informado_AJI__c='';
-            oppClonada.Exige_venta_licencias__c='';
-            oppClonada.Licencias__c=null;
-            oppClonada.Forma_de_pago__c='';
-            oppClonada.RIESGO__c='';
-            oppClonada.Riesgo_Principal__c='';
-            oppClonada.Informado_Compliance__c='';
-            
-            oppClonada.Estimacion_coste_preventa__c =null;
-            oppClonada.Capacidad_preventa_redaccion_oferta__c='';
-            oppClonada.Adecuacion_precio_objetivo__c='';
-            oppClonada.Capacidad_ejecucion__c='';
-            oppClonada.Viabilidad_ejecucion__c='';
-            
-        }
+
+        oppClonada.Tipificacion_Manual__c=false;
+        oppClonada.Decision_Go_Smart_BPM_Offer__c='';
+        //   oppClonada.Decision_Oferta_Smart_BPM_Offer__c='';
+        //   oppClonada.Estado_Smart_BPM_Offer__c='';
+        //   oppClonada.Etapa_Smart_BPM_Offer__c='';
+        oppClonada.URL_Expediente__c = null;
+        //   oppClonada.id_registro_dataverso__c = null;
+        oppClonada.Decision_QA_Economico__c ='';
+        oppClonada.Decision_QA_Tecnico__c= '';
+        oppClonada.Decision_Aprobacion_Oferta__c='';
+        oppClonada.Tecnologia__c='';
+        oppClonada.VB_linea_de_servicio__c='';
+        oppClonada.Email_CEO_COO__c ='';
+        oppClonada.Tipo_Extension__c='';
+        oppClonada.Preventa__c=false;
+        oppClonada.Oportunidad_estrategica__c=false;
+        
+        //¿Preventa?
+        oppClonada.Finalidad__c='';
+        oppClonada.Certificaciones_empresa__c='';
+        oppClonada.Solvencia_empresa__c='';
+        oppClonada.Certificaciones_perfiles__c='';
+        oppClonada.Analisis_penalizaciones_excluyentes__c='';
+        oppClonada.Informado_AJI__c='';
+        oppClonada.Exige_venta_licencias__c='';
+        oppClonada.Licencias__c=null;
+        oppClonada.Forma_de_pago__c='';
+        oppClonada.RIESGO__c='';
+        oppClonada.Riesgo_Principal__c='';
+        oppClonada.Informado_Compliance__c='';
+        
+        oppClonada.Estimacion_coste_preventa__c =null;
+        oppClonada.Capacidad_preventa_redaccion_oferta__c='';
+        oppClonada.Adecuacion_precio_objetivo__c='';
+        oppClonada.Capacidad_ejecucion__c='';
+        oppClonada.Viabilidad_ejecucion__c='';
+
         
         oppClonada.Actualizar_Estado__c=false; 
         oppClonada.Clonada__c = true;
