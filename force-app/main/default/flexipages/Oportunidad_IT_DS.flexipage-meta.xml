@@ -741,8 +741,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fecha_presentacion__c</fieldItem>
-                <identifier>RecordFecha_presentacion_cField</identifier>
+                <fieldItem>Record.Fecha_limite_de_presentacion__c</fieldItem>
+                <identifier>RecordFecha_limite_de_presentacion_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -819,16 +819,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.StageName</fieldItem>
-                <identifier>RecordStageNameField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -3084,6 +3074,9 @@
                         <valueListItems>
                             <value>New</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>Oportunidad_Competidor_Socio__c.Solicitar_Aprobraci_n</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -3137,7 +3130,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showActionBar</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>sortFieldAlias</name>

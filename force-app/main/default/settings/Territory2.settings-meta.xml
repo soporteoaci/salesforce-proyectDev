@@ -3,7 +3,7 @@
     <defaultAccountAccessLevel>Edit</defaultAccountAccessLevel>
     <defaultCaseAccessLevel>Edit</defaultCaseAccessLevel>
     <defaultContactAccessLevel>Edit</defaultContactAccessLevel>
-    <defaultOpportunityAccessLevel>Read</defaultOpportunityAccessLevel>
+    <defaultOpportunityAccessLevel>None</defaultOpportunityAccessLevel>
     <enableTerritoryManagement2>true</enableTerritoryManagement2>
     <opportunityFilterSettings>
         <apexClassName xsi:nil="true"/>

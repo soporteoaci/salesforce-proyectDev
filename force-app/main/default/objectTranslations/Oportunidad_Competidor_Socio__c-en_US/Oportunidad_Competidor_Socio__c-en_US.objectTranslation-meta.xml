@@ -31,6 +31,10 @@
         </sections>
     </layouts>
     <nameFieldLabel>Code</nameFieldLabel>
+    <quickActions>
+        <label><!-- Solicitar Aprobración --></label>
+        <name>Solicitar_Aprobraci_n</name>
+    </quickActions>
     <recordTypes>
         <label>Partner</label>
         <name>Socio</name>

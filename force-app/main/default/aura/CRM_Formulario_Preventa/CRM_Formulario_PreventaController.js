@@ -11,7 +11,7 @@
                 type : 'String',
                 value: oppId
             }];
-        flow.startFlow("Boton_Oportunidad_Correo_Preventa",inputVariables);  
+        flow.startFlow("Boton_Opportunity_Correo_Preventa",inputVariables);  
     },
     onRecordUpdated : function(component, event, helper) {
         const estado = component.get("v.registro.Orgcomercial__c");

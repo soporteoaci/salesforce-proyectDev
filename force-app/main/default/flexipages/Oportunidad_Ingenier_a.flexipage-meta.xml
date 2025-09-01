@@ -2355,6 +2355,9 @@
                         <valueListItems>
                             <value>New</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>Oportunidad_Competidor_Socio__c.Solicitar_Aprobraci_n</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -2408,7 +2411,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showActionBar</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>sortFieldAlias</name>
