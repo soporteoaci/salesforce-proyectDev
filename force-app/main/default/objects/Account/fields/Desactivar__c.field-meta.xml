@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Desactivar__c</fullName>
     <defaultValue>false</defaultValue>
-    <inlineHelpText>Check the box to deactivate the account</inlineHelpText>
+    <inlineHelpText>Marcar la casilla para desactivar la cuenta</inlineHelpText>
     <label>Desactivar</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

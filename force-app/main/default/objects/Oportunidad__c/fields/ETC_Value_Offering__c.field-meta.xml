@@ -3,7 +3,7 @@
     <fullName>ETC_Value_Offering__c</fullName>
     <defaultValue>false</defaultValue>
     <description>ETC VALUE OFFERING marcar en caso de que sea una oportunidad de este tipo.</description>
-    <inlineHelpText>ETC VALUE OFFERING mark in case it is such an opportunity</inlineHelpText>
+    <inlineHelpText>ETC VALUE OFFERING marcar en caso de que sea una oportunidad de este tipo.</inlineHelpText>
     <label>ETC Value Offering</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

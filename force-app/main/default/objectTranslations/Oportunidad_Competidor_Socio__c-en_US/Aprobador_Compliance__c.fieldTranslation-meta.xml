@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>Compliance Approver</label>
     <name>Aprobador_Compliance__c</name>
-    <relationshipLabel><!-- Opportunities-Partners (Compliance Approver) --></relationshipLabel>
+    <relationshipLabel><!-- Oportunidades-Socios (Aprobador Compliance) --></relationshipLabel>
 </CustomFieldTranslation>

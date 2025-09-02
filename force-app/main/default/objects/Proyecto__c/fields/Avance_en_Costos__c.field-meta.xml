@@ -3,7 +3,7 @@
     <fullName>Avance_en_Costos__c</fullName>
     <formula>costeDirReal__c / costeDirPrev__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Actual Direct Cost / Prior Direct Cost</inlineHelpText>
+    <inlineHelpText>Costo Directo Real / Costo Directo Previsto</inlineHelpText>
     <label>Avance en Costos</label>
     <precision>18</precision>
     <required>false</required>

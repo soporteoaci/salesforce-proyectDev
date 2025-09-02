@@ -2447,7 +2447,7 @@
                 <label><!-- Última modificación por --></label>
                 <name>Última modificación por</name>
             </columns>
-            <label>Accounts</label>
+            <label><!-- Cuentas --></label>
             <name>Cuentas</name>
         </sections>
         <sections>
@@ -3659,7 +3659,7 @@
                 <label><!-- Última modificación por --></label>
                 <name>Última modificación por</name>
             </columns>
-            <label>Opportunities</label>
+            <label><!-- Oportunidades --></label>
             <name>Oportunidades</name>
         </sections>
         <sections>
@@ -3743,7 +3743,7 @@
                 <label><!-- Última modificación por --></label>
                 <name>Última modificación por</name>
             </columns>
-            <label>Opportunities - partner</label>
+            <label><!-- Oportunidades-Socios --></label>
             <name>Oportunidades-Socios</name>
         </sections>
         <sections>
