@@ -7,7 +7,6 @@
 				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
 				$User.Email &lt;&gt; &apos;powersalesforce@ayesa.com&apos;,
 				NOT(ISPICKVAL(Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
-				Record_Type_Name__c = &apos;Ayesa&apos;,
 				ISBLANK(Fecha_firma_contrato__c),
 				ISPICKVAL(Subfase__c,&apos;Ganada&apos;)
 )</errorConditionFormula>

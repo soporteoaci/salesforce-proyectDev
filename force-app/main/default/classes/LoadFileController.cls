@@ -29,7 +29,7 @@ public class LoadFileController {
                     archivo.name = file.get(0).PathOnClient;
                 }
                 
-                archivo.Oportunidad__c = recordId;
+                archivo.Opportunity__c = recordId;
                 archivo.Archivo__c = file.get(0).PathOnClient;
                 archivo.Tipo_de_Archivo__c = tipoArchivo;
                 archivo.Carpeta_Archivo__c = carpeta;

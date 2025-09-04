@@ -20,7 +20,6 @@
 				
 				OR(
 								AND(
-												RecordType.Name=&apos;Ayesa&apos;,
 												ISPICKVAL(StageName,&apos;Presentada (negociación y cierre)&apos;),
 												ISPICKVAL(Subfase__c, &apos;Ganada&apos;)
 								),

@@ -9,7 +9,6 @@
 				$User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
 				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
 				$User.Email &lt;&gt; &apos;power@ayesa.com&apos;,  
-				RecordType.Name =&apos;Ayesa&apos;, 
 
 				Clonada__c = FALSE,
 				NOT(ISBLANK(Fecha_Creacion__c)),

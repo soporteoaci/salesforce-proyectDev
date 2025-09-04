@@ -31,7 +31,7 @@
             <assignToReference>$Record.Aprobador_Compliance__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>$Record.Oportunidad__r.Director_Compliance__c</elementReference>
+                <elementReference>$Record.Opportunity__r.Director_Compliance__c</elementReference>
             </value>
         </assignmentItems>
     </assignments>
@@ -44,21 +44,21 @@
             <assignToReference>$Record.Aprobador_Compliance__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>$Record.Oportunidad__r.Director_Compliance__c</elementReference>
+                <elementReference>$Record.Opportunity__r.Director_Compliance__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>$Record.Aprobador_Finanzas__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>$Record.Oportunidad__r.Direccion_Financiera_Corporativa__c</elementReference>
+                <elementReference>$Record.Opportunity__r.Direccion_Financiera_Corporativa__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>$Record.Aprobador_Direccion_Operaciones__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>$Record.Oportunidad__r.CMO__c</elementReference>
+                <elementReference>$Record.Opportunity__r.CMO__c</elementReference>
             </value>
         </assignmentItems>
         <connector>

@@ -3,13 +3,12 @@
     <fullName>Origen_Soft_Stock</fullName>
     <active>true</active>
     <errorConditionFormula>AND(
-    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
-    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
-				CreatedDate &gt; DATETIMEVALUE(&quot;2024-05-16 16:00:00&quot;),
-				Record_Type_Name__c = &apos;Ayesa&apos;,
+				$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				OR(CreatedDate &gt; DATETIMEVALUE(&quot;2024-05-16 16:00:00&quot;),ISNEW()),
 				ISBLANK(TEXT(Tipo_Extension__c)),
 				ISBLANK(Oportunidad_Origen__c) &amp;&amp; NOT(ISPICKVAL(Sociedad_Ayesa__c , &apos;0002&apos;)),
-    ISPICKVAL(Origen__c,&apos;Soft&apos;)
+				ISPICKVAL(Origen__c, &apos;Soft&apos;)
 )</errorConditionFormula>
     <errorDisplayField>Oportunidad_Origen__c</errorDisplayField>
     <errorMessage>Informe la oportunidad de la que proviene</errorMessage>

@@ -2406,9 +2406,9 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Opportunity__c</field>
-            <table>Account.Oportunidades__r.Oportunidades_Competidores_Socios__r</table>
+            <field>Desglose_importes__c</field>
+            <table>Account.Oportunidades__r</table>
         </columns>
-        <masterLabel>Opportunities-Partners</masterLabel>
+        <masterLabel>Campos de depósitos</masterLabel>
     </sections>
 </ReportType>

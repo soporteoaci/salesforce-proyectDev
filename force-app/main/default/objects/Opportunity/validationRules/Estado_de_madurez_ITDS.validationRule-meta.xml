@@ -7,7 +7,6 @@
 		  $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
 		  $User.Email &lt;&gt; &apos;powersalesforce@ayesa.com&apos;,
 				ISBLANK(TEXT(Tipo_de_Oportunidad__c)),
-				Record_Type_Name__c =&apos;Ayesa&apos;,
 				OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;))
 
 )</errorConditionFormula>

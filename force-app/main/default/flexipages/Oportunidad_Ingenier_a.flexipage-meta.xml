@@ -2914,6 +2914,9 @@
                             <value>OWNER.FIRST_NAME</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>OWNER.LAST_NAME</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Decision__c</value>
                         </valueListItems>
                         <valueListItems>

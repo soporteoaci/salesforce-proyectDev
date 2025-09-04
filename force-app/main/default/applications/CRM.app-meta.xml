@@ -273,6 +273,222 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
+        <content>Oportunidad_Ingenier_a</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Ingenier_a</recordType>
+        <type>Flexipage</type>
+        <profile>Delivery Center IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Ingenier_a</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Ingenier_a</recordType>
+        <type>Flexipage</type>
+        <profile>Delivery Center IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Ingenier_a</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Ingenier_a</recordType>
+        <type>Flexipage</type>
+        <profile>KAM ENGINEERING</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Ingenier_a</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Ingenier_a</recordType>
+        <type>Flexipage</type>
+        <profile>KAM ENGINEERING</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Ingenier_a</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Ingenier_a</recordType>
+        <type>Flexipage</type>
+        <profile>KAM IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Ingenier_a</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Ingenier_a</recordType>
+        <type>Flexipage</type>
+        <profile>KAM IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Ingenier_a</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Ingenier_a</recordType>
+        <type>Flexipage</type>
+        <profile>Usuario Responsable Aprobador OC</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Ingenier_a</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Ingenier_a</recordType>
+        <type>Flexipage</type>
+        <profile>Usuario Responsable Aprobador OC</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Innovaci_n</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Innovaci_n</recordType>
+        <type>Flexipage</type>
+        <profile>Delivery Center IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Innovaci_n</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Innovaci_n</recordType>
+        <type>Flexipage</type>
+        <profile>Delivery Center IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Innovaci_n</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Innovaci_n</recordType>
+        <type>Flexipage</type>
+        <profile>KAM IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Innovaci_n</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Innovaci_n</recordType>
+        <type>Flexipage</type>
+        <profile>KAM IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Innovaci_n</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Innovaci_n</recordType>
+        <type>Flexipage</type>
+        <profile>KAM ENGINEERING</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Innovaci_n</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Innovaci_n</recordType>
+        <type>Flexipage</type>
+        <profile>KAM ENGINEERING</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Innovaci_n</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Innovaci_n</recordType>
+        <type>Flexipage</type>
+        <profile>Usuario Responsable Aprobador OC</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_Innovaci_n</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Innovaci_n</recordType>
+        <type>Flexipage</type>
+        <profile>Usuario Responsable Aprobador OC</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_IT_DS</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IT_DS</recordType>
+        <type>Flexipage</type>
+        <profile>Delivery Center IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_IT_DS</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IT_DS</recordType>
+        <type>Flexipage</type>
+        <profile>Delivery Center IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_IT_DS</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IT_DS</recordType>
+        <type>Flexipage</type>
+        <profile>KAM IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_IT_DS</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IT_DS</recordType>
+        <type>Flexipage</type>
+        <profile>KAM IT&amp;DS</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_IT_DS</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IT_DS</recordType>
+        <type>Flexipage</type>
+        <profile>KAM ENGINEERING</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_IT_DS</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IT_DS</recordType>
+        <type>Flexipage</type>
+        <profile>KAM ENGINEERING</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_IT_DS</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IT_DS</recordType>
+        <type>Flexipage</type>
+        <profile>Usuario Responsable Aprobador OC</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidad_IT_DS</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IT_DS</recordType>
+        <type>Flexipage</type>
+        <profile>Usuario Responsable Aprobador OC</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
         <content>Contacto_P_gina_de_registro</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Contact</pageOrSobjectType>

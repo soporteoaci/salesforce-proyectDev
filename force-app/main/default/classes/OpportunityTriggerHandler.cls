@@ -5,7 +5,7 @@ public class OpportunityTriggerHandler {
         private static final String STAGE_OFERTA = 'Oferta';
     private static final Decimal PROB_45 = 45;
     private static Map<String, String> stageByRt = new Map<String, String>{
-        'Ingenier_a' => 'Cualificación',
+        	'Ingenier_a' => 'Cualificación',
             'IT_DS'      => 'Cualificación',
             'Innovaci_n' => 'Oferta'
             };

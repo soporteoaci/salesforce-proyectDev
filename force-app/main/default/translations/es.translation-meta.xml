@@ -2191,6 +2191,10 @@
         <label><!-- CRM Clientes y Oportunidades --></label>
         <name>CRM_Clientes_y_Oportunidades</name>
         <sections>
+            <label><!-- Campos de depósitos --></label>
+            <name>Campos de depósitos</name>
+        </sections>
+        <sections>
             <columns>
                 <label><!-- Account Key Manager --></label>
                 <name>Account Key Manager</name>
@@ -3746,10 +3750,6 @@
             <label><!-- Oportunidades-Socios --></label>
             <name>Oportunidades-Socios</name>
         </sections>
-        <sections>
-            <label><!-- Opportunities-Partners --></label>
-            <name>Opportunities-Partners</name>
-        </sections>
     </reportTypes>
     <reportTypes>
         <label>Communications and Deliverables</label>
@@ -4562,6 +4562,23 @@
         <sections>
             <label><!-- Hitos --></label>
             <name>Hitos</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- New CRM Clientes y Oportunidades --></description>
+        <label><!-- New CRM Clientes y Oportunidades --></label>
+        <name>New_CRM_Clientes_y_Oportunidades</name>
+        <sections>
+            <label><!-- Cuentas --></label>
+            <name>Cuentas</name>
+        </sections>
+        <sections>
+            <label><!-- Oportunidades --></label>
+            <name>Oportunidades</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities-Partners --></label>
+            <name>Opportunities-Partners</name>
         </sections>
     </reportTypes>
     <reportTypes>

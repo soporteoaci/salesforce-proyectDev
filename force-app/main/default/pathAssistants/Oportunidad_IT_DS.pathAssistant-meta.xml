@@ -17,7 +17,7 @@
         <picklistValueName>Oferta</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
-        <fieldNames>SS__c</fieldNames>
+        <fieldNames>StageName</fieldNames>
         <fieldNames>Subfase__c</fieldNames>
         <fieldNames>Motivo_Perdido__c</fieldNames>
         <fieldNames>CloseDate</fieldNames>

@@ -7,7 +7,6 @@
 				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
 				$User.Email &lt;&gt; &apos;a.rodrig@ayesa.com&apos;,
 				$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
-				Record_Type_Name__c =&apos;Ayesa&apos;,
 				NOT(ISPICKVAL(Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
 				NOT(ISPICKVAL(Tipo_Extension__c, &apos;Extensión CUTE&apos;)),
 				OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),

@@ -722,7 +722,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Fecha_limite_de_presentacion__c</fieldItem>
                 <identifier>RecordFecha_limite_de_presentacion_cField2</identifier>
@@ -4396,6 +4396,9 @@
                             <value>OWNER.FIRST_NAME</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>OWNER.LAST_NAME</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Decision__c</value>
                         </valueListItems>
                         <valueListItems>
@@ -5238,6 +5241,13 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab8</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Tiene_Oferta_QA__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
