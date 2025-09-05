@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Contratado del año teniendo en cuenta la participación de Ayesa --></help>
+    <label>Weighted Amount(€)</label>
+    <name>Importe_Ponderado__c</name>
+</CustomFieldTranslation>

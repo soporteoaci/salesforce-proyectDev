@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Al marcar esta casilla se manda a aprobación la Oportunidad Matriz y Extensiones de desglose --></help>
+    <label><!-- Aprobación Conjunta --></label>
+    <name>Aprobacion_Conjunta__c</name>
+</CustomFieldTranslation>

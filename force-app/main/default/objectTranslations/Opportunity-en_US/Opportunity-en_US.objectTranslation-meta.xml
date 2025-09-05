@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>IT&amp;DS</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ingeniería</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Innovación</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label><!-- Evernote --></label>
+            <section>Evernote</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Presupuesto</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Actualizar importes --></label>
+        <name>Actualizar_importes</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Clonar Oportunidad --></label>
+        <name>Clonar_Oportunidad</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Documentación --></label>
+        <name>Documentacion</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Extender Oportunidad --></label>
+        <name>Extender_Oportunidad</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nueva tarea --></label>
+        <name>Nueva_tarea</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Oferta ING. --></label>
+        <name>Oferta_Ingenieria</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Imputación Preventa --></label>
+        <name>Preventa</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SUPER Preventa --></label>
+        <name>SUPER_Preventa</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- IT&amp;DS --></label>
+        <name>IT_DS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ingeniería --></label>
+        <name>Ingenier_a</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Innovación --></label>
+        <name>Innovaci_n</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Presupuesto --></label>
+        <name>Presupuesto</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Antes de pasar a Aprobado pdte Presentar, debe tener relleno el código de Oferta SAP --></errorMessage>
+        <name>Aprobacion_con_datos_QA_informados</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La oportunidad está bloqueada por el importe límite de la línea de servicio y por el tipo de cuenta --></errorMessage>
+        <name>Bloqueada_Linea_Servicio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se permite seleccionar &quot;STOCK&quot; como origen cuando la Dirección de Operaciones es IT&amp;DS. Por favor, selecciona otro valor. --></errorMessage>
+        <name>Bloquear_Origen_STOCK_IT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La oportunidad tiene una aprobación en proceso, no se permite su modificación --></errorMessage>
+        <name>Bloqueo_Por_Aprobacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Seleccione un valor para el campo CPV en la pestaña &quot;Más Información&quot; --></errorMessage>
+        <name>CPV_select_Ingenieria</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cambio de etapa no permitido --></errorMessage>
+        <name>Cambio_etapa_no_permitido_Cualificacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cambio de etapa no permitido --></errorMessage>
+        <name>Cambio_etapa_no_permitido_Oferta_ITDS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No puede avanzar a subfase Pte. Aprobación sin tener el visto bueno del Delivery Center --></errorMessage>
+        <name>Cambio_no_permitido_Pdte_Aprobacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Está modificando campos que solo puede informar el Responsable Delivery Center: Estimación coste preventa, Adecuación precio objetivo, Capacidad ejecución, Viabilidad ejecución, Capacidad preventa redacción oferta, Nº FTEs --></errorMessage>
+        <name>Campos_Cuali_LineaServicios_NoPreventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Está modificando campos que solo puede informar el Responsable Delivery Center: Capacidad ejecución, Viabilidad ejecución, Nº FTEs --></errorMessage>
+        <name>Campos_Cuali_LineaServicios_Preventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Está modificando campos que solo pueden ser informados por el Responsable de la Oportunidad (Propietario) --></errorMessage>
+        <name>Campos_Cualificacion_RO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Está modificando campos que solo pueden ser informados por el Responsable de Preventa: Estimación coste preventa, Adecuación precio objetivo, Capacidad preventa redacción oferta. --></errorMessage>
+        <name>Campos_Cualificacion_RespPreventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cuando la Oportunidad se ha cerrado se bloquea el registro. Si quiere realizar alguna modificación debe ponerse en contacto con un Administrador del sistema, CAU-CRM ó Controller financiero. --></errorMessage>
+        <name>Cerrada_Bloqueada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe seleccionar el Estado de cierre --></errorMessage>
+        <name>Cerrada_sin_estado_cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe informar si se produce algo fuera de España en la pestaña Cualificación antes de avanzar de subfase --></errorMessage>
+        <name>Check_produce_fuera_Spain</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se puede elegir esta subfase por la clase de oferta de la oportunidad --></errorMessage>
+        <name>Cierre_limitacion_subfases</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se puede generar una oportunidad si el cliente no tiene informado el sector y subsector --></errorMessage>
+        <name>Cliente_Sector_Subsector</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Antes de pasar a Pte. Aprobación debe tener relleno el código de Oferta SAP en la pestaña de Más información --></errorMessage>
+        <name>Codigo_Oferta_SAP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe rellenar el campo &apos;Motivo de excepción&apos; antes de guardar los cambios. --></errorMessage>
+        <name>Control_de_cambios_Admin_Custom_Ibermati</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La oportunidad tiene preventa, no puede seleccionar esta subfase --></errorMessage>
+        <name>Cualificacion_con_preventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La oportunidad no tiene preventa según su tipificación, si necesita preventa consulte con el administrador. --></errorMessage>
+        <name>Cualificacion_sin_preventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se puede crear una oportunidad relacionada a un cliente bloqueado --></errorMessage>
+        <name>Cuenta_Bloqueada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Antes de avanzar a la subfase Ganada suba el documento &apos;Contrato/Contract&apos; en la pestaña Doc Power Alejandría --></errorMessage>
+        <name>DOC_Contrato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No puede cerrar esta oportunidad como ganada ya que su oportunidad matriz no está ganada --></errorMessage>
+        <name>Desglose_Ganadas_restriccion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se puede avanzar a la etapa Aprobada al no tener informado en la pestaña de Aprobaciones el campo Email CEO y COO --></errorMessage>
+        <name>Email_CEO_COO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Al ser una oportunidad con Preventa hay que informar el Equipo Oferta en la pestaña &apos;Cualificación&apos; --></errorMessage>
+        <name>Equipo_preventa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el estado de madurez --></errorMessage>
+        <name>Estado_de_madurez_ITDS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para oportunidades de la Dirección Operaciones ENGINEERING solo son seleccionables en esta etapa: Esperando decisión, Ganada pendiente de contrato, Ganada, Perdida y Aplazada / anulada. --></errorMessage>
+        <name>Etapa_Cierre_ING</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No puede avanzar a la subfase &apos;Esperando decisión&apos; ya que solo es seleccionable para oportunidades de la Dirección Operaciones ENGINEERING. --></errorMessage>
+        <name>Etapa_Cierre_limitacion_Subfase_ITDS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La fecha de presentación debe ser anterior o igual a la fecha de cierre --></errorMessage>
+        <name>Fecha_Presentacion_Cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La Fecha de Presentación debe ser anterior o igual a la Fecha de Cierre y la Fecha de Cierre tiene que ser anterior o igual a la Fecha Inicio Producción --></errorMessage>
+        <name>Fecha_SME</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fecha de adjudicación es obligatoria para oportunidades adjudicadas --></errorMessage>
+        <name>Fecha_adjudicacion_obligatoria</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La fecha de cierre debe de ser posterior al mes anterior al actual --></errorMessage>
+        <name>Fecha_cierre_posterior_mes_pasado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el Contacto Principal antes de avanzar a la siguiente etapa. --></errorMessage>
+        <name>IB_SME_Contacto_Principal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe Gestor de Producción y Centro de Responsabilidad para avanzar a la siguiente etapa --></errorMessage>
+        <name>IB_SME_GP_CR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe los datos de la pestaña &apos;Datos económicos&apos; antes de avanzar a la siguiente etapa --></errorMessage>
+        <name>IB_SME_Importes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el Contacto Principal --></errorMessage>
+        <name>ITDS_Contacto_Principal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- El importe total de una oportunidad no puede ser 0. --></errorMessage>
+        <name>Importe_Total_no_puede_ser_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el campo Importe UTE Ayesa en la pestaña de &apos;Datos económicos&apos; antes de avanzar a la siguiente fase --></errorMessage>
+        <name>Importe_UTE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- El importe de adjudicación es obligatorio para oportunidades adjudicadas --></errorMessage>
+        <name>Importe_adjudicacion_obligatorio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el campo Importe total ofertado (sin IVA) en la pestaña Datos Económicos antes de avanzar a la siguiente fase --></errorMessage>
+        <name>Importe_total_ofertado_sin_IVA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el departamento --></errorMessage>
+        <name>Informar_Business_Unit_BL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debes informar el código AJI --></errorMessage>
+        <name>Informar_Codigo_AJI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el delivery center antes de pasar a la siguiente subfase --></errorMessage>
+        <name>Informar_DeliveryCenter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe la Referencia Comercial relacionada y el campo Área Tecnología en la pestaña de Cierre --></errorMessage>
+        <name>Informar_Ref_Comercial_Nombre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el campo Referencia comercial en la pestaña Cierre al ser una oportunidad ganada y cerrada --></errorMessage>
+        <name>Informar_Referencia_Comercial</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el responsable de proyecto en la pestaña &apos;Cierre&apos; --></errorMessage>
+        <name>Informar_Responsable_Proyecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe la fecha firma de contrato en la pestaña &apos;Fechas&apos; antes de cerrar la oportunidad --></errorMessage>
+        <name>Informar_fecha_firma_de_contrato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Al ser una sinergia, informa el porcentaje de sinergia --></errorMessage>
+        <name>Informar_porcentaje_Sinergia</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Al ser una oportunidad de Ingeniería no puede avanzar a esta subfase --></errorMessage>
+        <name>Ingenieria_subfases</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La fecha de adjudicación debe ser mayor que la fecha de presentación. --></errorMessage>
+        <name>Mayor_o_igual_que_fecha_presentacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para oportunidades adjudicadas, la fecha de adjudicación debe ser menor o igual a la fecha de cierre. --></errorMessage>
+        <name>Menor_o_igual_que_fecha_cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No puede avanzar de subfase al no tener las aprobaciones de la Oferta --></errorMessage>
+        <name>No_avanzar_subfase_Aprobada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se puede informar la referencia comercial hasta que la oportunidad esté Cerrada y Contratada --></errorMessage>
+        <name>No_informar_Referencia_Comercial</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se pueden modificar los siguientes campos: Mercado, Sector Mercado, Subsector mercado, Línea de servicio, Delivery Center --></errorMessage>
+        <name>No_modificar_Mercados</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cambio de etapa no permitida. Debe recibir el código de oferta por parte del equipo de licitaciones y se actualizará el estado de forma automática. --></errorMessage>
+        <name>No_pasar_A_Pendiente_QA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para pasar a &quot;Pedir Código Oferta&quot; debe pulsar en oferta, cumplimentar los datos y pulsar en &quot;Solicitud de código Oferta y Soporte a Oferta&quot; --></errorMessage>
+        <name>No_pasar_A_pedir_cod_oferta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No puede avanzar a esta subfase al ser una oportunidad de ingeniería --></errorMessage>
+        <name>No_preventa_Ingenieria</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se puede informar la Oportunidad Matriz con una Extensión --></errorMessage>
+        <name>Oportunidad_Matriz_no_es_Extension</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe la oportunidad de la que proviene --></errorMessage>
+        <name>Origen_Soft_Stock</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor informe el País en la cuenta del cliente de la oportunidad. --></errorMessage>
+        <name>Pais_cliente</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para cambiar el % de Participación debe ponerse en contacto con CAU-CRM, una vez modificado se enviarán las solicitudes de aprobación pertinente --></errorMessage>
+        <name>Participacion_Etapa_negociacion_y_cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Si el campo ¿Exige venta de licencias? esta informado como No , no puede informar el campo % Licencias en la pestaña Cualificación. --></errorMessage>
+        <name>Porcentaje_Licencias</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe indicar el Importe total ofertado de la oportunidad para poder pasarla a presentada. --></errorMessage>
+        <name>Presentada_Importe_Total_Ofertado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para poder crear la nueva referencia comercial debe elegir una o varias tecnologías que se utilizarían en el futuro PEP. --></errorMessage>
+        <name>RefComercial_Si_AreaTecnologia</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe tener informado el campo Responsable Técnico de la Oferta antes de poder cambiar de subfase --></errorMessage>
+        <name>ResponsableTecnico_Informado_ENG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Solo se puede dar por ganada si su estado es presentada. --></errorMessage>
+        <name>Restriccion_Estado_Ganada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cambio de etapa no permitido. --></errorMessage>
+        <name>Restriccion_Etapa_Abierta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cambio de etapa no permitido. --></errorMessage>
+        <name>Restriccion_Etapa_Aprobada_QA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cambio de etapa no permitido .. --></errorMessage>
+        <name>Restriccion_Etapa_Cerrada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cambio de etapa no permitido. --></errorMessage>
+        <name>Restriccion_Etapa_Pedido_Codigo_Oferta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cambio de etapa no permitido. --></errorMessage>
+        <name>Restriccion_Etapa_Preparando_QA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe indicar el % Rentabilidad de la oportunidad para poder pasarla a presentada --></errorMessage>
+        <name>Restriccion_etapa_Rentabilidad</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La fecha de cierre no puede ser posterior al día actual --></errorMessage>
+        <name>Restriccion_etapa_fecha_cierre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe el subsector de mercados --></errorMessage>
+        <name>Subsector_mercado_oblig_DA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Antes de pasar a Pte. Aprobación, el borrador del acuerdo de socios debe de estar aprobado. Informe el campo en la pestaña Oferta. --></errorMessage>
+        <name>Validacion_Borrador_Acuerdo_de_socios</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Los campos de la pestaña Cualificación deben de ser informados por el responsable indicado antes de avanzar a la subfase Pte ok Preliminar --></errorMessage>
+        <name>Validacion_Pdt_Ok_preliminar</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Los campos de la pestaña Cualificación: Tipo de Participación, % Participación y Subcontrataciones deben de estar informados antes de avanzar a la subfase Pte ok Preliminar --></errorMessage>
+        <name>Validacion_Pdt_Ok_preliminar_Cualifi</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Antes de pasar a Pte. Aprobación informe los campos de la sección &apos;Información&apos; en la pestaña &apos;Oferta&apos; --></errorMessage>
+        <name>informacion_Correo_Aprobacion_Oferta</name>
+    </validationRules>
+    <workflowTasks>
+        <name>Fecha_Vencimiento</name>
+        <subject><!-- Vencimiento Fecha Presentación --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Se ha solicitado código de oferta pero han pasado 2 días sin respuesta --></description>
+        <name>Reclamar_C_digo_de_Oferta</name>
+        <subject><!-- Reclamar Código de Oferta --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Recordatorio_Limite_de_presentaci_n</name>
+        <subject><!-- Recordatorio Limite de presentación --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Faltan 3 días para la fecha límite de presentación --></description>
+        <name>Reuni_n_QA</name>
+        <subject><!-- Reunión QA --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Ya dispone de código de oferta, convoque reunión QA --></description>
+        <name>Reunion_QA</name>
+        <subject><!-- Recordatorio convocar reunion QA --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Revisión QA con 30 días de antelación --></description>
+        <name>Revision_QA</name>
+        <subject><!-- Revisión QA --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Submitted Offer Amount is the final fees submitted to client for the entire contract (considering the part of the partners in case of JV) --></help>
+    <label>Submitted offer Amount in local currency</label>
+    <name>Importe_en_divisa_local__c</name>
+</CustomFieldTranslation>

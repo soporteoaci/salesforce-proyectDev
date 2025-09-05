@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Cuenta_Principal__c</fullName>
     <externalId>false</externalId>
-    <formula>IF( ISBLANK(  Cliente__r.ParentId  ),   Cliente__r.Name  ,  Cliente__r.Parent.Name)</formula>
+    <formula>IF( ISBLANK(Account.ParentId), Account.Name, Account.Parent.Name )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Cuenta Principal</label>
     <required>false</required>

@@ -4,26 +4,26 @@
     <name>Sub_area__c</name>
     <picklistValues>
         <masterLabel>A1</masterLabel>
-        <translation><!-- A1 --></translation>
+        <translation>INGENIERIA CIVIL Y ARQUITECTURA</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>A2</masterLabel>
-        <translation><!-- A2 --></translation>
+        <translation>INGENIERIA INDUSTRIAL</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>A3</masterLabel>
-        <translation><!-- A3 --></translation>
+        <translation>CONSULTORÍA</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>A5</masterLabel>
-        <translation><!-- A5 --></translation>
+        <translation>SMART LIFE</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>A6</masterLabel>
-        <translation><!-- A6 --></translation>
+        <translation>INGENIERIA FABRICACIÓN AVANZADA</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>A8</masterLabel>
-        <translation><!-- A8 --></translation>
+        <translation>BPO</translation>
     </picklistValues>
 </CustomFieldTranslation>

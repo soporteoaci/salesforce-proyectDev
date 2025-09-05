@@ -3,13 +3,12 @@
     <fullName>Importe_UTE</fullName>
     <active>true</active>
     <errorConditionFormula>AND(
-    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
-    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
-				Record_Type_Name__c= &apos;Ayesa&apos;,
-				ISBLANK(Importe_adjudicacion__c),
-				ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;),
-				ISPICKVAL(Tipo_Participacion_Ayesa__c, &apos;UTE&apos;)
-)</errorConditionFormula>
+        $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+        $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+        ISBLANK(Importe_adjudicacion__c),
+        ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;),
+        ISPICKVAL(Tipo_Participacion_Ayesa__c, &apos;UTE&apos;)
+        )</errorConditionFormula>
     <errorDisplayField>Importe_adjudicacion__c</errorDisplayField>
-    <errorMessage>Informe el campo Importe UTE Ayesa en la pestaña de &apos;Datos ecnómicos&apos; antes de avanzar a la siguiente fase</errorMessage>
+    <errorMessage>Informe el campo Importe UTE Ayesa en la pestaña de &apos;Datos económicos&apos; antes de avanzar a la siguiente fase</errorMessage>
 </ValidationRule>

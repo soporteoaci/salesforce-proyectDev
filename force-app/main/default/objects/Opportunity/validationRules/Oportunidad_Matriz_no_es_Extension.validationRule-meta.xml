@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oportunidad_Matriz_no_es_Extension</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+    
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    
+CONTAINS(RecordType.Name,&apos;Ibermatica&apos;),
+	 Oportunidad_Relacionada__r.Extension__c = true
+)</errorConditionFormula>
+    <errorDisplayField>Oportunidad_Relacionada__c</errorDisplayField>
+    <errorMessage>No se puede informar la Oportunidad Matriz con una Extensión</errorMessage>
+</ValidationRule>

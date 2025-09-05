@@ -3,7 +3,7 @@
     <fullName>Responsable_Tecnico_de_la_Oferta__c</fullName>
     <description>Responsable Técnico de la Oferta</description>
     <externalId>false</externalId>
-    <inlineHelpText>Responsable Técnico de la Oferta</inlineHelpText>
+    <inlineHelpText>Bid Manager Responsible</inlineHelpText>
     <label>Responsable Técnico de la Oferta</label>
     <length>255</length>
     <required>false</required>

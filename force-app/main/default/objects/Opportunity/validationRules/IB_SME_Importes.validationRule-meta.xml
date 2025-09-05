@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IB_SME_Importes</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+    
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    
+					$User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+					RecordType.Name =&apos;Ibermatica SME&apos;,
+					OR (ISPICKVAL(Etapa_Fase__c,&apos;Demostrando&apos;),
+									ISPICKVAL(Etapa_Fase__c,&apos;Oferta&apos;),
+									ISPICKVAL(Etapa_Fase__c,&apos;Cerrada&apos;)
+								),
+
+  					ISBLANK(Importe_total_sin_IVA__c)
+ 
+  
+
+	)</errorConditionFormula>
+    <errorMessage>Informe los datos de la pestaña &apos;Datos económicos&apos; antes de avanzar a la siguiente etapa</errorMessage>
+</ValidationRule>

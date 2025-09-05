@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <formula>TEXT(Area__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Área de la anterior organización (31/12/2021)</inlineHelpText>
+    <inlineHelpText>Area of ​​the Previous Organization (31/12/2021)</inlineHelpText>
     <label>Área</label>
     <required>false</required>
     <trackHistory>false</trackHistory>

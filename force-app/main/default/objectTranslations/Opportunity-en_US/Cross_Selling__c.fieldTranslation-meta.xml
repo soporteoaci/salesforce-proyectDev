@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indica si la Oportunidad nace de las sinergias con Ibermática. --></help>
+    <label>Cross Selling</label>
+    <name>Cross_Selling__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Estimación de que producción aportaría esta oportunidad en el año en curso.  Muy útil para hacer la UPA. en €. --></help>
+    <label>Est. yearly production opportunity (€)</label>
+    <name>Producci_n_estimada_a_o_oportunidad__c</name>
+</CustomFieldTranslation>

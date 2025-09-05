@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Aprobador_Final__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
-    <inlineHelpText>Aprobador que confirma de forma definitiva la resolución del caso y por lo tanto su cierre.</inlineHelpText>
+    <inlineHelpText>Approver that definitively confirms the resolution of the case and therefore its closure</inlineHelpText>
     <label>Aprobador Final</label>
     <referenceTo>User</referenceTo>
     <relationshipName>CasosAprobadorFinal</relationshipName>

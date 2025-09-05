@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cliente_Sector_Subsector</fullName>
+    <active>true</active>
+    <description>No permite crear oportunidades si el cliente no tiene informado el sector y subsector</description>
+    <errorConditionFormula>OR(
+				AND(
+								$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+								OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
+								ISBLANK(Codigo_OC__c),
+								OR(	
+												ISBLANK(TEXT(Account.Sector__c)),
+												ISBLANK(TEXT(Account.Subsector__c))
+								)
+				),
+
+				AND(
+								$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+								ISPICKVAL(Direccion_Operaciones__c,&apos;ENGINEERING&apos;),
+								ISBLANK(Codigo_OC__c),
+								ISBLANK(TEXT(Account.Sector__c))												
+								
+				)
+
+)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>No se puede generar una oportunidad si el cliente no tiene informado el sector y subsector</errorMessage>
+</ValidationRule>

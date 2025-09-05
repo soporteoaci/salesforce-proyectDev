@@ -4,14 +4,14 @@
     <name>Estado__c</name>
     <picklistValues>
         <masterLabel>ENMA</masterLabel>
-        <translation><!-- ENMA --></translation>
+        <translation>En ejecución</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>RECEP</masterLabel>
-        <translation><!-- RECEP --></translation>
+        <translation>Ejecutado y recepcionado por el cliente aunque en SAP aún no está en LIQ</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SINC</masterLabel>
-        <translation><!-- SINC --></translation>
+        <translation>En ejecución sin contrato firmado</translation>
     </picklistValues>
 </CustomFieldTranslation>

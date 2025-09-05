@@ -4,10 +4,10 @@
     <name>Causa_resolucion__c</name>
     <picklistValues>
         <masterLabel>CRES1</masterLabel>
-        <translation><!-- CRES1 --></translation>
+        <translation>Crisis sanitaria</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>CRES2</masterLabel>
-        <translation><!-- CRES2 --></translation>
+        <translation>Otros motivos ajenos a la crisis sanitaria</translation>
     </picklistValues>
 </CustomFieldTranslation>

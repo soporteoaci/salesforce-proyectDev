@@ -4,7 +4,7 @@
     <name>Tipo__c</name>
     <picklistValues>
         <masterLabel>Acta</masterLabel>
-        <translation><!-- Acta --></translation>
+        <translation>Minutes</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Configuración</masterLabel>

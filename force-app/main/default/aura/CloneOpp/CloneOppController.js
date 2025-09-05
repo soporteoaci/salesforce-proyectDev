@@ -29,13 +29,8 @@
         
         var importeTotal;
         var margenEstimado;
-        if(recordTypeName == 'Ayesa'){
-           importeTotal = component.find("inputImporteTotalLicitacon").get("v.value");
-           margenEstimado = component.find("inputMargenEstimado").get("v.value");
-          }else{
-              importeTotal=null;
-              margenEstimado=null;
-          }
+        importeTotal = component.find("inputImporteTotalLicitacon").get("v.value");
+        margenEstimado = component.find("inputMargenEstimado").get("v.value");
         console.log("idOportunidad: " + idOportunidad);
         console.log("nombreOportunidad: " + nombreOpp);
         var action = component.get("c.clonarOportunidad");

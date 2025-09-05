@@ -3,7 +3,7 @@
     <fullName>Cerrado__c</fullName>
     <formula>TEXT(Estado__c) = &apos;Aprobado&apos;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Se marca automáticamente cuando el estado es Aceptado</inlineHelpText>
+    <inlineHelpText>Automatically checked when status is accepted</inlineHelpText>
     <label>Cerrado</label>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

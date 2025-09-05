@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Services</label>
+    <name>Horizontal__c</name>
+    <picklistValues>
+        <masterLabel>BPS</masterLabel>
+        <translation><!-- BPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cybersecurity</masterLabel>
+        <translation><!-- Cybersecurity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DAA</masterLabel>
+        <translation><!-- DAA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital</masterLabel>
+        <translation><!-- Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital-Latam</masterLabel>
+        <translation><!-- Digital-Latam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-AD/AM SERVICES</masterLabel>
+        <translation><!-- H-AD/AM SERVICES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-AEROSPACIAL</masterLabel>
+        <translation><!-- H-AEROSPACIAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-BPO</masterLabel>
+        <translation><!-- H-BPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-CIENCIA DEL DATO &amp; PROCESOS</masterLabel>
+        <translation><!-- H-CIENCIA DEL DATO &amp; PROCESOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-CSO IND</masterLabel>
+        <translation><!-- H-CSO IND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-DIGITAL</masterLabel>
+        <translation><!-- H-DIGITAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-EXTERNOS SD&amp;TI</masterLabel>
+        <translation><!-- H-EXTERNOS SD&amp;TI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-ING. CIVIL y ARQ</masterLabel>
+        <translation><!-- H-ING. CIVIL y ARQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-ING. INDUSTRIAL</masterLabel>
+        <translation><!-- H-ING. INDUSTRIAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-INGENIERÍA 4.0</masterLabel>
+        <translation><!-- H-INGENIERÍA 4.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-INTEGRACIONES INTEL.</masterLabel>
+        <translation><!-- H-INTEGRACIONES INTEL. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-ITO</masterLabel>
+        <translation><!-- H-ITO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-M2C DATOS</masterLabel>
+        <translation><!-- H-M2C DATOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-M2C DESARROLLO</masterLabel>
+        <translation><!-- H-M2C DESARROLLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-M2C ITO</masterLabel>
+        <translation><!-- H-M2C ITO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-PLANIFICACION, RIESGO Y CONTRO DS&amp;TI</masterLabel>
+        <translation><!-- H-PLANIFICACION, RIESGO Y CONTRO DS&amp;TI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-PLANIFICACION, RIESGO Y CONTROL ING</masterLabel>
+        <translation><!-- H-PLANIFICACION, RIESGO Y CONTROL ING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-SALESFORCE</masterLabel>
+        <translation><!-- H-SALESFORCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-SAP</masterLabel>
+        <translation><!-- H-SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-SCSO ADJUNTO</masterLabel>
+        <translation><!-- H-SCSO ADJUNTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-SERVICIOS LATAM</masterLabel>
+        <translation><!-- H-SERVICIOS LATAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-SISTEMAS DE GESTION AAC</masterLabel>
+        <translation><!-- H-SISTEMAS DE GESTION AAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-SISTEMAS DE GESTION DS&amp;TI</masterLabel>
+        <translation><!-- H-SISTEMAS DE GESTION DS&amp;TI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-SISTEMAS DE GESTION ING</masterLabel>
+        <translation><!-- H-SISTEMAS DE GESTION ING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-STAFF SD&amp;TI</masterLabel>
+        <translation><!-- H-STAFF SD&amp;TI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hybrid IT</masterLabel>
+        <translation><!-- Hybrid IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITO</masterLabel>
+        <translation><!-- ITO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Innovación</masterLabel>
+        <translation><!-- Innovación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft</masterLabel>
+        <translation><!-- Microsoft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oferta Base</masterLabel>
+        <translation><!-- Oferta Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP</masterLabel>
+        <translation><!-- SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SW Devep.</masterLabel>
+        <translation><!-- SW Devep. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce</masterLabel>
+        <translation><!-- Salesforce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart Factories</masterLabel>
+        <translation><!-- Smart Factories --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

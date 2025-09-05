@@ -10,7 +10,6 @@
 				$Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
 				$User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
 				$User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;,
-				RecordType.Name =&apos;Ayesa&apos;,
 					OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)), 
 					Clonada__c =FALSE,
 					OR(

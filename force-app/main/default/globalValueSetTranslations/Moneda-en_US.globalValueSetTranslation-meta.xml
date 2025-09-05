@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>BDT</masterLabel>
+        <translation>Taka bangladeshí</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOB</masterLabel>
+        <translation>Boliviano</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRL</masterLabel>
+        <translation>Real brasileño</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CLP</masterLabel>
+        <translation>Peso chileno</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CNY</masterLabel>
+        <translation>Yuan chino</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COP</masterLabel>
+        <translation>Peso colombiano</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DZD</masterLabel>
+        <translation>Dinar argelino</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EUR</masterLabel>
+        <translation>Euro europeo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GBP</masterLabel>
+        <translation>Libra esterlina</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GNF</masterLabel>
+        <translation>Franco guineano</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HUF</masterLabel>
+        <translation>Forint húngaro</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INR</masterLabel>
+        <translation>Rupia india</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MAD</masterLabel>
+        <translation>Dirham marroquí</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MXN</masterLabel>
+        <translation>Peso mexicano</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOK</masterLabel>
+        <translation>Corona noruega</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OMR</masterLabel>
+        <translation>Rial omaní</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PAB</masterLabel>
+        <translation>Balboa panameño</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PEN</masterLabel>
+        <translation>Nuevo sol</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PHP</masterLabel>
+        <translation>Peso filipino</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PLN</masterLabel>
+        <translation>Zloty polaco</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RUB</masterLabel>
+        <translation>Rublo ruso</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SAR</masterLabel>
+        <translation>Riyal saudí</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UAH</masterLabel>
+        <translation>Griwna ucraniano</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>USD</masterLabel>
+        <translation>Dólar</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VND</masterLabel>
+        <translation>Dong vietnamita</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ZAR</masterLabel>
+        <translation><!-- ZAR --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

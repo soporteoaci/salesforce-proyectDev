@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Supervisor Final de Casos por Defecto --></label>
     <name>Supervisor_Final_de_Casos_por_Defecto__c</name>
-    <relationshipLabel><!-- Proyectos (Supervisor Final de Casos por Defecto) --></relationshipLabel>
+    <relationshipLabel><!-- Projects (Final Default Case Supervisor) --></relationshipLabel>
 </CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- VTH Technology - Level 1 --></label>
+    <name>VTH_Technology_Level_1__c</name>
+    <picklistValues>
+        <masterLabel>CIBERSECURITY</masterLabel>
+        <translation><!-- CIBERSECURITY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DATA &amp; AI</masterLabel>
+        <translation><!-- DATA &amp; AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIGITAL IMPACT</masterLabel>
+        <translation><!-- DIGITAL IMPACT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QUANTUM</masterLabel>
+        <translation><!-- QUANTUM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

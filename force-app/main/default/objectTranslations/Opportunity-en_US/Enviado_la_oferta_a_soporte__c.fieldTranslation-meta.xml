@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Marque este campo si se ha enviado la oferta presentada a Soporte Ofertas / se ha subido a Alejandria --></help>
+    <label>Bid sent to support / Alejandría</label>
+    <name>Enviado_la_oferta_a_soporte__c</name>
+</CustomFieldTranslation>

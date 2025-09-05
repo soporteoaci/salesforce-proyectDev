@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriccion_Estado_Ganada</fullName>
+    <active>true</active>
+    <description>Solo se puede dar por ganada si su estado es presentada.</description>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+    
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+CreatedDate&lt;&gt; null,
+RecordType.DeveloperName &lt;&gt; &apos;Ibermatica_SME&apos;,
+Clonada__c = FALSE,
+!(ISPICKVAL(StageName,&quot;Presentada (negociación y cierre)&quot;) || ISPICKVAL(StageName,&quot;Presentada (negociación y cierre)&quot;) || ISPICKVAL(PRIORVALUE(StageName),&quot;Presentada (negociación y cierre)&quot;)) &amp;&amp;  (ISPICKVAL(Estado_de_Cierre__c , &quot;Ganada&quot;) || ISPICKVAL(Estado_de_Cierre__c , &quot;Contratada&quot;) || ISPICKVAL(Estado_de_Cierre__c , &quot;Adjudicada&quot;))
+
+)</errorConditionFormula>
+    <errorMessage>Solo se puede dar por ganada si su estado es presentada.</errorMessage>
+</ValidationRule>

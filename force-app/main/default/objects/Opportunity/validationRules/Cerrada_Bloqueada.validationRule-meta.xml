@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cerrada_Bloqueada</fullName>
+    <active>true</active>
+    <description>Cuando una oportunidad se encuentra en etapa cerrada con el estado de cierre informado se bloquea la oportunidad</description>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    
+				Bloqueada__c =true,
+				PRIORVALUE(Bloqueada__c) &lt;&gt; false,
+				Clonada__c = false,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
+				$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;eiglesia@ayesa.com&apos;, 
+				$User.Email &lt;&gt; &apos;mjllopis@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;lmateos@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;praxedes@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;powersalesforce@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;power@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;orusu@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;mmarnedo@ayesa.com&apos;,
+				$User.Email &lt;&gt; &apos;rpozas@ayesa.com&apos;,
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;				
+				)</errorConditionFormula>
+    <errorMessage>Cuando la Oportunidad se ha cerrado se bloquea el registro. Si quiere realizar alguna modificación debe ponerse en contacto con un Administrador del sistema, CAU-CRM ó Controller financiero.</errorMessage>
+</ValidationRule>

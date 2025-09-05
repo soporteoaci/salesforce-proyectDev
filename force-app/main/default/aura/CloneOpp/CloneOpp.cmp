@@ -36,14 +36,12 @@
     </lightning:layout>                
     
     <lightning:layout pullToBoundary="medium">
-        <aura:if isTrue="{!v.RecordTypeName == 'Ayesa'}">
         <lightning:layoutItem size="4" padding="horizontal-medium">
             <lightning:input  type="number"  name="inputImporteTotalLicitacon" label="Importe total (sin IVA) €" aura:id="inputImporteTotalLicitacon" step="0.01" required="true" />
         </lightning:layoutItem>
         <lightning:layoutItem size="4" padding="horizontal-medium">
             <lightning:input  type="number" name="inputMargenEstimado" label="% Rentabilidad" aura:id="inputMargenEstimado"   step="0.01" required="true" />
         </lightning:layoutItem>
-        </aura:if>
         <div class="slds-grid slds-align_absolute-center">
             <div class="slds-col slds-align_absolute-center">
                 <div style="margin-top:25px;">

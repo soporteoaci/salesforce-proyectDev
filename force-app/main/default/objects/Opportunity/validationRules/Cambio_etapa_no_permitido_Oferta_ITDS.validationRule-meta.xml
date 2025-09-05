@@ -9,7 +9,6 @@
 				$Profile.Name &lt;&gt; &quot;Admin Custom Ibermatica CRM&quot;,
 				$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
 				$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
-				RecordType.DeveloperName == &apos;Ayesa&apos;,
 				Clonada__c = FALSE,
 				ISPICKVAL(PRIORVALUE(StageName),&quot;Oferta&quot;),
 				ISPICKVAL(StageName, &apos;Presentada (negociación y cierre)&apos;),

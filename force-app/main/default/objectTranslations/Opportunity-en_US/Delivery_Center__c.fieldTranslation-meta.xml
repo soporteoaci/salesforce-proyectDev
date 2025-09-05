@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Delivery Center --></label>
+    <name>Delivery_Center__c</name>
+    <picklistValues>
+        <masterLabel>Business Operations</masterLabel>
+        <translation><!-- Business Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloud &amp; Infrastructure (C1)</masterLabel>
+        <translation><!-- Cloud &amp; Infrastructure (C1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloud &amp; Infrastructure (C1) - Implementation Projects</masterLabel>
+        <translation><!-- Cloud &amp; Infrastructure (C1) - Implementation Projects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloud &amp; Infrastructure (C2)</masterLabel>
+        <translation><!-- Cloud &amp; Infrastructure (C2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloud &amp; Infrastructure (C2) - Implementation Projects</masterLabel>
+        <translation><!-- Cloud &amp; Infrastructure (C2) - Implementation Projects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloud &amp; Infrastructure (C3) - Ibercloud</masterLabel>
+        <translation><!-- Cloud &amp; Infrastructure (C3) - Ibercloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cybersecurity</masterLabel>
+        <translation><!-- Cybersecurity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cybersecurity Multi</masterLabel>
+        <translation><!-- Cybersecurity Multi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data &amp; AI</masterLabel>
+        <translation><!-- Data &amp; AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery Center (A1)</masterLabel>
+        <translation><!-- Delivery Center (A1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery Center (A2)</masterLabel>
+        <translation><!-- Delivery Center (A2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery Center (A3)</masterLabel>
+        <translation><!-- Delivery Center (A3) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Experience</masterLabel>
+        <translation><!-- Digital Experience --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergya</masterLabel>
+        <translation><!-- Emergya --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Innovation</masterLabel>
+        <translation><!-- Innovation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft</masterLabel>
+        <translation><!-- Microsoft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modern Workplace &amp; End – user support (W1)</masterLabel>
+        <translation><!-- Modern Workplace &amp; End – user support (W1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modern Workplace &amp; End – user support (W2)</masterLabel>
+        <translation><!-- Modern Workplace &amp; End – user support (W2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP</masterLabel>
+        <translation><!-- SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP DC (S1)</masterLabel>
+        <translation><!-- SAP DC (S1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP DC (S2)</masterLabel>
+        <translation><!-- SAP DC (S2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP DC (S3)</masterLabel>
+        <translation><!-- SAP DC (S3) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce</masterLabel>
+        <translation><!-- Salesforce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Latam</masterLabel>
+        <translation><!-- V-Latam --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

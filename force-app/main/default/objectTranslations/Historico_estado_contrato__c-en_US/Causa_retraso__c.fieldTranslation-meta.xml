@@ -4,10 +4,10 @@
     <name>Causa_retraso__c</name>
     <picklistValues>
         <masterLabel>CR1</masterLabel>
-        <translation><!-- CR1 --></translation>
+        <translation>El cliente ralentiza los trabajos por no poder cumplir requisitos contractuales debido a crisis sanitaria</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>CR2</masterLabel>
-        <translation><!-- CR2 --></translation>
+        <translation>Otras causas derivadas de la crisis sanitaria</translation>
     </picklistValues>
 </CustomFieldTranslation>

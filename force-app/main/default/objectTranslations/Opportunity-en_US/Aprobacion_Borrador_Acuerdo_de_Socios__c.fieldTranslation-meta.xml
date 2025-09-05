@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Una vez subido el Borrador Acuerdo de Socios seleccione este campo para mandarlo a aprobación --></help>
+    <label>Draft Partner Agreement Approval</label>
+    <name>Aprobacion_Borrador_Acuerdo_de_Socios__c</name>
+</CustomFieldTranslation>

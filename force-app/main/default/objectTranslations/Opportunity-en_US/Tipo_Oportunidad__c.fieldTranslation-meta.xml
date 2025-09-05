@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- B1 Propias
+B2 Identificadas
+B3 Reactivas
+B4 Renovaciones
+B5 Ingeniería -->
+    </help>
+    <label>Opportunity Type</label>
+    <name>Tipo_Oportunidad__c</name>
+    <picklistValues>
+        <masterLabel>B1</masterLabel>
+        <translation><!-- B1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B2</masterLabel>
+        <translation><!-- B2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B3</masterLabel>
+        <translation><!-- B3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B4</masterLabel>
+        <translation><!-- B4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B5</masterLabel>
+        <translation><!-- B5 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

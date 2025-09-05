@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Bid Currency</label>
+    <name>Divisa__c</name>
+    <picklistValues>
+        <masterLabel>Arab Emirates Dirham (AED)</masterLabel>
+        <translation><!-- Arab Emirates Dirham (AED) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Balboa</masterLabel>
+        <translation><!-- Balboa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dinar Bahreini</masterLabel>
+        <translation><!-- Dinar Bahreini --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dolar</masterLabel>
+        <translation><!-- Dolar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Esloti (PLN)</masterLabel>
+        <translation><!-- Esloti (PLN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Euros</masterLabel>
+        <translation><!-- Euros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Libra</masterLabel>
+        <translation><!-- Libra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peso Argentino</masterLabel>
+        <translation><!-- Peso Argentino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peso chileno</masterLabel>
+        <translation><!-- Peso chileno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peso colombiano</masterLabel>
+        <translation><!-- Peso colombiano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peso mexicano</masterLabel>
+        <translation><!-- Peso mexicano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real brasileño</masterLabel>
+        <translation><!-- Real brasileño --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saudi Riyal</masterLabel>
+        <translation><!-- Saudi Riyal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sol</masterLabel>
+        <translation><!-- Sol --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

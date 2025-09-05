@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Fecha límite de presentación de la oferta, fecha REAL en caso de haberla presentado --></help>
+    <label>Submission date</label>
+    <name>Fecha_limite_de_presentacion__c</name>
+</CustomFieldTranslation>

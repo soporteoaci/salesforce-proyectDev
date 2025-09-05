@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_SME</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+				$User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+				NOT(ISBLANK(Codigo_OC__c)),
+				NOT(ISPICKVAL(Etapa_Fase__c, &apos;Captación&apos;)),
+				RecordType.DeveloperName = &apos;Ibermatica_SME&apos;,
+				OR(
+				 CloseDate &gt; Fecha_inicio_produccion__c ,
+				 Fecha_limite_de_presentacion__c &gt; CloseDate
+					)
+
+)</errorConditionFormula>
+    <errorMessage>La Fecha de Presentación debe ser anterior o igual a la Fecha de Cierre y la Fecha de Cierre tiene que ser anterior o igual a la Fecha Inicio Producción</errorMessage>
+</ValidationRule>

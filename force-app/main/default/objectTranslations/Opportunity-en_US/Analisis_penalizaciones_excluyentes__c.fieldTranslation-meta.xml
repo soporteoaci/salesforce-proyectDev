@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- RO --></help>
+    <label>Analysis of exclusive penalties</label>
+    <name>Analisis_penalizaciones_excluyentes__c</name>
+    <picklistValues>
+        <masterLabel>Bajas</masterLabel>
+        <translation><!-- Bajas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moderadas</masterLabel>
+        <translation><!-- Moderadas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Muy exigentes</masterLabel>
+        <translation><!-- Muy exigentes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

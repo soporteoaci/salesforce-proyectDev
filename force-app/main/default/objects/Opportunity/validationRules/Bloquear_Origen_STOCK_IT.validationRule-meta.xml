@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bloquear_Origen_STOCK_IT</fullName>
+    <active>true</active>
+    <description>Validación que cuando asignen origen STOCK les salte error de que el origen STOCK ya no se puede seleccionar.</description>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+    
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    
+				NOT(CONTAINS(LOWER($Profile.Name), &quot;admin&quot;)),
+    ISPICKVAL(Origen__c, &apos;STOCK&apos;),
+    OR(
+        ISNEW(),
+        ISCHANGED(Origen__c)
+    ),
+    ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;)
+)</errorConditionFormula>
+    <errorMessage>No se permite seleccionar &quot;STOCK&quot; como origen cuando la Dirección de Operaciones es IT&amp;DS. Por favor, selecciona otro valor.</errorMessage>
+</ValidationRule>

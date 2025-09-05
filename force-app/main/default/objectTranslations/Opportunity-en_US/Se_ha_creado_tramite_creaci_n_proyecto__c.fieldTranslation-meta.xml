@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Marque esta casilla si se ha creado un trámite en el tramitador para la creación de proyecto en SAP --></help>
+    <label>Project creation process started</label>
+    <name>Se_ha_creado_tramite_creaci_n_proyecto__c</name>
+</CustomFieldTranslation>

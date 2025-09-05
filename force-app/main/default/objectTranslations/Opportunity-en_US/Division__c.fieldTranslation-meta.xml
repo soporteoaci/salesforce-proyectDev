@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Division</label>
+    <name>Division__c</name>
+    <picklistValues>
+        <masterLabel>Aeroespacial</masterLabel>
+        <translation><!-- Aeroespacial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aeronáutica, Espacio y Defensa</masterLabel>
+        <translation><!-- Aeronáutica, Espacio y Defensa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aeropuertos</masterLabel>
+        <translation><!-- Aeropuertos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agua y medio ambiente América</masterLabel>
+        <translation><!-- Agua y medio ambiente América --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agua y medio ambiente ROW</masterLabel>
+        <translation><!-- Agua y medio ambiente ROW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arquitectura y Management</masterLabel>
+        <translation><!-- Arquitectura y Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BPO</masterLabel>
+        <translation><!-- BPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Banca e Industria</masterLabel>
+        <translation><!-- Banca e Industria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Centro de Soluciones (I+D+i)</masterLabel>
+        <translation><!-- Centro de Soluciones (I+D+i) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Factory</masterLabel>
+        <translation><!-- Digital Factory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Infrastructures</masterLabel>
+        <translation><!-- Digital Infrastructures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Services</masterLabel>
+        <translation><!-- Digital Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energía</masterLabel>
+        <translation><!-- Energía --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energía e Instalaciones</masterLabel>
+        <translation><!-- Energía e Instalaciones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>España</masterLabel>
+        <translation><!-- España --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gestión Territorial</masterLabel>
+        <translation><!-- Gestión Territorial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I+D+i</masterLabel>
+        <translation><!-- I+D+i --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industria y Sector Público</masterLabel>
+        <translation><!-- Industria y Sector Público --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infraestructuras América</masterLabel>
+        <translation><!-- Infraestructuras América --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infraestructuras ROW</masterLabel>
+        <translation><!-- Infraestructuras ROW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M2C</masterLabel>
+        <translation><!-- M2C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mercado Anglosajón</masterLabel>
+        <translation><!-- Mercado Anglosajón --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oil&amp;Gas</masterLabel>
+        <translation><!-- Oil&amp;Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plantas proceso</masterLabel>
+        <translation><!-- Plantas proceso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sector Privado Latinoamérica</masterLabel>
+        <translation><!-- Sector Privado Latinoamérica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sector Público</masterLabel>
+        <translation><!-- Sector Público --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sector Público Latinoamérica</masterLabel>
+        <translation><!-- Sector Público Latinoamérica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transporte</masterLabel>
+        <translation><!-- Transporte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities</masterLabel>
+        <translation><!-- Utilities --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

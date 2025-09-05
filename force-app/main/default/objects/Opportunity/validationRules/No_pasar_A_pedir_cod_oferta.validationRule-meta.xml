@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_pasar_A_pedir_cod_oferta</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+    
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;, 
+				$Profile.Name &lt;&gt;&quot;Usuario CRM Otros&quot;,
+				
+(! Actualizar_Estado__c )
+				&amp;&amp; ISPICKVAL( StageName , &quot;Pedido Código Oferta&quot;)
+				&amp;&amp; NOT(ISPICKVAL( Area__c , &quot;INGENIERIA_CIVIL&quot;)) 
+				&amp;&amp; NOT(ISPICKVAL( Area__c , &quot;INGENIERIA_INDUSTRIAL&quot;))
+)</errorConditionFormula>
+    <errorMessage>Para pasar a &quot;Pedir Código Oferta&quot; debe pulsar en oferta, cumplimentar los datos y pulsar en &quot;Solicitud de código Oferta y Soporte a Oferta&quot;</errorMessage>
+</ValidationRule>

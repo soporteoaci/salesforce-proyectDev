@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Market Subsector</label>
+    <name>Subsector_de_Mercado_alta__c</name>
+    <picklistValues>
+        <masterLabel>ADDED VALUES</masterLabel>
+        <translation><!-- ADDED VALUES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGE/Ciencia Hacienda</masterLabel>
+        <translation><!-- AGE/Ciencia Hacienda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGE/Defensa, Interior, TTE y Justicia</masterLabel>
+        <translation><!-- AGE/Defensa, Interior, TTE y Justicia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGE/Economia, Trabajo y Comunidad</masterLabel>
+        <translation><!-- AGE/Economia, Trabajo y Comunidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGE/Exteriores, Sociales y Ayto.</masterLabel>
+        <translation><!-- AGE/Exteriores, Sociales y Ayto. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGE/Ind.Turismo, Agric. y Cult.</masterLabel>
+        <translation><!-- AGE/Ind.Turismo, Agric. y Cult. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acería/Siderurgia</masterLabel>
+        <translation><!-- Acería/Siderurgia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agile Delivery Office</masterLabel>
+        <translation><!-- Agile Delivery Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alimentación</masterLabel>
+        <translation><!-- Alimentación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automoción</masterLabel>
+        <translation><!-- Automoción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BPO ENEL</masterLabel>
+        <translation><!-- BPO ENEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BPO OTRAS UTILITIES</masterLabel>
+        <translation><!-- BPO OTRAS UTILITIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C. INF &amp; MW</masterLabel>
+        <translation><!-- C. INF &amp; MW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUSTOMER OPERATION IB</masterLabel>
+        <translation><!-- CUSTOMER OPERATION IB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUSTOMER OPERATION LATA</masterLabel>
+        <translation><!-- CUSTOMER OPERATION LATA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cataluña</masterLabel>
+        <translation><!-- Cataluña --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Core Sanitario</masterLabel>
+        <translation><!-- Core Sanitario --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DATA MANAGEMEN</masterLabel>
+        <translation><!-- DATA MANAGEMEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Des. Sost, Justicia y Adm. Elec.</masterLabel>
+        <translation><!-- Des. Sost, Justicia y Adm. Elec. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Admin</masterLabel>
+        <translation><!-- Digital Admin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dip. Forales/Gob. Nav.</masterLabel>
+        <translation><!-- Dip. Forales/Gob. Nav. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribución alimentaria</masterLabel>
+        <translation><!-- Distribución alimentaria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EJIE</masterLabel>
+        <translation><!-- EJIE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eco Financiero</masterLabel>
+        <translation><!-- Eco Financiero --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Educación</masterLabel>
+        <translation><!-- Educación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Empleo e Innovación</masterLabel>
+        <translation><!-- Empleo e Innovación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fabricantes soluciones Utilities</masterLabel>
+        <translation><!-- Fabricantes soluciones Utilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GREEN POWER GENERATION</masterLabel>
+        <translation><!-- GREEN POWER GENERATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gen. Valenciana</masterLabel>
+        <translation><!-- Gen. Valenciana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I&amp;N</masterLabel>
+        <translation><!-- I&amp;N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IB CLOUD</masterLabel>
+        <translation><!-- IB CLOUD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IB DATA</masterLabel>
+        <translation><!-- IB DATA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media</masterLabel>
+        <translation><!-- Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft</masterLabel>
+        <translation><!-- Microsoft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Core Sanitario</masterLabel>
+        <translation><!-- No Core Sanitario --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Salud</masterLabel>
+        <translation><!-- No Salud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros</masterLabel>
+        <translation><!-- Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recursos Humanos</masterLabel>
+        <translation><!-- Recursos Humanos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation><!-- Retail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAS</masterLabel>
+        <translation><!-- SAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salud</masterLabel>
+        <translation><!-- Salud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sanidad Privada</masterLabel>
+        <translation><!-- Sanidad Privada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Serv. Digitales UE</masterLabel>
+        <translation><!-- Serv. Digitales UE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios Atención Ciudadana</masterLabel>
+        <translation><!-- Servicios Atención Ciudadana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios Sociales</masterLabel>
+        <translation><!-- Servicios Sociales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telco</masterLabel>
+        <translation><!-- Telco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transporte</masterLabel>
+        <translation><!-- Transporte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turismo y Ciber</masterLabel>
+        <translation><!-- Turismo y Ciber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES ESP ADDED VALUES</masterLabel>
+        <translation><!-- UTILITIES ESP ADDED VALUES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES ESP CENTRO 1</masterLabel>
+        <translation><!-- UTILITIES ESP CENTRO 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES ESP CENTRO 2</masterLabel>
+        <translation><!-- UTILITIES ESP CENTRO 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES ESP CENTRO 3</masterLabel>
+        <translation><!-- UTILITIES ESP CENTRO 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES ESP CENTRO 4</masterLabel>
+        <translation><!-- UTILITIES ESP CENTRO 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES ESP CENTRO 5</masterLabel>
+        <translation><!-- UTILITIES ESP CENTRO 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES ESP NORTE</masterLabel>
+        <translation><!-- UTILITIES ESP NORTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES ESP SUR &amp; RESTO</masterLabel>
+        <translation><!-- UTILITIES ESP SUR &amp; RESTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES LATAM BRASIL</masterLabel>
+        <translation><!-- UTILITIES LATAM BRASIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES LATAM CHILE</masterLabel>
+        <translation><!-- UTILITIES LATAM CHILE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES LATAM COLOMBIA</masterLabel>
+        <translation><!-- UTILITIES LATAM COLOMBIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES LATAM MEXICO</masterLabel>
+        <translation><!-- UTILITIES LATAM MEXICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES LATAM PANAMA</masterLabel>
+        <translation><!-- UTILITIES LATAM PANAMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITIES LATAM PERU</masterLabel>
+        <translation><!-- UTILITIES LATAM PERU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Universidades</masterLabel>
+        <translation><!-- Universidades --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

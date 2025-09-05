@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Subdivision 2</label>
+    <name>Subdivision2__c</name>
+    <picklistValues>
+        <masterLabel>V-A.V. E-FLEXIBILITY</masterLabel>
+        <translation><!-- V-A.V. E-FLEXIBILITY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-A.V. E-MOBILITY</masterLabel>
+        <translation><!-- V-A.V. E-MOBILITY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-BSN GENERATION</masterLabel>
+        <translation><!-- V-BSN GENERATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-C.OP IB COMERCIAL METERING</masterLabel>
+        <translation><!-- V-C.OP IB COMERCIAL METERING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-C.OP IB CUSTOMER MANAGEMENT</masterLabel>
+        <translation><!-- V-C.OP IB CUSTOMER MANAGEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-C.OP IB METERING, BILLING, CREDIT</masterLabel>
+        <translation><!-- V-C.OP IB METERING, BILLING, CREDIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-C.OP LATAM CUST. MANAGEMENT</masterLabel>
+        <translation><!-- V-C.OP LATAM CUST. MANAGEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-C.OP LATAM LEGACY</masterLabel>
+        <translation><!-- V-C.OP LATAM LEGACY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-C.OP LATAM METER,BILL,CREDIT</masterLabel>
+        <translation><!-- V-C.OP LATAM METER,BILL,CREDIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Dm Ib Dig Channels Comerc</masterLabel>
+        <translation><!-- V-Dm Ib Dig Channels Comerc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Dm Ib GDP Comer</masterLabel>
+        <translation><!-- V-Dm Ib GDP Comer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Dm Ib GDP Distrib</masterLabel>
+        <translation><!-- V-Dm Ib GDP Distrib --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Dm Lat Dig Channels Comerc</masterLabel>
+        <translation><!-- V-Dm Lat Dig Channels Comerc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Dm Lat GDP Comerc</masterLabel>
+        <translation><!-- V-Dm Lat GDP Comerc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Dm Lat GDP Distrib</masterLabel>
+        <translation><!-- V-Dm Lat GDP Distrib --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-ENEL MK España L1</masterLabel>
+        <translation><!-- V-ENEL MK España L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-ENEL MK España L2</masterLabel>
+        <translation><!-- V-ENEL MK España L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-ENEL MK España Otros</masterLabel>
+        <translation><!-- V-ENEL MK España Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel GDP</masterLabel>
+        <translation><!-- V-Enel GDP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel GDP Brasil</masterLabel>
+        <translation><!-- V-Enel GDP Brasil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel GDP Colombia</masterLabel>
+        <translation><!-- V-Enel GDP Colombia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel GDP España</masterLabel>
+        <translation><!-- V-Enel GDP España --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel GDP Italia</masterLabel>
+        <translation><!-- V-Enel GDP Italia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel GDP Peru</masterLabel>
+        <translation><!-- V-Enel GDP Peru --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N</masterLabel>
+        <translation><!-- V-Enel I&amp;N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N Brasil L2</masterLabel>
+        <translation><!-- V-Enel I&amp;N Brasil L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N Brasil L4</masterLabel>
+        <translation><!-- V-Enel I&amp;N Brasil L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N Chile L2</masterLabel>
+        <translation><!-- V-Enel I&amp;N Chile L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N Chile L4</masterLabel>
+        <translation><!-- V-Enel I&amp;N Chile L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N Colombia L2</masterLabel>
+        <translation><!-- V-Enel I&amp;N Colombia L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N Colombia L4</masterLabel>
+        <translation><!-- V-Enel I&amp;N Colombia L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N España L2</masterLabel>
+        <translation><!-- V-Enel I&amp;N España L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N España L4</masterLabel>
+        <translation><!-- V-Enel I&amp;N España L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N Italia L2</masterLabel>
+        <translation><!-- V-Enel I&amp;N Italia L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N Italia L4</masterLabel>
+        <translation><!-- V-Enel I&amp;N Italia L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N Peru L2</masterLabel>
+        <translation><!-- V-Enel I&amp;N Peru L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel I&amp;N Peru L4</masterLabel>
+        <translation><!-- V-Enel I&amp;N Peru L4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Market Latam</masterLabel>
+        <translation><!-- V-Enel Market Latam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Brasil L1</masterLabel>
+        <translation><!-- V-Enel Mk Brasil L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Brasil L2</masterLabel>
+        <translation><!-- V-Enel Mk Brasil L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Brasil L5</masterLabel>
+        <translation><!-- V-Enel Mk Brasil L5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Chile L1</masterLabel>
+        <translation><!-- V-Enel Mk Chile L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Chile L2</masterLabel>
+        <translation><!-- V-Enel Mk Chile L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Chile L5</masterLabel>
+        <translation><!-- V-Enel Mk Chile L5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Colombia L1</masterLabel>
+        <translation><!-- V-Enel Mk Colombia L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Colombia L2</masterLabel>
+        <translation><!-- V-Enel Mk Colombia L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Colombia L5</masterLabel>
+        <translation><!-- V-Enel Mk Colombia L5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Peru L1</masterLabel>
+        <translation><!-- V-Enel Mk Peru L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Peru L2</masterLabel>
+        <translation><!-- V-Enel Mk Peru L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel Mk Peru L5</masterLabel>
+        <translation><!-- V-Enel Mk Peru L5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel X</masterLabel>
+        <translation><!-- V-Enel X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel X Colombia L1</masterLabel>
+        <translation><!-- V-Enel X Colombia L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel X España L1</masterLabel>
+        <translation><!-- V-Enel X España L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel X España L2</masterLabel>
+        <translation><!-- V-Enel X España L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Enel X España L3</masterLabel>
+        <translation><!-- V-Enel X España L3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-GPG GENERATION</masterLabel>
+        <translation><!-- V-GPG GENERATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-I&amp;N OP. CUSTOMER MANAGEMENT</masterLabel>
+        <translation><!-- V-I&amp;N OP. CUSTOMER MANAGEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-I&amp;N OP. ERP SOLUTIONS</masterLabel>
+        <translation><!-- V-I&amp;N OP. ERP SOLUTIONS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-I&amp;N OP. GRIDS</masterLabel>
+        <translation><!-- V-I&amp;N OP. GRIDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-I&amp;N OP. METERING &amp; FIELD</masterLabel>
+        <translation><!-- V-I&amp;N OP. METERING &amp; FIELD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-I&amp;N OP. METERING, BILLING, CREDIT</masterLabel>
+        <translation><!-- V-I&amp;N OP. METERING, BILLING, CREDIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-I&amp;N OP. PLATFORM BASED ERP</masterLabel>
+        <translation><!-- V-I&amp;N OP. PLATFORM BASED ERP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-M2C BANCA DIVISION</masterLabel>
+        <translation><!-- V-M2C BANCA DIVISION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-M2C ORANGE, BAT</masterLabel>
+        <translation><!-- V-M2C ORANGE, BAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-M2C SEGUROS NO SALUD</masterLabel>
+        <translation><!-- V-M2C SEGUROS NO SALUD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-M2C SEGUROS SALUD</masterLabel>
+        <translation><!-- V-M2C SEGUROS SALUD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-M2C TELEFONICA</masterLabel>
+        <translation><!-- V-M2C TELEFONICA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-M2C VODAFONE</masterLabel>
+        <translation><!-- V-M2C VODAFONE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

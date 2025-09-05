@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Este campo permite saber si existe una tarea aprobación con el tipo QA económico o con el tipo QA técnico en la OPORTUNIDAD. --></help>
+    <label><!-- Tiene Oferta QA --></label>
+    <name>Tiene_Oferta_QA__c</name>
+</CustomFieldTranslation>

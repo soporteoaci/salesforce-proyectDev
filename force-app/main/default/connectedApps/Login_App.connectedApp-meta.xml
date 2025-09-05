@@ -17,7 +17,7 @@
         <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
         <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
         <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
-        <oauthClientCredentialUser>fcruzg1@ayesa.com.proyectdev</oauthClientCredentialUser>
+        <oauthClientCredentialUser>fcruzg@ayesa.com</oauthClientCredentialUser>
         <scopes>Api</scopes>
         <scopes>RefreshToken</scopes>
     </oauthConfig>

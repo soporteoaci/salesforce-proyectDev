@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Innovation Work Stream --></label>
+    <name>Innovation_Work_Stream__c</name>
+    <picklistValues>
+        <masterLabel>WS1 - Next generation of AI-powered user experiences</masterLabel>
+        <translation><!-- WS1 - Next generation of AI-powered user experiences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WS2 - Data-driven decision making and business operations</masterLabel>
+        <translation><!-- WS2 - Data-driven decision making and business operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WS3 - Secured cloud infrastructures and platforms</masterLabel>
+        <translation><!-- WS3 - Secured cloud infrastructures and platforms --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Ultima_actividad_cuenta__c</fullName>
     <externalId>false</externalId>
-    <formula>TEXT( Cliente__r.LastModifiedDate ) &amp; &apos;, &apos;&amp; Cliente__r.LastModifiedBy.FirstName &amp; &apos; &apos; &amp; Cliente__r.LastModifiedBy.LastName</formula>
+    <formula>TEXT(  Account.LastModifiedDate ) &amp; &apos;, &apos;&amp; Account.LastModifiedBy.FirstName &amp; &apos; &apos; &amp; Account.LastModifiedBy.LastName</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Última actividad cuenta</label>
     <required>false</required>

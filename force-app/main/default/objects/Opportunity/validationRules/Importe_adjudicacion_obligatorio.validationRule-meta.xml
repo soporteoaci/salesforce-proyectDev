@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Importe_adjudicacion_obligatorio</fullName>
+    <active>true</active>
+    <description>Importe de adjudicación obligatorio para oportunidades adjudicadas</description>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				$User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
+				RecordType.DeveloperName &lt;&gt; &apos;Ibermatica_SME&apos;,
+
+Adjudicada__c == TRUE &amp;&amp;  ISBLANK( Importe_adjudicacion__c )
+
+)</errorConditionFormula>
+    <errorDisplayField>Importe_adjudicacion__c</errorDisplayField>
+    <errorMessage>El importe de adjudicación es obligatorio para oportunidades adjudicadas</errorMessage>
+</ValidationRule>

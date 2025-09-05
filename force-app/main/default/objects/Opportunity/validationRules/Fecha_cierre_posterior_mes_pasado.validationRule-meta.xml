@@ -3,28 +3,26 @@
     <fullName>Fecha_cierre_posterior_mes_pasado</fullName>
     <active>true</active>
     <errorConditionFormula>AND(
-    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
-    $User.Email &lt;&gt; &apos;power@ayesa.com&apos;,
-				$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
-				$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
-				$Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
-				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
-				$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
-				$User.Email &lt;&gt; &apos;powersalesforce@ayesa.com&apos;,
-				NOT(ISPICKVAL( Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
-				RecordType.Name =&apos;Ayesa&apos;,  
-				
-				OR(
-								ISPICKVAL(Subfase__c, &apos;Ganada&apos;),
-								ISPICKVAL(Subfase__c, &apos;Perdida&apos;),
-								ISPICKVAL(Subfase__c, &apos;No presentada&apos;),
-								ISPICKVAL(Subfase__c, &apos;Aplazada / anulada&apos;)
-				), 
-    OR(
-        YEAR(Fecha_estimada_de_cierre__c) &lt;&gt; YEAR(DATEVALUE(NOW())),
-        MONTH(Fecha_estimada_de_cierre__c) &lt;= MONTH(ADDMONTHS(DATEVALUE(NOW()),-1))
-        )
-    )</errorConditionFormula>
-    <errorDisplayField>Fecha_estimada_de_cierre__c</errorDisplayField>
+		$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+		$User.Email &lt;&gt; &apos;power@ayesa.com&apos;,
+		$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
+		$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
+		$Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
+		$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+		$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
+		$User.Email &lt;&gt; &apos;powersalesforce@ayesa.com&apos;,
+		NOT(ISPICKVAL( Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
+		OR(
+		ISPICKVAL(Subfase__c, &apos;Ganada&apos;),
+		ISPICKVAL(Subfase__c, &apos;Perdida&apos;),
+		ISPICKVAL(Subfase__c, &apos;No presentada&apos;),
+		ISPICKVAL(Subfase__c, &apos;Aplazada / anulada&apos;)
+		),
+		OR(
+		YEAR(CloseDate) &lt;&gt; YEAR(DATEVALUE(NOW())),
+		MONTH(CloseDate) &lt;= MONTH(ADDMONTHS(DATEVALUE(NOW()),-1))
+		)
+		)</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
     <errorMessage>La fecha de cierre debe de ser posterior al mes anterior al actual</errorMessage>
 </ValidationRule>

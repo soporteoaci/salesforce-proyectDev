@@ -3,22 +3,21 @@
     <fullName>Importe_total_ofertado_sin_IVA</fullName>
     <active>true</active>
     <errorConditionFormula>AND(
-    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
-    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
-				Record_Type_Name__c =&apos;Ayesa&apos;,
-				OR(
-								AND(
+		$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+		$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+		OR(
+		AND(
 
-												NOT(CONTAINS(Owner_Rol__c, &apos;Latam&apos;)), 
-												ISBLANK(Importe_total_sin_IVA__c),
-												ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;)
-								),
-								AND(
-												CONTAINS(Owner_Rol__c, &apos;Latam&apos;),
-												ISBLANK(Importe_total_ofertado_sin_IVA_local__c),
-												ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;)
-								)
-				)
-)</errorConditionFormula>
+		NOT(CONTAINS(Owner_Rol__c, &apos;Latam&apos;)),
+		ISBLANK(Importe_total_sin_IVA__c),
+		ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;)
+		),
+		AND(
+		CONTAINS(Owner_Rol__c, &apos;Latam&apos;),
+		ISBLANK(Importe_total_ofertado_sin_IVA_local__c),
+		ISPICKVAL(Subfase__c, &apos;Pte. Aprobación&apos;)
+		)
+		)
+		)</errorConditionFormula>
     <errorMessage>Informe el campo Importe total ofertado (sin IVA) en la pestaña Datos Económicos antes de avanzar a la siguiente fase</errorMessage>
 </ValidationRule>

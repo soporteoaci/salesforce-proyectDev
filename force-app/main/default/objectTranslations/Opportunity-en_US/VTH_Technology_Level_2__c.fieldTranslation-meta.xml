@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- VTH Technology - Level 2 --></label>
+    <name>VTH_Technology_Level_2__c</name>
+    <picklistValues>
+        <masterLabel>Ciber Platfform powered by AI</masterLabel>
+        <translation><!-- Ciber Platfform powered by AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Space</masterLabel>
+        <translation><!-- Data Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data-driven decision making and business operations</masterLabel>
+        <translation><!-- Data-driven decision making and business operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ethic AI</masterLabel>
+        <translation><!-- Ethic AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low &amp; No Code Platforms</masterLabel>
+        <translation><!-- Low &amp; No Code Platforms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Next generation of AI-powered user experiences (incluye Gen AI)</masterLabel>
+        <translation><!-- Next generation of AI-powered user experiences (incluye Gen AI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantum &amp; AI</masterLabel>
+        <translation><!-- Quantum &amp; AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantum &amp; Ciber</masterLabel>
+        <translation><!-- Quantum &amp; Ciber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scalable &amp; Advanced Development (DevAid)</masterLabel>
+        <translation><!-- Scalable &amp; Advanced Development (DevAid) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secured cloud infrastructures and platforms</masterLabel>
+        <translation><!-- Secured cloud infrastructures and platforms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Super AppS</masterLabel>
+        <translation><!-- Super AppS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mayor_o_igual_que_fecha_presentacion</fullName>
+    <active>true</active>
+    <description>Validación Fecha presentación&lt;=Fecha adjudicación</description>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    
+ $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;			,
+RecordType.DeveloperName &lt;&gt; &apos;Ibermatica_SME&apos;,
+NOT( ISBLANK( Fecha_adjudicacion__c ) ) &amp;&amp;  Fecha_adjudicacion__c &lt; Fecha_limite_de_presentacion__c
+
+)</errorConditionFormula>
+    <errorDisplayField>Fecha_adjudicacion__c</errorDisplayField>
+    <errorMessage>La fecha de adjudicación debe ser mayor que la fecha de presentación.</errorMessage>
+</ValidationRule>

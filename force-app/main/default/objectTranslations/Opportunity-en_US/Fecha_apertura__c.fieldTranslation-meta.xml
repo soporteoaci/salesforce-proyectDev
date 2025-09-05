@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date of Bid’s Opening by the client. When clients open the proposal submitted. --></help>
+    <label>Opening date</label>
+    <name>Fecha_apertura__c</name>
+</CustomFieldTranslation>

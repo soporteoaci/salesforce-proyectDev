@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Subphase</label>
+    <name>Subfase__c</name>
+    <picklistValues>
+        <masterLabel>(Privada) Defendiendo con competidores NO favoritos</masterLabel>
+        <translation><!-- (Privada) Defendiendo con competidores NO favoritos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Privada) Defendiendo con competidores favoritos</masterLabel>
+        <translation><!-- (Privada) Defendiendo con competidores favoritos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Privada) Defendiendo sin competidores</masterLabel>
+        <translation><!-- (Privada) Defendiendo sin competidores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Privada) Negociando condiciones de cierre</masterLabel>
+        <translation><!-- (Privada) Negociando condiciones de cierre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Pública) Elegidos técnicamente: Pte sobre económico</masterLabel>
+        <translation><!-- (Pública) Elegidos técnicamente: Pte sobre económico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Pública) Esperando decisión con competidores NO favoritos</masterLabel>
+        <translation><!-- (Pública) Esperando decisión con competidores NO favoritos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Pública) Esperando decisión con competidores favoritos</masterLabel>
+        <translation><!-- (Pública) Esperando decisión con competidores favoritos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Pública) Esperando decisión sin competidores</masterLabel>
+        <translation><!-- (Pública) Esperando decisión sin competidores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alta</masterLabel>
+        <translation><!-- Alta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aplazada / anulada</masterLabel>
+        <translation><!-- Aplazada / anulada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aprobada</masterLabel>
+        <translation><!-- Aprobada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cualificación con autoprovisión</masterLabel>
+        <translation><!-- Cualificación con autoprovisión --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cualificación con preventa</masterLabel>
+        <translation><!-- Cualificación con preventa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elaboración oferta</masterLabel>
+        <translation><!-- Elaboración oferta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Esperando decisión</masterLabel>
+        <translation><!-- Esperando decisión --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ganada</masterLabel>
+        <translation><!-- Ganada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ganada pendiente contrato</masterLabel>
+        <translation><!-- Ganada pendiente contrato --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No presentada</masterLabel>
+        <translation><!-- No presentada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perdida</masterLabel>
+        <translation><!-- Perdida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pte ok preliminar</masterLabel>
+        <translation><!-- Pte ok preliminar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pte. Aprobación</masterLabel>
+        <translation><!-- Pte. Aprobación --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

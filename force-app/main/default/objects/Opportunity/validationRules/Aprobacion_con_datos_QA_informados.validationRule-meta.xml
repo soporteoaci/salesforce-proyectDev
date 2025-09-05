@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aprobacion_con_datos_QA_informados</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+    
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+
+ISPICKVAL( StageName , &quot;Aprobada QA&quot; ) &amp;&amp; 
+ISNULL(Oferta_SAP__c)
+
+)</errorConditionFormula>
+    <errorMessage>Antes de pasar a Aprobado pdte Presentar, debe tener relleno el código de Oferta SAP</errorMessage>
+</ValidationRule>

@@ -3,7 +3,7 @@
     <fullName>Tipo_Induccion_4__c</fullName>
     <description>Tipo inducción asociado al proyecto inductor</description>
     <externalId>false</externalId>
-    <inlineHelpText>Tipo inducción asociado al proyecto inductor</inlineHelpText>
+    <inlineHelpText>Induction type associated with the inductor project</inlineHelpText>
     <label>Tipo Inducción 4</label>
     <length>255</length>
     <required>false</required>

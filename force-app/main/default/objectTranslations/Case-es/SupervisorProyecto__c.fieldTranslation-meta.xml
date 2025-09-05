@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Supervisor Proyecto --></label>
     <name>SupervisorProyecto__c</name>
-    <relationshipLabel><!-- Casos (Supervisor Proyecto) --></relationshipLabel>
+    <relationshipLabel><!-- Cases (Supervisor Project) --></relationshipLabel>
 </CustomFieldTranslation>

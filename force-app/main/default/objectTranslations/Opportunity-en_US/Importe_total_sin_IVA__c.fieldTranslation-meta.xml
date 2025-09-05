@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- En el campo Importe total ofertado (sin IVA) en Euros se indicará todo el contrato (incluida la parte del posible socio) y en el Importe SAP (€) se indicará la parte del contrato correspondiente a Ayesa durante el presente ejercicio. --></help>
+    <label>Submitted offer Amount(excluding VAT) €</label>
+    <name>Importe_total_sin_IVA__c</name>
+</CustomFieldTranslation>

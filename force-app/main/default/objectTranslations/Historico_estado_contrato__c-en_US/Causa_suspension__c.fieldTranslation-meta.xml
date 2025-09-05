@@ -4,10 +4,10 @@
     <name>Causa_suspension__c</name>
     <picklistValues>
         <masterLabel>CSUS1</masterLabel>
-        <translation><!-- CSUS1 --></translation>
+        <translation>Crisis sanitaria</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>CSUS2</masterLabel>
-        <translation><!-- CSUS2 --></translation>
+        <translation>Otros motivos ajenos a la crisis sanitaria</translation>
     </picklistValues>
 </CustomFieldTranslation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriccion_Etapa_Cerrada</fullName>
+    <active>true</active>
+    <description>Restricción para el cambio de etapa desde Cerrada</description>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+    
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
+
+AND(
+				Clonada__c = FALSE,
+	ISPICKVAL(PRIORVALUE(StageName),&quot;Presentada (negociación y cierre)&quot;),
+	OR(
+		ISPICKVAL(StageName,&quot;Pedido Código Oferta&quot;),
+		ISPICKVAL(StageName,&quot;Preparando QA&quot;),
+		ISPICKVAL(StageName,&quot;Aprobada QA&quot;),
+		AND(
+			ISPICKVAL(StageName,&quot;Abierta&quot;),
+			OR(ISPICKVAL(Estado_de_Cierre__c , &quot;Ganada&quot;),ISPICKVAL(Estado_de_Cierre__c , &quot;Contratada&quot;),ISPICKVAL(Estado_de_Cierre__c , &quot;Adjudicada&quot;))
+		)
+	)
+)
+
+)</errorConditionFormula>
+    <errorMessage>Cambio de etapa no permitido ..</errorMessage>
+</ValidationRule>

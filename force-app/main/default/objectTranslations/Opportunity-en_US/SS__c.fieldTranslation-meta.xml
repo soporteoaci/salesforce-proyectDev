@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SS --></label>
+    <name>SS__c</name>
+    <picklistValues>
+        <masterLabel>SS0 – Contacto inicial</masterLabel>
+        <translation><!-- SS0 – Contacto inicial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS1 – Presentación capacidades</masterLabel>
+        <translation><!-- SS1 – Presentación capacidades --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS2 – Oportunidad identificada</masterLabel>
+        <translation><!-- SS2 – Oportunidad identificada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS3 – RFI presentada</masterLabel>
+        <translation><!-- SS3 – RFI presentada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS4 – Oferta presentada</masterLabel>
+        <translation><!-- SS4 – Oferta presentada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS5 – En negociación</masterLabel>
+        <translation><!-- SS5 – En negociación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS6 – Contrato firmado</masterLabel>
+        <translation><!-- SS6 – Contrato firmado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS7 - No Go</masterLabel>
+        <translation><!-- SS7 - No Go --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS8 - Oferta Perdida</masterLabel>
+        <translation><!-- SS8 - Oferta Perdida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS9 - Oferta anulada</masterLabel>
+        <translation><!-- SS9 - Oferta anulada --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

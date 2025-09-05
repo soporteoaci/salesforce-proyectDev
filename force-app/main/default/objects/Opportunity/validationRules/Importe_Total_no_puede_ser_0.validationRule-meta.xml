@@ -4,9 +4,8 @@
     <active>true</active>
     <description>El importe total de una oportunidad no puede ser 0.</description>
     <errorConditionFormula>AND(
-$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
-Record_Type_Name__c =&apos;Ayesa&apos;,
-$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,				
-Importe_Licitacion__c = 0)</errorConditionFormula>
+        $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+        $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+        Importe_Licitacion__c = 0)</errorConditionFormula>
     <errorMessage>El importe total de una oportunidad no puede ser 0.</errorMessage>
 </ValidationRule>

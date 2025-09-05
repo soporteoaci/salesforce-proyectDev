@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>
-        <!-- SOFT=Contratación &quot;pura&quot; de origen cartera, Prórrogas
+    <help>SOFT=Contratación &quot;pura&quot; de origen cartera, Prórrogas
 
 HARD=Contratación &quot;pura&quot; sin origen cartera
 
-STOCK=Contratación &quot;guardada&quot; sin hecho relevante -->
-    </help>
+STOCK=Contratación &quot;guardada&quot; sin hecho relevante</help>
     <label>Origin</label>
     <name>Origen__c</name>
     <picklistValues>
