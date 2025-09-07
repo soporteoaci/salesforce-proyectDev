@@ -5,10 +5,10 @@
     <name>Decision_aprobacion_acuerdo_de_socios__c</name>
     <picklistValues>
         <masterLabel>Aprobado</masterLabel>
-        <translation><!-- Aprobado --></translation>
+        <translation>Approved</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Rechazado</masterLabel>
-        <translation><!-- Rechazado --></translation>
+        <translation>Rejected</translation>
     </picklistValues>
 </CustomFieldTranslation>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Proyecto inductor asociado --></help>
+    <help>Associated inducer project</help>
     <label>Inducer Project 1</label>
     <name>Proyecto_Inductor_1__c</name>
 </CustomFieldTranslation>

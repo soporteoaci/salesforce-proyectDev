@@ -4,10 +4,10 @@
     <name>Decision_Subcontrataciones__c</name>
     <picklistValues>
         <masterLabel>Aprobado</masterLabel>
-        <translation><!-- Aprobado --></translation>
+        <translation>Approved</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Rechazado</masterLabel>
-        <translation><!-- Rechazado --></translation>
+        <translation>Rejected</translation>
     </picklistValues>
 </CustomFieldTranslation>

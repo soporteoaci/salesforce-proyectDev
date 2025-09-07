@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>Corporate Finance Director</label>
     <name>Direccion_Financiera_Corporativa__c</name>
-    <relationshipLabel><!-- Opportunities (Corporate Finance Director) --></relationshipLabel>
+    <relationshipLabel><!-- Oportunidades (Dirección Financiera Corporativa) --></relationshipLabel>
 </CustomFieldTranslation>

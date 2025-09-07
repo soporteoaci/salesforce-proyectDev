@@ -8,11 +8,11 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Cerrada</masterLabel>
-        <translation><!-- Cerrada --></translation>
+        <translation>Closed</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Cualificación</masterLabel>
-        <translation><!-- Cualificación --></translation>
+        <translation>Qualification</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Demostrando</masterLabel>
@@ -20,6 +20,6 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Oferta</masterLabel>
-        <translation><!-- Oferta --></translation>
+        <translation>Offer</translation>
     </picklistValues>
 </CustomFieldTranslation>

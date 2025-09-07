@@ -4,14 +4,14 @@
     <name>Referencia_Comercial__c</name>
     <picklistValues>
         <masterLabel>No, por no ser relevante</masterLabel>
-        <translation><!-- No, por no ser relevante --></translation>
+        <translation>No, it is not relevant</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>No, porque ya existe</masterLabel>
-        <translation><!-- No, porque ya existe --></translation>
+        <translation>No, it already exists</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Sí</masterLabel>
-        <translation><!-- Sí --></translation>
+        <translation>Yes</translation>
     </picklistValues>
 </CustomFieldTranslation>

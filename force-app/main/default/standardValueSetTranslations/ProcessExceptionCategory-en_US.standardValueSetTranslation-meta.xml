@@ -9,6 +9,14 @@
         <translation>Order Approval</translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>Cancelar</masterLabel>
+        <translation><!-- Cancelar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Crédito de pago</masterLabel>
+        <translation><!-- Crédito de pago --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>Facturación</masterLabel>
         <translation>Billing</translation>
     </valueTranslation>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Estado_de_Cierre__c</fullName>
-    <inlineHelpText>Close the opportunity when you become aware of the outcome. If awarded the bid, we suggest closing it once the PSP (Project Structure Plan) has been opened.</inlineHelpText>
+    <inlineHelpText>Cierre la oportunidad cuando sepa el desenlace.</inlineHelpText>
     <label>Estado de Cierre</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

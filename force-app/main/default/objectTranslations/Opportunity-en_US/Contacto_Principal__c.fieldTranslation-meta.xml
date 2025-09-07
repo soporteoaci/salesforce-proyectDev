@@ -5,5 +5,5 @@
         <errorMessage><!-- El contacto no está relacionado con la cuenta elegida --></errorMessage>
     </lookupFilter>
     <name>Contacto_Principal__c</name>
-    <relationshipLabel><!-- Oportunidades --></relationshipLabel>
+    <relationshipLabel>Opportunities</relationshipLabel>
 </CustomFieldTranslation>

@@ -5,14 +5,14 @@
     <name>Analisis_penalizaciones_excluyentes__c</name>
     <picklistValues>
         <masterLabel>Bajas</masterLabel>
-        <translation><!-- Bajas --></translation>
+        <translation>Low</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Moderadas</masterLabel>
-        <translation><!-- Moderadas --></translation>
+        <translation>Moderate</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Muy exigentes</masterLabel>
-        <translation><!-- Muy exigentes --></translation>
+        <translation>Very demanding</translation>
     </picklistValues>
 </CustomFieldTranslation>

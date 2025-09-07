@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>Market Director</label>
     <name>Director_de_Mercado__c</name>
-    <relationshipLabel><!-- Opportunities Ayesa (Market Director) --></relationshipLabel>
+    <relationshipLabel><!-- Oportunidades (Director de Mercado) --></relationshipLabel>
 </CustomFieldTranslation>

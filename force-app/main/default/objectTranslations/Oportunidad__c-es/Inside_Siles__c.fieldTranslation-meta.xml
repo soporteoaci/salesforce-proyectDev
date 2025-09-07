@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Inside Sales --></label>
     <name>Inside_Siles__c</name>
-    <relationshipLabel><!-- Opportunities Ayesa (Inside Sales) --></relationshipLabel>
+    <relationshipLabel><!-- Oportunidades (Inside Sales) --></relationshipLabel>
 </CustomFieldTranslation>

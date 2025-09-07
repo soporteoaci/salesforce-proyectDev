@@ -5,14 +5,14 @@
     <name>Certificaciones_perfiles__c</name>
     <picklistValues>
         <masterLabel>Alto</masterLabel>
-        <translation><!-- Alto --></translation>
+        <translation>High</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Bajo</masterLabel>
-        <translation><!-- Bajo --></translation>
+        <translation>Low</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Medio</masterLabel>
-        <translation><!-- Medio --></translation>
+        <translation>Medium</translation>
     </picklistValues>
 </CustomFieldTranslation>

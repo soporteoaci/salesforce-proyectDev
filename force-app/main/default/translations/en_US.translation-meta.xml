@@ -4581,6 +4581,15 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- New Actividades y relacionados --></description>
+        <label><!-- New Actividades y relacionados --></label>
+        <name>New_Actividades_y_relacionados</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description><!-- New CRM Clientes y Oportunidades --></description>
         <label><!-- New CRM Clientes y Oportunidades --></label>
         <name>New_CRM_Clientes_y_Oportunidades</name>

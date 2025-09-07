@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- ETC VALUE OFFERING marcar en caso de que sea una oportunidad de este tipo. --></help>
+    <help>ETC VALUE OFFERING mark in case it is such an opportunity</help>
     <label><!-- ETC Value Offering --></label>
     <name>ETC_Value_Offering__c</name>
 </CustomFieldTranslation>

@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Director Global de QA &amp; Risk --></label>
     <name>Director_Global_de_QA_Risk__c</name>
-    <relationshipLabel><!-- Opportunities Ayesa (QA &amp; Risk Global Director) --></relationshipLabel>
+    <relationshipLabel><!-- Oportunidades (Director Global de QA &amp; Risk) --></relationshipLabel>
 </CustomFieldTranslation>

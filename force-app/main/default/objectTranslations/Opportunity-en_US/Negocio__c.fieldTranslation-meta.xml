@@ -4,51 +4,51 @@
     <name>Negocio__c</name>
     <picklistValues>
         <masterLabel>Administración estatal</masterLabel>
-        <translation><!-- Administración estatal --></translation>
+        <translation>State Administration</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Administración local</masterLabel>
-        <translation><!-- Administración local --></translation>
+        <translation>Local Administration</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Administración regional</masterLabel>
-        <translation><!-- Administración regional --></translation>
+        <translation>Regional Administration</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Admon Gral Estado</masterLabel>
-        <translation><!-- Admon Gral Estado --></translation>
+        <translation>Admon Gral State</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Aeropuertos</masterLabel>
-        <translation><!-- Aeropuertos --></translation>
+        <translation>Airports</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Agua</masterLabel>
-        <translation><!-- Agua --></translation>
+        <translation>Water</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Arquitectura y management</masterLabel>
-        <translation><!-- Arquitectura y management --></translation>
+        <translation>Architecture and management</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Asuntos Sociales y Medio Ambiente</masterLabel>
-        <translation><!-- Asuntos Sociales y Medio Ambiente --></translation>
+        <translation>Social Affairs and Environment</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Banca y Seguro</masterLabel>
-        <translation><!-- Banca y Seguro --></translation>
+        <translation>Banking and Insurance</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Ciudades y Puertos 4.0</masterLabel>
-        <translation><!-- Ciudades y Puertos 4.0 --></translation>
+        <translation>City and Ports 4.0</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Cultura PMO y Calidad</masterLabel>
-        <translation><!-- Cultura PMO y Calidad --></translation>
+        <translation>Culture PMO and Quality</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Diseño y Certificación</masterLabel>
-        <translation><!-- Diseño y Certificación --></translation>
+        <translation>Design and Certification</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>ENEL BPO</masterLabel>
@@ -56,11 +56,11 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Educación</masterLabel>
-        <translation><!-- Educación --></translation>
+        <translation>Education</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Empleo, ITO e Innovación</masterLabel>
-        <translation><!-- Empleo, ITO e Innovación --></translation>
+        <translation>Employment, ITO e Innovation</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Enel GDP L1</masterLabel>
@@ -188,35 +188,35 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Estructuras</masterLabel>
-        <translation><!-- Estructuras --></translation>
+        <translation>Structures</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Ferrocarriles</masterLabel>
-        <translation><!-- Ferrocarriles --></translation>
+        <translation>Rail roads</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Gestión territorial</masterLabel>
-        <translation><!-- Gestión territorial --></translation>
+        <translation>Territorial management</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Industria</masterLabel>
-        <translation><!-- Industria --></translation>
+        <translation>Industry</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Ingeniería de Fabricación</masterLabel>
-        <translation><!-- Ingeniería de Fabricación --></translation>
+        <translation>Manufacturing Engineering</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Ingeniería del terreno</masterLabel>
-        <translation><!-- Ingeniería del terreno --></translation>
+        <translation>Earth Engineering</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Innovación</masterLabel>
-        <translation><!-- Innovación --></translation>
+        <translation>Innovation</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Instalaciones del transporte</masterLabel>
-        <translation><!-- Instalaciones del transporte --></translation>
+        <translation>Transport installations</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Logística y Movilidad</masterLabel>
@@ -232,43 +232,43 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Obras hidráulicas</masterLabel>
-        <translation><!-- Obras hidráulicas --></translation>
+        <translation>Hydraulic projects</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Obras viales</masterLabel>
-        <translation><!-- Obras viales --></translation>
+        <translation>Road projects</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Otros</masterLabel>
-        <translation><!-- Otros --></translation>
+        <translation>Others</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Otros (ATD)</masterLabel>
-        <translation><!-- Otros (ATD) --></translation>
+        <translation>Others (ATD)</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Planificación y medio ambiente</masterLabel>
-        <translation><!-- Planificación y medio ambiente --></translation>
+        <translation>Planning and environment</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SP - Andalucia Educacion</masterLabel>
-        <translation><!-- SP - Andalucia Educacion --></translation>
+        <translation>SP - Andalusia Education</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SP - Andalucia Empleo Justicia</masterLabel>
-        <translation><!-- SP - Andalucia Empleo Justicia --></translation>
+        <translation>SP - Andalusia Employment Justice</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SP - Andalucia Hacienda y Sanidad</masterLabel>
-        <translation><!-- SP - Andalucia Hacienda y Sanidad --></translation>
+        <translation>SP - Andalusia Treasury and Health</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SP - Andalucia Mid Market</masterLabel>
-        <translation><!-- SP - Andalucia Mid Market --></translation>
+        <translation>SP - Andalusia Mid Market</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SP - Cataluña</masterLabel>
-        <translation><!-- SP - Cataluña --></translation>
+        <translation>SP - Catalonia</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SP - Madrid 1</masterLabel>
@@ -280,11 +280,11 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>SP - Norte de España</masterLabel>
-        <translation><!-- SP - Norte de España --></translation>
+        <translation>SP - Northern Spain</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SP - Sur de España</masterLabel>
-        <translation><!-- SP - Sur de España --></translation>
+        <translation>SP - Southern Spain</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SP BPO</masterLabel>
@@ -300,15 +300,15 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Servicios</masterLabel>
-        <translation><!-- Servicios --></translation>
+        <translation>Services</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Supervisión de obras</masterLabel>
-        <translation><!-- Supervisión de obras --></translation>
+        <translation>Supervision of works</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Tecnológicos</masterLabel>
-        <translation><!-- Tecnológicos --></translation>
+        <translation>Technological</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Transporte Ferroviario</masterLabel>

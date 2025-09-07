@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Sociedad del grupo Ayesa que presenta la oferta --></help>
+    <help>Company from the Ayesa Group that submits the bid</help>
     <label>Company</label>
     <name>Sociedad_Ayesa__c</name>
     <picklistValues>

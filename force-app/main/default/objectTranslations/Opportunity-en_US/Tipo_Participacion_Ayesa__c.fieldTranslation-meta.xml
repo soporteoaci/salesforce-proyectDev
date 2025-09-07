@@ -5,15 +5,15 @@
     <name>Tipo_Participacion_Ayesa__c</name>
     <picklistValues>
         <masterLabel>Contratista Principal</masterLabel>
-        <translation><!-- Contratista Principal --></translation>
+        <translation>Main Contractor</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Subcontratista</masterLabel>
-        <translation><!-- Subcontratista --></translation>
+        <translation>Subcontractor</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>UTE</masterLabel>
-        <translation><!-- UTE --></translation>
+        <translation>TJV</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>UTE 100% Empresas Grupo</masterLabel>

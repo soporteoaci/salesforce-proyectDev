@@ -56,11 +56,13 @@
         <name>Actualizar_importes</name>
     </quickActions>
     <quickActions>
-        <label><!-- Clonar Oportunidad --></label>
+        <aspect>Master</aspect>
+        <label>Clone Opportunity</label>
         <name>Clonar_Oportunidad</name>
     </quickActions>
     <quickActions>
-        <label><!-- Documentación --></label>
+        <aspect>Master</aspect>
+        <label>Documentation</label>
         <name>Documentacion</name>
     </quickActions>
     <quickActions>
@@ -68,11 +70,13 @@
         <name>Extender_Oportunidad</name>
     </quickActions>
     <quickActions>
-        <label><!-- Nueva tarea --></label>
+        <aspect>Master</aspect>
+        <label>New Task</label>
         <name>Nueva_tarea</name>
     </quickActions>
     <quickActions>
-        <label><!-- Oferta ING. --></label>
+        <aspect>Master</aspect>
+        <label>Offer ING</label>
         <name>Oferta_Ingenieria</name>
     </quickActions>
     <quickActions>
@@ -100,11 +104,11 @@
         <name>Presupuesto</name>
     </recordTypes>
     <validationRules>
-        <errorMessage><!-- Antes de pasar a Aprobado pdte Presentar, debe tener relleno el código de Oferta SAP --></errorMessage>
+        <errorMessage>Prior to changing status to Approved pending Submittal, you must have entered the SAP Offer code</errorMessage>
         <name>Aprobacion_con_datos_QA_informados</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- La oportunidad está bloqueada por el importe límite de la línea de servicio y por el tipo de cuenta --></errorMessage>
+        <errorMessage>The Opportunity is blocked by the Delivery Center Block and by the account type</errorMessage>
         <name>Bloqueada_Linea_Servicio</name>
     </validationRules>
     <validationRules>
@@ -112,7 +116,7 @@
         <name>Bloquear_Origen_STOCK_IT</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- La oportunidad tiene una aprobación en proceso, no se permite su modificación --></errorMessage>
+        <errorMessage>The Opportunity has an approval in process, no modification is allowed</errorMessage>
         <name>Bloqueo_Por_Aprobacion</name>
     </validationRules>
     <validationRules>
@@ -120,15 +124,15 @@
         <name>CPV_select_Ingenieria</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Cambio de etapa no permitido --></errorMessage>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
         <name>Cambio_etapa_no_permitido_Cualificacion</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Cambio de etapa no permitido --></errorMessage>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
         <name>Cambio_etapa_no_permitido_Oferta_ITDS</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- No puede avanzar a subfase Pte. Aprobación sin tener el visto bueno del Delivery Center --></errorMessage>
+        <errorMessage>Cannot advance to subphase Pending Approval without approval from the Delivery Center</errorMessage>
         <name>Cambio_no_permitido_Pdte_Aprobacion</name>
     </validationRules>
     <validationRules>
@@ -140,7 +144,7 @@
         <name>Campos_Cuali_LineaServicios_Preventa</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Está modificando campos que solo pueden ser informados por el Responsable de la Oportunidad (Propietario) --></errorMessage>
+        <errorMessage>You are modifying fields that can only be reported by the Opportunity Responsible</errorMessage>
         <name>Campos_Cualificacion_RO</name>
     </validationRules>
     <validationRules>
@@ -152,19 +156,19 @@
         <name>Cerrada_Bloqueada</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Debe seleccionar el Estado de cierre --></errorMessage>
+        <errorMessage>You must select the closure Status</errorMessage>
         <name>Cerrada_sin_estado_cierre</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Debe informar si se produce algo fuera de España en la pestaña Cualificación antes de avanzar de subfase --></errorMessage>
+        <errorMessage>Must report if any occurrence outside of Spain in the Qualification tab before moving on to the next subphase</errorMessage>
         <name>Check_produce_fuera_Spain</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- No se puede elegir esta subfase por la clase de oferta de la oportunidad --></errorMessage>
+        <errorMessage>This subphase cannot be selected due to the type of offer of the opportunity</errorMessage>
         <name>Cierre_limitacion_subfases</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- No se puede generar una oportunidad si el cliente no tiene informado el sector y subsector --></errorMessage>
+        <errorMessage>Cannot generate an opportunity if the Client does not have the Sector and Subsector informed</errorMessage>
         <name>Cliente_Sector_Subsector</name>
     </validationRules>
     <validationRules>
@@ -176,15 +180,15 @@
         <name>Control_de_cambios_Admin_Custom_Ibermati</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- La oportunidad tiene preventa, no puede seleccionar esta subfase --></errorMessage>
+        <errorMessage>The Opportunity has presale, you cannot select this subphase</errorMessage>
         <name>Cualificacion_con_preventa</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- La oportunidad no tiene preventa según su tipificación, si necesita preventa consulte con el administrador. --></errorMessage>
+        <errorMessage>The Opportunity does not have presale according to its type. If you need presale, please consult with the administrator</errorMessage>
         <name>Cualificacion_sin_preventa</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- No se puede crear una oportunidad relacionada a un cliente bloqueado --></errorMessage>
+        <errorMessage>Cannot create an Opportunity related to a blocked Client</errorMessage>
         <name>Cuenta_Bloqueada</name>
     </validationRules>
     <validationRules>
@@ -204,7 +208,7 @@
         <name>Equipo_preventa</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe el estado de madurez --></errorMessage>
+        <errorMessage>Inform Bid Status</errorMessage>
         <name>Estado_de_madurez_ITDS</name>
     </validationRules>
     <validationRules>
@@ -216,23 +220,23 @@
         <name>Etapa_Cierre_limitacion_Subfase_ITDS</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- La fecha de presentación debe ser anterior o igual a la fecha de cierre --></errorMessage>
+        <errorMessage>The submittal date must be prior to or the same as the closing date</errorMessage>
         <name>Fecha_Presentacion_Cierre</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- La Fecha de Presentación debe ser anterior o igual a la Fecha de Cierre y la Fecha de Cierre tiene que ser anterior o igual a la Fecha Inicio Producción --></errorMessage>
+        <errorMessage>Submission Date must be before or equal to the Closing Date and Closing Date must be before or equal to the Production Start Date</errorMessage>
         <name>Fecha_SME</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Fecha de adjudicación es obligatoria para oportunidades adjudicadas --></errorMessage>
+        <errorMessage>Award date is mandatory for awarded opportunities</errorMessage>
         <name>Fecha_adjudicacion_obligatoria</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- La fecha de cierre debe de ser posterior al mes anterior al actual --></errorMessage>
+        <errorMessage>Closing Date must be later than the month prior to the current month</errorMessage>
         <name>Fecha_cierre_posterior_mes_pasado</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe el Contacto Principal antes de avanzar a la siguiente etapa. --></errorMessage>
+        <errorMessage>Inform the Main Contact before proceeding to the next stage</errorMessage>
         <name>IB_SME_Contacto_Principal</name>
     </validationRules>
     <validationRules>
@@ -240,39 +244,39 @@
         <name>IB_SME_GP_CR</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe los datos de la pestaña &apos;Datos económicos&apos; antes de avanzar a la siguiente etapa --></errorMessage>
+        <errorMessage>Inform the fields in the “Economic Data” tab before proceeding to the next stage</errorMessage>
         <name>IB_SME_Importes</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe el Contacto Principal --></errorMessage>
+        <errorMessage>Inform the Main Contact</errorMessage>
         <name>ITDS_Contacto_Principal</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- El importe total de una oportunidad no puede ser 0. --></errorMessage>
+        <errorMessage>The total amount of an opportunity cannot be 0</errorMessage>
         <name>Importe_Total_no_puede_ser_0</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe el campo Importe UTE Ayesa en la pestaña de &apos;Datos económicos&apos; antes de avanzar a la siguiente fase --></errorMessage>
+        <errorMessage>Inform the Awarded amount for Ayesa Company(€) field in the “Economic Data” tab before proceeding to the next phase</errorMessage>
         <name>Importe_UTE</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- El importe de adjudicación es obligatorio para oportunidades adjudicadas --></errorMessage>
+        <errorMessage>Award amount is required for awarded opportunities</errorMessage>
         <name>Importe_adjudicacion_obligatorio</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe el campo Importe total ofertado (sin IVA) en la pestaña Datos Económicos antes de avanzar a la siguiente fase --></errorMessage>
+        <errorMessage>Inform the field Submitted offer Amount(excluding VAT) in the “Economic Data” tab before proceeding to the next phase</errorMessage>
         <name>Importe_total_ofertado_sin_IVA</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe el departamento --></errorMessage>
+        <errorMessage>Inform Business Unit</errorMessage>
         <name>Informar_Business_Unit_BL</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Debes informar el código AJI --></errorMessage>
+        <errorMessage>Must inform the AJI code</errorMessage>
         <name>Informar_Codigo_AJI</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe el delivery center antes de pasar a la siguiente subfase --></errorMessage>
+        <errorMessage>Inform the Delivery Center before proceeding to the next subphase</errorMessage>
         <name>Informar_DeliveryCenter</name>
     </validationRules>
     <validationRules>
@@ -280,7 +284,7 @@
         <name>Informar_Ref_Comercial_Nombre</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe el campo Referencia comercial en la pestaña Cierre al ser una oportunidad ganada y cerrada --></errorMessage>
+        <errorMessage>Inform the Commercial reference field on the Closing tab as it is a won and closed opportunity</errorMessage>
         <name>Informar_Referencia_Comercial</name>
     </validationRules>
     <validationRules>
@@ -288,7 +292,7 @@
         <name>Informar_Responsable_Proyecto</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe la fecha firma de contrato en la pestaña &apos;Fechas&apos; antes de cerrar la oportunidad --></errorMessage>
+        <errorMessage>Inform Contract signing date before closing the opportunity</errorMessage>
         <name>Informar_fecha_firma_de_contrato</name>
     </validationRules>
     <validationRules>
@@ -296,51 +300,51 @@
         <name>Informar_porcentaje_Sinergia</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Al ser una oportunidad de Ingeniería no puede avanzar a esta subfase --></errorMessage>
+        <errorMessage>As it is an Engineering opportunity it cannot advance to this subphase</errorMessage>
         <name>Ingenieria_subfases</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- La fecha de adjudicación debe ser mayor que la fecha de presentación. --></errorMessage>
+        <errorMessage>Award date must be greater than filing date</errorMessage>
         <name>Mayor_o_igual_que_fecha_presentacion</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Para oportunidades adjudicadas, la fecha de adjudicación debe ser menor o igual a la fecha de cierre. --></errorMessage>
+        <errorMessage>For awarded opportunities, the award date must be less than or equal to the close date</errorMessage>
         <name>Menor_o_igual_que_fecha_cierre</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- No puede avanzar de subfase al no tener las aprobaciones de la Oferta --></errorMessage>
+        <errorMessage>Cannot advance from subphase as there is no Offer approvals</errorMessage>
         <name>No_avanzar_subfase_Aprobada</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- No se puede informar la referencia comercial hasta que la oportunidad esté Cerrada y Contratada --></errorMessage>
+        <errorMessage>Cannot inform the Commercial Reference until the Opportunity is Closed and Contracted</errorMessage>
         <name>No_informar_Referencia_Comercial</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- No se pueden modificar los siguientes campos: Mercado, Sector Mercado, Subsector mercado, Línea de servicio, Delivery Center --></errorMessage>
+        <errorMessage>Cannot modify the following fields: Market, Market Sector, Market Subsector, Services, Delivery Center</errorMessage>
         <name>No_modificar_Mercados</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Cambio de etapa no permitida. Debe recibir el código de oferta por parte del equipo de licitaciones y se actualizará el estado de forma automática. --></errorMessage>
+        <errorMessage>Changing the stage is not permitted. You must receive the offer code from the tender team and the status will be automatically updated.</errorMessage>
         <name>No_pasar_A_Pendiente_QA</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Para pasar a &quot;Pedir Código Oferta&quot; debe pulsar en oferta, cumplimentar los datos y pulsar en &quot;Solicitud de código Oferta y Soporte a Oferta&quot; --></errorMessage>
+        <errorMessage>To switch the status to &quot;Request Offer Code&quot; you must click on offer, fill out the data and click on &quot;Request Offer code and Support to Offer&quot;</errorMessage>
         <name>No_pasar_A_pedir_cod_oferta</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- No puede avanzar a esta subfase al ser una oportunidad de ingeniería --></errorMessage>
+        <errorMessage>Cannot advance to this subphase as it is an Engineering Opportunity</errorMessage>
         <name>No_preventa_Ingenieria</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- No se puede informar la Oportunidad Matriz con una Extensión --></errorMessage>
+        <errorMessage>Cannot inform the Related Opportunity with an Extension</errorMessage>
         <name>Oportunidad_Matriz_no_es_Extension</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe la oportunidad de la que proviene --></errorMessage>
+        <errorMessage>Inform the opportunity from which it originates</errorMessage>
         <name>Origen_Soft_Stock</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Por favor informe el País en la cuenta del cliente de la oportunidad. --></errorMessage>
+        <errorMessage>Please inform the Client Country</errorMessage>
         <name>Pais_cliente</name>
     </validationRules>
     <validationRules>
@@ -348,11 +352,11 @@
         <name>Participacion_Etapa_negociacion_y_cierre</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Si el campo ¿Exige venta de licencias? esta informado como No , no puede informar el campo % Licencias en la pestaña Cualificación. --></errorMessage>
+        <errorMessage>If the field “Is it require license sales?” is set to “No”, you cannot inform the field “Licenses %” in the Qualification tab</errorMessage>
         <name>Porcentaje_Licencias</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Debe indicar el Importe total ofertado de la oportunidad para poder pasarla a presentada. --></errorMessage>
+        <errorMessage>You must indicate the Total Amount (without VAT) in Euros of the opportunity to be able to pass it to presented.</errorMessage>
         <name>Presentada_Importe_Total_Ofertado</name>
     </validationRules>
     <validationRules>
@@ -360,43 +364,43 @@
         <name>RefComercial_Si_AreaTecnologia</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Debe tener informado el campo Responsable Técnico de la Oferta antes de poder cambiar de subfase --></errorMessage>
+        <errorMessage>You must fill Bid Manager field before moving on to the next subphase</errorMessage>
         <name>ResponsableTecnico_Informado_ENG</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Solo se puede dar por ganada si su estado es presentada. --></errorMessage>
+        <errorMessage>It can only be considered won if its status is submitted.</errorMessage>
         <name>Restriccion_Estado_Ganada</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Cambio de etapa no permitido. --></errorMessage>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
         <name>Restriccion_Etapa_Abierta</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Cambio de etapa no permitido. --></errorMessage>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
         <name>Restriccion_Etapa_Aprobada_QA</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Cambio de etapa no permitido .. --></errorMessage>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
         <name>Restriccion_Etapa_Cerrada</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Cambio de etapa no permitido. --></errorMessage>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
         <name>Restriccion_Etapa_Pedido_Codigo_Oferta</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Cambio de etapa no permitido. --></errorMessage>
+        <errorMessage>Changing the stage is not permitted.</errorMessage>
         <name>Restriccion_Etapa_Preparando_QA</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Debe indicar el % Rentabilidad de la oportunidad para poder pasarla a presentada --></errorMessage>
+        <errorMessage>Must indicate the % Profitability of the opportunity to be able to pass it on to Presented</errorMessage>
         <name>Restriccion_etapa_Rentabilidad</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- La fecha de cierre no puede ser posterior al día actual --></errorMessage>
+        <errorMessage>Closing date cannot be later than the current day.</errorMessage>
         <name>Restriccion_etapa_fecha_cierre</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Informe el subsector de mercados --></errorMessage>
+        <errorMessage>Inform Market Subsector</errorMessage>
         <name>Subsector_mercado_oblig_DA</name>
     </validationRules>
     <validationRules>
@@ -404,15 +408,15 @@
         <name>Validacion_Borrador_Acuerdo_de_socios</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Los campos de la pestaña Cualificación deben de ser informados por el responsable indicado antes de avanzar a la subfase Pte ok Preliminar --></errorMessage>
+        <errorMessage>The fields of the “Qualification” tab must be informed by the Responsible before proceeding to the “Pending Preliminar ok” subphase</errorMessage>
         <name>Validacion_Pdt_Ok_preliminar</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Los campos de la pestaña Cualificación: Tipo de Participación, % Participación y Subcontrataciones deben de estar informados antes de avanzar a la subfase Pte ok Preliminar --></errorMessage>
+        <errorMessage>The fields in the “Qualification” tab: Type of Ayesa Participation, Participation % and Subcontracting must be filled in before proceeding to the “Pending Preliminar ok” subphase</errorMessage>
         <name>Validacion_Pdt_Ok_preliminar_Cualifi</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Antes de pasar a Pte. Aprobación informe los campos de la sección &apos;Información&apos; en la pestaña &apos;Oferta&apos; --></errorMessage>
+        <errorMessage>Before proceeding to Pending Approval report the fields in the &apos;Information&apos; section of the &apos;Offer&apos; tab.</errorMessage>
         <name>informacion_Correo_Aprobacion_Oferta</name>
     </validationRules>
     <workflowTasks>

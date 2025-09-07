@@ -3,5 +3,5 @@
     <help><!-- Aprobador que valida y confirma la resolución del caso. --></help>
     <label><!-- Aprobador Primer Nivel --></label>
     <name>Aprobador__c</name>
-    <relationshipLabel><!-- Cases (First Level Final Approve) --></relationshipLabel>
+    <relationshipLabel><!-- Casos (Aprobador Primer Nivel) --></relationshipLabel>
 </CustomFieldTranslation>

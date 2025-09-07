@@ -4,10 +4,10 @@
     <name>Decision_Aprobacion_Oferta__c</name>
     <picklistValues>
         <masterLabel>Aprobado</masterLabel>
-        <translation><!-- Aprobado --></translation>
+        <translation>Approved</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>No aprobado</masterLabel>
-        <translation><!-- No aprobado --></translation>
+        <translation>Rejected</translation>
     </picklistValues>
 </CustomFieldTranslation>

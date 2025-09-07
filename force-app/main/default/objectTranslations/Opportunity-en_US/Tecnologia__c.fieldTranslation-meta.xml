@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Elija una o varias tecnologías que se utilizarían en el futuro PEP.  Si no encuentra la que busca, abra una incidencia en https://helpdesk.ayesa.com --></help>
+    <help>Select one or several technologies that will be used in the future PSP.  If you don&apos;t find what you are searching for, initiate a discrepancy report in https://helpdesk.ayesa.com</help>
     <label>Technology</label>
     <name>Tecnologia__c</name>
     <picklistValues>
@@ -13,7 +13,7 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Arquitectura Empresarial</masterLabel>
-        <translation><!-- Arquitectura Empresarial --></translation>
+        <translation>Business Architecture</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>BI</masterLabel>
@@ -161,7 +161,7 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Desarrollo a Medida</masterLabel>
-        <translation><!-- Desarrollo a Medida --></translation>
+        <translation>Tailor-made Development</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>GIS</masterLabel>
@@ -213,7 +213,7 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Mesa de Ayuda</masterLabel>
-        <translation><!-- Mesa de Ayuda --></translation>
+        <translation>Help Table</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Microsoft ,NET</masterLabel>
@@ -221,7 +221,7 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Movilidad</masterLabel>
-        <translation><!-- Movilidad --></translation>
+        <translation>Mobility</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>OBA-Accesibilidad</masterLabel>
@@ -301,7 +301,7 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Otros</masterLabel>
-        <translation><!-- Otros --></translation>
+        <translation>Others</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>PMO</masterLabel>
@@ -317,7 +317,7 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>SAP RRHH</masterLabel>
-        <translation><!-- SAP RRHH --></translation>
+        <translation>SAP HR</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SOL-CRM</masterLabel>
@@ -381,6 +381,6 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Sistemas</masterLabel>
-        <translation><!-- Sistemas --></translation>
+        <translation>Systems</translation>
     </picklistValues>
 </CustomFieldTranslation>

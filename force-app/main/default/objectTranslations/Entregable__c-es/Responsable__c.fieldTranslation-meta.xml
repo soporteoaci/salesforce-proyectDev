@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Responsable --></label>
     <name>Responsable__c</name>
-    <relationshipLabel><!-- Deliverables Groups --></relationshipLabel>
+    <relationshipLabel><!-- Grupos de Entregables --></relationshipLabel>
 </CustomFieldTranslation>

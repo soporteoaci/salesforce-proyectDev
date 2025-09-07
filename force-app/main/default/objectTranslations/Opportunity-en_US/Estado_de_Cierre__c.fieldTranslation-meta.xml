@@ -5,18 +5,18 @@
     <name>Estado_de_Cierre__c</name>
     <picklistValues>
         <masterLabel>Anulada</masterLabel>
-        <translation><!-- Anulada --></translation>
+        <translation>Cancelled</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Contratada</masterLabel>
-        <translation><!-- Contratada --></translation>
+        <translation>Contracted</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>No Presentada</masterLabel>
-        <translation><!-- No Presentada --></translation>
+        <translation>Not Submitted</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Perdida</masterLabel>
-        <translation><!-- Perdida --></translation>
+        <translation>Lost</translation>
     </picklistValues>
 </CustomFieldTranslation>

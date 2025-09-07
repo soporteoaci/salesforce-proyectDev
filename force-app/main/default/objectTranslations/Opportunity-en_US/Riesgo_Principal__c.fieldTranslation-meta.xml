@@ -5,18 +5,18 @@
     <name>Riesgo_Principal__c</name>
     <picklistValues>
         <masterLabel>Alcance</masterLabel>
-        <translation><!-- Alcance --></translation>
+        <translation>Scope</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Conocimiento</masterLabel>
-        <translation><!-- Conocimiento --></translation>
+        <translation>Knowledge</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Plazos</masterLabel>
-        <translation><!-- Plazos --></translation>
+        <translation>Deadline</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Recursos</masterLabel>
-        <translation><!-- Recursos --></translation>
+        <translation>Resources</translation>
     </picklistValues>
 </CustomFieldTranslation>

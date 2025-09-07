@@ -4,86 +4,86 @@
     <name>Subfase__c</name>
     <picklistValues>
         <masterLabel>(Privada) Defendiendo con competidores NO favoritos</masterLabel>
-        <translation><!-- (Privada) Defendiendo con competidores NO favoritos --></translation>
+        <translation>(Private) Defending with NO favourite competitors</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>(Privada) Defendiendo con competidores favoritos</masterLabel>
-        <translation><!-- (Privada) Defendiendo con competidores favoritos --></translation>
+        <translation>(Private) Defending with favourite competitors</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>(Privada) Defendiendo sin competidores</masterLabel>
-        <translation><!-- (Privada) Defendiendo sin competidores --></translation>
+        <translation>(Private) Defending without competitors</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>(Privada) Negociando condiciones de cierre</masterLabel>
-        <translation><!-- (Privada) Negociando condiciones de cierre --></translation>
+        <translation>(Private) Negotitating closing conditions</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>(Pública) Elegidos técnicamente: Pte sobre económico</masterLabel>
-        <translation><!-- (Pública) Elegidos técnicamente: Pte sobre económico --></translation>
+        <translation>(Public) Technically selected: Pending economic</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>(Pública) Esperando decisión con competidores NO favoritos</masterLabel>
-        <translation><!-- (Pública) Esperando decisión con competidores NO favoritos --></translation>
+        <translation>(Public) Awaiting decision with NO favourite competitors</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>(Pública) Esperando decisión con competidores favoritos</masterLabel>
-        <translation><!-- (Pública) Esperando decisión con competidores favoritos --></translation>
+        <translation>(Public) Awaiting decision with favourite competitors</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>(Pública) Esperando decisión sin competidores</masterLabel>
-        <translation><!-- (Pública) Esperando decisión sin competidores --></translation>
+        <translation>(Public) Awaiting decision without competitors</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Alta</masterLabel>
-        <translation><!-- Alta --></translation>
+        <translation>Registration</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Aplazada / anulada</masterLabel>
-        <translation><!-- Aplazada / anulada --></translation>
+        <translation>Postponed/Cancelled</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Aprobada</masterLabel>
-        <translation><!-- Aprobada --></translation>
+        <translation>Approved</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Cualificación con autoprovisión</masterLabel>
-        <translation><!-- Cualificación con autoprovisión --></translation>
+        <translation>Qualification with self-provision</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Cualificación con preventa</masterLabel>
-        <translation><!-- Cualificación con preventa --></translation>
+        <translation>Qualification with pre-sales</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Elaboración oferta</masterLabel>
-        <translation><!-- Elaboración oferta --></translation>
+        <translation>Offer preparation</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Esperando decisión</masterLabel>
-        <translation><!-- Esperando decisión --></translation>
+        <translation>Awaiting decision</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Ganada</masterLabel>
-        <translation><!-- Ganada --></translation>
+        <translation>Won</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Ganada pendiente contrato</masterLabel>
-        <translation><!-- Ganada pendiente contrato --></translation>
+        <translation>Won pending contract</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>No presentada</masterLabel>
-        <translation><!-- No presentada --></translation>
+        <translation>Not submitted</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Perdida</masterLabel>
-        <translation><!-- Perdida --></translation>
+        <translation>Lost</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Pte ok preliminar</masterLabel>
-        <translation><!-- Pte ok preliminar --></translation>
+        <translation>Pending Preliminar ok</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Pte. Aprobación</masterLabel>
-        <translation><!-- Pte. Aprobación --></translation>
+        <translation>Pending approval</translation>
     </picklistValues>
 </CustomFieldTranslation>

@@ -4,55 +4,55 @@
     <name>Tipologia__c</name>
     <picklistValues>
         <masterLabel>ANTEPROYECTO / ESTUDIOS E INFORMES</masterLabel>
-        <translation><!-- ANTEPROYECTO / ESTUDIOS E INFORMES --></translation>
+        <translation>DRAFT / STUDIES AND REPORTS</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Asistencia técnica</masterLabel>
-        <translation><!-- Asistencia técnica --></translation>
+        <translation>Technical Assistance</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>DO/SUPERVISIÓN DE OBRA</masterLabel>
-        <translation><!-- DO/SUPERVISIÓN DE OBRA --></translation>
+        <translation>DO/SUPERVISION OF WORK</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>EPC/CONSTRUCCIÓN</masterLabel>
-        <translation><!-- EPC/CONSTRUCCIÓN --></translation>
+        <translation>EPC/CONSTRUCTION</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>INGENIERÍA BÁSICA / FEL</masterLabel>
-        <translation><!-- INGENIERÍA BÁSICA / FEL --></translation>
+        <translation>BASIC ENGINEERING / FEL</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>INGENIERÍA DE DETALLE</masterLabel>
-        <translation><!-- INGENIERÍA DE DETALLE --></translation>
+        <translation>DETAIL ENGINEERING</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>INGENIERÍA DE LA PROPIEDAD</masterLabel>
-        <translation><!-- INGENIERÍA DE LA PROPIEDAD --></translation>
+        <translation>PROPERTY ENGINEERING</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>INGENIERÍA Y SUMINISTROS</masterLabel>
-        <translation><!-- INGENIERÍA Y SUMINISTROS --></translation>
+        <translation>ENGINEERING AND SUPPLIES</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>LLAVES EN MANO</masterLabel>
-        <translation><!-- LLAVES EN MANO --></translation>
+        <translation>TURNKEY</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Mantenimiento de productos</masterLabel>
-        <translation><!-- Mantenimiento de productos --></translation>
+        <translation>Product maintenance</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Producto</masterLabel>
-        <translation><!-- Producto --></translation>
+        <translation>Product</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Proyecto</masterLabel>
-        <translation><!-- Proyecto --></translation>
+        <translation>Project</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>REDACCIÓN DE PROYECTOS Y DIRECCIÓN DE OBRA</masterLabel>
-        <translation><!-- REDACCIÓN DE PROYECTOS Y DIRECCIÓN DE OBRA --></translation>
+        <translation>DRAFTING OF PROJECTS AND PROJECT MANAGEMENT</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Servicios ANS</masterLabel>
@@ -64,6 +64,6 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Soluciones</masterLabel>
-        <translation><!-- Soluciones --></translation>
+        <translation>Solutions</translation>
     </picklistValues>
 </CustomFieldTranslation>

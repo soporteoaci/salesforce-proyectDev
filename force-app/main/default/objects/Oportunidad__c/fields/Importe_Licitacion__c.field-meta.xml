@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Importe_Licitacion__c</fullName>
-    <inlineHelpText>Total fee if indicated by the client in the tender document or estimated fee when opening the opportunity.</inlineHelpText>
+    <inlineHelpText>En el campo Importe total de Licitación (sin IVA) en se indicará todo el importe conocido de la licitación (es conocido en el momento de abrir la oportunidad)</inlineHelpText>
     <label>Importe Total (sin IVA) €</label>
     <precision>18</precision>
     <required>false</required>

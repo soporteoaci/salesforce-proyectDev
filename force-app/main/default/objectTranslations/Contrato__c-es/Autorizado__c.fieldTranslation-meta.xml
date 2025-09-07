@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Autorizado --></label>
     <name>Autorizado__c</name>
-    <relationshipLabel><!-- Contracts RP (Authorized) --></relationshipLabel>
+    <relationshipLabel><!-- Contratos (Autorizado) --></relationshipLabel>
 </CustomFieldTranslation>

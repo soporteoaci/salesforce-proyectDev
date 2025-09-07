@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Validación de incoherencias en los datos de la oportunidad --></help>
+    <help>Validation of inconsistencies in the data of the opportunity</help>
     <label>Existence of inconsistencies</label>
     <name>Existencia_de_Incoherencias__c</name>
 </CustomFieldTranslation>

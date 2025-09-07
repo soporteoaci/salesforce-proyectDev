@@ -4,14 +4,14 @@
     <name>Modelo_de_Servicio__c</name>
     <picklistValues>
         <masterLabel>Asistencia Técnica</masterLabel>
-        <translation><!-- Asistencia Técnica --></translation>
+        <translation>Technical Assistance</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Outsourcing o Servicios Gestionados</masterLabel>
-        <translation><!-- Outsourcing o Servicios Gestionados --></translation>
+        <translation>Outsourcing o Managed Services</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Proyecto Cerrado</masterLabel>
-        <translation><!-- Proyecto Cerrado --></translation>
+        <translation>Closed Project</translation>
     </picklistValues>
 </CustomFieldTranslation>

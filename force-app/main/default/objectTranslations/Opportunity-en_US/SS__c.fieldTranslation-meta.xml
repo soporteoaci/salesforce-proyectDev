@@ -4,31 +4,31 @@
     <name>SS__c</name>
     <picklistValues>
         <masterLabel>SS0 – Contacto inicial</masterLabel>
-        <translation><!-- SS0 – Contacto inicial --></translation>
+        <translation>SS0 - Initial Contract</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SS1 – Presentación capacidades</masterLabel>
-        <translation><!-- SS1 – Presentación capacidades --></translation>
+        <translation>SS1 - Presentation Capabilities</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SS2 – Oportunidad identificada</masterLabel>
-        <translation><!-- SS2 – Oportunidad identificada --></translation>
+        <translation>SS2 - Identified Opportunities</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SS3 – RFI presentada</masterLabel>
-        <translation><!-- SS3 – RFI presentada --></translation>
+        <translation>SS3 - RFI Presented</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SS4 – Oferta presentada</masterLabel>
-        <translation><!-- SS4 – Oferta presentada --></translation>
+        <translation>SS4 - Offer Submitted</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SS5 – En negociación</masterLabel>
-        <translation><!-- SS5 – En negociación --></translation>
+        <translation>SS5 - In Negotiation</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SS6 – Contrato firmado</masterLabel>
-        <translation><!-- SS6 – Contrato firmado --></translation>
+        <translation>SS6 - Signed Contract</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SS7 - No Go</masterLabel>
@@ -36,10 +36,10 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>SS8 - Oferta Perdida</masterLabel>
-        <translation><!-- SS8 - Oferta Perdida --></translation>
+        <translation>SS8 - Bid Loss</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SS9 - Oferta anulada</masterLabel>
-        <translation><!-- SS9 - Oferta anulada --></translation>
+        <translation>SS9 - Offer Canceled</translation>
     </picklistValues>
 </CustomFieldTranslation>

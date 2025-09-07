@@ -8,10 +8,10 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Si, con Kit digital</masterLabel>
-        <translation><!-- Si, con Kit digital --></translation>
+        <translation>Yes, with digital Kit</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Sí</masterLabel>
-        <translation><!-- Sí --></translation>
+        <translation>Yes</translation>
     </picklistValues>
 </CustomFieldTranslation>

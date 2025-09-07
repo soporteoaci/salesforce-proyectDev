@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Subsector__c</fullName>
-    <inlineHelpText>Distinct activity within the sector the company is a part of.</inlineHelpText>
+    <inlineHelpText>Actividad diferenciada dentro del sector en el que se engloba la empresa.</inlineHelpText>
     <label>Subsector</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
@@ -499,6 +499,14 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Administración Latam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Administración Local</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
             <valueName>Emp. TT.II De la Admon.Autonó.</valueName>
         </valueSettings>
         <valueSettings>
@@ -508,18 +516,6 @@
         <valueSettings>
             <controllingFieldValue>Admón. Pública</controllingFieldValue>
             <valueName>Emp. TT.II De la Admon.Local</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Admón. Pública</controllingFieldValue>
-            <valueName>Unión Europea</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Admón. Pública</controllingFieldValue>
-            <valueName>Administración Latam</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Admón. Pública</controllingFieldValue>
-            <valueName>Administración Local</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Admón. Pública</controllingFieldValue>
@@ -534,8 +530,16 @@
             <valueName>OO. Relac. con Admon.Local</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>Admón. Pública</controllingFieldValue>
+            <valueName>Unión Europea</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Finanzas</controllingFieldValue>
             <valueName>Bancos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finanzas</controllingFieldValue>
+            <valueName>Cajas de Ahorros</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Finanzas</controllingFieldValue>
@@ -550,28 +554,8 @@
             <valueName>OO. relacionados con Finanzas</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Finanzas</controllingFieldValue>
-            <valueName>Cajas de Ahorros</valueName>
-        </valueSettings>
-        <valueSettings>
             <controllingFieldValue>Industria</controllingFieldValue>
             <valueName>Aeroespacial</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Automoción</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Química y farmacéutica</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Construcción Maquinaria</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Material y equipo eléctrico</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Industria</controllingFieldValue>
@@ -579,11 +563,11 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Calzado</valueName>
+            <valueName>Automoción</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Siderometalurgia</valueName>
+            <valueName>Calzado</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Industria</controllingFieldValue>
@@ -591,15 +575,27 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Construcción Maquinaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Empresas sector primario</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Fabricantes varios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Juguete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Material y equipo eléctrico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
             <valueName>Moldes, Matrices, Troqueles</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Prod. minerales no metálicos</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Petróleo y derivados</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Industria</controllingFieldValue>
@@ -607,7 +603,19 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Empresas sector primario</valueName>
+            <valueName>Petróleo y derivados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Prod. minerales no metálicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Química y farmacéutica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industria</controllingFieldValue>
+            <valueName>Siderometalurgia</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Industria</controllingFieldValue>
@@ -618,12 +626,8 @@
             <valueName>Textil y confección</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Juguete</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Industria</controllingFieldValue>
-            <valueName>Fabricantes varios</valueName>
+            <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Centros de Investigación</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Servicios</controllingFieldValue>
@@ -639,15 +643,11 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Servicios</controllingFieldValue>
-            <valueName>Ingenierías</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Servicios</controllingFieldValue>
             <valueName>Hostelería y Turismo</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Servicios</controllingFieldValue>
-            <valueName>Tecnologías de la Información</valueName>
+            <valueName>Ingenierías</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Servicios</controllingFieldValue>
@@ -655,23 +655,15 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Servicios</controllingFieldValue>
-            <valueName>Centros de Investigación</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Servicios</controllingFieldValue>
             <valueName>Servicios en general</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Servicios</controllingFieldValue>
+            <valueName>Tecnologías de la Información</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios</controllingFieldValue>
             <valueName>Transporte</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Telco y Media</controllingFieldValue>
-            <valueName>Operadores globales</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Telco y Media</controllingFieldValue>
-            <valueName>Operadores locales</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Telco y Media</controllingFieldValue>
@@ -683,11 +675,23 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Telco y Media</controllingFieldValue>
+            <valueName>Operadores globales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telco y Media</controllingFieldValue>
+            <valueName>Operadores locales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telco y Media</controllingFieldValue>
             <valueName>Radio y Televisión</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Telco y Media</controllingFieldValue>
             <valueName>Telecomunicaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Agua</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Utilities</controllingFieldValue>
@@ -708,10 +712,6 @@
         <valueSettings>
             <controllingFieldValue>Utilities</controllingFieldValue>
             <valueName>Renovables</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Utilities</controllingFieldValue>
-            <valueName>Agua</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

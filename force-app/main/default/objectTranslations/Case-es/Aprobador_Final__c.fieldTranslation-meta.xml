@@ -3,5 +3,5 @@
     <help><!-- Aprobador que confirma de forma definitiva la resolución del caso y por lo tanto su cierre. --></help>
     <label><!-- Aprobador Final --></label>
     <name>Aprobador_Final__c</name>
-    <relationshipLabel><!-- Cases (Final Approver) --></relationshipLabel>
+    <relationshipLabel><!-- Casos (Aprobador Final) --></relationshipLabel>
 </CustomFieldTranslation>

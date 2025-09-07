@@ -4,27 +4,27 @@
     <name>Division__c</name>
     <picklistValues>
         <masterLabel>Aeroespacial</masterLabel>
-        <translation><!-- Aeroespacial --></translation>
+        <translation>Aerospace</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Aeronáutica, Espacio y Defensa</masterLabel>
-        <translation><!-- Aeronáutica, Espacio y Defensa --></translation>
+        <translation>Aeronautics, Space and Defense</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Aeropuertos</masterLabel>
-        <translation><!-- Aeropuertos --></translation>
+        <translation>Airports</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Agua y medio ambiente América</masterLabel>
-        <translation><!-- Agua y medio ambiente América --></translation>
+        <translation>Water and environment America</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Agua y medio ambiente ROW</masterLabel>
-        <translation><!-- Agua y medio ambiente ROW --></translation>
+        <translation>Water and environment ROW</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Arquitectura y Management</masterLabel>
-        <translation><!-- Arquitectura y Management --></translation>
+        <translation>Architecture and Management</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>BPO</masterLabel>
@@ -32,11 +32,11 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Banca e Industria</masterLabel>
-        <translation><!-- Banca e Industria --></translation>
+        <translation>Bank and Industry</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Centro de Soluciones (I+D+i)</masterLabel>
-        <translation><!-- Centro de Soluciones (I+D+i) --></translation>
+        <translation>Solution Center (I+D+i?)</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Digital Factory</masterLabel>
@@ -52,19 +52,19 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Energía</masterLabel>
-        <translation><!-- Energía --></translation>
+        <translation>Energy</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Energía e Instalaciones</masterLabel>
-        <translation><!-- Energía e Instalaciones --></translation>
+        <translation>Energy and Installations</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>España</masterLabel>
-        <translation><!-- España --></translation>
+        <translation>Spain</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Gestión Territorial</masterLabel>
-        <translation><!-- Gestión Territorial --></translation>
+        <translation>Territorial Management</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>I+D+i</masterLabel>
@@ -72,15 +72,15 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Industria y Sector Público</masterLabel>
-        <translation><!-- Industria y Sector Público --></translation>
+        <translation>Industry and Public Sector</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Infraestructuras América</masterLabel>
-        <translation><!-- Infraestructuras América --></translation>
+        <translation>Infrastructures America</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Infraestructuras ROW</masterLabel>
-        <translation><!-- Infraestructuras ROW --></translation>
+        <translation>Infrastructures ROW</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>M2C</masterLabel>
@@ -88,7 +88,7 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Mercado Anglosajón</masterLabel>
-        <translation><!-- Mercado Anglosajón --></translation>
+        <translation>Anglo Market</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Oil&amp;Gas</masterLabel>
@@ -96,23 +96,23 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Plantas proceso</masterLabel>
-        <translation><!-- Plantas proceso --></translation>
+        <translation>Process plants</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Sector Privado Latinoamérica</masterLabel>
-        <translation><!-- Sector Privado Latinoamérica --></translation>
+        <translation>Private Sector Latin America</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Sector Público</masterLabel>
-        <translation><!-- Sector Público --></translation>
+        <translation>Public Sector</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Sector Público Latinoamérica</masterLabel>
-        <translation><!-- Sector Público Latinoamérica --></translation>
+        <translation>Public Sector Latin America</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Transporte</masterLabel>
-        <translation><!-- Transporte --></translation>
+        <translation>Transport</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Utilities</masterLabel>

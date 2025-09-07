@@ -16,11 +16,11 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Dolar</masterLabel>
-        <translation><!-- Dolar --></translation>
+        <translation>Dollar</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Esloti (PLN)</masterLabel>
-        <translation><!-- Esloti (PLN) --></translation>
+        <translation>Zloty</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Euros</masterLabel>
@@ -28,27 +28,27 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Libra</masterLabel>
-        <translation><!-- Libra --></translation>
+        <translation>Pound</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Peso Argentino</masterLabel>
-        <translation><!-- Peso Argentino --></translation>
+        <translation>Argentine Peso</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Peso chileno</masterLabel>
-        <translation><!-- Peso chileno --></translation>
+        <translation>Chilean Peso</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Peso colombiano</masterLabel>
-        <translation><!-- Peso colombiano --></translation>
+        <translation>Colombian Peso</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Peso mexicano</masterLabel>
-        <translation><!-- Peso mexicano --></translation>
+        <translation>Mexican Peso</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Real brasileño</masterLabel>
-        <translation><!-- Real brasileño --></translation>
+        <translation>Brazilian Real</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Saudi Riyal</masterLabel>

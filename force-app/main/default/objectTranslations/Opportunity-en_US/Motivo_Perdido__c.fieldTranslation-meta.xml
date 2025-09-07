@@ -4,78 +4,78 @@
     <name>Motivo_Perdido__c</name>
     <picklistValues>
         <masterLabel>Anulada por cliente</masterLabel>
-        <translation><!-- Anulada por cliente --></translation>
+        <translation>Cancelled by customer</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Anulada por negocio</masterLabel>
-        <translation><!-- Anulada por negocio --></translation>
+        <translation>Cancelled by business</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Aplazada por cliente</masterLabel>
-        <translation><!-- Aplazada por cliente --></translation>
+        <translation>Postponed by customer</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Certificaciones y solvencia de empresa</masterLabel>
-        <translation><!-- Certificaciones y solvencia de empresa --></translation>
+        <translation>Certifications and company solvency</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Certificaciones y solvencia de perfiles</masterLabel>
-        <translation><!-- Certificaciones y solvencia de perfiles --></translation>
+        <translation>Certifications and profiles solvency</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Desposicionamiento en cliente</masterLabel>
-        <translation><!-- Desposicionamiento en cliente --></translation>
+        <translation>Poor client presence</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Desposicionamiento en mercado</masterLabel>
-        <translation><!-- Desposicionamiento en mercado --></translation>
+        <translation>Poor market presence</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Falta capacidades</masterLabel>
-        <translation><!-- Falta capacidades --></translation>
+        <translation>Lack of capacity</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Falta de posicionamiento</masterLabel>
-        <translation><!-- Falta de posicionamiento --></translation>
+        <translation>Lack of positioning</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Falta referencias en otros clientes</masterLabel>
-        <translation><!-- Falta referencias en otros clientes --></translation>
+        <translation>Lack of references from other customers</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Falta viabilidad ejecución</masterLabel>
-        <translation><!-- Falta viabilidad ejecución --></translation>
+        <translation>Lack of feasibility of implementation</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Oferta económica</masterLabel>
-        <translation><!-- Oferta económica --></translation>
+        <translation>Economical Offer</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Oferta técnica</masterLabel>
-        <translation><!-- Oferta técnica --></translation>
+        <translation>Technical Offer</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Penalizaciones</masterLabel>
-        <translation><!-- Penalizaciones --></translation>
+        <translation>Penalties</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Plazo insuficiente</masterLabel>
-        <translation><!-- Plazo insuficiente --></translation>
+        <translation>Insufficient time</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Posicionamiento en cliente</masterLabel>
-        <translation><!-- Posicionamiento en cliente --></translation>
+        <translation>Customer positioning</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Posicionamiento en mercado</masterLabel>
-        <translation><!-- Posicionamiento en mercado --></translation>
+        <translation>Market positioning</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Proveedor habitual</masterLabel>
-        <translation><!-- Proveedor habitual --></translation>
+        <translation>Regular supplier</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Riesgo alto</masterLabel>
-        <translation><!-- Riesgo alto --></translation>
+        <translation>High Risk</translation>
     </picklistValues>
 </CustomFieldTranslation>

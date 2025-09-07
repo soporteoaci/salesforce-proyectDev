@@ -5,14 +5,14 @@
     <name>RIESGO__c</name>
     <picklistValues>
         <masterLabel>Alto Riesgo</masterLabel>
-        <translation><!-- Alto Riesgo --></translation>
+        <translation>High risk</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Bajo Riesgo</masterLabel>
-        <translation><!-- Bajo Riesgo --></translation>
+        <translation>Low risk</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Sin riesgo</masterLabel>
-        <translation><!-- Sin riesgo --></translation>
+        <translation>No risk</translation>
     </picklistValues>
 </CustomFieldTranslation>

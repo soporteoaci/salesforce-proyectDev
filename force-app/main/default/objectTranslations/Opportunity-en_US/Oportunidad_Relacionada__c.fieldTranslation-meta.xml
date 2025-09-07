@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Establece relación entre oportunidades individuales con la oferta marco u oferta interco a la que pertenecen. --></help>
+    <help>It establishes a relationship between individual opportunities with the framework offer or interco offer to which they belong.</help>
     <label>Related opportunity</label>
     <name>Oportunidad_Relacionada__c</name>
-    <relationshipLabel><!-- Oportunidades Relacionadas --></relationshipLabel>
+    <relationshipLabel>Related Opportunities</relationshipLabel>
 </CustomFieldTranslation>

@@ -9,11 +9,11 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Hitos</masterLabel>
-        <translation><!-- Hitos --></translation>
+        <translation>Milestones</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Horas trabajadas</masterLabel>
-        <translation><!-- Horas trabajadas --></translation>
+        <translation>Hours worked</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Mensual</masterLabel>
@@ -21,6 +21,6 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Trimestral</masterLabel>
-        <translation><!-- Trimestral --></translation>
+        <translation>Quarterly</translation>
     </picklistValues>
 </CustomFieldTranslation>

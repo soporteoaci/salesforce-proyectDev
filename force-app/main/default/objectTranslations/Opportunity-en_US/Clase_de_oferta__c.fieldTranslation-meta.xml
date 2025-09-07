@@ -4,50 +4,50 @@
     <name>Clase_de_oferta__c</name>
     <picklistValues>
         <masterLabel>Acuerdo Marco / SDA Privado</masterLabel>
-        <translation><!-- Acuerdo Marco / SDA Privado --></translation>
+        <translation>Framework Agreement/SDA Private</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Acuerdo Marco / SDA Público</masterLabel>
-        <translation><!-- Acuerdo Marco / SDA Público --></translation>
+        <translation>Framework Agreement/SDA Public</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Ampliación de Contrato</masterLabel>
-        <translation><!-- Ampliación de Contrato --></translation>
+        <translation>Contract Extension</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Información Previa</masterLabel>
-        <translation><!-- Información Previa --></translation>
+        <translation>Preliminary Information</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Invitación Acuerdo Marco / SDA</masterLabel>
-        <translation><!-- Invitación Acuerdo Marco / SDA --></translation>
+        <translation>Framework Agreement Invitation</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Invitación Pública</masterLabel>
-        <translation><!-- Invitación Pública --></translation>
+        <translation>Public Invitation</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Licitación Pública</masterLabel>
-        <translation><!-- Licitación Pública --></translation>
+        <translation>Public Tender</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Oferta interco</masterLabel>
-        <translation><!-- Oferta interco --></translation>
+        <translation>Interco Offer</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Petición EOI / Pre-Calificación</masterLabel>
-        <translation><!-- Petición EOI / Pre-Calificación --></translation>
+        <translation>EOI / Pre-Qualification Request</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Privada</masterLabel>
-        <translation><!-- Privada --></translation>
+        <translation>Private</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Pública</masterLabel>
-        <translation><!-- Pública --></translation>
+        <translation>Public</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Registro Proveedores</masterLabel>
-        <translation><!-- Registro Proveedores --></translation>
+        <translation>Supplier Registration</translation>
     </picklistValues>
 </CustomFieldTranslation>

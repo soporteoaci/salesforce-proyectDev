@@ -9,10 +9,10 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>No es necesario</masterLabel>
-        <translation><!-- No es necesario --></translation>
+        <translation>No, it is not necessary</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Sí</masterLabel>
-        <translation><!-- Sí --></translation>
+        <translation>Yes</translation>
     </picklistValues>
 </CustomFieldTranslation>

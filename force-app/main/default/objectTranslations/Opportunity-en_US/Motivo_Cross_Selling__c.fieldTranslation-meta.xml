@@ -4,18 +4,18 @@
     <name>Motivo_Cross_Selling__c</name>
     <picklistValues>
         <masterLabel>Cliente</masterLabel>
-        <translation><!-- Cliente --></translation>
+        <translation>Client</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Conocimiento de Mercados</masterLabel>
-        <translation><!-- Conocimiento de Mercados --></translation>
+        <translation>Markets</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Geografía</masterLabel>
-        <translation><!-- Geografía --></translation>
+        <translation>Geography</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Línea de Servicio</masterLabel>
-        <translation><!-- Línea de Servicio --></translation>
+        <translation>Offer</translation>
     </picklistValues>
 </CustomFieldTranslation>

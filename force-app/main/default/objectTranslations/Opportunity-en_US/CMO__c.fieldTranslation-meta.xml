@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- CMO --></label>
     <name>CMO__c</name>
-    <relationshipLabel><!-- Opportunities (CMO) --></relationshipLabel>
+    <relationshipLabel><!-- Oportunidades (CMO) --></relationshipLabel>
 </CustomFieldTranslation>

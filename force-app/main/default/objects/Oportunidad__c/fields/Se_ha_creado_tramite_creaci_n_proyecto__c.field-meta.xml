@@ -3,7 +3,7 @@
     <fullName>Se_ha_creado_tramite_creaci_n_proyecto__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Se ha creado un trámite en el tramitador para la creación de proyecto en SAP</description>
-    <inlineHelpText>Check this box if a process started in the processor for creating the project in SAP</inlineHelpText>
+    <inlineHelpText>Marque esta casilla si se ha creado un trámite en el tramitador para la creación de proyecto en SAP</inlineHelpText>
     <label>Se ha creado tramite creación proyecto</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

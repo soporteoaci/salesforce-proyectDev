@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Destinatarios__c</fullName>
     <externalId>false</externalId>
-    <inlineHelpText>Separate email with semicolon</inlineHelpText>
+    <inlineHelpText>Separar email con punto y coma &apos;;&apos;</inlineHelpText>
     <label>Destinatarios</label>
     <length>200</length>
     <required>false</required>
