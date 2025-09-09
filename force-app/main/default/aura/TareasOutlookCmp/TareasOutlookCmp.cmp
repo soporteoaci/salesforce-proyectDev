@@ -1,0 +1,372 @@
+<aura:component controller="TareasOutlookController" implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+    
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <!-- Handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    
+    <!-- ===================================== -->
+    <!-- Atributos de visualización y filtros -->
+    <!-- ===================================== -->
+    <aura:attribute name="fechaInicio" type="Date" />
+    <aura:attribute name="fechaFin" type="Date" />
+    <aura:attribute name="filtroEstado" type="String" default="Todas"/>
+    <aura:attribute name="mensajeFecha" type="String" />
+    <aura:attribute name="mensajeErrorFecha" type="String" default="" />
+    <aura:attribute name="mensajeErrorBusqueda" type="String" default="" />
+    <aura:attribute name="mensajeErrorFechaReunion" type="String" default="" />
+    <aura:attribute name="columnas" type="List" />
+    <aura:attribute name="borradores" type="Object" />
+    <aura:attribute name="cargando" type="Boolean" default="false" />
+    <aura:attribute name="hijasCache" type="Object" default="{}" />
+    
+    <!-- ================================ -->
+    <!-- Atributos de gestión de tareas -->
+    <!-- ================================ -->
+    <aura:attribute name="tareas" type="List" />
+    <aura:attribute name="tareasMostradas" type="List" />
+    <aura:attribute name="tareasExpandidas" type="List" default="[]" />
+    
+    <!-- ================================ -->
+    <!-- Atributos de creación de reunión -->
+    <!-- ================================ -->
+    <aura:attribute name="fechaReunion" type="Date" />
+    <aura:attribute name="contactosSeleccionados" type="List" />
+    <aura:attribute name="opcionesContactos" type="List" />
+    
+    <!-- ================================ -->
+    <!-- NUEVO: Atributos adicionales -->
+    <!-- ================================ -->
+    <aura:attribute name="subject" type="String" /> <!-- Asunto -->
+    <aura:attribute name="prioridad" type="String" /> <!-- Prioridad -->
+    <aura:attribute name="lineasServicio" type="List" /> <!-- Múltiples valores -->
+    <aura:attribute name="sectorMercado" type="String" /> <!-- Organizaci_n__c -->
+    <aura:attribute name="resumenEjecutivo" type="String" /> <!-- Description -->
+    <aura:attribute name="enviadaAgenda" type="Boolean" default="false" />
+    <aura:attribute name="enviadaAcuerdos" type="Boolean" default="false" />
+    <aura:attribute name="picklistMap" type="Object" /> <!-- Para valores dinámicos -->
+    
+    <!-- ================================ -->
+    <!-- Atributos relacionados con cuenta -->
+    <!-- ================================ -->
+    <aura:attribute name="cuentaSeleccionada" type="String" />
+    <aura:attribute name="busquedaCuenta" type="String" />
+    <aura:attribute name="resultadosCuentas" type="List" />
+    <aura:attribute name="mostrarResultados" type="Boolean" default="false" />
+    
+    <aura:attribute name="mostrarDualListbox" type="Boolean" default="false" />
+
+    <!-- ================================ -->
+    <!-- NUEVO: Estado para dual listbox custom (Líneas de Servicio) -->
+    <!-- ================================ -->
+    <aura:attribute name="lineasServicioDisponibles" type="List" />
+    <aura:attribute name="lineasServicioDisponiblesSeleccionadas" type="List" default="[]" />
+    <aura:attribute name="lineasServicioSeleccionadasDetalles" type="List" />
+    <aura:attribute name="lineasServicioSeleccionadasMarcadas" type="List" default="[]" />
+
+    <!-- ================================ -->
+    <!-- NUEVO: Estado para dual listbox custom (Contactos) -->
+    <!-- ================================ -->
+    <aura:attribute name="contactosDisponibles" type="List" />
+    <aura:attribute name="contactosDisponiblesSeleccionados" type="List" default="[]" />
+    <aura:attribute name="contactosSeleccionadosDetalles" type="List" />
+    <aura:attribute name="contactosSeleccionadosMarcados" type="List" default="[]" />
+    
+    <!-- ========================== -->
+    <!-- INTERFAZ Y TABSET GENERAL -->
+    <!-- ========================== -->
+    <lightning:card title="Tareas Outlook" iconName="standard:task">
+        <div class="slds-p-around_none">
+            <lightning:tabset variant="scoped">
+                
+                <!-- PESTAÑA 1: Ver tareas -->
+                <lightning:tab label="Mis Citas" id="tareas">
+                    <div class="slds-p-around_medium">
+                        <div class="form-section">
+                            <div class="form-section-title">Filtros</div>
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                                    <lightning:select name="filtroEstado" label="Filtrar Visitas"
+                                                      value="{!v.filtroEstado}" onchange="{!c.filtrarTareas}">
+                                        <option value="Todas">Todas las Visitas</option>
+                                        <option value="Agendadas">Solo las Agendadas</option>
+                                        <option value="Realizadas">Solo las Realizadas</option>
+                                    </lightning:select>
+                                </div>
+                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                                    <lightning:input type="date" name="fechaInicio" label="Fecha Inicio"
+                                                     value="{!v.fechaInicio}" onchange="{!c.filtrarTareas}" required="true" />
+                                </div>
+                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                                    <lightning:input type="date" name="fechaFin" label="Fecha Fin"
+                                                     value="{!v.fechaFin}" onchange="{!c.filtrarTareas}" required="true" />
+                                </div>
+                            </div>
+                            <aura:if isTrue="{!not(empty(v.mensajeFecha))}">
+                                <div class="slds-notify slds-notify_alert slds-theme_info slds-m-bottom_medium slds-m-top_medium" role="alert">
+                                    <lightning:icon iconName="utility:date_input" alternativeText="Fecha" size="x-small" class="slds-m-right_small" />
+                                    <span>{!v.mensajeFecha}</span>
+                                </div>
+                            </aura:if>
+                            <aura:if isTrue="{!not(empty(v.mensajeErrorFecha))}">
+                                <p class="errorMensaje slds-m-top_small slds-m-bottom_medium">{!v.mensajeErrorFecha}</p>
+                            </aura:if>
+                        </div>
+
+                        <div class="form-section">
+                            <div class="form-section-title">Listado</div>
+                            <div class="custom-table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Asunto</th>
+                                            <th>Estado</th>
+                                            <th>Fecha</th>
+                                            <th>Prioridad</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <aura:iteration items="{!v.tareasMostradas}" var="tarea">
+                                            <tr class="{!tarea.esHija ? 'fila-hija' : 'fila-padre'}">
+                                                <aura:if isTrue="{!tarea.esHija}">
+                                                    <td colspan="5">{!tarea.contactoNombre}</td>
+                                                </aura:if>
+                                                <aura:if isTrue="{!not(tarea.esHija)}">
+                                                    <td>{!tarea.Subject}</td>
+                                                    <td>{!tarea.Status}</td>
+                                                    <td>{!tarea.ActivityDate}</td>
+                                                    <td>{!tarea.Priority}</td>
+                                                    <td class="acciones-cell">
+                                                        <lightning:buttonIcon 
+                                                                              iconName="{!tarea.expandida ? 'utility:chevrondown' : 'utility:chevronright'}"
+                                                                              alternativeText="Expandir/Ocultar Hijas"
+                                                                              onclick="{!c.verHijasTarea}" value="{!tarea.Id}" name="toggleHijas"
+                                                                              class="accion-btn slds-m-right_x-small" />
+                                                        <lightning:buttonIcon 
+                                                                              iconName="utility:edit"
+                                                                              alternativeText="Editar Tarea"
+                                                                              onclick="{!c.verHijasTarea}" value="{!tarea.Id}" name="editarTarea"
+                                                                              class="accion-btn" />
+                                                    </td>
+                                                </aura:if>
+                                            </tr>
+                                        </aura:iteration>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <aura:if isTrue="{!not(empty(v.mensajeErrorBusqueda))}">
+                                <p class="errorMensaje slds-m-bottom_medium slds-m-top_medium">{!v.mensajeErrorBusqueda}</p>
+                            </aura:if>
+                        </div>
+                    </div>
+                </lightning:tab>
+                
+                <!-- PESTAÑA 2: Crear reunión -->
+                <lightning:tab label="Crear Visita" id="crearReunion">
+                    <aura:if isTrue="{!v.cargando}">
+                        <lightning:spinner alternativeText="Cargando..." size="medium" class="slds-m-bottom_medium" />
+                    </aura:if>
+                    <div class="slds-p-around_medium">
+                        <div class="form-section">
+                            <div class="form-section-title">Información Básica</div>
+                            <!-- NUEVO: Asunto -->
+                            <lightning:input name="subject" label="Asunto" value="{!v.subject}" required="true" class="slds-m-bottom_small"/>
+                            
+                            <!-- Fecha -->
+                            <div class="slds-grid slds-wrap slds-m-bottom_small">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <lightning:input type="date" name="fechaReunion" label="Fecha" value="{!v.fechaReunion}" required="true" />
+                                </div>
+                            </div>
+                            
+                            
+                            <!-- NUEVO: Prioridad -->
+                            <lightning:select name="prioridad" label="Prioridad" value="{!v.prioridad}" class="slds-m-bottom_small" required="true">
+                                <aura:iteration items="{!v.picklistMap.Priority}" var="opt">
+                                    <option value="{!opt}" selected="{!opt == 'Normal'}">{!opt}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                            
+                            <!-- NUEVO: Sector de Mercado -->
+                            <lightning:select name="sectorMercado" label="Sector de Mercado" value="{!v.sectorMercado}" class="slds-m-bottom_small" required="true">
+                                <option value="" selected="true" disabled="true">-- Seleccione --</option>
+                                <aura:iteration items="{!v.picklistMap.Organizaci_n__c}" var="opt">
+                                    <option value="{!opt}">{!opt}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                            
+                            
+                            <!-- NUEVO: Líneas de Servicio (dual listbox custom) -->
+                            <div class="slds-form-element slds-m-bottom_small">
+                                <label class="slds-form-element__label">Líneas de Servicio</label>
+                                <div class="slds-grid slds-wrap slds-dueling-list">
+                                    <!-- Disponibles -->
+                                    <div class="slds-dueling-list__column slds-size_1-of-1 slds-medium-size_5-of-12">
+                                        <span class="slds-form-element__label">Disponibles</span>
+                                        <ul class="slds-dueling-list__options slds-listbox slds-listbox_vertical" role="listbox">
+                                            <aura:iteration items="{!v.lineasServicioDisponibles}" var="op" indexVar="idx">
+                                                <li class="{! op.marked ? 'slds-listbox__option slds-is-selected' : 'slds-listbox__option' }"
+                                                    role="option"
+                                                    aria-selected="{!op.marked}"
+                                                    tabindex="0"
+                                                    data-value="{!op.value}"
+                                                    data-index="{!idx}"
+                                                    onclick="{!c.toggleDisponibleLinea}"
+                                                    ondblclick="{!c.doubleClickDisponibleLinea}">
+                                                    <span class="slds-truncate">{!op.label}</span>
+                                                </li>
+                                            </aura:iteration>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Botonera horizontal -->
+                                    <div class="slds-dueling-list__column_actions slds-size_1-of-1 slds-medium-size_2-of-12 custom-dual-actions">
+                                        <div class="slds-grid slds-grid_align-center">
+                                            <lightning:buttonIcon iconName="utility:chevrondown" title="Mover a seleccionadas" alternativeText="Mover a seleccionadas" onclick="{!c.moverADerechaLinea}"/>
+                                            <lightning:buttonIcon iconName="utility:chevronup" title="Mover a disponibles" alternativeText="Mover a disponibles" onclick="{!c.moverAIzquierdaLinea}"/>
+                                        </div>
+                                    </div>
+
+                                    <!-- Seleccionadas -->
+                                    <div class="slds-dueling-list__column slds-size_1-of-1 slds-medium-size_5-of-12">
+                                        <span class="slds-form-element__label">Seleccionadas</span>
+                                        <ul class="slds-dueling-list__options slds-listbox slds-listbox_vertical" role="listbox">
+                                            <aura:iteration items="{!v.lineasServicioSeleccionadasDetalles}" var="opSel" indexVar="idxSel">
+                                                <li class="{! opSel.marked ? 'slds-listbox__option slds-is-selected' : 'slds-listbox__option' }"
+                                                    role="option"
+                                                    aria-selected="{!opSel.marked}"
+                                                    tabindex="0"
+                                                    data-value="{!opSel.value}"
+                                                    data-index="{!idxSel}"
+                                                    onclick="{!c.toggleSeleccionadaLinea}"
+                                                    ondblclick="{!c.doubleClickSeleccionadaLinea}">
+                                                    <span class="slds-truncate">{!opSel.label}</span>
+                                                </li>
+                                            </aura:iteration>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <div class="form-section-title">Cuenta y Contactos</div>
+                            <!-- Contactos y cuentas -->
+                            <div aura:id="contenedorLookupCuenta" class="slds-form-element contenedor-cuenta-autocompletar">
+                                <lightning:input
+                                                 name="cuentaLookup"
+                                                 label="Seleccionar Cuenta"
+                                                 value="{!v.busquedaCuenta}"
+                                                 onchange="{!c.buscarCuentas}"
+                                                 onfocus="{!c.buscarCuentas}"
+                                                 required="true" />
+                                
+                                <aura:if isTrue="{!v.mostrarResultados}">
+                                    <ul class="slds-lookup__list slds-dropdown slds-dropdown_fluid slds-dropdown_length-5 slds-scrollable_y">
+                                        <aura:iteration items="{!v.resultadosCuentas}" var="cuenta">
+                                            <li class="slds-lookup__item"
+                                                role="presentation"
+                                                onclick="{!c.seleccionarCuenta}"
+                                                data-id="{!cuenta.value}"
+                                                data-nombre="{!cuenta.label}">
+                                                
+                                                <a href="javascript:void(0);" class="slds-truncate slds-grid slds-grid_vertical-align-center slds-p-around_x-small slds-has-hover">
+                                                    <lightning:icon iconName="standard:account"
+                                                                    size="x-small"
+                                                                    class="slds-m-right_small" />
+                                                    <span class="slds-truncate">{!cuenta.label}</span>
+                                                </a>
+                                            </li>
+                                        </aura:iteration>
+                                    </ul>
+                                </aura:if>
+                            </div>
+                            
+                            <aura:if isTrue="{!v.mostrarDualListbox}">
+                                <!-- Contactos: dual listbox custom -->
+                                <div class="slds-form-element slds-m-top_medium">
+                                    <label class="slds-form-element__label">Seleccionar Contactos</label>
+                                    <div class="slds-grid slds-wrap slds-dueling-list">
+                                        <!-- Disponibles -->
+                                        <div class="slds-dueling-list__column slds-size_1-of-1 slds-medium-size_5-of-12">
+                                            <span class="slds-form-element__label">Disponibles</span>
+                                            <ul class="slds-dueling-list__options slds-listbox slds-listbox_vertical" role="listbox">
+                                                <aura:iteration items="{!v.contactosDisponibles}" var="opC" indexVar="idxC">
+                                                    <li class="{! opC.marked ? 'slds-listbox__option slds-is-selected' : 'slds-listbox__option' }"
+                                                        role="option"
+                                                        aria-selected="{!opC.marked}"
+                                                        tabindex="0"
+                                                        data-value="{!opC.value}"
+                                                        data-index="{!idxC}"
+                                                        onclick="{!c.toggleDisponibleContacto}"
+                                                        ondblclick="{!c.doubleClickDisponibleContacto}">
+                                                        <span class="slds-truncate">{!opC.label}</span>
+                                                    </li>
+                                                </aura:iteration>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Botonera horizontal -->
+                                        <div class="slds-dueling-list__column_actions slds-size_1-of-1 slds-medium-size_2-of-12 custom-dual-actions">
+                                            <div class="slds-grid slds-grid_align-center">
+                                                <lightning:buttonIcon iconName="utility:chevrondown" title="Mover a seleccionados" alternativeText="Mover a seleccionados" onclick="{!c.moverADerechaContacto}"/>
+                                                <lightning:buttonIcon iconName="utility:chevronup" title="Mover a disponibles" alternativeText="Mover a disponibles" onclick="{!c.moverAIzquierdaContacto}"/>
+                                            </div>
+                                        </div>
+
+                                        <!-- Seleccionados -->
+                                        <div class="slds-dueling-list__column slds-size_1-of-1 slds-medium-size_5-of-12">
+                                            <span class="slds-form-element__label">Seleccionados</span>
+                                            <ul class="slds-dueling-list__options slds-listbox slds-listbox_vertical" role="listbox">
+                                                <aura:iteration items="{!v.contactosSeleccionadosDetalles}" var="opSelC" indexVar="idxSelC">
+                                                    <li class="{! opSelC.marked ? 'slds-listbox__option slds-is-selected' : 'slds-listbox__option' }"
+                                                        role="option"
+                                                        aria-selected="{!opSelC.marked}"
+                                                        tabindex="0"
+                                                        data-value="{!opSelC.value}"
+                                                        data-index="{!idxSelC}"
+                                                        onclick="{!c.toggleSeleccionadaContacto}"
+                                                        ondblclick="{!c.doubleClickSeleccionadaContacto}">
+                                                        <span class="slds-truncate">{!opSelC.label}</span>
+                                                    </li>
+                                                </aura:iteration>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aura:if>
+                        </div>
+
+                        <div class="form-section">
+                            <div class="form-section-title">Seguimiento</div>
+                            <!-- NUEVO: Resumen Ejecutivo -->
+                            <lightning:textarea name="resumenEjecutivo" label="Resumen Ejecutivo" value="{!v.resumenEjecutivo}" class="slds-m-top_medium" />
+                            
+                            <!-- NUEVO: Checkboxes -->
+                            <div class="slds-m-top_small slds-grid slds-grid_vertical slds-gutters">
+                                <div class="slds-col">
+                                    <lightning:input type="checkbox" label="Enviada Agenda" checked="{!v.enviadaAgenda}" />
+                                </div>
+                                <div class="slds-col slds-m-top_x-small">
+                                    <lightning:input type="checkbox" label="Enviada Acuerdos" checked="{!v.enviadaAcuerdos}" />
+                                </div>
+                            </div>
+                            
+                            <aura:if isTrue="{!not(empty(v.mensajeErrorFechaReunion))}">
+                                <p class="errorMensaje slds-m-bottom_medium slds-m-top_medium">{!v.mensajeErrorFechaReunion}</p>
+                            </aura:if>
+                        </div>
+
+                        <div class="form-footer">
+                            <lightning:button 
+                                              label="Crear Visita" 
+                                              variant="brand" 
+                                              onclick="{!c.crearReunion}" />
+                        </div>
+                    </div>
+                </lightning:tab>
+                
+            </lightning:tabset>
+        </div>
+    </lightning:card>
+</aura:component>

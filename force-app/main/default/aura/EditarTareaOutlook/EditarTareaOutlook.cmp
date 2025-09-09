@@ -1,0 +1,203 @@
+<aura:component controller="EditarTareaOutlookController"
+                access="global"
+                implements="flexipage:availableForAllPageTypes,force:hasRecordId">
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    
+    <!-- Mismos atributos que tenías antes -->
+    <aura:attribute name="tareaId" type="Id" />
+    <aura:attribute name="tarea" type="Task" />
+    <aura:attribute name="estadoOpciones" type="List" />
+    <aura:attribute name="estadoSeleccionado" type="String" />
+    <aura:attribute name="comoHaIdoOpciones" type="List" />
+    <aura:attribute name="siguientePasoOpciones" type="List" />
+    <aura:attribute name="lineasServicioOpciones" type="List" />
+    <aura:attribute name="lineasServicioSeleccionadas" type="List" />
+    <aura:attribute name="priorityOpciones" type="List" />
+    <aura:attribute name="organizacionOpciones" type="List" />
+    <aura:attribute name="tipoActividadOpciones" type="List" />
+    <!-- Cambiado a String para evitar problemas con lightning:input -->
+    <aura:attribute name="busquedaCuenta" type="String" />
+    <aura:attribute name="cuentaSeleccionada" type="Id" />
+    <aura:attribute name="mostrarResultados" type="Boolean" default="false"/>
+    <aura:attribute name="resultadosCuentas" type="List" />
+
+    <!-- NUEVO: estado para dual listbox custom -->
+    <aura:attribute name="lineasServicioDisponibles" type="List" />
+    <aura:attribute name="lineasServicioDisponiblesSeleccionadas" type="List" default="[]" />
+    <aura:attribute name="lineasServicioSeleccionadasDetalles" type="List" />
+    <aura:attribute name="lineasServicioSeleccionadasMarcadas" type="List" default="[]" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <!-- Container con la nueva clase para los estilos -->
+    <div class="outlook-container">
+        <!-- Header con icono y título -->
+        <div class="component-header">
+            <lightning:icon iconName="standard:task" size="small" />
+            <h2>Editar Tarea</h2>
+        </div>
+        
+        <div class="slds-p-around_medium">
+            <!-- Sección 1: Información Básica -->
+            <div class="form-section">
+                <div class="form-section-title">Información Básica</div>
+                <lightning:input type="date" name="fechaReunion" label="Fecha" 
+                                 value="{!v.tarea.ActivityDate}" required="true" />
+                
+                <lightning:input type="text" label="Asunto" value="{!v.tarea.Subject}" />
+                <!-- Renombrado: Descripción -> Resumen Ejecutivo -->
+                <lightning:textarea label="Resumen Ejecutivo" value="{!v.tarea.Description}" />
+                
+                <!-- NUEVO: Checkboxes Enviada Agenda / Enviada Acuerdos -->
+                <div class="slds-m-top_small slds-grid slds-grid_vertical slds-gutters">
+                    <div class="slds-col">
+                        <lightning:input type="checkbox" label="Enviada Agenda" checked="{!v.tarea.Enviada_Agenda__c}" />
+                    </div>
+                    <div class="slds-col slds-m-top_x-small">
+                        <lightning:input type="checkbox" label="Enviada Acuerdos" checked="{!v.tarea.Enviado_Acuerdos__c}" />
+                    </div>
+                </div>
+                
+                <lightning:select label="Estado" value="{!v.tarea.Estado__c}" 
+                                  onchange="{!c.cambiarEstado}">
+                    <aura:iteration items="{!v.estadoOpciones}" var="op">
+                        <option value="{!op}">{!op}</option>
+                    </aura:iteration>
+                </lightning:select>
+                
+                <lightning:select label="Prioridad" value="{!v.tarea.Priority}">
+                    <aura:iteration items="{!v.priorityOpciones}" var="op">
+                        <option value="{!op}">{!op}</option>
+                    </aura:iteration>
+                </lightning:select>
+            </div>
+            
+            <!-- Sección 2: Cliente y Organización -->
+            <div class="form-section">
+                <div class="form-section-title">Cliente y Organización</div>
+                
+                <div class="slds-form-element slds-lookup contenedor-cuenta-autocompletar" 
+                     aura:id="lookupContainer" data-select="single">
+                    <lightning:input name="cuentaLookup" label="Cuenta"
+                                     value="{!v.busquedaCuenta}"
+                                     onchange="{!c.buscarCuentas}"
+                                     onfocus="{!c.buscarCuentas}"
+                                     placeholder="Escribe el nombre de la cuenta..."
+                                     required="true" />
+                    
+                    <!-- Lista de resultados -->
+                    <aura:if isTrue="{!v.mostrarResultados}">
+                        <div class="slds-lookup__menu slds-show" role="listbox">
+                            <ul class="slds-lookup__list" role="presentation">
+                                <aura:iteration items="{!v.resultadosCuentas}" var="cuenta">
+                                    <li class="slds-lookup__item"
+                                        role="presentation"
+                                        onclick="{!c.seleccionarCuenta}"
+                                        data-id="{!cuenta.value}"
+                                        data-nombre="{!cuenta.label}">
+                                        
+                                        <a href="javascript:void(0);" class="slds-truncate">
+                                            <lightning:icon iconName="standard:account" size="x-small" />
+                                            <span class="slds-truncate">{!cuenta.label}</span>
+                                        </a>
+                                    </li>
+                                </aura:iteration>
+                            </ul>
+                        </div>
+                    </aura:if>
+                </div>
+                
+                <lightning:select label="Organización" value="{!v.tarea.Organizaci_n__c}">
+                    <aura:iteration items="{!v.organizacionOpciones}" var="op">
+                        <option value="{!op}">{!op}</option>
+                    </aura:iteration>
+                </lightning:select>
+                
+                <lightning:select label="Tipo Actividad" value="{!v.tarea.Tipo_Actividad_Administrador__c}">
+                    <aura:iteration items="{!v.tipoActividadOpciones}" var="op">
+                        <option value="{!op}">{!op}</option>
+                    </aura:iteration>
+                </lightning:select>
+            </div>
+            
+            <!-- Sección 3: Detalles del Servicio -->
+            <div class="form-section">
+                <div class="form-section-title">Detalles del Servicio</div>
+                
+                <!-- DUAL LISTBOX CUSTOM: control total de la botonera en horizontal -->
+                <div class="slds-grid slds-wrap slds-dueling-list">
+                    <!-- Disponibles -->
+                    <div class="slds-dueling-list__column slds-size_1-of-1 slds-medium-size_5-of-12">
+                        <span class="slds-form-element__label">Disponibles</span>
+                        <ul class="slds-dueling-list__options slds-listbox slds-listbox_vertical" role="listbox">
+                            <aura:iteration items="{!v.lineasServicioDisponibles}" var="op" indexVar="idx">
+                                <li class="{! op.marked ? 'slds-listbox__option slds-is-selected' : 'slds-listbox__option' }"
+                                    role="option"
+                                    aria-selected="{!op.marked}"
+                                    tabindex="0"
+                                    data-value="{!op.value}"
+                                    data-index="{!idx}"
+                                    onclick="{!c.toggleDisponible}"
+                                    ondblclick="{!c.doubleClickDisponible}">
+                                    <span class="slds-truncate">{!op.label}</span>
+                                </li>
+                            </aura:iteration>
+                        </ul>
+                    </div>
+
+                    <!-- Botonera horizontal -->
+                    <div class="slds-dueling-list__column_actions slds-size_1-of-1 slds-medium-size_2-of-12 custom-dual-actions">
+                        <div class="slds-grid slds-grid_align-center">
+                            <lightning:buttonIcon iconName="utility:chevrondown" title="Mover a seleccionadas" alternativeText="Mover a seleccionadas" onclick="{!c.moverADerecha}"/>
+                            <lightning:buttonIcon iconName="utility:chevronup" title="Mover a disponibles" alternativeText="Mover a disponibles" onclick="{!c.moverAIzquierda}"/>
+                        </div>
+                    </div>
+
+                    <!-- Seleccionadas -->
+                    <div class="slds-dueling-list__column slds-size_1-of-1 slds-medium-size_5-of-12">
+                        <span class="slds-form-element__label">Seleccionadas</span>
+                        <ul class="slds-dueling-list__options slds-listbox slds-listbox_vertical" role="listbox">
+                            <aura:iteration items="{!v.lineasServicioSeleccionadasDetalles}" var="opSel" indexVar="idxSel">
+                                <li class="{! opSel.marked ? 'slds-listbox__option slds-is-selected' : 'slds-listbox__option' }"
+                                    role="option"
+                                    aria-selected="{!opSel.marked}"
+                                    tabindex="0"
+                                    data-value="{!opSel.value}"
+                                    data-index="{!idxSel}"
+                                    onclick="{!c.toggleSeleccionada}"
+                                    ondblclick="{!c.doubleClickSeleccionada}">
+                                    <span class="slds-truncate">{!opSel.label}</span>
+                                </li>
+                            </aura:iteration>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Campos adicionales visibles SOLO si Estado = Realizada -->
+            <aura:if isTrue="{!v.estadoSeleccionado == 'Realizada'}">
+                <div class="campos-adicionales">
+                    <div class="form-section-title">Seguimiento</div>
+                    
+                    <lightning:select label="¿Cómo ha ido?" value="{!v.tarea.Como_ha_ido__c}" required="true">
+                        <aura:iteration items="{!v.comoHaIdoOpciones}" var="op">
+                            <option value="{!op}">{!op}</option>
+                        </aura:iteration>
+                    </lightning:select>
+                
+                    <lightning:select label="Siguiente Paso" value="{!v.tarea.Siguiente_Paso__c}" required="true">
+                        <aura:iteration items="{!v.siguientePasoOpciones}" var="op">
+                            <option value="{!op}">{!op}</option>
+                        </aura:iteration>
+                    </lightning:select>
+                </div>
+            </aura:if>
+        </div>
+        
+        <!-- Footer con botones -->
+        <div class="form-footer">
+            <lightning:button variant="neutral" label="Cancelar" onclick="{!c.cancelar}" />
+            <lightning:button variant="brand" label="Guardar" onclick="{!c.guardarTarea}" />
+        </div>
+    </div>
+</aura:component>

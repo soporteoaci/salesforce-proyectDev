@@ -3,16 +3,16 @@
     <doesEmailLogAsEmailMessageInOutlook>true</doesEmailLogAsEmailMessageInOutlook>
     <enableContactAndEventSync>false</enableContactAndEventSync>
     <enableContextualEverywhere>true</enableContextualEverywhere>
-    <enableEmailTrackingInMobile>false</enableEmailTrackingInMobile>
+    <enableEmailTrackingInMobile>true</enableEmailTrackingInMobile>
     <enableEngageForOutlook>false</enableEngageForOutlook>
     <enableExtensionHostUnrestricted>true</enableExtensionHostUnrestricted>
     <enableGmailIntegration>false</enableGmailIntegration>
-    <enableInboxInternalEmailTracking>false</enableInboxInternalEmailTracking>
+    <enableInboxInternalEmailTracking>true</enableInboxInternalEmailTracking>
     <enableInboxMobileIntune>false</enableInboxMobileIntune>
     <enableOutlookIntegration>true</enableOutlookIntegration>
-    <enableProductivityFeatures>false</enableProductivityFeatures>
+    <enableProductivityFeatures>true</enableProductivityFeatures>
     <enableSupplementalContactInfoInMobile>false</enableSupplementalContactInfoInMobile>
-    <isLayoutCustomizationAllowed>false</isLayoutCustomizationAllowed>
+    <isLayoutCustomizationAllowed>true</isLayoutCustomizationAllowed>
     <orgIsSyncingEventsOutbound>false</orgIsSyncingEventsOutbound>
     <shouldUseTrustedDomainsList>true</shouldUseTrustedDomainsList>
 </EmailIntegrationSettings>

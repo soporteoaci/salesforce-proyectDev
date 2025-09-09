@@ -1,0 +1,68 @@
+.THIS .errorMensaje {
+    color: #c23934;
+    font-weight: 600;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.THIS .slds-lookup__list {
+    position: absolute;
+    z-index: 9999;
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    animation: slideDown 0.2s ease-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.THIS .slds-lookup__item:hover {
+    background-color: #f3f6f9;
+    cursor: pointer;
+}
+
+.THIS .slds-lookup__item a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.THIS .slds-card {
+    animation: fadeInUp 0.4s ease-out;
+}
+
+.THIS .slds-input:focus,
+.THIS .slds-combobox__input:focus {
+    box-shadow: 0 0 0 2px #1589ee;
+    border-color: #1589ee;
+}
+
+.THIS .slds-button_brand {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.THIS .slds-button_brand:hover {
+    background-color: #0070d2;
+}
+
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-8px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

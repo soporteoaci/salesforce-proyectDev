@@ -818,6 +818,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Probability</fieldItem>
+                <identifier>RecordProbabilityField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Sociedad_Ayesa__c</fieldItem>
                 <identifier>RecordSociedad_Ayesa_cField2</identifier>
             </fieldInstance>
@@ -1289,6 +1299,52 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Oferta_SAP__c</fieldItem>
                 <identifier>RecordOferta_SAP_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Fecha_de_solicitud_de_soporte__c</fieldItem>
+                <identifier>RecordFecha_de_solicitud_de_soporte_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>CRM Licitaciones</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Go_Presentaci_n_Oferta__c</fieldItem>
+                <identifier>RecordGo_Presentaci_n_Oferta_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>CRM Licitaciones</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2391,6 +2447,16 @@
                 <identifier>RecordInformar_PRL_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Apoyo_de_Soporte_a_Ofertas__c</fieldItem>
+                <identifier>RecordApoyo_de_Soporte_a_Ofertas_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-fcca8e2f-7d36-44bf-b202-eeb0272bb84d</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2823,6 +2889,23 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.VB_linea_de_servicio__c</fieldItem>
                 <identifier>RecordVB_linea_de_servicio_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Apoyo_de_Soporte_a_Ofertas__c</fieldItem>
+                <identifier>RecordApoyo_de_Soporte_a_Ofertas_cField2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Propietario_custom__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>$User.Id</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-1587564b-4707-4bf6-b07d-4b8c540545dd</name>
@@ -4797,6 +4880,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.VTH_Technology_Level_2__c</fieldItem>
                 <identifier>RecordVTH_Technology_Level_2_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Innovation_Work_Stream__c</fieldItem>
+                <identifier>RecordInnovation_Work_Stream_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-4ee450fe-76eb-4bbb-8ec0-d1005061ff2c</name>

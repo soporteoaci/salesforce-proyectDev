@@ -104,6 +104,10 @@
         <name>Presupuesto</name>
     </recordTypes>
     <validationRules>
+        <errorMessage><!-- El campo Apoyo de Soporte a Ofertas es solo editable por el responsable de la oferta. --></errorMessage>
+        <name>Apoyo_de_Soporte_a_Ofertas</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>Prior to changing status to Approved pending Submittal, you must have entered the SAP Offer code</errorMessage>
         <name>Aprobacion_con_datos_QA_informados</name>
     </validationRules>
@@ -360,6 +364,13 @@
         <name>Presentada_Importe_Total_Ofertado</name>
     </validationRules>
     <validationRules>
+        <errorMessage>
+            <!-- Valor no permitido. Seleccione uno de los siguientes valores:
+0,10,30,50,70,90,100. -->
+        </errorMessage>
+        <name>Probabilidad_Valores_Permitidos</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Para poder crear la nueva referencia comercial debe elegir una o varias tecnologías que se utilizarían en el futuro PEP. --></errorMessage>
         <name>RefComercial_Si_AreaTecnologia</name>
     </validationRules>
@@ -419,6 +430,10 @@
         <errorMessage>Before proceeding to Pending Approval report the fields in the &apos;Information&apos; section of the &apos;Offer&apos; tab.</errorMessage>
         <name>informacion_Correo_Aprobacion_Oferta</name>
     </validationRules>
+    <webLinks>
+        <label><!-- Oferta_SAP_ING --></label>
+        <name>Oferta_SAP_ING</name>
+    </webLinks>
     <workflowTasks>
         <name>Fecha_Vencimiento</name>
         <subject><!-- Vencimiento Fecha Presentación --></subject>

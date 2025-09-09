@@ -538,11 +538,19 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CrearContactoDesdeOutlookCtrl</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DividirPicklist</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>DividirPicklist_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditarTareaOutlookController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -819,6 +827,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Tarea_aprobacion_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TareasOutlookController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1400,6 +1412,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Ofertas_presentadas__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.OperatingHoursId</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4384,6 +4401,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Event.Clic_Comercial_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Event.Clic_comercial__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4416,6 +4438,11 @@
         <editable>true</editable>
         <field>Event.Description</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.End_Event__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4454,6 +4481,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Event.Id_Evento__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Event.Iniciativa__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4480,6 +4512,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Event.Location</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Name_Tema__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4519,6 +4556,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Event.Origen_Tarea__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Event.Perfil_Propietario__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4529,7 +4571,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Event.Start_Event__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Event.Tarea_Id_18__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Tarea_Padre__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -8244,6 +8296,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Apoyo_de_Soporte_a_Ofertas__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Aprobacion_Borrador_Acuerdo_de_Socios__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8564,6 +8621,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Correo_Oferta_enviado__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Crear_expediente__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8874,6 +8936,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Fecha_de_solicitud_de_soporte__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Fecha_estimada_de_cierre__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8945,6 +9012,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Gestion_CV__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Go_Presentaci_n_Oferta__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12489,6 +12561,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Task.Clic_Comercial_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Task.Clic_comercial__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -12521,6 +12598,11 @@
         <editable>true</editable>
         <field>Task.Description</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.End_Event__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -12559,6 +12641,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Task.Id_Evento__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Task.Iniciativa__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -12576,6 +12663,11 @@
         <editable>false</editable>
         <field>Task.Lineas_de_Servicio__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Name_Tema__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -12614,6 +12706,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Task.Origen_Tarea__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Task.Perfil_Propietario__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -12624,7 +12721,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Task.Start_Event__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Task.Tarea_Id_18__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Tarea_Padre__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12902,6 +13009,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Codigo_Oferta_SAP_Ingenieria</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Control_SLA_Ticket</flow>
     </flowAccesses>
     <flowAccesses>
@@ -12959,6 +13070,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Notificaci_n_Personalizada_en_Chatter</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Notificar_Apoyo_Soporte_Ofertas_Flow</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

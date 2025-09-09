@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Activity</baseObject>
-    <category>activities</category>
+    <category>other</category>
     <deployed>true</deployed>
     <description>Actividades y relacionados</description>
     <label>New Actividades y relacionados</label>
@@ -9,6 +9,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>IsTask</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Clic_Comercial_Name__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Name_Tema__c</field>
             <table>Activity</table>
         </columns>
         <columns>
@@ -264,11 +274,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Objetivo__c</field>
-            <table>Activity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Oportunidad__c</field>
             <table>Activity</table>
         </columns>
         <columns>

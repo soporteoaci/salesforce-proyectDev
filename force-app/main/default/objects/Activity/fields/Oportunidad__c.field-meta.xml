@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Oportunidad__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
-    <label>Oportunidad Custom</label>
+    <label>Oportunidad</label>
     <referenceTo>Oportunidad__c</referenceTo>
     <relationshipLabel>Activities</relationshipLabel>
     <relationshipName>Activities</relationshipName>

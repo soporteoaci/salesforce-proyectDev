@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -127,6 +126,18 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Bookings_breakdown__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Fecha_de_solicitud_de_soporte__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Go_Presentaci_n_Oferta__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Apoyo_de_Soporte_a_Ofertas__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>

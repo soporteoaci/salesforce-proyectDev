@@ -11,43 +11,11 @@
         <translation>Framework Agreement/SDA Public</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Ampliación de Contrato</masterLabel>
-        <translation>Contract Extension</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Información Previa</masterLabel>
-        <translation>Preliminary Information</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Invitación Acuerdo Marco / SDA</masterLabel>
-        <translation>Framework Agreement Invitation</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Invitación Pública</masterLabel>
-        <translation>Public Invitation</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Licitación Pública</masterLabel>
-        <translation>Public Tender</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Oferta interco</masterLabel>
-        <translation>Interco Offer</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Petición EOI / Pre-Calificación</masterLabel>
-        <translation>EOI / Pre-Qualification Request</translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Privada</masterLabel>
         <translation>Private</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Pública</masterLabel>
         <translation>Public</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Registro Proveedores</masterLabel>
-        <translation>Supplier Registration</translation>
     </picklistValues>
 </CustomFieldTranslation>

@@ -240,6 +240,7 @@ public class ExtensionOppController {
                                                         oppExtension.Pais__c = oppClonada.Pais__c;
                                                         oppExtension.Sociedad_Ayesa__c= oppClonada.Sociedad_Ayesa__c;
                                                         oppExtension.Tipo_Oportunidad__c =OppClonada.Tipo_Oportunidad__c;
+                                                        oppExtension.CPV_varios__c=oppClonada.CPV_varios__c;
                                                         
                                                         oppExtension.Clonada__c = true;
                                                         oppExtension.Modificar_importes__c = true ;

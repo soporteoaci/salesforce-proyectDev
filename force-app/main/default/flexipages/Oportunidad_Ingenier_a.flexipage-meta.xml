@@ -49,6 +49,9 @@
                             <value>Opportunity.Clonar_Oportunidad</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>CustomButton.Opportunity.Oferta_SAP_ING</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Share</value>
                             <visibilityRule>
                                 <booleanFilter>1 OR 2</booleanFilter>
@@ -1068,6 +1071,29 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Oferta_SAP__c</fieldItem>
                 <identifier>RecordOferta_SAP_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Correo_Oferta_enviado__c</fieldItem>
+                <identifier>RecordCorreo_Oferta_enviado_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>CRM Licitaciones</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2705,16 +2731,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Responsable_linea_de_servicio__c</fieldItem>
-                <identifier>RecordResponsable_linea_de_servicio_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Auxiliar_Delivery_Center__c</fieldItem>
                 <identifier>RecordAuxiliar_Delivery_Center_cField</identifier>
                 <visibilityRule>
@@ -2724,16 +2740,6 @@
                         <rightValue>dmin</rightValue>
                     </criteria>
                 </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Responsable_Preventa__c</fieldItem>
-                <identifier>RecordResponsable_Preventa_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

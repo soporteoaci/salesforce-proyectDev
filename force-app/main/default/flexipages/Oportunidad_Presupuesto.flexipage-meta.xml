@@ -3975,6 +3975,16 @@
                 <identifier>RecordVTH_Technology_Level_2_cField2</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Innovation_Work_Stream__c</fieldItem>
+                <identifier>RecordInnovation_Work_Stream_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-4ee450fe-76eb-4bbb-8ec0-d1005061ff2c</name>
         <type>Facet</type>
     </flexiPageRegions>

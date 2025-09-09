@@ -86,8 +86,42 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Engagement Metrics</label>
-        <layoutColumns/>
-        <layoutColumns/>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>DeliveryRate</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>TotalDelivered</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>UniqueOpens</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>UniqueTrackedLinkClicks</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>TotalOpens</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>TotalTrackedLinkClicks</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>TotalSoftBounced</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>TotalHardBounced</field>
+            </layoutItems>
+        </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>

@@ -1,0 +1,411 @@
+/* Tema Salesforce y variables (alineado con EditarTareaOutlook) */
+.THIS {
+    --sf-blue: #0070d2;
+    --sf-blue-dark: #005fb2;
+    --sf-blue-light: #e3f1fc;
+    --sf-blue-gradient: linear-gradient(45deg, #0070d2, #1589ee);
+    --sf-border: #d8dde6;
+    --sf-text: #16325c;
+    --sf-text-light: #54698d;
+    --sf-white: #ffffff;
+    --sf-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Añadido para igualar fuente/color base */
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: var(--sf-text);
+}
+
+/* Ajustes de tarjeta estándar y overflow */
+.THIS .slds-card {
+    overflow-x: hidden; /* evita scroll horizontal del componente */
+}
+
+/* Secciones y títulos como en EditarTareaOutlook */
+.THIS .form-section {
+    padding: 0 16px 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--sf-border);
+}
+.THIS .form-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.THIS .form-section-title {
+    color: var(--sf-blue);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--sf-blue-light);
+}
+
+/* Ritmo de formulario y labels como EditarTareaOutlook */
+.THIS .slds-form-element { margin-bottom: 12px; }
+.THIS .slds-form-element__label {
+    color: var(--sf-text-light);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Inputs/selects: tamaños y enfoque */
+.THIS .slds-input,
+.THIS .slds-select,
+.THIS .slds-textarea {
+    border: 1px solid var(--sf-border);
+    border-radius: 4px;
+}
+.THIS .slds-select { height: 36px; }
+.THIS .slds-input[type="date"] { min-height: 36px; padding-right: 36px; }
+.THIS .slds-form-element.slds-dropdown-trigger { position: relative; }
+.THIS .slds-input:focus,
+.THIS .slds-select:focus,
+.THIS .slds-textarea:focus {
+    border-color: var(--sf-blue);
+    box-shadow: 0 0 0 1px var(--sf-blue);
+}
+
+/* Paridad de PICKLIST con EditarTareaOutlook */
+.THIS .slds-input,
+.THIS .slds-select { transition: border-color 0.2s, box-shadow 0.2s; }
+.THIS .slds-input:focus,
+.THIS .slds-combobox__input:focus {
+    box-shadow: 0 0 0 1px var(--sf-blue) !important;
+    border-color: var(--sf-blue) !important;
+}
+
+/* Lookup: contenedor/menú igualado */
+.THIS .contenedor-cuenta-autocompletar { position: relative; width: 100%; margin-bottom: 16px; }
+.THIS .slds-lookup__menu {
+    position: absolute; top: 100%; left: 0; right: 0; z-index: 9999;
+    background-color: var(--sf-white); border: 1px solid var(--sf-border);
+    border-radius: 4px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 4px; padding: 0; animation: slideDown 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Botones base */
+.THIS .slds-button {
+    height: 36px; border-radius: 4px; transition: background-color 0.2s, transform 0.1s;
+    font-weight: 500; padding: 0 16px;
+}
+.THIS .slds-button:active { transform: translateY(1px); }
+
+/* Footer con acciones */
+.THIS .form-footer {
+    background-color: #f7f9fb; padding: 12px 16px; border-top: 1px solid var(--sf-border);
+    display: flex; justify-content: flex-end; gap: 8px;
+}
+
+/* Dual list: contenedor alineado al otro cmp */
+.THIS .slds-dueling-list {
+    background-color: #f7f9fb; border: 1px solid var(--sf-border); border-radius: 4px; padding: 8px; margin-bottom: 16px; align-items: stretch;
+}
+.THIS .slds-dueling-list__column { padding: 0; position: relative; box-sizing: border-box; min-width: 0; flex: 1 1 0; }
+.THIS .slds-dueling-list__options {
+    border: 1px solid var(--sf-border); border-radius: 4px; background-color: var(--sf-white);
+    max-height: 200px; overflow-y: auto; overflow-x: hidden; width: 100%; max-width: 100%;
+}
+.THIS .slds-dueling-list__options .slds-listbox__option {
+    padding: 8px 12px; transition: background-color 0.15s ease; cursor: pointer; border-bottom: 1px solid #f5f5f5;
+    -ms-user-select: none; user-select: none;
+}
+.THIS .slds-dueling-list__options .slds-listbox__option:hover { background-color: #f5f7fa; }
+.THIS .slds-dueling-list__options .slds-truncate { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.THIS .slds-dueling-list__options .slds-is-selected { background-color: var(--sf-blue-light); color: var(--sf-blue-dark); font-weight: 600; }
+.THIS .slds-dueling-list__column .slds-form-element__label { color: var(--sf-text); font-weight: 600; margin-bottom: 4px; padding-left: 2px; }
+
+/* Botonera actions horizontal/compacta */
+.THIS .slds-dueling-list__column_actions,
+.THIS lightning-dual-listbox .slds-dueling-list__column_actions {
+    display: inline-flex !important; flex-direction: row !important; flex-wrap: nowrap !important; align-items: center !important; justify-content: center !important; gap: 2px !important;
+    width: 80px !important; flex: 0 0 80px !important; white-space: nowrap !important;
+}
+.THIS .slds-dueling-list__column_actions .slds-button { height: 32px; width: 32px; padding: 0; margin: 0; display: flex; align-items: center; justify-content: center; }
+.THIS .slds-dueling-list__column_actions .slds-button:nth-child(n+5):nth-child(-n+8),
+.THIS lightning-dual-listbox .slds-dueling-list__column_actions .slds-button:nth-child(n+5),
+.THIS .slds-dueling-list__column_actions button[title*="Up"],
+.THIS .slds-dueling-list__column_actions button[title*="Down"],
+.THIS .slds-dueling-list__column_actions button[aria-label*="Up"],
+.THIS .slds-dueling-list__column_actions button[aria-label*="Down"] {
+    display: none !important; visibility: hidden !important; opacity: 0 !important; position: absolute !important; pointer-events: none !important; height: 0 !important; width: 0 !important; overflow: hidden !important;
+}
+.THIS .slds-dueling-list__column_actions .slds-button:nth-child(-n+4) { display: flex !important; }
+
+/* Hover de filas de tabla */
+.THIS .custom-table tbody tr:hover { background-color: #eef1f6; }
+
+.THIS .errorMensaje {
+    color: #c23934; background: #fdd; padding: 0.5rem; margin-bottom: 0.5rem; border: 1px solid #c23934; border-radius: 4px; animation: fadeout 2s forwards;
+}
+
+.THIS .slds-lookup__list {
+    position: absolute; z-index: 9999; background-color: #ffffff; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15); border-radius: 0.25rem; animation: slideDown 0.2s ease-out; transition: all 0.2s ease-in-out;
+}
+.THIS .slds-lookup__item:hover { background-color: #f3f6f9; cursor: pointer; }
+.THIS .slds-lookup__item a { display: flex; align-items: center; gap: 0.5rem; font-weight: 500; color: #2e2e2e; }
+.THIS .slds-card { animation: fadeInUp 0.4s ease-out; }
+.THIS .slds-input:focus,
+.THIS .slds-combobox__input:focus { box-shadow: 0 0 0 1px var(--sf-blue) !important; border-color: var(--sf-blue) !important; }
+.THIS .slds-button_brand { transition: background-color 0.2s ease-in-out; }
+.THIS .slds-button_brand:hover { background-color: #0070d2; }
+
+/* Tabs neutrales, compactas y sin bordes azules personalizados */
+.THIS .slds-tabs_scoped { margin: 0; }
+.THIS .slds-tabs_scoped__nav {
+    background: transparent; border-bottom: 1px solid var(--sf-border); padding: 0 8px; border-radius: 0;
+}
+.THIS .slds-tabs_scoped__item { margin-right: 4px; }
+.THIS .slds-tabs_scoped__link {
+    padding: 6px 10px; border-radius: 0; color: var(--sf-text-light); font-weight: 600;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s; border: 0; background: transparent; box-shadow: none;
+}
+.THIS .slds-tabs_scoped__item .slds-tabs_scoped__link:hover { background-color: #f7f9fb; color: var(--sf-text); }
+.THIS .slds-tabs_scoped__item.slds-is-active .slds-tabs_scoped__link {
+    background: transparent; color: var(--sf-text); border: 0; box-shadow: none; position: relative;
+}
+.THIS .slds-tabs_scoped__item.slds-is-active .slds-tabs_scoped__link:after {
+    content: ''; position: absolute; left: 8px; right: 8px; bottom: -1px; height: 2px; background: var(--sf-border); border-radius: 1px;
+}
+.THIS .slds-tabs_scoped__content { padding-top: 8px; overflow-x: hidden; }
+
+@keyframes slideDown { 0% { opacity: 0; transform: translateY(-8px); } 100% { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeout { 0% { opacity: 1; } 90% { opacity: 1; } 100% { opacity: 0; display: none; } }
+
+/* Tabla compacta */
+.THIS .custom-table-wrapper { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.THIS .custom-table {
+    width: 100%;
+    min-width: 800px; /* force horizontal scroll on narrow viewports */
+    border-collapse: collapse;
+    font-size: 13px;
+    border: 1px solid #d8dde6;
+    background: #fff;
+    table-layout: fixed; /* keep cells compact and enable ellipsis */
+}
+.THIS .custom-table th, .THIS .custom-table td {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #d8dde6;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 1px;
+    /* allow truncation in fixed layout */
+}
+.THIS .custom-table th { background-color: #f4f6f9; font-weight: 600; color: #3e3e3c; text-transform: uppercase; font-size: 11px; }
+.THIS .fila-padre { background-color: #f9fafb; font-weight: bold; }
+.THIS .fila-hija { background-color: #ffffff; }
+.THIS .fila-hija td { padding-left: 1.5rem; font-style: italic; color: #5f5f5f; }
+
+/* Responsive para distintos tamaños */
+@media (max-width: 480px) {
+    .THIS .component-header { padding: 12px; }
+    .THIS .form-section { padding: 0 12px 12px; }
+    .THIS .form-footer { flex-direction: column; }
+    .THIS .slds-dueling-list { flex-direction: column; }
+    .THIS .slds-dueling-list__column { width: 100%; margin-bottom: 8px; }
+    .THIS .slds-dueling-list__column_actions {
+        width: 100% !important;
+        height: 40px;
+        margin: 8px 0;
+        justify-content: center !important;
+        gap: 8px !important;
+    }
+}
+
+/* Overrides: sin hover en tabs y borde del panel más visible */
+.THIS .slds-tabs_scoped__item .slds-tabs_scoped__link:hover,
+.THIS .outlook-container .slds-tabs_scoped__item .slds-tabs_scoped__link:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Refuerzo de borde azul del panel de contenido de pestañas */
+.THIS .outlook-container .slds-tabs_scoped__content {
+    border-color: #c4d7fb !important; /* más contraste */
+    box-shadow: 0 1px 3px rgba(0, 112, 210, 0.08) !important; /* leve refuerzo */
+    overflow-x: hidden !important; /* evitar scroll lateral */
+}
+
+/* Reset/neutral tab styling (remove custom blue look) */
+.THIS .outlook-container .slds-tabs_scoped__nav {
+    background: transparent !important;
+    border-bottom: 1px solid var(--sf-border) !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+.THIS .slds-tabs_scoped__nav { /* generic as well */
+    background: transparent !important;
+    border-bottom: 1px solid var(--sf-border) !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+.THIS .outlook-container .slds-tabs_scoped__item .slds-tabs_scoped__link,
+.THIS .slds-tabs_scoped__item .slds-tabs_scoped__link {
+    background: transparent !important;
+    color: inherit !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0.5rem 0.75rem !important; /* neutral spacing */
+}
+.THIS .outlook-container .slds-tabs_scoped__item.slds-is-active .slds-tabs_scoped__link,
+.THIS .slds-tabs_scoped__item.slds-is-active .slds-tabs_scoped__link {
+    background: transparent !important;
+    color: inherit !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.THIS .outlook-container .slds-tabs_scoped__content,
+.THIS .slds-tabs_scoped__content {
+    background: transparent !important;
+    border: none !important;
+    border-top: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding-top: 0 !important;
+    overflow-x: hidden !important; /* evitar scroll lateral */
+}
+
+/* Main component: apply neutral Salesforce (card-like) style */
+.THIS .outlook-container {
+    background-color: var(--sf-white) !important;
+    border: 1px solid var(--sf-border) !important;
+    border-radius: 0.25rem !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+}
+.THIS .component-header {
+    background: var(--sf-white) !important;
+    color: var(--sf-text) !important;
+    border-bottom: 1px solid var(--sf-border) !important;
+    box-shadow: none !important;
+}
+.THIS .component-header .slds-icon {
+    fill: var(--sf-blue) !important;
+    filter: none !important;
+}
+.THIS .component-header h2 { text-shadow: none !important; }
+
+/* Tabs: remove black focus border and add subtle neutral active state */
+.THIS .slds-tabs_scoped__item .slds-tabs_scoped__link:focus,
+.THIS .slds-tabs_scoped__item .slds-tabs_scoped__link:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.THIS .slds-tabs_scoped__item .slds-tabs_scoped__link {
+    color: var(--sf-text-light) !important;
+}
+.THIS .slds-tabs_scoped__item.slds-is-active .slds-tabs_scoped__link {
+    color: var(--sf-text) !important;
+    border-bottom: 2px solid var(--sf-border) !important; /* neutral underline to recognize active tab */
+}
+
+/* Prevent any horizontal overflow at component level */
+.THIS { overflow-x: hidden; }
+.THIS .outlook-container,
+.THIS .outlook-container .slds-tabs_scoped,
+.THIS .outlook-container .slds-tabs_scoped__nav,
+.THIS .outlook-container .slds-tabs_scoped__content {
+    max-width: 100%;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+}
+
+/* Center the main component and keep content aligned */
+.THIS .outlook-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1120px !important; /* center within page */
+    width: 100% !important;
+}
+/* Ensure tab containers fill width with symmetric padding only */
+.THIS .outlook-container .slds-tabs_scoped,
+.THIS .outlook-container .slds-tabs_scoped__content {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+/* Keep inner padding balanced */
+.THIS .outlook-container .slds-p-around_medium {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+/* Fix: full-width container without lateral overflow */
+.THIS .outlook-container {
+    max-width: none !important; /* quita límite que podía desalinear */
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow-x: hidden !important;
+}
+/* Ensure tabset never exceeds width and has no side margins */
+.THIS .outlook-container .slds-tabs_scoped,
+.THIS .outlook-container .slds-tabs_scoped__nav,
+.THIS .outlook-container .slds-tabs_scoped__content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow-x: hidden !important;
+}
+/* Inner padding applied symmetrically only to the inner content wrapper */
+.THIS .outlook-container .slds-tabs_scoped__content > .slds-p-around_medium {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+/* Global box-sizing to avoid width overflows */
+.THIS, .THIS * { box-sizing: border-box; }
+
+/* Ensure grids never push beyond container */
+.THIS .slds-grid { max-width: 100%; }
+.THIS .slds-col { min-width: 0; }
+
+/* Tabs nav can wrap to avoid horizontal scroll */
+.THIS .slds-tabs_scoped__nav { display: flex; flex-wrap: wrap; }
+
+/* Table: allow horizontal scroll when needed */
+.THIS .custom-table-wrapper { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.THIS .custom-table {
+    width: 100%;
+    min-width: 800px; /* force horizontal scroll on narrow viewports */
+    border-collapse: collapse;
+    font-size: 13px;
+    border: 1px solid #d8dde6;
+    background: #fff;
+    table-layout: fixed; /* keep cells compact and enable ellipsis */
+}
+.THIS .custom-table th, .THIS .custom-table td {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #d8dde6;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 1px;
+    /* allow truncation in fixed layout */
+}
+
+/* Fix calendar/date icon alignment inside inputs */
+.THIS .slds-form-element__control,
+.THIS .slds-form-element.slds-dropdown-trigger { position: relative; }
+.THIS .slds-input__icon-group_right,
+.THIS .slds-input__icon_right {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+}
+/* ensure enough space for the icon on date inputs */
+.THIS .slds-input[type="date"] { padding-right: 2rem; }

@@ -41,6 +41,7 @@
                 <option value="Ficha de oferta/Offer sheet">Ficha de oferta/Offer sheet</option>
                 <option value="Formulario Fiscal/Tax Form">Formulario Fiscal/Tax Form</option>
                 <option value="Formulario IRPO/ IRPO Form">Formulario IRPO/ IRPO Form</option>
+                <option value="GO Oferta/GO Offer">GO Oferta/GO Offer</option> <!-- SCM - 13/08/25: cod oferta sap -->
                 <option value="Informe/Report">Informe/Report</option>
                 <option value="Matriz TDR-Entregable/ToR-Deliverable Matrix">Matriz TDR-Entregable/ToR-Deliverable Matrix</option>
                 <option value="Memoria/Memory">Memoria/Memory</option>

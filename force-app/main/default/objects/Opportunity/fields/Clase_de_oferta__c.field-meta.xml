@@ -36,36 +36,43 @@
             <value>
                 <fullName>Ampliación de Contrato</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Ampliación de Contrato</label>
             </value>
             <value>
                 <fullName>Información Previa</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Información Previa</label>
             </value>
             <value>
                 <fullName>Invitación Acuerdo Marco</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Invitación Acuerdo Marco / SDA</label>
             </value>
             <value>
                 <fullName>Invitación Pública</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Invitación Pública</label>
             </value>
             <value>
                 <fullName>Licitación Pública</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Licitación Pública</label>
             </value>
             <value>
                 <fullName>Oferta interco</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Oferta interco</label>
             </value>
             <value>
                 <fullName>Petición EOI / Pre-Calificación</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Petición EOI / Pre-Calificación</label>
             </value>
             <value>
@@ -81,6 +88,7 @@
             <value>
                 <fullName>Registro Proveedores</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Registro Proveedores</label>
             </value>
         </valueSetDefinition>

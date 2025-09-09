@@ -243,8 +243,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -773,6 +785,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -1575,7 +1591,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -1708,6 +1727,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -2052,8 +2072,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -2582,6 +2614,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -3383,7 +3419,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -3516,6 +3555,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -3864,8 +3904,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -4394,6 +4446,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -5196,7 +5252,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -5329,6 +5388,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -5673,8 +5733,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -6203,6 +6275,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -7004,7 +7080,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -7137,6 +7216,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -7485,8 +7565,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -8015,6 +8107,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -8817,7 +8913,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -8950,6 +9049,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -9294,8 +9394,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -9824,6 +9936,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -10625,7 +10741,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -10758,6 +10877,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -11106,8 +11226,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -11636,6 +11768,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -12438,7 +12574,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -12571,6 +12710,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -12915,8 +13055,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -13445,6 +13597,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -14246,7 +14402,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -14379,6 +14538,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -14723,8 +14883,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -15253,6 +15425,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -16054,7 +16230,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -16187,6 +16366,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -16531,8 +16711,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -17061,6 +17253,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -17862,7 +18058,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -17995,6 +18194,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -18343,8 +18543,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -18873,6 +19085,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -19675,7 +19891,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -19808,6 +20027,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>
@@ -20152,8 +20372,20 @@
             <label>Fecha de la última modificación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQjh</field>
+            <label>¿Correo Oferta enviado?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQuz</field>
+            <label>¿Go Posterior a Presentación Oferta?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQbd</field>
+            <label>¿Necesita Apoyo de Soporte a Ofertas?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfywN</field>
@@ -20682,6 +20914,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofynp</field>
             <label>Fecha de cierre</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000TyQoX</field>
+            <label>Fecha de solicitud de soporte</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyvy</field>
@@ -21483,7 +21719,10 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N9O00000TyQjh</field>
             <field>00N9O00000Ofync</field>
+            <field>00N9O00000TyQuz</field>
+            <field>00N9O00000TyQbd</field>
             <field>00N9O00000OfywN</field>
             <field>00N9O00000OfywO</field>
             <field>00N9O00000OfyoY</field>
@@ -21616,6 +21855,7 @@
             <field>00N9O00000Ofyno</field>
             <field>00N9O00000Ofyng</field>
             <field>00N9O00000Ofynp</field>
+            <field>00N9O00000TyQoX</field>
             <field>00N9O00000Ofyvy</field>
             <field>00N9O00000Ofynq</field>
             <field>00N9O00000Ofynr</field>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Cualificación</masterLabel>
+        <translation>Qualification</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Oferta</masterLabel>
+        <translation>Offer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Presentada (negociación y cierre)</masterLabel>
+        <translation>Presented (negotiation and closing)</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1043,6 +1043,10 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
+        <fullName>Codigo_Oferta_SAP_Ingenieria</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
         <fullName>Control_SLA_Ticket</fullName>
     </flowDefinitions>
     <flowDefinitions>
@@ -1237,6 +1241,26 @@
             </textTemplates>
         </flows>
         <fullName>Notificaci_n_Personalizada_en_Chatter</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <customErrorMessages>
+                <developerName>Copia_1_de_Debe_tener_archivo_adjunto</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Copia_2_de_Debe_tener_archivo_adjunto</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Debe_tener_archivo_adjunto</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Debe_tener_archivo_GO</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Debe_tener_archivo_GO_Oferta</developerName>
+            </customErrorMessages>
+        </flows>
+        <fullName>Notificar_Apoyo_Soporte_Ofertas_Flow</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
@@ -4604,19 +4628,6 @@
         <sections>
             <label><!-- Opportunities-Partners --></label>
             <name>Opportunities-Partners</name>
-        </sections>
-    </reportTypes>
-    <reportTypes>
-        <description><!-- New Tareas de aprobación con Oportunidad --></description>
-        <label><!-- New Tareas de aprobación con Oportunidad --></label>
-        <name>New_Tareas_de_aprobaci_n_con_Oportunidad</name>
-        <sections>
-            <label><!-- Oportunidades --></label>
-            <name>Oportunidades</name>
-        </sections>
-        <sections>
-            <label><!-- Tareas de aprobación --></label>
-            <name>Tareas de aprobación</name>
         </sections>
     </reportTypes>
     <reportTypes>

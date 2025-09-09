@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probabilidad_Valores_Permitidos</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+				NOT(
+								OR(
+												Probability = 0,
+												Probability = 10,
+												Probability = 30,
+												Probability = 50,
+												Probability = 70,
+												Probability = 90,
+												Probability = 100
+								) 
+				) 
+)</errorConditionFormula>
+    <errorDisplayField>Probability</errorDisplayField>
+    <errorMessage>Valor no permitido. Seleccione uno de los siguientes valores:
+0,10,30,50,70,90,100.</errorMessage>
+</ValidationRule>

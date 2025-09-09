@@ -1,0 +1,490 @@
+/* Tema Salesforce y estilos base */
+.THIS {
+    --sf-blue: #0070d2;
+    --sf-blue-dark: #005fb2;
+    --sf-blue-light: #e3f1fc;
+    --sf-blue-gradient: linear-gradient(45deg, #0070d2, #1589ee);
+    --sf-border: #d8dde6;
+    --sf-text: #16325c;
+    --sf-text-light: #54698d;
+    --sf-white: #ffffff;
+    --sf-success: #4bca81;
+    --sf-warning: #ffb75d;
+    --sf-error: #ff8f91;
+    --sf-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: var(--sf-text);
+}
+
+/* Contenedor principal */
+.THIS.outlook-container {
+    background-color: var(--sf-white);
+    border-radius: 8px;
+    box-shadow: var(--sf-shadow);
+    border: 1px solid var(--sf-border);
+    overflow: hidden;
+}
+
+/* Cabecera del componente MEJORADA */
+.THIS .component-header {
+    background: var(--sf-blue-gradient);
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.THIS .component-header .slds-icon {
+    --size: 28px;
+    width: var(--size);
+    height: var(--size);
+    fill: white;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.THIS .component-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.01em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Secciones del formulario */
+.THIS .form-section {
+    padding: 0 16px 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--sf-border);
+}
+
+.THIS .form-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.THIS .form-section-title {
+    color: var(--sf-blue);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--sf-blue-light);
+}
+
+/* Mejora visual para inputs y ARREGLO DE CALENDARIO */
+.THIS .slds-input,
+.THIS .slds-select {
+    border: 1px solid var(--sf-border);
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Quitamos height fijo para arreglar el calendario */
+.THIS .slds-select {
+    height: 36px;
+}
+
+/* Arreglo específico para el calendario */
+.THIS .slds-input[type="date"] {
+    min-height: 36px;
+    padding-right: 36px; /* Espacio para el ícono */
+}
+
+/* Contenedor del calendario (permite que el icono se muestre correctamente) */
+.THIS .slds-form-element.slds-dropdown-trigger {
+    position: relative;
+}
+
+.THIS .slds-input:focus,
+.THIS .slds-select:focus {
+    border-color: var(--sf-blue);
+    box-shadow: 0 0 0 1px var(--sf-blue);
+}
+
+.THIS .slds-form-element {
+    margin-bottom: 12px;
+}
+
+.THIS .slds-form-element__label {
+    color: var(--sf-text-light);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Mejorar apariencia de textarea */
+.THIS .slds-textarea {
+    min-height: 80px;
+    border: 1px solid var(--sf-border);
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.THIS .slds-textarea:focus {
+    border-color: var(--sf-blue);
+    box-shadow: 0 0 0 1px var(--sf-blue);
+}
+
+/* Autocompletado de cuentas */
+.THIS .contenedor-cuenta-autocompletar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.THIS .slds-lookup__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: var(--sf-white);
+    border: 1px solid var(--sf-border);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 4px;
+    padding: 0;
+    animation: slideDown 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.THIS .slds-lookup__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.THIS .slds-lookup__item {
+    border-bottom: 1px solid #f1f3f6;
+}
+
+.THIS .slds-lookup__item:last-child {
+    border-bottom: none;
+}
+
+.THIS .slds-lookup__item:hover {
+    background-color: var(--sf-blue-light);
+    cursor: pointer;
+}
+
+.THIS .slds-lookup__item a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    color: var(--sf-text);
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Íconos y diseño visual */
+.THIS .slds-icon {
+    --size: 16px;
+    width: var(--size);
+    height: var(--size);
+    fill: var(--sf-blue);
+}
+
+/* Botones mejorados */
+.THIS .slds-button {
+    height: 36px;
+    border-radius: 4px;
+    transition: background-color 0.2s, transform 0.1s;
+    font-weight: 500;
+    padding: 0 16px;
+}
+
+.THIS .slds-button:active {
+    transform: translateY(1px);
+}
+
+.THIS .slds-button_brand {
+    background-color: var(--sf-blue);
+    border-color: var(--sf-blue);
+}
+
+.THIS .slds-button_brand:hover {
+    background-color: var(--sf-blue-dark);
+}
+
+.THIS .slds-button_neutral {
+    color: var(--sf-text);
+    border: 1px solid var(--sf-border);
+    background-color: var(--sf-white);
+}
+
+.THIS .slds-button_neutral:hover {
+    background-color: #f7f9fb;
+}
+
+/* CORRECCIÓN Y MEJORA DE DUAL LISTBOX */
+.THIS .slds-dueling-list {
+    background-color: #f7f9fb;
+    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid var(--sf-border);
+    margin-bottom: 16px;
+    align-items: stretch; /* asegura columnas de igual altura */
+}
+
+/* Contenedores de listas: quitar width fijo que rompía el grid */
+.THIS .slds-dueling-list__column {
+    /* width: calc((100% - 160px) / 2);  eliminado por conflicto con grid */
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 0; /* evita desbordes por contenido */
+    flex: 1 1 0;
+}
+
+/* Estilo de las listas desplegables */
+.THIS .slds-dueling-list__options {
+    border: 1px solid var(--sf-border);
+    border-radius: 4px;
+    background-color: var(--sf-white);
+    max-height: 200px;
+    overflow-y: auto; /* permite scroll y evita desbordes */
+    overflow-x: hidden; /* evita desbordes horizontales */
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Truncado de texto y evitar selección accidental al hacer click */
+.THIS .slds-dueling-list__options .slds-listbox__option {
+    padding: 8px 12px;
+    transition: background-color 0.15s ease;
+    cursor: pointer;
+    border-bottom: 1px solid #f5f5f5;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.THIS .slds-dueling-list__options .slds-truncate {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+/* Botones centrales: en fila y con espacio suficiente */
+.THIS .slds-dueling-list__column_actions {
+    width: 80px !important;  /* reducido de 96px */
+    display: flex;
+    flex-direction: row; /* horizontal */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 2px !important; /* reducido de 4px */
+}
+
+/* Botones específicos de la dual listbox */
+.THIS .slds-dueling-list__column_actions .slds-button {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    margin: 0; /* se controla el espacio con gap */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mejorar contraste del texto seleccionado */
+.THIS .slds-dueling-list__options .slds-is-selected {
+    background-color: var(--sf-blue-light);
+    color: var(--sf-blue-dark);
+    font-weight: 600;
+}
+
+/* Estilo para los items de la lista */
+.THIS .slds-dueling-list__options .slds-listbox__option {
+    padding: 8px 12px;
+    transition: background-color 0.15s ease;
+    cursor: pointer;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.THIS .slds-dueling-list__options .slds-listbox__option:hover {
+    background-color: #f5f7fa;
+}
+
+/* Etiquetas de las listas */
+.THIS .slds-dueling-list__column .slds-form-element__label {
+    color: var(--sf-text);
+    font-weight: 600;
+    margin-bottom: 4px;
+    padding-left: 2px;
+}
+
+/* Campos condicionales (cuando estado es "Realizada") */
+.THIS .campos-adicionales {
+    background-color: var(--sf-blue-light);
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 8px;
+    border-left: 3px solid var(--sf-blue);
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Footer con botones de acción */
+.THIS .form-footer {
+    background-color: #f7f9fb;
+    padding: 12px 16px;
+    border-top: 1px solid var(--sf-border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+/* ELIMINAR COMPLETAMENTE las flechas de reordenación (más específico y agresivo) */
+.THIS .slds-dueling-list__column_actions .slds-button:nth-child(n+5):nth-child(-n+8),
+.THIS lightning-dual-listbox .slds-dueling-list__column_actions .slds-button:nth-child(n+5),
+.THIS .slds-dueling-list__column_actions button[title*="Up"],
+.THIS .slds-dueling-list__column_actions button[title*="Down"],
+.THIS .slds-dueling-list__column_actions button[aria-label*="Up"],
+.THIS .slds-dueling-list__column_actions button[aria-label*="Down"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Mostrar SOLO las primeras 4 flechas (traslado entre listas) */
+.THIS .slds-dueling-list__column_actions .slds-button:nth-child(-n+4) {
+    display: flex !important;
+}
+
+/* Forzar botonera horizontal con máxima especificidad (evita apilado vertical) */
+.THIS .slds-dueling-list__column_actions,
+.THIS lightning-dual-listbox .slds-dueling-list__column_actions {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2px !important; /* reducido de 4px */
+    width: 80px !important;            /* reducido de 96px */
+    flex: 0 0 80px !important;         /* reducido */
+    white-space: nowrap !important;
+}
+
+/* Forzar horizontal y aplanar grupos internos generados por SLDS */
+.THIS .slds-dueling-list__column_actions,
+.THIS .slds-dueling-list__column_actions.slds-grid,
+.THIS .slds-dueling-list__column_actions.slds-grid_vertical,
+.THIS lightning-dual-listbox .slds-dueling-list__column_actions,
+.THIS lightning-dual-listbox .slds-dueling-list__column_actions.slds-grid,
+.THIS lightning-dual-listbox .slds-dueling-list__column_actions.slds-grid_vertical {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2px !important; /* reducido de 4px */
+    width: 80px !important;
+    flex: 0 0 80px !important;
+}
+
+/* Colocar los wrappers internos en fila (algunos renders agrupan en 2 contenedores) */
+.THIS .slds-dueling-list__column_actions > * {
+    display: inline-flex !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    width: auto !important;
+}
+
+/* Evitar que algo fuerce columna en puntos de quiebre */
+@media (min-width: 481px) {
+    .THIS .slds-dueling-list__column_actions,
+    .THIS lightning-dual-listbox .slds-dueling-list__column_actions {
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+    }
+}
+
+/* Animaciones */
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-8px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Responsive para diferentes tamaños */
+@media (max-width: 480px) {
+    .THIS .component-header {
+        padding: 12px;
+    }
+    
+    .THIS .form-section {
+        padding: 0 12px 12px;
+    }
+    
+    .THIS .slds-button {
+        margin-top: 4px;
+    }
+    
+    .THIS .form-footer {
+        flex-direction: column;
+    }
+    
+    /* Ajuste responsive para dual listbox */
+    .THIS .slds-dueling-list {
+        flex-direction: column;
+    }
+    
+    .THIS .slds-dueling-list__column {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    
+    /* Botonera centrada en horizontal (ya horizontal por defecto) */
+    .THIS .slds-dueling-list__column_actions {
+        width: 100%;
+        flex-direction: row;
+        height: 40px;
+        margin: 8px 0;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    /* Reordenar botones para que sean intuitivos verticalmente */
+    .THIS .slds-dueling-list__column_actions .slds-button {
+        margin: 0 4px;
+    }
+    
+    /* Estilos específicos para cada botón */
+    .THIS .slds-dueling-list__column_actions .slds-button:nth-child(1) {
+        order: 1; /* Mover a lista de seleccionados (abajo) */
+    }
+    
+    .THIS .slds-dueling-list__column_actions .slds-button:nth-child(2) {
+        order: 3; /* Mover todos a lista de seleccionados (abajo) */
+    }
+    
+    .THIS .slds-dueling-list__column_actions .slds-button:nth-child(3) {
+        order: 4; /* Mover todos a lista disponible (arriba) */
+    }
+    
+    .THIS .slds-dueling-list__column_actions .slds-button:nth-child(4) {
+        order: 2; /* Mover a lista disponible (arriba) */
+    }
+}
+
+/* Botonera custom: mostrar solo 2 flechas (derecha e izquierda) */
+.THIS .custom-dual-actions .slds-button:nth-child(-n+2) {
+    display: inline-flex !important;
+}
+.THIS .custom-dual-actions .slds-button:nth-child(n+3) {
+    display: none !important;
+}

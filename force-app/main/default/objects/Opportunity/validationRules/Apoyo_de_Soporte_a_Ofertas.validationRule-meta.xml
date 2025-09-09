@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Apoyo_de_Soporte_a_Ofertas</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISCHANGED(Apoyo_de_Soporte_a_Ofertas__c),
+    NOT(
+        $Profile.Name = &quot;System Administrator&quot; ||
+        $Profile.Name = &quot;Administrador del sistema&quot; ||
+        OwnerId = $User.Id
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Apoyo_de_Soporte_a_Ofertas__c</errorDisplayField>
+    <errorMessage>El campo Apoyo de Soporte a Ofertas es solo editable por el responsable de la oferta.</errorMessage>
+</ValidationRule>

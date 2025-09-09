@@ -1,0 +1,252 @@
+({
+    init: function(component, event, helper) {
+        const hoy = new Date().toISOString().slice(0, 10); // formato YYYY-MM-DD
+        component.set("v.fechaInicio", hoy);
+        component.set("v.fechaFin", hoy);
+        component.set("v.hijasCache", {});
+        helper.actualizarMensajeFecha(component);
+        helper.obtenerTareas(component);
+
+        // Cargar valores dinámicos de picklists
+        helper.obtenerPicklists(component);
+
+        helper.agregarListenersCerrarDropdown(component);
+    },
+
+    filtrarTareas: function(component, event, helper) {
+        helper.actualizarMensajeFecha(component);
+        helper.obtenerTareas(component);
+    },
+
+    crearReunion: function(component, event, helper) {
+        // Validar campos obligatorios ANTES de enviar
+        const subject = component.get("v.subject");
+        const fecha = component.get("v.fechaReunion");
+        const prioridad = component.get("v.prioridad");
+        const sector = component.get("v.sectorMercado");
+        const lineas = component.get("v.lineasServicio");
+        const cuentaId = component.get("v.cuentaSeleccionada");
+        const contactos = component.get("v.contactosSeleccionados");
+
+        let errores = [];
+
+        if (!subject || subject.trim() === '') {
+            errores.push("El campo Asunto es obligatorio.");
+        }
+        if (!fecha) {
+            errores.push("Debe seleccionar una Fecha.");
+        }
+        if (!prioridad) {
+            errores.push("Debe seleccionar una Prioridad.");
+        }
+        if (!sector) {
+            errores.push("Debe seleccionar un Sector de Mercado.");
+        }
+        if (!lineas || lineas.length === 0) {
+            errores.push("Debe seleccionar al menos una Línea de Servicio.");
+        }
+        if (!cuentaId) {
+            errores.push("Debe seleccionar una Cuenta.");
+        }
+        if (!contactos || contactos.length === 0) {
+            errores.push("Debe seleccionar al menos un Contacto.");
+        }
+
+        if (errores.length > 0) {
+            $A.get("e.force:showToast").setParams({
+                title: "Campos obligatorios faltantes",
+                message: errores.join(" "),
+                type: "error"
+            }).fire();
+            return;
+        }
+
+        // Si pasa la validación, ejecutar lógica existente
+        helper.crearReunión(component);
+        helper.obtenerTareas(component); // Refrescar lista
+    },
+
+    guardarCambios: function(component, event, helper) {
+        const borradores = event.getParam("draftValues");
+        if (!borradores || borradores.length === 0) return;
+
+        const tareasBase = component.get("v.tareas");
+        const hijasCache = component.get("v.hijasCache") || {};
+
+        let tareasParaActualizar = [];
+        let esPadreLista = [];
+
+        const regexHoraValida = /^([01]?\d|2[0-3]):(00|30)$/;
+
+        for (let borrador of borradores) {
+            // Validar formato
+            if (borrador.horaInicio && !regexHoraValida.test(borrador.horaInicio)) {
+                $A.get("e.force:showToast").setParams({
+                    title: "Hora inválida",
+                    message: "La hora debe estar en intervalos de 30 minutos (ej: 09:00, 09:30).",
+                    type: "error"
+                }).fire();
+                return;
+            }
+
+            let tareaOriginal = tareasBase.find(t => t.Id === borrador.Id) 
+                             || Object.values(hijasCache).flat().find(t => t.Id === borrador.Id);
+            if (!tareaOriginal) continue;
+
+            const esPadre = !tareaOriginal.esHija;
+
+            // Convertir hora a Date
+            const [h, m] = borrador.horaInicio.split(":").map(Number);
+            const fechaTarea = new Date(tareaOriginal.ActivityDate);
+            const startDateTime = new Date(fechaTarea.setHours(h, m, 0, 0));
+            const endDateTime = new Date(startDateTime.getTime() + 30 * 60000);
+
+            tareaOriginal.startDateTimeRaw = startDateTime.toISOString();
+            tareaOriginal.endDateTimeRaw = endDateTime.toISOString();
+
+            tareasParaActualizar.push(helper.crearTareaParaActualizar(tareaOriginal, borrador, esPadre));
+            esPadreLista.push(esPadre ? 'true' : 'false');
+        }
+
+        const action = component.get("c.actualizarTareas");
+        action.setParams({ tareasActualizadas: tareasParaActualizar, esPadreLista });
+
+        action.setCallback(this, function(response) {
+            if (response.getState() === "SUCCESS") {
+                $A.get("e.force:showToast").setParams({
+                    title: "Guardado",
+                    message: "Los cambios se guardaron correctamente.",
+                    type: "success"
+                }).fire();
+
+                component.set("v.borradores", []);
+                helper.obtenerTareas(component);
+            } else {
+                console.error("Error al guardar:", response.getError());
+            }
+        });
+
+        $A.enqueueAction(action);
+    },
+        
+    verHijasTarea: function(component, event, helper) {
+        const tareaId = event.getSource().get("v.value"); 
+        const actionName = event.getSource().get("v.name"); // name lo usaremos para diferenciar acción
+
+        if (actionName === "toggleHijas") {
+            helper.obtenerHijasDeTarea(component, tareaId);
+        }
+
+        if (actionName === "editarTarea") {
+            helper.abrirEditorDeTarea(component, tareaId, helper);
+        }
+    },
+
+    buscarCuentas: function(component, event, helper) {
+        const texto = component.get("v.busquedaCuenta");
+        if (!texto || texto.trim() === '') {
+            component.set("v.resultadosCuentas", []);
+            component.set("v.mostrarResultados", false);
+            return;
+        }
+
+        const action = component.get("c.buscarCuentasPorNombre");
+        action.setParams({ texto });
+
+        action.setCallback(this, function(response) {
+            if (response.getState() === "SUCCESS") {
+                var resultados = response.getReturnValue();
+                component.set("v.resultadosCuentas", resultados);
+                component.set("v.mostrarResultados", true);
+            } else {
+                console.error("Error al buscar cuentas:", response.getError());
+            }
+        });
+        
+        $A.enqueueAction(action);
+    },
+
+    seleccionarCuenta: function(component, event, helper) {
+        const id = event.currentTarget.getAttribute("data-id");
+        const nombre = event.currentTarget.getAttribute("data-nombre");
+        
+        component.set("v.busquedaCuenta", nombre);
+        component.set("v.cuentaSeleccionada", id);
+        component.set("v.mostrarResultados", false);
+        
+        helper.cargarContactos(component, id);
+    },
+
+    cuentaInputCambiada: function(component, event, helper) {
+        const texto = event.getSource().get("v.value");
+    
+        if (!texto || texto.trim() === '') {
+            component.set("v.cuentaSeleccionada", null);
+            component.set("v.opcionesContactos", []);
+            component.set("v.contactosSeleccionados", []);
+            component.set("v.mostrarDualListbox", false);
+        }
+    },
+
+    // -----------------------------
+    // DUAL LISTBOX CUSTOM - Líneas de Servicio
+    // -----------------------------
+    toggleDisponibleLinea: function(component, event, helper) {
+        helper.toggleMarcado(component, event, 'lineasServicioDisponiblesSeleccionadas', 'lineasServicioDisponibles');
+    },
+
+    toggleSeleccionadaLinea: function(component, event, helper) {
+        helper.toggleMarcado(component, event, 'lineasServicioSeleccionadasMarcadas', 'lineasServicioSeleccionadasDetalles');
+    },
+
+    moverADerechaLinea: function(component, event, helper) {
+        helper.moveValuesGeneric(component, 'lineas', 'Disponibles', 'Seleccionadas');
+    },
+
+    moverAIzquierdaLinea: function(component, event, helper) {
+        helper.moveValuesGeneric(component, 'lineas', 'Seleccionadas', 'Disponibles');
+    },
+
+    doubleClickDisponibleLinea: function(component, event, helper) {
+        const value = event.currentTarget.dataset.value;
+        component.set("v.lineasServicioDisponiblesSeleccionadas", [value]);
+        helper.moveValuesGeneric(component, 'lineas', 'Disponibles', 'Seleccionadas');
+    },
+
+    doubleClickSeleccionadaLinea: function(component, event, helper) {
+        const value = event.currentTarget.dataset.value;
+        component.set("v.lineasServicioSeleccionadasMarcadas", [value]);
+        helper.moveValuesGeneric(component, 'lineas', 'Seleccionadas', 'Disponibles');
+    },
+
+    // -----------------------------
+    // DUAL LISTBOX CUSTOM - Contactos
+    // -----------------------------
+    toggleDisponibleContacto: function(component, event, helper) {
+        helper.toggleMarcado(component, event, 'contactosDisponiblesSeleccionados', 'contactosDisponibles');
+    },
+
+    toggleSeleccionadaContacto: function(component, event, helper) {
+        helper.toggleMarcado(component, event, 'contactosSeleccionadosMarcados', 'contactosSeleccionadosDetalles');
+    },
+
+    moverADerechaContacto: function(component, event, helper) {
+        helper.moveValuesGeneric(component, 'contactos', 'Disponibles', 'Seleccionadas');
+    },
+
+    moverAIzquierdaContacto: function(component, event, helper) {
+        helper.moveValuesGeneric(component, 'contactos', 'Seleccionadas', 'Disponibles');
+    },
+
+    doubleClickDisponibleContacto: function(component, event, helper) {
+        const value = event.currentTarget.dataset.value;
+        component.set("v.contactosDisponiblesSeleccionados", [value]);
+        helper.moveValuesGeneric(component, 'contactos', 'Disponibles', 'Seleccionadas');
+    },
+
+    doubleClickSeleccionadaContacto: function(component, event, helper) {
+        const value = event.currentTarget.dataset.value;
+        component.set("v.contactosSeleccionadosMarcados", [value]);
+        helper.moveValuesGeneric(component, 'contactos', 'Seleccionadas', 'Disponibles');
+    }
+})

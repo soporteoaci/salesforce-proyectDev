@@ -34,6 +34,15 @@
         <template>Ayesa/Oportunidad_Aviso_preliminar</template>
     </alerts>
     <alerts>
+        <fullName>Codigo_oferta_SAP_Ingenieria</fullName>
+        <ccEmails>soporteoaci@ayesa.com</ccEmails>
+        <description>Código oferta SAP Ingeniería</description>
+        <protected>false</protected>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/Codigo_Oferta_Ingenieria</template>
+    </alerts>
+    <alerts>
         <fullName>Envio_correo_aprobacion</fullName>
         <description>Envio correo aprobacion</description>
         <protected>false</protected>
@@ -43,6 +52,19 @@
         <senderAddress>soporteoaci@ayesa.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Ayesa/NewAction_SSC</template>
+    </alerts>
+    <alerts>
+        <fullName>Notificar_Apoyo_Soporte_Ofertas_Alerta</fullName>
+        <ccEmails>soporteoaci@ayesa.com</ccEmails>
+        <description>Notificar Apoyo Soporte Ofertas</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>aat_soporteofertas@gestion.ayesa.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>soporteoaci@ayesa.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Ayesa/Notificar_Apoyo_Soporte_Ofertas_Plantilla</template>
     </alerts>
     <alerts>
         <fullName>Opportunity_Alerta_Aprobacion_Oferta_CCO</fullName>

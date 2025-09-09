@@ -67,14 +67,16 @@ public class LoadFileController {
         
         if(tipoArchivo.contains('PCAP') || tipoArchivo.contains('Anuncio licitación') || tipoArchivo.contains('Pliego de prescripciones') ){
             ruta ='01 Pliegos-Requisitos cliente';
-        }else if(tipoArchivo.contains('Solvencia técnica') || tipoArchivo.contains('Oferta técnica') || tipoArchivo.contains('Oferta económica')){
+        }else if(tipoArchivo.contains('Solvencia técnica') || tipoArchivo.contains('Oferta técnica') ){
             ruta = '02 Oferta-Licitación/02 Técnica';
+        }else if(tipoArchivo.contains('Oferta económica') ){
+            ruta = '02 Oferta-Licitación/03 Económica';
         }else if (tipoArchivo.contains('Adjudicación') || tipoArchivo.contains('Contrato')){
             ruta='04 Adjudicación';
         }else if (tipoArchivo.contains('Avales')){
             ruta = '06 Avales';
         }else if (tipoArchivo.contains('Acreditación del personal ofertado') ||tipoArchivo.contains('Acuerdo de socios') ||tipoArchivo.contains('Borrador de Acuerdo de Socios') ||  tipoArchivo.contains('Estudio de implicaciones fiscales') || tipoArchivo.contains('Ficha de oferta') || tipoArchivo.contains('Formulario Fiscal') 
-                  || tipoArchivo.contains('IRPO') || tipoArchivo.contains('Matriz TDR-Entregable') || tipoArchivo.contains('Plan de Mitigación de TDR') || tipoArchivo.contains('QA Económico') || tipoArchivo.contains('QA Técnico') || tipoArchivo.contains('Recomendaciones') || tipoArchivo.contains('Riesgo financiero') ){
+                  || tipoArchivo.contains('IRPO') || tipoArchivo.contains('Matriz TDR-Entregable') || tipoArchivo.contains('Plan de Mitigación de TDR') || tipoArchivo.contains('QA Económico') || tipoArchivo.contains('QA Técnico') || tipoArchivo.contains('Recomendaciones') || tipoArchivo.contains('Riesgo financiero') || tipoArchivo.contains('GO Oferta') ){
                       
                       ruta ='07 Procedimiento interno'; 
                       
@@ -201,6 +203,8 @@ public class LoadFileController {
             codigoArchivo='a0b1df23-d830-438e-bb89-2b3ba8c35cc8';
         }else if(tipoArchivo=='Solvencia técnica/Technical solvency'){
             codigoArchivo='1a511c61-ce88-4a26-9716-de3260d0cc7a';
+        }else if(tipoArchivo=='GO Oferta/GO Offer'){
+            codigoArchivo='c576dddd-2bad-4111-80f1-1d9fba0852c0'; //SCM 09/25: cod oferta sap
         }else{
             codigoArchivo='5c6bb843-cab7-4b8d-ac53-d0111f660abb'; 
         }

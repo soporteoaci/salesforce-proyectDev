@@ -35,6 +35,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Apoyo_de_Soporte_a_Ofertas__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sí</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Area_Tecnologia__c</picklist>
         <values>
             <fullName>APPLICATION MANAGED SERVICES - Accesibility</fullName>
@@ -421,43 +432,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Ampliación de Contrato</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Información Previa</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Invitación Acuerdo Marco</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Invitación Pública</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Licitación Pública</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Oferta interco</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Petición EOI %2F Pre-Calificación</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Privada</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Pública</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Registro Proveedores</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1328,6 +1307,17 @@
         </values>
         <values>
             <fullName>Trimestral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Go_Presentaci_n_Oferta__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sí</fullName>
             <default>false</default>
         </values>
     </picklistValues>

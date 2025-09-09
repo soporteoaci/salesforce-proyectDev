@@ -1,0 +1,127 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="CrearContactoDesdeOutlookCtrl" >
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:attribute name="cuentas" type="List" />
+    <aura:attribute name="cuenta" type="String" />
+    <aura:attribute name="opcionesTratamiento" type="List" />
+    <aura:attribute name="opcionesPerfil" type="List" />
+    <aura:attribute name="opcionesNivel" type="List" />
+    <aura:attribute name="opcionesSubnivel" type="List" />
+    <aura:attribute name="busquedaCuenta" type="String" />
+    <aura:attribute name="resultadosCuentas" type="List" />
+    <aura:attribute name="mostrarResultados" type="Boolean" default="false" />
+    <aura:attribute name="cuentaNombre" type="String" />
+    
+    <aura:attribute name="contacto" type="Object" default="{
+                                                           'tratamiento': '',
+                                                           'nombre': '',
+                                                           'apellidos': '',
+                                                           'cuenta': '',
+                                                           'email': '',
+                                                           'cargo': '',
+                                                           'perfil': '',
+                                                           'cargoSME': '',
+                                                           'nivel': '',
+                                                           'subnivel': '',
+                                                           'claveNegocio': ''
+                                                           }"/>
+    
+    <lightning:card title="Crear Contacto">
+        <div class="slds-p-around_medium slds-grid slds-wrap slds-gutters">
+            
+            <!-- Tratamiento y Nombre -->
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:combobox onchange="{!c.handleChange}" required="true" name="tratamiento" label="Tratamiento"
+                                    value="{!v.contacto.tratamiento}"
+                                    placeholder="Selecciona una opción"
+                                    options="{!v.opcionesTratamiento}" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:input onchange="{!c.handleChange}" required="true" name="nombre" label="Nombre"
+                                 value="{!v.contacto.nombre}" />
+            </div>
+            
+            <!-- Apellidos y Email -->
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:input onchange="{!c.handleChange}" name="apellidos" label="Apellidos"
+                                 value="{!v.contacto.apellidos}" required="true" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:input onchange="{!c.handleChange}" required="true" name="email" label="Correo electrónico"
+                                 value="{!v.contacto.email}" type="email" />
+            </div>
+            
+            <!-- Cuenta y Cargo -->
+            <!-- Cuenta con búsqueda mejorada -->
+            <div class="slds-col slds-size_1-of-2 contenedor-cuenta-autocompletar" aura:id="contenedorLookupCuenta">
+                <lightning:input
+                                 name="cuentaLookup"
+                                 label="Cuenta"
+                                 value="{!v.busquedaCuenta}"
+                                 onchange="{!c.buscarCuentas}"
+                                 onfocus="{!c.buscarCuentas}"
+                                 placeholder="Escribe el nombre de la cuenta..." 
+                                 required="true"/>
+                
+                <aura:if isTrue="{!v.mostrarResultados}">
+                    <ul class="slds-lookup__list slds-dropdown slds-dropdown_fluid slds-dropdown_length-5 slds-scrollable_y">
+                        <aura:iteration items="{!v.resultadosCuentas}" var="cuenta">
+                            <li class="slds-lookup__item"
+                                role="presentation"
+                                onclick="{!c.seleccionarCuenta}"
+                                data-id="{!cuenta.value}"
+                                data-nombre="{!cuenta.label}">
+                                
+                                <a href="javascript:void(0);" class="slds-truncate slds-grid slds-grid_vertical-align-center slds-p-around_x-small slds-has-hover">
+                                    <lightning:icon iconName="standard:account"
+                                                    size="x-small"
+                                                    class="slds-m-right_small" />
+                                    <span class="slds-truncate">{!cuenta.label}</span>
+                                </a>
+                            </li>
+                        </aura:iteration>
+                    </ul>
+                </aura:if>
+            </div>
+            
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:input onchange="{!c.handleChange}" name="cargo" label="Cargo"
+                                 value="{!v.contacto.cargo}" />
+            </div>
+            
+            <!-- Perfil y Nivel -->
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:combobox onchange="{!c.handleChange}" name="perfil" label="Perfil"
+                                    value="{!v.contacto.perfil}"
+                                    placeholder="Selecciona una opción"
+                                    options="{!v.opcionesPerfil}" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:combobox onchange="{!c.handleChange}" name="nivel" label="Nivel"
+                                    value="{!v.contacto.nivel}"
+                                    placeholder="Selecciona una opción"
+                                    options="{!v.opcionesNivel}" />
+            </div>
+            
+            <!-- Subnivel y Clave Negocio -->
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:combobox onchange="{!c.handleChange}" name="subnivel" label="Subnivel"
+                                    value="{!v.contacto.subnivel}"
+                                    placeholder="Selecciona una opción"
+                                    options="{!v.opcionesSubnivel}" />
+            </div>
+            <div class="slds-col slds-size_1-of-2 slds-p-top_large">
+                <lightning:input onchange="{!c.handleChange}" type="checkbox"
+                                 name="claveNegocio"
+                                 label="Clave Negocio"
+                                 checked="{!v.contacto.claveNegocio}" />
+            </div>
+            
+            <!-- Botón Guardar alineado a la derecha -->
+            <div class="slds-col slds-size_1-of-1 slds-text-align_right slds-m-top_medium">
+                <lightning:button label="Guardar" variant="brand" onclick="{!c.crearContacto}" />
+            </div>
+            
+        </div>
+        
+    </lightning:card>
+</aura:component>
