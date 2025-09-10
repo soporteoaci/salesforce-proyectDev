@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CPV__c</fullName>
     <externalId>false</externalId>
-    <inlineHelpText>CPV (Common Procurement Vocabulary - Vocabulario Común de Contratación Pública) es un sistema de identificación y categorización de todas las actividades económicas susceptibles de ser contratadas mediante licitación o concurso público en la Unión Europea. Si no se tiene, escribir No Aplica</inlineHelpText>
+    <inlineHelpText>CPV (Common Procurement Vocabulary) is an identification and categorisation system of all the financial activities that may be contracted through a call for bids or  public tender in the European Union.</inlineHelpText>
     <label>CPV</label>
     <length>10</length>
     <required>false</required>

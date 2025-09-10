@@ -1,68 +1,57 @@
-.THIS .errorMensaje {
-    color: #c23934;
-    font-weight: 600;
-    animation: fadeIn 0.3s ease-in-out;
+/* === Estilos unificados con TareasOutlookCmp === */
+.THIS {
+    --sf-blue: #0070d2;
+    --sf-blue-dark: #005fb2;
+    --sf-blue-light: #e3f1fc;
+    --sf-border: #d8dde6;
+    --sf-text: #16325c;
+    --sf-text-light: #54698d;
+    --sf-white: #ffffff;
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: var(--sf-text);
 }
 
+/* Secciones y títulos */
+.THIS .form-section { padding: 0 16px 16px; margin-bottom:16px; border-bottom:1px solid var(--sf-border); }
+.THIS .form-section:last-child { border-bottom:none; margin-bottom:0; }
+.THIS .form-section-title { color: var(--sf-blue); font-size:14px; font-weight:600; margin:0 0 12px; padding-bottom:4px; border-bottom:1px solid var(--sf-blue-light); }
 
-.THIS .slds-lookup__list {
-    position: absolute;
-    z-index: 9999;
-    background-color: #ffffff;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
-    animation: slideDown 0.2s ease-out;
-    transition: all 0.2s ease-in-out;
+/* Ritmo de formulario */
+.THIS .slds-form-element { margin-bottom:12px; }
+.THIS .slds-form-element__label { color: var(--sf-text-light); font-size:12px; font-weight:500; }
+
+/* Inputs */
+.THIS .slds-input, .THIS .slds-select, .THIS .slds-textarea, .THIS .slds-combobox__input {
+    border:1px solid var(--sf-border); border-radius:4px; transition:border-color .2s, box-shadow .2s;
+}
+.THIS .slds-input:focus, .THIS .slds-select:focus, .THIS .slds-textarea:focus, .THIS .slds-combobox__input:focus {
+    border-color: var(--sf-blue); box-shadow:0 0 0 1px var(--sf-blue);
 }
 
-.THIS .slds-lookup__item:hover {
-    background-color: #f3f6f9;
-    cursor: pointer;
-}
+/* Lookup menú */
+.THIS .slds-lookup__list { position:absolute; z-index:9999; background:#fff; box-shadow:0 2px 12px rgba(0,0,0,.15); border-radius:4px; animation:slideDown .2s ease-out; }
+.THIS .slds-lookup__item:hover { background:#f3f6f9; cursor:pointer; }
+.THIS .slds-lookup__item a { display:flex; align-items:center; gap:.5rem; font-weight:500; color:#2e2e2e; }
 
-.THIS .slds-lookup__item a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 500;
-    color: #2e2e2e;
-}
+/* Footer */
+.THIS .form-footer { background:#f7f9fb; padding:12px 16px; border-top:1px solid var(--sf-border); display:flex; justify-content:flex-end; }
 
-.THIS .slds-card {
-    animation: fadeInUp 0.4s ease-out;
-}
+/* Botones */
+.THIS .slds-button_brand { transition:background-color .2s ease-in-out; }
+.THIS .slds-button_brand:hover { background:#0070d2; }
 
-.THIS .slds-input:focus,
-.THIS .slds-combobox__input:focus {
-    box-shadow: 0 0 0 2px #1589ee;
-    border-color: #1589ee;
-}
+/* Animaciones */
+@keyframes slideDown { 0%{opacity:0; transform:translateY(-8px);} 100%{opacity:1; transform:translateY(0);} }
+@keyframes fadeInUp { from { opacity:0; transform:translateY(12px);} to { opacity:1; transform:translateY(0);} }
 
-.THIS .slds-button_brand {
-    transition: background-color 0.2s ease-in-out;
-}
+/* Card */
+.THIS .slds-card { animation:fadeInUp .4s ease-out; overflow-x:hidden; }
 
-.THIS .slds-button_brand:hover {
-    background-color: #0070d2;
-}
+/* Mensajes error reutilizables */
+.THIS .errorMensaje { color:#c23934; background:#fdd; padding:.5rem; border:1px solid #c23934; border-radius:4px; font-weight:600; }
 
-@keyframes slideDown {
-    0% { opacity: 0; transform: translateY(-8px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Grid responsive mínimos */
+@media (max-width:480px){
+  .THIS .form-section { padding:0 12px 12px; }
+  .THIS .form-footer { flex-direction:column; }
 }

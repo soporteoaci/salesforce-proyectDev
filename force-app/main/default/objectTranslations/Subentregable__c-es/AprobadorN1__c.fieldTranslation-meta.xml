@@ -3,5 +3,5 @@
     <help><!-- Normalmente el cliente. Una vez aprobado pasa al Aprobador Final --></help>
     <label><!-- Aprobador Nivel 1 --></label>
     <name>AprobadorN1__c</name>
-    <relationshipLabel><!-- Entregables (Aprobador Nivel 1) --></relationshipLabel>
+    <relationshipLabel><!-- Deliverables (Level 1 Approver) --></relationshipLabel>
 </CustomFieldTranslation>

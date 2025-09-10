@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Usuario Control --></label>
     <name>UsuarioControl__c</name>
-    <relationshipLabel><!-- Contratos (Usuario Control) --></relationshipLabel>
+    <relationshipLabel><!-- Contracts RP (UIser Control) --></relationshipLabel>
 </CustomFieldTranslation>

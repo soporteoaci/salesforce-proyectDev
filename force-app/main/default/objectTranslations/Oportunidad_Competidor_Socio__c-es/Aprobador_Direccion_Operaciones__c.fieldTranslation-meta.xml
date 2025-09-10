@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Aprobador CMO --></label>
     <name>Aprobador_Direccion_Operaciones__c</name>
-    <relationshipLabel><!-- Oportunidades-Socios (Aprobador CMO) --></relationshipLabel>
+    <relationshipLabel><!-- Opportunities-Partners (CMO Approver) --></relationshipLabel>
 </CustomFieldTranslation>

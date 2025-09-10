@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>Compliance Director</label>
     <name>Director_Compliance__c</name>
-    <relationshipLabel><!-- Oportunidades (Director Compliance) --></relationshipLabel>
+    <relationshipLabel><!-- Opportunities (Compliance Director) --></relationshipLabel>
 </CustomFieldTranslation>

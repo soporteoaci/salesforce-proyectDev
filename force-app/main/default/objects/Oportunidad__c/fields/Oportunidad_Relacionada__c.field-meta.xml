@@ -3,7 +3,7 @@
     <fullName>Oportunidad_Relacionada__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>Establece relación entre oportunidades individuales con la oferta marco u oferta interco a la que pertenecen.</description>
-    <inlineHelpText>Establece relación entre oportunidades individuales con la oferta marco u oferta interco a la que pertenecen.</inlineHelpText>
+    <inlineHelpText>It establishes a relationship between individual opportunities with the framework offer or interco offer to which they belong.</inlineHelpText>
     <label>Oportunidad Matriz</label>
     <referenceTo>Oportunidad__c</referenceTo>
     <relationshipLabel>Oportunidades Relacionadas</relationshipLabel>

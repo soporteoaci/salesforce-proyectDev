@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Contratado_a_o_oportunidad__c</fullName>
-    <inlineHelpText>En el campo Importe total (sin IVA) en Euros se indicará todo el contrato (incluida la parte del posible socio) y en el campo Importe Contratado Año (€) (Importe SAP) se indicará la parte del contrato correspondiente a Ayesa durante el presente ejercicio.</inlineHelpText>
+    <inlineHelpText>Contracted year opportunity is the part of the contract that is applicable to Ayesa during the present year.</inlineHelpText>
     <label>Importe Contratado Año (€) (Importe SAP)</label>
     <precision>18</precision>
     <required>false</required>

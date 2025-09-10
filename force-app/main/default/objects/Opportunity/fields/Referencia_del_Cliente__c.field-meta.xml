@@ -3,7 +3,7 @@
     <fullName>Referencia_del_Cliente__c</fullName>
     <description>Referencia / Nº de Expediente del Cliente</description>
     <externalId>false</externalId>
-    <inlineHelpText>Referencia / Nº de Expediente del Cliente</inlineHelpText>
+    <inlineHelpText>Client Reference / Report No.</inlineHelpText>
     <label>Referencia del Cliente</label>
     <length>150</length>
     <required>false</required>

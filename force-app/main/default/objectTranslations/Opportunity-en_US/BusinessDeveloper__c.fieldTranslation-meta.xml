@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Business Developer --></label>
     <name>BusinessDeveloper__c</name>
-    <relationshipLabel><!-- Oportunidades (Business Developer) --></relationshipLabel>
+    <relationshipLabel><!-- Opportunities (Business Developer) --></relationshipLabel>
 </CustomFieldTranslation>

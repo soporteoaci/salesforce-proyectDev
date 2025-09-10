@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>Commercial Support</label>
     <name>COMAPOYO__c</name>
-    <relationshipLabel><!-- Oportunidades (Comercial Apoyo) --></relationshipLabel>
+    <relationshipLabel><!-- Opportunities (Commercial Support) --></relationshipLabel>
 </CustomFieldTranslation>

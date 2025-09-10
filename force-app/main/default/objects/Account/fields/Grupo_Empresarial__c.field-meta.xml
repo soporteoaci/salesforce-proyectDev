@@ -3,7 +3,7 @@
     <fullName>Grupo_Empresarial__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>Grupo Empresarial</description>
-    <inlineHelpText>– It is in case the Company belong to other existing account which is a Business Group</inlineHelpText>
+    <inlineHelpText>It is in case the Company belong to other existing account which is a Business Group</inlineHelpText>
     <label>Grupo Empresarial</label>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Grupo Empresarial</relationshipLabel>

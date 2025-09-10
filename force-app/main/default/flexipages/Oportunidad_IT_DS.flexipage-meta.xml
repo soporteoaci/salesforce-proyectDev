@@ -216,13 +216,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Probability</fieldItem>
                 <identifier>RecordProbabilityField2</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Etapa__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>Cerrada</rightValue>
-                    </criteria>
-                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2273,34 +2266,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Probabilidad__c</fieldItem>
-                <identifier>RecordProbabilidad_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Etapa__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>Cerrada</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Probability</fieldItem>
                 <identifier>RecordProbabilityField3</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Etapa__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>Cerrada</rightValue>
-                    </criteria>
-                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2899,13 +2868,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Apoyo_de_Soporte_a_Ofertas__c</fieldItem>
                 <identifier>RecordApoyo_de_Soporte_a_Ofertas_cField2</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Propietario_custom__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>$User.Id</rightValue>
-                    </criteria>
-                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-1587564b-4707-4bf6-b07d-4b8c540545dd</name>

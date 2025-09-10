@@ -76,7 +76,7 @@
     <!-- ========================== -->
     <lightning:card title="Tareas Outlook" iconName="standard:task">
         <div class="slds-p-around_none">
-            <lightning:tabset variant="scoped">
+            <lightning:tabset variant="scoped" class="no-border-tabset">
                 
                 <!-- PESTAÑA 1: Ver tareas -->
                 <lightning:tab label="Mis Citas" id="tareas">
@@ -94,10 +94,12 @@
                                 </div>
                                 <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
                                     <lightning:input type="date" name="fechaInicio" label="Fecha Inicio"
+                                                     class="fix-date"
                                                      value="{!v.fechaInicio}" onchange="{!c.filtrarTareas}" required="true" />
                                 </div>
                                 <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
                                     <lightning:input type="date" name="fechaFin" label="Fecha Fin"
+                                                     class="fix-date"
                                                      value="{!v.fechaFin}" onchange="{!c.filtrarTareas}" required="true" />
                                 </div>
                             </div>
@@ -175,7 +177,7 @@
                             <!-- Fecha -->
                             <div class="slds-grid slds-wrap slds-m-bottom_small">
                                 <div class="slds-col slds-size_1-of-1">
-                                    <lightning:input type="date" name="fechaReunion" label="Fecha" value="{!v.fechaReunion}" required="true" />
+                                    <lightning:input type="date" name="fechaReunion" label="Fecha" value="{!v.fechaReunion}" required="true" class="fix-date" />
                                 </div>
                             </div>
                             

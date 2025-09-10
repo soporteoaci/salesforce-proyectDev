@@ -3,7 +3,7 @@
     <fullName>Avance_en_Tiempo__c</fullName>
     <formula>If (DuracionReal__c / DuracionPlan__c &gt;= 1,1,DuracionReal__c / DuracionPlan__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Duración Real/ Duración Plan</inlineHelpText>
+    <inlineHelpText>Actual Duration / Plan Duration</inlineHelpText>
     <label>Avance en Tiempo</label>
     <precision>18</precision>
     <required>false</required>

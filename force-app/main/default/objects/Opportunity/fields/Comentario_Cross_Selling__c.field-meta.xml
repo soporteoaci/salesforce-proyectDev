@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Comentario_Cross_Selling__c</fullName>
-    <inlineHelpText>Comentario de la colaboración con Ibermática para la Oportunidad</inlineHelpText>
+    <inlineHelpText>Comments of the collaboration with ibermatica for the opportunity</inlineHelpText>
     <label>Comentario Sinergia</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

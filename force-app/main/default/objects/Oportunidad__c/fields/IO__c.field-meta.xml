@@ -3,7 +3,7 @@
     <fullName>IO__c</fullName>
     <defaultValue>false</defaultValue>
     <description>¿Ha incluido el IO en Alejandría? http://Alejandria.ayesa.com</description>
-    <inlineHelpText>¿Ha incluido el IO en Alejandría? http://Alejandria.ayesa.com</inlineHelpText>
+    <inlineHelpText>Included the IO in Alejandría? http://Alejandria.ayesa.com</inlineHelpText>
     <label>¿Ha incluido el IO en Alejandría?</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

@@ -7,6 +7,11 @@
     <label>New Actividades y relacionados</label>
     <sections>
         <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Opportunity__c.Name</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>IsTask</field>
             <table>Activity</table>
@@ -82,7 +87,7 @@
             <table>Activity</table>
         </columns>
         <columns>
-            <checkedByDefault>false</checkedByDefault>
+            <checkedByDefault>true</checkedByDefault>
             <field>Account</field>
             <table>Activity</table>
         </columns>

@@ -4631,6 +4631,19 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- New Tareas de aprobacion con Oportunidades --></description>
+        <label><!-- New Tareas de aprobacion con Oportunidades --></label>
+        <name>New_Tareas_de_aprobacion_con_Oportunidades</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Tareas de aprobación --></label>
+            <name>Tareas de aprobación</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description>Competitor Opportunities</description>
         <label>Competitor Opportunity</label>
         <name>Oportunidad_Competidores</name>

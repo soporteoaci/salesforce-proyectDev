@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <formula>TEXT(Negocio__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Negocio de la anterior organización (31/12/2021)</inlineHelpText>
+    <inlineHelpText>Business of the former organization (31/12/2021)</inlineHelpText>
     <label>Negocio</label>
     <required>false</required>
     <trackHistory>false</trackHistory>

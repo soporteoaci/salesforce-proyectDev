@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Probabilidad__c</fullName>
-    <inlineHelpText>Porcentaje libre hasta avanzar a la etapa Negociación y cierre</inlineHelpText>
+    <inlineHelpText>50% of us are among the finalist, 75% of us think we are among the favourites, 90% of us have received notification that we have been awarded the contract, 100% of us have signed the contract and awaiting for the PSP (Project Structure Plan) to be opened.</inlineHelpText>
     <label>Probabilidad</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Country Manager --></label>
     <name>Country_Manager__c</name>
-    <relationshipLabel><!-- Seguimientos Soporte Corporativo --></relationshipLabel>
+    <relationshipLabel><!-- Corporate Support Tracking --></relationshipLabel>
 </CustomFieldTranslation>

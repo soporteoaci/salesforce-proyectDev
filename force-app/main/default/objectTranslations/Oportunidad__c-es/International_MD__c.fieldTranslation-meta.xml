@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- International MD --></label>
     <name>International_MD__c</name>
-    <relationshipLabel><!-- Oportunidades (International MD) --></relationshipLabel>
+    <relationshipLabel><!-- Opportunities Ayesa (MD International) --></relationshipLabel>
 </CustomFieldTranslation>

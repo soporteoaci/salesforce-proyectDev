@@ -7,13 +7,13 @@
 				$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
 				NOT(
 								OR(
-												Probability = 0,
-												Probability = 10,
-												Probability = 30,
-												Probability = 50,
-												Probability = 70,
-												Probability = 90,
-												Probability = 100
+              Probability = 0.0,
+              Probability = 0.1,
+              Probability = 0.3,
+              Probability = 0.5,
+              Probability = 0.7,
+              Probability = 0.9,
+              Probability = 1.0
 								) 
 				) 
 )</errorConditionFormula>

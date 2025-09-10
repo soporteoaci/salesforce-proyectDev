@@ -209,13 +209,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Probability</fieldItem>
                 <identifier>RecordProbabilityField2</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Etapa__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>Cerrada</rightValue>
-                    </criteria>
-                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1167,18 +1160,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.COMAPOYO__c</fieldItem>
-                <identifier>RecordCOMAPOYO_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.BusinessDeveloper__c</fieldItem>
-                <identifier>RecordBusinessDeveloper_cField</identifier>
+                <fieldItem>Record.Cross_Selling_Picklist__c</fieldItem>
+                <identifier>RecordCross_Selling_Picklist_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-f3208edc-d697-4cce-8a2a-77d66b71e0ac</name>
@@ -1191,8 +1174,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PORCCOMAPOYO__c</fieldItem>
-                <identifier>RecordPORCCOMAPOYO_cField</identifier>
+                <fieldItem>Record.Porcentaje_Cross_Selling__c</fieldItem>
+                <identifier>RecordPorcentaje_Cross_Selling_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1201,8 +1184,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Porcentaje_Business_Developer__c</fieldItem>
-                <identifier>RecordPorcentaje_Business_Developer_cField</identifier>
+                <fieldItem>Record.Motivo_Cross_Selling__c</fieldItem>
+                <identifier>RecordMotivo_Cross_Selling_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-40cc4ac0-2bad-4f4f-91a0-6e7bb5140254</name>
@@ -1230,6 +1213,78 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-45fe1129-da8f-43eb-ae81-fa9263893703</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.COMAPOYO__c</fieldItem>
+                <identifier>RecordCOMAPOYO_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.BusinessDeveloper__c</fieldItem>
+                <identifier>RecordBusinessDeveloper_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-b860r4e7apg</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PORCCOMAPOYO__c</fieldItem>
+                <identifier>RecordPORCCOMAPOYO_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Porcentaje_Business_Developer__c</fieldItem>
+                <identifier>RecordPorcentaje_Business_Developer_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-ck546csuegd</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-b860r4e7apg</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-ck546csuegd</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-jt06abqneyr</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -1340,10 +1395,34 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>{!$Label.CRM_Usuarios_Relacionados}</value>
+                    <value>{!$Label.CRM_Sinergias}</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection9</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-jt06abqneyr</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>{!$Label.CRM_Usuarios_Relacionados}</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection8</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Codigo_OC__c}</leftValue>
@@ -1708,15 +1787,9 @@
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection12</identifier>
                 <visibilityRule>
-                    <booleanFilter>1 OR 2</booleanFilter>
                     <criteria>
                         <leftValue>{!Record.Codigo_OC__c}</leftValue>
                         <operator>NE</operator>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!$User.Profile.Name}</leftValue>
-                        <operator>CONTAINS</operator>
-                        <rightValue>Admin</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>
