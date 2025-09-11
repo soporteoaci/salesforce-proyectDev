@@ -4871,10 +4871,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Esperando decisión</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Esperando decisión con competidores NO favoritos</fullName>
             <default>false</default>
         </values>

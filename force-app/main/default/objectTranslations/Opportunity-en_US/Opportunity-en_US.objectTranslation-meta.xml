@@ -112,6 +112,10 @@
         <name>Aprobacion_con_datos_QA_informados</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- No puedes modificar la Probabilidad en esta etapa. Se actualiza automáticamente según la subfase seleccionada. --></errorMessage>
+        <name>Bloquea_cambio_de_probabilidad_presentad</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>The Opportunity is blocked by the Delivery Center Block and by the account type</errorMessage>
         <name>Bloqueada_Linea_Servicio</name>
     </validationRules>

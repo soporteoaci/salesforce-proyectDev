@@ -3,5 +3,5 @@
     <help><!-- Responsable de confirmar la resolución del caso antes de liberar para validación. --></help>
     <label><!-- Supervisor --></label>
     <name>Supervisor__c</name>
-    <relationshipLabel><!-- Cases (Supervisor) --></relationshipLabel>
+    <relationshipLabel><!-- Casos (Supervisor) --></relationshipLabel>
 </CustomFieldTranslation>

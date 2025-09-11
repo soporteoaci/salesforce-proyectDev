@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bloquea_cambio_de_probabilidad_presentad</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  NOT(ISNEW()),
+  $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+  $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+  OR(
+    ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),
+    ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)
+  ),
+  ISPICKVAL(StageName, &apos;Presentada (negociación y cierre)&apos;),
+  NOT(ISCHANGED(Subfase__c)),
+  NOT(ISCHANGED(StageName)),
+  ISCHANGED(Probability)
+)</errorConditionFormula>
+    <errorMessage>No puedes modificar la Probabilidad en esta etapa. Se actualiza automáticamente según la subfase seleccionada.</errorMessage>
+</ValidationRule>

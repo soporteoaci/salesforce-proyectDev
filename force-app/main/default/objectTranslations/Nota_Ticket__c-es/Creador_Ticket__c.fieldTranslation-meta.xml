@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Creador Ticket --></label>
     <name>Creador_Ticket__c</name>
-    <relationshipLabel><!-- Notas Ticket (Ticket Creator) --></relationshipLabel>
+    <relationshipLabel><!-- Notas Ticket (Creador Ticket) --></relationshipLabel>
 </CustomFieldTranslation>

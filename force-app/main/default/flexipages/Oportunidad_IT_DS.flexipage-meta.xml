@@ -638,7 +638,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Contacto_Principal__c</fieldItem>
                 <identifier>RecordContacto_Principal_cField2</identifier>
@@ -859,7 +859,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Delivery_Center__c</fieldItem>
                 <identifier>RecordDelivery_Center_cField2</identifier>

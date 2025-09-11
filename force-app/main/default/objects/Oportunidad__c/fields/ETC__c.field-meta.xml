@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ETC__c</fullName>
     <description>A ser confirmado por el Director de Mercado/División</description>
-    <inlineHelpText>To be confirmed by Market/Division Director</inlineHelpText>
+    <inlineHelpText>A ser confirmado por el Director de Mercado/División</inlineHelpText>
     <label>ETC</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

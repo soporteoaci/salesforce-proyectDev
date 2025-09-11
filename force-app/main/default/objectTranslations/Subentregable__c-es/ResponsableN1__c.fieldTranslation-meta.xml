@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Responsable Nivel 1 --></label>
     <name>ResponsableN1__c</name>
-    <relationshipLabel><!-- Deliverables (Level 1 Manager) --></relationshipLabel>
+    <relationshipLabel><!-- Entregables (Responsable Nivel 1) --></relationshipLabel>
 </CustomFieldTranslation>

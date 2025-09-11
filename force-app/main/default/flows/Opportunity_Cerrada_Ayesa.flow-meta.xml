@@ -87,14 +87,7 @@
         <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
             <name>Si</name>
-            <conditionLogic>1 AND 2 AND (3 OR 4 OR 5 OR 6)</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Ayesa</stringValue>
-                </rightValue>
-            </conditions>
+            <conditionLogic>1 AND (2 OR 3 OR 4 OR 5)</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Bloqueada__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -234,7 +227,7 @@
         <connector>
             <targetReference>Opportunity_Ayesa</targetReference>
         </connector>
-        <filterLogic>1 AND 6 AND (2 OR 3 OR 4 OR 5)</filterLogic>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5)</filterLogic>
         <filters>
             <field>Bloqueada__c</field>
             <operator>EqualTo</operator>
@@ -268,13 +261,6 @@
             <operator>EqualTo</operator>
             <value>
                 <stringValue>No presentada</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Record_Type_Name__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Ayesa</stringValue>
             </value>
         </filters>
         <object>Opportunity</object>

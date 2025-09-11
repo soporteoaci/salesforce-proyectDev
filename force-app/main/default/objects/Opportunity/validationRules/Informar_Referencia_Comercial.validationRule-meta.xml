@@ -9,7 +9,7 @@
 				OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
 				AND(
 								NOT(	ISPICKVAL(Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
-								ISPICKVAL(StageName,&apos;Cerrada&apos;),
+								ISPICKVAL(StageName,&apos;Presentada (negociación y cierre)&apos;),
 								ISPICKVAL(Subfase__c, &apos;Ganada&apos;)
 				)
 )</errorConditionFormula>

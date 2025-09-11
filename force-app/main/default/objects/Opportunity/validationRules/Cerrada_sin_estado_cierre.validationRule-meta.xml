@@ -6,7 +6,7 @@
         $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
         $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
         OR(
-        ISPICKVAL( StageName , &apos;Cerrada&apos;),
+        ISPICKVAL( StageName , &apos;Presentada (negociación y cierre)&apos;),
         ISPICKVAL(Etapa_Fase__c,&apos;Cerrada&apos;)
         ),
         ISPICKVAL( Estado_de_Cierre__c , &quot;&quot;)

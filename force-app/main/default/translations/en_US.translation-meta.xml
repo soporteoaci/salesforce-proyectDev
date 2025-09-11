@@ -1245,9 +1245,6 @@
     <flowDefinitions>
         <flows>
             <customErrorMessages>
-                <developerName>Copia_1_de_Debe_tener_archivo_adjunto</developerName>
-            </customErrorMessages>
-            <customErrorMessages>
                 <developerName>Copia_2_de_Debe_tener_archivo_adjunto</developerName>
             </customErrorMessages>
             <customErrorMessages>
@@ -1258,6 +1255,9 @@
             </customErrorMessages>
             <customErrorMessages>
                 <developerName>Debe_tener_archivo_GO_Oferta</developerName>
+            </customErrorMessages>
+            <customErrorMessages>
+                <developerName>Copia_1_de_Debe_tener_archivo_adjunto</developerName>
             </customErrorMessages>
         </flows>
         <fullName>Notificar_Apoyo_Soporte_Ofertas_Flow</fullName>

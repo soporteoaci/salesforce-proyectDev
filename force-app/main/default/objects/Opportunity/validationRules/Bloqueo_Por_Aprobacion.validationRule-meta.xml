@@ -10,7 +10,14 @@
 				$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
 				$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
 				$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
+				NOT(
+								AND(
+												OR($User.Email =&apos;aballesterosm@ayesa.com&apos;,
+															$User.Email =&apos;mjllopis@ayesa.com&apos;),
+												ISCHANGED(Oferta_SAP__c)
+								)
+				),
 				Bloqueo_por_aprobacion__c =true
-			)</errorConditionFormula>
+)</errorConditionFormula>
     <errorMessage>La oportunidad tiene una aprobación en proceso, no se permite su modificación</errorMessage>
 </ValidationRule>

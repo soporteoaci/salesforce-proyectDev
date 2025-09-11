@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>Country Director</label>
     <name>Director_Pais__c</name>
-    <relationshipLabel><!-- Opportunities (Country Director) --></relationshipLabel>
+    <relationshipLabel><!-- Oportunidades (Director País) --></relationshipLabel>
 </CustomFieldTranslation>
