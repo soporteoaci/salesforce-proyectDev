@@ -32,6 +32,10 @@
                 <behavior>Edit</behavior>
                 <field>Linea_de_Servicio__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Responsable_Fundaci_n_Iberm_tica__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

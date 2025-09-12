@@ -7919,6 +7919,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Oportunidad__c.Responsable_Fundaci_n_Iberm_tica__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Oportunidad__c.Responsable_Preventa__c</field>
         <readable>true</readable>
@@ -10517,6 +10522,11 @@
         <editable>true</editable>
         <field>Parametrica__c.Responsable_Area_Pais_IT__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Parametrica__c.Responsable_Fundaci_n_Iberm_tica__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -13986,6 +13996,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Task-Task Layout</layout>
+        <recordType>Task.RICM__Integration_Alert_Task</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
         <recordType>Task.Visitas</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -15420,6 +15434,11 @@
         <personAccountDefault>true</personAccountDefault>
         <recordType>Task.Marketing</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Task.RICM__Integration_Alert_Task</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

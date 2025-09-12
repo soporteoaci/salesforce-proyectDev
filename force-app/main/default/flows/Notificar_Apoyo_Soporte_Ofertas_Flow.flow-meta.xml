@@ -191,7 +191,7 @@
                 <leftValueReference>$Record.StageName</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Cerrada</stringValue>
+                    <stringValue>Presentada (negociación y cierre)</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -697,7 +697,7 @@
             <field>StageName</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Cerrada</stringValue>
+                <stringValue>Presentada (negociación y cierre)</stringValue>
             </value>
         </filters>
         <filters>

@@ -128,7 +128,7 @@
         <inputAssignments>
             <field>StageName</field>
             <value>
-                <stringValue>Cerrada</stringValue>
+                <stringValue>Presentada (negociación y cierre)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>

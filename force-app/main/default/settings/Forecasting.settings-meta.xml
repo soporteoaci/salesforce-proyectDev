@@ -1087,22 +1087,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -1279,7 +1263,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -1287,7 +1279,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -1802,10 +1802,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -1850,9 +1846,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -2916,22 +2916,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -3108,7 +3092,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -3116,7 +3108,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -3630,10 +3630,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -3678,9 +3674,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -4748,22 +4748,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -4940,7 +4924,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -4948,7 +4940,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -5463,10 +5463,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -5511,9 +5507,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -6577,22 +6577,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -6769,7 +6753,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -6777,7 +6769,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -7291,10 +7291,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -7339,9 +7335,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -8409,22 +8409,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -8601,7 +8585,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -8609,7 +8601,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -9124,10 +9124,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -9172,9 +9168,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -10238,22 +10238,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -10430,7 +10414,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -10438,7 +10430,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -10952,10 +10952,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -11000,9 +10996,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -12070,22 +12070,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -12262,7 +12246,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -12270,7 +12262,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -12785,10 +12785,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -12833,9 +12829,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -13899,22 +13899,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -14091,7 +14075,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -14099,7 +14091,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -14613,10 +14613,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -14661,9 +14657,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -15727,22 +15727,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -15919,7 +15903,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -15927,7 +15919,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -16441,10 +16441,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -16489,9 +16485,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -17555,22 +17555,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -17747,7 +17731,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -17755,7 +17747,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -18269,10 +18269,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -18317,9 +18313,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -19387,22 +19387,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -19579,7 +19563,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -19587,7 +19579,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -20102,10 +20102,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -20150,9 +20146,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
@@ -21216,22 +21216,6 @@
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZPN</field>
-            <label>New Proyecto Inductor 1</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZaf</field>
-            <label>New Proyecto Inductor 2</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SALmv</field>
-            <label>New Proyecto Inductor 3</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000SAZqn</field>
-            <label>New Proyecto Inductor 4</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
             <label>NextGeneration</label>
         </opportunityListFieldsLabelMappings>
@@ -21408,7 +21392,15 @@
             <label>Proyecto Inductor 1</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZPN</field>
+            <label>Proyecto Inductor 1</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysu</field>
+            <label>Proyecto Inductor 2</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZaf</field>
             <label>Proyecto Inductor 2</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -21416,7 +21408,15 @@
             <label>Proyecto Inductor 3</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SALmv</field>
+            <label>Proyecto Inductor 3</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofysw</field>
+            <label>Proyecto Inductor 4</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000SAZqn</field>
             <label>Proyecto Inductor 4</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -21930,10 +21930,6 @@
             <field>00N9O00000Ofys5</field>
             <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
-            <field>00N9O00000SAZPN</field>
-            <field>00N9O00000SAZaf</field>
-            <field>00N9O00000SALmv</field>
-            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -21978,9 +21974,13 @@
             <field>00N9O00000Ofysp</field>
             <field>00N9O00000Ofysr</field>
             <field>00N9O00000Ofyst</field>
+            <field>00N9O00000SAZPN</field>
             <field>00N9O00000Ofysu</field>
+            <field>00N9O00000SAZaf</field>
             <field>00N9O00000Ofysv</field>
+            <field>00N9O00000SALmv</field>
             <field>00N9O00000Ofysw</field>
+            <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>

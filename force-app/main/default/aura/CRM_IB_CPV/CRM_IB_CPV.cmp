@@ -1,22 +1,23 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId"
                 access="global"
                 controller="CRM_IB_CPVController">
-    
+
     <!-- Atributos -->
     <aura:attribute name="Opportunity" type="Opportunity"/>
     <aura:attribute name="allCPVOptions" type="List" default="[]" />
-    <aura:attribute name="selectedCPVs" type="String[]"/>
-    <aura:attribute name="disabledSaveCPV" type="String" default="true"/>
+    <aura:attribute name="selectedCPVs" type="String[]" default="[]"/>
+    <aura:attribute name="disabledSaveCPV" type="Boolean" default="true"/>
     <aura:attribute name="searchTerm" type="String" default=""/>
     <aura:attribute name="disponibles" type="List" default="[]" />
     <aura:attribute name="seleccionados" type="List" default="[]" />
     <aura:attribute name="ultimoIndexDisponible" type="Integer" default="-1"/>
     <aura:attribute name="ultimoIndexSeleccionado" type="Integer" default="-1"/>
     <aura:attribute name="originalSelectedCPVs" type="String[]" default="[]" />
-    
+    <aura:attribute name="bloqueado" type="Boolean" default="false"/>
+
     <!-- Init -->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
-    
+
     <!-- Sección principal -->
     <div class="slds-section slds-is-open animate" aura:id="Section">
         <h3 class="slds-section__title">
@@ -31,10 +32,10 @@
                 CPV
             </button>
         </h3>
-        
+
         <div class="slds-section__content" id="componentList">
             <lightning:layout multipleRows="true" class="slds-p-horizontal_medium slds-p-vertical_medium">
-                
+
                 <!-- Buscador -->
                 <lightning:layoutItem size="12" class="slds-m-bottom_medium">
                     <lightning:input type="search"
@@ -44,11 +45,11 @@
                                      onchange="{!c.handleSearchChange}"
                                      placeholder="Escribe para buscar CPV..." />
                 </lightning:layoutItem>
-                
+
                 <!-- Listas -->
                 <lightning:layoutItem size="12">
                     <lightning:layout horizontalAlign="spread">
-                        
+
                         <!-- Lista izquierda -->
                         <lightning:layoutItem size="5">
                             <label class="slds-form-element__label">Opciones disponibles</label>
@@ -63,10 +64,9 @@
                                         {!item.label}
                                     </li>
                                 </aura:iteration>
-                                
                             </ul>
                         </lightning:layoutItem>
-                        
+
                         <!-- Botones en línea y verticalmente centrados entre las listas -->
                         <lightning:layoutItem size="2" class="slds-p-horizontal_small">
                             <div style="height: 200px; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
@@ -82,11 +82,7 @@
                                                       title="Mover seleccionados ←" />
                             </div>
                         </lightning:layoutItem>
-                        
-                        
-                        
-                        
-                        
+
                         <!-- Lista derecha -->
                         <lightning:layoutItem size="5">
                             <label class="slds-form-element__label">Opciones seleccionadas</label>
@@ -101,13 +97,12 @@
                                         {!item.label}
                                     </li>
                                 </aura:iteration>
-
                             </ul>
                         </lightning:layoutItem>
-                        
+
                     </lightning:layout>
                 </lightning:layoutItem>
-                
+
                 <!-- Botón guardar -->
                 <lightning:layoutItem size="12" class="slds-m-top_medium">
                     <div class="slds-grid slds-grid_align-end" style="width: 100%;">
@@ -118,7 +113,7 @@
                                           disabled="{!v.disabledSaveCPV}" />
                     </div>
                 </lightning:layoutItem>
-                
+
             </lightning:layout>
         </div>
     </div>

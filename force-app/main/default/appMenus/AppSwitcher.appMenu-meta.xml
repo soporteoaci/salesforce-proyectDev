@@ -204,4 +204,8 @@
         <name>Login_App</name>
         <type>ConnectedApp</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>RICM__Rest_Integration_Centraliced_Manager</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>

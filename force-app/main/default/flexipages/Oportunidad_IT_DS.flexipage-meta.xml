@@ -839,7 +839,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Tipo_de_Oportunidad__c</fieldItem>
                 <identifier>RecordTipo_de_Oportunidad_cField2</identifier>
@@ -4492,120 +4492,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.New_Proyecto_Inductor_1__c</fieldItem>
-                <identifier>RecordNew_Proyecto_Inductor_1_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.New_Proyecto_Inductor_2__c</fieldItem>
-                <identifier>RecordNew_Proyecto_Inductor_2_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.New_Proyecto_Inductor_1__r.Codigo_OC_Relacionada__c}</leftValue>
-                        <operator>NE</operator>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-eb9d2bcb-afbe-4c23-a48d-03e205fc0c5a</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.New_Proyecto_Inductor_3__c</fieldItem>
-                <identifier>RecordNew_Proyecto_Inductor_3_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.New_Proyecto_Inductor_2__r.Codigo_OC_Relacionada__c}</leftValue>
-                        <operator>NE</operator>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.New_Proyecto_Inductor_4__c</fieldItem>
-                <identifier>RecordNew_Proyecto_Inductor_4_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.New_Proyecto_Inductor_3__r.Codigo_OC_Relacionada__c}</leftValue>
-                        <operator>NE</operator>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-45957a92-0c16-4ad2-9e1f-e85d67cc838b</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-eb9d2bcb-afbe-4c23-a48d-03e205fc0c5a</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-45957a92-0c16-4ad2-9e1f-e85d67cc838b</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column35</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-420b6290-9cdd-4aac-ad33-0b7269e12167</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-420b6290-9cdd-4aac-ad33-0b7269e12167</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>horizontalAlignment</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>{!$Label.CRM_Proyectos_Inductores}</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
-                        <operator>NE</operator>
-                    </criteria>
-                </visibilityRule>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>actionNames</name>
@@ -4660,6 +4546,32 @@
                 </componentInstanceProperties>
                 <componentName>lst:dynamicRelatedList</componentName>
                 <identifier>lst_dynamicRelatedList8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>Histories</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer5</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -4830,6 +4742,96 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.New_Proyecto_Inductor_1__c</fieldItem>
+                <identifier>RecordNew_Proyecto_Inductor_1_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.New_Proyecto_Inductor_2__c</fieldItem>
+                <identifier>RecordNew_Proyecto_Inductor_2_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.New_Proyecto_Inductor_1__r.Codigo_OC_Relacionada__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-eb9d2bcb-afbe-4c23-a48d-03e205fc0c5a</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.New_Proyecto_Inductor_3__c</fieldItem>
+                <identifier>RecordNew_Proyecto_Inductor_3_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.New_Proyecto_Inductor_2__r.Codigo_OC_Relacionada__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.New_Proyecto_Inductor_4__c</fieldItem>
+                <identifier>RecordNew_Proyecto_Inductor_4_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.New_Proyecto_Inductor_3__r.Codigo_OC_Relacionada__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-45957a92-0c16-4ad2-9e1f-e85d67cc838b</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-eb9d2bcb-afbe-4c23-a48d-03e205fc0c5a</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-45957a92-0c16-4ad2-9e1f-e85d67cc838b</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column35</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-420b6290-9cdd-4aac-ad33-0b7269e12167</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.VTH_Technology_Level_1__c</fieldItem>
                 <identifier>RecordVTH_Technology_Level_1_cField</identifier>
             </fieldInstance>
@@ -4872,6 +4874,30 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-420b6290-9cdd-4aac-ad33-0b7269e12167</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>{!$Label.CRM_Proyectos_Inductores}</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Codigo_OC__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

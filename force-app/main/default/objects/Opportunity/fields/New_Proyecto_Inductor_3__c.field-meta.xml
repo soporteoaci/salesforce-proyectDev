@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>New_Proyecto_Inductor_3__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
-    <label>New Proyecto Inductor 3</label>
+    <label>Proyecto Inductor 3</label>
     <referenceTo>Opportunity</referenceTo>
     <relationshipLabel>Opportunities (New Proyecto Inductor 3)</relationshipLabel>
     <relationshipName>Opportunities_3</relationshipName>

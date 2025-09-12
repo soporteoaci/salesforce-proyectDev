@@ -5,12 +5,13 @@
         action.setParams({ Id_oportunidad: component.get("v.recordId") });
 
         action.setCallback(this, function(response) {
-            if (response.getState() === "SUCCESS") {
+            var state = response.getState();
+            if (state === "SUCCESS") {
                 var result = response.getReturnValue();
                 let disponibles = [], seleccionados = [];
 
-                if (result.opciones) {
-                    result.opciones.forEach(cpv => {
+                if (result && result.opciones) {
+                    result.opciones.forEach(function(cpv) {
                         let opt = { label: cpv, value: cpv, seleccionado: false };
                         if (result.valoresSeleccionados && result.valoresSeleccionados.includes(cpv)) {
                             seleccionados.push(opt);
@@ -23,8 +24,24 @@
                 component.set("v.allCPVOptions", disponibles.concat(seleccionados));
                 component.set("v.disponibles", disponibles);
                 component.set("v.seleccionados", seleccionados);
-                component.set("v.selectedCPVs", seleccionados.map(o => o.value));
-                component.set("v.originalSelectedCPVs", seleccionados.map(o => o.value));
+                component.set("v.selectedCPVs", seleccionados.map(function(o) { return o.value; }));
+                component.set("v.originalSelectedCPVs", seleccionados.map(function(o) { return o.value; }));
+
+                // Verificar si la oportunidad está bloqueada (debe venir en result.oportunidad)
+                if (result && result.oportunidad && result.oportunidad.Bloqueo_por_aprobacion__c === true) {
+                    component.set("v.bloqueado", true);
+                    // dejamos el botón en el estado por defecto (disabled) según si hay cambios:
+                    component.set("v.disabledSaveCPV", true);
+                } else {
+                    component.set("v.bloqueado", false);
+                    // desactivamos el botón si no hay cambios
+                    helper.checkIfModified(component);
+                }
+            } else {
+                // fallback: mostrar error si no carga correctamente
+                var errors = response.getError ? response.getError() : null;
+                console.error("Error en doInit:", errors);
+                helper.mostrarToast("Error", "Error al cargar CPV.", "error");
             }
         });
 
@@ -33,7 +50,7 @@
 
     toggleSeleccionDisponible: function(component, event, helper) {
         const index = parseInt(event.currentTarget.getAttribute('data-index'), 10);
-        const disponibles = component.get("v.disponibles");
+        const disponibles = component.get("v.disponibles") || [];
         const ctrl = event.ctrlKey;
         const shift = event.shiftKey;
         let ultimo = component.get("v.ultimoIndexDisponible");
@@ -62,7 +79,7 @@
 
     toggleSeleccionDerecha: function(component, event, helper) {
         const index = parseInt(event.currentTarget.getAttribute('data-index'), 10);
-        const seleccionados = component.get("v.seleccionados");
+        const seleccionados = component.get("v.seleccionados") || [];
         const ctrl = event.ctrlKey;
         const shift = event.shiftKey;
         let ultimo = component.get("v.ultimoIndexSeleccionado");
@@ -90,105 +107,107 @@
     },
 
     moverSeleccionadosMarcados: function(component, event, helper) {
-        let disponibles = component.get("v.disponibles");
-        let seleccionados = component.get("v.seleccionados");
+        let disponibles = component.get("v.disponibles") || [];
+        let seleccionados = component.get("v.seleccionados") || [];
 
-        const idsMover = disponibles.filter(opt => opt.seleccionado).map(opt => opt.value);
-        const mover = disponibles.filter(opt => idsMover.includes(opt.value)).map(opt => {
+        const idsMover = disponibles.filter(function(opt) { return opt.seleccionado; }).map(function(opt) { return opt.value; });
+        const mover = disponibles.filter(function(opt) { return idsMover.includes(opt.value); }).map(function(opt) {
             opt.seleccionado = false;
             return opt;
         });
 
-        const nuevosDisponibles = disponibles.filter(opt => !idsMover.includes(opt.value));
+        const nuevosDisponibles = disponibles.filter(function(opt) { return !idsMover.includes(opt.value); });
         const nuevosSeleccionados = seleccionados.concat(mover);
 
         component.set("v.disponibles", nuevosDisponibles);
         component.set("v.seleccionados", nuevosSeleccionados);
-        component.set("v.selectedCPVs", nuevosSeleccionados.map(o => o.value));
+        component.set("v.selectedCPVs", nuevosSeleccionados.map(function(o) { return o.value; }));
 
         helper.checkIfModified(component);
     },
 
     moverSeleccionadosIzquierda: function(component, event, helper) {
-        let disponibles = component.get("v.disponibles");
-        let seleccionados = component.get("v.seleccionados");
+        let disponibles = component.get("v.disponibles") || [];
+        let seleccionados = component.get("v.seleccionados") || [];
 
-        const idsMover = seleccionados.filter(opt => opt.seleccionado).map(opt => opt.value);
-        const mover = seleccionados.filter(opt => idsMover.includes(opt.value)).map(opt => {
+        const idsMover = seleccionados.filter(function(opt) { return opt.seleccionado; }).map(function(opt) { return opt.value; });
+        const mover = seleccionados.filter(function(opt) { return idsMover.includes(opt.value); }).map(function(opt) {
             opt.seleccionado = false;
             return opt;
         });
 
-        const nuevosSeleccionados = seleccionados.filter(opt => !idsMover.includes(opt.value));
+        const nuevosSeleccionados = seleccionados.filter(function(opt) { return !idsMover.includes(opt.value); });
         const nuevosDisponibles = disponibles.concat(mover);
 
         component.set("v.disponibles", nuevosDisponibles);
         component.set("v.seleccionados", nuevosSeleccionados);
-        component.set("v.selectedCPVs", nuevosSeleccionados.map(o => o.value));
+        component.set("v.selectedCPVs", nuevosSeleccionados.map(function(o) { return o.value; }));
 
         helper.checkIfModified(component);
     },
 
     moverASeleccionados: function(component, event, helper) {
         const id = event.currentTarget.getAttribute("data-id");
-        let disponibles = component.get("v.disponibles");
-        let seleccionados = component.get("v.seleccionados");
+        let disponibles = component.get("v.disponibles") || [];
+        let seleccionados = component.get("v.seleccionados") || [];
 
-        const mover = disponibles.find(opt => opt.value === id);
+        const mover = disponibles.find(function(opt) { return opt.value === id; });
         if (mover) {
             mover.seleccionado = false;
             seleccionados.push(mover);
-            disponibles = disponibles.filter(opt => opt.value !== id);
+            disponibles = disponibles.filter(function(opt) { return opt.value !== id; });
         }
 
         component.set("v.disponibles", disponibles);
         component.set("v.seleccionados", seleccionados);
-        component.set("v.selectedCPVs", seleccionados.map(o => o.value));
+        component.set("v.selectedCPVs", seleccionados.map(function(o) { return o.value; }));
 
         helper.checkIfModified(component);
     },
 
     moverADisponibles: function(component, event, helper) {
         const id = event.currentTarget.getAttribute("data-id");
-        let disponibles = component.get("v.disponibles");
-        let seleccionados = component.get("v.seleccionados");
+        let disponibles = component.get("v.disponibles") || [];
+        let seleccionados = component.get("v.seleccionados") || [];
 
-        const mover = seleccionados.find(opt => opt.value === id);
+        const mover = seleccionados.find(function(opt) { return opt.value === id; });
         if (mover) {
             mover.seleccionado = false;
             disponibles.push(mover);
-            seleccionados = seleccionados.filter(opt => opt.value !== id);
+            seleccionados = seleccionados.filter(function(opt) { return opt.value !== id; });
         }
 
         component.set("v.disponibles", disponibles);
         component.set("v.seleccionados", seleccionados);
-        component.set("v.selectedCPVs", seleccionados.map(o => o.value));
+        component.set("v.selectedCPVs", seleccionados.map(function(o) { return o.value; }));
 
         helper.checkIfModified(component);
     },
 
     handleSearchChange: function(component) {
-        const searchTerm = component.get("v.searchTerm").toLowerCase();
-        const allOptions = component.get("v.allCPVOptions");
-        const seleccionados = component.get("v.seleccionados");
-        const idsSeleccionados = new Set(seleccionados.map(opt => opt.value));
+        const searchTerm = (component.get("v.searchTerm") || "").toLowerCase();
+        const allOptions = component.get("v.allCPVOptions") || [];
+        const seleccionados = component.get("v.seleccionados") || [];
+        const idsSeleccionados = new Set(seleccionados.map(function(opt) { return opt.value; }));
 
-        const normalize = str => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        const normalize = function(str) { return (str || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); };
 
-        const filtrados = allOptions.filter(opt =>
-            !idsSeleccionados.has(opt.value) &&
-            normalize(opt.label).includes(normalize(searchTerm))
-        );
+        const filtrados = allOptions.filter(function(opt) {
+            return !idsSeleccionados.has(opt.value) && normalize(opt.label).includes(normalize(searchTerm));
+        });
 
         component.set("v.disponibles", filtrados);
     },
 
     saveCPV: function(component, event, helper) {
-        helper.saveCPVOportunidad(component, event, helper);
+        // Validación de primer nivel: si está bloqueada, mostrar toast y no guardar
+        if (component.get("v.bloqueado")) {
+            helper.mostrarToast("Acción no permitida", "La oportunidad está bloqueada por aprobación. No puedes modificar ni guardar CPV.", "error");
+            return;
+        }
 
-        // Actualiza lista original
-        component.set("v.originalSelectedCPVs", component.get("v.selectedCPVs"));
-        component.set("v.disabledSaveCPV", true);
+        // Si no está bloqueada, continuamos con el guardado normal
+        helper.saveCPVOportunidad(component, event, helper);
     },
 
     toggleSection: function(component, event) {

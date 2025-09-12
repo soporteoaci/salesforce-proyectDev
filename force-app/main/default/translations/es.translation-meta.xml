@@ -796,6 +796,1102 @@
         <label><!-- Type --></label>
         <name>PCAL__Type</name>
     </customLabels>
+    <customLabels>
+        <label><!-- Abort --></label>
+        <name>RICM__Abort</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AddInput --></label>
+        <name>RICM__AddInput</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AlertsError --></label>
+        <name>RICM__AlertsError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AlertsMax --></label>
+        <name>RICM__AlertsMax</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AlertsTitle --></label>
+        <name>RICM__AlertsTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AlphaNameInt --></label>
+        <name>RICM__AlphaNameInt</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AreSure --></label>
+        <name>RICM__AreSure</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Ask_Bot --></label>
+        <name>RICM__Ask_Bot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AsyncCloneMessage --></label>
+        <name>RICM__AsyncCloneMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AsyncClonning --></label>
+        <name>RICM__AsyncClonning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AuthError --></label>
+        <name>RICM__AuthError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Avaible --></label>
+        <name>RICM__Avaible</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AvoidSOQLInjection --></label>
+        <name>RICM__AvoidSOQLInjection</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back --></label>
+        <name>RICM__Back</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BarCharTitle --></label>
+        <name>RICM__BarCharTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BulkBatchLimit --></label>
+        <name>RICM__BulkBatchLimit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BulkQueryLimit --></label>
+        <name>RICM__BulkQueryLimit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Bulk Api Monitor --></label>
+        <name>RICM__Bulk_Api_Monitor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CPUMeanChart --></label>
+        <name>RICM__CPUMeanChart</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>RICM__Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CancelSch --></label>
+        <name>RICM__CancelSch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CancelSchSuccess --></label>
+        <name>RICM__CancelSchSuccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CancelScheduling --></label>
+        <name>RICM__CancelScheduling</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ChatGPTConver --></label>
+        <name>RICM__ChatGPTConver</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ChatGPT_ApiKey --></label>
+        <name>RICM__ChatGPT_ApiKey</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ChatGPT_Init --></label>
+        <name>RICM__ChatGPT_Init</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ChunkBulkQueryPrompt --></label>
+        <name>RICM__ChunkBulkQueryPrompt</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clear --></label>
+        <name>RICM__Clear</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ClearCache --></label>
+        <name>RICM__ClearCache</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ClientId --></label>
+        <name>RICM__ClientId</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ClientSecret --></label>
+        <name>RICM__ClientSecret</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clone --></label>
+        <name>RICM__Clone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CloneIntegration --></label>
+        <name>RICM__CloneIntegration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CloneSuccess --></label>
+        <name>RICM__CloneSuccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CloseModal --></label>
+        <name>RICM__CloseModal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CompleteEndpoint --></label>
+        <name>RICM__CompleteEndpoint</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CompleteMandatory --></label>
+        <name>RICM__CompleteMandatory</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Consumed --></label>
+        <name>RICM__Consumed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Continue --></label>
+        <name>RICM__Continue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CopyEndpoint --></label>
+        <name>RICM__CopyEndpoint</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CopyJSON --></label>
+        <name>RICM__CopyJSON</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CopyQuery --></label>
+        <name>RICM__CopyQuery</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CopyJSON --></label>
+        <name>RICM__CopyResult</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CreateBulkJob --></label>
+        <name>RICM__CreateBulkJob</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CreateEndpoint --></label>
+        <name>RICM__CreateEndpoint</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CreateEndpointSucess --></label>
+        <name>RICM__CreateEndpointSucess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CreateJobStep --></label>
+        <name>RICM__CreateJobStep</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CreateQuerySucess --></label>
+        <name>RICM__CreateQuerySucess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CreateScheduled --></label>
+        <name>RICM__CreateScheduled</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CreateTempSucess --></label>
+        <name>RICM__CreateTempSucess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CreateTemplate --></label>
+        <name>RICM__CreateTemplate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create_Query --></label>
+        <name>RICM__Create_Query</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CredentialsSuccess --></label>
+        <name>RICM__CredentialsSuccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CredentialsTitle --></label>
+        <name>RICM__CredentialsTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DSPath --></label>
+        <name>RICM__DSPath</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete --></label>
+        <name>RICM__Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DeleteInput --></label>
+        <name>RICM__DeleteInput</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DeleteLogsEnable --></label>
+        <name>RICM__DeleteLogsEnable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DonutTitle --></label>
+        <name>RICM__DonutTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DuplicateLabel --></label>
+        <name>RICM__DuplicateLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DuplicatedInt --></label>
+        <name>RICM__DuplicatedInt</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EditedLog --></label>
+        <name>RICM__EditedLog</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EditedTemplate --></label>
+        <name>RICM__EditedTemplate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EmailAlertBody --></label>
+        <name>RICM__EmailAlertBody</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EnableAlarms --></label>
+        <name>RICM__EnableAlarms</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EndDate --></label>
+        <name>RICM__EndDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EndpointCopied --></label>
+        <name>RICM__EndpointCopied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EndpointNotFound --></label>
+        <name>RICM__EndpointNotFound</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- English --></label>
+        <name>RICM__English</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EnterAnURI --></label>
+        <name>RICM__EnterAnURI</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EnterJSON --></label>
+        <name>RICM__EnterJSON</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error --></label>
+        <name>RICM__Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorCache --></label>
+        <name>RICM__ErrorCache</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorData --></label>
+        <name>RICM__ErrorData</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorFetchJSONs --></label>
+        <name>RICM__ErrorFetchJSONs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorFetchQuery --></label>
+        <name>RICM__ErrorFetchQuery</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorManagingDataType --></label>
+        <name>RICM__ErrorManagingDataType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorMessage --></label>
+        <name>RICM__ErrorMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorPercent --></label>
+        <name>RICM__ErrorPercent</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorPercentByDML --></label>
+        <name>RICM__ErrorPercentByDML</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorSOQL --></label>
+        <name>RICM__ErrorSOQL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorValidationRule --></label>
+        <name>RICM__ErrorValidationRule</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ExecutionTime --></label>
+        <name>RICM__ExecutionTime</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ExisteingReproccessJob --></label>
+        <name>RICM__ExisteingReproccessJob</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export_Integration --></label>
+        <name>RICM__Export_Integration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export_Integration_Error --></label>
+        <name>RICM__Export_Integration_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export_Integration_Success --></label>
+        <name>RICM__Export_Integration_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ExternalIdField --></label>
+        <name>RICM__ExternalIdField</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FieldRequired --></label>
+        <name>RICM__FieldRequired</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FileError --></label>
+        <name>RICM__FileError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FileUpload --></label>
+        <name>RICM__FileUpload</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FillInputValues --></label>
+        <name>RICM__FillInputValues</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filter --></label>
+        <name>RICM__Filter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FinalDate --></label>
+        <name>RICM__FinalDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Finish --></label>
+        <name>RICM__Finish</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FlowError --></label>
+        <name>RICM__FlowError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Format --></label>
+        <name>RICM__Format</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FormulaEditSucess --></label>
+        <name>RICM__FormulaEditSucess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FormulaResultDetail --></label>
+        <name>RICM__FormulaResultDetail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FormulaTestResult --></label>
+        <name>RICM__FormulaTestResult</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GenerateSwagger --></label>
+        <name>RICM__GenerateSwagger</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GetErrorsReg --></label>
+        <name>RICM__GetErrorsReg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GetMethodQuery --></label>
+        <name>RICM__GetMethodQuery</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GetResults --></label>
+        <name>RICM__GetResults</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GetResultsChunk --></label>
+        <name>RICM__GetResultsChunk</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GetResultsChunkLimitError --></label>
+        <name>RICM__GetResultsChunkLimitError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GetSuccessReg --></label>
+        <name>RICM__GetSuccessReg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GetUnprocessed --></label>
+        <name>RICM__GetUnprocessed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Go --></label>
+        <name>RICM__Go</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GrantType --></label>
+        <name>RICM__GrantType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HeaderFormatHelptext --></label>
+        <name>RICM__HeaderFormatHelptext</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Headers --></label>
+        <name>RICM__Headers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Here --></label>
+        <name>RICM__Here</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Import --></label>
+        <name>RICM__Import</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Import_Integration --></label>
+        <name>RICM__Import_Integration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Import_Integration_Message --></label>
+        <name>RICM__Import_Integration_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Import_Success --></label>
+        <name>RICM__Import_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Importing_Integration --></label>
+        <name>RICM__Importing_Integration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IncorrectJSON --></label>
+        <name>RICM__IncorrectJSON</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Information --></label>
+        <name>RICM__Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IngestJob --></label>
+        <name>RICM__IngestJob</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IngestJobs --></label>
+        <name>RICM__IngestJobs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InitDate --></label>
+        <name>RICM__InitDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InputJSON --></label>
+        <name>RICM__InputJSON</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InputLabel --></label>
+        <name>RICM__InputLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InputType --></label>
+        <name>RICM__InputType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IntegrationTestStatus --></label>
+        <name>RICM__IntegrationTestStatus</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Integration_Error --></label>
+        <name>RICM__Integration_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Integration_NotFound --></label>
+        <name>RICM__Integration_NotFound</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidAdditionalMappingTask --></label>
+        <name>RICM__InvalidAdditionalMappingTask</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidApex --></label>
+        <name>RICM__InvalidApex</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidApexCallback --></label>
+        <name>RICM__InvalidApexCallback</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidApexResponse --></label>
+        <name>RICM__InvalidApexResponse</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidAuth --></label>
+        <name>RICM__InvalidAuth</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidField --></label>
+        <name>RICM__InvalidField</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidIdSObject --></label>
+        <name>RICM__InvalidIdSObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidJSON --></label>
+        <name>RICM__InvalidJSON</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidJoins --></label>
+        <name>RICM__InvalidJoins</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidNamedCred --></label>
+        <name>RICM__InvalidNamedCred</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidObject --></label>
+        <name>RICM__InvalidObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InvalidReference --></label>
+        <name>RICM__InvalidReference</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid_Argument --></label>
+        <name>RICM__Invalid_Argument</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid_Flow --></label>
+        <name>RICM__Invalid_Flow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IsArray --></label>
+        <name>RICM__IsArray</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JSONAppear --></label>
+        <name>RICM__JSONAppear</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JSONCopied --></label>
+        <name>RICM__JSONCopied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JSONMain --></label>
+        <name>RICM__JSONMain</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JobDetail --></label>
+        <name>RICM__JobDetail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JobOKLaunch --></label>
+        <name>RICM__JobOKLaunch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JobType --></label>
+        <name>RICM__JobType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Job Operation --></label>
+        <name>RICM__Job_Operation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Job Status --></label>
+        <name>RICM__Job_Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JoinRelation --></label>
+        <name>RICM__JoinRelation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LWSNeeded --></label>
+        <name>RICM__LWSNeeded</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label --></label>
+        <name>RICM__Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LastMonthBulkResults --></label>
+        <name>RICM__LastMonthBulkResults</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LauchTest --></label>
+        <name>RICM__LauchTest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LaunchFormulaTest --></label>
+        <name>RICM__LaunchFormulaTest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LaunchStep --></label>
+        <name>RICM__LaunchStep</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LineEnding --></label>
+        <name>RICM__LineEnding</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LoginError --></label>
+        <name>RICM__LoginError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MLTS_Port --></label>
+        <name>RICM__MLTS_Port</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingFormula --></label>
+        <name>RICM__MappingFormula</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MarkReprocessed --></label>
+        <name>RICM__MarkReprocessed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MeanTimeByDML --></label>
+        <name>RICM__MeanTimeByDML</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MesaggeGPT --></label>
+        <name>RICM__MesaggeGPT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Missing_Argument --></label>
+        <name>RICM__Missing_Argument</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Name --></label>
+        <name>RICM__Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NameRequired --></label>
+        <name>RICM__NameRequired</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New --></label>
+        <name>RICM__New</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next_ScheduledDate --></label>
+        <name>RICM__Next_ScheduledDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoCallbackMappings --></label>
+        <name>RICM__NoCallbackMappings</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoDMFound --></label>
+        <name>RICM__NoDMFound</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoDMLPerm --></label>
+        <name>RICM__NoDMLPerm</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoDocumentation --></label>
+        <name>RICM__NoDocumentation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoFlowNoApex --></label>
+        <name>RICM__NoFlowNoApex</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoMainTemplate --></label>
+        <name>RICM__NoMainTemplate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoObjectAccess --></label>
+        <name>RICM__NoObjectAccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoPermissionUser --></label>
+        <name>RICM__NoPermissionUser</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoScheduled --></label>
+        <name>RICM__NoScheduled</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoTemplateFound --></label>
+        <name>RICM__NoTemplateFound</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- None --></label>
+        <name>RICM__None</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NotExternalId --></label>
+        <name>RICM__NotExternalId</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NumberErrors --></label>
+        <name>RICM__NumberErrors</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NumberProccessed --></label>
+        <name>RICM__NumberProccessed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NumberRetries --></label>
+        <name>RICM__NumberRetries</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Output --></label>
+        <name>RICM__Output</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PartialReprocess --></label>
+        <name>RICM__PartialReprocess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Password --></label>
+        <name>RICM__Password</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PermissionSetError --></label>
+        <name>RICM__PermissionSetError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PieDataTitle --></label>
+        <name>RICM__PieDataTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QueryCopied --></label>
+        <name>RICM__QueryCopied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QueryHelpText --></label>
+        <name>RICM__QueryHelpText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QueryHiTable --></label>
+        <name>RICM__QueryHiTable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QueryJob --></label>
+        <name>RICM__QueryJob</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QueryJobs --></label>
+        <name>RICM__QueryJobs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QueryStatement --></label>
+        <name>RICM__QueryStatement</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QueryView --></label>
+        <name>RICM__QueryView</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Refresh --></label>
+        <name>RICM__Refresh</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RefreshBulk --></label>
+        <name>RICM__RefreshBulk</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remaining --></label>
+        <name>RICM__Remaining</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReproccessAsync --></label>
+        <name>RICM__ReproccessAsync</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReproccessOK --></label>
+        <name>RICM__ReproccessOK</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reprocess --></label>
+        <name>RICM__Reprocess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReprocessAll --></label>
+        <name>RICM__ReprocessAll</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReprocessApp --></label>
+        <name>RICM__ReprocessApp</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReprocessKO --></label>
+        <name>RICM__ReprocessKO</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReprocessLog --></label>
+        <name>RICM__ReprocessLog</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReprocessMassiveOK --></label>
+        <name>RICM__ReprocessMassiveOK</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RequestBody --></label>
+        <name>RICM__RequestBody</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Response --></label>
+        <name>RICM__Response</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ResponseTime --></label>
+        <name>RICM__ResponseTime</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RestoreDefaultValue --></label>
+        <name>RICM__RestoreDefaultValue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ResultAppear --></label>
+        <name>RICM__ResultAppear</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JSONCopied --></label>
+        <name>RICM__ResultCopied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SObject --></label>
+        <name>RICM__SObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>RICM__Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SchCreationSucess --></label>
+        <name>RICM__SchCreationSucess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SchDeleteError --></label>
+        <name>RICM__SchDeleteError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Schedule --></label>
+        <name>RICM__Schedule</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ScheduleInt --></label>
+        <name>RICM__ScheduleInt</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ScheduledCancelledBulk --></label>
+        <name>RICM__ScheduledCancelledBulk</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ScheduledSuccess --></label>
+        <name>RICM__ScheduledSuccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ScheduledSuccessBulk --></label>
+        <name>RICM__ScheduledSuccessBulk</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ScheduledYet --></label>
+        <name>RICM__ScheduledYet</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SearchByText --></label>
+        <name>RICM__SearchByText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SelectHTTPOption --></label>
+        <name>RICM__SelectHTTPOption</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SelectInputDel --></label>
+        <name>RICM__SelectInputDel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SelectLanguage --></label>
+        <name>RICM__SelectLanguage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SelectOption --></label>
+        <name>RICM__SelectOption</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Selected --></label>
+        <name>RICM__Selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Send --></label>
+        <name>RICM__Send</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SeparatorType --></label>
+        <name>RICM__SeparatorType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Set --></label>
+        <name>RICM__Set</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ShowJSON --></label>
+        <name>RICM__ShowJSON</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ShowSOQL --></label>
+        <name>RICM__ShowSOQL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Spanish --></label>
+        <name>RICM__Spanish</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- StandardEndpointTest --></label>
+        <name>RICM__StandardEndpointTest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Start --></label>
+        <name>RICM__Start</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- StartDate --></label>
+        <name>RICM__StartDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SuccessCache --></label>
+        <name>RICM__SuccessCache</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SuccessPercent --></label>
+        <name>RICM__SuccessPercent</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SuccessPercentByMonth --></label>
+        <name>RICM__SuccessPercentByMonth</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SureJob --></label>
+        <name>RICM__SureJob</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SureRefreshBulk --></label>
+        <name>RICM__SureRefreshBulk</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SwaggerError --></label>
+        <name>RICM__SwaggerError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SwaggerSuccess --></label>
+        <name>RICM__SwaggerSuccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SyncBulkApiLogs --></label>
+        <name>RICM__SyncBulkApiLogs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JSONHiTable --></label>
+        <name>RICM__TempHiTable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Template --></label>
+        <name>RICM__Template</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TestIntegration --></label>
+        <name>RICM__TestIntegration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TestRequestHelptext --></label>
+        <name>RICM__TestRequestHelptext</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Test_DS --></label>
+        <name>RICM__Test_DS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Test_TS --></label>
+        <name>RICM__Test_TS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TimeEmployed --></label>
+        <name>RICM__TimeEmployed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TokenNotFound --></label>
+        <name>RICM__TokenNotFound</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TooManySche --></label>
+        <name>RICM__TooManySche</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TypeHere --></label>
+        <name>RICM__TypeHere</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unavaible_ScheduledDate --></label>
+        <name>RICM__Unavaible_ScheduledDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UniqueIdentifier --></label>
+        <name>RICM__UniqueIdentifier</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update_Query --></label>
+        <name>RICM__Update_Query</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UploadDataStep --></label>
+        <name>RICM__UploadDataStep</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UseLimitField --></label>
+        <name>RICM__UseLimitField</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UseOrderByField --></label>
+        <name>RICM__UseOrderByField</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Username --></label>
+        <name>RICM__Username</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View --></label>
+        <name>RICM__View</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ViewBulkReport --></label>
+        <name>RICM__ViewBulkReport</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ViewDocumentation --></label>
+        <name>RICM__ViewDocumentation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ViewLog --></label>
+        <name>RICM__ViewLog</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View details --></label>
+        <name>RICM__View_details</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- YouMustFillIntegration --></label>
+        <name>RICM__YouMustFillIntegration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- YouMustFillMail --></label>
+        <name>RICM__YouMustFillMail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- YouMustFillOperation --></label>
+        <name>RICM__YouMustFillOperation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- YouMustFillUser --></label>
+        <name>RICM__YouMustFillUser</name>
+    </customLabels>
     <customTabs>
         <label><!-- Control KPI Económicos Contratos --></label>
         <name>Cartera_de_Proyectos</name>
@@ -1241,10 +2337,10 @@
     <flowDefinitions>
         <flows>
             <customErrorMessages>
-                <developerName>Copia_2_de_Debe_tener_archivo_adjunto</developerName>
+                <developerName>Copia_1_de_Debe_tener_archivo_adjunto</developerName>
             </customErrorMessages>
             <customErrorMessages>
-                <developerName>Debe_tener_archivo_adjunto</developerName>
+                <developerName>Copia_2_de_Debe_tener_archivo_adjunto</developerName>
             </customErrorMessages>
             <customErrorMessages>
                 <developerName>Debe_tener_archivo_GO</developerName>
@@ -1253,7 +2349,7 @@
                 <developerName>Debe_tener_archivo_GO_Oferta</developerName>
             </customErrorMessages>
             <customErrorMessages>
-                <developerName>Copia_1_de_Debe_tener_archivo_adjunto</developerName>
+                <developerName>Debe_tener_archivo_adjunto</developerName>
             </customErrorMessages>
         </flows>
         <fullName>Notificar_Apoyo_Soporte_Ofertas_Flow</fullName>

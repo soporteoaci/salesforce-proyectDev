@@ -76,7 +76,7 @@
         <lockSessionsToDomain>true</lockSessionsToDomain>
         <lockSessionsToIp>false</lockSessionsToIp>
         <lockerServiceCSP>false</lockerServiceCSP>
-        <lockerServiceNext>false</lockerServiceNext>
+        <lockerServiceNext>true</lockerServiceNext>
         <lockerServiceNextControl>false</lockerServiceNextControl>
         <redirectBlockModeEnabled>false</redirectBlockModeEnabled>
         <redirectionWarning>false</redirectionWarning>
@@ -91,6 +91,7 @@
         <untrustedRedirect>AlwaysAllowed</untrustedRedirect>
         <useEAPIRateLimitForConnectAPI>false</useEAPIRateLimitForConnectAPI>
         <useLocalStorageForLogoutUrl>false</useLocalStorageForLogoutUrl>
+        <welcomeEmailTemplateId>000000000000000</welcomeEmailTemplateId>
     </sessionSettings>
     <singleSignOnSettings>
         <enableCaseInsensitiveFederationID>true</enableCaseInsensitiveFederationID>
