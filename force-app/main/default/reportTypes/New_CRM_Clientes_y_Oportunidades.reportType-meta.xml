@@ -2782,6 +2782,11 @@
             <field>VTH_Technology_Level_2__c</field>
             <table>Account.Opportunities</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Responsable_Fundaci_n_Iberm_tica__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
         <masterLabel>Oportunidades</masterLabel>
     </sections>
     <sections>

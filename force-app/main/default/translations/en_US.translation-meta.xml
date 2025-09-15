@@ -5731,6 +5731,10 @@
         <label><!-- New Tareas de aprobacion con Oportunidades --></label>
         <name>New_Tareas_de_aprobacion_con_Oportunidades</name>
         <sections>
+            <label><!-- Oportunidades --></label>
+            <name>Oportunidades</name>
+        </sections>
+        <sections>
             <label><!-- Opportunities --></label>
             <name>Opportunities</name>
         </sections>

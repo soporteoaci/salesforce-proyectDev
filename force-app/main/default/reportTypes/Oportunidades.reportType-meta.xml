@@ -1786,6 +1786,11 @@
             <field>VTH_Technology_Level_1__c</field>
             <table>Opportunity</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Responsable_Fundaci_n_Iberm_tica__c</field>
+            <table>Opportunity</table>
+        </columns>
         <masterLabel>Oportunidades</masterLabel>
     </sections>
 </ReportType>

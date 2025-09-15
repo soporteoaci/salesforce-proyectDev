@@ -172,13 +172,6 @@
                 <elementReference>Calcular_responsables.vAuxPreventa</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>$Record.Responsable_Fundaci_n_Iberm_tica__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Calcular_responsables.vResponsableFundacion</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Actualizar_Oportunidad</targetReference>
         </connector>
@@ -1663,7 +1656,6 @@
             <label>Hay visitas</label>
         </rules>
     </decisions>
-    <description>Nueva salida vResponsableFundación</description>
     <environments>Default</environments>
     <formulas>
         <name>Formula_numero_objetivos</name>
@@ -2185,7 +2177,7 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>InvalidDraft</status>
+    <status>Active</status>
     <subflows>
         <name>Calcular_responsables</name>
         <label>Calcular responsables</label>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>64.0</apiVersion>
+    <apiVersion>60.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
         <name>Asignacion_DM_Gustavo_Melero</name>
         <label>Asignación DM Gustavo Melero</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>534</locationX>
+        <locationY>782</locationY>
         <assignmentItems>
             <assignToReference>vDirectorMercadoId</assignToReference>
             <operator>Assign</operator>
@@ -21,8 +21,8 @@
     <assignments>
         <name>Asignar_AJI</name>
         <label>Asignar AJI</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>534</locationX>
+        <locationY>7046</locationY>
         <assignmentItems>
             <assignToReference>vAsesoriaJuridica</assignToReference>
             <operator>Assign</operator>
@@ -37,8 +37,8 @@
     <assignments>
         <name>Asignar_Authorised_Officer</name>
         <label>Asignar Authorised Officer</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>490</locationX>
+        <locationY>2906</locationY>
         <assignmentItems>
             <assignToReference>vAuthorisedOfficer</assignToReference>
             <operator>Assign</operator>
@@ -53,8 +53,8 @@
     <assignments>
         <name>Asignar_BU_Manager</name>
         <label>Asignar BU Manager</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>314</locationX>
+        <locationY>2390</locationY>
         <assignmentItems>
             <assignToReference>vBUManager</assignToReference>
             <operator>Assign</operator>
@@ -69,8 +69,8 @@
     <assignments>
         <name>Asignar_CMO</name>
         <label>Asignar CMO</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>534</locationX>
+        <locationY>5006</locationY>
         <assignmentItems>
             <assignToReference>vCMO</assignToReference>
             <operator>Assign</operator>
@@ -85,8 +85,8 @@
     <assignments>
         <name>Asignar_COO</name>
         <label>Asignar COO</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>534</locationX>
+        <locationY>4598</locationY>
         <assignmentItems>
             <assignToReference>vCOO</assignToReference>
             <operator>Assign</operator>
@@ -101,8 +101,8 @@
     <assignments>
         <name>Asignar_CSO</name>
         <label>Asignar CSO</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>534</locationX>
+        <locationY>5414</locationY>
         <assignmentItems>
             <assignToReference>vCSO</assignToReference>
             <operator>Assign</operator>
@@ -117,8 +117,8 @@
     <assignments>
         <name>Asignar_Dir_Intenacional</name>
         <label>Asignar Dir. Intenacional</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>534</locationX>
+        <locationY>6638</locationY>
         <assignmentItems>
             <assignToReference>vDirectorInternacional</assignToReference>
             <operator>Assign</operator>
@@ -133,8 +133,8 @@
     <assignments>
         <name>Asignar_Direccion_financiera_corporativa</name>
         <label>Asignar Dirección financiera corporativa</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>534</locationX>
+        <locationY>3482</locationY>
         <assignmentItems>
             <assignToReference>vDireccionFinancieraCorp</assignToReference>
             <operator>Assign</operator>
@@ -149,8 +149,8 @@
     <assignments>
         <name>Asignar_Director_Compliance</name>
         <label>Asignar Director Compliance</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>534</locationX>
+        <locationY>5822</locationY>
         <assignmentItems>
             <assignToReference>vDirectorCompliance</assignToReference>
             <operator>Assign</operator>
@@ -165,8 +165,8 @@
     <assignments>
         <name>Asignar_Director_de_Divisi_n</name>
         <label>Asignar Director de División</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>534</locationX>
+        <locationY>1274</locationY>
         <assignmentItems>
             <assignToReference>vDirectorDivision</assignToReference>
             <operator>Assign</operator>
@@ -181,8 +181,8 @@
     <assignments>
         <name>Asignar_Director_Pais_ING</name>
         <label>Asignar Director Pais ING</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>710</locationX>
+        <locationY>1790</locationY>
         <assignmentItems>
             <assignToReference>vDirectorPais</assignToReference>
             <operator>Assign</operator>
@@ -197,8 +197,8 @@
     <assignments>
         <name>Asignar_Director_Pais_IT</name>
         <label>Asignar Director Pais IT</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>358</locationX>
+        <locationY>1790</locationY>
         <assignmentItems>
             <assignToReference>vDirectorPais</assignToReference>
             <operator>Assign</operator>
@@ -213,8 +213,8 @@
     <assignments>
         <name>Asignar_Director_QA</name>
         <label>Asignar Director Q&amp;A</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>534</locationX>
+        <locationY>6230</locationY>
         <assignmentItems>
             <assignToReference>vDirectorQA</assignToReference>
             <operator>Assign</operator>
@@ -229,8 +229,8 @@
     <assignments>
         <name>Asignar_DM_Recuperado</name>
         <label>Asignar DM Recuperado</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>798</locationX>
+        <locationY>782</locationY>
         <assignmentItems>
             <assignToReference>vDirectorMercadoId</assignToReference>
             <operator>Assign</operator>
@@ -245,8 +245,8 @@
     <assignments>
         <name>Asignar_Responsable_Delivery_Center</name>
         <label>Asignar Responsable Delivery Center</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>710</locationX>
+        <locationY>3998</locationY>
         <assignmentItems>
             <assignToReference>vResponsableLineaServicio</assignToReference>
             <operator>Assign</operator>
@@ -268,8 +268,8 @@
     <assignments>
         <name>Asignar_Responsable_Delivery_Center_inno</name>
         <label>Asignar Responsable Delivery Center inno</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>358</locationX>
+        <locationY>3998</locationY>
         <assignmentItems>
             <assignToReference>vResponsableLineaServicio</assignToReference>
             <operator>Assign</operator>
@@ -289,26 +289,10 @@
         </connector>
     </assignments>
     <assignments>
-        <name>Asignar_Responsable_Fundaci_n</name>
-        <label>Asignar Responsable Fundación</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>vResponsableFundacion</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Bucle_Obtener_Responsable_Fundaci_n.Responsable_Fundaci_n_Iberm_tica__c</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Bucle_Obtener_Responsable_Fundaci_n</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>Asignar_Responsable_Preventa</name>
         <label>Asignar Responsable Preventa</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>710</locationX>
+        <locationY>4106</locationY>
         <assignmentItems>
             <assignToReference>vResponsablePreventa</assignToReference>
             <operator>Assign</operator>
@@ -330,8 +314,8 @@
     <assignments>
         <name>Asignar_Responsable_Preventa_inno</name>
         <label>Asignar Responsable Preventa inno</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>358</locationX>
+        <locationY>4106</locationY>
         <assignmentItems>
             <assignToReference>vResponsablePreventa</assignToReference>
             <operator>Assign</operator>
@@ -353,8 +337,8 @@
     <assignments>
         <name>Copia_1_de_Asignar_Authorised_Officer</name>
         <label>Copia 1 de Asignar Authorised Officer</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>138</locationX>
+        <locationY>2906</locationY>
         <assignmentItems>
             <assignToReference>vAuthorisedOfficer</assignToReference>
             <operator>Assign</operator>
@@ -370,8 +354,8 @@
         <name>Copia_1_de_Obtener_Authorised_Officer</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Copia 1 de Obtener Authorised Officer</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>50</locationX>
+        <locationY>2690</locationY>
         <assignNextValueToReference>currentItem_Obtener_Authorised_Officer</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
@@ -398,28 +382,28 @@
         <name>Obtener_AJI</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener AJI</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>446</locationX>
+        <locationY>6830</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>Asesoría Jurídica</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Valor__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Valor__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_oportunidad.Direccion_Operaciones__c</elementReference>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -433,8 +417,8 @@
         <name>Obtener_Authorised_Officer</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Authorised Officer</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>402</locationX>
+        <locationY>2690</locationY>
         <assignNextValueToReference>currentItem_Obtener_Authorised_Officer</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
@@ -461,8 +445,8 @@
         <name>Obtener_BU_Manager</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener BU Manager</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>226</locationX>
+        <locationY>2174</locationY>
         <assignNextValueToReference>currentItem_Obtener_Authorised_Officer</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
@@ -489,28 +473,28 @@
         <name>Obtener_CMO</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener CMO</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>446</locationX>
+        <locationY>4790</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>CMO</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Valor__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Valor__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_oportunidad.Direccion_Operaciones__c</elementReference>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -524,21 +508,21 @@
         <name>Obtener_COO</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener COO</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>446</locationX>
+        <locationY>4382</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>COO</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -552,28 +536,28 @@
         <name>Obtener_CSO</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener CSO</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>446</locationX>
+        <locationY>5198</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>CSO</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Valor__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Valor__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_oportunidad.Direccion_Operaciones__c</elementReference>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -587,21 +571,21 @@
         <name>Obtener_Dir_Internacional</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Dir Internacional</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>446</locationX>
+        <locationY>6422</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>Dir. Intenacional</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -615,21 +599,21 @@
         <name>Obtener_Direccion_financiera_corporativa</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Dirección financiera corporativa</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>446</locationX>
+        <locationY>3266</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>Dir. Financiera Corporativa</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -643,21 +627,21 @@
         <name>Obtener_Director_Compliance</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Director Compliance</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>446</locationX>
+        <locationY>5606</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>Compliance</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -671,28 +655,28 @@
         <name>Obtener_Director_de_Divisi_n</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Director de División</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>446</locationX>
+        <locationY>1058</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>División</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Valor__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Valor__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_oportunidad.DivisionPicklist__c</elementReference>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -706,28 +690,28 @@
         <name>Obtener_Director_Mercado</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Director Mercado</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>446</locationX>
+        <locationY>458</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>Mercado</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Valor__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Valor__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_oportunidad.Mercado__c</elementReference>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -741,28 +725,28 @@
         <name>Obtener_Director_Pa_s</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Director País</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>270</locationX>
+        <locationY>1574</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>País</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Valor__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Valor__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_oportunidad.Pais_IT__c</elementReference>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -776,28 +760,28 @@
         <name>Obtener_Director_Pais_ING</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Director País ING</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>622</locationX>
+        <locationY>1574</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>País</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Valor__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Valor__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_oportunidad.Pais__c</elementReference>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -811,21 +795,21 @@
         <name>Obtener_Director_QA</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Director Q&amp;A</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>446</locationX>
+        <locationY>6014</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>Director Q&amp;A</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -839,28 +823,28 @@
         <name>Obtener_Responsable_Delivery_Center</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Responsable Delivery Center</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>622</locationX>
+        <locationY>3782</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>Delivery Center</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Valor__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Valor__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_oportunidad.Delivery_Center__c</elementReference>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -874,28 +858,28 @@
         <name>Obtener_Responsable_Delivery_Center_INNO</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
         <label>Obtener Responsable Delivery Center INNO</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
+        <locationX>270</locationX>
+        <locationY>3782</locationY>
+        <assignNextValueToReference>currentItem_Obtener_Responsable_Delivery_Center</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Recuperar_Registros_parametrica</collectionReference>
         <conditionLogic>and</conditionLogic>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Maestro__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>Delivery Center</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Valor__c</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.Valor__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>INNOVATION</stringValue>
             </rightValue>
         </conditions>
         <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
+            <leftValueReference>currentItem_Obtener_Responsable_Delivery_Center.RecordTypeId</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
@@ -905,46 +889,11 @@
             <targetReference>Bucle_Obtener_Responsable_Delivery_Center_inno</targetReference>
         </connector>
     </collectionProcessors>
-    <collectionProcessors>
-        <name>Obtener_Responsable_Fundaci_n</name>
-        <elementSubtype>FilterCollectionProcessor</elementSubtype>
-        <label>Obtener Responsable Fundación</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNextValueToReference>currentItem_Obtener_Responsable_Fundaci_n_0</assignNextValueToReference>
-        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
-        <collectionReference>Recuperar_Registros_parametrica</collectionReference>
-        <conditionLogic>and</conditionLogic>
-        <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Maestro__c</leftValueReference>
-            <operator>EqualTo</operator>
-            <rightValue>
-                <stringValue>Sociedad</stringValue>
-            </rightValue>
-        </conditions>
-        <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.Valor__c</leftValueReference>
-            <operator>EqualTo</operator>
-            <rightValue>
-                <elementReference>Obtener_oportunidad.Sociedad_Ayesa__c</elementReference>
-            </rightValue>
-        </conditions>
-        <conditions>
-            <leftValueReference>currentItem_Obtener_Responsable_Fundaci_n_0.RecordTypeId</leftValueReference>
-            <operator>EqualTo</operator>
-            <rightValue>
-                <elementReference>Obtener_record_type_estructura_org.Id</elementReference>
-            </rightValue>
-        </conditions>
-        <connector>
-            <targetReference>Bucle_Obtener_Responsable_Fundaci_n</targetReference>
-        </connector>
-    </collectionProcessors>
     <decisions>
         <name>Direccion_Operaciones</name>
         <label>Direccion Operaciones</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>1466</locationY>
         <defaultConnector>
             <targetReference>Obtener_Director_Pais_ING</targetReference>
         </defaultConnector>
@@ -968,8 +917,8 @@
     <decisions>
         <name>Direccion_operaciones_2</name>
         <label>Direccion operaciones</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>3674</locationY>
         <defaultConnector>
             <targetReference>Obtener_Responsable_Delivery_Center</targetReference>
         </defaultConnector>
@@ -993,8 +942,8 @@
     <decisions>
         <name>Division</name>
         <label>Division</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>666</locationX>
+        <locationY>674</locationY>
         <defaultConnector>
             <targetReference>Asignar_DM_Recuperado</targetReference>
         </defaultConnector>
@@ -1018,8 +967,8 @@
     <decisions>
         <name>Pais_Middle_East</name>
         <label>¿País Middle East?</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>226</locationX>
+        <locationY>2582</locationY>
         <defaultConnector>
             <targetReference>Obtener_Authorised_Officer</targetReference>
         </defaultConnector>
@@ -1099,8 +1048,8 @@
     <decisions>
         <name>Sociedad_BL_0151</name>
         <label>Sociedad BL 0151</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>2066</locationY>
         <defaultConnector>
             <targetReference>Obtener_Direccion_financiera_corporativa</targetReference>
         </defaultConnector>
@@ -1121,54 +1070,26 @@
             <label>Si es BL</label>
         </rules>
     </decisions>
-    <decisions>
-        <name>Sociedad_Fundazioa</name>
-        <label>Sociedad Fundazioa</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>Obtener_Director_Mercado</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Resultado predeterminado</defaultConnectorLabel>
-        <rules>
-            <name>Sociedad_0186_IBERMATICA_FUNDAZIOA</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Obtener_oportunidad.Sociedad_Ayesa__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>0186</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Obtener_Responsable_Fundaci_n</targetReference>
-            </connector>
-            <label>Sociedad 0186 - IBERMATICA FUNDAZIOA</label>
-        </rules>
-    </decisions>
-    <description>Se cambia la manera de calcular al Responsable de Fundación. Se hace mediante Paramétrica. Además, se pasa el Responsable de DC y Preventa al final para poder calcularlo si la sociedad es 0186 Ibermatica Fundazioa</description>
+    <description>Cambios &apos;Authorised Officer&apos; - sociedad 0151</description>
     <environments>Default</environments>
     <interviewLabel>Oportunidad: Obtener Responsables {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Oportunidad: Obtener Responsables</label>
     <loops>
         <name>Bucle_Obtener_AJI</name>
         <label>Bucle Obtener AJI</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>6938</locationY>
         <collectionReference>Obtener_AJI</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
             <targetReference>Asignar_AJI</targetReference>
         </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>Direccion_operaciones_2</targetReference>
-        </noMoreValuesConnector>
     </loops>
     <loops>
         <name>Bucle_Obtener_Authorised_Officer</name>
         <label>Bucle Obtener Authorised Officer</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>402</locationX>
+        <locationY>2798</locationY>
         <collectionReference>Obtener_Authorised_Officer</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1181,8 +1102,8 @@
     <loops>
         <name>Bucle_Obtener_BU_Manager</name>
         <label>Bucle Obtener BU Manager</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>226</locationX>
+        <locationY>2282</locationY>
         <collectionReference>Obtener_BU_Manager</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1195,8 +1116,8 @@
     <loops>
         <name>Bucle_Obtener_CMO</name>
         <label>Bucle Obtener CMO</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>4898</locationY>
         <collectionReference>Obtener_CMO</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1209,8 +1130,8 @@
     <loops>
         <name>Bucle_Obtener_COO</name>
         <label>Bucle Obtener COO</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>4490</locationY>
         <collectionReference>Obtener_COO</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1223,8 +1144,8 @@
     <loops>
         <name>Bucle_Obtener_CSO</name>
         <label>Bucle Obtener CSO</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>5306</locationY>
         <collectionReference>Obtener_CSO</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1237,8 +1158,8 @@
     <loops>
         <name>Bucle_Obtener_Dir_Internacional</name>
         <label>Bucle Obtener Dir Internacional</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>6530</locationY>
         <collectionReference>Obtener_Dir_Internacional</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1251,22 +1172,22 @@
     <loops>
         <name>Bucle_Obtener_Direccion_financiera_corporativa</name>
         <label>Bucle Obtener Dirección financiera corporativa</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>3374</locationY>
         <collectionReference>Obtener_Direccion_financiera_corporativa</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
             <targetReference>Asignar_Direccion_financiera_corporativa</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Obtener_COO</targetReference>
+            <targetReference>Direccion_operaciones_2</targetReference>
         </noMoreValuesConnector>
     </loops>
     <loops>
         <name>Bucle_Obtener_Director_Compliance</name>
         <label>Bucle Obtener Director Compliance</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>5714</locationY>
         <collectionReference>Obtener_Director_Compliance</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1279,8 +1200,8 @@
     <loops>
         <name>Bucle_Obtener_Director_de_Divisi_n</name>
         <label>Bucle Obtener Director de División</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>1166</locationY>
         <collectionReference>Obtener_Director_de_Divisi_n</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1293,8 +1214,8 @@
     <loops>
         <name>Bucle_Obtener_Director_Mercado</name>
         <label>Bucle Obtener Director Mercado</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>566</locationY>
         <collectionReference>Obtener_Director_Mercado</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1307,8 +1228,8 @@
     <loops>
         <name>Bucle_Obtener_Director_Pa_s</name>
         <label>Bucle Obtener Director País</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>270</locationX>
+        <locationY>1682</locationY>
         <collectionReference>Obtener_Director_Pa_s</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1321,8 +1242,8 @@
     <loops>
         <name>Bucle_Obtener_Director_Pais_ING</name>
         <label>Bucle Obtener Director País ING</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>622</locationX>
+        <locationY>1682</locationY>
         <collectionReference>Obtener_Director_Pais_ING</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1335,8 +1256,8 @@
     <loops>
         <name>Bucle_Obtener_Director_QA</name>
         <label>Bucle Obtener Director Q&amp;A</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>6122</locationY>
         <collectionReference>Obtener_Director_QA</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1349,44 +1270,36 @@
     <loops>
         <name>Bucle_Obtener_Responsable_Delivery_Center</name>
         <label>Bucle Obtener Responsable Delivery Center</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>622</locationX>
+        <locationY>3890</locationY>
         <collectionReference>Obtener_Responsable_Delivery_Center</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
             <targetReference>Asignar_Responsable_Delivery_Center</targetReference>
         </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Obtener_COO</targetReference>
+        </noMoreValuesConnector>
     </loops>
     <loops>
         <name>Bucle_Obtener_Responsable_Delivery_Center_inno</name>
         <label>Bucle Obtener Responsable Delivery Center inno</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>270</locationX>
+        <locationY>3890</locationY>
         <collectionReference>Obtener_Responsable_Delivery_Center_INNO</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
             <targetReference>Asignar_Responsable_Delivery_Center_inno</targetReference>
         </nextValueConnector>
-    </loops>
-    <loops>
-        <name>Bucle_Obtener_Responsable_Fundaci_n</name>
-        <label>Bucle Obtener Responsable Fundación</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <collectionReference>Obtener_Responsable_Fundaci_n</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>Asignar_Responsable_Fundaci_n</targetReference>
-        </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Direccion_operaciones_2</targetReference>
+            <targetReference>Obtener_COO</targetReference>
         </noMoreValuesConnector>
     </loops>
     <loops>
         <name>Copia_1_de_Bucle_Obtener_Authorised_Officer</name>
         <label>Copia 1 de Bucle Obtener Authorised Officer</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>50</locationX>
+        <locationY>2798</locationY>
         <collectionReference>Copia_1_de_Obtener_Authorised_Officer</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1418,8 +1331,8 @@
     <recordLookups>
         <name>Obtener_oportunidad</name>
         <label>Obtener oportunidad</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Obtener_record_type_estructura_org</targetReference>
@@ -1439,8 +1352,8 @@
     <recordLookups>
         <name>Obtener_record_type_estructura_org</name>
         <label>Obtener record type estructura org</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>242</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Recuperar_Registros_parametrica</targetReference>
@@ -1460,11 +1373,11 @@
     <recordLookups>
         <name>Recuperar_Registros_parametrica</name>
         <label>Recuperar Registros parametrica</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
+        <locationX>446</locationX>
+        <locationY>350</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Sociedad_Fundazioa</targetReference>
+            <targetReference>Obtener_Director_Mercado</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -1486,21 +1399,13 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>0</locationX>
+        <locationX>320</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Obtener_oportunidad</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
-    <variables>
-        <name>currentItem_Maestro_Sociedad_Parametrica</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>Parametrica__c</objectType>
-    </variables>
+    <status>Active</status>
     <variables>
         <name>currentItem_Obtener_Authorised_Officer</name>
         <dataType>SObject</dataType>
@@ -1510,15 +1415,7 @@
         <objectType>Parametrica__c</objectType>
     </variables>
     <variables>
-        <name>currentItem_Obtener_Responsable_Fundaci_n</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>Parametrica__c</objectType>
-    </variables>
-    <variables>
-        <name>currentItem_Obtener_Responsable_Fundaci_n_0</name>
+        <name>currentItem_Obtener_Responsable_Delivery_Center</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
@@ -1639,13 +1536,6 @@
     </variables>
     <variables>
         <name>vDirectorQA</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>true</isOutput>
-    </variables>
-    <variables>
-        <name>vResponsableFundacion</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>

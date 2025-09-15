@@ -490,6 +490,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CodResponsableCallout</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CommunitiesLandingController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -9630,6 +9634,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Responsable_Fundaci_n_Iberm_tica__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Responsable_Preventa__c</field>
         <readable>true</readable>
@@ -10522,7 +10531,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Parametrica__c.Responsable_Fundaci_n_Iberm_tica__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>

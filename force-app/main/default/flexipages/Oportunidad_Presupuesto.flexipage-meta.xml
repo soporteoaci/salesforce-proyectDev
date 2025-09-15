@@ -3228,6 +3228,23 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Responsable_Fundaci_n_Iberm_tica__c</fieldItem>
+                <identifier>RecordResponsable_Fundaci_n_Iberm_tica_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Sociedad_Ayesa__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0186</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Director_Compliance__c</fieldItem>
                 <identifier>RecordDirector_Compliance_cField</identifier>
             </fieldInstance>

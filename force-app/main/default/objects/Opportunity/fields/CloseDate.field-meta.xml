@@ -4,6 +4,6 @@
     <description>Fecha estimada de cierre de la oportunidad</description>
     <inlineHelpText>Fecha estimada de cierre de la oportunidad, indique la fecha REAL si ya se ha cerrado</inlineHelpText>
     <trackFeedHistory>true</trackFeedHistory>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
 </CustomField>

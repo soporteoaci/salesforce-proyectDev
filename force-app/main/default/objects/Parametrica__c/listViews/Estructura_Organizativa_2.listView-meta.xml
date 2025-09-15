@@ -8,9 +8,9 @@
     <columns>Responsable__c</columns>
     <columns>Responsable_Area_Pais_ING__c</columns>
     <columns>Responsable_Area_Pais_IT__c</columns>
+    <columns>Responsable_Fundaci_n_Iberm_tica__c</columns>
     <columns>Auxiliar_Preventa__c</columns>
     <columns>Auxiliar_Delivery_Center__c</columns>
-    <columns>Mercado_lookup__c</columns>
     <columns>Pais__c</columns>
     <columns>Importe_limite_Horizontal__c</columns>
     <columns>Importe_B1_B2__c</columns>
@@ -20,7 +20,7 @@
     <filters>
         <field>Maestro__c</field>
         <operation>equals</operation>
-        <value>División</value>
+        <value>Sociedad</value>
     </filters>
     <label>Estructura Organizativa</label>
     <sharedTo>

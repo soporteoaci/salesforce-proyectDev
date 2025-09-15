@@ -2105,4 +2105,12 @@
         </columns>
         <masterLabel>Tareas de aprobación</masterLabel>
     </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Responsable_Fundaci_n_Iberm_tica__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <masterLabel>Oportunidades</masterLabel>
+    </sections>
 </ReportType>
