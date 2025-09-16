@@ -754,6 +754,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>OCRBodyBuilder</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ObjetivoTrigger_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>

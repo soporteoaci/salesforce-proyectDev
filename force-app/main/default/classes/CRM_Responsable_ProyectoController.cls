@@ -26,6 +26,7 @@ public with sharing class CRM_Responsable_ProyectoController {
         
         request.setBody(envio+data);   
         request.setMethod('POST');
+        System.debug('body 01 --> ' + envio+data);
         
         if (endpoint != null) {
             request.setEndpoint(endpoint);  

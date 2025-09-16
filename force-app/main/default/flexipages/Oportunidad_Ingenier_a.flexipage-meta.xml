@@ -49,9 +49,6 @@
                             <value>Opportunity.Clonar_Oportunidad</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.Opportunity.Oferta_SAP_ING</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Share</value>
                             <visibilityRule>
                                 <booleanFilter>1 OR 2</booleanFilter>

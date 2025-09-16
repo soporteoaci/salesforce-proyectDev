@@ -423,6 +423,10 @@
         <name>Validacion_Borrador_Acuerdo_de_socios</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Está modificando la fecha de presentación tras haberse aprobado la oferta. Por favor, contactar con CAU-CRM. --></errorMessage>
+        <name>Validacion_Fecha_Presentacion</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>The fields of the “Qualification” tab must be informed by the Responsible before proceeding to the “Pending Preliminar ok” subphase</errorMessage>
         <name>Validacion_Pdt_Ok_preliminar</name>
     </validationRules>
@@ -434,10 +438,6 @@
         <errorMessage>Before proceeding to Pending Approval report the fields in the &apos;Information&apos; section of the &apos;Offer&apos; tab.</errorMessage>
         <name>informacion_Correo_Aprobacion_Oferta</name>
     </validationRules>
-    <webLinks>
-        <label><!-- Oferta_SAP_ING --></label>
-        <name>Oferta_SAP_ING</name>
-    </webLinks>
     <workflowTasks>
         <name>Fecha_Vencimiento</name>
         <subject><!-- Vencimiento Fecha Presentación --></subject>
