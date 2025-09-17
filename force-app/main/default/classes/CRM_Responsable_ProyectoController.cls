@@ -10,34 +10,26 @@ public with sharing class CRM_Responsable_ProyectoController {
         }
     }
     
+    
     // buscar empleados en el servicio externo
     @AuraEnabled
     public static String BusquedaEmpl(String buscarTexto) {
-        //   JSONGenerator gen = JSON.createGenerator(true);
-        Http http = new Http();
-        HttpRequest request = new HttpRequest();
-        WebService__c webServiceData = WebService__c.getInstance();
-        String user = webServiceData.username__c;        
-        String pass = webServiceData.password__c;
-        String endpoint = webServiceData.EndPoint_Search_Empleados__c;
         
-        String envio='username='+user+'&password='+pass+'&data=' ;   
-        String data='{"activo":"true",'+buscarTexto+'}';
+        Map<String,Object> params = new Map<String,Object>();
+        params.put(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE_DATA_PARAM, CRM_Responsable_ProyectoHelper.buildBusquedaEmplRequestBody(buscarTexto));
         
-        request.setBody(envio+data);   
-        request.setMethod('POST');
-        System.debug('body 01 --> ' + envio+data);
+        System.debug('CRM_Responsable_ProyectoHelper.buildBusquedaEmplRequestBody(buscarTexto) ' + CRM_Responsable_ProyectoHelper.buildBusquedaEmplRequestBody(buscarTexto));
         
-        if (endpoint != null) {
-            request.setEndpoint(endpoint);  
-            HttpResponse response = http.send(request);
-            System.debug('response'); 
-            System.debug(response.getBody()); 
-            return response.getBody(); 
+        Map<String, Object> response = RICM.CallOutService.executeRequest(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE, params, null);
+        
+        if(response != null && response.containsKey('result') && response.get('result') == 'OK'){
+            return ((HttpResponse) response.get('response')).getBody() != null ? ((HttpResponse) response.get('response')).getBody() : '[]';
+        } else {
+            return '[]';
         }
         
-        return '[]';
     }
+    
     
     // actualizar la opp con el empleado
     @AuraEnabled

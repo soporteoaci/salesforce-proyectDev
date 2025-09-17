@@ -10,7 +10,7 @@ public class TaskTrigger_Test {
     @isTest
     static void crear_update_tarea() {
         // Crear Opportunity con misma firma usada en Tarea_aprobacion_Test
-        Opportunity op = TestDataFactory.createOpportunity('Cualificación', 'Digital impact');
+        Opportunity op = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         // Aseguramos tener Account y Contact asociados
         Account acc;
         Contact cto;

@@ -1,6 +1,6 @@
-@isTest
+@isTest(SeeAllData=true)
 public class TestDataFactory {
-    public static Opportunity createOpportunity(String etapa, String lineaServicio) {
+    public static Opportunity createOpportunity(String etapa, String lineaServicio,String tipoRegistro) {
         
         // ➊  Cliente + contacto reutilizables
         Account cliente = createClientes(1)[0];
@@ -12,18 +12,17 @@ public class TestDataFactory {
         insert contacto;
         System.debug('Línea de servicio en TestDataFactory: '+lineaServicio);
         
-        Id rtOpp = Schema.SObjectType.Opportunity
-            .getRecordTypeInfosByName()
-            .get('Ayesa')
-            .getRecordTypeId();
+        RecordType rd = [SELECT Id, DeveloperName, Name
+            FROM RecordType
+            WHERE SObjectType = 'Opportunity' AND DeveloperName=:tipoRegistro];
         
         Opportunity opp = new Opportunity(
-            RecordTypeId                   = rtOpp,
+            RecordTypeId                   = rd.Id,
             Name                           = 'Opp-Test',
             StageName                      = 'Prospecting',
             CloseDate                      = Date.today().addDays(15),
             Nombre_Corto__c                = 'Opp-Test',
-            Cliente__c                     = cliente.Id,
+            AccountId                      = cliente.Id,
             Contacto_Principal__c          = contacto.Id,
             Pais__c                        = 'ES',
             Sociedad_Ayesa__c              = '0002',
@@ -40,7 +39,6 @@ public class TestDataFactory {
             Plazo_de_ejecuci_n_meses__c         = 1,
             Tipo_Participacion_Ayesa__c         = 'Contratista Principal',
             Participacion_Ayesa__c              = 100,
-            Direccion_Operaciones__c            = 'IT&DS',
             Subfase__c= 'Alta'  
         );
         insert opp;

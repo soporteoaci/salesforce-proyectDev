@@ -19,7 +19,7 @@ public class CRM_Calculo_Pipeline_Test {
             }
         );
 
-        Opportunity opp = TestDataFactory.createOpportunity('Cualificación', 'Digital impact');
+        Opportunity opp = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         opp.Fecha_Creacion__c            = Date.newInstance(2024, 2, 1);
         opp.Fecha_estimada_de_cierre__c  = Date.newInstance(2024, 6, 1);
         opp.Importe_total_sin_IVA__c     = 100000;

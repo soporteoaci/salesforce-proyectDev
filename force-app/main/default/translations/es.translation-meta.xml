@@ -818,6 +818,10 @@
     </customLabels>
     <customLabels>
         <label><!-- AlphaNameInt --></label>
+        <name>RICM__AlphaLabelQuery</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AlphaNameInt --></label>
         <name>RICM__AlphaNameInt</name>
     </customLabels>
     <customLabels>

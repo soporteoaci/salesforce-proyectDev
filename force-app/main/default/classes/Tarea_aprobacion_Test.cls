@@ -39,7 +39,7 @@ public class Tarea_aprobacion_Test {
     @isTest
     public static void Aprobacion_Oferta(){
         // Crear Opportunity de prueba usando TestDataFactory
-        Opportunity op = TestDataFactory.createOpportunity('Cualificación', 'Digital impact');
+        Opportunity op = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
 
         // Crear tareas de aprobación vinculadas a la Opportunity
         List<Tarea_aprobacion__c> tareas_insert = new List<Tarea_aprobacion__c>(); 

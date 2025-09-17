@@ -6,6 +6,7 @@
     <errorConditionFormula>AND(
         $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
         $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+				    NOT(ISPICKVAL(Subfase__c, &apos;Aplazada / anulada&apos;)),
         Fecha_limite_de_presentacion__c &gt; CloseDate
         )</errorConditionFormula>
     <errorDisplayField>CloseDate</errorDisplayField>

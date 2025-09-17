@@ -1,0 +1,28 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" controller="Codigo_Oferta_Ingenieria_Controller" access="global">
+  <aura:attribute name="recordId" type="Id" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+  <div class="slds-p-around_medium">
+    <lightning:card>
+      <aura:if isTrue="{!v.isLoading}">
+        <div class="slds-align_absolute-center slds-p-vertical_medium">
+          <lightning:spinner alternativeText="Enviando correo..." size="medium" />
+        </div>
+        <aura:set attribute="else">
+          <div class="slds-text-align_center slds-p-around_small">
+            <lightning:icon iconName="utility:email" size="small" class="slds-m-bottom_x-small" />
+            <div class="slds-text-heading_small">
+              <strong>Vas a enviar un email a Ofertas para solicitar el Código Oferta.<br/>¿Desea enviar la solicitud?</strong>
+            </div>
+          </div>
+
+          <div class="slds-text-align_center slds-m-top_medium">
+            <lightning:button aura:id="enviarCorreo" disabled="{!v.isLoading}" variant="brand" label="Enviar Correo" onclick="{!c.enviarCorreo}" />
+          </div>
+        </aura:set>
+      </aura:if>
+    </lightning:card>
+  </div>
+</aura:component>

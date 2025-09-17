@@ -1,4 +1,4 @@
-@IsTest
+@isTest
 public class CRM_CentroResponsabilidad_Test {
     
     @testSetup
@@ -39,7 +39,7 @@ public class CRM_CentroResponsabilidad_Test {
                     'Estado__c'                      => '1'
                     });
         
-        TestDataFactory.createOpportunity('Cualificación', 'Digital impact');
+        TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         upsert new CRM_Ibermatica_Configuration__c(
             SetupOwnerId    = UserInfo.getOrganizationId(),

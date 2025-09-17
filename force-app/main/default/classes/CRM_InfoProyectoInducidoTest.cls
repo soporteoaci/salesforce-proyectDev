@@ -17,7 +17,8 @@ public class CRM_InfoProyectoInducidoTest {
         // Datos de prueba: oportunidad “Cualificación” y una línea cualquiera
         Opportunity opp = TestDataFactory.createOpportunity(
                               'Cualificación',
-                              'Digital impact'
+                              'Digital impact',
+							  'IT_DS'
                           );
 
         Test.startTest();
@@ -58,7 +59,8 @@ public class CRM_InfoProyectoInducidoTest {
 
         Opportunity opp = TestDataFactory.createOpportunity(
                               'Cualificación',
-                              'Digital impact'
+                              'Digital impact',
+							  'IT_DS'
                           );
         opp.Oferta_SAP__c = 'O45/03659/01';   // 12+ caracteres  ⇒  esperado “Ok”
         update opp;
@@ -93,7 +95,8 @@ public class CRM_InfoProyectoInducidoTest {
 
         Opportunity opp = TestDataFactory.createOpportunity(
                               'Cualificación',
-                              'Digital impact'
+                              'Digital impact',
+							  'IT_DS'
                           );
         opp.Oferta_SAP__c = 'O45/03659';      // < 12 caracteres  ⇒  esperado “Error”
         update opp;

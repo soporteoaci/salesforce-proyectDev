@@ -64,6 +64,16 @@
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Oferta_SAP_ING</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.Correo_Oferta_enviado__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>false</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>

@@ -80,6 +80,10 @@
         <name>Oferta_Ingenieria</name>
     </quickActions>
     <quickActions>
+        <label><!-- Oferta SAP ING. --></label>
+        <name>Oferta_SAP_ING</name>
+    </quickActions>
+    <quickActions>
         <label><!-- Imputación Preventa --></label>
         <name>Preventa</name>
     </quickActions>

@@ -426,6 +426,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CRM_IntegrationConstants</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CRM_Notific_Op_Incoher_Schedule_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -466,6 +470,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CRM_Responsable_ProyectoHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CRM_SAP_WS_Controller</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -491,6 +499,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CodResponsableCallout</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Codigo_Oferta_Ingenieria_Controller</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Codigo_Oferta_Ingenieria_ControllerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
