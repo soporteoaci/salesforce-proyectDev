@@ -14,20 +14,27 @@ public with sharing class CRM_Responsable_ProyectoController {
     // buscar empleados en el servicio externo
     @AuraEnabled
     public static String BusquedaEmpl(String buscarTexto) {
+        //Construccion de data para el envío a ApiAcelerator
+        WebService__c webServiceData = WebService__c.getInstance();
+        String user = webServiceData.username__c;        
+        String pass = webServiceData.password__c;
+        String endpoint = webServiceData.EndPoint_Search_Empleados__c;
+        String envio='username='+user+'&password='+pass+'&data=' ;   
+        String data='{"activo":"true",'+buscarTexto+'}';
+        String dataFinal = envio+data;
         
-        Map<String,Object> params = new Map<String,Object>();
-        params.put(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE_DATA_PARAM, CRM_Responsable_ProyectoHelper.buildBusquedaEmplRequestBody(buscarTexto));
+        Map<String,String> params = new Map<String,String>();
+        params.put(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE_PARAM01, dataFinal);
         
-        System.debug('CRM_Responsable_ProyectoHelper.buildBusquedaEmplRequestBody(buscarTexto) ' + CRM_Responsable_ProyectoHelper.buildBusquedaEmplRequestBody(buscarTexto));
+        //Envío petición
+        Map<String, Object> response = RICM.CallOutService.executeRequest(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE_NAME, params, null);
         
-        Map<String, Object> response = RICM.CallOutService.executeRequest(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE, params, null);
-        
+        //Tratamiento de la respuesta
         if(response != null && response.containsKey('result') && response.get('result') == 'OK'){
             return ((HttpResponse) response.get('response')).getBody() != null ? ((HttpResponse) response.get('response')).getBody() : '[]';
         } else {
             return '[]';
-        }
-        
+        } 
     }
     
     

@@ -184,7 +184,7 @@
     </alerts>
     <alerts>
         <fullName>Opportunity_Aviso_Informado_PRL</fullName>
-        <ccEmails>serviciodeprevencion@ayesa.com</ccEmails>
+        <ccEmails>serviciodeprevencion@ayesa.com.invalid</ccEmails>
         <description>Opportunity: Aviso Informado PRL</description>
         <protected>false</protected>
         <recipients>

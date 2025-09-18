@@ -92,11 +92,23 @@
             
             if(component.isValid() && response.getState() === "SUCCESS") {
                 var result = JSON.parse(response.getReturnValue());
-                if (result.length>0){
+                if (result.length > 0) {
                     $A.util.removeClass(component.find("ShowEmpleadoCliente"), "slds-hidden");
+                    component.set("v.errorMessage", '');
+                    component.set("v.ListEmpleado", result);
+                    component.set("v.EsEmpleado", true);
+                } else {
+                    component.set("v.errorMessage", 'No se encontraron empleados con esos filtros');
+                    component.set("v.ListEmpleado", []); 
+                    component.set("v.EsEmpleado", false);
+                    
+                    // Quita el mensaje tras 3 segundos
+                    window.setTimeout(
+                        $A.getCallback(function() {
+                            component.set("v.errorMessage", '');
+                        }), 3000
+                    );
                 }
-                component.set("v.ListEmpleado",result);
-                component.set("v.EsEmpleado", true);
             }
             
         });

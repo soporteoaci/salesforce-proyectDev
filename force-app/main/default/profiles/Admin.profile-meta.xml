@@ -670,6 +670,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>IntegracionAprobacionesController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Lets_talk_controller</apexClass>
         <enabled>true</enabled>
     </classAccesses>

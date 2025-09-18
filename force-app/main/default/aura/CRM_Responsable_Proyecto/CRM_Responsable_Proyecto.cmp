@@ -11,6 +11,7 @@
     <aura:attribute name="ListEmpleado" type="List" default="[]" description="Lista de los empleados devueltos por el webservice"/>
     <aura:attribute name="EsOtroUsuario" type="Boolean" default="false" />
     <aura:attribute name="EmpleadoEmail" type="String" default="" description="EmpleadoEmail para Otro Usuario"/>
+    <aura:attribute name="errorMessage" type="String" default=""/>
 	<aura:attribute name="esResponsableRequerido" type="Boolean" default="true" />
     
     <div class="slds-section slds-is-open animate" aura:id="Section">
@@ -67,11 +68,15 @@
                                 <lightning:input type="text" style="padding-bottom:25px" name="Apellido2" label="Apellido 2" value="{!v.EmpleadoApellido2}" class="slds-m-horizontal_small"/>
                             </div>
                         </div> 
-                        
+                        <aura:if isTrue="{!v.errorMessage != ''}">
+                            <div class="slds-notify slds-notify_alert slds-theme_error slds-m-bottom_small" role="alert">
+                                {!v.errorMessage}
+                            </div>
+                        </aura:if>
                         <!-- mostrar la lista de empleados -->
                         <div class="slds-col slds-size_1-of-1 slds-grid slds-justify_center slds-m-left_large slds-m-right_xx-small" aura:id="ShowEmpleadoCliente">
                             <table id="EmpTable" class="slds-m-top--xx-small slds-table" style="width: 100%; table-layout: auto;" aura:id="EmpTable">
-                                    <tr>
+                                <tr>
                                         <td>Otro usuario</td>
                                         <td></td>
                                         <td></td>
