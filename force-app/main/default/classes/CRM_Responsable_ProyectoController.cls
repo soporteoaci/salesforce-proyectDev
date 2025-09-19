@@ -12,31 +12,57 @@ public with sharing class CRM_Responsable_ProyectoController {
     
     
     // buscar empleados en el servicio externo
+//    @AuraEnabled
+//    public static String BusquedaEmpl(String buscarTexto) {
+//        //Construccion de data para el envío a ApiAcelerator
+//        WebService__c webServiceData = WebService__c.getInstance();
+//        String user = webServiceData.username__c;        
+//        String pass = webServiceData.password__c;
+//        String endpoint = webServiceData.EndPoint_Search_Empleados__c;
+//        String envio='username='+user+'&password='+pass+'&data=' ;   
+//        String data='{"activo":"true",'+buscarTexto+'}';
+//        String dataFinal = envio+data;
+        
+//        Map<String,String> params = new Map<String,String>();
+//        params.put(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE_PARAM01, dataFinal);
+        
+        //Envío petición
+//        Map<String, Object> response = RICM.CallOutService.executeRequest(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE_NAME, params, null);
+        
+        //Tratamiento de la respuesta
+//        if(response != null && response.containsKey('result') && response.get('result') == 'OK'){
+//            return ((HttpResponse) response.get('response')).getBody() != null ? ((HttpResponse) response.get('response')).getBody() : '[]';
+//        } else {
+//            return '[]';
+//        } 
+//    }
+        // buscar empleados en el servicio externo
     @AuraEnabled
     public static String BusquedaEmpl(String buscarTexto) {
-        //Construccion de data para el envío a ApiAcelerator
+        //   JSONGenerator gen = JSON.createGenerator(true);
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
         WebService__c webServiceData = WebService__c.getInstance();
         String user = webServiceData.username__c;        
         String pass = webServiceData.password__c;
         String endpoint = webServiceData.EndPoint_Search_Empleados__c;
+        
         String envio='username='+user+'&password='+pass+'&data=' ;   
         String data='{"activo":"true",'+buscarTexto+'}';
-        String dataFinal = envio+data;
         
-        Map<String,String> params = new Map<String,String>();
-        params.put(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE_PARAM01, dataFinal);
+        request.setBody(envio+data);   
+        request.setMethod('POST');
         
-        //Envío petición
-        Map<String, Object> response = RICM.CallOutService.executeRequest(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE_NAME, params, null);
+        if (endpoint != null) {
+            request.setEndpoint(endpoint);  
+            HttpResponse response = http.send(request);
+            System.debug('response'); 
+            System.debug(response.getBody()); 
+            return response.getBody(); 
+        }
         
-        //Tratamiento de la respuesta
-        if(response != null && response.containsKey('result') && response.get('result') == 'OK'){
-            return ((HttpResponse) response.get('response')).getBody() != null ? ((HttpResponse) response.get('response')).getBody() : '[]';
-        } else {
-            return '[]';
-        } 
+        return '[]';
     }
-    
     
     // actualizar la opp con el empleado
     @AuraEnabled

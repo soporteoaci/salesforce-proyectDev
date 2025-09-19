@@ -5,6 +5,7 @@
     <errorConditionFormula>AND(
 $Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
 $Profile.Name &lt;&gt;&apos;System Administrator&apos;,
+$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
 ISPICKVAL(Go_Presentaci_n_Oferta__c,&apos;Sí&apos;),
 ISCHANGED(Fecha_limite_de_presentacion__c)
 )</errorConditionFormula>
