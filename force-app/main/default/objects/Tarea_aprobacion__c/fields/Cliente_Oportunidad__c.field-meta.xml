@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Cliente_Oportunidad__c</fullName>
     <externalId>false</externalId>
-    <formula>Opportunity__r.Cliente__r.Name</formula>
+    <formula>Opportunity__r.Account.Name</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Cliente Oportunidad</label>
     <required>false</required>
