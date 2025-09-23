@@ -1,4 +1,3 @@
-@isTest(SeeAllData=true)
 public class TestDataFactory {
     public static Opportunity createOpportunity(String etapa, String lineaServicio,String tipoRegistro) {
         
@@ -7,6 +6,7 @@ public class TestDataFactory {
         Contact contacto = new Contact(
             FirstName = 'Contacto',
             LastName  = 'Test',
+            Email     = 'test' + Datetime.now().getTime() + '@example.com',
             AccountId = cliente.Id
         );
         insert contacto;
@@ -49,19 +49,17 @@ public class TestDataFactory {
     
     public static List<Account> createClientes(Integer numClientes) {
         List<Account> clientes = new List<Account>();
-        
         for(Integer i=0;i<numClientes;i++) {
             Account a = new Account(
-                Name='TestCliente' + i,
+                Name = 'TestCliente' + i + '_' + Datetime.now().getTime(),
                 Sector__c = 'Utilities',
                 Subsector__c='Otros Servicios',
                 Alias__c='Alias Prueba',
-                SAP_Account__c = '0000003115'
+                SAP_Account__c = String.valueOf(Datetime.now().getTime())
             );
             clientes.add(a);
         }
-        insert clientes;       
-        
+        Database.SaveResult[] srList = Database.insert(clientes, false);
         return clientes;
     }
     

@@ -29,7 +29,7 @@
             <value>
                 <fullName>Up-selling</fullName>
                 <default>false</default>
-                <label>Up-selling</label>
+                <label>Growth being incumbent</label>
             </value>
         </valueSetDefinition>
     </valueSet>

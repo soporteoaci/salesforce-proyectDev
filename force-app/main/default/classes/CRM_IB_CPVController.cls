@@ -1,16 +1,16 @@
 public class CRM_IB_CPVController {
-   
+    
     //Componente CPV
     @AuraEnabled
     public static Map<String, Object> valoresCPV(String Id_oportunidad){
         System.debug('CRM_IB_CPVController valoresCPV...');
         
         Map<String, Object> result = new Map<String, Object>(); // mapa para almacenar las opciones disponibles y los valores seleccionados
-		
+        
         // obtenemos los valores CPV de la parametrica
         List<Parametrica_2__c> valores_CPV = [SELECT Id, Name, CPV__c, Descripcion_CPV__c, RecordType.Name
-                                               from Parametrica_2__c 
-                                               where RecordType.Name = 'CPV' order by CPV__c];
+                                              from Parametrica_2__c 
+                                              where RecordType.Name = 'CPV' order by CPV__c];
         System.debug('valores CPV encontrados en la paramétrica: ' + valores_CPV.size());
         
         // los añadimos en una lista para el dualListbox
@@ -26,16 +26,16 @@ public class CRM_IB_CPVController {
         if (Id_oportunidad != null) {
             Opportunity opp = [SELECT Id, Name, Bloqueo_por_aprobacion__c, CPV_varios__c FROM Opportunity where Id =: Id_oportunidad];
             System.debug('Oportunidad recuperada "'+ opp.Name + '" y su/s valor/es CPV: ' + opp.CPV_varios__c  );
+            result.put('oportunidad', opp);
             if (opp.CPV_varios__c != null) {
                 List<String> valoresSeleccionados = opp.CPV_varios__c.split(';');
                 result.put('valoresSeleccionados', valoresSeleccionados);
-                result.put('oportunidad', opp);
             }
         }
         System.debug('valoresCPV result: ' + result);
         return result;
     }
-
+    
     @AuraEnabled
     public static void saveOportunidad_CPV(Id Id_oportunidad, String seleccionCPV){
         
@@ -61,5 +61,17 @@ public class CRM_IB_CPVController {
             }
         }
     }
-
+    @AuraEnabled
+    public static Boolean oportunidadBloqueada (Id Id_oportunidad){
+        // obtenermos los valores seleccionados previamente en el registro de oportunidad
+        if (Id_oportunidad != null) {
+            Opportunity opp = [SELECT Id,Bloqueo_por_aprobacion__c FROM Opportunity where Id =: Id_oportunidad];
+            if (opp.Bloqueo_por_aprobacion__c){
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return null;
+    }
 }

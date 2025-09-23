@@ -1,5 +1,5 @@
 ({
-    // Inicializa el componente cargando las opciones desde Apex
+    // Inicializa el componente cargando las opciones desde Apex 
     doInit: function(component, event, helper) {
         var action = component.get("c.valoresCPV");
         action.setParams({ Id_oportunidad: component.get("v.recordId") });
@@ -26,15 +26,16 @@
                 component.set("v.seleccionados", seleccionados);
                 component.set("v.selectedCPVs", seleccionados.map(function(o) { return o.value; }));
                 component.set("v.originalSelectedCPVs", seleccionados.map(function(o) { return o.value; }));
-
-                // Verificar si la oportunidad está bloqueada (debe venir en result.oportunidad)
+                // Guardar el estado de bloqueo global
+                var bloqueado = false;
                 if (result && result.oportunidad && result.oportunidad.Bloqueo_por_aprobacion__c === true) {
-                    component.set("v.bloqueado", true);
-                    // dejamos el botón en el estado por defecto (disabled) según si hay cambios:
+                    bloqueado = true;
+                }
+                component.set("v.bloqueado", bloqueado);
+                // Verificar si la oportunidad está bloqueada (debe venir en result.oportunidad)
+                if (bloqueado) {
                     component.set("v.disabledSaveCPV", true);
                 } else {
-                    component.set("v.bloqueado", false);
-                    // desactivamos el botón si no hay cambios
                     helper.checkIfModified(component);
                 }
             } else {
@@ -121,7 +122,9 @@
 
         component.set("v.disponibles", nuevosDisponibles);
         component.set("v.seleccionados", nuevosSeleccionados);
-        component.set("v.selectedCPVs", nuevosSeleccionados.map(function(o) { return o.value; }));
+        if (!component.get("v.bloqueado")) {
+            component.set("v.selectedCPVs", nuevosSeleccionados.map(function(o) { return o.value; }));
+        }
 
         helper.checkIfModified(component);
     },
@@ -141,7 +144,9 @@
 
         component.set("v.disponibles", nuevosDisponibles);
         component.set("v.seleccionados", nuevosSeleccionados);
-        component.set("v.selectedCPVs", nuevosSeleccionados.map(function(o) { return o.value; }));
+        if (!component.get("v.bloqueado")) {
+            component.set("v.selectedCPVs", nuevosSeleccionados.map(function(o) { return o.value; }));
+        }
 
         helper.checkIfModified(component);
     },
@@ -160,7 +165,9 @@
 
         component.set("v.disponibles", disponibles);
         component.set("v.seleccionados", seleccionados);
-        component.set("v.selectedCPVs", seleccionados.map(function(o) { return o.value; }));
+        if (!component.get("v.bloqueado")) {
+            component.set("v.selectedCPVs", seleccionados.map(function(o) { return o.value; }));
+        }
 
         helper.checkIfModified(component);
     },
@@ -179,7 +186,9 @@
 
         component.set("v.disponibles", disponibles);
         component.set("v.seleccionados", seleccionados);
-        component.set("v.selectedCPVs", seleccionados.map(function(o) { return o.value; }));
+        if (!component.get("v.bloqueado")) {
+            component.set("v.selectedCPVs", seleccionados.map(function(o) { return o.value; }));
+        }
 
         helper.checkIfModified(component);
     },
@@ -199,15 +208,41 @@
         component.set("v.disponibles", filtrados);
     },
 
-    saveCPV: function(component, event, helper) {
-        // Validación de primer nivel: si está bloqueada, mostrar toast y no guardar
-        if (component.get("v.bloqueado")) {
-            helper.mostrarToast("Acción no permitida", "La oportunidad está bloqueada por aprobación. No puedes modificar ni guardar CPV.", "error");
-            return;
-        }
+   saveCPV: function(component, event, helper) {
+       	console.log('saveCPV')
+
 
         // Si no está bloqueada, continuamos con el guardado normal
         helper.saveCPVOportunidad(component, event, helper);
+        var action = component.get("c.oportunidadBloqueada");
+        action.setParams({ Id_oportunidad: component.get("v.recordId") });
+
+        action.setCallback(this, function(response) {
+            var state = response.getState();
+            console.log('state: '+state)
+            if (state === "SUCCESS") {
+                var result = response.getReturnValue();
+                console.log('Bloqueo por aprobacion: '+result);
+                if (result && result === true) {
+                    component.set("v.bloqueado", true);
+                    component.set("v.disabledSaveCPV", true);
+                    // Validación de primer nivel: si está bloqueada, mostrar toast y no guardar
+                    if (component.get("v.bloqueado")) {
+                        helper.mostrarToast("Acción no permitida", "La oportunidad está bloqueada por aprobación. No puedes modificar ni guardar CPV.", "error");
+                        return;
+                    }
+                } else {
+                    component.set("v.bloqueado", false);
+                    helper.checkIfModified(component);
+                }
+            } else {
+                var errors = response.getError ? response.getError() : null;
+                console.error("Error en doInit:", errors);
+                helper.mostrarToast("Error", "Error al cargar CPV.", "error");
+            }
+        });
+
+        $A.enqueueAction(action);
     },
 
     toggleSection: function(component, event) {

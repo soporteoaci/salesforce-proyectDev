@@ -7,15 +7,15 @@
         <translation><!-- Cross-selling --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Growth being incumbent</masterLabel>
+        <translation><!-- Growth being incumbent --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>New Names</masterLabel>
         <translation><!-- New Names --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>No</masterLabel>
         <translation><!-- No --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Up-selling</masterLabel>
-        <translation><!-- Up-selling --></translation>
     </picklistValues>
 </CustomFieldTranslation>
