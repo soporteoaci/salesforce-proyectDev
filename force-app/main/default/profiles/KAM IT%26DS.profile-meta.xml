@@ -146,6 +146,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Aprobaciones_ApiAcelerator</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>AvoidRecursion</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -12378,6 +12382,11 @@
         <editable>false</editable>
         <field>Tarea_aprobacion__c.GIN_Objetivo__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Tarea_aprobacion__c.Id_Integracion_Portafirmas__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>

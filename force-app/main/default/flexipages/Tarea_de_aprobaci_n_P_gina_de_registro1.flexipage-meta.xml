@@ -113,6 +113,12 @@
                 <identifier>RecordOpportunity__cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Id_Integracion_Portafirmas__c</fieldItem>
+                <identifier>RecordId_Integracion_Portafirmas__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-42a91fb8-2e3b-413e-91c0-3a330a10bfa7</name>
         <type>Facet</type>
     </flexiPageRegions>

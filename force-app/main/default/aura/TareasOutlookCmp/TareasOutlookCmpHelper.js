@@ -98,7 +98,7 @@ obtenerTareas: function(component) {
     // ===============================
     crearReunión: function(component) {
         const fecha = component.get("v.fechaReunion");
-        const contactos = component.get("v.contactosSeleccionados");
+        const contactoId = component.get("v.contactoSeleccionado");
         const cuentaId = component.get("v.cuentaSeleccionada");
 
         // NUEVO: Campos adicionales
@@ -113,7 +113,7 @@ obtenerTareas: function(component) {
         const action = component.get("c.crearReunionConContactos");
         action.setParams({
             fecha: fecha,
-            contactoIds: contactos,
+            contactoIds: contactoId ? [contactoId] : [],
             cuentaId: cuentaId,
             subject: subject,
             prioridad: prioridad,
@@ -132,30 +132,23 @@ obtenerTareas: function(component) {
                     message: "Se ha creado la visita y las tareas correctamente.",
                     type: "success"
                 }).fire();
-
                 // Limpiar campos excepto prioridad y sectorMercado
                 const limpiar = [
-                    "fechaReunion","horaReunion","horaFinReunion","contactosSeleccionados","cuentaSeleccionada",
-                    "busquedaCuenta","subject","lineasServicio","resumenEjecutivo"
+                    "fechaReunion","horaReunion","horaFinReunion","contactoSeleccionado","cuentaSeleccionada",
+                    "busquedaCuenta","busquedaContacto","subject","lineasServicio","resumenEjecutivo"
                 ];
-                limpiar.forEach(c => component.set("v."+c, (c==="lineasServicio"||c==="contactosSeleccionados")?[]:null));
-                
-                // ✅ Resetear prioridad y sector de mercado
+                limpiar.forEach(c => component.set("v."+c, (c==="lineasServicio")?[]:null));
                 component.set("v.prioridad", "Normal");
                 component.set("v.sectorMercado", "");
-                
-                // Resetear checkboxes y otros
                 component.set("v.enviadaAgenda", false);
                 component.set("v.enviadaAcuerdos", false);
                 component.set("v.opcionesContactos", []);
-                component.set("v.mostrarDualListbox", false);
-
-                // Reset dual custom
+                component.set("v.mostrarResultadosContactos", false);
+                // Reset dual custom líneas de servicio
                 component.set("v.lineasServicioDisponibles", (component.get("v.picklistMap.Lineas_de_Servicio__c")||[]).map(o=>({label:o.label,value:o.value,marked:false})));
                 component.set("v.lineasServicioSeleccionadasDetalles", []);
                 component.set("v.lineasServicioDisponiblesSeleccionadas", []);
                 component.set("v.lineasServicioSeleccionadasMarcadas", []);
-
             } else {
                 const error = response.getError();
                 component.set("v.mensajeErrorFechaReunion", error && error[0] ? error[0].message : "Error inesperado.");
@@ -173,37 +166,18 @@ obtenerTareas: function(component) {
     cargarContactos: function(component, cuentaId) {
         const action = component.get("c.obtenerContactosDeCuenta");
         action.setParams({ cuentaId });
-    
         component.set("v.cargando", true);
-    
         action.setCallback(this, response => {
             if (response.getState() === "SUCCESS") {
-                const contactos = response.getReturnValue() || [];
-
-                // Guardar opciones y mostrar sección
+                let contactos = response.getReturnValue() || [];
                 component.set("v.opcionesContactos", contactos);
-                component.set("v.mostrarDualListbox", contactos.length > 0);
-
-                // Construir listas del dual custom para contactos
-                const disponibles = contactos.map(c => ({ label: c.label, value: c.value, marked: false }));
-                component.set("v.contactosDisponibles", disponibles);
-                component.set("v.contactosSeleccionadosDetalles", []);
-                component.set("v.contactosDisponiblesSeleccionados", []);
-                component.set("v.contactosSeleccionadosMarcados", []);
-
-                // Limpiar valor final
-                component.set("v.contactosSeleccionados", []);
+                component.set("v.mostrarResultadosContactos", contactos.length > 0);
             } else {
-                console.error("Error al cargar contactos:", response.getError());
                 component.set("v.opcionesContactos", []);
-                component.set("v.mostrarDualListbox", false);
-                component.set("v.contactosDisponibles", []);
-                component.set("v.contactosSeleccionadosDetalles", []);
+                component.set("v.mostrarResultadosContactos", false);
             }
-    
             component.set("v.cargando", false);
         });
-    
         $A.enqueueAction(action);
     },
 

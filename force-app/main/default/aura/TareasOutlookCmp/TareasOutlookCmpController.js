@@ -26,7 +26,7 @@
         const sector = component.get("v.sectorMercado");
         const lineas = component.get("v.lineasServicio");
         const cuentaId = component.get("v.cuentaSeleccionada");
-        const contactos = component.get("v.contactosSeleccionados");
+        const contactoId = component.get("v.contactoSeleccionado");
 
         let errores = [];
 
@@ -48,8 +48,8 @@
         if (!cuentaId) {
             errores.push("Debe seleccionar una Cuenta.");
         }
-        if (!contactos || contactos.length === 0) {
-            errores.push("Debe seleccionar al menos un Contacto.");
+        if (!contactoId) {
+            errores.push("Debe seleccionar un Contacto.");
         }
 
         if (errores.length > 0) {
@@ -169,11 +169,15 @@
     seleccionarCuenta: function(component, event, helper) {
         const id = event.currentTarget.getAttribute("data-id");
         const nombre = event.currentTarget.getAttribute("data-nombre");
-        
         component.set("v.busquedaCuenta", nombre);
         component.set("v.cuentaSeleccionada", id);
         component.set("v.mostrarResultados", false);
-        
+        // Limpiar contacto seleccionado y búsqueda
+        component.set("v.busquedaContacto", '');
+        component.set("v.contactoSeleccionado", null);
+        component.set("v.opcionesContactos", []);
+        component.set("v.mostrarResultadosContactos", false);
+        // Cargar contactos de la cuenta
         helper.cargarContactos(component, id);
     },
 
@@ -186,6 +190,29 @@
             component.set("v.contactosSeleccionados", []);
             component.set("v.mostrarDualListbox", false);
         }
+    },
+
+    buscarContactos: function(component, event, helper) {
+        const texto = component.get("v.busquedaContacto");
+        const contactos = component.get("v.opcionesContactos") || [];
+        if (!texto || texto.trim() === '') {
+            // Mostrar todos los contactos cargados
+            component.set("v.mostrarResultadosContactos", contactos.length > 0);
+            return;
+        }
+        // Filtrar por texto en el cliente
+        const filtrados = contactos.filter(c => (c.label || '').toLowerCase().includes(texto.toLowerCase()));
+        component.set("v.opcionesContactos", contactos); // mantener todos para futuras búsquedas
+        component.set("v.mostrarResultadosContactos", filtrados.length > 0);
+        component.set("v.opcionesContactos", filtrados);
+    },
+
+    seleccionarContacto: function(component, event, helper) {
+        const id = event.currentTarget.getAttribute("data-id");
+        const nombre = event.currentTarget.getAttribute("data-nombre");
+        component.set("v.busquedaContacto", nombre);
+        component.set("v.contactoSeleccionado", id);
+        component.set("v.mostrarResultadosContactos", false);
     },
 
     // -----------------------------
@@ -248,5 +275,12 @@
         const value = event.currentTarget.dataset.value;
         component.set("v.contactosSeleccionadosMarcados", [value]);
         helper.moveValuesGeneric(component, 'contactos', 'Seleccionadas', 'Disponibles');
+    },
+
+    abrirRegistroSalesforce: function(component, event, helper) {
+        var id = event.getSource().get("v.value");
+        if (id) {
+            window.open('/' + id, '_blank');
+        }
     }
 })

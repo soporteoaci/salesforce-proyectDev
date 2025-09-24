@@ -130,6 +130,12 @@
                 <identifier>RecordFecha_solicitud_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Id_Integracion_Portafirmas__c</fieldItem>
+                <identifier>RecordId_Integracion_Portafirmas__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-c43cea1e-17fe-4553-bcf4-885795c0c512</name>
         <type>Facet</type>
     </flexiPageRegions>
