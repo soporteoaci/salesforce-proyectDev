@@ -7,7 +7,7 @@
     $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
 				$User.Username &lt;&gt; &apos;bllanos@ayesa.com&apos;,
 				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
-				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
 				OR(
 								AND(
 												NOT(ISPICKVAL(Delivery_Center__c,&apos;Salesforce&apos;)),

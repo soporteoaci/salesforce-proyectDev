@@ -530,7 +530,7 @@
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
                         <operator>EQUAL</operator>
-                        <rightValue>Admin Custom Ibermatica CRM</rightValue>
+                        <rightValue>Admin Custom Ibermatica CRM Sales</rightValue>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
@@ -1553,7 +1553,7 @@
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
                         <operator>NE</operator>
-                        <rightValue>Admin Custom Ibermatica CRM</rightValue>
+                        <rightValue>Admin Custom Ibermatica CRM Sales</rightValue>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
@@ -2232,7 +2232,7 @@
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
                         <operator>EQUAL</operator>
-                        <rightValue>Admin Custom Ibermatica CRM</rightValue>
+                        <rightValue>Admin Custom Ibermatica CRM Sales</rightValue>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
@@ -2249,7 +2249,7 @@
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
                         <operator>EQUAL</operator>
-                        <rightValue>Admin Custom Ibermatica CRM</rightValue>
+                        <rightValue>Admin Custom Ibermatica CRM Sales</rightValue>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
@@ -2474,7 +2474,7 @@
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
                         <operator>EQUAL</operator>
-                        <rightValue>Admin Custom Ibermatica CRM</rightValue>
+                        <rightValue>Admin Custom Ibermatica CRM Sales</rightValue>
                     </criteria>
                     <criteria>
                         <leftValue>{!Record.Codigo_OC__c}</leftValue>
@@ -3858,7 +3858,7 @@
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
                         <operator>EQUAL</operator>
-                        <rightValue>Admin Custom Ibermatica CRM</rightValue>
+                        <rightValue>Admin Custom Ibermatica CRM Sales</rightValue>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
@@ -5245,7 +5245,7 @@
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
                         <operator>NE</operator>
-                        <rightValue>Admin Custom Ibermatica CRM</rightValue>
+                        <rightValue>Admin Custom Ibermatica CRM Sales</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>
@@ -5275,7 +5275,7 @@
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
                         <operator>EQUAL</operator>
-                        <rightValue>Admin Custom Ibermatica CRM</rightValue>
+                        <rightValue>Admin Custom Ibermatica CRM Sales</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>

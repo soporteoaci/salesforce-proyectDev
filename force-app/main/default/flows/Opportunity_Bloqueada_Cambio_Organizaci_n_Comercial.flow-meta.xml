@@ -42,7 +42,7 @@
                 <leftValueReference>$Record.LastModifiedBy.Profile.Name</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Admin Custom Ibermatica CRM</stringValue>
+                    <stringValue>Admin Custom Ibermatica CRM Sales</stringValue>
                 </rightValue>
             </conditions>
             <connector>

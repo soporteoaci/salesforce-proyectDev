@@ -12,7 +12,7 @@
 				NOT( ISPICKVAL(Tipo_Extension__c, &apos;Extensión CUTE&apos;)),
 				OR(ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;), ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;)),
 				$User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
-				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
 				$User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
 				$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
     $Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,

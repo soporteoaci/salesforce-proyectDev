@@ -7,7 +7,7 @@
 		$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
 		$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
 		$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
-		$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+		$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
 		$User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
 		$User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;,
 		OR(

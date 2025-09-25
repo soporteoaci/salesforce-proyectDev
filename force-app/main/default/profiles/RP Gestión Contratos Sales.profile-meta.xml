@@ -146,6 +146,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ActualizarTieneOfertaQATest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Aprobaciones_ApiAcelerator</apexClass>
         <enabled>false</enabled>
     </classAccesses>

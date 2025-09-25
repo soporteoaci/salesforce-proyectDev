@@ -4,7 +4,7 @@
     <active>true</active>
     <errorConditionFormula>AND(
 				$User.Username &lt;&gt; &quot;javier.ponce@gestion.ayesa.com&quot;,
-				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
 				$Profile.Name &lt;&gt;&apos;Usuario Ibermatica CAUDEF&apos;,
 				CONTAINS(Record_Type_Opp__c,&apos;SME&apos;),
 				ISPICKVAL(Seccion__c, &apos;SRV&apos;), 

@@ -16,7 +16,7 @@ ISBLANK(TEXT(Motivo_de_excepcion__c))
 OR(
 CONTAINS($User.Email, &apos;xantonana@ayesa&apos;),
 CONTAINS($User.Email, &apos;vmoctavio@ayesa&apos;),
-$Profile.Name = &apos;Admin Custom Ibermatica CRM&apos;
+$Profile.Name = &apos;Admin Custom Ibermatica CRM Sales&apos;
 )
 )</errorConditionFormula>
     <errorDisplayField>Motivo_de_excepcion__c</errorDisplayField>

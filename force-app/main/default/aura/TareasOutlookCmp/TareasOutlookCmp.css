@@ -61,17 +61,42 @@
 }
 
 /* ==========================
-   Lookup
+   Lookup (estilo EditarTareaOutlook)
    ========================== */
-.THIS .contenedor-cuenta-autocompletar { position: relative; width: 100%; margin-bottom: 16px; }
-.THIS .slds-lookup__menu {
-    position: absolute; top: 100%; left: 0; right: 0; z-index: 9999;
-    background-color: var(--sf-white); border: 1px solid var(--sf-border); border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15); margin-top: 4px; padding: 0; animation: slideDown 0.25s cubic-bezier(.23,1,.32,1);
+.THIS .contenedor-cuenta-autocompletar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
 }
-.THIS .slds-lookup__list { position: absolute; z-index: 9999; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.15); border-radius: .25rem; animation: slideDown .2s ease-out; }
-.THIS .slds-lookup__item:hover { background-color: #f3f6f9; cursor: pointer; }
-.THIS .slds-lookup__item a { display: flex; align-items: center; gap: .5rem; font-weight: 500; color: #2e2e2e; }
+.THIS .lookup-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: var(--sf-white);
+    border: 1px solid var(--sf-border);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin-top: 4px;
+    padding: 0;
+    animation: slideDown 0.25s cubic-bezier(.23,1,.32,1);
+}
+.THIS .lookup-result-item {
+    padding: 10px 16px;
+    border-bottom: 1px solid #f1f3f6;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--sf-text);
+    transition: background 0.15s;
+}
+.THIS .lookup-result-item:last-child {
+    border-bottom: none;
+}
+.THIS .lookup-result-item:hover {
+    background-color: var(--sf-blue-light);
+    color: var(--sf-blue-dark);
+}
 
 /* ==========================
    Botones / Footer
@@ -85,7 +110,7 @@
 /* ==========================
    Dual List (ajustado)
    ========================== */
-.THIS .slds-dueling-list { background: #f7f9fb; border: 1px solid var(--sf-border); border-radius: 4px; padding: 8px; margin-bottom: 16px; align-items: stretch; }
+.THIS .slds-dueling-list { background: #f7f9fb; border: 1px solid var(--sf-border); border-radius: 4px; padding: 8px; align-items: stretch; }
 .THIS .slds-dueling-list__column { padding: 0; min-width: 0; flex: 1 1 0; }
 .THIS .slds-dueling-list__options { border: 1px solid var(--sf-border); border-radius: 4px; background: var(--sf-white); max-height: 200px; overflow-y: auto; width: 100%; }
 .THIS .slds-dueling-list__options .slds-listbox__option { padding: 8px 12px; cursor: pointer; border-bottom: 1px solid #f5f5f5; transition: background-color .15s; user-select: none; }
@@ -140,7 +165,16 @@
    ========================== */
 .THIS .custom-table-wrapper { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .THIS .custom-table { width: 100%; min-width: 800px; border-collapse: collapse; font-size: 13px; border: 1px solid #d8dde6; background: #fff; table-layout: fixed; }
-.THIS .custom-table th, .THIS .custom-table td { padding: .4rem .6rem; border: 1px solid #d8dde6; text-align: left; vertical-align: middle; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 1px; }
+.THIS .custom-table th, .THIS .custom-table td {
+    padding: .4rem .6rem;
+    border: 1px solid #d8dde6;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .THIS .custom-table th { background: #f4f6f9; font-weight: 600; color: #3e3e3c; text-transform: uppercase; font-size: 11px; }
 .THIS .fila-padre { background: #f9fafb; font-weight: bold; }
 .THIS .fila-hija { background: #ffffff; }
@@ -205,4 +239,31 @@
     justify-content: center;
 }
 
-/* FIN: Archivo limpiado. Eliminados duplicados de tablas, contenedor y múltiples overrides de tabs. */
+/* NUEVO: Estilos para el grupo de botones de acción y la celda */
+.THIS .acciones-cell {
+    white-space: nowrap;
+    padding: 0.2rem 0.4rem;
+    vertical-align: middle;
+}
+.THIS .acciones-btn-group {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: auto; /* Cambiado de 100% a auto */
+    max-width: 100%;
+}
+.THIS .accion-btn {
+    min-width: 24px;
+    max-width: 28px;
+    height: 24px;
+    padding: 0;
+    border-radius: 4px;
+    overflow: visible;
+    margin-right: 2px;
+}
+.THIS .filtros-barra .contenedor-cuenta-autocompletar {
+    margin-bottom: 0;
+}

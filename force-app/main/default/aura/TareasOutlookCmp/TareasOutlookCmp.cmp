@@ -25,6 +25,7 @@
     <aura:attribute name="tareas" type="List" />
     <aura:attribute name="tareasMostradas" type="List" />
     <aura:attribute name="tareasExpandidas" type="List" default="[]" />
+    <aura:attribute name="tareasOriginal" type="List" />
     
     <!-- ================================ -->
     <!-- Atributos de creación de reunión -->
@@ -70,6 +71,8 @@
     <aura:attribute name="busquedaContacto" type="String" />
     <aura:attribute name="mostrarResultadosContactos" type="Boolean" default="false" />
     
+    <aura:attribute name="campoOrden" type="String" default=""/>
+    <aura:attribute name="ordenAsc" type="Boolean" default="true"/>
     <!-- ========================== -->
     <!-- INTERFAZ Y TABSET GENERAL -->
     <!-- ========================== -->
@@ -83,7 +86,7 @@
                         <div class="form-section">
                             <div class="form-section-title">Filtros</div>
                             <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_small filtros-barra">
-                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-right_x-small">
+                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-5 slds-p-right_x-small">
                                     <lightning:select name="filtroEstado" label="Filtrar Visitas"
                                                       value="{!v.filtroEstado}" onchange="{!c.filtrarTareas}">
                                         <option value="Todas">Todas las Visitas</option>
@@ -91,11 +94,39 @@
                                         <option value="Realizadas">Solo las Realizadas</option>
                                     </lightning:select>
                                 </div>
-                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-right_x-small">
+                                <!-- Filtro por Cuenta (lookup/autocomplete) -->
+                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-5 slds-p-right_x-small contenedor-cuenta-autocompletar">
+                                    <lightning:input name="filtroCuenta" label="Cuenta" value="{!v.busquedaCuenta}"
+                                                    onchange="{!c.buscarCuentas}" placeholder="Buscar cuenta..." />
+                                    <aura:if isTrue="{!v.mostrarResultados}">
+                                        <div class="lookup-results">
+                                            <aura:iteration items="{!v.resultadosCuentas}" var="cuenta">
+                                                <div class="lookup-result-item" data-id="{!cuenta.value}" data-nombre="{!cuenta.label}"
+                                                     onclick="{!c.seleccionarCuenta}">
+                                                    <lightning:icon iconName="standard:account" size="x-small" class="slds-m-right_small" />
+                                                    <span class="slds-truncate">{!cuenta.label}</span>
+                                                </div>
+                                            </aura:iteration>
+                                        </div>
+                                    </aura:if>
+                                </div>
+                                <!-- Filtro por Prioridad -->
+                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-5 slds-p-right_x-small">
+                                    <lightning:select name="filtroPrioridad" label="Prioridad"
+                                                     value="{!v.filtroPrioridad}" onchange="{!c.filtrarTareas}">
+                                        <option value="">Todas</option>
+                                        <aura:iteration items="{!v.picklistMap.Priority}" var="opt">
+                                            <option value="{!opt}">{!opt}</option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>
+                                <!-- Filtro por Fecha Inicio -->
+                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-5 slds-p-right_x-small">
                                     <lightning:input type="date" name="fechaInicio" label="Fecha Inicio"
                                                      value="{!v.fechaInicio}" onchange="{!c.filtrarTareas}" required="true" />
                                 </div>
-                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                                <!-- Filtro por Fecha Fin -->
+                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-5">
                                     <lightning:input type="date" name="fechaFin" label="Fecha Fin"
                                                      value="{!v.fechaFin}" onchange="{!c.filtrarTareas}" required="true" />
                                 </div>
@@ -117,12 +148,26 @@
                                 <table class="custom-table">
                                     <thead>
                                         <tr>
-                                            <th>Asunto</th>
-                                            <th>Estado</th>
-                                            <th>Fecha</th>
-                                            <th>Prioridad</th>
-                                            <th>Cuenta</th>
-                                            <th>Acciones</th>
+                                            <th onclick="{!c.sortColumn}" data-campo="Subject">
+                                                Asunto
+                                                <lightning:icon class="slds-m-left_x-small" aura:id="flechaSubject" iconName="utility:sort" size="x-small"/>
+                                            </th>
+                                            <th onclick="{!c.sortColumn}" data-campo="Status">
+                                                Estado
+                                                <lightning:icon class="slds-m-left_x-small" aura:id="flechaStatus" iconName="utility:sort" size="x-small"/>
+                                            </th>
+                                            <th onclick="{!c.sortColumn}" data-campo="ActivityDate">
+                                                Fecha
+                                                <lightning:icon class="slds-m-left_x-small" aura:id="flechaActivityDate" iconName="utility:sort" size="x-small"/>
+                                            </th>
+                                            <th onclick="{!c.sortColumn}" data-campo="Priority">
+                                                Prioridad
+                                                <lightning:icon class="slds-m-left_x-small" aura:id="flechaPriority" iconName="utility:sort" size="x-small"/>
+                                            </th>
+                                            <th onclick="{!c.sortColumn}" data-campo="cuentaNombre">
+                                                Cuenta
+                                                <lightning:icon class="slds-m-left_x-small" aura:id="flechaCuenta" iconName="utility:sort" size="x-small"/>
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -137,22 +182,22 @@
                                                     <td>{!tarea.ActivityDate}</td>
                                                     <td>{!tarea.Priority}</td>
                                                     <td>{!tarea.cuentaNombre}</td>
-                                                    <td class="acciones-cell">
+                                                    <td class="acciones-cell" style="white-space:nowrap;">
                                                         <lightning:buttonIcon 
                                                                               iconName="{!tarea.expandida ? 'utility:chevrondown' : 'utility:chevronright'}"
                                                                               alternativeText="Expandir/Ocultar Hijas"
                                                                               onclick="{!c.verHijasTarea}" value="{!tarea.Id}" name="toggleHijas"
-                                                                              class="accion-btn slds-m-right_x-small" />
+                                                                              class="accion-btn slds-m-right_x-small" variant="border-filled" size="small"/>
                                                         <lightning:buttonIcon 
                                                                               iconName="utility:edit"
                                                                               alternativeText="Editar Tarea"
                                                                               onclick="{!c.verHijasTarea}" value="{!tarea.Id}" name="editarTarea"
-                                                                              class="accion-btn slds-m-right_x-small" />
+                                                                              class="accion-btn slds-m-right_x-small" variant="border-filled" size="small"/>
                                                         <lightning:buttonIcon 
-                                                                              iconName="utility:new_window"
-                                                                              alternativeText="Ver en Salesforce"
-                                                                              onclick="{!c.abrirRegistroSalesforce}" value="{!tarea.Id}" name="abrirRegistro"
-                                                                              class="accion-btn" />
+                                                                            iconName="utility:new_window"
+                                                                            alternativeText="Ir a Salesforce"
+                                                                            onclick="{!c.abrirRegistroSalesforce}" value="{!tarea.Id}" name="abrirRegistro"
+                                                                            class="accion-btn slds-m-left_xx-small slds-m-right_x-small" variant="border-filled" size="small"/>
                                                     </td>
                                                 </aura:if>
                                             </tr>
@@ -260,29 +305,23 @@
                             <!-- Cuenta: lookup -->
                             <div aura:id="contenedorLookupCuenta" class="slds-form-element contenedor-cuenta-autocompletar">
                                 <lightning:input
-                                                 name="cuentaLookup"
-                                                 label="Seleccionar Cuenta"
-                                                 value="{!v.busquedaCuenta}"
-                                                 onchange="{!c.buscarCuentas}"
-                                                 onfocus="{!c.buscarCuentas}"
-                                                 required="true" />
+                                    name="cuentaLookup"
+                                    label="Cuenta"
+                                    value="{!v.busquedaCuenta}"
+                                    onchange="{!c.buscarCuentas}"
+                                    onfocus="{!c.buscarCuentas}"
+                                    placeholder="Buscar cuenta..."
+                                    required="true" />
                                 <aura:if isTrue="{!v.mostrarResultados}">
-                                    <ul class="slds-lookup__list slds-dropdown slds-dropdown_fluid slds-dropdown_length-5 slds-scrollable_y">
+                                    <div class="lookup-results">
                                         <aura:iteration items="{!v.resultadosCuentas}" var="cuenta">
-                                            <li class="slds-lookup__item"
-                                                role="presentation"
-                                                onclick="{!c.seleccionarCuenta}"
-                                                data-id="{!cuenta.value}"
-                                                data-nombre="{!cuenta.label}">
-                                                <a href="javascript:void(0);" class="slds-truncate slds-grid slds-grid_vertical-align-center slds-p-around_x-small slds-has-hover">
-                                                    <lightning:icon iconName="standard:account"
-                                                                    size="x-small"
-                                                                    class="slds-m-right_small" />
-                                                    <span class="slds-truncate">{!cuenta.label}</span>
-                                                </a>
-                                            </li>
+                                            <div class="lookup-result-item" data-id="{!cuenta.value}" data-nombre="{!cuenta.label}"
+                                                 onclick="{!c.seleccionarCuenta}">
+                                                <lightning:icon iconName="standard:account" size="x-small" class="slds-m-right_small" />
+                                                <span class="slds-truncate">{!cuenta.label}</span>
+                                            </div>
                                         </aura:iteration>
-                                    </ul>
+                                    </div>
                                 </aura:if>
                             </div>
                             <!-- Contacto: lookup -->

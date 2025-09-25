@@ -5,7 +5,7 @@
     <errorConditionFormula>AND(
     $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
 				$User.Email &lt;&gt; &apos;powersalesforce@ayesa.com&apos;,
-				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
 				$Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
 				$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
 				$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,

@@ -4,6 +4,15 @@
         component.set("v.fechaInicio", hoy);
         component.set("v.fechaFin", hoy);
         component.set("v.hijasCache", {});
+        // Si no se pasa entornoUrl, lo toma del host actual
+        if (!component.get("v.entornoUrl")) {
+            try {
+                component.set("v.entornoUrl", window.location.origin);
+            } catch (e) {
+                // fallback seguro
+                component.set("v.entornoUrl", 'https://login.salesforce.com');
+            }
+        }
         helper.actualizarMensajeFecha(component);
         helper.obtenerTareas(component);
 
@@ -278,9 +287,29 @@
     },
 
     abrirRegistroSalesforce: function(component, event, helper) {
-        var id = event.getSource().get("v.value");
-        if (id) {
-            window.open('/' + id, '_blank');
+        var tareaId = event.getSource().get("v.value");
+        var tareas = component.get("v.tareasMostradas") || [];
+        var tarea = tareas.find(t => t.Id === tareaId);
+        if (tarea && tarea.UrlTarea) {
+            window.open(tarea.UrlTarea, '_blank');
+        } else if (tareaId) {
+            // Fallback: abre por id si no hay url
+            window.open('/' + tareaId, '_blank');
         }
+    },
+    sortColumn: function(component, event, helper) {
+        var campo = event.currentTarget.getAttribute("data-campo");
+        var campoOrden = component.get("v.campoOrden");
+        var ordenAsc = component.get("v.ordenAsc");
+
+        if (campo === campoOrden) {
+            component.set("v.ordenAsc", !ordenAsc);
+        } else {
+            component.set("v.campoOrden", campo);
+            component.set("v.ordenAsc", true);
+        }
+        helper.ordenarTareas(component);
+        helper.actualizarFlechasOrden(component, component.get("v.campoOrden"), component.get("v.ordenAsc"));
     }
+
 })

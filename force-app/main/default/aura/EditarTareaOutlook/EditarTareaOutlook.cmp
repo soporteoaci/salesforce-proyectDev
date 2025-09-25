@@ -27,6 +27,13 @@
     <aura:attribute name="lineasServicioSeleccionadasDetalles" type="List" />
     <aura:attribute name="lineasServicioSeleccionadasMarcadas" type="List" default="[]" />
 
+    <!-- NUEVO: Atributos para edición de contacto -->
+    <aura:attribute name="editandoContacto" type="Boolean" default="false"/>
+    <aura:attribute name="nombreContacto" type="String" />
+    <aura:attribute name="busquedaContacto" type="String" />
+    <aura:attribute name="opcionesContactos" type="List" />
+    <aura:attribute name="mostrarResultadosContactos" type="Boolean" default="false"/>
+
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     
     <!-- Container con la nueva clase para los estilos -->
@@ -192,6 +199,32 @@
                     </lightning:select>
                 </div>
             </aura:if>
+            
+            <!-- Campo de contacto editable -->
+            <div class="slds-form-element slds-m-top_small">
+                <aura:if isTrue="{!not(v.editandoContacto)}">
+                    <lightning:input name="contactoActual" label="Contacto" value="{!v.nombreContacto}" disabled="true"/>
+                    <lightning:buttonIcon iconName="utility:edit" alternativeText="Editar Contacto" onclick="{!c.editarContacto}" class="slds-m-left_x-small"/>
+                <aura:set attribute="else">
+                    <lightning:input name="contactoLookup" label="Contacto" value="{!v.busquedaContacto}"
+                        onchange="{!c.buscarContactos}"
+                        onfocus="{!c.buscarContactos}"
+                        placeholder="Buscar contacto..." />
+                    <aura:if isTrue="{!v.mostrarResultadosContactos}">
+                        <div class="lookup-results">
+                            <aura:iteration items="{!v.opcionesContactos}" var="contacto">
+                                <div class="lookup-result-item" data-id="{!contacto.value}" data-nombre="{!contacto.label}"
+                                    onclick="{!c.seleccionarContacto}">
+                                    <lightning:icon iconName="standard:contact" size="x-small" class="slds-m-right_small" />
+                                    <span class="slds-truncate">{!contacto.label}</span>
+                                </div>
+                            </aura:iteration>
+                        </div>
+                    </aura:if>
+                    <lightning:buttonIcon iconName="utility:close" alternativeText="Cancelar" onclick="{!c.cancelarEdicionContacto}" class="slds-m-left_x-small"/>
+                </aura:set>
+                </aura:if>
+            </div>
         </div>
         
         <!-- Footer con botones -->

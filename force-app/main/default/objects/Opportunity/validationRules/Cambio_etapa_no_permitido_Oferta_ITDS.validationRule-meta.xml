@@ -6,7 +6,7 @@
     <errorConditionFormula>AND(
     $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
 				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
-				$Profile.Name &lt;&gt; &quot;Admin Custom Ibermatica CRM&quot;,
+				$Profile.Name &lt;&gt; &quot;Admin Custom Ibermatica CRM Sales&quot;,
 				$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
 				$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
 				Clonada__c = FALSE,

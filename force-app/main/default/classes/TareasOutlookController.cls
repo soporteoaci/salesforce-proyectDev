@@ -1,22 +1,22 @@
 public class TareasOutlookController {
     
     @AuraEnabled
-    public static List<Map<String, Object>> obtenerTareasDelUsuario(Date fechaInicio, Date fechaFin, String filtroEstado) {
+    public static List<Map<String, Object>> obtenerTareasDelUsuario(Date fechaInicio, Date fechaFin, String filtroEstado, String filtroPrioridad, Id cuentaId) {
         Id userId = UserInfo.getUserId();
         List<Task> tareas;
         
         System.debug('>> [INICIO] Obtener tareas del usuario: ' + userId);
-        System.debug('>> Filtros recibidos -> fechaInicio: ' + fechaInicio + ', fechaFin: ' + fechaFin + ', filtroEstado: ' + filtroEstado);
+        System.debug('>> Filtros recibidos -> fechaInicio: ' + fechaInicio + ', fechaFin: ' + fechaFin + ', filtroEstado: ' + filtroEstado + ', filtroPrioridad: ' + filtroPrioridad + ', cuentaId: ' + cuentaId);
         
         // Valores para filtrar por Status
         List<String> estadosAgendadas = new List<String>{'Agendada', 'Planificada'};
-            List<String> estadosRealizadas = new List<String>{'Realizada', 'No realizada'};
-                
-                String queryBase = 
-                'SELECT Id, Subject, Status, ActivityDate, Priority, WhatId, WhoId, Start_Event__c, End_Event__c, Tarea_Padre__c, ' +
-                'Who.Name, What.Name, Description, Enviada_Agenda__c, Enviado_Acuerdos__c ' +
-                'FROM Task ' +
-                'WHERE OwnerId = :userId AND Tarea_Padre__c = null';
+        List<String> estadosRealizadas = new List<String>{'Realizada', 'No realizada'};
+        
+        String queryBase = 
+            'SELECT Id, Subject, Status, ActivityDate, Priority, WhatId, WhoId, Start_Event__c, End_Event__c, Tarea_Padre__c, ' +
+            'Who.Name, What.Name, Description, Enviada_Agenda__c, Enviado_Acuerdos__c ' +
+            'FROM Task ' +
+            'WHERE OwnerId = :userId AND Tarea_Padre__c = null';
         
         // Filtro por fechas
         if (fechaInicio != null && fechaFin != null) {
@@ -35,29 +35,39 @@ public class TareasOutlookController {
         } else if (filtroEstado == 'Realizadas') {
             queryBase += ' AND Status IN :estadosRealizadas';
         }
-        
+        // Filtro por prioridad
+        if (String.isNotBlank(filtroPrioridad)) {
+            queryBase += ' AND Priority = :filtroPrioridad';
+        }
+        // Filtro por cuenta (WhatId)
+        if (cuentaId != null) {
+            queryBase += ' AND WhatId = :cuentaId';
+        }
         String orden = ' ORDER BY ActivityDate DESC LIMIT 100';
         tareas = Database.query(queryBase + orden);
         
         System.debug('>> Total tareas encontradas: ' + tareas.size());
         
         // Construimos el resultado
+        String baseUrl = obtenerBaseUrl();
         List<Map<String, Object>> resultado = new List<Map<String, Object>>();
         for (Task t : tareas) {
+            String urlTarea = baseUrl + '/' + t.Id;
             resultado.add(new Map<String, Object>{
                 'Id' => t.Id,
-                    'Subject' => t.Subject,
-                    'Status' => t.Status,
-                    'ActivityDate' => t.ActivityDate,
-                    'Priority' => t.Priority,
-                    'horaInicio' => t.Start_Event__c,
-                    'horaFin' => t.End_Event__c,
-                    'Contacto' => t.Who != null ? t.Who.Name : '',
-                        'Cuenta' => t.What != null ? t.What.Name : '',
-                        'Description' => t.Description,
-                        'Enviada_Agenda__c' => t.Enviada_Agenda__c,
-                        'Enviado_Acuerdos__c' => t.Enviado_Acuerdos__c
-                            });
+                'Subject' => t.Subject,
+                'Status' => t.Status,
+                'ActivityDate' => t.ActivityDate,
+                'Priority' => t.Priority,
+                'horaInicio' => t.Start_Event__c,
+                'horaFin' => t.End_Event__c,
+                'Contacto' => t.Who != null ? t.Who.Name : '',
+                'Cuenta' => t.What != null ? t.What.Name : '',
+                'Description' => t.Description,
+                'Enviada_Agenda__c' => t.Enviada_Agenda__c,
+                'Enviado_Acuerdos__c' => t.Enviado_Acuerdos__c,
+                'UrlTarea' => urlTarea
+            });
         }
         
         System.debug('>> Total resultados devueltos: ' + resultado.size());
@@ -127,7 +137,6 @@ public class TareasOutlookController {
                 Priority = String.isNotBlank(prioridad) ? prioridad : 'Normal',
                 ActivityDate = Date.newInstance(fecha.year(), fecha.month(), fecha.day()),
                 WhoId = contactoId,
-                WhatId = cuentaId,
                 Id_Evento__c = reunion.Id,
                 Description = description,
                 Origen_Tarea__c = 'Reunión - Contacto',
@@ -358,5 +367,11 @@ public class TareasOutlookController {
             }
         }
         return valoresValidos.isEmpty() ? null : String.join(valoresValidos, ';');
+    }
+    
+    @AuraEnabled
+    public static String obtenerBaseUrl() {
+        // Devuelve la URL base del entorno actual (ej: https://miempresa--sandbox.lightning.force.com)
+        return URL.getOrgDomainUrl().toExternalForm();
     }
 }

@@ -4,6 +4,8 @@ obtenerTareas: function(component) {
     const fechaInicio = component.get("v.fechaInicio");
     const fechaFin = component.get("v.fechaFin");
     const filtroEstado = component.get("v.filtroEstado"); // Nuevo filtro
+    const filtroPrioridad = component.get("v.filtroPrioridad");
+    const cuentaId = component.get("v.cuentaSeleccionada");
 
     // Validación de fechas
     if (fechaInicio && fechaFin && fechaInicio > fechaFin) {
@@ -13,7 +15,7 @@ obtenerTareas: function(component) {
     }
 
     const action = component.get("c.obtenerTareasDelUsuario");
-    action.setParams({ fechaInicio, fechaFin, filtroEstado }); // Pasamos el filtro al Apex
+    action.setParams({ fechaInicio, fechaFin, filtroEstado, filtroPrioridad, cuentaId }); // Pasamos los nuevos filtros al Apex
 
     component.set("v.cargando", true);
     action.setCallback(this, function(response) {
@@ -22,6 +24,7 @@ obtenerTareas: function(component) {
 
             if (!tareasRaw || tareasRaw.length === 0) {
                 component.set("v.tareas", []);
+                component.set("v.tareasOriginal", []);
                 component.set("v.tareasMostradas", []);
                 component.set("v.mensajeErrorBusqueda", "No hay citas disponibles");
             } else {
@@ -43,6 +46,7 @@ obtenerTareas: function(component) {
                 }));
 
                 component.set("v.tareas", tareas);
+                component.set("v.tareasOriginal", tareas);
                 component.set("v.tareasMostradas", tareas);
                 component.set("v.mensajeErrorBusqueda", "");
             }
@@ -451,5 +455,59 @@ obtenerTareas: function(component) {
                 }
             }
         );
+    },
+
+    ordenarTareas: function(component) {
+        var tareas = component.get("v.tareasMostradas");
+        var campo = component.get("v.campoOrden");
+        var ordenAsc = component.get("v.ordenAsc");
+
+        if (!campo || !tareas) return;
+
+        // Ordenar tareas
+        tareas.sort(function(a, b) {
+            var valA = a[campo] ? a[campo].toString().toLowerCase() : "";
+            var valB = b[campo] ? b[campo].toString().toLowerCase() : "";
+
+            if (valA < valB) return ordenAsc ? -1 : 1;
+            if (valA > valB) return ordenAsc ? 1 : -1;
+            return 0;
+        });
+
+        component.set("v.tareasMostradas", tareas);
+
+        // Actualizar flechas
+        this.actualizarFlechasOrden(component, campo, ordenAsc);
+    },
+
+    actualizarFlechasOrden: function(component, campoActivo, asc) {
+        var campos = ['Subject','Status','ActivityDate','Priority','cuentaNombre'];
+
+        campos.forEach(function(c) {
+            var icon = component.find('flecha'+(c === 'cuentaNombre' ? 'Cuenta' : c));
+            if(icon){
+                if(c === campoActivo){
+                    // Flecha de columna activa: up o down
+                    icon.set('v.iconName', asc ? 'utility:arrowup' : 'utility:arrowdown');
+                } else {
+                    // Flechas restantes: neutras
+                    icon.set('v.iconName', 'utility:arrowneutral');
+                }
+                icon.set('v.style','display:inline-block;'); // siempre visible
+            }
+        });
+    },
+
+    // Inicializar todas las flechas al cargar el componente
+    inicializarFlechas: function(component) {
+        var campos = ['Subject','Status','ActivityDate','Priority','cuentaNombre'];
+        campos.forEach(function(c) {
+            var icon = component.find('flecha'+(c === 'cuentaNombre' ? 'Cuenta' : c));
+            if(icon){
+                icon.set('v.iconName', 'utility:arrowneutral');
+                icon.set('v.style','display:inline-block;');
+            }
+        });
     }
+
 })

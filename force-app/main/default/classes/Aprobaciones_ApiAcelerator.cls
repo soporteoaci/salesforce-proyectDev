@@ -68,6 +68,9 @@ public with sharing class Aprobaciones_ApiAcelerator {
                         res.resultado = (httpRes != null && httpRes.getBody() != null) 
                             ? httpRes.getBody() 
                             : '[]';
+                        System.debug('httpRes: '+httpRes);
+                        System.debug('httpRes.getBody(): '+httpRes.getBody());
+                        //TODO DEVOLVER LA RESPUESTA AL FLUJO PARA VER QUE HACER EN OK O KO.
                     } else {
                         res.resultado = 'KO';
                     }

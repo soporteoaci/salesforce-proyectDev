@@ -9,7 +9,7 @@
 				Bloqueada__c =true,
 				PRIORVALUE(Bloqueada__c) &lt;&gt; false,
 				Clonada__c = false,
-				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
 				$User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
 				$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
 				$User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;,

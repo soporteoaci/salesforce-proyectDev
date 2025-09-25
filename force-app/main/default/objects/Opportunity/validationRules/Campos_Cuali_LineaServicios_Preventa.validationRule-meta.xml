@@ -5,7 +5,7 @@
     <errorConditionFormula>AND(
     $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
 				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
-				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
 				IF(
 								ISPICKVAL(Linea_de_Servicio__c,&apos;SAP&apos;), AND(NOT(CONTAINS(TEXT(Delivery_Center__c),$UserRole.Name)), $UserRole.Name &lt;&gt;&apos;Enterprise&apos;),
 								IF(

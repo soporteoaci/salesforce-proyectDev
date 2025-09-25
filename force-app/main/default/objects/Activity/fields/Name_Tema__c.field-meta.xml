@@ -3,7 +3,6 @@
     <fullName>Name_Tema__c</fullName>
     <externalId>false</externalId>
     <formula>Opportunity__r.Name</formula>
-    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Name (Tema)</label>
     <required>false</required>
     <type>Text</type>

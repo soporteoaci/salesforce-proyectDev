@@ -66,5 +66,34 @@ public with sharing class EditarTareaOutlookController {
             throw new AuraHandledException('No se pudo actualizar la tarea: ' + e.getMessage());
         }
     }
-    
+    @AuraEnabled
+    public static List<Map<String, String>> buscarContactosPorCuenta(Id cuentaId, String texto) {
+        if (cuentaId == null || String.isBlank(texto)) {
+            return new List<Map<String, String>>();
+        }
+        List<Contact> contactos = [
+            SELECT Id, Name
+            FROM Contact
+            WHERE AccountId = :cuentaId
+            AND Name LIKE :('%' + texto + '%')
+            ORDER BY Name
+            LIMIT 10
+        ];
+        List<Map<String, String>> resultados = new List<Map<String, String>>();
+        for (Contact c : contactos) {
+            resultados.add(new Map<String, String>{
+                'label' => c.Name,
+                'value' => c.Id
+            });
+        }
+        return resultados;
+    }
+
+    @AuraEnabled
+    public static String obtenerNombreContacto(Id contactoId) {
+        if (contactoId == null) return '';
+        Contact c = [SELECT Name FROM Contact WHERE Id = :contactoId LIMIT 1];
+        return c != null ? c.Name : '';
+    }
+
 }

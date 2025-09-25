@@ -5,7 +5,7 @@
     <errorConditionFormula>AND(
     $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
 				$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
-				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+				$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
 
 				OR(
 								ISPICKVAL(Direccion_Operaciones__c, &apos;IT&amp;DS&apos;),

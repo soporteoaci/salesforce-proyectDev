@@ -1,7 +1,20 @@
 ({
+    
     doInit: function(component, event, helper) {
         helper.cargarPicklists(component);
         helper.cargarTarea(component);
+        // Inicializar nombreContacto con el nombre del WhoId si existe
+        var tarea = component.get("v.tarea");
+        if (tarea && tarea.WhoId) {
+            var action = component.get("c.obtenerNombreContacto");
+            action.setParams({ contactoId: tarea.WhoId });
+            action.setCallback(this, function(response) {
+                if (response.getState() === "SUCCESS") {
+                    component.set("v.nombreContacto", response.getReturnValue());
+                }
+            });
+            $A.enqueueAction(action);
+        }
         document.addEventListener('click', function(event) {
             const lookup = component.find('lookupContainer');
             if (lookup) {
@@ -12,7 +25,52 @@
             }
         });
     },
-    
+    editarContacto: function(component, event, helper) {
+        component.set("v.editandoContacto", true);
+        component.set("v.busquedaContacto", "");
+        component.set("v.opcionesContactos", []);
+        component.set("v.mostrarResultadosContactos", false);
+    },
+    cancelarEdicionContacto: function(component, event, helper) {
+        component.set("v.editandoContacto", false);
+        component.set("v.busquedaContacto", "");
+        component.set("v.opcionesContactos", []);
+        component.set("v.mostrarResultadosContactos", false);
+    },
+    buscarContactos: function(component, event, helper) {
+        var cuentaId = component.get("v.cuentaSeleccionada");
+        var texto = component.get("v.busquedaContacto");
+        if (!cuentaId || !texto || texto.trim() === "") {
+            component.set("v.opcionesContactos", []);
+            component.set("v.mostrarResultadosContactos", false);
+            return;
+        }
+        var action = component.get("c.buscarContactosPorCuenta");
+        action.setParams({ cuentaId: cuentaId, texto: texto });
+        action.setCallback(this, function(response) {
+            if (response.getState() === "SUCCESS") {
+                var resultados = response.getReturnValue();
+                component.set("v.opcionesContactos", resultados);
+                component.set("v.mostrarResultadosContactos", true);
+            } else {
+                component.set("v.opcionesContactos", []);
+                component.set("v.mostrarResultadosContactos", false);
+            }
+        });
+        $A.enqueueAction(action);
+    },
+    seleccionarContacto: function(component, event, helper) {
+        var contactoId = event.currentTarget.dataset.id;
+        var nombreContacto = event.currentTarget.dataset.nombre;
+        if (contactoId && nombreContacto) {
+            component.set("v.tarea.WhoId", contactoId);
+            component.set("v.nombreContacto", nombreContacto);
+            component.set("v.editandoContacto", false);
+            component.set("v.busquedaContacto", "");
+            component.set("v.opcionesContactos", []);
+            component.set("v.mostrarResultadosContactos", false);
+        }
+    },
     buscarCuentas: function(component, event, helper) {
         const texto = component.get("v.busquedaCuenta");
         if (!texto || texto.trim() === '') {
@@ -40,7 +98,7 @@
     seleccionarCuenta: function(component, event, helper) {
         const cuentaId = event.currentTarget.dataset.id;
         const nombreCuenta = event.currentTarget.dataset.nombre;
-    
+
         if (cuentaId && nombreCuenta) {
             // Seteamos valores en atributos del componente
             component.set("v.busquedaCuenta", nombreCuenta);
@@ -49,9 +107,7 @@
             // Ocultamos resultados y limpiamos lista
             component.set("v.mostrarResultados", false);
             component.set("v.resultadosCuentas", []);
-    
-            // Cargar contactos relacionados
-            helper.cargarContactos(component, cuentaId);
+            // Ya no se cargan contactos relacionados
         } else {
             console.warn("No se pudo seleccionar la cuenta: datos incompletos");
         }

@@ -8,7 +8,7 @@
 		$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
 		$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
 		$Profile.Name &lt;&gt;&apos;Administrador del sistema&apos;,
-		$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM&apos;,
+		$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
 		$User.Email &lt;&gt; &apos;aat_soporteofertas@ayesa.com&apos;,
 		$User.Email &lt;&gt; &apos;powersalesforce@ayesa.com&apos;,
 		NOT(ISPICKVAL( Tipo_Extension__c, &apos;Extensión Rectificativa&apos;)),
