@@ -37,14 +37,18 @@ public class TareasOutlookController {
         }
         // Filtro por prioridad
         if (String.isNotBlank(filtroPrioridad)) {
+            System.debug('>> Aplicando filtro de prioridad: ' + filtroPrioridad);
             queryBase += ' AND Priority = :filtroPrioridad';
         }
         // Filtro por cuenta (WhatId)
         if (cuentaId != null) {
+            System.debug('>> Aplicando filtro de cuenta: ' + cuentaId);
             queryBase += ' AND WhatId = :cuentaId';
         }
         String orden = ' ORDER BY ActivityDate DESC LIMIT 100';
-        tareas = Database.query(queryBase + orden);
+        String queryFinal = queryBase + orden;
+        System.debug('>> Query final: ' + queryFinal);
+        tareas = Database.query(queryFinal);
         
         System.debug('>> Total tareas encontradas: ' + tareas.size());
         
@@ -59,6 +63,7 @@ public class TareasOutlookController {
                 'Status' => t.Status,
                 'ActivityDate' => t.ActivityDate,
                 'Priority' => t.Priority,
+                'WhoId' => t.WhoId,
                 'horaInicio' => t.Start_Event__c,
                 'horaFin' => t.End_Event__c,
                 'Contacto' => t.Who != null ? t.Who.Name : '',
@@ -77,7 +82,7 @@ public class TareasOutlookController {
     // MÉTODO MODIFICADO PARA INCLUIR CAMPOS NUEVOS
     @AuraEnabled
     public static void crearReunionConContactos(
-        Datetime fecha, List<Id> contactoIds, Id cuentaId,
+        Datetime fecha, Id contactoId, Id cuentaId,
         String subject, String prioridad, String lineasServicio, 
         String sectorMercado, String description, 
         Boolean enviadaAgenda, Boolean enviadaAcuerdos
@@ -95,7 +100,7 @@ public class TareasOutlookController {
             LIMIT 1
         ].Id;
         
-        // CREAR EVENTO (lo dejamos igual, pero no agregamos campos nuevos aún)
+        // CREAR EVENTO
         Event reunion = new Event(
             Subject = subject,
             ActivityDate = fecha.date(),
@@ -105,50 +110,32 @@ public class TareasOutlookController {
             WhatId = cuentaId
         );
         insert reunion;
+        
         System.debug('Lineas_de_Servicio__c: ' + lineasServicio);
-        // CREAR TAREA ORGANIZADOR
-        Task tareaOrganizador = new Task(
+        System.debug('ContactoId recibido: ' + contactoId);
+        
+        // CREAR UNA SOLA TAREA CON EL CONTACTO SELECCIONADO
+        Task tareaVisita = new Task(
             RecordTypeId = recordTypeIdVisitas,
             Tipoact__c = 'Cita',
             Subject = subject,
-            Status = 'Agendada', // Cambiado: valor por defecto obligatorio
+            Status = 'Agendada',
             Priority = String.isNotBlank(prioridad) ? prioridad : 'Normal',
             ActivityDate = Date.newInstance(fecha.year(), fecha.month(), fecha.day()),
             OwnerId = userId,
             WhatId = cuentaId,
+            WhoId = contactoId, // Asignar el contacto seleccionado
             Id_Evento__c = reunion.Id,
             Description = description,
-            Origen_Tarea__c = 'Reunión - Organizador',
+            Origen_Tarea__c = 'Reunión - Visita',
             Lineas_de_Servicio__c = esValorPicklistValido('Task', 'Lineas_de_Servicio__c', lineasServicio),
             Organizaci_n__c = esValorPicklistValido('Task', 'Organizaci_n__c', sectorMercado),
             Enviada_Agenda__c = enviadaAgenda,
             Enviado_Acuerdos__c = enviadaAcuerdos
         );
-        insert tareaOrganizador;
+        insert tareaVisita;
         
-        List<Task> tareas = new List<Task>();
-        
-        for (Id contactoId : contactoIds) {
-            tareas.add(new Task(
-                RecordTypeId = recordTypeIdVisitas,
-                Tipoact__c = 'Cita',
-                Subject = subject,
-                Status = 'Agendada',
-                Priority = String.isNotBlank(prioridad) ? prioridad : 'Normal',
-                ActivityDate = Date.newInstance(fecha.year(), fecha.month(), fecha.day()),
-                WhoId = contactoId,
-                Id_Evento__c = reunion.Id,
-                Description = description,
-                Origen_Tarea__c = 'Reunión - Contacto',
-                Tarea_Padre__c = tareaOrganizador.Id,
-                Lineas_de_Servicio__c = esValorPicklistValido('Task', 'Lineas_de_Servicio__c', lineasServicio),
-                Organizaci_n__c = esValorPicklistValido('Task', 'Organizaci_n__c', sectorMercado),
-                Enviada_Agenda__c = enviadaAgenda,
-                Enviado_Acuerdos__c = enviadaAcuerdos
-            ));
-        }
-        
-        insert tareas;
+        System.debug('Tarea creada con ID: ' + tareaVisita.Id + ' y WhoId: ' + tareaVisita.WhoId);
     }
     
     @AuraEnabled
@@ -205,21 +192,23 @@ public class TareasOutlookController {
         Schema.DescribeFieldResult prioridadField = Task.Priority.getDescribe();
         List<String> opcionesPrioridad = new List<String>();
         for (Schema.PicklistEntry entry : prioridadField.getPicklistValues()) {
-            opcionesPrioridad.add(entry.getLabel());
+            if (entry.isActive()) {
+                opcionesPrioridad.add(entry.getLabel());
+            }
         }
         resultado.put('Priority', opcionesPrioridad);
+        
+        System.debug('>> Opciones de Priority devueltas: ' + opcionesPrioridad);
+        System.debug('>> Resultado completo: ' + resultado);
         
         return resultado;
     }
     
     @AuraEnabled
-    public static void actualizarTareas(List<Task> tareasActualizadas, List<String> esPadreLista) {
+    public static void actualizarTareas(List<Task> tareasActualizadas) {
         System.debug('Tareas a actualizar: ' + JSON.serializePretty(tareasActualizadas));
         if (tareasActualizadas == null || tareasActualizadas.isEmpty()) {
             throw new AuraHandledException('No se proporcionaron tareas para actualizar.');
-        }
-        if (esPadreLista == null || esPadreLista.size() != tareasActualizadas.size()) {
-            throw new AuraHandledException('Lista de indicadores de padre inválida.');
         }
         
         // Validar tareas no completadas
@@ -227,15 +216,7 @@ public class TareasOutlookController {
             if (t.Status != null && t.Status.toLowerCase() == 'realizada') {
                 throw new AuraHandledException('No se pueden modificar tareas que están ya realizadas');
             }
-        }
-        
-        List<Task> tareasParaActualizar = new List<Task>();
-        Map<Id, Task> padresMap = new Map<Id, Task>();
-        
-        for (Integer i = 0; i < tareasActualizadas.size(); i++) {
-            Task t = tareasActualizadas[i];
-            Boolean esPadre = esPadreLista[i] == 'true';
-            System.debug('Actualizando hija con datos de padre: ' + t.Id + ' -> ' + JSON.serializePretty(t));
+            
             // Asignar valores por defecto si faltan
             if (String.isBlank(t.Status)) {
                 t.Status = 'Not Started';
@@ -243,46 +224,11 @@ public class TareasOutlookController {
             if (String.isBlank(t.Priority)) {
                 t.Priority = 'Normal';
             }
-            
-            tareasParaActualizar.add(t);
-            
-            if (esPadre) {
-                padresMap.put(t.Id, t);
-            }
         }
         
-        if (!padresMap.isEmpty()) {
-            List<Task> hijas = [
-                SELECT Id, Subject, Status, Priority, Start_Event__c, End_Event__c, Tarea_Padre__c
-                FROM Task
-                WHERE Tarea_Padre__c IN :padresMap.keySet()
-            ];
-            
-            for (Task hija : hijas) {
-                Task padre = padresMap.get(hija.Tarea_Padre__c);
-                if (padre != null) {
-                    // Replica campos editados del padre en la hija
-                    hija.Subject = padre.Subject;
-                    hija.Status = padre.Status;
-                    hija.Priority = padre.Priority;
-                    hija.Start_Event__c = padre.Start_Event__c;
-                    hija.End_Event__c = padre.End_Event__c;
-                    
-                    // Asegurar valores obligatorios en hija
-                    if (String.isBlank(hija.Status)) {
-                        hija.Status = 'Not Started';
-                    }
-                    if (String.isBlank(hija.Priority)) {
-                        hija.Priority = 'Normal';
-                    }
-                }
-            }
-            
-            tareasParaActualizar.addAll(hijas);
-        }
         if(!Test.isRunningTest()){
             try {
-                update tareasParaActualizar;
+                update tareasActualizadas;
             } catch (DmlException e) {
                 throw new AuraHandledException('Error al actualizar tareas: ' + e.getMessage());
             }  
@@ -311,25 +257,24 @@ public class TareasOutlookController {
     }
     
     @AuraEnabled
-    public static List<Task> obtenerTareasHijas(Id tareaPadreId) {
-        System.debug('tareas: '+ [
-            SELECT Id, Subject, Status, Priority, ActivityDate,
-            Start_Event__c, End_Event__c,
-            WhoId, Who.Name,
-            WhatId, What.Name, Tarea_Padre__c
-            FROM Task
-            WHERE Tarea_Padre__c = :tareaPadreId
-            ORDER BY ActivityDate ASC
-        ]);
-        return [
-            SELECT Id, Subject, Status, Priority, ActivityDate,
-            Start_Event__c, End_Event__c,
-            WhoId, Who.Name,
-            WhatId, What.Name, Tarea_Padre__c
-            FROM Task
-            WHERE Tarea_Padre__c = :tareaPadreId
-            ORDER BY ActivityDate ASC
-        ];
+    public static Map<String, Object> obtenerDetalleContacto(String tareaId) {
+        try {
+            Task tarea = [SELECT WhoId, Who.Name, Who.Email, Who.Phone 
+                         FROM Task 
+                         WHERE Id = :tareaId 
+                         LIMIT 1];
+            
+            if (tarea.WhoId != null && tarea.Who != null) {
+                return new Map<String, Object>{
+                    'Name' => tarea.Who.Name,
+                    'Email' => tarea.Who.Email,
+                    'Phone' => tarea.Who.Phone
+                };
+            }
+            return null;
+        } catch (Exception e) {
+            throw new AuraHandledException('Error al obtener detalle del contacto: ' + e.getMessage());
+        }
     }
     private static String esValorPicklistValido(String objeto, String campo, String valor) {
         if (String.isBlank(valor)) return null;

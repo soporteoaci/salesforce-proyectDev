@@ -10,6 +10,8 @@
     <aura:attribute name="fechaInicio" type="Date" />
     <aura:attribute name="fechaFin" type="Date" />
     <aura:attribute name="filtroEstado" type="String" default="Todas"/>
+    <aura:attribute name="filtroPrioridad" type="String" default=""/>
+    <aura:attribute name="opcionesPrioridad" type="List" default="[]"/>
     <aura:attribute name="mensajeFecha" type="String" />
     <aura:attribute name="mensajeErrorFecha" type="String" default="" />
     <aura:attribute name="mensajeErrorBusqueda" type="String" default="" />
@@ -17,14 +19,13 @@
     <aura:attribute name="columnas" type="List" />
     <aura:attribute name="borradores" type="Object" />
     <aura:attribute name="cargando" type="Boolean" default="false" />
-    <aura:attribute name="hijasCache" type="Object" default="{}" />
     
     <!-- ================================ -->
     <!-- Atributos de gestión de tareas -->
     <!-- ================================ -->
     <aura:attribute name="tareas" type="List" />
     <aura:attribute name="tareasMostradas" type="List" />
-    <aura:attribute name="tareasExpandidas" type="List" default="[]" />
+    <aura:attribute name="tareasExpandidas" type="List" default="[]" /> <!-- IDs de tareas con detalle de contacto expandido -->
     <aura:attribute name="tareasOriginal" type="List" />
     
     <!-- ================================ -->
@@ -97,7 +98,9 @@
                                 <!-- Filtro por Cuenta (lookup/autocomplete) -->
                                 <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-5 slds-p-right_x-small contenedor-cuenta-autocompletar">
                                     <lightning:input name="filtroCuenta" label="Cuenta" value="{!v.busquedaCuenta}"
-                                                    onchange="{!c.buscarCuentas}" placeholder="Buscar cuenta..." />
+                                                    onchange="{!c.cuentaInputCambiada}" 
+                                                    onfocus="{!c.buscarCuentas}" 
+                                                    placeholder="Buscar cuenta..." />
                                     <aura:if isTrue="{!v.mostrarResultados}">
                                         <div class="lookup-results">
                                             <aura:iteration items="{!v.resultadosCuentas}" var="cuenta">
@@ -113,9 +116,10 @@
                                 <!-- Filtro por Prioridad -->
                                 <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-5 slds-p-right_x-small">
                                     <lightning:select name="filtroPrioridad" label="Prioridad"
+                                                     aura:id="filterPriority"
                                                      value="{!v.filtroPrioridad}" onchange="{!c.filtrarTareas}">
                                         <option value="">Todas</option>
-                                        <aura:iteration items="{!v.picklistMap.Priority}" var="opt">
+                                        <aura:iteration items="{!v.opcionesPrioridad}" var="opt">
                                             <option value="{!opt}">{!opt}</option>
                                         </aura:iteration>
                                     </lightning:select>
@@ -168,39 +172,60 @@
                                                 Cuenta
                                                 <lightning:icon class="slds-m-left_x-small" aura:id="flechaCuenta" iconName="utility:sort" size="x-small"/>
                                             </th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <aura:iteration items="{!v.tareasMostradas}" var="tarea">
-                                            <tr class="{!tarea.esHija ? 'fila-hija' : 'fila-padre'}">
-                                                <aura:if isTrue="{!tarea.esHija}">
-                                                    <td colspan="5">{!tarea.contactoNombre}</td>
-                                                </aura:if>
-                                                <aura:if isTrue="{!not(tarea.esHija)}">
+                                            <aura:if isTrue="{!tarea.isDetalle}">
+                                                <!-- Fila de detalle del contacto -->
+                                                <tr class="fila-detalle">
+                                                    <td colspan="6" style="padding-left: 2rem; font-style: italic; color: #5f5f5f; background-color: #f9fafb;">
+                                                        {!tarea.detalleContacto}
+                                                    </td>
+                                                </tr>
+                                            </aura:if>
+                                            <aura:if isTrue="{!not(tarea.isDetalle)}">
+                                                <!-- Fila normal de tarea -->
+                                                <tr class="fila-tarea">
                                                     <td>{!tarea.Subject}</td>
                                                     <td>{!tarea.Status}</td>
                                                     <td>{!tarea.ActivityDate}</td>
                                                     <td>{!tarea.Priority}</td>
                                                     <td>{!tarea.cuentaNombre}</td>
-                                                    <td class="acciones-cell" style="white-space:nowrap;">
-                                                        <lightning:buttonIcon 
-                                                                              iconName="{!tarea.expandida ? 'utility:chevrondown' : 'utility:chevronright'}"
-                                                                              alternativeText="Expandir/Ocultar Hijas"
-                                                                              onclick="{!c.verHijasTarea}" value="{!tarea.Id}" name="toggleHijas"
-                                                                              class="accion-btn slds-m-right_x-small" variant="border-filled" size="small"/>
-                                                        <lightning:buttonIcon 
-                                                                              iconName="utility:edit"
-                                                                              alternativeText="Editar Tarea"
-                                                                              onclick="{!c.verHijasTarea}" value="{!tarea.Id}" name="editarTarea"
-                                                                              class="accion-btn slds-m-right_x-small" variant="border-filled" size="small"/>
-                                                        <lightning:buttonIcon 
-                                                                            iconName="utility:new_window"
-                                                                            alternativeText="Ir a Salesforce"
-                                                                            onclick="{!c.abrirRegistroSalesforce}" value="{!tarea.Id}" name="abrirRegistro"
-                                                                            class="accion-btn slds-m-left_xx-small slds-m-right_x-small" variant="border-filled" size="small"/>
+                                                    <td class="acciones-cell">
+                                                        <div class="acciones-btn-group">
+                                                            <lightning:buttonIcon 
+                                                                iconName="{!tarea.expandida ? 'utility:chevrondown' : 'utility:chevronright'}"
+                                                                alternativeText="Ver/Ocultar Contacto"
+                                                                onclick="{!c.verDetalleContacto}" 
+                                                                value="{!tarea.Id}" 
+                                                                name="toggleDetalle"
+                                                                class="accion-btn" 
+                                                                variant="border-filled" 
+                                                                size="small"/>
+                                                            <lightning:buttonIcon 
+                                                                iconName="utility:edit"
+                                                                alternativeText="Editar Tarea"
+                                                                onclick="{!c.verDetalleContacto}" 
+                                                                value="{!tarea.Id}" 
+                                                                name="editarTarea"
+                                                                class="accion-btn" 
+                                                                variant="border-filled" 
+                                                                size="small"/>
+                                                            <lightning:buttonIcon 
+                                                                iconName="utility:new_window"
+                                                                alternativeText="Ir a Salesforce"
+                                                                onclick="{!c.abrirRegistroSalesforce}" 
+                                                                value="{!tarea.Id}" 
+                                                                name="abrirRegistro"
+                                                                class="accion-btn" 
+                                                                variant="border-filled" 
+                                                                size="small"/>
+                                                        </div>
                                                     </td>
-                                                </aura:if>
-                                            </tr>
+                                                </tr>
+                                            </aura:if>
                                         </aura:iteration>
                                     </tbody>
                                 </table>
@@ -225,15 +250,15 @@
                             
                             <!-- Fecha -->
                             <div class="slds-grid slds-wrap slds-m-bottom_small">
-                                <div class="slds-col slds-size_1-of-1">
-                                    <lightning:input type="date" name="fechaReunion" label="Fecha" value="{!v.fechaReunion}" required="true" />
+                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-5">
+                                    <lightning:input type="date" name="fechaReunion" label="Fecha"
+                                                     value="{!v.fechaReunion}" required="true" />
                                 </div>
                             </div>
-                            
-                            
+
                             <!-- NUEVO: Prioridad -->
                             <lightning:select name="prioridad" label="Prioridad" value="{!v.prioridad}" class="slds-m-bottom_small" required="true">
-                                <aura:iteration items="{!v.picklistMap.Priority}" var="opt">
+                                <aura:iteration items="{!v.opcionesPrioridad}" var="opt">
                                     <option value="{!opt}" selected="{!opt == 'Normal'}">{!opt}</option>
                                 </aura:iteration>
                             </lightning:select>

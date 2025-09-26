@@ -5,10 +5,8 @@ public class CreacionOfertaIngenieriaControllerTest {
     @isTest static void test_carga_datos_ok(){
         
         // Test data setup
-       // TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
-        
-        // Perform test
+        // TestDataFactory.initParametricas();
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         Test.startTest();
         String resultJsonStr = CreacionOfertaIngenieriaController.carga_datos(oports.Id);
         Test.stopTest();
@@ -79,7 +77,7 @@ public class CreacionOfertaIngenieriaControllerTest {
         
         // Test data setup
        // TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();           
@@ -107,7 +105,7 @@ public class CreacionOfertaIngenieriaControllerTest {
 
         // Test data setup
         //TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
                 
         // Perform test
         Test.startTest();  
@@ -127,7 +125,7 @@ public class CreacionOfertaIngenieriaControllerTest {
 
         // Test data setup
         //TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();    
@@ -150,7 +148,7 @@ public class CreacionOfertaIngenieriaControllerTest {
 		
         // Test data setup
         //TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();  
@@ -167,7 +165,7 @@ public class CreacionOfertaIngenieriaControllerTest {
 		
         // Test data setup
         //TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();        
@@ -184,7 +182,7 @@ public class CreacionOfertaIngenieriaControllerTest {
 		
         // Test data setup
        // TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI 2');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();        
@@ -201,7 +199,7 @@ public class CreacionOfertaIngenieriaControllerTest {
 		
         // Test data setup
         //TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();

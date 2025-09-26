@@ -3,7 +3,6 @@
         const hoy = new Date().toISOString().slice(0, 10); // formato YYYY-MM-DD
         component.set("v.fechaInicio", hoy);
         component.set("v.fechaFin", hoy);
-        component.set("v.hijasCache", {});
         // Si no se pasa entornoUrl, lo toma del host actual
         if (!component.get("v.entornoUrl")) {
             try {
@@ -80,10 +79,7 @@
         if (!borradores || borradores.length === 0) return;
 
         const tareasBase = component.get("v.tareas");
-        const hijasCache = component.get("v.hijasCache") || {};
-
         let tareasParaActualizar = [];
-        let esPadreLista = [];
 
         const regexHoraValida = /^([01]?\d|2[0-3]):(00|30)$/;
 
@@ -98,27 +94,25 @@
                 return;
             }
 
-            let tareaOriginal = tareasBase.find(t => t.Id === borrador.Id) 
-                             || Object.values(hijasCache).flat().find(t => t.Id === borrador.Id);
+            let tareaOriginal = tareasBase.find(t => t.Id === borrador.Id);
             if (!tareaOriginal) continue;
 
-            const esPadre = !tareaOriginal.esHija;
-
             // Convertir hora a Date
-            const [h, m] = borrador.horaInicio.split(":").map(Number);
-            const fechaTarea = new Date(tareaOriginal.ActivityDate);
-            const startDateTime = new Date(fechaTarea.setHours(h, m, 0, 0));
-            const endDateTime = new Date(startDateTime.getTime() + 30 * 60000);
+            if (borrador.horaInicio) {
+                const [h, m] = borrador.horaInicio.split(":").map(Number);
+                const fechaTarea = new Date(tareaOriginal.ActivityDate);
+                const startDateTime = new Date(fechaTarea.setHours(h, m, 0, 0));
+                const endDateTime = new Date(startDateTime.getTime() + 30 * 60000);
 
-            tareaOriginal.startDateTimeRaw = startDateTime.toISOString();
-            tareaOriginal.endDateTimeRaw = endDateTime.toISOString();
+                tareaOriginal.startDateTimeRaw = startDateTime.toISOString();
+                tareaOriginal.endDateTimeRaw = endDateTime.toISOString();
+            }
 
-            tareasParaActualizar.push(helper.crearTareaParaActualizar(tareaOriginal, borrador, esPadre));
-            esPadreLista.push(esPadre ? 'true' : 'false');
+            tareasParaActualizar.push(helper.crearTareaParaActualizar(tareaOriginal, borrador));
         }
 
         const action = component.get("c.actualizarTareas");
-        action.setParams({ tareasActualizadas: tareasParaActualizar, esPadreLista });
+        action.setParams({ tareasActualizadas: tareasParaActualizar });
 
         action.setCallback(this, function(response) {
             if (response.getState() === "SUCCESS") {
@@ -138,12 +132,12 @@
         $A.enqueueAction(action);
     },
         
-    verHijasTarea: function(component, event, helper) {
+    verDetalleContacto: function(component, event, helper) {
         const tareaId = event.getSource().get("v.value"); 
         const actionName = event.getSource().get("v.name"); // name lo usaremos para diferenciar acción
 
-        if (actionName === "toggleHijas") {
-            helper.obtenerHijasDeTarea(component, tareaId);
+        if (actionName === "toggleDetalle") {
+            helper.toggleDetalleContacto(component, tareaId);
         }
 
         if (actionName === "editarTarea") {
@@ -152,27 +146,7 @@
     },
 
     buscarCuentas: function(component, event, helper) {
-        const texto = component.get("v.busquedaCuenta");
-        if (!texto || texto.trim() === '') {
-            component.set("v.resultadosCuentas", []);
-            component.set("v.mostrarResultados", false);
-            return;
-        }
-
-        const action = component.get("c.buscarCuentasPorNombre");
-        action.setParams({ texto });
-
-        action.setCallback(this, function(response) {
-            if (response.getState() === "SUCCESS") {
-                var resultados = response.getReturnValue();
-                component.set("v.resultadosCuentas", resultados);
-                component.set("v.mostrarResultados", true);
-            } else {
-                console.error("Error al buscar cuentas:", response.getError());
-            }
-        });
-        
-        $A.enqueueAction(action);
+        helper.buscarCuentas(component);
     },
 
     seleccionarCuenta: function(component, event, helper) {
@@ -188,16 +162,33 @@
         component.set("v.mostrarResultadosContactos", false);
         // Cargar contactos de la cuenta
         helper.cargarContactos(component, id);
+        // Activar filtro de tareas después de seleccionar cuenta
+        helper.actualizarMensajeFecha(component);
+        helper.obtenerTareas(component);
     },
 
     cuentaInputCambiada: function(component, event, helper) {
         const texto = event.getSource().get("v.value");
-    
+        const cuentaActual = component.get("v.busquedaCuenta");
+        
+        // Si se borró el texto, limpiar la selección y refiltrar
         if (!texto || texto.trim() === '') {
             component.set("v.cuentaSeleccionada", null);
             component.set("v.opcionesContactos", []);
             component.set("v.contactosSeleccionados", []);
             component.set("v.mostrarDualListbox", false);
+            component.set("v.mostrarResultados", false);
+            // Refiltrar tareas sin cuenta
+            helper.actualizarMensajeFecha(component);
+            helper.obtenerTareas(component);
+        } else {
+            // Buscar cuentas si hay texto
+            helper.buscarCuentas(component);
+        }
+        
+        // Limpiar la cuenta seleccionada si el texto ha cambiado
+        if (texto !== cuentaActual) {
+            component.set("v.cuentaSeleccionada", null);
         }
     },
 

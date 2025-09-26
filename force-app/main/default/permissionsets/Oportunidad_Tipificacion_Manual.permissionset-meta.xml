@@ -11,6 +11,16 @@
         <field>Oportunidad__c.Tipificacion_Manual__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Bloqueada_importe_Horizontal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Tipificacion_Manual__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>CRM Oportunidad: Tipificacion Manual y Bloqueo Linea Servicio</label>
 </PermissionSet>

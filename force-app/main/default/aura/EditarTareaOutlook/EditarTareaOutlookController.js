@@ -1,20 +1,11 @@
 ({
     
     doInit: function(component, event, helper) {
-        helper.cargarPicklists(component);
-        helper.cargarTarea(component);
-        // Inicializar nombreContacto con el nombre del WhoId si existe
-        var tarea = component.get("v.tarea");
-        if (tarea && tarea.WhoId) {
-            var action = component.get("c.obtenerNombreContacto");
-            action.setParams({ contactoId: tarea.WhoId });
-            action.setCallback(this, function(response) {
-                if (response.getState() === "SUCCESS") {
-                    component.set("v.nombreContacto", response.getReturnValue());
-                }
-            });
-            $A.enqueueAction(action);
-        }
+        // Cargar picklists con callback para cargar la tarea después
+        helper.cargarPicklists(component, function() {
+            helper.cargarTarea(component);
+        });
+        
         document.addEventListener('click', function(event) {
             const lookup = component.find('lookupContainer');
             if (lookup) {
@@ -25,33 +16,29 @@
             }
         });
     },
-    editarContacto: function(component, event, helper) {
-        component.set("v.editandoContacto", true);
-        component.set("v.busquedaContacto", "");
-        component.set("v.opcionesContactos", []);
-        component.set("v.mostrarResultadosContactos", false);
-    },
-    cancelarEdicionContacto: function(component, event, helper) {
-        component.set("v.editandoContacto", false);
-        component.set("v.busquedaContacto", "");
-        component.set("v.opcionesContactos", []);
-        component.set("v.mostrarResultadosContactos", false);
-    },
+
     buscarContactos: function(component, event, helper) {
         var cuentaId = component.get("v.cuentaSeleccionada");
-        var texto = component.get("v.busquedaContacto");
-        if (!cuentaId || !texto || texto.trim() === "") {
+        var texto = component.get("v.nombreContacto");
+        
+        if (!cuentaId) {
             component.set("v.opcionesContactos", []);
             component.set("v.mostrarResultadosContactos", false);
             return;
         }
+        
+        if (!texto || texto.trim() === "") {
+            // Si no hay texto, mostrar todos los contactos de la cuenta
+            texto = "";
+        }
+        
         var action = component.get("c.buscarContactosPorCuenta");
         action.setParams({ cuentaId: cuentaId, texto: texto });
         action.setCallback(this, function(response) {
             if (response.getState() === "SUCCESS") {
                 var resultados = response.getReturnValue();
                 component.set("v.opcionesContactos", resultados);
-                component.set("v.mostrarResultadosContactos", true);
+                component.set("v.mostrarResultadosContactos", resultados.length > 0);
             } else {
                 component.set("v.opcionesContactos", []);
                 component.set("v.mostrarResultadosContactos", false);
@@ -65,8 +52,6 @@
         if (contactoId && nombreContacto) {
             component.set("v.tarea.WhoId", contactoId);
             component.set("v.nombreContacto", nombreContacto);
-            component.set("v.editandoContacto", false);
-            component.set("v.busquedaContacto", "");
             component.set("v.opcionesContactos", []);
             component.set("v.mostrarResultadosContactos", false);
         }

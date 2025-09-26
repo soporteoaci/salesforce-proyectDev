@@ -16,7 +16,7 @@ public class CreacionOfertaControllerTest {
         
         // Test data setup
     //    TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         
         // Perform test
@@ -80,7 +80,7 @@ public class CreacionOfertaControllerTest {
 
         // Test data setup
         //TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
                 
         // Perform test
         Test.startTest();  
@@ -102,7 +102,7 @@ public class CreacionOfertaControllerTest {
 
         // Test data setup
        // TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();    
@@ -125,7 +125,7 @@ public class CreacionOfertaControllerTest {
 		
         // Test data setup
         //TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();  
@@ -142,7 +142,7 @@ public class CreacionOfertaControllerTest {
         // Test data setup
         //TestDataFactory.initParametricas();
         //Comentado por cambio en las etapas 2024 Pedido Código Oferta --> Cualificación
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();        
@@ -160,7 +160,7 @@ public class CreacionOfertaControllerTest {
         // Test data setup
         //TestDataFactory.initParametricas();
         //Comentado por cambio en las etapas 2024 Pedido Código Oferta --> Cualificación
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI 2');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();        
@@ -177,7 +177,7 @@ public class CreacionOfertaControllerTest {
 		
         // Test data setup
         //TestDataFactory.initParametricas();
-        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'AAT - TORRE PELLI');
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();

@@ -266,6 +266,12 @@
                 </visibilityRule>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Rentabilidad__c</fieldItem>
+                <identifier>RecordRentabilidad__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-4c479272-8058-4a3e-bb9b-cab5b5f4ef5d</name>
         <type>Facet</type>
     </flexiPageRegions>

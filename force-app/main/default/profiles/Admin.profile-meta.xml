@@ -478,10 +478,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>CRM_Responsable_ProyectoHelper</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>CRM_SAP_WS_Controller</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -799,6 +795,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>OpportunityTriggerHandler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>OpportunityTriggerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -9669,6 +9669,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Rentabilidad_Serv__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Rentabilidad__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

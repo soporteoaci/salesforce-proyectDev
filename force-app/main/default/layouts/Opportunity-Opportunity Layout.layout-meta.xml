@@ -59,6 +59,10 @@
                 <behavior>Edit</behavior>
                 <field>VTH_Technology_Level_1__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Rentabilidad__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

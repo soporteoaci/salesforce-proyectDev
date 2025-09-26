@@ -180,6 +180,59 @@
     text-decoration: none;
 }
 
+/* Autocompletado de contactos */
+.THIS .contenedor-contacto-autocompletar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.THIS .lookup-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: var(--sf-white);
+    border: 1px solid var(--sf-border);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 4px;
+    padding: 0;
+    animation: slideDown 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.THIS .lookup-result-item {
+    padding: 10px 16px;
+    border-bottom: 1px solid #f1f3f6;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--sf-text);
+    transition: background 0.15s;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.THIS .lookup-result-item:last-child {
+    border-bottom: none;
+}
+
+.THIS .lookup-result-item:hover {
+    background-color: var(--sf-blue-light);
+    color: var(--sf-blue-dark);
+}
+
+.THIS .lookup-result-item .slds-truncate {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 220px;
+}
+
 /* Íconos y diseño visual */
 .THIS .slds-icon {
     --size: 16px;

@@ -5726,6 +5726,10 @@
             <name>Oportunidades</name>
         </sections>
         <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
             <label><!-- Opportunities-Partners --></label>
             <name>Opportunities-Partners</name>
         </sections>
@@ -5771,6 +5775,10 @@
         <sections>
             <label><!-- Oportunidades --></label>
             <name>Oportunidades</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
         </sections>
     </reportTypes>
     <reportTypes>

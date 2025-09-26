@@ -5,6 +5,11 @@
         <field>Oportunidad__c.Bloqueada__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Bloqueada__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>CRM Desbloquear Oportunidad</label>
 </PermissionSet>

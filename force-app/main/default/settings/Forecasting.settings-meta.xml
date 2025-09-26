@@ -1307,6 +1307,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -1861,6 +1865,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -3141,6 +3146,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -3694,6 +3703,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -4978,6 +4988,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -5532,6 +5546,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -6812,6 +6827,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -7365,6 +7384,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -8649,6 +8669,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -9203,6 +9227,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -10483,6 +10508,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -11036,6 +11065,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -12320,6 +12350,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -12874,6 +12908,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -14154,6 +14189,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -14707,6 +14746,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -15987,6 +16027,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -16540,6 +16584,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -17820,6 +17865,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -18373,6 +18422,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -19657,6 +19707,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -20211,6 +20265,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>
@@ -21491,6 +21546,10 @@
             <label>Referencia del Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000UXQfB</field>
+            <label>Rentabilidad</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt4</field>
             <label>Rentabilidad HW</label>
         </opportunityListFieldsLabelMappings>
@@ -22044,6 +22103,7 @@
             <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
+            <field>00N9O00000UXQfB</field>
             <field>00N9O00000Ofyt4</field>
             <field>00N9O00000Ofyt5</field>
             <field>00N9O00000Ofyt6</field>

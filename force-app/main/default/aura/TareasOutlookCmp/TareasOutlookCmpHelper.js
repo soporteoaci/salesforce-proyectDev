@@ -36,13 +36,12 @@ obtenerTareas: function(component) {
                     ActivityDate: t.ActivityDate,
                     contactoNombre: t.Contacto,
                     cuentaNombre: t.Cuenta,
-                    Tarea_Padre__c: null,
+                    WhoId: t.WhoId, // Campo estándar para contacto/lead
                     expandida: false,
                     iconoExpandir: 'utility:chevronright',
                     mostrarBoton: true,
-                    esHija: !!t.Tarea_Padre__c,
                     rowClass: '',
-                    detalleColumna: t.Subject || ''
+                    detalleContacto: '' // Para mostrar info del contacto al expandir
                 }));
 
                 component.set("v.tareas", tareas);
@@ -81,11 +80,17 @@ obtenerTareas: function(component) {
         action.setCallback(this, response => {
             if (response.getState() === "SUCCESS") {
                 const picklists = response.getReturnValue();
+                
+                console.log("📋 Picklists cargados:", picklists);
+                console.log("🔧 Opciones de Priority:", picklists.Priority);
 
                 // Transformar líneas de servicio para dualListbox
                 const dualListOptions = picklists['Lineas_de_Servicio__c'].map(v => ({ label: v, value: v }));
                 picklists['Lineas_de_Servicio__c'] = dualListOptions;
 
+                // Cargar opciones de prioridad en atributo específico
+                component.set("v.opcionesPrioridad", picklists.Priority || []);
+                
                 component.set("v.picklistMap", picklists);
 
                 // Construir listas del dual custom para líneas de servicio
@@ -117,7 +122,7 @@ obtenerTareas: function(component) {
         const action = component.get("c.crearReunionConContactos");
         action.setParams({
             fecha: fecha,
-            contactoIds: contactoId ? [contactoId] : [],
+            contactoId: contactoId, // Ahora es un solo ID, no una lista
             cuentaId: cuentaId,
             subject: subject,
             prioridad: prioridad,
@@ -182,6 +187,35 @@ obtenerTareas: function(component) {
             }
             component.set("v.cargando", false);
         });
+        $A.enqueueAction(action);
+    },
+
+    // ===============================
+    // NUEVO: Buscar cuentas por nombre
+    // ===============================
+    buscarCuentas: function(component) {
+        const texto = component.get("v.busquedaCuenta");
+        if (!texto || texto.trim() === '') {
+            component.set("v.resultadosCuentas", []);
+            component.set("v.mostrarResultados", false);
+            return;
+        }
+
+        const action = component.get("c.buscarCuentasPorNombre");
+        action.setParams({ texto });
+
+        action.setCallback(this, function(response) {
+            if (response.getState() === "SUCCESS") {
+                var resultados = response.getReturnValue();
+                component.set("v.resultadosCuentas", resultados);
+                component.set("v.mostrarResultados", true);
+            } else {
+                console.error("Error al buscar cuentas:", response.getError());
+                component.set("v.resultadosCuentas", []);
+                component.set("v.mostrarResultados", false);
+            }
+        });
+        
         $A.enqueueAction(action);
     },
 
@@ -283,122 +317,150 @@ obtenerTareas: function(component) {
     },
 
     // ===============================
-    // Función para expandir/colapsar hijas
+    // Función para mostrar/ocultar detalle del contacto
     // ===============================
-    obtenerHijasDeTarea: function(component, tareaPadreId) {
+    toggleDetalleContacto: function(component, tareaId) {
         const tareasExpandidas = component.get("v.tareasExpandidas") || [];
         const tareasBase = component.get("v.tareas") || [];
-        let hijasCache = component.get("v.hijasCache") || {};
         let tareasMostradas = [];
 
-        const yaExpandida = tareasExpandidas.includes(tareaPadreId);
+        const yaExpandida = tareasExpandidas.includes(tareaId);
 
         if (yaExpandida) {
-            const nuevasExpandidas = tareasExpandidas.filter(id => id !== tareaPadreId);
+            // Colapsar: quitar de expandidas
+            const nuevasExpandidas = tareasExpandidas.filter(id => id !== tareaId);
             component.set("v.tareasExpandidas", nuevasExpandidas);
 
-            nuevasExpandidas.forEach(id => {
-                if (!hijasCache[id]) {
-                    hijasCache[id] = [];
-                }
-            });
-            component.set("v.hijasCache", hijasCache);
-
-            tareasBase.forEach(tarea => {
-                tareasMostradas.push(tarea);
-                if (nuevasExpandidas.includes(tarea.Id) && hijasCache[tarea.Id]) {
-                    tareasMostradas.push(...hijasCache[tarea.Id]);
-                }
-            });
-
+            // Actualizar la tarea base
             const tareasBaseActualizadas = tareasBase.map(t => {
-                if (t.Id === tareaPadreId) {
+                if (t.Id === tareaId) {
                     t.expandida = false;
                     t.iconoExpandir = 'utility:chevronright';
+                    t.detalleContacto = '';
                 }
                 return t;
             });
             component.set("v.tareas", tareasBaseActualizadas);
 
-            component.set("v.tareasMostradas", tareasMostradas);
+            // Mostrar solo las tareas base, sin detalles
+            tareasMostradas = tareasBaseActualizadas.filter(t => !nuevasExpandidas.includes(t.Id) || !t.expandida);
+            
+            // Agregar filas de detalle para las que siguen expandidas
+            nuevasExpandidas.forEach(expandedId => {
+                const tareaExpandida = tareasBaseActualizadas.find(t => t.Id === expandedId);
+                if (tareaExpandida && tareaExpandida.expandida) {
+                    const indexTarea = tareasMostradas.findIndex(t => t.Id === expandedId);
+                    if (indexTarea !== -1) {
+                        tareasMostradas.splice(indexTarea + 1, 0, {
+                            Id: expandedId + '_detalle',
+                            isDetalle: true,
+                            detalleContacto: tareaExpandida.detalleContacto,
+                            rowClass: 'fila-detalle'
+                        });
+                    }
+                }
+            });
 
+        } else {
+            // Expandir: agregar a expandidas y obtener info del contacto
+            const tarea = tareasBase.find(t => t.Id === tareaId);
+            if (!tarea) return;
+
+            const action = component.get("c.obtenerDetalleContacto");
+            action.setParams({ tareaId: tareaId });
+            component.set("v.cargando", true);
+
+            action.setCallback(this, response => {
+                if (response.getState() === "SUCCESS") {
+                    const contactoInfo = response.getReturnValue();
+                    let detalleTexto = 'Sin contacto relacionado';
+                    
+                    if (contactoInfo && contactoInfo.Name) {
+                        detalleTexto = `Contacto: ${contactoInfo.Name}`;
+                        if (contactoInfo.Email) {
+                            detalleTexto += ` (${contactoInfo.Email})`;
+                        }
+                        if (contactoInfo.Phone) {
+                            detalleTexto += ` - Tel: ${contactoInfo.Phone}`;
+                        }
+                    }
+
+                    const nuevasExpandidas = [...tareasExpandidas, tareaId];
+                    component.set("v.tareasExpandidas", nuevasExpandidas);
+
+                    // Actualizar la tarea base
+                    const tareasBaseActualizadas = tareasBase.map(t => {
+                        if (t.Id === tareaId) {
+                            t.expandida = true;
+                            t.iconoExpandir = 'utility:chevrondown';
+                            t.detalleContacto = detalleTexto;
+                        }
+                        return t;
+                    });
+                    component.set("v.tareas", tareasBaseActualizadas);
+
+                    // Crear lista con detalles insertados
+                    tareasMostradas = [];
+                    tareasBaseActualizadas.forEach(tarea => {
+                        tareasMostradas.push(tarea);
+                        if (nuevasExpandidas.includes(tarea.Id) && tarea.expandida) {
+                            tareasMostradas.push({
+                                Id: tarea.Id + '_detalle',
+                                isDetalle: true,
+                                detalleContacto: tarea.detalleContacto,
+                                rowClass: 'fila-detalle'
+                            });
+                        }
+                    });
+
+                } else {
+                    console.error("Error al obtener detalle del contacto:", response.getError());
+                    // Mostrar detalle por defecto en caso de error
+                    const nuevasExpandidas = [...tareasExpandidas, tareaId];
+                    component.set("v.tareasExpandidas", nuevasExpandidas);
+
+                    const tareasBaseActualizadas = tareasBase.map(t => {
+                        if (t.Id === tareaId) {
+                            t.expandida = true;
+                            t.iconoExpandir = 'utility:chevrondown';
+                            t.detalleContacto = 'Sin contacto relacionado';
+                        }
+                        return t;
+                    });
+                    component.set("v.tareas", tareasBaseActualizadas);
+
+                    tareasMostradas = [];
+                    tareasBaseActualizadas.forEach(tarea => {
+                        tareasMostradas.push(tarea);
+                        if (nuevasExpandidas.includes(tarea.Id) && tarea.expandida) {
+                            tareasMostradas.push({
+                                Id: tarea.Id + '_detalle',
+                                isDetalle: true,
+                                detalleContacto: tarea.detalleContacto,
+                                rowClass: 'fila-detalle'
+                            });
+                        }
+                    });
+                }
+
+                component.set("v.tareasMostradas", tareasMostradas);
+                component.set("v.cargando", false);
+            });
+
+            $A.enqueueAction(action);
             return;
         }
 
-        const action = component.get("c.obtenerTareasHijas");
-        action.setParams({ tareaPadreId });
-        component.set("v.cargando", true);
-
-        action.setCallback(this, response => {
-            if (response.getState() === "SUCCESS") {
-                const hijasNuevas = response.getReturnValue().map(t => ({
-                    Id: t.Id,
-                    Subject: t.Subject,
-                    Status: t.Status,
-                    Priority: t.Priority,
-                    ActivityDate: t.ActivityDate,
-                    contactoNombre: t.Who && t.Who.Name ? t.Who.Name : '',
-                    cuentaNombre: t.What && t.What.Name ? t.What.Name : '',
-                    Tarea_Padre__c: t.Tarea_Padre__c,
-                    expandida: false,
-                    iconoExpandir: 'utility:chevronright',
-                    esHija: !!t.Tarea_Padre__c,
-                    rowClass: 'tarea-hija',
-                    detalleColumna: t.Who && t.Who.Name ? t.Who.Name : 'Sin contacto'
-                }));
-            	console.log('Primer contacto:', hijasNuevas[0].contactoNombre);
-                hijasCache[tareaPadreId] = hijasNuevas;
-                component.set("v.hijasCache", hijasCache);
-
-                const nuevasExpandidas = [...tareasExpandidas, tareaPadreId];
-                component.set("v.tareasExpandidas", nuevasExpandidas);
-
-                nuevasExpandidas.forEach(id => {
-                    if (!hijasCache[id]) {
-                        hijasCache[id] = [];
-                    }
-                });
-
-                tareasMostradas = [];
-                tareasBase.forEach(tarea => {
-                    tareasMostradas.push(tarea);
-                    if (nuevasExpandidas.includes(tarea.Id) && hijasCache[tarea.Id]) {
-                        tareasMostradas.push(...hijasCache[tarea.Id]);
-                    }
-                });
-
-                const tareasBaseActualizadas = tareasBase.map(t => {
-                    if (t.Id === tareaPadreId) {
-                        t.expandida = true;
-                        t.iconoExpandir = 'utility:chevrondown';
-                    }
-                    return t;
-                });
-                component.set("v.tareas", tareasBaseActualizadas);
-
-                component.set("v.tareasMostradas", tareasMostradas);
-            } else {
-                $A.get("e.force:showToast").setParams({
-                    title: "Error",
-                    message: "Error al obtener tareas hijas.",
-                    type: "error"
-                }).fire();
-            console.error("Error al obtener hijas:", response.getError());
-        }
-        component.set("v.cargando", false);
-    });
-
-        $A.enqueueAction(action);
+        component.set("v.tareasMostradas", tareasMostradas);
     },
 
-    crearTareaParaActualizar: function(tareaOriginal, borrador, esPadre) {
+    crearTareaParaActualizar: function(tareaOriginal, borrador) {
       
         return {
             Id: tareaOriginal.Id,
             Subject: borrador.Subject !== undefined ? borrador.Subject : tareaOriginal.Subject,
             Status: borrador.Status !== undefined ? borrador.Status : tareaOriginal.Status,
-            ActivityDate: borrador.ActivityDate,
-            esPadre: esPadre ? 'true' : 'false'
+            ActivityDate: borrador.ActivityDate
         };
     },
 
@@ -458,14 +520,15 @@ obtenerTareas: function(component) {
     },
 
     ordenarTareas: function(component) {
-        var tareas = component.get("v.tareasMostradas");
+        var tareasBase = component.get("v.tareas");
         var campo = component.get("v.campoOrden");
         var ordenAsc = component.get("v.ordenAsc");
+        var tareasExpandidas = component.get("v.tareasExpandidas") || [];
 
-        if (!campo || !tareas) return;
+        if (!campo || !tareasBase) return;
 
-        // Ordenar tareas
-        tareas.sort(function(a, b) {
+        // Ordenar solo las tareas base (no las filas de detalle)
+        tareasBase.sort(function(a, b) {
             var valA = a[campo] ? a[campo].toString().toLowerCase() : "";
             var valB = b[campo] ? b[campo].toString().toLowerCase() : "";
 
@@ -474,7 +537,24 @@ obtenerTareas: function(component) {
             return 0;
         });
 
-        component.set("v.tareasMostradas", tareas);
+        // Actualizar la lista base
+        component.set("v.tareas", tareasBase);
+
+        // Reconstruir la lista mostrada incluyendo detalles expandidos
+        var tareasMostradas = [];
+        tareasBase.forEach(function(tarea) {
+            tareasMostradas.push(tarea);
+            if (tareasExpandidas.includes(tarea.Id) && tarea.expandida) {
+                tareasMostradas.push({
+                    Id: tarea.Id + '_detalle',
+                    isDetalle: true,
+                    detalleContacto: tarea.detalleContacto,
+                    rowClass: 'fila-detalle'
+                });
+            }
+        });
+
+        component.set("v.tareasMostradas", tareasMostradas);
 
         // Actualizar flechas
         this.actualizarFlechasOrden(component, campo, ordenAsc);

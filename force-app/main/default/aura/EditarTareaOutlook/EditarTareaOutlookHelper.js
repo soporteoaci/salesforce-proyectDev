@@ -1,12 +1,14 @@
 ({
-    cargarPicklists: function(component) {
+    cargarPicklists: function(component, callback) {
         const action = component.get("c.obtenerPicklists");
         action.setCallback(this, function(response) {
             if (response.getState() === "SUCCESS") {
                 const data = response.getReturnValue();
+                console.log("📝 Picklists cargados:", data);
                 const opcionesLineas = data.Lineas_de_Servicio__c.map(function(opcion) {
                     return { label: opcion, value: opcion };
                 });
+                console.log("🔗 Opciones de líneas de servicio:", opcionesLineas);
                 component.set("v.estadoOpciones", data.Status);
                 component.set("v.comoHaIdoOpciones", data.Como_ha_ido__c);
                 component.set("v.siguientePasoOpciones", data.Siguiente_Paso__c);
@@ -15,8 +17,13 @@
                 component.set("v.organizacionOpciones", data.Organizaci_n__c);
                 component.set("v.tipoActividadOpciones", data.Tipo_Actividad_Administrador__c);
                 
-                // Reconstruir dual list si ya hay selección/tarea
-                this.rebuildDualLists(component, /*preserveMarks*/ true);
+                // Reconstruir dual list después de cargar las opciones
+                this.rebuildDualLists(component, /*preserveMarks*/ false);
+                
+                // Ejecutar callback si se proporciona
+                if (callback && typeof callback === 'function') {
+                    callback();
+                }
             }
         });
         $A.enqueueAction(action);
@@ -28,18 +35,22 @@
         action.setCallback(this, function(response) {
             if (response.getState() === "SUCCESS") {
                 const tarea = response.getReturnValue();
+                console.log("📋 Tarea cargada:", tarea);
                 component.set("v.tarea", tarea);
-                
                 // Convertimos Lineas_de_Servicio__c en lista
                 const lineas = tarea.Lineas_de_Servicio__c;
-                component.set("v.lineasServicioSeleccionadas", lineas ? lineas.split(';') : []);
-                
+                const lineasArray = lineas ? lineas.split(';').map(s => s.trim()).filter(s => s.length > 0) : [];
+                console.log("🔗 Líneas de servicio de la tarea:", lineas, "->", lineasArray);
+                component.set("v.lineasServicioSeleccionadas", lineasArray);
                 component.set("v.busquedaCuenta", tarea.What ? tarea.What.Name : '');
                 component.set("v.cuentaSeleccionada", tarea.WhatId);
                 component.set("v.modoBusquedaCuenta", tarea.WhatId ? false : true);
                 
+                // Cargar nombre del contacto desde la consulta de la tarea
+                component.set("v.nombreContacto", tarea.Who ? tarea.Who.Name : '');
+                component.set("v.estadoSeleccionado", tarea.Estado__c);
                 // Reconstruir dual list con datos actuales
-                this.rebuildDualLists(component, /*preserveMarks*/ true);
+                this.rebuildDualLists(component, /*preserveMarks*/ false);
             }
         });
         $A.enqueueAction(action);
@@ -123,6 +134,16 @@
         const opciones = component.get("v.lineasServicioOpciones") || [];
         const seleccionadasValores = new Set(component.get("v.lineasServicioSeleccionadas") || []);
 
+        console.log("🔄 Reconstruyendo dual listbox:");
+        console.log("   Opciones disponibles:", opciones.length);
+        console.log("   Valores seleccionados:", Array.from(seleccionadasValores));
+
+        // Si no hay opciones aún, no hacer nada
+        if (opciones.length === 0) {
+            console.log("   ⚠️ No hay opciones disponibles aún");
+            return;
+        }
+
         // Si se pide preservar marcas, leer las actuales
         const prevDisp = component.get("v.lineasServicioDisponibles") || [];
         const prevSel = component.get("v.lineasServicioSeleccionadasDetalles") || [];
@@ -142,6 +163,10 @@
                 disponibles.push(base);
             }
         });
+
+        console.log("   ✅ Resultado:");
+        console.log("      Disponibles:", disponibles.length, disponibles.map(d => d.label));
+        console.log("      Seleccionadas:", seleccionadas.length, seleccionadas.map(s => s.label));
 
         component.set("v.lineasServicioDisponibles", disponibles);
         component.set("v.lineasServicioSeleccionadasDetalles", seleccionadas);

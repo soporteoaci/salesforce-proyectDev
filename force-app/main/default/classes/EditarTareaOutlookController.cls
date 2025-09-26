@@ -5,7 +5,7 @@ public with sharing class EditarTareaOutlookController {
         return [SELECT Id, ActivityDate, Subject, Description, Start_Event__c, End_Event__c, Status,
                 Estado__c, Como_ha_ido__c, Siguiente_Paso__c,
                 Lineas_de_Servicio__c, Priority, Organizaci_n__c, 
-                Tipo_Actividad_Administrador__c, WhatId, What.Name,
+                Tipo_Actividad_Administrador__c, WhatId, What.Name, WhoId, Who.Name,
                 Enviada_Agenda__c, Enviado_Acuerdos__c
                 FROM Task
                 WHERE Id = :tareaId];
@@ -68,17 +68,21 @@ public with sharing class EditarTareaOutlookController {
     }
     @AuraEnabled
     public static List<Map<String, String>> buscarContactosPorCuenta(Id cuentaId, String texto) {
-        if (cuentaId == null || String.isBlank(texto)) {
+        if (cuentaId == null) {
             return new List<Map<String, String>>();
         }
-        List<Contact> contactos = [
-            SELECT Id, Name
-            FROM Contact
-            WHERE AccountId = :cuentaId
-            AND Name LIKE :('%' + texto + '%')
-            ORDER BY Name
-            LIMIT 10
-        ];
+        
+        String query = 'SELECT Id, Name FROM Contact WHERE AccountId = :cuentaId';
+        
+        if (String.isNotBlank(texto)) {
+            query += ' AND Name LIKE :texto';
+            texto = '%' + texto + '%';
+        }
+        
+        query += ' ORDER BY Name LIMIT 10';
+        
+        List<Contact> contactos = Database.query(query);
+        
         List<Map<String, String>> resultados = new List<Map<String, String>>();
         for (Contact c : contactos) {
             resultados.add(new Map<String, String>{

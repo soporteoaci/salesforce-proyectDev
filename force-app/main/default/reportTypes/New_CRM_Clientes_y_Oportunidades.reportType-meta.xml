@@ -2972,4 +2972,12 @@
         </columns>
         <masterLabel>Opportunities-Partners</masterLabel>
     </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Rentabilidad__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <masterLabel>Opportunities</masterLabel>
+    </sections>
 </ReportType>

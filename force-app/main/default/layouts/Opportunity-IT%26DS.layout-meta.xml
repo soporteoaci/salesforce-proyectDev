@@ -140,6 +140,10 @@
                 <behavior>Edit</behavior>
                 <field>Apoyo_de_Soporte_a_Ofertas__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Rentabilidad__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>

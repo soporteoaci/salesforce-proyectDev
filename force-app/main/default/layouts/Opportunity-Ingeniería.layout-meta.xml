@@ -67,6 +67,10 @@
                 <behavior>Edit</behavior>
                 <field>Correo_Oferta_enviado__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Rentabilidad__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
