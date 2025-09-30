@@ -5,7 +5,7 @@ public class CRM_Responsable_ProyectoControllerTest {
     static void test_ObtenerOportunidad() {
         
         //Cuenta
-        Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
+        /*Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
         insert Cliente;
         
         //Contacto
@@ -19,7 +19,9 @@ public class CRM_Responsable_ProyectoControllerTest {
         Opportunity oportunidad= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', AccountId=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probability=10, Mercado__c='60029413',DivisionPickList__c='60049219',
                                                           Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                                           Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
-        insert oportunidad;
+        insert oportunidad;*/
+        
+        Opportunity oportunidad = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
 
         Test.startTest();
         Opportunity result = CRM_Responsable_ProyectoController.obtenerOportunidad(oportunidad.Id);
@@ -55,7 +57,7 @@ public class CRM_Responsable_ProyectoControllerTest {
     static void test_ActualizarOportunidad() {
         
         //Cuenta
-        Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
+        /*Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
         insert Cliente;
         
         //Contacto
@@ -69,7 +71,9 @@ public class CRM_Responsable_ProyectoControllerTest {
         Opportunity testOpp= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', AccountId=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probability=10, Mercado__c='60029413',DivisionPickList__c='60049219',
                                                           Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                                           Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
-        insert testOpp;
+        insert testOpp;*/
+        
+        Opportunity testOpp = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
 
         String responsable = 'Usuario de Prueba - null@null.com';
 
@@ -88,7 +92,7 @@ public class CRM_Responsable_ProyectoControllerTest {
     @isTest
     static void test_ActualizarOportunidad_Error() {
         
-        //Cuenta
+        /*//Cuenta
         Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
         insert Cliente;
         
@@ -103,7 +107,9 @@ public class CRM_Responsable_ProyectoControllerTest {
         Opportunity testOpp= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', AccountId=Cliente.Id, Contacto_Principal__c=contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probability=10, Mercado__c='60029413',DivisionPickList__c='60049219',
                                                           Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
                                                           Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
-        insert testOpp;
+        insert testOpp;*/
+        
+        Opportunity testOpp = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
 
         String responsableIncorrecto = 'ResponsableErroneo';
         Test.startTest();

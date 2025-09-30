@@ -25,6 +25,9 @@ public class CreacionOfertaController {
                                    //  Posibilidad_de_resoluci_n_unilateral__c,
                                    //  Resoluci_n_por_conveniencia__c,
                                    //  Causas_no_tasadas_y_ambiguas__c,
+                                     AccountId,
+                                  	 Account.Name,
+                                  	 Account.SAP_Account__c,
                                      Codigo_OC__c,
                                      //Codigo_OC2__c,
                                      Objetivo_del_proyecto__c,
@@ -346,7 +349,7 @@ La búsqueda de clientes puede hacerse por:
             +'</td><td style="width: 200px; height: 18px;"><span style="color: #3366ff;">Objetivos del proyecto</span>&nbsp;</td><td style="width: 360px; height: 18px;" colspan="3">'
             +oppAux.Objetivo_del_proyecto__c 
             +'</td></tr><tr style="height: 18px;"><td style="width: 137px; height: 18px;"><span style="color: #3366ff;">Cliente</span></td><td style="width: 356px; height: 18px;" colspan="5">&nbsp; '
-            + oppAux.Cliente__r.Name 
+            + oppAux.Account.Name 
             +'</td></tr><tr style="height: 18px;"><td style="width: 137px; height: 18px;"><span style="color: #3366ff;">JP</span></td><td style="width: 356px; height: 18px;">'
             + oppAux.Jefe_de_Proyecto__c
             +'</td><td style="width: 200px; height: 18px;"><span style="color: #3366ff;">GP</span></td><td style="width: 360px; height: 18px;" colspan="3">'
@@ -476,6 +479,9 @@ system.debug(CENTRO[0]);*/
                                     // Se_incluye_lucro__c,
                                     // Posibilidad_de_resoluci_n_unilateral__c, Resoluci_n_por_conveniencia__c,
                                     // Causas_no_tasadas_y_ambiguas__c, 
+                                     AccountId,
+                                     Account.name,
+                                  	 Account.SAP_Account__c,
                                      Codigo_OC__c, 
                                      //Codigo_OC2__c,
                                      Objetivo_del_proyecto__c, Cliente__c,
@@ -545,7 +551,7 @@ system.debug(CENTRO[0]);*/
         dt = opportunity.Fecha_limite_de_presentacion__c;
         fechaPresentacion = dt.format('yyyy-MM-dd');	
         
-        clienteSAPCod = opportunity.Cliente__r.SAP_Account__c.leftPad(10, '0'); //completamos con 0 hasta 10 caracteres
+        clienteSAPCod = opportunity.Account.SAP_Account__c.leftPad(10, '0'); //completamos con 0 hasta 10 caracteres
         //07/2022
       //  if(opportunity.ETC__c != null){
       //  ETC = opportunity.ETC__c;

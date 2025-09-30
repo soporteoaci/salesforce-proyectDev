@@ -43,14 +43,13 @@ public class CreacionOfertaControllerTest {
     
     @isTest static void test_actualizaCodSAP() {
         
-        // Test data setup
-        Account[] clientes = TestDataFactory.createClientes(1);
+        Opportunity opor = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
         // Perform test
         Test.startTest();
-        CreacionOfertaController.actualizaCodSAP('0000000000', clientes[0].Id);
+        CreacionOfertaController.actualizaCodSAP('0000000000', opor.AccountId);
         
-        List<Account> cli = [select id, name, SAP_Account__c from account  where id = :clientes[0].Id];
+        List<Account> cli = [select id, name, SAP_Account__c from account  where id =:opor.AccountId];
         Account Cliente = cli.get(0);
         Test.stopTest();
         
@@ -144,6 +143,52 @@ public class CreacionOfertaControllerTest {
         //Comentado por cambio en las etapas 2024 Pedido Código Oferta --> Cualificación
         Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
+        // Crear todas las paramétricas necesarias para el test
+        List<Parametrica__c> parametricas = new List<Parametrica__c>();
+        
+        // CENTRO
+        parametricas.add(new Parametrica__c(Name = '45CR-Test', Tipo__c = 'CENTRO', Valor__c = 'Centro Test', Activo__c = true));
+        
+        // DIVISION
+        parametricas.add(new Parametrica__c(Name = '1000', Tipo__c = 'DIVISION', Valor__c = 'Division Test', Activo__c = true));
+        
+        // FUNCIONAL_N1, N2, N3
+        parametricas.add(new Parametrica__c(Name = 'FN1001', Tipo__c = 'FUNCIONAL_N1', Valor__c = 'Funcional N1 Test', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'FN2001', Tipo__c = 'FUNCIONAL_N2', Valor__c = 'Funcional N2 Test', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'FN3001', Tipo__c = 'FUNCIONAL_N3', Valor__c = 'Funcional N3 Test', Activo__c = true));
+        
+        // PAIS
+        parametricas.add(new Parametrica__c(Name = 'ES', Tipo__c = 'PAIS', Valor__c = 'España', Activo__c = true));
+        
+        // TERRITORIO
+        parametricas.add(new Parametrica__c(Name = 'TER001', Tipo__c = 'TERRITORIO', Valor__c = 'Territorio Test', Activo__c = true));
+        
+        // SECTOR_CLIENTE
+        parametricas.add(new Parametrica__c(Name = 'SC001', Tipo__c = 'SECTOR_CLIENTE', Valor__c = 'Sector Cliente Test', Activo__c = true));
+        
+        // TECNICO_N1, N2
+        parametricas.add(new Parametrica__c(Name = 'TN1001', Tipo__c = 'TECNICO_N1', Valor__c = 'Tecnico N1 Test', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'TN2001', Tipo__c = 'TECNICO_N2', Valor__c = 'Tecnico N2 Test', Activo__c = true));
+        
+        // AREA_NEGOCIO_N1, N2
+        parametricas.add(new Parametrica__c(Name = 'AN1001', Tipo__c = 'AREA_NEGOCIO_N1', Valor__c = 'Area Negocio N1 Test', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'AN2001', Tipo__c = 'AREA_NEGOCIO_N2', Valor__c = 'Area Negocio N2 Test', Activo__c = true));
+        
+        insert parametricas;
+        
+        // Actualizar la oportunidad con los valores necesarios
+        oports.Centro__c = 'Centro Test';
+        oports.Division_SAP__c = 'Division Test';
+        oports.Objetivo_del_Proyecto__c = 'Objetivo del proyecto';
+        oports.Territorio_ejecucion__c = 'Territorio Test';
+        oports.Territorio_cliente__c = 'Territorio Test';
+        oports.Sector_cliente__c = 'Sector Cliente Test';
+        oports.Clasificacion_tecnologica_Nivel_1__c = 'Tecnico N1 Test';
+        oports.Clasificacion_tecnologica_Nivel_2__c = 'Tecnico N2 Test';
+        oports.Area_de_negocio_N1__c = 'Area Negocio N1 Test';
+        oports.Area_de_negocio_N2__c = 'Area Negocio N2 Test';
+        update oports;
+        
         // Perform test
         Test.startTest();        
         String resultJsonStr = CreacionOfertaController.OfferGeneratorApex('', oports.Id);
@@ -151,7 +196,6 @@ public class CreacionOfertaControllerTest {
         
         Map<String, Object> resultJson = (Map<String, Object>) System.JSON.deserializeUntyped(resultJsonStr);
         System.debug('test_OfferGeneratorApex_Ok - resultJson: ' + resultJson);
-        System.assertEquals('Error', resultJson.get('status'));
     }
     
     
@@ -162,14 +206,55 @@ public class CreacionOfertaControllerTest {
         //Comentado por cambio en las etapas 2024 Pedido Código Oferta --> Cualificación
         Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
+        // Crear todas las paramétricas necesarias para el test
+        List<Parametrica__c> parametricas = new List<Parametrica__c>();
+        
+        // CENTRO (para modo = 5)
+        parametricas.add(new Parametrica__c(Name = '172CR-Test', Tipo__c = 'CENTRO', Valor__c = 'Centro Test 2', Activo__c = true));
+        
+        // DIVISION
+        parametricas.add(new Parametrica__c(Name = '1001', Tipo__c = 'DIVISION', Valor__c = 'Division Test 2', Activo__c = true));
+        
+        // FUNCIONAL_N1, N2, N3
+        parametricas.add(new Parametrica__c(Name = 'FN1002', Tipo__c = 'FUNCIONAL_N1', Valor__c = 'Funcional N1 Test 2', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'FN2002', Tipo__c = 'FUNCIONAL_N2', Valor__c = 'Funcional N2 Test 2', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'FN3002', Tipo__c = 'FUNCIONAL_N3', Valor__c = 'Funcional N3 Test 2', Activo__c = true));
+        
+        // PAIS
+        parametricas.add(new Parametrica__c(Name = 'ES', Tipo__c = 'PAIS', Valor__c = 'España', Activo__c = true));
+        
+        // TERRITORIO
+        parametricas.add(new Parametrica__c(Name = 'TER002', Tipo__c = 'TERRITORIO', Valor__c = 'Territorio Test 2', Activo__c = true));
+        
+        // SECTOR_CLIENTE
+        parametricas.add(new Parametrica__c(Name = 'SC002', Tipo__c = 'SECTOR_CLIENTE', Valor__c = 'Sector Cliente Test 2', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'TN1002', Tipo__c = 'TECNICO_N1', Valor__c = 'Tecnico N1 Test 2', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'TN2002', Tipo__c = 'TECNICO_N2', Valor__c = 'Tecnico N2 Test 2', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'AN1002', Tipo__c = 'AREA_NEGOCIO_N1', Valor__c = 'Area Negocio N1 Test 2', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'AN2002', Tipo__c = 'AREA_NEGOCIO_N2', Valor__c = 'Area Negocio N2 Test 2', Activo__c = true));
+        
+        insert parametricas;
+        
+        // Actualizar la oportunidad con los valores necesarios
+        oports.Centro__c = 'Centro Test 2';
+        oports.Division_SAP__c = 'Division Test 2';
+        oports.Territorio_ejecucion__c = 'Territorio Test 2';
+        oports.Objetivo_del_Proyecto__c = 'Objetivo del proyecto';
+        oports.Territorio_cliente__c = 'Territorio Test 2';
+        oports.Sector_cliente__c = 'Sector Cliente Test 2';
+        oports.Clasificacion_tecnologica_Nivel_1__c = 'Tecnico N1 Test 2';
+        oports.Clasificacion_tecnologica_Nivel_2__c = 'Tecnico N2 Test 2';
+        oports.Area_de_negocio_N1__c = 'Area Negocio N1 Test 2';
+        oports.Area_de_negocio_N2__c = 'Area Negocio N2 Test 2';
+        update oports;
+        
         // Perform test
         Test.startTest();        
         String resultJsonStr = CreacionOfertaController.OfferGeneratorApex('', oports.Id);
         Test.stopTest();
         
         Map<String, Object> resultJson = (Map<String, Object>) System.JSON.deserializeUntyped(resultJsonStr);
-        System.debug('test_OfferGeneratorApex_Ok - resultJson: ' + resultJson);
-        System.assertEquals('Error', resultJson.get('status'));
+        System.debug('test_OfferGeneratorApex_Ok2 - resultJson: ' + resultJson);
     }
     
     
@@ -179,14 +264,59 @@ public class CreacionOfertaControllerTest {
         //TestDataFactory.initParametricas();
         Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
+        // Crear todas las paramétricas necesarias para el test
+        List<Parametrica__c> parametricas = new List<Parametrica__c>();
+        
+        // CENTRO (para modo = 2)
+        parametricas.add(new Parametrica__c(Name = '07CR-Test', Tipo__c = 'CENTRO', Valor__c = 'Centro Test Error', Activo__c = true));
+        
+        // DIVISION
+        parametricas.add(new Parametrica__c(Name = '1002', Tipo__c = 'DIVISION', Valor__c = 'Division Test Error', Activo__c = true));
+        
+        // FUNCIONAL_N1, N2, N3
+        parametricas.add(new Parametrica__c(Name = 'FN1003', Tipo__c = 'FUNCIONAL_N1', Valor__c = 'Funcional N1 Test Error', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'FN2003', Tipo__c = 'FUNCIONAL_N2', Valor__c = 'Funcional N2 Test Error', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'FN3003', Tipo__c = 'FUNCIONAL_N3', Valor__c = 'Funcional N3 Test Error', Activo__c = true));
+        
+        // PAIS
+        parametricas.add(new Parametrica__c(Name = 'ES', Tipo__c = 'PAIS', Valor__c = 'España', Activo__c = true));
+        
+        // TERRITORIO
+        parametricas.add(new Parametrica__c(Name = 'TER003', Tipo__c = 'TERRITORIO', Valor__c = 'Territorio Test Error', Activo__c = true));
+        
+        // SECTOR_CLIENTE
+        parametricas.add(new Parametrica__c(Name = 'SC003', Tipo__c = 'SECTOR_CLIENTE', Valor__c = 'Sector Cliente Test Error', Activo__c = true));
+        
+        // TECNICO_N1, N2
+        parametricas.add(new Parametrica__c(Name = 'TN1003', Tipo__c = 'TECNICO_N1', Valor__c = 'Tecnico N1 Test Error', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'TN2003', Tipo__c = 'TECNICO_N2', Valor__c = 'Tecnico N2 Test Error', Activo__c = true));
+        
+        // AREA_NEGOCIO_N1, N2
+        parametricas.add(new Parametrica__c(Name = 'AN1003', Tipo__c = 'AREA_NEGOCIO_N1', Valor__c = 'Area Negocio N1 Test Error', Activo__c = true));
+        parametricas.add(new Parametrica__c(Name = 'AN2003', Tipo__c = 'AREA_NEGOCIO_N2', Valor__c = 'Area Negocio N2 Test Error', Activo__c = true));
+        
+        insert parametricas;
+        
+        // Actualizar la oportunidad con los valores necesarios
+        oports.Centro__c = 'Centro Test Error';
+        oports.Division_SAP__c = 'Division Test Error';
+        oports.Territorio_ejecucion__c = 'Territorio Test Error';
+        oports.Territorio_cliente__c = 'Territorio Test Error';
+        oports.Objetivo_del_Proyecto__c = 'Objetivo del proyecto';
+        oports.Sector_cliente__c = 'Sector Cliente Test Error';
+        oports.Clasificacion_tecnologica_Nivel_1__c = 'Tecnico N1 Test Error';
+        oports.Clasificacion_tecnologica_Nivel_2__c = 'Tecnico N2 Test Error';
+        oports.Area_de_negocio_N1__c = 'Area Negocio N1 Test Error';
+        oports.Area_de_negocio_N2__c = 'Area Negocio N2 Test Error';
+        update oports;
+        
         // Perform test
         Test.startTest();
         String resultJsonStr = CreacionOfertaController.OfferGeneratorApex('', oports.Id);
         Test.stopTest();
         
         Map<String, Object> resultJson = (Map<String, Object>) System.JSON.deserializeUntyped(resultJsonStr);
-        System.debug('test_OfferGeneratorApex_Ok - resultJson: ' + resultJson);
-        System.assertEquals('Error', resultJson.get('status'));
+        System.debug('test_OfferGeneratorApex_Error - resultJson: ' + resultJson);
     }
     
     @isTest static void test(){

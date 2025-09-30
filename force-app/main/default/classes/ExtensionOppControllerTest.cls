@@ -1,15 +1,21 @@
 @isTest(SeeAllData=true)
 public class ExtensionOppControllerTest {
     @isTest public static void testCloneOpp() {
-        Id recordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
-               
-        Opportunity idOportunidad2 = [SELECT id FROM Opportunity where RecordTypeId =: recordTypeAyesa and origen__c='Soft'  LIMIT 1 ];
-        ExtensionOppController.extenderOportunidad_fields(idOportunidad2.id, 'Test',null,null,null,null,null,null,null,'Extensión Desglose',null,null);
-        ExtensionOppController.getTypeOpp(idOportunidad2.id);
-        ExtensionOppController.extenderOportunidad_fields(idOportunidad2.id, 'Test',null,null,null,null,null,null,null,'Extensión Rectificativa',null,null);
-        ExtensionOppController.getTypeOpp(idOportunidad2.id);
+                //TestDataFactory.initParametricas();
+        Opportunity oports = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
         
-        ExtensionOppController.test();
+        // Perform test
+        Test.startTest();    
+        Opportunity oportunidad = TestDataFactory.getOpportunity(oports.Id);
+
+        ExtensionOppController.extenderOportunidad_fields(oportunidad.id, 'Test',null,null,null,null,null,'6',null,'Extensión Desglose',null,null);
+        ExtensionOppController.getTypeOpp(oportunidad.id);
+        ExtensionOppController.extenderOportunidad_fields(oportunidad.id, 'Test',null,null,null,null,null,'6',null,'Extensión Rectificativa',null,null);
+        ExtensionOppController.getTypeOpp(oportunidad.id);
+        oportunidad.Origen__c = 'Soft';
+        update oportunidad;
+        ExtensionOppController.extenderOportunidad_fields(oportunidad.id, 'Test',null,null,null,null,null,'6',null,'Extensión Desglose',null,'Soft');
+        ExtensionOppController.getTypeOpp(oportunidad.id);
         
     }
     

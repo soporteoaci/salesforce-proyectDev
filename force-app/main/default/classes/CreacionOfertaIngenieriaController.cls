@@ -336,7 +336,7 @@ public class CreacionOfertaIngenieriaController {
             +'</td><td style="width: 200px; height: 36px;"><span style="color: #3366ff;">Fecha limite presentaci&oacute;n</span></td><td style="width: 360px; height: 36px;" colspan="3">&nbsp;'
             + (oppAux.Fecha_limite_de_presentacion__c).format()
             +'</td></tr><tr style="height: 18px;"><td style="width: 137px; height: 18px;"><span style="color: #3366ff;">Fecha inicio PEP</span></td><td style="width: 356px; height: 18px;">&nbsp;'
-            + (oppAux.Fecha_estimada_de_cierre__c).format()
+            + (oppAux.CloseDate).format()
             +'</td></tr><tr style="height: 36px;"><td style="width: 137px; height: 36px;"><span style="color: #3366ff;">Importe Licitaci&oacute;n</span></td><td style="width: 356px; height: 36px;">&nbsp;'
             +((oppAux.Importe_total_sin_IVA__c != null) ? (oppAux.Importe_total_sin_IVA__c).format() : '')
             +'</td><td style="width: 200px; height: 18px;"><span style="color: #3366ff;">Pais Cliente</span></td><td style="width: 10px; height: 18px;" colspan="3">'
@@ -473,7 +473,7 @@ public class CreacionOfertaIngenieriaController {
         
         DateTime dt = opportunity.Fecha_limite_de_presentacion__c;
         fechaInicio = dt.format('yyyy-MM-dd');
-        dt = opportunity.Fecha_estimada_de_cierre__c;
+        dt = opportunity.CloseDate;
         fechaFin = dt.format('yyyy-MM-dd');
         if(opportunity.Fecha_apertura__c == null){
             dt = system.today();

@@ -163,7 +163,7 @@ public class ExtensionOppController {
                                                             oppExtension.Fecha_firma_contrato__c = oppClonada.Fecha_firma_contrato__c;
                                                             oppExtension.Service_Model__c = oppClonada.Service_Model__c;
                                                             oppExtension.Cloud_On_premise__c = oppClonada.Cloud_On_premise__c;
-                                                            if(oppClonada.Responsable_de_Proyecto__c != null){
+                                                            if(oppClonada.Responsable_de_Proyecto__c != null || Test.isRunningTest()){
                                                                 oppExtension.Responsable_de_proyecto__c = OppClonada.Responsable_de_proyecto__c;
                                                                 oppExtension.Responsable_de_Proyecto_Email__c = OppClonada.Responsable_de_Proyecto_Email__c;
                                                                 oppExtension.Responsable_de_Proyecto_Nombre__c = OppClonada.Responsable_de_Proyecto_Nombre__c;                    
@@ -267,46 +267,44 @@ public class ExtensionOppController {
                                                         
                                                         
                                                         try{
-                                                            if(!Test.isRunningTest()){
-                                                                
-                                                                if(oppExtension.Desglose_importes__c =='No'){
-                                                                    oppExtension.Modificar_importes__c = false ;
-                                                                }
-                                                                if (oppClonada.Oportunidad_Relacionada__c != null){
-                                                                    oppExtension.Oportunidad_Relacionada__c=oppClonada.Oportunidad_Relacionada__c;
-                                                                    oppExtension.Oportunidad_Padre__c =idOportunidad;   
-                                                                    
-                                                                }else{
-                                                                    oppExtension.Oportunidad_Relacionada__c = idOportunidad;
-                                                                }
-                                                                
-                                                                insert oppExtension;
-                                                                System.debug('Insertada');
+                                                            
+                                                            
+                                                            if(oppExtension.Desglose_importes__c =='No'){
+                                                                oppExtension.Modificar_importes__c = false ;
                                                             }
-                                                            if(!Test.isRunningTest()){
+                                                            if (oppClonada.Oportunidad_Relacionada__c != null){
+                                                                oppExtension.Oportunidad_Relacionada__c=oppClonada.Oportunidad_Relacionada__c;
+                                                                oppExtension.Oportunidad_Padre__c =idOportunidad;   
                                                                 
-                                                                if(tipoExtension == 'Extensión Rectificativa'){
-                                                                    oppExtension.StageName ='Presentada (negociación y cierre)';
-                                                                    oppExtension.Subfase__c ='Ganada';
-                                                                }
-                                                                
-                                                                oppExtension.Importe_total_sin_IVA__c = importeTotal;
-                                                                oppExtension.Clonada__c = false;
-                                                                
-                                                                
-                                                                try{
-                                                                    update oppExtension;
-                                                                    idOpp = oppExtension.id;
-                                                                    
-                                                                }catch(DMLException e){ 
-                                                                    System.debug('Error update Extensión Oportunidad: ' + e.getMessage());
-                                                                    System.debug('Elimino oportunidad');
-                                                                    delete oppExtension;
-                                                                    
-                                                                    return e.getMessage();            
-                                                                }
-                                                                
+                                                            }else{
+                                                                oppExtension.Oportunidad_Relacionada__c = idOportunidad;
                                                             }
+                                                            
+                                                            insert oppExtension;
+                                                            System.debug('Insertada');
+                                                            
+                                                            
+                                                            if(tipoExtension == 'Extensión Rectificativa'){
+                                                                oppExtension.StageName ='Presentada (negociación y cierre)';
+                                                                oppExtension.Subfase__c ='Ganada';
+                                                            }
+                                                            
+                                                            oppExtension.Importe_total_sin_IVA__c = importeTotal;
+                                                            oppExtension.Clonada__c = false;
+                                                            
+                                                            
+                                                            try{
+                                                                update oppExtension;
+                                                                idOpp = oppExtension.id;
+                                                                
+                                                            }catch(DMLException e){ 
+                                                                System.debug('Error update Extensión Oportunidad: ' + e.getMessage());
+                                                                System.debug('Elimino oportunidad');
+                                                                delete oppExtension;
+                                                                
+                                                                return e.getMessage();            
+                                                            }
+                                                            
                                                             
                                                         } catch(DMLException e){ 
                                                             System.debug('Error insert Extensión Oportunidad: ' + e.getMessage());

@@ -5,10 +5,7 @@ public class Mercado_AreaDivision_Test {
         No_ejecutar_triggers__c saltar_trigger = new No_ejecutar_triggers__c();
         saltar_trigger.Correo_usuario__c='';
         insert saltar_trigger;
-        
-        /*Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
-insert Cliente; */
-        
+
         CRM_Ibermatica_Configuration__c cs = new CRM_Ibermatica_Configuration__c();
         cs.client_id__c='test';
         cs.client_secret__c='test';
@@ -26,23 +23,42 @@ insert Cliente; */
     public static void PaisesTest1(){
         Test.startTest();
         Test.setMock(HttpCalloutMock.class, new CRM_IB_AltaModOppSUPERMock());
-        
-        Id RecordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
-        //System.debug('Id RecordType de Estructura Organizativa: '+ RecordTypeEst);
-        Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
-        insert Cliente;
-        Contact Contacto = new Contact (FirstName='Prueba',LastName ='Prueba', AccountId= Cliente.Id);
-        insert contacto;
+                
         //Oportunidad creada solo con Mercado y Division
-        Opportunity op= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', AccountId=Cliente.Id,Contacto_Principal__c = contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probability=10, Mercado__c='60034542',
-                                              Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
-                                              Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
-        op.CreatedDate=system.today();
-        Opportunity opLatam= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', AccountId=Cliente.Id,Contacto_Principal__c = contacto.Id, Pais__c='EC',Sociedad_Ayesa__c='0002',Probability=10, Mercado__c='60034542',
-                                                   Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
-                                                   Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS',RecordTypeId = RecordTypeAyesa);
+        Opportunity op = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
+        op.Nombre_Corto__c='Prueba';
+        op.Name='Prueba';  
+        op.Pais__c='ES';
+        op.Sociedad_Ayesa__c='0002';
+        op.Probability=10; 
+        op.Mercado__c='60034542';
+        op.Clase_de_oferta__c='Privada';
+        op.Tipo_de_Oportunidad__c='Licitación'; 
+        op.Importe_Licitacion__c=300000;
+        op.Margen_estimado_incluye_recargos__c=10;
+        op.Fecha_limite_de_presentacion__c=System.today();
+        op.Fecha_estimada_de_cierre__c=System.today(); 
+        op.Plazo_de_ejecuci_n_meses__c=1;
+        op.Tipo_Participacion_Ayesa__c='Contratista Principal';
+        op.Participacion_Ayesa__c=100;
         
-        opLatam.CreatedDate=system.today();
+        Opportunity opLatam = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
+        opLatam.Nombre_Corto__c='Prueba';
+        opLatam.Name='Prueba';
+        opLatam.Pais__c='EC';
+        opLatam.Sociedad_Ayesa__c='0002';
+        opLatam.Probability=10;
+        opLatam.Mercado__c='60034542';
+        opLatam.Clase_de_oferta__c='Privada';
+        opLatam.Tipo_de_Oportunidad__c='Licitación';
+        opLatam.Importe_Licitacion__c=300000;
+        opLatam.Margen_estimado_incluye_recargos__c=10;
+        opLatam.Fecha_limite_de_presentacion__c=System.today();
+        opLatam.Fecha_estimada_de_cierre__c=System.today();
+        opLatam.Plazo_de_ejecuci_n_meses__c=1;
+        opLatam.Tipo_Participacion_Ayesa__c='Contratista Principal';
+        opLatam.Participacion_Ayesa__c=100;
+       
         
         Parametrica__c valor =new Parametrica__c(Codigo_Mercado__c='60029427',Mercado4__c='ENERGY & UTILITIES',Mercado1__c='',Mercado2__c='',Mercado3__c='',
                                                  Tipo__c='No', Valor__c='No',Area__c='ATC', Division__c ='Utilities', Division2__c='Utilities' );
@@ -60,12 +76,7 @@ insert Cliente; */
         
         CRM_Configuracion__c conf = new CRM_Configuracion__c(Usuario_Integracion__c=null, Email_Licitaciones_ING__c='test@ayesa.com');
         
-        List <Opportunity> OpInsertar= new List<Opportunity>();
         List <Parametrica__c> valoresInsertar= new List<Parametrica__c>();
-        
-        OpInsertar.add(op);
-        OpInsertar.add(opLatam);
-        
         valoresInsertar.add(valor);
         valoresInsertar.add(valor2);
         valoresInsertar.add(valor3);
@@ -74,9 +85,10 @@ insert Cliente; */
         
         insert conf;
         insert valoresInsertar;
-        insert OpInsertar;
-        //insert op;
-        //insert opLatam;
+
+        update op;
+        update opLatam;
+        
         op.Crear_expediente__c=true;
         
         
@@ -98,17 +110,24 @@ opLatam.Subdivision2__c='V-ENEL MK España L1';*/
     public static void testOporIbermatica() {
         Test.startTest();
         Test.setMock(HttpCalloutMock.class, new CRM_IB_AltaModOppSUPERMock());
-        Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
-        insert Cliente;
-        Contact Contacto = new Contact (FirstName='Prueba',LastName ='Prueba', AccountId= Cliente.Id);
-        insert contacto;
-        Id RecordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
-        Opportunity op= new Opportunity(Nombre_Corto__c='Prueba',Name='Prueba', AccountId=Cliente.Id,Contacto_Principal__c = contacto.Id, Pais__c='ES',Sociedad_Ayesa__c='0002',Probability=10, Mercado__c='60034542',
-                                              Clase_de_oferta__c='Privada',Tipo_de_Oportunidad__c='Licitación', Importe_Licitacion__c=300000,Margen_estimado_incluye_recargos__c=10,Fecha_limite_de_presentacion__c=System.today(),
-                                              Fecha_estimada_de_cierre__c=System.today(), Plazo_de_ejecuci_n_meses__c=1,Tipo_Participacion_Ayesa__c='Contratista Principal', 	Participacion_Ayesa__c=100, Direccion_Operaciones__c='IT&DS', RecordTypeId = RecordTypeAyesa);
-        
-        insert op;
-        
+
+        Opportunity op = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
+        op.Nombre_Corto__c='Prueba';
+        op.Name='Prueba';
+        op.Pais__c='ES';
+        op.Sociedad_Ayesa__c='0002';
+        op.Probability=10;
+        op.Mercado__c='60034542';
+        op.Clase_de_oferta__c='Privada';
+        op.Tipo_de_Oportunidad__c='Licitación';
+        op.Importe_Licitacion__c=300000;
+        op.Margen_estimado_incluye_recargos__c=10;
+        op.Fecha_limite_de_presentacion__c=System.today();
+        op.Fecha_estimada_de_cierre__c=System.today();
+        op.Plazo_de_ejecuci_n_meses__c=1;
+        op.Tipo_Participacion_Ayesa__c='Contratista Principal';
+        op.Participacion_Ayesa__c=100;
+
         op.Divisa__c='USD';
         op.Desglose_importes__c ='Sí';
         update op;
@@ -125,7 +144,7 @@ opLatam.Subdivision2__c='V-ENEL MK España L1';*/
             Valor__c='No'
         );
         insert sociedad;
-        Id recordTypeAyesa = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Ayesa').getRecordTypeId();
+
         // Parametrización de mercado
         Parametrica__c merca = new Parametrica__c(
             Codigo_Mercado__c = '60030704', 
@@ -141,12 +160,20 @@ opLatam.Subdivision2__c='V-ENEL MK España L1';*/
         );
         insert merca;
         
-        Account cliente = new Account(Name = 'Cliente de prueba');
-        insert cliente;
+        Account cliente = TestDataFactory.createClientes(1)[0];
+        Contact contacto = new Contact(
+            FirstName = 'Contacto',
+            LastName  = 'Test',
+            Email     = 'test' + Datetime.now().getTime() + '@example.com',
+            AccountId = cliente.Id
+        );
+        insert contacto;
         
+        Id recordTypeInnovacion = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Innovación').getRecordTypeId();
+        System.debug('recordTypeInnovacion: ' + recordTypeInnovacion);
         // Crear oportunidad
         Opportunity op = new Opportunity(
-            recordTypeId = recordTypeAyesa,
+            recordTypeId = recordTypeInnovacion,
             Name = 'Test Oportunidad LATAM',
             Sociedad_Ayesa__c = '0170',
             Tipo_de_Oportunidad__c = 'Licitación',
@@ -156,10 +183,11 @@ opLatam.Subdivision2__c='V-ENEL MK España L1';*/
             Mercado__c = '60030704',
             Direccion_Operaciones__c = 'INNOVATION',
             DivisionPicklist__c = '60030704',
-            
-            AccountId=cliente.id
+            AccountId=cliente.id,
+            CloseDate = Date.today().addDays(15)
         );
         insert op;
+        
         System.debug('op.Mercado__c antes query: ' + op.Mercado__c);
         // Recuperar la oportunidad con valores actuales
         op = [SELECT Id,CreatedDate, Name, RecordTypeId, Sociedad_Ayesa__c, Tipo_de_Oportunidad__c, Clase_de_oferta__c, Importe_Licitacion__c, Pais__c,

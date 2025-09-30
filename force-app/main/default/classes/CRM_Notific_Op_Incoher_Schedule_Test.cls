@@ -69,33 +69,23 @@ public class CRM_Notific_Op_Incoher_Schedule_Test {
             LocaleSidKey = 'en_US'
         );
         insert user1;
-        
-        Account cuenta1 = new Account(
-        	Name = 'Cuenta 1',
-            Industry = 'Sector Público',
-            Subsector__c = 'Administración Latam'
-        );
-        insert cuenta1;
-        
-        Opportunity oppIncoherente = new Opportunity(
-        	Nombre_Corto__c = 'Prueba notificacion incoherencia',
-            Name = 'Prueba',
-            AccountId = cuenta1.Id,
-            Pais__c = 'ES',
-            Probability = 10,
-            Area__c = 'ATC',
-            Importe_Licitacion__c = 1000000,
-            Margen_estimado_incluye_recargos__c = 0.1,
-            Fecha_limite_de_presentacion__c = Date.valueOf('2021-02-02'),
-            Fecha_estimada_de_cierre__c = Date.valueOf('2021-01-31'),
-            Plazo_de_ejecuci_n_meses__c = 6,
-            Tipo_Participacion_Ayesa__c = 'UTE',
-            Participacion_Ayesa__c = 100,
-            Sociedad_Ayesa__c = '0170',
-            Clase_de_oferta__c = 'Pública',
-            Direccion_Operaciones__c = 'ENGINEERING'
-        );
-        insert oppIncoherente;
+
+        Opportunity oppIncoherente = TestDataFactory.createOpportunity('Cualificación', 'Engineering Design & Architecture','Ingenier_a');
+        oppIncoherente.Nombre_Corto__c = 'Prueba notificacion incoherencia';
+        oppIncoherente.Name = 'Prueba';
+        oppIncoherente.Pais__c = 'ES';
+        oppIncoherente.Probability = 10;
+        oppIncoherente.Area__c = 'ATC';
+        oppIncoherente.Importe_Licitacion__c = 1000000;
+        oppIncoherente.Margen_estimado_incluye_recargos__c = 0.1;
+        oppIncoherente.Fecha_limite_de_presentacion__c = Date.valueOf('2021-02-02');
+        oppIncoherente.Fecha_estimada_de_cierre__c = Date.valueOf('2021-01-31');
+        oppIncoherente.Plazo_de_ejecuci_n_meses__c = 6;
+        oppIncoherente.Tipo_Participacion_Ayesa__c = 'UTE';
+        oppIncoherente.Participacion_Ayesa__c = 100;
+        oppIncoherente.Sociedad_Ayesa__c = '0170';
+        oppIncoherente.Clase_de_oferta__c = 'Pública';
+        update oppIncoherente;
                 
     }
 }

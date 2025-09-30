@@ -55,7 +55,7 @@ public class TestDataFactory {
                 Sector__c = 'Utilities',
                 Subsector__c='Otros Servicios',
                 Alias__c='Alias Prueba',
-                SAP_Account__c = String.valueOf(Datetime.now().getTime())
+                SAP_Account__c = '1234567890'
             );
             clientes.add(a);
         }

@@ -24,7 +24,16 @@
 				$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
 				$User.Email &lt;&gt; &apos;mmarnedo@ayesa.com&apos;,
 				$User.Email &lt;&gt; &apos;rpozas@ayesa.com&apos;,
-    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;				
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,				
+				NOT(
+				   	AND(
+						      OR(
+															$User.Email =&apos;aballesterosm@ayesa.com&apos;,
+							        $User.Email =&apos;mjllopis@ayesa.com&apos;
+												   ),
+							        ISCHANGED(Oferta_SAP__c)
+				        )
+								)				
 				)</errorConditionFormula>
     <errorMessage>Cuando la Oportunidad se ha cerrado se bloquea el registro. Si quiere realizar alguna modificación debe ponerse en contacto con un Administrador del sistema, CAU-CRM ó Controller financiero.</errorMessage>
 </ValidationRule>

@@ -26,20 +26,11 @@ public class CRM_IB_CPVControllerTest {
         No_ejecutar_triggers__c saltar_trigger = new No_ejecutar_triggers__c();
         saltar_trigger.Correo_usuario__c='';
         insert saltar_trigger;
-		        //Cuenta
-        Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
-        insert Cliente;
+
+        Opportunity opp = TestDataFactory.createOpportunity('Cualificación', 'Digital impact','IT_DS');
+        opp.CPV_varios__c = '30000000-3 (CPV prueba 3);30000000-4 (CPV prueba 4)';
+        update opp;
         
-        Oportunidad__c opp = new Oportunidad__c(
-            Name = 'Oportunidad Test',
-            CPV_varios__c = '30000000-3 (CPV prueba 3);30000000-4 (CPV prueba 4)',
-            Cliente__c = Cliente.Id,
-            Sociedad_Ayesa__c = '0002', 
-            Clase_de_oferta__c = 'Acuerdo Marco Privado', 
-            Direccion_Operaciones__c= 'ENGINEERING' 
-        );
-        system.debug('opp: ' + opp);
-        insert opp;
 
         // llamada al método valoresCPV
         Test.startTest();
@@ -75,20 +66,11 @@ public class CRM_IB_CPVControllerTest {
         No_ejecutar_triggers__c saltar_trigger = new No_ejecutar_triggers__c();
         saltar_trigger.Correo_usuario__c='';
         insert saltar_trigger;
-		        //Cuenta
-        Account Cliente= new Account(Name='Cliente prueba', SAP_Account__c='5555', Alias__c='ClientePrueba',Sector__c= 'Educación', Subsector__c ='Centros de formación en gral.');
-        insert Cliente;
-        
-        Oportunidad__c opp = new Oportunidad__c(
-            Name = 'Oportunidad Test',
-            CPV_varios__c = '',
-            Cliente__c = Cliente.Id,
-            Sociedad_Ayesa__c = '0002', 
-            Clase_de_oferta__c = 'Acuerdo Marco Privado', 
-            Direccion_Operaciones__c= 'ENGINEERING' 
-        );
-        system.debug('opp: ' + opp);
-        insert opp;
+
+        Opportunity opp = TestDataFactory.createOpportunity('Cualificación', 'Engineering Design & Architecture','Ingenier_a');
+        opp.CPV_varios__c = '';
+        opp.Bloqueo_por_aprobacion__c = True;
+        update opp;
 
         // nueva selección de CPV
         String nuevaSeleccion = '30000000-2 (CPV prueba 2)';
@@ -96,10 +78,11 @@ public class CRM_IB_CPVControllerTest {
         // llamada al método saveOportunidad_CPV
         Test.startTest();
         CRM_IB_CPVController.saveOportunidad_CPV(opp.Id, nuevaSeleccion);
+        CRM_IB_CPVController.oportunidadBloqueada(opp.Id);
         Test.stopTest();
 
         // comprobción de datos
-        Oportunidad__c oppActualizada = [SELECT CPV_varios__c FROM Oportunidad__c WHERE Id = :opp.Id LIMIT 1];
+        Opportunity oppActualizada = [SELECT CPV_varios__c FROM Opportunity WHERE Id = :opp.Id LIMIT 1];
         System.assertEquals(nuevaSeleccion, oppActualizada.CPV_varios__c, 'El campo CPV_varios__c debería haberse actualizado con la nueva selección.');
     }
 }
