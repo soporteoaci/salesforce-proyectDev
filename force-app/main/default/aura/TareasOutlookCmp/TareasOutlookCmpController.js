@@ -3,15 +3,7 @@
         const hoy = new Date().toISOString().slice(0, 10); // formato YYYY-MM-DD
         component.set("v.fechaInicio", hoy);
         component.set("v.fechaFin", hoy);
-        // Si no se pasa entornoUrl, lo toma del host actual
-        if (!component.get("v.entornoUrl")) {
-            try {
-                component.set("v.entornoUrl", window.location.origin);
-            } catch (e) {
-                // fallback seguro
-                component.set("v.entornoUrl", 'https://login.salesforce.com');
-            }
-        }
+        
         helper.actualizarMensajeFecha(component);
         helper.obtenerTareas(component);
 
@@ -175,8 +167,6 @@
         if (!texto || texto.trim() === '') {
             component.set("v.cuentaSeleccionada", null);
             component.set("v.opcionesContactos", []);
-            component.set("v.contactosSeleccionados", []);
-            component.set("v.mostrarDualListbox", false);
             component.set("v.mostrarResultados", false);
             // Refiltrar tareas sin cuenta
             helper.actualizarMensajeFecha(component);
@@ -244,37 +234,6 @@
         const value = event.currentTarget.dataset.value;
         component.set("v.lineasServicioSeleccionadasMarcadas", [value]);
         helper.moveValuesGeneric(component, 'lineas', 'Seleccionadas', 'Disponibles');
-    },
-
-    // -----------------------------
-    // DUAL LISTBOX CUSTOM - Contactos
-    // -----------------------------
-    toggleDisponibleContacto: function(component, event, helper) {
-        helper.toggleMarcado(component, event, 'contactosDisponiblesSeleccionados', 'contactosDisponibles');
-    },
-
-    toggleSeleccionadaContacto: function(component, event, helper) {
-        helper.toggleMarcado(component, event, 'contactosSeleccionadosMarcados', 'contactosSeleccionadosDetalles');
-    },
-
-    moverADerechaContacto: function(component, event, helper) {
-        helper.moveValuesGeneric(component, 'contactos', 'Disponibles', 'Seleccionadas');
-    },
-
-    moverAIzquierdaContacto: function(component, event, helper) {
-        helper.moveValuesGeneric(component, 'contactos', 'Seleccionadas', 'Disponibles');
-    },
-
-    doubleClickDisponibleContacto: function(component, event, helper) {
-        const value = event.currentTarget.dataset.value;
-        component.set("v.contactosDisponiblesSeleccionados", [value]);
-        helper.moveValuesGeneric(component, 'contactos', 'Disponibles', 'Seleccionadas');
-    },
-
-    doubleClickSeleccionadaContacto: function(component, event, helper) {
-        const value = event.currentTarget.dataset.value;
-        component.set("v.contactosSeleccionadosMarcados", [value]);
-        helper.moveValuesGeneric(component, 'contactos', 'Seleccionadas', 'Disponibles');
     },
 
     abrirRegistroSalesforce: function(component, event, helper) {

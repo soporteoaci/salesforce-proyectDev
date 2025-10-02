@@ -13,7 +13,7 @@ IMAGE(&quot;/sfc/servlet.shepherd/version/download/0680N00000ENbsU&quot;, &quot;
 IMAGE(&quot;/sfc/servlet.shepherd/version/download/0680N00000ENbsT&quot;, &quot;Sin Incoherencias&quot;, 30, 30) 
 )
 )</formula>
-    <inlineHelpText>Indicador de existencia de incoherencia en los datos. Si se muestra en rojo, revise las fecha de presentación y/o cierre de la oportunidad.</inlineHelpText>
+    <inlineHelpText>Indicator of the existence of inconsistencies in the data. If shown in red, check the opportunity submittal and/or closing date.</inlineHelpText>
     <label>Coherencia en los datos</label>
     <required>false</required>
     <trackHistory>false</trackHistory>

@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Aprobador__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
-    <inlineHelpText>Aprobador que valida y confirma la resolución del caso.</inlineHelpText>
+    <inlineHelpText>Approver who validates and confirms the resolution of the case</inlineHelpText>
     <label>Aprobador Primer Nivel</label>
     <referenceTo>User</referenceTo>
     <relationshipName>CasosAprobar</relationshipName>

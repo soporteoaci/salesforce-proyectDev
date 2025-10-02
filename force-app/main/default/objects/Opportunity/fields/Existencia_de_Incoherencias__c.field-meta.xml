@@ -17,7 +17,7 @@
   ),
   Fecha_estimada_de_cierre__c &lt;= Fecha_limite_de_presentacion__c
 )</formula>
-    <inlineHelpText>Validación de incoherencias en los datos de la oportunidad</inlineHelpText>
+    <inlineHelpText>Validation of inconsistencies in the data of the opportunity</inlineHelpText>
     <label>Existencia de Incoherencias</label>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

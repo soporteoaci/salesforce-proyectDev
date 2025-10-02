@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>Legal Advice Resposible</label>
     <name>Responsable_AJI__c</name>
-    <relationshipLabel><!-- Oportunidades (Responsable Asesoría Jurídica) --></relationshipLabel>
+    <relationshipLabel><!-- Opportunities Ayesa (Legal Advice Resposible) --></relationshipLabel>
 </CustomFieldTranslation>

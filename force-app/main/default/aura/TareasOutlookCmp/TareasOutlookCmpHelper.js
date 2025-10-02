@@ -24,7 +24,6 @@ obtenerTareas: function(component) {
 
             if (!tareasRaw || tareasRaw.length === 0) {
                 component.set("v.tareas", []);
-                component.set("v.tareasOriginal", []);
                 component.set("v.tareasMostradas", []);
                 component.set("v.mensajeErrorBusqueda", "No hay citas disponibles");
             } else {
@@ -45,7 +44,6 @@ obtenerTareas: function(component) {
                 }));
 
                 component.set("v.tareas", tareas);
-                component.set("v.tareasOriginal", tareas);
                 component.set("v.tareasMostradas", tareas);
                 component.set("v.mensajeErrorBusqueda", "");
             }
@@ -81,9 +79,6 @@ obtenerTareas: function(component) {
             if (response.getState() === "SUCCESS") {
                 const picklists = response.getReturnValue();
                 
-                console.log("📋 Picklists cargados:", picklists);
-                console.log("🔧 Opciones de Priority:", picklists.Priority);
-
                 // Transformar líneas de servicio para dualListbox
                 const dualListOptions = picklists['Lineas_de_Servicio__c'].map(v => ({ label: v, value: v }));
                 picklists['Lineas_de_Servicio__c'] = dualListOptions;
@@ -266,53 +261,28 @@ obtenerTareas: function(component) {
     },
 
     moveValuesGeneric: function(component, tipo, origen, destino) {
-        // tipo: 'lineas' | 'contactos'
-        if (tipo === 'lineas') {
-            var disponibles = (component.get("v.lineasServicioDisponibles") || []).slice(0);
-            var seleccionadas = (component.get("v.lineasServicioSeleccionadasDetalles") || []).slice(0);
-            const selDisponibles = new Set(component.get("v.lineasServicioDisponiblesSeleccionadas") || []);
-            const selSeleccionadas = new Set(component.get("v.lineasServicioSeleccionadasMarcadas") || []);
+        // Solo para líneas de servicio
+        var disponibles = (component.get("v.lineasServicioDisponibles") || []).slice(0);
+        var seleccionadas = (component.get("v.lineasServicioSeleccionadasDetalles") || []).slice(0);
+        const selDisponibles = new Set(component.get("v.lineasServicioDisponiblesSeleccionadas") || []);
+        const selSeleccionadas = new Set(component.get("v.lineasServicioSeleccionadasMarcadas") || []);
 
-            if (origen === 'Disponibles' && destino === 'Seleccionadas') {
-                const toMove = disponibles.filter(i => selDisponibles.has(i.value)).map(i => ({ label: i.label, value: i.value, marked: false }));
-                const restantes = disponibles.filter(i => !selDisponibles.has(i.value));
-                const nuevasSel = seleccionadas.concat(toMove);
-                component.set("v.lineasServicioDisponibles", restantes);
-                component.set("v.lineasServicioSeleccionadasDetalles", nuevasSel);
-                component.set("v.lineasServicioDisponiblesSeleccionadas", []);
-                component.set("v.lineasServicio", nuevasSel.map(i => i.value));
-            } else if (origen === 'Seleccionadas' && destino === 'Disponibles') {
-                const toMove = seleccionadas.filter(i => selSeleccionadas.has(i.value)).map(i => ({ label: i.label, value: i.value, marked: false }));
-                const restantes = seleccionadas.filter(i => !selSeleccionadas.has(i.value));
-                const nuevasDisp = disponibles.concat(toMove);
-                component.set("v.lineasServicioSeleccionadasDetalles", restantes);
-                component.set("v.lineasServicioDisponibles", nuevasDisp);
-                component.set("v.lineasServicioSeleccionadasMarcadas", []);
-                component.set("v.lineasServicio", restantes.map(i => i.value));
-            }
-        } else if (tipo === 'contactos') {
-            var disponiblesC = (component.get("v.contactosDisponibles") || []).slice(0);
-            var seleccionadasC = (component.get("v.contactosSeleccionadosDetalles") || []).slice(0);
-            const selDispC = new Set(component.get("v.contactosDisponiblesSeleccionados") || []);
-            const selSelC = new Set(component.get("v.contactosSeleccionadosMarcados") || []);
-
-            if (origen === 'Disponibles' && destino === 'Seleccionadas') {
-                const toMove = disponiblesC.filter(i => selDispC.has(i.value)).map(i => ({ label: i.label, value: i.value, marked: false }));
-                const restantes = disponiblesC.filter(i => !selDispC.has(i.value));
-                const nuevasSel = seleccionadasC.concat(toMove);
-                component.set("v.contactosDisponibles", restantes);
-                component.set("v.contactosSeleccionadosDetalles", nuevasSel);
-                component.set("v.contactosDisponiblesSeleccionados", []);
-                component.set("v.contactosSeleccionados", nuevasSel.map(i => i.value));
-            } else if (origen === 'Seleccionadas' && destino === 'Disponibles') {
-                const toMove = seleccionadasC.filter(i => selSelC.has(i.value)).map(i => ({ label: i.label, value: i.value, marked: false }));
-                const restantes = seleccionadasC.filter(i => !selSelC.has(i.value));
-                const nuevasDisp = disponiblesC.concat(toMove);
-                component.set("v.contactosSeleccionadosDetalles", restantes);
-                component.set("v.contactosDisponibles", nuevasDisp);
-                component.set("v.contactosSeleccionadosMarcados", []);
-                component.set("v.contactosSeleccionados", restantes.map(i => i.value));
-            }
+        if (origen === 'Disponibles' && destino === 'Seleccionadas') {
+            const toMove = disponibles.filter(i => selDisponibles.has(i.value)).map(i => ({ label: i.label, value: i.value, marked: false }));
+            const restantes = disponibles.filter(i => !selDisponibles.has(i.value));
+            const nuevasSel = seleccionadas.concat(toMove);
+            component.set("v.lineasServicioDisponibles", restantes);
+            component.set("v.lineasServicioSeleccionadasDetalles", nuevasSel);
+            component.set("v.lineasServicioDisponiblesSeleccionadas", []);
+            component.set("v.lineasServicio", nuevasSel.map(i => i.value));
+        } else if (origen === 'Seleccionadas' && destino === 'Disponibles') {
+            const toMove = seleccionadas.filter(i => selSeleccionadas.has(i.value)).map(i => ({ label: i.label, value: i.value, marked: false }));
+            const restantes = seleccionadas.filter(i => !selSeleccionadas.has(i.value));
+            const nuevasDisp = disponibles.concat(toMove);
+            component.set("v.lineasServicioSeleccionadasDetalles", restantes);
+            component.set("v.lineasServicioDisponibles", nuevasDisp);
+            component.set("v.lineasServicioSeleccionadasMarcadas", []);
+            component.set("v.lineasServicio", restantes.map(i => i.value));
         }
     },
 

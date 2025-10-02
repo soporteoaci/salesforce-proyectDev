@@ -46,7 +46,7 @@
         <sharedTo>
             <group>Compartir_Application_Services</group>
         </sharedTo>
-        <booleanFilter>(1 OR 2 OR 3 OR 4) AND 5</booleanFilter>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
         <criteriaItems>
             <field>Linea_de_Servicio__c</field>
             <operation>equals</operation>
@@ -66,11 +66,6 @@
             <field>Delivery_Center__c</field>
             <operation>equals</operation>
             <value>Delivery Center (A3)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -109,16 +104,11 @@
         <sharedTo>
             <group>Compartir_Cloud_Infra</group>
         </sharedTo>
-        <booleanFilter>1 AND 2</booleanFilter>
+        <booleanFilter>1</booleanFilter>
         <criteriaItems>
             <field>Linea_de_Servicio__c</field>
             <operation>equals</operation>
             <value>Cloud &amp; Infrastructure</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -129,7 +119,7 @@
         <sharedTo>
             <group>Compartir_Digital_Impact</group>
         </sharedTo>
-        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5) AND 6</booleanFilter>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
         <criteriaItems>
             <field>Linea_de_Servicio__c</field>
             <operation>equals</operation>
@@ -154,11 +144,6 @@
             <field>Delivery_Center__c</field>
             <operation>equals</operation>
             <value>Delivery Center (A3)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -202,11 +187,6 @@
             <operation>equals</operation>
             <value>IT&amp;DS</value>
         </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
-        </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
@@ -216,16 +196,10 @@
         <sharedTo>
             <group>Compartir_Mercado_INDUSTRY</group>
         </sharedTo>
-        <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <field>Mercado__c</field>
             <operation>equals</operation>
             <value>&quot;INDUSTRY, CONSUMER &amp; BUSINESS SERVICE&quot;</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -364,7 +338,7 @@
         <sharedTo>
             <role>Business_Operations</role>
         </sharedTo>
-        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <field>Linea_de_Servicio__c</field>
             <operation>equals</operation>
@@ -374,11 +348,6 @@
             <field>Delivery_Center__c</field>
             <operation>equals</operation>
             <value>Business Operations</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -389,7 +358,7 @@
         <sharedTo>
             <role>Cybersecurity</role>
         </sharedTo>
-        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <field>Delivery_Center__c</field>
             <operation>equals</operation>
@@ -399,11 +368,6 @@
             <field>Linea_de_Servicio__c</field>
             <operation>equals</operation>
             <value>Cybersecurity</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -414,7 +378,7 @@
         <sharedTo>
             <role>Microsoft_DC</role>
         </sharedTo>
-        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <field>Linea_de_Servicio__c</field>
             <operation>equals</operation>
@@ -424,11 +388,6 @@
             <field>Delivery_Center__c</field>
             <operation>equals</operation>
             <value>Microsoft</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -439,7 +398,7 @@
         <sharedTo>
             <role>Salesforce</role>
         </sharedTo>
-        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <field>Delivery_Center__c</field>
             <operation>equals</operation>
@@ -449,11 +408,6 @@
             <field>Linea_de_Servicio__c</field>
             <operation>equals</operation>
             <value>Salesforce</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -464,7 +418,7 @@
         <sharedTo>
             <group>Compartir_SAP</group>
         </sharedTo>
-        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <field>Linea_de_Servicio__c</field>
             <operation>equals</operation>
@@ -474,11 +428,6 @@
             <field>Delivery_Center__c</field>
             <operation>equals</operation>
             <value>SAP</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -685,16 +634,11 @@
         <sharedTo>
             <group>Compartir_Data_AI</group>
         </sharedTo>
-        <booleanFilter>2 AND (1 OR 3 OR 4 OR 5)</booleanFilter>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
         <criteriaItems>
             <field>Linea_de_Servicio__c</field>
             <operation>equals</operation>
             <value>AI &amp; Digital Experience</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <criteriaItems>
             <field>Delivery_Center__c</field>
@@ -765,16 +709,10 @@
         <sharedTo>
             <group>Compartir_Mercado_PUBLIC_SERVICES</group>
         </sharedTo>
-        <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <field>Mercado__c</field>
             <operation>equals</operation>
             <value>DIGITAL ADMINISTRATION &amp; HEALTH</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -790,11 +728,6 @@
             <field>Mercado__c</field>
             <operation>equals</operation>
             <value>RESOURCES &amp; ENVIRONMENT</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -836,11 +769,6 @@
             <field>Mercado__c</field>
             <operation>equals</operation>
             <value>ENERGY &amp; UTILITIES</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Presupuesto</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
     </sharingCriteriaRules>

@@ -3,7 +3,7 @@
     <fullName>Oportunidad_estrategica__c</fullName>
     <defaultValue>false</defaultValue>
     <description>A ser confirmado por el Director de Mercado/División</description>
-    <inlineHelpText>A ser confirmado por el Director de Mercado/División</inlineHelpText>
+    <inlineHelpText>To be confirmed by Market/Division Director</inlineHelpText>
     <label>Big Deal</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

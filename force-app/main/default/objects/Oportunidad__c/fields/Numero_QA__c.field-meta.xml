@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <formula>IF(
   AND(Importe_total_sin_IVA__c &gt; 1000000, ISPICKVAL(Direccion_Operaciones__c, &quot;IT&amp;DS&quot;)), 
-  1,
+  2,
   IF(
     AND(ISPICKVAL(Direccion_Operaciones__c, &quot;IT&amp;DS&quot;), ISPICKVAL(Delivery_Center__c, &quot;Cloud &amp; infrastructure (C3)&quot;)), 
     2,

@@ -5,8 +5,7 @@ public class TareasOutlookController {
         Id userId = UserInfo.getUserId();
         List<Task> tareas;
         
-        System.debug('>> [INICIO] Obtener tareas del usuario: ' + userId);
-        System.debug('>> Filtros recibidos -> fechaInicio: ' + fechaInicio + ', fechaFin: ' + fechaFin + ', filtroEstado: ' + filtroEstado + ', filtroPrioridad: ' + filtroPrioridad + ', cuentaId: ' + cuentaId);
+
         
         // Valores para filtrar por Status
         List<String> estadosAgendadas = new List<String>{'Agendada', 'Planificada'};
@@ -35,22 +34,10 @@ public class TareasOutlookController {
         } else if (filtroEstado == 'Realizadas') {
             queryBase += ' AND Status IN :estadosRealizadas';
         }
-        // Filtro por prioridad
-        if (String.isNotBlank(filtroPrioridad)) {
-            System.debug('>> Aplicando filtro de prioridad: ' + filtroPrioridad);
-            queryBase += ' AND Priority = :filtroPrioridad';
-        }
-        // Filtro por cuenta (WhatId)
-        if (cuentaId != null) {
-            System.debug('>> Aplicando filtro de cuenta: ' + cuentaId);
-            queryBase += ' AND WhatId = :cuentaId';
-        }
+
         String orden = ' ORDER BY ActivityDate DESC LIMIT 100';
         String queryFinal = queryBase + orden;
-        System.debug('>> Query final: ' + queryFinal);
         tareas = Database.query(queryFinal);
-        
-        System.debug('>> Total tareas encontradas: ' + tareas.size());
         
         // Construimos el resultado
         String baseUrl = obtenerBaseUrl();
@@ -75,7 +62,6 @@ public class TareasOutlookController {
             });
         }
         
-        System.debug('>> Total resultados devueltos: ' + resultado.size());
         return resultado;
     }
 
@@ -87,8 +73,20 @@ public class TareasOutlookController {
         String sectorMercado, String description, 
         Boolean enviadaAgenda, Boolean enviadaAcuerdos
     ) {
+        if (fecha == null) {
+            throw new AuraHandledException('La fecha es obligatoria');
+        }
         if (fecha < Date.today()) {
             throw new AuraHandledException('Debe seleccionar un día después de hoy');
+        }
+        if (String.isBlank(subject)) {
+            throw new AuraHandledException('El asunto es obligatorio');
+        }
+        if (contactoId == null) {
+            throw new AuraHandledException('Debe seleccionar un contacto');
+        }
+        if (cuentaId == null) {
+            throw new AuraHandledException('Debe seleccionar una cuenta');
         }
         
         Id userId = UserInfo.getUserId();
@@ -111,9 +109,6 @@ public class TareasOutlookController {
         );
         insert reunion;
         
-        System.debug('Lineas_de_Servicio__c: ' + lineasServicio);
-        System.debug('ContactoId recibido: ' + contactoId);
-        
         // CREAR UNA SOLA TAREA CON EL CONTACTO SELECCIONADO
         Task tareaVisita = new Task(
             RecordTypeId = recordTypeIdVisitas,
@@ -134,8 +129,6 @@ public class TareasOutlookController {
             Enviado_Acuerdos__c = enviadaAcuerdos
         );
         insert tareaVisita;
-        
-        System.debug('Tarea creada con ID: ' + tareaVisita.Id + ' y WhoId: ' + tareaVisita.WhoId);
     }
     
     @AuraEnabled
@@ -151,8 +144,12 @@ public class TareasOutlookController {
         
         List<Map<String, String>> opciones = new List<Map<String, String>>();
         for (Contact c : contactos) {
-            String nombreCompleto = c.FirstName + ' ' + c.LastName;
-            if (String.isBlank(nombreCompleto)) {
+            String nombreCompleto = '';
+            if (String.isNotBlank(c.FirstName) || String.isNotBlank(c.LastName)) {
+                nombreCompleto = (String.isNotBlank(c.FirstName) ? c.FirstName : '') + ' ' + 
+                                (String.isNotBlank(c.LastName) ? c.LastName : '');
+                nombreCompleto = nombreCompleto.trim();
+            } else {
                 nombreCompleto = c.Email;
             }
             
@@ -198,15 +195,11 @@ public class TareasOutlookController {
         }
         resultado.put('Priority', opcionesPrioridad);
         
-        System.debug('>> Opciones de Priority devueltas: ' + opcionesPrioridad);
-        System.debug('>> Resultado completo: ' + resultado);
-        
         return resultado;
     }
     
     @AuraEnabled
     public static void actualizarTareas(List<Task> tareasActualizadas) {
-        System.debug('Tareas a actualizar: ' + JSON.serializePretty(tareasActualizadas));
         if (tareasActualizadas == null || tareasActualizadas.isEmpty()) {
             throw new AuraHandledException('No se proporcionaron tareas para actualizar.');
         }
@@ -286,12 +279,6 @@ public class TareasOutlookController {
             .get(campo)
             .getDescribe();
         
-        // Log all picklist entries for debugging
-        System.debug('Picklist entries for ' + objeto + '.' + campo + ':');
-        for (Schema.PicklistEntry entry : campoDesc.getPicklistValues()) {
-            System.debug('Label: "' + entry.getLabel() + '", API: "' + entry.getValue() + '"');
-        }
-        
         // Handle multiple values separated by ';'
         List<String> valores = valor.split(';');
         List<String> valoresValidos = new List<String>();
@@ -306,9 +293,6 @@ public class TareasOutlookController {
                     encontrado = true;
                     break;
                 }
-            }
-            if (!encontrado) {
-                System.debug('Valor no válido encontrado: ' + val);
             }
         }
         return valoresValidos.isEmpty() ? null : String.join(valoresValidos, ';');

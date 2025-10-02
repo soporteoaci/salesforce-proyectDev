@@ -1044,6 +1044,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Motivo_de_excepcion__c</fieldItem>
                 <identifier>RecordMotivo_de_excepcion_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>dmin</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

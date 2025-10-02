@@ -12,7 +12,7 @@
                       recordUpdated="{!c.onRecordUpdated}" />
     
     <aura:if isTrue="{!or(v.sObjectName != 'Objetivo__c', v.orgcomercial != null)}">
-        <lightning:button label="{!$Label.c.CRM_Equipo_Oferta}" onclick="{!c.mostrarFlow}" variant="brand" />
+        <lightning:button label="Equipo Oferta" onclick="{!c.mostrarFlow}" variant="brand" />
     </aura:if>
     
     

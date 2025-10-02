@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Importe_adjudicacion__c</fullName>
     <description>Importe adjudicación Ayesa</description>
-    <inlineHelpText>Indicar el importe correspondiente de Ayesa en la UTE</inlineHelpText>
+    <inlineHelpText>Total Amount for Ayesa Company at the moment of being awarded (It could be different from final amount contracted)</inlineHelpText>
     <label>Importe UTE Ayesa</label>
     <precision>18</precision>
     <required>false</required>

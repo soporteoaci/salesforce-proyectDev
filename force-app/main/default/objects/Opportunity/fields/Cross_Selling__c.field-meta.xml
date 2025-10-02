@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Cross_Selling__c</fullName>
     <defaultValue>false</defaultValue>
-    <inlineHelpText>Indica si la Oportunidad nace de las sinergias con Ibermática.</inlineHelpText>
+    <inlineHelpText>Indicates if the opportunity arises from synergies with Ibermatica</inlineHelpText>
     <label>Sinergias</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

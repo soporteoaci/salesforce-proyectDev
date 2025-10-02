@@ -3,7 +3,7 @@
     <fullName>AvancePonderado__c</fullName>
     <formula>Peso__c *  Avance__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Peso por Avance. Usado para calcular el avance de producción del entregable.</inlineHelpText>
+    <inlineHelpText>Weight per advance. Used to calculate the production progress of the deliverable</inlineHelpText>
     <label>Avance Ponderado</label>
     <precision>18</precision>
     <required>false</required>

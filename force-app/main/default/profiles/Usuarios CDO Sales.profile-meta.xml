@@ -586,6 +586,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>EquipoPreventaService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EquipoPreventaServiceTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ExtensionOppController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -4385,6 +4393,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Equipo_Oferta__c.C_digo_de_Empleado__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Equipo_Oferta__c.Horas__c</field>
         <readable>false</readable>
@@ -4412,6 +4425,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Equipo_Oferta__c.Opportunity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Equipo_Oferta__c.Sociedad__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

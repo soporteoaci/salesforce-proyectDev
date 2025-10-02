@@ -4,7 +4,7 @@
     <description>% de Baja Ofertado</description>
     <formula>IF(OR(Importe_Licitacion__c != 0, Importe_Licitacion__c != null) ,1 -  Importe_total_sin_IVA__c / Importe_Licitacion__c,0)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>% de Baja Ofertado</inlineHelpText>
+    <inlineHelpText>Unsubscribe offered %</inlineHelpText>
     <label>% de Baja Ofertado</label>
     <precision>18</precision>
     <required>false</required>

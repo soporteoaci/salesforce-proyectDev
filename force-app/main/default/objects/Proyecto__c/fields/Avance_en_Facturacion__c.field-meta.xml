@@ -3,7 +3,7 @@
     <fullName>Avance_en_Facturacion__c</fullName>
     <formula>If (Facturacion__c / impcontrato__c &gt;= 1,1,Facturacion__c / impcontrato__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Facturación Real / Importe Contrato</inlineHelpText>
+    <inlineHelpText>Actual Billing / Contracted Amount</inlineHelpText>
     <label>Avance en Facturación</label>
     <precision>18</precision>
     <required>false</required>

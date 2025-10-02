@@ -16,7 +16,6 @@
     <aura:attribute name="mensajeErrorFecha" type="String" default="" />
     <aura:attribute name="mensajeErrorBusqueda" type="String" default="" />
     <aura:attribute name="mensajeErrorFechaReunion" type="String" default="" />
-    <aura:attribute name="columnas" type="List" />
     <aura:attribute name="borradores" type="Object" />
     <aura:attribute name="cargando" type="Boolean" default="false" />
     
@@ -26,13 +25,11 @@
     <aura:attribute name="tareas" type="List" />
     <aura:attribute name="tareasMostradas" type="List" />
     <aura:attribute name="tareasExpandidas" type="List" default="[]" /> <!-- IDs de tareas con detalle de contacto expandido -->
-    <aura:attribute name="tareasOriginal" type="List" />
     
     <!-- ================================ -->
     <!-- Atributos de creación de reunión -->
     <!-- ================================ -->
     <aura:attribute name="fechaReunion" type="Date" />
-    <aura:attribute name="contactosSeleccionados" type="List" />
     <aura:attribute name="opcionesContactos" type="List" />
     
     <!-- ================================ -->
@@ -54,8 +51,6 @@
     <aura:attribute name="busquedaCuenta" type="String" />
     <aura:attribute name="resultadosCuentas" type="List" />
     <aura:attribute name="mostrarResultados" type="Boolean" default="false" />
-    
-    <aura:attribute name="mostrarDualListbox" type="Boolean" default="false" />
 
     <!-- ================================ -->
     <!-- NUEVO: Estado para dual listbox custom (Líneas de Servicio) -->
