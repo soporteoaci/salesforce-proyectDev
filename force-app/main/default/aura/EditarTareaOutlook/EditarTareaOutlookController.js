@@ -224,7 +224,7 @@
     },
 
 	cambiarEstado: function(component, event, helper) {
-        const estado = component.get("v.tarea.Estado__c");
+        const estado = component.get("v.tarea.Status");
         console.log("➡ [Controller] cambiarEstado ejecutado. Nuevo estado:", estado);
         component.set("v.estadoSeleccionado", estado);
 	},

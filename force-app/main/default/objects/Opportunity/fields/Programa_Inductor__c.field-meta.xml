@@ -3,7 +3,7 @@
     <fullName>Programa_Inductor__c</fullName>
     <description>Información del programa de I+D+i</description>
     <externalId>false</externalId>
-    <inlineHelpText>Program Information I+D+I</inlineHelpText>
+    <inlineHelpText>Información del programa de I+D+i</inlineHelpText>
     <label>Programa Inductor</label>
     <length>255</length>
     <required>false</required>

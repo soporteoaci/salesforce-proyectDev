@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Evidencia_Estado_Entregable__c</fullName>
     <description>Indica el estado del Entregable al que corresponde el documento</description>
-    <inlineHelpText>Indicates the status of the deliverable to which the evidence corresponds</inlineHelpText>
+    <inlineHelpText>Indica el estado del Entregable al que corresponde la evidencia</inlineHelpText>
     <label>Evidencia Estado Entregable</label>
     <required>false</required>
     <trackTrending>false</trackTrending>

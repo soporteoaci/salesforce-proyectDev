@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- Aprobador Final de Casos por Defecto --></label>
     <name>Aprobador_Final_de_Casos_por_Defecto__c</name>
-    <relationshipLabel><!-- Projects (Final Default Case Approver) --></relationshipLabel>
+    <relationshipLabel><!-- Proyectos (Aprobador Final de Casos por Defecto) --></relationshipLabel>
 </CustomFieldTranslation>

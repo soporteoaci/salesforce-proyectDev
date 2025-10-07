@@ -166,31 +166,44 @@ public class TareasOutlookController {
     // NUEVO: DEVOLVER VALORES DE PICKLISTS
     // ===========================================
     @AuraEnabled(cacheable=true)
-    public static Map<String, List<String>> obtenerValoresPicklists() {
-        Map<String, List<String>> resultado = new Map<String, List<String>>();
+    public static Map<String, List<Map<String, String>>> obtenerValoresPicklists() {
+        Map<String, List<Map<String, String>>> resultado = new Map<String, List<Map<String, String>>>();
         
         // Obtener valores para Lineas de Servicio
         Schema.DescribeFieldResult lineasServicioField = Task.Lineas_de_Servicio__c.getDescribe();
-        List<String> opcionesLineas = new List<String>();
+        List<Map<String, String>> opcionesLineas = new List<Map<String, String>>();
         for (Schema.PicklistEntry entry : lineasServicioField.getPicklistValues()) {
-            opcionesLineas.add(entry.getLabel());
+            if (entry.isActive()) {
+                opcionesLineas.add(new Map<String, String>{
+                    'label' => entry.getLabel(),
+                    'value' => entry.getValue()
+                });
+            }
         }
         resultado.put('Lineas_de_Servicio__c', opcionesLineas);
         
         // Obtener valores para Sector de Mercado (Organizaci_n__c)
         Schema.DescribeFieldResult sectorField = Task.Organizaci_n__c.getDescribe();
-        List<String> opcionesSector = new List<String>();
+        List<Map<String, String>> opcionesSector = new List<Map<String, String>>();
         for (Schema.PicklistEntry entry : sectorField.getPicklistValues()) {
-            opcionesSector.add(entry.getLabel());
+            if (entry.isActive()) {
+                opcionesSector.add(new Map<String, String>{
+                    'label' => entry.getLabel(),
+                    'value' => entry.getValue()
+                });
+            }
         }
         resultado.put('Organizaci_n__c', opcionesSector);
         
         // Prioridad
         Schema.DescribeFieldResult prioridadField = Task.Priority.getDescribe();
-        List<String> opcionesPrioridad = new List<String>();
+        List<Map<String, String>> opcionesPrioridad = new List<Map<String, String>>();
         for (Schema.PicklistEntry entry : prioridadField.getPicklistValues()) {
             if (entry.isActive()) {
-                opcionesPrioridad.add(entry.getLabel());
+                opcionesPrioridad.add(new Map<String, String>{
+                    'label' => entry.getLabel(),
+                    'value' => entry.getValue()
+                });
             }
         }
         resultado.put('Priority', opcionesPrioridad);

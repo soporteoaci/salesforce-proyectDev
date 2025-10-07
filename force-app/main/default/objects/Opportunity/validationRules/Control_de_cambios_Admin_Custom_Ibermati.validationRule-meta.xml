@@ -17,7 +17,18 @@ OR(
 CONTAINS($User.Email, &apos;xantonana@ayesa&apos;),
 CONTAINS($User.Email, &apos;vmoctavio@ayesa&apos;),
 $Profile.Name = &apos;Admin Custom Ibermatica CRM Sales&apos;
-)
+),
+/* Excluir el caso en que el perfil sea Admin Custom Ibermatica CRM y cambie alguno de los tres campos */
+  NOT(
+     AND(
+        $Profile.Name = &quot;Admin Custom Ibermatica CRM Sales&quot;,
+        OR(
+          ISCHANGED(Responsable_de_Proyecto_Nombre__c),
+          ISCHANGED(Responsable_de_Proyecto_Email__c),
+          ISCHANGED(Responsable_de_Proyecto__c)
+          )
+        )
+     )
 )</errorConditionFormula>
     <errorDisplayField>Motivo_de_excepcion__c</errorDisplayField>
     <errorMessage>Debe rellenar el campo &apos;Motivo de excepción&apos; antes de guardar los cambios.</errorMessage>

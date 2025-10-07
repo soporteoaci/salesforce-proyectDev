@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Enviar_Correo__c</fullName>
     <defaultValue>false</defaultValue>
-    <inlineHelpText>Checking the box indicates that no mail will be sent to the Contact</inlineHelpText>
+    <inlineHelpText>Al marcar la casilla se indica que no se envía correo al Contacto</inlineHelpText>
     <label>No Enviar Correo</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

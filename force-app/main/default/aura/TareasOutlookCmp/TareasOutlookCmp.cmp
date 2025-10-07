@@ -115,7 +115,7 @@
                                                      value="{!v.filtroPrioridad}" onchange="{!c.filtrarTareas}">
                                         <option value="">Todas</option>
                                         <aura:iteration items="{!v.opcionesPrioridad}" var="opt">
-                                            <option value="{!opt}">{!opt}</option>
+                                            <option value="{!opt.value}">{!opt.label}</option>
                                         </aura:iteration>
                                     </lightning:select>
                                 </div>
@@ -244,17 +244,15 @@
                             <lightning:input name="subject" label="Asunto" value="{!v.subject}" required="true" class="slds-m-bottom_small"/>
                             
                             <!-- Fecha -->
-                            <div class="slds-grid slds-wrap slds-m-bottom_small">
-                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-5">
-                                    <lightning:input type="date" name="fechaReunion" label="Fecha"
-                                                     value="{!v.fechaReunion}" required="true" />
-                                </div>
+                            <div class="campo-fecha-crear">
+                                <lightning:input type="date" name="fechaReunion" label="Fecha"
+                                                 value="{!v.fechaReunion}" required="true" />
                             </div>
 
                             <!-- NUEVO: Prioridad -->
                             <lightning:select name="prioridad" label="Prioridad" value="{!v.prioridad}" class="slds-m-bottom_small" required="true">
                                 <aura:iteration items="{!v.opcionesPrioridad}" var="opt">
-                                    <option value="{!opt}" selected="{!opt == 'Normal'}">{!opt}</option>
+                                    <option value="{!opt.value}" selected="{!opt.value == 'Normal'}">{!opt.label}</option>
                                 </aura:iteration>
                             </lightning:select>
                             
@@ -262,7 +260,7 @@
                             <lightning:select name="sectorMercado" label="Sector de Mercado" value="{!v.sectorMercado}" class="slds-m-bottom_small" required="true">
                                 <option value="" selected="true" disabled="true">-- Seleccione --</option>
                                 <aura:iteration items="{!v.picklistMap.Organizaci_n__c}" var="opt">
-                                    <option value="{!opt}">{!opt}</option>
+                                    <option value="{!opt.value}">{!opt.label}</option>
                                 </aura:iteration>
                             </lightning:select>
                             

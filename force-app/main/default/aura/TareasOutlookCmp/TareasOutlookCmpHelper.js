@@ -79,10 +79,9 @@ obtenerTareas: function(component) {
             if (response.getState() === "SUCCESS") {
                 const picklists = response.getReturnValue();
                 
-                // Transformar líneas de servicio para dualListbox
-                const dualListOptions = picklists['Lineas_de_Servicio__c'].map(v => ({ label: v, value: v }));
-                picklists['Lineas_de_Servicio__c'] = dualListOptions;
-
+                // Las líneas de servicio ya vienen en el formato correcto {label, value}
+                // No necesitamos transformarlas
+                
                 // Cargar opciones de prioridad en atributo específico
                 component.set("v.opcionesPrioridad", picklists.Priority || []);
                 

@@ -4,7 +4,7 @@
     <description>Contratado del año teniendo en cuenta la participación de Ayesa</description>
     <formula>Participacion_Ayesa__c *  Contratado_a_o_oportunidad__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Contracted for the year taking into account the participation by part of Ayesa</inlineHelpText>
+    <inlineHelpText>Contratado del año teniendo en cuenta la participación de Ayesa</inlineHelpText>
     <label>Importe Ponderado</label>
     <precision>18</precision>
     <required>false</required>

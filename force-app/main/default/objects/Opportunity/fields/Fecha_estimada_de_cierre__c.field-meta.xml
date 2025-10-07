@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Fecha_estimada_de_cierre__c</fullName>
     <description>Fecha estimada de cierre de la oportunidad</description>
-    <inlineHelpText>Estimated opportunity closing date or tender process resolution. Enter the ACTUAL date if it has already been closed (lost, awarded, etc.)</inlineHelpText>
+    <inlineHelpText>Fecha estimada de cierre de la oportunidad, indique la fecha REAL si ya se ha cerrado</inlineHelpText>
     <label>Fecha de cierre</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

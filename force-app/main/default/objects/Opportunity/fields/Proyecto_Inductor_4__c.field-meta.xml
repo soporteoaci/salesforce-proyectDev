@@ -3,7 +3,7 @@
     <fullName>Proyecto_Inductor_4__c</fullName>
     <description>Proyecto inductor asociado</description>
     <externalId>false</externalId>
-    <inlineHelpText>Associated inducer project</inlineHelpText>
+    <inlineHelpText>Proyecto inductor asociado</inlineHelpText>
     <label>Proyecto Inductor 4</label>
     <length>255</length>
     <required>false</required>

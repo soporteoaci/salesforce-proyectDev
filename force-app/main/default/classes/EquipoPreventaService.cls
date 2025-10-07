@@ -142,41 +142,48 @@ public with sharing class EquipoPreventaService {
         List<String> mercantilPicklist = getPicklistValues(Equipo_Oferta__c.Mercantil__c.getDescribe());
         
         try {
-            WebService__c wsConf = WebService__c.getInstance();
-            if (wsConf == null || String.isBlank(wsConf.EndPoint_Search_Empleados__c)) {
-                throw new AuraHandledException('Configuración de WebService no encontrada');
-            }
-            String user = wsConf.username__c;
-            String pass = wsConf.password__c;
-            String endpoint = wsConf.EndPoint_Search_Empleados__c;
-
+            // Construcción de data para el envío a ApiAcelerator (usando paquete RICM)
+            WebService__c webServiceData = WebService__c.getInstance();
+            String user = webServiceData.username__c;        
+            String pass = webServiceData.password__c;
+            
             // Construir pares "campo":"valor" solo para filtros no vacíos
             List<String> filtros = new List<String>();
-            if (!String.isBlank(codigo)) filtros.add('"codigoEmpleado":"' + escapeJson(codigo) + '"');
+            if (!String.isBlank(codigo)) filtros.add('"numeroPersonal":"' + escapeJson(codigo) + '"');
             if (!String.isBlank(nombre)) filtros.add('"nombre":"' + escapeJson(nombre) + '"');
             if (!String.isBlank(apellido1)) filtros.add('"apellido1":"' + escapeJson(apellido1) + '"');
             if (!String.isBlank(apellido2)) filtros.add('"apellido2":"' + escapeJson(apellido2) + '"');
 
             String buscarTexto = String.join(filtros, ',');
-            if (String.isNotBlank(buscarTexto)) buscarTexto += ','; // para que quede antes de cerrar y luego concatenar activo
-
-            // Cuerpo similar al componente Aura: username & password & data
-            String envio = 'username=' + EncodingUtil.urlEncode(user,'UTF-8') + '&password=' + EncodingUtil.urlEncode(pass,'UTF-8') + '&data=';
-            String data = '{"activo":"true",' + buscarTexto + '"paginacion":{"tamano":200,"pagina":1}}';
-
-            HttpRequest req = new HttpRequest();
-            req.setEndpoint(endpoint);
-            req.setMethod('POST');
-            req.setTimeout(60000);
-            req.setHeader('Content-Type','application/x-www-form-urlencoded');
-            req.setBody(envio + data);
-            Http http = new Http();
-            HttpResponse resp = http.send(req);
-            if (resp.getStatusCode() >= 200 && resp.getStatusCode() < 300) {
-                String body = resp.getBody();
-                // Se asume que body es un JSON array o un objeto con lista. Intentamos detectar.
+            
+            String envio = 'username=' + user + '&password=' + pass + '&data=';   
+            String data = '{"activo":"true",' + buscarTexto + '}';
+            String dataFinal = envio + data;
+            
+            // Preparar parámetros para el CallOutService
+            Map<String,String> params = new Map<String,String>();
+            params.put(CRM_IntegrationConstants.INTEGRATION_RESPONSABLE_PARAM01, dataFinal);
+            
+            // Envío petición usando el paquete gestionado RICM
+            Map<String, Object> response = RICM.CallOutService.executeRequest(
+                CRM_IntegrationConstants.INTEGRATION_RESPONSABLE_NAME, 
+                params, 
+                null
+            );
+            
+            // Tratamiento de la respuesta
+            if (response != null && response.containsKey('result') && response.get('result') == 'OK') {
+                HttpResponse httpResp = (HttpResponse) response.get('response');
+                String body = httpResp != null ? httpResp.getBody() : '[]';
+                
+                if (String.isBlank(body) || body == '[]') {
+                    return res;
+                }
+                
+                // Parsear respuesta JSON
                 Object parsed = JSON.deserializeUntyped(body);
                 List<Object> lista;
+                
                 if (parsed instanceof List<Object>) {
                     lista = (List<Object>)parsed;
                 } else if (parsed instanceof Map<String,Object>) {
@@ -194,6 +201,8 @@ public with sharing class EquipoPreventaService {
                 } else {
                     lista = new List<Object>();
                 }
+                
+                // Procesar cada empleado de la respuesta
                 for (Object o : lista) {
                     if (!(o instanceof Map<String,Object>)) continue;
                     Map<String,Object> m = (Map<String,Object>)o;
@@ -214,7 +223,9 @@ public with sharing class EquipoPreventaService {
                     res.add(w);
                 }
             } else {
-                throw new AuraHandledException('Error servicio empleados: ' + resp.getStatus() + ' ' + resp.getBody());
+                // Si la respuesta no es OK, retornar lista vacía
+                System.debug('Error en respuesta del servicio: ' + response);
+                return new List<EmpleadoWSWrapper>();
             }
         } catch (Exception e) {
             throw new AuraHandledException('Fallo búsqueda empleados: ' + e.getMessage());

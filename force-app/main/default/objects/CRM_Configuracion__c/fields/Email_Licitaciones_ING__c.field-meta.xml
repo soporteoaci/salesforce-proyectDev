@@ -3,7 +3,7 @@
     <fullName>Email_Licitaciones_ING__c</fullName>
     <description>Email donde se notificaran las solicitudes de código de oferta de Ingeniería. Se pueden añadir varias direcciones separadas por ;</description>
     <externalId>false</externalId>
-    <inlineHelpText>Email where engineering offer code requests are notified. You can add multiple addresses separated by ;</inlineHelpText>
+    <inlineHelpText>Email donde se notificaran las solicitudes de código de oferta de Ingeniería. Se pueden añadir varias direcciones separadas por ;</inlineHelpText>
     <label>Email Licitaciones ING.</label>
     <length>255</length>
     <required>true</required>

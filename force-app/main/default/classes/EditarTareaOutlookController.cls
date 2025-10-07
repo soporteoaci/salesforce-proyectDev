@@ -12,8 +12,8 @@ public with sharing class EditarTareaOutlookController {
     }
     
     @AuraEnabled
-    public static Map<String, List<String>> obtenerPicklists() {
-        Map<String, List<String>> result = new Map<String, List<String>>();
+    public static Map<String, List<Map<String, String>>> obtenerPicklists() {
+        Map<String, List<Map<String, String>>> result = new Map<String, List<Map<String, String>>>();
         Schema.DescribeSObjectResult describeResult = Task.SObjectType.getDescribe();
         Map<String, Schema.SObjectField> fields = describeResult.fields.getMap();
         
@@ -21,11 +21,15 @@ public with sharing class EditarTareaOutlookController {
             'Estado__c','Status','Como_ha_ido__c','Siguiente_Paso__c','Lineas_de_Servicio__c',
                 'Priority','Organizaci_n__c','Tipo_Actividad_Administrador__c'}) {
                     
-                    List<String> opciones = new List<String>();
+                    List<Map<String, String>> opciones = new List<Map<String, String>>();
                     Schema.DescribeFieldResult fieldResult = fields.get(campo).getDescribe();
                     for (Schema.PicklistEntry entry : fieldResult.getPicklistValues()) {
                         if (entry.isActive()) {
-                            opciones.add(entry.getLabel());
+                            // Devolver tanto el label (para mostrar) como el value (para guardar)
+                            opciones.add(new Map<String, String>{
+                                'label' => entry.getLabel(),
+                                'value' => entry.getValue()
+                            });
                         }
                     }
                     result.put(campo, opciones);
@@ -33,6 +37,61 @@ public with sharing class EditarTareaOutlookController {
         
         return result;
     }
+    
+    /**
+    * @description Obtiene las líneas de servicio separadas entre disponibles y seleccionadas
+    * @param tareaId ID de la tarea
+    * @return Map con dos listas: 'disponibles' y 'seleccionadas'
+    */
+    @AuraEnabled
+    public static Map<String, List<Map<String, Object>>> obtenerLineasServicioPorTarea(Id tareaId) {
+        // Obtener la tarea con las líneas de servicio guardadas
+        Task tarea = [SELECT Id, Lineas_de_Servicio__c 
+                     FROM Task 
+                     WHERE Id = :tareaId 
+                     LIMIT 1];
+        
+        // Obtener todas las opciones disponibles del picklist
+        Schema.DescribeFieldResult fieldResult = Task.Lineas_de_Servicio__c.getDescribe();
+        List<Schema.PicklistEntry> picklistEntries = fieldResult.getPicklistValues();
+        
+        // Convertir las líneas seleccionadas en un Set para búsqueda rápida
+        Set<String> lineasSeleccionadasSet = new Set<String>();
+        if (String.isNotBlank(tarea.Lineas_de_Servicio__c)) {
+            // Las líneas de servicio están separadas por punto y coma
+            for (String linea : tarea.Lineas_de_Servicio__c.split(';')) {
+                lineasSeleccionadasSet.add(linea.trim());
+            }
+        }
+        
+        // Separar en disponibles y seleccionadas
+        List<Map<String, Object>> disponibles = new List<Map<String, Object>>();
+        List<Map<String, Object>> seleccionadas = new List<Map<String, Object>>();
+        
+        for (Schema.PicklistEntry entry : picklistEntries) {
+            if (entry.isActive()) {
+                Map<String, Object> opcion = new Map<String, Object>{
+                    'label' => entry.getLabel(),
+                    'value' => entry.getValue(),
+                    'marked' => false
+                };
+                
+                // Si está en el set de seleccionadas, agregarla a seleccionadas
+                if (lineasSeleccionadasSet.contains(entry.getValue()) || 
+                    lineasSeleccionadasSet.contains(entry.getLabel())) {
+                    seleccionadas.add(opcion);
+                } else {
+                    disponibles.add(opcion);
+                }
+            }
+        }
+        
+        return new Map<String, List<Map<String, Object>>>{
+            'disponibles' => disponibles,
+            'seleccionadas' => seleccionadas
+        };
+    }
+    
     @AuraEnabled
     public static List<Map<String, String>> buscarCuentasPorNombre(String texto) {
         List<Account> cuentas = [

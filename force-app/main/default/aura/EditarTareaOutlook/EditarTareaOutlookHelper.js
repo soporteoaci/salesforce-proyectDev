@@ -5,11 +5,14 @@
             if (response.getState() === "SUCCESS") {
                 const data = response.getReturnValue();
                 console.log("📝 Picklists cargados:", data);
-                const opcionesLineas = data.Lineas_de_Servicio__c.map(function(opcion) {
-                    return { label: opcion, value: opcion };
-                });
+                
+                // Ahora data contiene objetos con {label, value} en lugar de strings
+                // Para líneas de servicio ya vienen en el formato correcto
+                const opcionesLineas = data.Lineas_de_Servicio__c;
                 console.log("🔗 Opciones de líneas de servicio:", opcionesLineas);
+                
                 component.set("v.estadoOpciones", data.Status);
+                console.log("🔍 Valores del picklist Status (Estado):", data.Status);
                 component.set("v.comoHaIdoOpciones", data.Como_ha_ido__c);
                 component.set("v.siguientePasoOpciones", data.Siguiente_Paso__c);
                 component.set("v.lineasServicioOpciones", opcionesLineas);
@@ -30,30 +33,57 @@
     },
 
     cargarTarea: function(component) {
-        const action = component.get("c.obtenerTarea");
-        action.setParams({ tareaId: component.get("v.tareaId") });
-        action.setCallback(this, function(response) {
+        const tareaId = component.get("v.tareaId");
+        
+        // Cargar la tarea
+        const actionTarea = component.get("c.obtenerTarea");
+        actionTarea.setParams({ tareaId: tareaId });
+        actionTarea.setCallback(this, function(response) {
             if (response.getState() === "SUCCESS") {
                 const tarea = response.getReturnValue();
                 console.log("📋 Tarea cargada:", tarea);
                 component.set("v.tarea", tarea);
-                // Convertimos Lineas_de_Servicio__c en lista
-                const lineas = tarea.Lineas_de_Servicio__c;
-                const lineasArray = lineas ? lineas.split(';').map(s => s.trim()).filter(s => s.length > 0) : [];
-                console.log("🔗 Líneas de servicio de la tarea:", lineas, "->", lineasArray);
-                component.set("v.lineasServicioSeleccionadas", lineasArray);
                 component.set("v.busquedaCuenta", tarea.What ? tarea.What.Name : '');
                 component.set("v.cuentaSeleccionada", tarea.WhatId);
                 component.set("v.modoBusquedaCuenta", tarea.WhatId ? false : true);
                 
                 // Cargar nombre del contacto desde la consulta de la tarea
                 component.set("v.nombreContacto", tarea.Who ? tarea.Who.Name : '');
-                component.set("v.estadoSeleccionado", tarea.Estado__c);
-                // Reconstruir dual list con datos actuales
-                this.rebuildDualLists(component, /*preserveMarks*/ false);
+                component.set("v.estadoSeleccionado", tarea.Status);
+                
+                // Cargar las líneas de servicio con el nuevo método
+                this.cargarLineasServicio(component, tareaId);
             }
         });
-        $A.enqueueAction(action);
+        $A.enqueueAction(actionTarea);
+    },
+    
+    cargarLineasServicio: function(component, tareaId) {
+        const actionLineas = component.get("c.obtenerLineasServicioPorTarea");
+        actionLineas.setParams({ tareaId: tareaId });
+        actionLineas.setCallback(this, function(response) {
+            if (response.getState() === "SUCCESS") {
+                const resultado = response.getReturnValue();
+                console.log("🔗 Líneas de servicio obtenidas del servidor:", resultado);
+                
+                // Establecer las listas directamente desde el servidor
+                const disponibles = resultado.disponibles || [];
+                const seleccionadas = resultado.seleccionadas || [];
+                
+                console.log("   ✅ Configurando dual listbox:");
+                console.log("      Disponibles:", disponibles.length, disponibles.map(d => d.label));
+                console.log("      Seleccionadas:", seleccionadas.length, seleccionadas.map(s => s.label));
+                
+                component.set("v.lineasServicioDisponibles", disponibles);
+                component.set("v.lineasServicioSeleccionadasDetalles", seleccionadas);
+                component.set("v.lineasServicioSeleccionadas", seleccionadas.map(s => s.value));
+                component.set("v.lineasServicioDisponiblesSeleccionadas", []);
+                component.set("v.lineasServicioSeleccionadasMarcadas", []);
+            } else {
+                console.error("Error al cargar líneas de servicio:", response.getError());
+            }
+        });
+        $A.enqueueAction(actionLineas);
     },
 
     guardarTarea: function(component, callback) {

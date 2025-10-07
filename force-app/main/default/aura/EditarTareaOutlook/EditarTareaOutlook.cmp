@@ -46,8 +46,10 @@
             <!-- Sección 1: Información Básica -->
             <div class="form-section">
                 <div class="form-section-title">Información Básica</div>
-                <lightning:input type="date" name="fechaReunion" label="Fecha" 
-                                 value="{!v.tarea.ActivityDate}" required="true" />
+                <div class="campo-fecha-editar">
+                    <lightning:input type="date" name="fechaReunion" label="Fecha" 
+                                     value="{!v.tarea.ActivityDate}" required="true" />
+                </div>
                 
                 <lightning:input type="text" label="Asunto" value="{!v.tarea.Subject}" />
                 <!-- Renombrado: Descripción -> Resumen Ejecutivo -->
@@ -63,16 +65,16 @@
                     </div>
                 </div>
                 
-                <lightning:select label="Estado" value="{!v.tarea.Estado__c}" 
+                <lightning:select label="Estado" value="{!v.tarea.Status}" 
                                   onchange="{!c.cambiarEstado}">
                     <aura:iteration items="{!v.estadoOpciones}" var="op">
-                        <option value="{!op}">{!op}</option>
+                        <option value="{!op.value}">{!op.label}</option>
                     </aura:iteration>
                 </lightning:select>
                 
                 <lightning:select label="Prioridad" value="{!v.tarea.Priority}">
                     <aura:iteration items="{!v.priorityOpciones}" var="op">
-                        <option value="{!op}">{!op}</option>
+                        <option value="{!op.value}">{!op.label}</option>
                     </aura:iteration>
                 </lightning:select>
             </div>
@@ -140,13 +142,13 @@
 
                 <lightning:select label="Organización" value="{!v.tarea.Organizaci_n__c}">
                     <aura:iteration items="{!v.organizacionOpciones}" var="op">
-                        <option value="{!op}">{!op}</option>
+                        <option value="{!op.value}">{!op.label}</option>
                     </aura:iteration>
                 </lightning:select>
                 
                 <lightning:select label="Tipo Actividad" value="{!v.tarea.Tipo_Actividad_Administrador__c}">
                     <aura:iteration items="{!v.tipoActividadOpciones}" var="op">
-                        <option value="{!op}">{!op}</option>
+                        <option value="{!op.value}">{!op.label}</option>
                     </aura:iteration>
                 </lightning:select>
             </div>
@@ -205,20 +207,22 @@
                 </div>
             </div>
             
-            <!-- Campos adicionales visibles SOLO si Estado = Realizada -->
+            <!-- Campos adicionales visibles SOLO si Estado = Realizada (Realizada) -->
+            <!-- NOTA: El valor API para "Realizada" normalmente es "Realizada" en Salesforce estándar -->
+            <!-- Si no funciona, verificar el console.log en el navegador para ver los valores exactos del picklist Status -->
             <aura:if isTrue="{!v.estadoSeleccionado == 'Realizada'}">
                 <div class="campos-adicionales">
                     <div class="form-section-title">Seguimiento</div>
                     
                     <lightning:select label="¿Cómo ha ido?" value="{!v.tarea.Como_ha_ido__c}" required="true">
                         <aura:iteration items="{!v.comoHaIdoOpciones}" var="op">
-                            <option value="{!op}">{!op}</option>
+                            <option value="{!op.value}">{!op.label}</option>
                         </aura:iteration>
                     </lightning:select>
                 
                     <lightning:select label="Siguiente Paso" value="{!v.tarea.Siguiente_Paso__c}" required="true">
                         <aura:iteration items="{!v.siguientePasoOpciones}" var="op">
-                            <option value="{!op}">{!op}</option>
+                            <option value="{!op.value}">{!op.label}</option>
                         </aura:iteration>
                     </lightning:select>
                 </div>

@@ -17,7 +17,10 @@
 /* ==========================
    Card / Layout
    ========================== */
-.THIS .slds-card { overflow-x: hidden; animation: fadeInUp 0.4s ease-out; }
+.THIS .slds-card { 
+    overflow-x: auto;
+    animation: fadeInUp 0.4s ease-out; 
+}
 .THIS .outlook-container {
     background-color: var(--sf-white) !important;
     border: 1px solid var(--sf-border) !important;
@@ -25,7 +28,7 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.08) !important;
     width: 100% !important;
     padding: 0 !important;
-    overflow-x: hidden !important;
+    overflow-x: auto !important;
 }
 .THIS .component-header {
     background: var(--sf-white) !important;
@@ -38,7 +41,11 @@
 /* ==========================
    Secciones / Titulares
    ========================== */
-.THIS .form-section { padding: 0 16px 16px; margin-bottom: 16px; border-bottom: 1px solid var(--sf-border); }
+.THIS .form-section { 
+    padding: 0 16px 16px; 
+    margin-bottom: 16px; 
+    border-bottom: 1px solid var(--sf-border);
+}
 .THIS .form-section:last-child { border-bottom: none; margin-bottom: 0; }
 .THIS .form-section-title {
     color: var(--sf-blue); font-size: 14px; font-weight: 600; margin-bottom: 12px;
@@ -67,21 +74,29 @@
     position: relative;
     width: 100%;
     margin-bottom: 16px;
+    z-index: 1;
 }
+
+/* Cuando el contenedor tiene foco (input activo), elevar z-index */
+.THIS .contenedor-cuenta-autocompletar:focus-within {
+    z-index: 10000 !important;
+}
+
 .THIS .lookup-results {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 10001 !important;
     background-color: var(--sf-white);
     border: 1px solid var(--sf-border);
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     margin-top: 4px;
     padding: 0;
     animation: slideDown 0.25s cubic-bezier(.23,1,.32,1);
 }
+
 .THIS .lookup-result-item {
     padding: 10px 16px;
     border-bottom: 1px solid #f1f3f6;
@@ -135,7 +150,12 @@
 /* ==========================
    Tabs (una sola definición limpia)
    ========================== */
-.THIS .slds-tabs_scoped { margin: 0; display: flex; flex-direction: column; flex-wrap: nowrap; }
+.THIS .slds-tabs_scoped { 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: nowrap;
+}
 .THIS .slds-tabs_scoped__nav { background: transparent !important; border-bottom: 1px solid var(--sf-border) !important; padding: 0 !important; border-radius: 0 !important; box-shadow: none !important; display: flex; flex-wrap: wrap; }
 .THIS .slds-tabs_scoped__item { margin-right: 4px; }
 .THIS .slds-tabs_scoped__link {
@@ -146,7 +166,13 @@
 .THIS .slds-tabs_scoped__link:focus, .THIS .slds-tabs_scoped__link:active, .THIS .slds-tabs_scoped__link:focus-visible { outline: none !important; box-shadow: none !important; }
 .THIS .slds-tabs_scoped__item.slds-is-active .slds-tabs_scoped__link { color: var(--sf-text) !important; position: relative; }
 .THIS .slds-tabs_scoped__item.slds-is-active .slds-tabs_scoped__link:after { content: ''; position: absolute; left: 8px; right: 8px; bottom: -1px; height: 2px; background: var(--sf-border); border-radius: 1px; }
-.THIS .slds-tabs_scoped__content { padding-top: 8px; background: transparent !important; border: none !important; box-shadow: none !important; overflow-x: hidden !important; }
+.THIS .slds-tabs_scoped__content { 
+    padding-top: 8px; 
+    background: transparent !important; 
+    border: none !important; 
+    box-shadow: none !important; 
+    overflow-x: hidden !important;
+}
 
 /* Forzar eliminación de cualquier borde/marco residual del tabset scoped */
 .THIS .no-border-tabset.slds-tabs_scoped,
@@ -242,31 +268,167 @@
     width: 1.5rem;
 }
 
-/* NUEVO: Estilos para el grupo de botones de acción y la celda */
-.THIS .acciones-cell {
-    white-space: nowrap;
-    padding: 0.2rem 0.4rem;
-    vertical-align: middle;
+/* ==========================
+   Estilo para el calendario emergente
+   ========================== */
+.THIS .slds-input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.THIS .acciones-btn-group {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    width: auto; /* Cambiado de 100% a auto */
-    max-width: 100%;
+
+/* Estilos para el calendario cuando se abre */
+.THIS input[type="date"]::-webkit-datetime-edit,
+.THIS input[type="date"]::-webkit-inner-spin-button,
+.THIS input[type="date"]::-webkit-clear-button {
+    display: none;
 }
-.THIS .accion-btn {
-    min-width: 24px;
-    max-width: 28px;
-    height: 24px;
-    padding: 0;
-    border-radius: 4px;
-    overflow: visible;
-    margin-right: 2px;
+
+/* Limitar el tamaño y posicionamiento del calendario */
+.THIS .slds-form-element {
+    position: relative;
+    z-index: 1;
 }
-.THIS .filtros-barra .contenedor-cuenta-autocompletar {
-    margin-bottom: 0;
+
+/* Estilos específicos para navegadores webkit (Chrome, Safari) */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .THIS .slds-input[type="date"] {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .THIS .slds-input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        opacity: 1;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23747474' d='M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z'/%3E%3C/svg%3E") no-repeat center;
+        background-size: 16px 16px;
+    }
+}
+
+/* Mejoras para el calendario en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .THIS .slds-input[type="date"] {
+        font-size: 16px; /* Evita zoom en iOS */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    
+    .THIS .slds-input[type="date"]::-webkit-calendar-picker-indicator {
+        background-size: 18px 18px;
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* Estilos para el contenedor de fecha en los filtros */
+.THIS .filtros-barra .slds-form-element {
+    position: relative;
+    z-index: 1;
+}
+
+/* Asegurar z-index base para todas las columnas */
+.THIS .filtros-barra .slds-col {
+    position: relative;
+    z-index: 1;
+}
+
+/* Cuando un input de fecha recibe foco, incrementar z-index del contenedor padre */
+.THIS .filtros-barra input[type="date"]:focus {
+    position: relative;
+    z-index: 9999 !important;
+}
+
+/* Incrementar z-index de la columna que contiene el input con foco */
+.THIS .filtros-barra .slds-col:focus-within {
+    z-index: 9999 !important;
+}
+
+/* Incrementar z-index del form-element que contiene el input con foco */
+.THIS .filtros-barra .slds-form-element:focus-within {
+    z-index: 9999 !important;
+}
+
+/* Estilos para el contenedor de fecha en crear visita */
+.THIS .campo-fecha-crear {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 12px;
+    /* Compensar el padding y mover a la derecha */
+    margin-left: 0;
+    margin-right: -32px; /* Más espacio a la derecha */
+    padding-right: 32px;
+}
+
+.THIS .campo-fecha-crear .slds-form-element {
+    position: relative;
+    z-index: 1;
+}
+
+/* Cuando el input recibe foco, incrementar z-index */
+.THIS .campo-fecha-crear:focus-within {
+    z-index: 9999 !important;
+}
+
+.THIS .campo-fecha-crear .slds-form-element:focus-within {
+    z-index: 9999 !important;
+}
+
+/* Forzar que el calendario se muestre completo sin cortes */
+.THIS .campo-fecha-crear input[type="date"] {
+    position: relative;
+}
+
+.THIS .campo-fecha-crear input[type="date"]:focus {
+    z-index: 9999 !important;
+}
+
+/* Asegurar que el picker del calendario no se corte */
+.THIS .campo-fecha-crear input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 8px;
+    z-index: 10000;
+}
+
+/* Contenedor padre debe permitir overflow */
+.THIS lightning-tab[id="crearReunion"] .form-section {
+    overflow: visible !important;
+}
+
+.THIS lightning-tab[id="crearReunion"] .slds-p-around_medium {
+    overflow: visible !important;
+}
+
+/* Asegurar que el formulario de crear visita permite overflow */
+.THIS .form-section {
+    overflow: visible !important;
+}
+
+.THIS .slds-grid {
+    overflow: visible !important;
+}
+
+.THIS .slds-col {
+    overflow: visible !important;
+}
+
+/* Asegurar que la barra de filtros permite overflow */
+.THIS .filtros-barra {
+    overflow: visible !important;
+}
+
+/* Asegurar que todos los form-elements permiten overflow */
+.THIS .slds-form-element {
+    overflow: visible !important;
 }

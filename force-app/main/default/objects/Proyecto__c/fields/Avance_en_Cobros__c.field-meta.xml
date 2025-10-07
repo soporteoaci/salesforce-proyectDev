@@ -3,7 +3,7 @@
     <fullName>Avance_en_Cobros__c</fullName>
     <formula>If (Cobrado__c / Facturacion__c &gt;= 1,1,Cobrado__c / Facturacion__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Charged / Actual Billing</inlineHelpText>
+    <inlineHelpText>Cobrado / Facturación Real</inlineHelpText>
     <label>Avance en Cobros</label>
     <precision>18</precision>
     <required>false</required>

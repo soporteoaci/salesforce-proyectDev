@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Producci_n_estimada_a_o_oportunidad__c</fullName>
-    <inlineHelpText>Estimate that production would provide this opportunity this current year.  Very useful for making the LAF (Latest Annual forecast) in €.</inlineHelpText>
+    <inlineHelpText>Estimación de que producción aportaría esta oportunidad en el año en curso.  Muy útil para hacer la UPA. en €.</inlineHelpText>
     <label>Producción estimada año oportunidad (€)</label>
     <precision>16</precision>
     <required>false</required>
