@@ -12,6 +12,7 @@
         <field>Opportunity__c</field>
         <field>Cuenta_lookup__c</field>
         <field>Tipo__c</field>
+        <field>Codigo_Oportunidad_Comercial__c</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>true</allowDelegate>

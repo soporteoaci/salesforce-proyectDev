@@ -2,11 +2,13 @@ public class Codigo_Oferta_Ingenieria_Controller {
 
     @AuraEnabled
     public static String enviarCorreoOferta(Id oportunidadId) {
-        try {
-            Opportunity opp = [ SELECT Id, Name, Nombre_Corto__c, Codigo_OC__c, Pais__c, toLabel(Pais__c) LabelPais, Correo_Oferta_enviado__c, Owner.Email, Owner.Name, Responsable_Tecnico_de_la_Oferta__c FROM Opportunity WHERE Id = :oportunidadId LIMIT 1 ];
-            System.debug('enviarCorreoOferta - opp: ' + opp);
 
+		Opportunity opp = [ SELECT Id, Name, Nombre_Corto__c, Codigo_OC__c, Pais__c, toLabel(Pais__c) LabelPais, Correo_Oferta_enviado__c, Owner.Email, Owner.Name, Responsable_Tecnico_de_la_Oferta__c FROM Opportunity WHERE Id = :oportunidadId LIMIT 1 ];
+		System.debug('enviarCorreoOferta - opp: ' + opp);
+
+        try {
             // actualizo opp por si hay errores de validaciones
+			opp.Correo_Oferta_enviado__c = true;
             update opp;
             System.debug('actualizo opp por si hay errores de validaciones');
             
@@ -14,6 +16,8 @@ public class Codigo_Oferta_Ingenieria_Controller {
             List<String> destinatarios = new List<String>();
             if (opp.Pais__c == 'IN') {
                 destinatarios.add('scabeza@ayesa.com'); // CAMBIAR EN PRO A: sharad.gupta@ayesa.com
+            } else if (opp.Pais__c == 'PE'){
+                destinatarios.add('ebravo@ayesa.com'); // CAMBIAR EN PRO A: ofertas.peru@ayesa.com 
             } else if (opp.Pais__c == 'MX') {
                 destinatarios.add('scabeza@ayesa.com'); // CAMBIAR EN PRO A: cagutierrez@ayesa.com
             } else {
@@ -63,12 +67,14 @@ public class Codigo_Oferta_Ingenieria_Controller {
             }
             
             // actualizamos check en la opp
-            opp.Correo_Oferta_enviado__c = true;
-            update opp;
+            //opp.Correo_Oferta_enviado__c = true;
+            //update opp;
 
             return 'OK';
 
         } catch (Exception e) {
+            opp.Correo_Oferta_enviado__c = false;
+            update opp;
             return 'Error al enviar correo: ' + e.getMessage();
         }
     }

@@ -17,6 +17,7 @@
 												ISCHANGED(Oferta_SAP__c)
 								)
 				),
+				NOT(ISCHANGED(Correo_Oferta_enviado__c)),
 				Bloqueo_por_aprobacion__c =true
 )</errorConditionFormula>
     <errorMessage>La oportunidad tiene una aprobación en proceso, no se permite su modificación</errorMessage>
