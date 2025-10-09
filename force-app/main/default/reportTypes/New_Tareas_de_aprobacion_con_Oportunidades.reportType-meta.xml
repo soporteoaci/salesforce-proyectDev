@@ -2113,6 +2113,11 @@
             <field>Propietario_de_la_Oportunidad__c</field>
             <table>Opportunity.Tareas_de_aprobaci_n__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>C_digo_Portafirmas__c</field>
+            <table>Opportunity.Tareas_de_aprobaci_n__r</table>
+        </columns>
         <masterLabel>Tareas de aprobación</masterLabel>
     </sections>
     <sections>

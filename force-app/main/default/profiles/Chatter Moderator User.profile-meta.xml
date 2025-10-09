@@ -12348,6 +12348,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Tarea_aprobacion__c.C_digo_Portafirmas__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Tarea_aprobacion__c.Cliente_Oportunidad__c</field>
         <readable>false</readable>
     </fieldPermissions>
