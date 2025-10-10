@@ -247,6 +247,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -409,6 +413,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -1083,12 +1091,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -1299,10 +1307,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -1412,10 +1416,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -1604,6 +1604,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -1645,6 +1646,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -1813,8 +1815,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -1867,7 +1869,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -1896,7 +1897,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -2091,6 +2091,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -2253,6 +2257,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -2927,12 +2935,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -3143,10 +3151,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -3256,10 +3260,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -3447,6 +3447,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -3488,6 +3489,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -3656,8 +3658,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -3710,7 +3712,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -3739,7 +3740,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -3938,6 +3938,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -4100,6 +4104,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -4774,12 +4782,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -4990,10 +4998,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -5103,10 +5107,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -5295,6 +5295,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -5336,6 +5337,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -5504,8 +5506,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -5558,7 +5560,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -5587,7 +5588,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -5782,6 +5782,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -5944,6 +5948,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -6618,12 +6626,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -6834,10 +6842,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -6947,10 +6951,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -7138,6 +7138,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -7179,6 +7180,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -7347,8 +7349,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -7401,7 +7403,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -7430,7 +7431,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -7629,6 +7629,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -7791,6 +7795,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -8465,12 +8473,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -8681,10 +8689,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -8794,10 +8798,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -8986,6 +8986,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -9027,6 +9028,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -9195,8 +9197,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -9249,7 +9251,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -9278,7 +9279,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -9473,6 +9473,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -9635,6 +9639,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -10309,12 +10317,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -10525,10 +10533,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -10638,10 +10642,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -10829,6 +10829,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -10870,6 +10871,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -11038,8 +11040,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -11092,7 +11094,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -11121,7 +11122,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -11320,6 +11320,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -11482,6 +11486,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -12156,12 +12164,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -12372,10 +12380,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -12485,10 +12489,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -12677,6 +12677,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -12718,6 +12719,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -12886,8 +12888,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -12940,7 +12942,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -12969,7 +12970,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -13164,6 +13164,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -13326,6 +13330,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -14000,12 +14008,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -14216,10 +14224,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -14329,10 +14333,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -14520,6 +14520,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -14561,6 +14562,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -14729,8 +14731,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -14783,7 +14785,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -14812,7 +14813,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -15007,6 +15007,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -15169,6 +15173,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -15843,12 +15851,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -16059,10 +16067,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -16172,10 +16176,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -16363,6 +16363,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -16404,6 +16405,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -16572,8 +16574,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -16626,7 +16628,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -16655,7 +16656,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -16850,6 +16850,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -17012,6 +17016,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -17686,12 +17694,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -17902,10 +17910,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -18015,10 +18019,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -18206,6 +18206,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -18247,6 +18248,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -18415,8 +18417,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -18469,7 +18471,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -18498,7 +18499,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -18697,6 +18697,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -18859,6 +18863,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -19533,12 +19541,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -19749,10 +19757,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -19862,10 +19866,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -20054,6 +20054,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -20095,6 +20096,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -20263,8 +20265,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -20317,7 +20319,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -20346,7 +20347,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>
@@ -20541,6 +20541,10 @@
             <label>¿Correo Oferta enviado?</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N9O00000Ofyt1</field>
+            <label>¿Es referencia comercial?</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofync</field>
             <label>¿Exige venta de licencias?</label>
         </opportunityListFieldsLabelMappings>
@@ -20703,6 +20707,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykg</field>
             <label>Certificaciones perfiles</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N9O00000OfylG</field>
+            <label>Checkbox Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofykh</field>
@@ -21377,12 +21385,12 @@
             <label>Necesidad de financiación</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywI</field>
+            <field>00N9O00000OfywJ</field>
             <label>Negocio</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfywJ</field>
-            <label>Negocio</label>
+            <field>00N9O00000OfywI</field>
+            <label>Negocio de la anterior organización</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofys7</field>
@@ -21593,10 +21601,6 @@
             <label>Record Type Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N9O00000Ofyt1</field>
-            <label>Referencia Comercial</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>00N9O00000Ofyt2</field>
             <label>Referencia Comercial</label>
         </opportunityListFieldsLabelMappings>
@@ -21706,10 +21710,6 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N9O00000OfylF</field>
-            <label>Sinergias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N9O00000OfylG</field>
             <label>Sinergias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -21897,6 +21897,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N9O00000TyQjh</field>
+            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofync</field>
             <field>00N9O00000TyQuz</field>
             <field>00N9O00000TyQbd</field>
@@ -21938,6 +21939,7 @@
             <field>00N9O00000Ofyke</field>
             <field>00N9O00000Ofykf</field>
             <field>00N9O00000Ofykg</field>
+            <field>00N9O00000OfylG</field>
             <field>00N9O00000Ofykh</field>
             <field>00N9O00000Ofyki</field>
             <field>00N9O00000Ofykj</field>
@@ -22106,8 +22108,8 @@
             <field>00N9O00000Ofyom</field>
             <field>00N9O00000Ofyol</field>
             <field>00N9O00000Ofys5</field>
-            <field>00N9O00000OfywI</field>
             <field>00N9O00000OfywJ</field>
+            <field>00N9O00000OfywI</field>
             <field>00N9O00000Ofys7</field>
             <field>00N9O00000OfysA</field>
             <field>00N9O00000Ofys1</field>
@@ -22160,7 +22162,6 @@
             <field>00N9O00000Ofysw</field>
             <field>00N9O00000SAZqn</field>
             <field>00N9O00000Opd6L</field>
-            <field>00N9O00000Ofyt1</field>
             <field>00N9O00000Ofyt2</field>
             <field>00N9O00000Ofyt3</field>
             <field>00N9O00000UXQfB</field>
@@ -22189,7 +22190,6 @@
             <field>00N9O00000OfytP</field>
             <field>00N9O00000OfytR</field>
             <field>00N9O00000OfylF</field>
-            <field>00N9O00000OfylG</field>
             <field>00N9O00000OfytT</field>
             <field>00N9O00000OfytU</field>
             <field>00N9O00000OfytM</field>

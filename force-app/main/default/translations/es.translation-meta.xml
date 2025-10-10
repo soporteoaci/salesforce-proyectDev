@@ -1896,6 +1896,286 @@
         <label><!-- YouMustFillUser --></label>
         <name>RICM__YouMustFillUser</name>
     </customLabels>
+    <customLabels>
+        <label>Cargando...</label>
+        <name>TareasOutlook_Alt_Cargando</name>
+    </customLabels>
+    <customLabels>
+        <label>Editar Tarea</label>
+        <name>TareasOutlook_Alt_EditarTarea</name>
+    </customLabels>
+    <customLabels>
+        <label>Fecha</label>
+        <name>TareasOutlook_Alt_Fecha</name>
+    </customLabels>
+    <customLabels>
+        <label>Ir a Salesforce</label>
+        <name>TareasOutlook_Alt_IrSalesforce</name>
+    </customLabels>
+    <customLabels>
+        <label>Ver/Ocultar Contacto</label>
+        <name>TareasOutlook_Alt_VerOcultarContacto</name>
+    </customLabels>
+    <customLabels>
+        <label>Crear Visita</label>
+        <name>TareasOutlook_Button_CrearVisita</name>
+    </customLabels>
+    <customLabels>
+        <label>Acciones</label>
+        <name>TareasOutlook_Column_Acciones</name>
+    </customLabels>
+    <customLabels>
+        <label>Asunto</label>
+        <name>TareasOutlook_Column_Asunto</name>
+    </customLabels>
+    <customLabels>
+        <label>Cuenta</label>
+        <name>TareasOutlook_Column_Cuenta</name>
+    </customLabels>
+    <customLabels>
+        <label>Estado</label>
+        <name>TareasOutlook_Column_Estado</name>
+    </customLabels>
+    <customLabels>
+        <label>Fecha</label>
+        <name>TareasOutlook_Column_Fecha</name>
+    </customLabels>
+    <customLabels>
+        <label>Prioridad</label>
+        <name>TareasOutlook_Column_Prioridad</name>
+    </customLabels>
+    <customLabels>
+        <label>El campo Asunto es obligatorio.</label>
+        <name>TareasOutlook_Error_AsuntoRequerido</name>
+    </customLabels>
+    <customLabels>
+        <label>Debe seleccionar un Contacto.</label>
+        <name>TareasOutlook_Error_ContactoRequerido</name>
+    </customLabels>
+    <customLabels>
+        <label>Debe seleccionar una Cuenta.</label>
+        <name>TareasOutlook_Error_CuentaRequerida</name>
+    </customLabels>
+    <customLabels>
+        <label>Debe seleccionar una Fecha.</label>
+        <name>TareasOutlook_Error_FechaRequerida</name>
+    </customLabels>
+    <customLabels>
+        <label>La fecha de inicio no puede ser posterior a la fecha de fin.</label>
+        <name>TareasOutlook_Error_FechasInvalidas</name>
+    </customLabels>
+    <customLabels>
+        <label>Debe seleccionar al menos una Línea de Servicio.</label>
+        <name>TareasOutlook_Error_LineasRequeridas</name>
+    </customLabels>
+    <customLabels>
+        <label>Debe seleccionar una Prioridad.</label>
+        <name>TareasOutlook_Error_PrioridadRequerida</name>
+    </customLabels>
+    <customLabels>
+        <label>Debe seleccionar un Sector de Mercado.</label>
+        <name>TareasOutlook_Error_SectorRequerido</name>
+    </customLabels>
+    <customLabels>
+        <label>Asunto</label>
+        <name>TareasOutlook_Label_Asunto</name>
+    </customLabels>
+    <customLabels>
+        <label>Cuenta</label>
+        <name>TareasOutlook_Label_Cuenta</name>
+    </customLabels>
+    <customLabels>
+        <label>Disponibles</label>
+        <name>TareasOutlook_Label_Disponibles</name>
+    </customLabels>
+    <customLabels>
+        <label>Enviada Acuerdos</label>
+        <name>TareasOutlook_Label_EnviadaAcuerdos</name>
+    </customLabels>
+    <customLabels>
+        <label>Enviada Agenda</label>
+        <name>TareasOutlook_Label_EnviadaAgenda</name>
+    </customLabels>
+    <customLabels>
+        <label>Fecha</label>
+        <name>TareasOutlook_Label_Fecha</name>
+    </customLabels>
+    <customLabels>
+        <label>Fecha Fin</label>
+        <name>TareasOutlook_Label_FechaFin</name>
+    </customLabels>
+    <customLabels>
+        <label>Fecha Inicio</label>
+        <name>TareasOutlook_Label_FechaInicio</name>
+    </customLabels>
+    <customLabels>
+        <label>Filtrar Visitas</label>
+        <name>TareasOutlook_Label_FiltrarVisitas</name>
+    </customLabels>
+    <customLabels>
+        <label>Líneas de Servicio</label>
+        <name>TareasOutlook_Label_LineasServicio</name>
+    </customLabels>
+    <customLabels>
+        <label>Prioridad</label>
+        <name>TareasOutlook_Label_Prioridad</name>
+    </customLabels>
+    <customLabels>
+        <label>Resumen Ejecutivo</label>
+        <name>TareasOutlook_Label_ResumenEjecutivo</name>
+    </customLabels>
+    <customLabels>
+        <label>Sector de Mercado</label>
+        <name>TareasOutlook_Label_SectorMercado</name>
+    </customLabels>
+    <customLabels>
+        <label>Seleccionadas</label>
+        <name>TareasOutlook_Label_Seleccionadas</name>
+    </customLabels>
+    <customLabels>
+        <label>Seleccionar Contacto</label>
+        <name>TareasOutlook_Label_SeleccionarContacto</name>
+    </customLabels>
+    <customLabels>
+        <label>Contacto:</label>
+        <name>TareasOutlook_Msg_ContactoPrefix</name>
+    </customLabels>
+    <customLabels>
+        <label>Error al obtener tareas</label>
+        <name>TareasOutlook_Msg_ErrorObtenerTareas</name>
+    </customLabels>
+    <customLabels>
+        <label>No hay citas disponibles</label>
+        <name>TareasOutlook_Msg_NoCitas</name>
+    </customLabels>
+    <customLabels>
+        <label>Sin contacto relacionado</label>
+        <name>TareasOutlook_Msg_SinContacto</name>
+    </customLabels>
+    <customLabels>
+        <label>Tareas entre</label>
+        <name>TareasOutlook_Msg_TareasEntre</name>
+    </customLabels>
+    <customLabels>
+        <label>Tareas para hoy</label>
+        <name>TareasOutlook_Msg_TareasHoy</name>
+    </customLabels>
+    <customLabels>
+        <label>Tareas para el</label>
+        <name>TareasOutlook_Msg_TareasPara</name>
+    </customLabels>
+    <customLabels>
+        <label>Tareas del período seleccionado</label>
+        <name>TareasOutlook_Msg_TareasPeriodo</name>
+    </customLabels>
+    <customLabels>
+        <label>Tel:</label>
+        <name>TareasOutlook_Msg_TelPrefix</name>
+    </customLabels>
+    <customLabels>
+        <label>y</label>
+        <name>TareasOutlook_Msg_Y</name>
+    </customLabels>
+    <customLabels>
+        <label>-- Seleccione --</label>
+        <name>TareasOutlook_Option_Seleccione</name>
+    </customLabels>
+    <customLabels>
+        <label>Solo las Agendadas</label>
+        <name>TareasOutlook_Option_SoloAgendadas</name>
+    </customLabels>
+    <customLabels>
+        <label>Solo las Realizadas</label>
+        <name>TareasOutlook_Option_SoloRealizadas</name>
+    </customLabels>
+    <customLabels>
+        <label>Todas</label>
+        <name>TareasOutlook_Option_Todas</name>
+    </customLabels>
+    <customLabels>
+        <label>Todas las Visitas</label>
+        <name>TareasOutlook_Option_TodasVisitas</name>
+    </customLabels>
+    <customLabels>
+        <label>Buscar cuenta...</label>
+        <name>TareasOutlook_Placeholder_BuscarCuenta</name>
+    </customLabels>
+    <customLabels>
+        <label>Cuenta y Contactos</label>
+        <name>TareasOutlook_Section_CuentaContactos</name>
+    </customLabels>
+    <customLabels>
+        <label>Filtros</label>
+        <name>TareasOutlook_Section_Filtros</name>
+    </customLabels>
+    <customLabels>
+        <label>Información Básica</label>
+        <name>TareasOutlook_Section_InfoBasica</name>
+    </customLabels>
+    <customLabels>
+        <label>Listado</label>
+        <name>TareasOutlook_Section_Listado</name>
+    </customLabels>
+    <customLabels>
+        <label>Seguimiento</label>
+        <name>TareasOutlook_Section_Seguimiento</name>
+    </customLabels>
+    <customLabels>
+        <label>Crear Visita</label>
+        <name>TareasOutlook_Tab_CrearVisita</name>
+    </customLabels>
+    <customLabels>
+        <label>Mis Citas</label>
+        <name>TareasOutlook_Tab_MisCitas</name>
+    </customLabels>
+    <customLabels>
+        <label>Tareas Outlook</label>
+        <name>TareasOutlook_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Mover a disponibles</label>
+        <name>TareasOutlook_Title_MoverDisponibles</name>
+    </customLabels>
+    <customLabels>
+        <label>Mover a seleccionadas</label>
+        <name>TareasOutlook_Title_MoverSeleccionadas</name>
+    </customLabels>
+    <customLabels>
+        <label>Campos obligatorios faltantes</label>
+        <name>TareasOutlook_Toast_CamposObligatorios</name>
+    </customLabels>
+    <customLabels>
+        <label>Error</label>
+        <name>TareasOutlook_Toast_Error</name>
+    </customLabels>
+    <customLabels>
+        <label>No se pudo abrir el editor de tarea.</label>
+        <name>TareasOutlook_Toast_ErrorAbrirEditor</name>
+    </customLabels>
+    <customLabels>
+        <label>Guardado</label>
+        <name>TareasOutlook_Toast_Guardado</name>
+    </customLabels>
+    <customLabels>
+        <label>Los cambios se guardaron correctamente.</label>
+        <name>TareasOutlook_Toast_GuardadoMsg</name>
+    </customLabels>
+    <customLabels>
+        <label>Hora inválida</label>
+        <name>TareasOutlook_Toast_HoraInvalida</name>
+    </customLabels>
+    <customLabels>
+        <label>La hora debe estar en intervalos de 30 minutos (ej: 09:00, 09:30).</label>
+        <name>TareasOutlook_Toast_HoraInvalidaMsg</name>
+    </customLabels>
+    <customLabels>
+        <label>Visita creada</label>
+        <name>TareasOutlook_Toast_VisitaCreada</name>
+    </customLabels>
+    <customLabels>
+        <label>Se ha creado la visita y las tareas correctamente.</label>
+        <name>TareasOutlook_Toast_VisitaCreadaMsg</name>
+    </customLabels>
     <customTabs>
         <label><!-- Control KPI Económicos Contratos --></label>
         <name>Cartera_de_Proyectos</name>

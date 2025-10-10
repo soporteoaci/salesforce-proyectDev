@@ -3,7 +3,7 @@
     <fullName>Cross_Selling__c</fullName>
     <defaultValue>false</defaultValue>
     <inlineHelpText>Indica si la Oportunidad nace de las sinergias con Ibermática.</inlineHelpText>
-    <label>Sinergias</label>
+    <label>Checkbox Sinergias</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

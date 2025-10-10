@@ -1258,4 +1258,564 @@ Saludos,</value>
         <shortDescription>CRM_Clone_Opp</shortDescription>
         <value>Clonar Oportunidad</value>
     </labels>
+    <labels>
+        <fullName>TareasOutlook_Alt_Cargando</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Alt text para spinner</shortDescription>
+        <value>Cargando...</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Alt_EditarTarea</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Alt text para botón de editar</shortDescription>
+        <value>Editar Tarea</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Alt_Fecha</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Alt text para icono de fecha</shortDescription>
+        <value>Fecha</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Alt_IrSalesforce</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Alt text para botón de abrir en SF</shortDescription>
+        <value>Ir a Salesforce</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Alt_VerOcultarContacto</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Alt text para botón de expandir contacto</shortDescription>
+        <value>Ver/Ocultar Contacto</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Button_CrearVisita</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para botón crear visita</shortDescription>
+        <value>Crear Visita</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Column_Acciones</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Columna de tabla - acciones</shortDescription>
+        <value>Acciones</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Column_Asunto</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Columna de tabla - asunto</shortDescription>
+        <value>Asunto</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Column_Cuenta</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Columna de tabla - cuenta</shortDescription>
+        <value>Cuenta</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Column_Estado</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Columna de tabla - estado</shortDescription>
+        <value>Estado</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Column_Fecha</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Columna de tabla - fecha</shortDescription>
+        <value>Fecha</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Column_Prioridad</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Columna de tabla - prioridad</shortDescription>
+        <value>Prioridad</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Error_AsuntoRequerido</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de validación - asunto requerido</shortDescription>
+        <value>El campo Asunto es obligatorio.</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Error_ContactoRequerido</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de validación - contacto requerido</shortDescription>
+        <value>Debe seleccionar un Contacto.</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Error_CuentaRequerida</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de validación - cuenta requerida</shortDescription>
+        <value>Debe seleccionar una Cuenta.</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Error_FechaRequerida</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de validación - fecha requerida</shortDescription>
+        <value>Debe seleccionar una Fecha.</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Error_FechasInvalidas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de validación de fechas</shortDescription>
+        <value>La fecha de inicio no puede ser posterior a la fecha de fin.</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Error_LineasRequeridas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de validación - líneas requeridas</shortDescription>
+        <value>Debe seleccionar al menos una Línea de Servicio.</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Error_PrioridadRequerida</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de validación - prioridad requerida</shortDescription>
+        <value>Debe seleccionar una Prioridad.</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Error_SectorRequerido</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de validación - sector requerido</shortDescription>
+        <value>Debe seleccionar un Sector de Mercado.</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_Asunto</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para campo asunto</shortDescription>
+        <value>Asunto</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_Cuenta</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para campo de cuenta</shortDescription>
+        <value>Cuenta</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_Disponibles</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para lista disponibles</shortDescription>
+        <value>Disponibles</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_EnviadaAcuerdos</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para checkbox acuerdos enviados</shortDescription>
+        <value>Enviada Acuerdos</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_EnviadaAgenda</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para checkbox agenda enviada</shortDescription>
+        <value>Enviada Agenda</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_Fecha</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para campo fecha</shortDescription>
+        <value>Fecha</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_FechaFin</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para fecha de fin</shortDescription>
+        <value>Fecha Fin</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_FechaInicio</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para fecha de inicio</shortDescription>
+        <value>Fecha Inicio</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_FiltrarVisitas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para filtro de estado</shortDescription>
+        <value>Filtrar Visitas</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_LineasServicio</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para líneas de servicio</shortDescription>
+        <value>Líneas de Servicio</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_Prioridad</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para campo de prioridad</shortDescription>
+        <value>Prioridad</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_ResumenEjecutivo</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para resumen ejecutivo</shortDescription>
+        <value>Resumen Ejecutivo</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_SectorMercado</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para sector de mercado</shortDescription>
+        <value>Sector de Mercado</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_Seleccionadas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para lista seleccionadas</shortDescription>
+        <value>Seleccionadas</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Label_SeleccionarContacto</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label para selección de contacto</shortDescription>
+        <value>Seleccionar Contacto</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Msg_ContactoPrefix</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Prefijo para nombre de contacto</shortDescription>
+        <value>Contacto:</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Msg_ErrorObtenerTareas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de error al obtener tareas</shortDescription>
+        <value>Error al obtener tareas</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Msg_NoCitas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje sin resultados</shortDescription>
+        <value>No hay citas disponibles</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Msg_SinContacto</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje sin contacto</shortDescription>
+        <value>Sin contacto relacionado</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Msg_TareasEntre</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de tareas en rango de fechas</shortDescription>
+        <value>Tareas entre</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Msg_TareasHoy</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de tareas para hoy</shortDescription>
+        <value>Tareas para hoy</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Msg_TareasPara</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de tareas para fecha específica</shortDescription>
+        <value>Tareas para el</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Msg_TareasPeriodo</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de tareas del período</shortDescription>
+        <value>Tareas del período seleccionado</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Msg_TelPrefix</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Prefijo para teléfono</shortDescription>
+        <value>Tel:</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Msg_Y</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Conector para rango de fechas</shortDescription>
+        <value>y</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Option_Seleccione</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opción placeholder en picklist</shortDescription>
+        <value>-- Seleccione --</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Option_SoloAgendadas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opción de filtro - agendadas</shortDescription>
+        <value>Solo las Agendadas</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Option_SoloRealizadas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opción de filtro - realizadas</shortDescription>
+        <value>Solo las Realizadas</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Option_Todas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opción para filtro de prioridad</shortDescription>
+        <value>Todas</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Option_TodasVisitas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opción de filtro - todas</shortDescription>
+        <value>Todas las Visitas</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Placeholder_BuscarCuenta</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Placeholder para búsqueda de cuenta</shortDescription>
+        <value>Buscar cuenta...</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Section_CuentaContactos</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título de sección cuenta y contactos</shortDescription>
+        <value>Cuenta y Contactos</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Section_Filtros</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título de sección de filtros</shortDescription>
+        <value>Filtros</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Section_InfoBasica</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título de sección de info básica</shortDescription>
+        <value>Información Básica</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Section_Listado</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título de sección de listado</shortDescription>
+        <value>Listado</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Section_Seguimiento</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título de sección seguimiento</shortDescription>
+        <value>Seguimiento</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Tab_CrearVisita</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título del tab de crear visita</shortDescription>
+        <value>Crear Visita</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Tab_MisCitas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título del tab de ver citas</shortDescription>
+        <value>Mis Citas</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Title</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título principal del componente</shortDescription>
+        <value>Tareas Outlook</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Title_MoverDisponibles</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Title para botón mover a izquierda</shortDescription>
+        <value>Mover a disponibles</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Title_MoverSeleccionadas</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Title para botón mover a derecha</shortDescription>
+        <value>Mover a seleccionadas</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Toast_CamposObligatorios</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título de toast - campos faltantes</shortDescription>
+        <value>Campos obligatorios faltantes</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Toast_Error</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título de toast - error genérico</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Toast_ErrorAbrirEditor</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje error al abrir editor</shortDescription>
+        <value>No se pudo abrir el editor de tarea.</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Toast_Guardado</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título de toast - guardado exitoso</shortDescription>
+        <value>Guardado</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Toast_GuardadoMsg</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de guardado exitoso</shortDescription>
+        <value>Los cambios se guardaron correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Toast_HoraInvalida</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título de toast - hora inválida</shortDescription>
+        <value>Hora inválida</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Toast_HoraInvalidaMsg</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de hora inválida</shortDescription>
+        <value>La hora debe estar en intervalos de 30 minutos (ej: 09:00, 09:30).</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Toast_VisitaCreada</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Título de toast - visita creada</shortDescription>
+        <value>Visita creada</value>
+    </labels>
+    <labels>
+        <fullName>TareasOutlook_Toast_VisitaCreadaMsg</fullName>
+        <categories>TareasOutlook</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mensaje de visita creada</shortDescription>
+        <value>Se ha creado la visita y las tareas correctamente.</value>
+    </labels>
 </CustomLabels>

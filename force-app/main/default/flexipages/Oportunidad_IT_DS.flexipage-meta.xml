@@ -3670,7 +3670,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Fecha_QA_T_cnico__c</fieldItem>
                 <identifier>RecordFecha_QA_T_cnico_cField</identifier>
@@ -3680,7 +3680,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Decision_QA_Tecnico__c</fieldItem>
                 <identifier>RecordDecision_QA_Tecnico_cField</identifier>
@@ -3704,7 +3704,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Fecha_Qa_Econ_mico__c</fieldItem>
                 <identifier>RecordFecha_Qa_Econ_mico_cField</identifier>
@@ -3714,7 +3714,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Decision_QA_Economico__c</fieldItem>
                 <identifier>RecordDecision_QA_Economico_cField</identifier>

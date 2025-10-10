@@ -3,27 +3,29 @@
     <fullName>No_modificar_Mercados</fullName>
     <active>true</active>
     <errorConditionFormula>AND(
-		$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
-		$User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
-		$User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
-		$Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
-		$Profile.Name &lt;&gt;&apos;Admin Custom Ibermatica CRM Sales&apos;,
-		$User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
-		$User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;,
-		OR(
-		ISCHANGED(Mercado__c),
-		ISCHANGED(DivisionPicklist__c),
-		ISCHANGED(Subdivision1__c),
-		ISCHANGED(Linea_de_Servicio__c),
-		ISCHANGED(Delivery_Center__c)
-
-		),
-
-		NOT(ISPICKVAL(Subfase__c, &apos;Alta&apos;)) ,
-		NOT(ISPICKVAL(Subfase__c, &apos;Cualificación con autoprovisión&apos;)),
-		NOT(ISPICKVAL(Subfase__c, &apos;Cualificación con preventa&apos;) )
-
-
-		)</errorConditionFormula>
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    $User.Email &lt;&gt; &apos;amorillop@ayesa.com&apos;,
+    $User.Email &lt;&gt; &apos;ldelcastillo@ayesa.com&apos;,
+    $Profile.Name &lt;&gt; &apos;Administrador del sistema&apos;,
+    $Profile.Name &lt;&gt; &apos;Admin Custom Ibermatica CRM Sales&apos;,
+    $User.Email &lt;&gt; &apos;cau-def@ibermatica.com&apos;,
+    $User.Email &lt;&gt; &apos;soporteoaci@ayesa.com&apos;,
+    OR(
+        ISCHANGED(Mercado__c),
+        ISCHANGED(DivisionPicklist__c),
+        ISCHANGED(Subdivision1__c),
+        ISCHANGED(Linea_de_Servicio__c),
+        ISCHANGED(Delivery_Center__c)
+    ),
+    NOT(ISPICKVAL(Subfase__c, &apos;Alta&apos;)),
+    NOT(ISPICKVAL(Subfase__c, &apos;Cualificación con autoprovisión&apos;)),
+    NOT(ISPICKVAL(Subfase__c, &apos;Cualificación con preventa&apos;)),
+    NOT(
+        AND(
+            ISPICKVAL(Direccion_Operaciones__c, &apos;INNOVATION&apos;),
+            ISPICKVAL(Subfase__c, &apos;Elaboración oferta&apos;)
+        )
+    )
+)</errorConditionFormula>
     <errorMessage>No se pueden modificar los siguientes campos: Mercado, Sector Mercado, Subsector mercado, Línea de servicio, Delivery Center</errorMessage>
 </ValidationRule>

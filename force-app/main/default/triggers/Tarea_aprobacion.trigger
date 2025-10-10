@@ -389,6 +389,7 @@ trigger Tarea_aprobacion on Tarea_aprobacion__c (after update, after insert, bef
         if (Decision_oferta_tecnica != '') {
             if (Decision_oferta_tecnica == 'Aprobado') {
                 op.Decision_QA_Tecnico__c = 'Go';
+                op.Fecha_QA_T_cnico__c = Date.Today(); /*Se guarda la fecha cuando se aprueba la tarea técnica*/
                 op.Bloqueo_por_aprobacion__c = false;
             } else if (Decision_oferta_tecnica == 'Rechazado') {
                 op.Decision_QA_Tecnico__c = 'No Go';
@@ -424,6 +425,7 @@ trigger Tarea_aprobacion on Tarea_aprobacion__c (after update, after insert, bef
         if (Decision_oferta_economica != '') {
             if (Decision_oferta_economica == 'Aprobado') {
                 op.Decision_QA_Economico__c = 'Go';
+                op.Fecha_Qa_Econ_mico__c = Date.Today(); /*Se guarda la fecha cuando se aprueba la tarea económica*/
                 op.Bloqueo_por_aprobacion__c = false;
             } else if (Decision_oferta_economica == 'Rechazado') {
                 op.Bloqueo_por_aprobacion__c = false;
